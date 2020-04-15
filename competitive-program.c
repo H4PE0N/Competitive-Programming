@@ -5,7 +5,8 @@
 
 int main(int argc, char** argv)
 {
-  int** matrix = generate_matrix_array(5, 5);
-  printf("Value: %d\n", matrix[4][6]);
+  int* array = (int[]) {5, 4, 3, 2, 1};
+  array = bubble_sort_array(array, 5);
+  printf("%d\n", array[4]);
   return 0;
 }
