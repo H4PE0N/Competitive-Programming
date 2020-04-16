@@ -48,7 +48,7 @@ int* switch_array_numbers(int* array, int index)
 
 int* bubble_sort_iteration(int* array, int iteration)
 {
-  for(int index = 0; index < iteration; index++)
+  for(int index = 0; index < (iteration - 1); index++)
   {
     if(*(array + index) > *(array + (index + 1) ))
     {
