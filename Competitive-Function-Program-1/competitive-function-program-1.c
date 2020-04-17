@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int* allocate_array_values(int* array, int length)
 {
@@ -102,10 +103,10 @@ int hashlist_value_exists(int** hashlist, int value)
 {
   int index = 0; while(*(*(hashlist + index) + 1) != 0)
   {
-    if(*(*(hashlist + index)) == value){ return 1; }
+    if(*(*(hashlist + index)) == value){return true;}
     index++;
   }
-  return 0;
+  return false;
 }
 
 int** increment_hashlist_value(int** list, int value)
