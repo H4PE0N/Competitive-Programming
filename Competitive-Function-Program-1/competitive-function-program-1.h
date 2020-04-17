@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTION_PROGRAM_H
-#define COMPETITIVE_FUNCTION_PROGRAM_H
+#ifndef COMPETITIVE_FUNCTION_PROGRAM_1_H
+#define COMPETITIVE_FUNCTION_PROGRAM_1_H
 
 /* A collection of competitive functions*/
 
