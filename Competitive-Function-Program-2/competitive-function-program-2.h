@@ -10,8 +10,13 @@ int calculate_vertical_distance(int*, int*);
 
 typedef int (*criterion) (int);
 
-int* add_numbers_by_criterion(int*, int, criterion);
+int* add_numbers_by_criterion(int*, int,
+  criterion);
 int array_contains_number(int*, int, int);
+
+int* move_array_numbers(int*, int, int);
+int* remove_array_number(int*, int, int);
+int* add_array_number(int*, int, int);
 
 #endif
 

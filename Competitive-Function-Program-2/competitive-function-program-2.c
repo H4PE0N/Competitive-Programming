@@ -51,4 +51,28 @@ int array_contains_number(int* array, int num, int length)
   return false;
 }
 
+int* move_array_numbers(int* array, int length, int start)
+{
+  for(int index = start; index < (length - 1); index++)
+  {
+    array = switch_array_numbers(array, index);
+  }
+  return array;
+}
+
+int* remove_array_number(int* array, int length, int num)
+{
+  int start = length;
+  for(int index = (length - 1); index >= 0; index--)
+  {
+    if(*(array + index) == num) {start = index; break;}
+  }
+  return move_array_numbers(array, length, start);
+}
+
+int* add_array_number(int* array, int length, int num)
+{
+  *(array + length) = num; return array;
+}
+
 /* Made by Roy Hampus Fridholm - 2020/04/17 */
