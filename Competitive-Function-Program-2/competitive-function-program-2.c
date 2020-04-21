@@ -9,6 +9,9 @@
 #include "../Competitive-Function-Program-1/\
 competitive-function-program-1.h"
 
+#include "../Competitive-Function-Program-3/\
+competitive-function-program-3.h"
+
 int calculate_horizontal_distance(int* point, int* target)
 {
   return abs(*(point + 0) - *(target + 0));
@@ -73,6 +76,17 @@ int* remove_array_number(int* array, int length, int num)
 int* add_array_number(int* array, int length, int num)
 {
   *(array + length) = num; return array;
+}
+
+int* hashlist_keyword_array(int** hashlist)
+{
+  int length = calculate_hashlist_length(hashlist);
+  int* array = generate_empty_array(length);
+  for(int index = 0; index < length; index++)
+  {
+    *(array + index) = *(*(hashlist + index) + 0);
+  }
+  return array;
 }
 
 /* Made by Roy Hampus Fridholm - 2020/04/17 */

@@ -8,7 +8,7 @@ int** generate_integer_hashlist(const int);
 int calculate_integer_amount(int*, int*);
 
 int calculate_hashvalue_index(int**, int);
-int calculate_hashlist_length(int**, int);
+int calculate_hashlist_length(int**);
 int hashlist_value_exists(int**, int);
 
 int** increment_hashlist_value(int**, int);

@@ -10,6 +10,9 @@ competitive-function-program-1.h"
 #include "Competitive-Function-Program-2/\
 competitive-function-program-2.h"
 
+#include "Competitive-Function-Program-3/\
+competitive-function-program-3.h"
+
 /* Compile program by typing:
 gcc -o competitive-program competitive-program.c \
 Competitive-Function-Program-1/competitive-function-program-1.c \

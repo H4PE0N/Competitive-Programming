@@ -18,6 +18,8 @@ int* move_array_numbers(int*, int, int);
 int* remove_array_number(int*, int, int);
 int* add_array_number(int*, int, int);
 
+int* hashlist_keyword_array(int**);
+
 #endif
 
 /* Made by Roy Hampus Fridholm - 2020/04/15 */
