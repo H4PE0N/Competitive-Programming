@@ -23,6 +23,7 @@ int main(int argc, char** argv)
 {
   int* array = generate_empty_array(10);
   array = (int[]) {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+  // Restored this line of code.
   return 0;
 }
 
