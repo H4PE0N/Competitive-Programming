@@ -25,7 +25,7 @@ int calculate_array_length(const int* array)
   return length;
 }
 
-int array_contains_number(int* array, int num, int length)
+int array_contains_number(int* array, int length, int num)
 {
   for(int index = 0; index < length; index++)
   {
@@ -65,7 +65,7 @@ int* bubble_sort_array(int* array, const int length)
 
 int* move_array_numbers(int* array, int length, int start)
 {
-  for(int index = start; index < (length - 1); index++)
+  for(int index = start; index < length; index++)
   {
     array = switch_array_numbers(array, index);
   }
