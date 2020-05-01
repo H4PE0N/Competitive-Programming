@@ -68,4 +68,18 @@ int* bubble_sort_array(int* array, const int length)
   return array;
 }
 
+int calculate_array_length(const int* array)
+{
+  int length = 0;
+  while(*(array + length) != '\0') { length += 1; }
+  return length;
+}
+
+int calculate_matrix_length(const int** matrix)
+{
+  int length = 0;
+  while(calculate_array_length(*(matrix + length)))
+  { length += 1; } return length;
+}
+
 /* Made by Roy Hampus Fridholm - 2020/04/15 */

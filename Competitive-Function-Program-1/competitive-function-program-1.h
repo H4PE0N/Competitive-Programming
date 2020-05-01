@@ -14,6 +14,9 @@ int* bubble_sort_array(int*, const int);
 int* bubble_sort_iteration(int*, int);
 int* switch_array_numbers(int*, int);
 
+int calculate_array_length(const int*);
+int calculate_matrix_length(const int**);
+
 #endif
 
 /* Made by Roy Hampus Fridholm - 2020/04/15 */
