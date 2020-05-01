@@ -9,7 +9,7 @@ to do. */
 int** generate_matrix_array(int, int);
 int** allocate_matrix_values(int**, int*);
 
-int calculate_matrix_length(const int**);
+int calculate_matrix_length(int**);
 
 int calculate_matrix_distance(int*, int*);
 int calculate_horizontal_distance(int*, int*);

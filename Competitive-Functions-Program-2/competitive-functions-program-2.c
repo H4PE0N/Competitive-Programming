@@ -30,7 +30,7 @@ int** generate_matrix_array(int length, int width)
   return allocate_matrix_values(matrix, messures);
 }
 
-int calculate_matrix_length(const int** matrix)
+int calculate_matrix_length(int** matrix)
 {
   int length = 0;
   while(calculate_array_length(*(matrix + length)))
