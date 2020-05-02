@@ -5,11 +5,17 @@ arrays and calculates thingd using it's data. */
 #include <stdlib.h>
 #include <stdbool.h>
 
+int* allocate_array_value(int* array, int index, int num)
+{
+  *(array + index) = num; return array;
+}
+
 int* allocate_array_values(int* array, int length)
 {
   for(int index = 0; index < length; index++)
   {
-    *(array + index) = (0); } return array;
+    allocate_array_value(array, index, 0);
+  } return array;
 }
 
 int* generate_empty_array(const int length)
@@ -79,7 +85,8 @@ int* remove_array_number(int* array, int length, int num)
   {
     if(*(array + index) == num) {start = index; break;}
   }
-  return move_array_numbers(array, length, start);
+  array = move_array_numbers(array, length, start);
+  return allocate_array_value(array, (length - 1), 0);
 }
 
 int* add_array_number(int* array, int length, int num)
