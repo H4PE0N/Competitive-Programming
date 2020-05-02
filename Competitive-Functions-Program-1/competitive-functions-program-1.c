@@ -26,9 +26,8 @@ int* generate_empty_array(const int length)
 
 int calculate_array_length(const int* array)
 {
-  int length = 0;
-  while(*(array + length) != '\0') { length += 1; }
-  return length;
+  int length = 0; while(*(array + length) != '\0')
+  { length += 1; } return length;
 }
 
 int array_contains_number(int* array, int length, int num)
@@ -83,7 +82,7 @@ int* remove_array_number(int* array, int length, int num)
   int start = length;
   for(int index = (length - 1); index >= 0; index--)
   {
-    if(*(array + index) == num) {start = index; break;}
+    if(*(array + index) == num) { start = index; break; }
   }
   array = move_array_numbers(array, length, start);
   return allocate_array_value(array, (length - 1), 0);
@@ -91,7 +90,8 @@ int* remove_array_number(int* array, int length, int num)
 
 int* add_array_number(int* array, int length, int num)
 {
-  *(array + length) = num; return array;
+  array = allocate_array_value(array, length, num);
+  return allocate_array_value(array,length+1,'\0');
 }
 
 /* Made by Roy Hampus Fridholm */
