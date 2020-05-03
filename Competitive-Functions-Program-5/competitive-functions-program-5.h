@@ -1,6 +1,7 @@
 
 /* This program contains functions that deals
-with */
+with binary strings and convertions between 
+decimal and characters. */
 
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM__H
 #define COMPETITIVE_FUNCTIONS_PROGRAM__H

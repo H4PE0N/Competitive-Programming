@@ -1,5 +1,7 @@
 
-/*  This program contains functions that deals with */
+/*  This program contains functions that deals with 
+binary strings and convertions between decimal and 
+characters. */
 
 #include <stdlib.h>
 #include <math.h>
