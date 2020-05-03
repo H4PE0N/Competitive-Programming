@@ -1,19 +1,11 @@
 
 /*  This program contains functions that deals with */
 
-#include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <math.h>
 
 #include "../Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
-
-int calculate_binary_length(const int decimal)
-{
-  int length = 0; while(decimal > pow(2, length))
-  { length += 1; } return length;
-}
 
 int reduce_binary_decimal(char* binary, int length,
   int decimal)
@@ -26,10 +18,13 @@ int reduce_binary_decimal(char* binary, int length,
 char* allocate_binary_value(char* binary, int length,
   int decimal)
 {
-  int index = calculate_string_length(binary),
-  weight = (length - 1) - index;
-  if(decimal - pow(2, weight) >= 0) {*(binary+index)='1';}
-  else { *(binary + index) = '0'; } return binary;
+  int index = calculate_string_length(binary), weight =
+  (length - 1) - index;
+  if(decimal - pow(2, weight) >= 0)
+  { binary = add_string_character(binary, index, '1'); }
+  else
+  { add_string_character(binary, index, '0'); }
+  return binary;
 }
 
 char* allocate_binary_values(char* binary, int length,
@@ -44,6 +39,12 @@ char* allocate_binary_values(char* binary, int length,
   return binary;
 }
 
+int calculate_binary_length(const int decimal)
+{
+  int length = 0; while(decimal > pow(2, length))
+  { length = (length + 1); } return length;
+}
+
 char* convert_decimal_binary(const int decimal)
 {
   int length = calculate_binary_length(decimal);
@@ -56,8 +57,8 @@ char* convert_character_binary(char character)
   return convert_decimal_binary(character);
 }
 
-int calculate_decimal_binary(char* binary,
-  int index, int decimal)
+int calculate_decimal_binary(char* binary, int index,
+  int decimal)
 {
   int length = calculate_string_length(binary);
   if(*(binary + index) == '1')
