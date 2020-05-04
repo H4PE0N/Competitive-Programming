@@ -2,8 +2,6 @@
 This is a file that you store your ideas about the
 project.
 
-1. Rename hashlist to hashset in file (3).
-
-2. Create a new folder with a probability library.
+1. Create a new folder with a probability library.
 
 Made by Roy Hampus Fridholm
