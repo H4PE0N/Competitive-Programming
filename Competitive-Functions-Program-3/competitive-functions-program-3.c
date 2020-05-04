@@ -36,12 +36,12 @@ int hashmap_value_exists(int** hashmap, int value)
   return false;
 }
 
-int calculate_hashvalue_index(int** list, int value)
+int calculate_hashvalue_index(int** map, int value)
 {
-  int index = 0; while(*(*(list + index) + 1) != 0)
+  int index = 0; while(*(*(map + index) + 1) != 0)
   {
-    if(*(*(list + index)) == value)
-    { return index; } index = (index + 1);
+    if(*(*(map + index)) == value) { return index; }
+    index = (index + 1);
   }
   return -1;
 }
@@ -52,37 +52,37 @@ int calculate_hashmap_length(int** hashmap)
   { index++; } return index;
 }
 
-int** increment_hashmap_value(int** list, int value)
+int** increment_hashmap_value(int** map, int value)
 {
-  int index = calculate_hashvalue_index(list, value);
-  *(*(list + index) + 1) += 1; return list;
+  int index = calculate_hashvalue_index(map, value);
+  *(*(map + index) + 1) += 1; return map;
 }
 
-int** generate_hashmap_value(int** list, int value)
+int** generate_hashmap_value(int** map, int value)
 {
-  int length = calculate_hashmap_length(list);
-  *(*(list + length) + 0) = value;
-  *(*(list + length) + 1) = 1; return list;
+  int length = calculate_hashmap_length(map);
+  *(*(map + length) + 0) = value;
+  *(*(map + length) + 1) = 1; return map;
 }
 
-int** allocate_hashmap_value(int** list, int value)
+int** allocate_hashmap_value(int** map, int value)
 {
-  if(!hashmap_value_exists(list, value))
+  if(!hashmap_value_exists(map, value))
   {
-    list = generate_hashmap_value(list, value);
+    map = generate_hashmap_value(map, value);
   } else {
-    list = increment_hashmap_value(list, value);
+    map = increment_hashmap_value(map, value);
   }
-  return list;
+  return map;
 }
 
 int** allocate_array_hashmap(int* array, int length)
 {
-  int** hashmap = generate_integer_hashmap(length);
+  int** hashmap =generate_integer_hashmap(length+1);
   for(int index = 0; index < length; index++)
   {
-    hashmap = allocate_hashmap_value(
-      hashmap, *(array + index));
+    hashmap = allocate_hashmap_value(hashmap,
+      *(array + index));
   }
   return hashmap;
 }
