@@ -2,6 +2,6 @@
 This is a file that you store your ideas about the
 project.
 
-1. Create a new folder with a probability library.
+1. 
 
 Made by Roy Hampus Fridholm
