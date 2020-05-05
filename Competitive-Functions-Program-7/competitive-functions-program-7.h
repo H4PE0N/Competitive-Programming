@@ -8,12 +8,12 @@ with */
 char* binary_left_shifting(char*, int);
 char* binary_right_shifting(char*, int);
 
-char* binary_and_opperation(char*, char*);
+char* binary_and_opperation(char*, char*, int);
 char* binary_not_opperation(char*, int);
-char* binary_or_opperation(char*, char*);
-char* binary_xor_opperation(char*, char*);
+char* binary_or_opperation(char*, char*, int);
+char* binary_xor_opperation(char*, char*, int);
 
-//char calculate_and_character(char*, char*, int);
+char calculate_and_character(char*, char*, int);
 
 #endif
 
