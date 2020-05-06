@@ -30,52 +30,49 @@ int** generate_matrix_array(int length, int width)
   return allocate_matrix_values(matrix, messures);
 }
 
-int calculate_matrix_length(int** matrix)
+int calculate_matrix_length(int** matrix, int a_length)
 {
   int length = 0;
-  while(calculate_array_length(*(matrix + length)))
-  { length += 1; } return length;
+  while(calculate_array_length(*(matrix + length))
+  >= a_length) { length += 1; } return length;
 }
 
-int matrix_contains_number(int** matrix, const int number)
+int matrix_contains_number(int** matrix, int a_length,
+  int number)
 {
-  int length = calculate_matrix_length(matrix);
+  int length = calculate_matrix_length(matrix, a_length);
   for(int index = 0; index < length; index++)
   {
     int a_length = calculate_array_length(
-      *(matrix + index))
-    if(array_contains_number(*(matrix + index), a_length,
-      number)) { return true; }
+      *(matrix + index));
+    if(array_contains_number(*(matrix + index),
+    a_length, number)) { return true; }
   }
   return false;
 }
 
-int** move_matrix_number(int** matrix, int* info, int start)
+int** remove_matrix_number(int** matrix, int length,
+  int number)
 {
-  *(matrix + *(info)) = move_array_numbers(
-    *(matrix + *(info)), *(info + 1), start);
-  *(matrix + *(info)) = allocate_array_value(
-    *(matrix + *(info), (*(info + 1) - 1), '\0');
+  for(int index = length; index >= 0; index--)
+  {
+    int a_length = calculate_array_length(*(matrix +
+      index));
+    if(array_contains_number(*(matrix + index),
+    a_length, number)) { *(matrix + index) =
+      remove_array_number(*(matrix + index),
+      a_length, number); break; }
+  }
   return matrix;
 }
 
-int** remove_matrix_number(int** matrix, int* info, int num)
+int** add_matrix_number(int** matrix, int length,
+  int number)
 {
-  int start = *(info + 1);
-  for(int index = (*(info + 1)-1); index >= 0; index--)
-  {
-    if(*(*(matrix + *(info)) + index == num)
-    { start = index; break; }
-  }
-  return move_matrix_number(matrix, info, start);
-}
-
-int** add_matrix_number(int** matrix, int* info, int num)
-{
-  *(matrix + *(info)) = allocate_array_value(
-    *(matrix + *(info)), *(info + 1), num);
-  *(matrix + *(info)) = allocate_array_value(
-    *(matrix + *(info)), *(info + 1) + 1, '\0');
+  int a_length = calculate_array_length(*(matrix +
+    length));
+  *(matrix + length) = add_array_number(*(matrix +
+    length), a_length, number);
   return matrix;
 }
 
