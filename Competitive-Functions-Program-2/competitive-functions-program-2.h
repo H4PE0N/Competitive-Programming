@@ -7,7 +7,6 @@ to do. */
 #define COMPETITIVE_FUNCTIONS_PROGRAM_2_H
 
 int** generate_matrix_array(int, int);
-int** allocate_matrix_values(int**, int*);
 
 int calculate_matrix_length(int**, int);
 int matrix_contains_number(int**, int, int);

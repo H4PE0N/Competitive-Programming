@@ -16,12 +16,13 @@ int** generate_integer_hashmap(const int length)
   return generate_matrix_array(length, 2);
 }
 
-int calculate_integer_amount(int* array, int* info)
+int calculate_integer_amount(int* array, int length,
+  int number)
 {
-  int number = *(info + 0), amount = 0;
-  for(int index = 0; index < *(info + 1); index++)
+  int amount = 0;
+  for(int index = 0; index < length; index++)
   {
-    if(*(array + index) == number){ amount += 1; }
+    if(*(array + index) == number) { amount += 1; }
   }
   return amount;
 }

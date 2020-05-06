@@ -8,25 +8,14 @@ matrixis and some data that have with it to do. */
 #include "../Competitive-Functions-Program-1/\
 competitive-functions-program-1.h"
 
-int** allocate_matrix_values(int** matrix, int* messures)
-{
-  for(int index = 0; index < *(messures + 0); index++)
-  {
-    *(matrix + index) = allocate_array_values(
-      *(matrix + index), *(messures + 1));
-  }
-  return matrix;
-}
-
 int** generate_matrix_array(int length, int width)
 {
   int** matrix = malloc(sizeof(matrix) * length);
   for(int index = 0; index < length; index++)
   {
-    *(matrix + index) = malloc(sizeof(matrix) * width);
+    *(matrix + index) = generate_empty_array(width);
   }
-  int messures[] = {length, width};
-  return allocate_matrix_values(matrix, messures);
+  return matrix;
 }
 
 int calculate_matrix_length(int** matrix, int a_length)
@@ -48,8 +37,6 @@ int matrix_contains_number(int** matrix, int a_length,
   return false;
 }
 
-#include <stdio.h>
-
 int** remove_matrix_number(int** matrix, int length,
   int number)
 {
@@ -57,7 +44,7 @@ int** remove_matrix_number(int** matrix, int length,
   {
     int a_length = calculate_array_length(*(matrix +
       index));
-    if(array_contains_number(*(matrix + index), a_length,
+    if(array_contains_number(*(matrix + index),a_length,
       number)) { *(matrix + index) =
       remove_array_number(*(matrix + index), a_length,
       number); break; }

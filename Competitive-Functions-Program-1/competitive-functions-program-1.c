@@ -5,9 +5,10 @@ arrays and calculates thingd using it's data. */
 #include <stdlib.h>
 #include <stdbool.h>
 
-int* allocate_array_value(int* array, int index, int num)
+int* allocate_array_value(int* array, int index,
+  int number)
 {
-  *(array + index) = num; return array;
+  *(array + index) = number; return array;
 }
 
 int* allocate_array_values(int* array, int length)
@@ -31,11 +32,12 @@ int calculate_array_length(const int* array)
   { length += 1; } return length;
 }
 
-int array_contains_number(int* array, int length, int num)
+int array_contains_number(int* array, int length,
+  int number)
 {
   for(int index = 0; index < length; index++)
   {
-    if(*(array + index) == num) { return true; }
+    if(*(array + index) == number) { return true; }
   }
   return false;
 }
@@ -68,7 +70,8 @@ int* bubble_sort_array(int* array, const int length)
   return array;
 }
 
-int* move_array_numbers(int* array, int length, int start)
+int* move_array_numbers(int* array, int length,
+  int start)
 {
   for(int index = start; index < length; index++)
   {
@@ -77,20 +80,23 @@ int* move_array_numbers(int* array, int length, int start)
   return array;
 }
 
-int* remove_array_number(int* array, int length, int num)
+int* remove_array_number(int* array, int length,
+  int number)
 {
   int start = length;
   for(int index = (length - 1); index >= 0; index--)
   {
-    if(*(array + index) == num) {start = index; break;}
+    if(*(array + index) == number) { start = index;
+      break;}
   }
   array = move_array_numbers(array, length, start);
   return allocate_array_value(array, length, '\0');
 }
 
-int* add_array_number(int* array, int length, int num)
+int* add_array_number(int* array, int length,
+  int number)
 {
-  array = allocate_array_value(array, length, num);
+  array = allocate_array_value(array, length, number);
   return allocate_array_value(array,length + 1,'\0');
 }
 
