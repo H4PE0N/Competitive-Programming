@@ -1,6 +1,6 @@
 
 /* This program contains functions that deals
-with binary strings and convertions between
+with binary strings and conversions between
 decimal and characters. */
 
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_5_H
@@ -14,7 +14,8 @@ char* allocate_binary_values(char*, int);
 char* allocate_binary_value(char*, int, int);
 
 int reduce_binary_decimal(char*, int, int);
-int calculate_binary_length(const int);
+int calculate_real_binary_length(const int);
+int calculate_nearest_binary_length(const int);
 int calculate_decimal_binary(char*, int, int);
 
 #endif

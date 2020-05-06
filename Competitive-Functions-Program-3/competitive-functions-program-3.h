@@ -13,7 +13,7 @@ int* hashmap_keyword_array(int**);
 
 int calculate_hashmap_length(int**);
 
-int calculate_integer_amount(int*, int*);
+int calculate_integer_amount(int*, int, int);
 int hashmap_value_exists(int**, int);
 int calculate_hashvalue_index(int**, int);
 

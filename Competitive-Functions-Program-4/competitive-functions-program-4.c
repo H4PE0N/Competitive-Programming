@@ -70,7 +70,7 @@ char* remove_string_character(char* string, int length,
     { start = index; break; }
   }
   string = move_string_characters(string,length,start);
-  return allocate_string_value(string, length-1,'\0');
+  return allocate_string_value(string, length, '\0');
 }
 
 char* add_string_character(char* string, int length,

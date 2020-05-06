@@ -2,6 +2,8 @@
 This is a file that you store your ideas about the
 project.
 
-1. 
+1. Look through all the files and change if needed.
+
+2. Create a new folder that have hexadecimal conversions.
 
 Made by Roy Hampus Fridholm
