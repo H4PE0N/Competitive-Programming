@@ -2,6 +2,19 @@
 This is a file that you store your ideas about the
 project.
 
-1. 
+1. Look through all the files and change if needed.
+
+  (
+    calculate_binary_length in file 5.
+
+    int length = 0; while(decimal > pow(2, length))
+    -  { length = (length + 1); } return length;
+  )
+
+  File 5 can have two separate functions that calculates
+  the length of the characters and calculates the nearest
+  length so bitwise operations can be possible.
+
+2. Create a new folder that have hexadecimal conversions.
 
 Made by Roy Hampus Fridholm
