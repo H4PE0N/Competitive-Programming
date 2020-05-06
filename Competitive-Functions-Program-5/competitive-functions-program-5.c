@@ -1,6 +1,6 @@
 
-/*  This program contains functions that deals with 
-binary strings and convertions between decimal and 
+/*  This program contains functions that deals with
+binary strings and convertions between decimal and
 characters. */
 
 #include <stdlib.h>
@@ -43,8 +43,10 @@ char* allocate_binary_values(char* binary, int length,
 
 int calculate_binary_length(const int decimal)
 {
-  int length = 0; while(decimal > pow(2, length))
-  { length = (length + 1); } return length;
+  int chars = 0, length = 2;
+  while(decimal >= pow(2, chars)) {chars = (chars + 1);}
+  while(chars > pow(2, length))
+  { length = (length + 1); } return pow(2, length);
 }
 
 char* convert_decimal_binary(const int decimal)

@@ -1,10 +1,10 @@
 
 /* This program contains functions that deals
-with binary strings and convertions between 
+with binary strings and convertions between
 decimal and characters. */
 
-#ifndef COMPETITIVE_FUNCTIONS_PROGRAM__H
-#define COMPETITIVE_FUNCTIONS_PROGRAM__H
+#ifndef COMPETITIVE_FUNCTIONS_PROGRAM_5_H
+#define COMPETITIVE_FUNCTIONS_PROGRAM_5_H
 
 char* convert_decimal_binary(const int);
 char* convert_character_binary(char);
