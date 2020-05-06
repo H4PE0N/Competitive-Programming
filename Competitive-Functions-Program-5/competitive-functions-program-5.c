@@ -1,6 +1,6 @@
 
 /*  This program contains functions that deals with
-binary strings and convertions between decimal and
+binary strings and conversions between decimal and
 characters. */
 
 #include <stdlib.h>
@@ -41,7 +41,13 @@ char* allocate_binary_values(char* binary, int length,
   return binary;
 }
 
-int calculate_binary_length(const int decimal)
+int calculate_real_binary_length(const int decimal)
+{
+  int length = 0; while(decimal > pow(2, length))
+  -  { length = (length + 1); } return length;
+}
+
+int calculate_nearest_binary_length(const int decimal)
 {
   int chars = 0, length = 2;
   while(decimal >= pow(2, chars)) {chars = (chars + 1);}
@@ -51,7 +57,7 @@ int calculate_binary_length(const int decimal)
 
 char* convert_decimal_binary(const int decimal)
 {
-  int length = calculate_binary_length(decimal);
+  int length = calculate_nearest_binary_length(decimal);
   char* binary = generate_empty_string(length);
   return allocate_binary_values(binary, length, decimal);
 }

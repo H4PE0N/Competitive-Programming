@@ -1,6 +1,6 @@
 
 /* This program contains functions that deals
-with binary strings and convertions between
+with binary strings and conversions between
 decimal and characters. */
 
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_5_H
