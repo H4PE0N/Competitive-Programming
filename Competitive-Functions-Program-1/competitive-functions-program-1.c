@@ -85,7 +85,7 @@ int* remove_array_number(int* array, int length, int num)
     if(*(array + index) == num) {start = index; break;}
   }
   array = move_array_numbers(array, length, start);
-  return allocate_array_value(array,(length - 1),'\0');
+  return allocate_array_value(array, length, '\0');
 }
 
 int* add_array_number(int* array, int length, int num)

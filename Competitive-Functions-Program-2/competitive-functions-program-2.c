@@ -3,7 +3,6 @@
 matrixis and some data that have with it to do. */
 
 #include <stdlib.h>
-#include <math.h>
 #include <stdbool.h>
 
 #include "../Competitive-Functions-Program-1/\
@@ -41,15 +40,15 @@ int matrix_contains_number(int** matrix, int a_length,
   int number)
 {
   int length = calculate_matrix_length(matrix, a_length);
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index <= length; index++)
   {
-    int a_length = calculate_array_length(
-      *(matrix + index));
     if(array_contains_number(*(matrix + index),
     a_length, number)) { return true; }
   }
   return false;
 }
+
+#include <stdio.h>
 
 int** remove_matrix_number(int** matrix, int length,
   int number)
@@ -58,10 +57,10 @@ int** remove_matrix_number(int** matrix, int length,
   {
     int a_length = calculate_array_length(*(matrix +
       index));
-    if(array_contains_number(*(matrix + index),
-    a_length, number)) { *(matrix + index) =
-      remove_array_number(*(matrix + index),
-      a_length, number); break; }
+    if(array_contains_number(*(matrix + index), a_length,
+      number)) { *(matrix + index) =
+      remove_array_number(*(matrix + index), a_length,
+      number); break; }
   }
   return matrix;
 }
