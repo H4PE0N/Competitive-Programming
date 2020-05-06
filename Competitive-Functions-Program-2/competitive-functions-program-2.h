@@ -10,10 +10,11 @@ int** generate_matrix_array(int, int);
 int** allocate_matrix_values(int**, int*);
 
 int calculate_matrix_length(int**);
+int matrix_contains_number(int**, int);
 
-int calculate_matrix_distance(int*, int*);
-int calculate_horizontal_distance(int*, int*);
-int calculate_vertical_distance(int*, int*);
+int** move_matrix_number(int**, int*, int);
+int** remove_matrix_number(int**, int*, int);
+int** add_matrix_number(int**, int*, int);
 
 #endif
 

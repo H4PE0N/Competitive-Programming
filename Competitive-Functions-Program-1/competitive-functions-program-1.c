@@ -14,8 +14,9 @@ int* allocate_array_values(int* array, int length)
 {
   for(int index = 0; index < length; index++)
   {
-    allocate_array_value(array, index, 0);
-  } return array;
+    allocate_array_value(array, index, '\0');
+  }
+  return array;
 }
 
 int* generate_empty_array(const int length)
@@ -43,8 +44,7 @@ int* switch_array_numbers(int* array, int index)
 {
   int switch_value = *(array + index);
   *(array + index) = *(array + (index + 1) );
-  *(array + (index + 1) ) = switch_value;
-  return array;
+  *(array + (index + 1) ) = switch_value; return array;
 }
 
 int* bubble_sort_iteration(int* array, int iteration)
@@ -82,16 +82,16 @@ int* remove_array_number(int* array, int length, int num)
   int start = length;
   for(int index = (length - 1); index >= 0; index--)
   {
-    if(*(array + index) == num) { start = index; break; }
+    if(*(array + index) == num) {start = index; break;}
   }
   array = move_array_numbers(array, length, start);
-  return allocate_array_value(array, (length - 1), 0);
+  return allocate_array_value(array,(length - 1),'\0');
 }
 
 int* add_array_number(int* array, int length, int num)
 {
   array = allocate_array_value(array, length, num);
-  return allocate_array_value(array,length+1,'\0');
+  return allocate_array_value(array,length + 1,'\0');
 }
 
 /* Made by Roy Hampus Fridholm */

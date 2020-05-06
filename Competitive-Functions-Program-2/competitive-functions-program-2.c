@@ -37,21 +37,46 @@ int calculate_matrix_length(int** matrix)
   { length += 1; } return length;
 }
 
-int calculate_horizontal_distance(int* point, int* target)
+int matrix_contains_number(int** matrix, const int number)
 {
-  return abs(*(point + 0) - *(target + 0));
+  int length = calculate_matrix_length(matrix);
+  for(int index = 0; index < length; index++)
+  {
+    int a_length = calculate_array_length(
+      *(matrix + index))
+    if(array_contains_number(*(matrix + index), a_length,
+      number)) { return true; }
+  }
+  return false;
 }
 
-int calculate_vertical_distance(int* point, int* target)
+int** move_matrix_number(int** matrix, int* info, int start)
 {
-  return abs(*(point + 1) - *(target + 1));
+  *(matrix + *(info)) = move_array_numbers(
+    *(matrix + *(info)), *(info + 1), start);
+  *(matrix + *(info)) = allocate_array_value(
+    *(matrix + *(info), (*(info + 1) - 1), '\0');
+  return matrix;
 }
 
-int calculate_matrix_distance(int* point, int* target)
+int** remove_matrix_number(int** matrix, int* info, int num)
 {
-  int vertical = calculate_vertical_distance(point, target),
-  horizontal = calculate_horizontal_distance(point, target);
-  return sqrt(pow(horizontal, 2) + pow(vertical, 2));
+  int start = *(info + 1);
+  for(int index = (*(info + 1)-1); index >= 0; index--)
+  {
+    if(*(*(matrix + *(info)) + index == num)
+    { start = index; break; }
+  }
+  return move_matrix_number(matrix, info, start);
+}
+
+int** add_matrix_number(int** matrix, int* info, int num)
+{
+  *(matrix + *(info)) = allocate_array_value(
+    *(matrix + *(info)), *(info + 1), num);
+  *(matrix + *(info)) = allocate_array_value(
+    *(matrix + *(info)), *(info + 1) + 1, '\0');
+  return matrix;
 }
 
 /* Made by Roy Hampus Fridholm */
