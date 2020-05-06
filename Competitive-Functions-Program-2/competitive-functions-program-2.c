@@ -18,6 +18,22 @@ int** generate_matrix_array(int length, int width)
   return matrix;
 }
 
+int** allocate_matrix_value(int** matrix, int m_index,
+  int a_index, int number)
+{
+  *(matrix + m_index) = allocate_array_value(
+    *(matrix + m_index), a_index, number);
+  return matrix;
+}
+
+int** delete_matrix_value(int** matrix, int m_index,
+  int a_index, int length)
+{
+  *(matrix + m_index) = delete_array_value(
+    *(matrix + m_index), length, a_index);
+  return matrix;
+}
+
 int calculate_matrix_length(int** matrix, int a_length)
 {
   int length = 0;
