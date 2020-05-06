@@ -7,7 +7,9 @@ arrays and calculates thingd using it's data. */
 
 int* generate_empty_array(const int);
 int* allocate_array_values(int*, int);
+
 int* allocate_array_value(int*, int, int);
+int* delete_array_value(int*, int, int);
 
 int calculate_array_length(const int*);
 int array_contains_number(int*, int, int);

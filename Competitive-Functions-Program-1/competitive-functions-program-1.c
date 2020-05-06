@@ -93,6 +93,13 @@ int* remove_array_number(int* array, int length,
   return allocate_array_value(array, length, '\0');
 }
 
+int* delete_array_value(int* array, int length,
+  int index)
+{
+  array = move_array_numbers(array, length, index);
+  return allocate_array_value(array, length, '\0');
+}
+
 int* add_array_number(int* array, int length,
   int number)
 {
