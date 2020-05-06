@@ -44,7 +44,7 @@ char* allocate_binary_values(char* binary, int length,
 int calculate_real_binary_length(const int decimal)
 {
   int length = 0; while(decimal > pow(2, length))
-  -  { length = (length + 1); } return length;
+  { length = (length + 1); } return length;
 }
 
 int calculate_nearest_binary_length(const int decimal)
