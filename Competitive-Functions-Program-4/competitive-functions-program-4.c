@@ -11,19 +11,21 @@ char* allocate_string_value(char* string, int index,
   *(string + index) = character; return string;
 }
 
-char* allocate_string_values(char* string, int length)
+// Function takes in total length of string;
+char* allocate_string_values(char* string, int t_length)
 {
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < t_length; index++)
   {
     string = allocate_string_value(string, index, '\0');
   }
   return string;
 }
 
-char* generate_empty_string(const int length)
+// Function takes in total length of string;
+char* generate_empty_string(const int t_length)
 {
-  char* string = malloc(sizeof(string) * length);
-  return allocate_string_values(string, length);
+  char* string = malloc(sizeof(string) * t_length);
+  return allocate_string_values(string, t_length);
 }
 
 int calculate_string_length(const char* string)
@@ -32,12 +34,13 @@ int calculate_string_length(const char* string)
   { length += 1; } return length;
 }
 
-int string_contains_character(char* string, int length,
+// Function takes in current length of string;
+int string_contains_character(char* string, int c_length,
   char character)
 {
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < c_length; index++)
   {
-    if(*(string + index) == character) {return true;}
+    if(*(string + index) == character) { return true; }
   }
   return false;
 }
@@ -50,35 +53,39 @@ char* switch_string_characters(char* string, int index)
   return string;
 }
 
-char* move_string_characters(char* string, int length,
+// Function takes in current length of string;
+char* move_string_characters(char* string, int c_length,
   int start)
 {
-  for(int index = start; index < length; index++)
+  for(int index = start; index < c_length; index++)
   {
     string = switch_string_characters(string, index);
   }
   return string;
 }
 
-char* remove_string_character(char* string, int length,
+// Function takes in current length of string;
+char* remove_string_character(char* string, int c_length,
   char character)
 {
-  int start = length;
-  for(int index = (length - 1); index >= 0; index--)
+  int start = c_length;
+  for(int index = (c_length - 1); index >= 0; index--)
   {
     if(*(string + index) == character)
     { start = index; break; }
   }
-  string = move_string_characters(string,length,start);
-  return allocate_string_value(string, length, '\0');
+  string = move_string_characters(string, c_length,
+    start);
+  return allocate_string_value(string,c_length,'\0');
 }
 
-char* add_string_character(char* string, int length,
+// Function takes in current length of string;
+char* add_string_character(char* string, int c_length,
   char character)
 {
-  string = allocate_string_value(string, length,
+  string = allocate_string_value(string, c_length,
     character);
-  return allocate_string_value(string,length+1,'\0');
+  return allocate_string_value(string,c_length+1,'\0');
 }
 
 /* Made by Roy Hampus Fridholm */

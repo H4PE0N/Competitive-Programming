@@ -9,19 +9,21 @@ characters. */
 #include "../Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
-int reduce_binary_decimal(char* binary, int length,
+// Function takes in total length of binary;
+int reduce_binary_decimal(char* binary, int t_length,
   int decimal)
 {
-  int weight = length - calculate_string_length(binary);
+  int weight = t_length - calculate_string_length(binary);
   if(decimal - pow(2, weight) >= 0)
   { decimal = decimal - pow(2, weight); } return decimal;
 }
 
-char* allocate_binary_value(char* binary, int length,
+// Function takes in total length of binary;
+char* allocate_binary_value(char* binary, int t_length,
   int decimal)
 {
   int index = calculate_string_length(binary), weight =
-  (length - 1) - index;
+  (t_length - 1) - index;
   if(decimal - pow(2, weight) >= 0)
   { binary = add_string_character(binary, index, '1'); }
   else
@@ -29,13 +31,14 @@ char* allocate_binary_value(char* binary, int length,
   return binary;
 }
 
-char* allocate_binary_values(char* binary, int length,
+// Function takes in total length of binary;
+char* allocate_binary_values(char* binary, int t_length,
   int decimal)
 {
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < t_length; index++)
   {
-    binary = allocate_binary_value(binary,length,decimal);
-    decimal = reduce_binary_decimal(binary, length,
+    binary = allocate_binary_value(binary,t_length,decimal);
+    decimal = reduce_binary_decimal(binary, t_length,
       decimal);
   }
   return binary;

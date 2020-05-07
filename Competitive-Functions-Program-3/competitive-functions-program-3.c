@@ -11,16 +11,18 @@ competitive-functions-program-1.h"
 #include "../Competitive-Functions-Program-2/\
 competitive-functions-program-2.h"
 
-int** generate_integer_hashmap(const int length)
+// Function takes in total length of hashmap;
+int** generate_integer_hashmap(const int t_length)
 {
-  return generate_matrix_array(length, 2);
+  return generate_matrix_array(t_length, 2);
 }
 
-int calculate_integer_amount(int* array, int length,
+// Function takes in current length of array;
+int calculate_integer_amount(int* array, int c_length,
   int number)
 {
   int amount = 0;
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < c_length; index++)
   {
     if(*(array + index) == number) { amount += 1; }
   }
@@ -77,10 +79,11 @@ int** allocate_hashmap_value(int** map, int value)
   return map;
 }
 
-int** allocate_array_hashmap(int* array, int length)
+// Function takes in current length of array;
+int** allocate_array_hashmap(int* array,int c_length)
 {
-  int** hashmap =generate_integer_hashmap(length+1);
-  for(int index = 0; index < length; index++)
+  int** hashmap=generate_integer_hashmap(c_length+1);
+  for(int index = 0; index < c_length; index++)
   {
     hashmap = allocate_hashmap_value(hashmap,
       *(array + index));

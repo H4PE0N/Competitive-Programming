@@ -11,41 +11,46 @@ competitive-functions-program-1.h"
 #include "../Competitive-Functions-Program-3/\
 competitive-functions-program-3.h"
 
-double calculate_odd_median(int* array, int length)
+// Function takes in current length of array;
+double calculate_odd_median(int* array, int c_length)
 {
-  array = bubble_sort_array(array, length);
-  return *(array + ( (length - 1) / 2) );
+  array = bubble_sort_array(array, c_length);
+  return *(array + ( (c_length - 1) / 2) );
 }
 
-double calculate_even_median(int* array, int length)
+// Function takes in current length of array;
+double calculate_even_median(int* array, int c_length)
 {
-  array = bubble_sort_array(array, length);
-  double first = (double) *(array + ((length-2) / 2)),
-  second = (double) *(array + ( length / 2));
+  array = bubble_sort_array(array, c_length);
+  double first = (double) *(array + ((c_length-2) / 2)),
+  second = (double) *(array + ( c_length / 2));
   return ( ( second + first) / 2);
 }
 
-double calculate_array_median(int* array, int length)
+// Function takes in current length of array;
+double calculate_array_median(int* array, int c_length)
 {
-  if(length % 2 != 0) // check if length is odd;
-  { return calculate_odd_median(array, length); }
-  else { return calculate_even_median(array, length); }
+  if(c_length % 2 != 0) // check if length is odd;
+  { return calculate_odd_median(array, c_length); }
+  else { return calculate_even_median(array,c_length);}
 }
 
-double calculate_array_average(int* array, int length)
+// Function takes in current length of array;
+double calculate_array_average(int* array, int c_length)
 {
   double array_total = 0;
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < c_length; index++)
   {
     array_total += (double) *(array + index);
   }
-  return (array_total / length);
+  return (array_total / c_length);
 }
 
-int calculate_common_value(int** hashmap, int length)
+// Function takes in current length of array;
+int calculate_common_value(int** hashmap, int c_length)
 {
   int common_index = 0;
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < c_length; index++)
   {
     int current = *(*(hashmap + index) + 1), common =
     *(*(hashmap + common_index) + 1);
@@ -54,9 +59,10 @@ int calculate_common_value(int** hashmap, int length)
   return *(*(hashmap + common_index) + 0);
 }
 
-int calculate_array_typical(int* array, int length)
+// Function takes in current length of array;
+int calculate_array_typical(int* array, int c_length)
 {
-  int** hashmap = allocate_array_hashmap(array,length);
+  int** hashmap=allocate_array_hashmap(array,c_length);
   int hash_length = calculate_hashmap_length(hashmap);
   return calculate_common_value(hashmap, hash_length);
 }
