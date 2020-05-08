@@ -49,15 +49,14 @@ double calculate_array_average(int* array, int c_length)
 // Function takes in current length of hashmap;
 int calculate_common_value(int** hashmap, int c_length)
 {
-  int common_index = 0, changed = 0;
+  int common_key = -1, common_value=*(*(hashmap+0)+1);
   for(int index = 0; index < c_length; index++)
   {
-    int current = *(*(hashmap + index) + 1), common =
-    *(*(hashmap + common_index) + 1);if(current>common)
-    { common_index = index; changed = 1; }
+    if(*(*(hashmap + index) + 1) > common_value)
+    { common_value = *(*(hashmap + index) + 1);
+      common_key = *(*(hashmap + index) + 0); }
   }
-  if(!changed) { return -1; }
-  return *(*(hashmap + common_index) + 0);
+  return common_key;
 }
 
 // Function takes in current length of array;

@@ -37,7 +37,8 @@ char* allocate_binary_values(char* binary, int t_length,
 {
   for(int index = 0; index < t_length; index++)
   {
-    binary = allocate_binary_value(binary,t_length,decimal);
+    binary = allocate_binary_value(binary, t_length,
+      decimal);
     decimal = reduce_binary_decimal(binary, t_length,
       decimal);
   }
@@ -83,7 +84,7 @@ int calculate_decimal_binary(char* binary, int index,
 
 int convert_binary_decimal(char* binary)
 {
-  int length = calculate_string_length(binary),decimal=0;
+  int length=calculate_string_length(binary),decimal=0;
   for(int index = 0; index < length; index++)
   {
     decimal = calculate_decimal_binary(binary, index,
