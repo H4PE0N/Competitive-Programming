@@ -11,7 +11,7 @@ competitive-functions-program-4.h"
 #include "../Competitive-Functions-Program-5/\
 competitive-functions-program-5.h"
 
-// Function takes in total length of binary;
+// Inputs: binary, total length;
 char* binary_left_shifting(char* binary, int t_length)
 {
   char* new_binary = generate_empty_string(t_length);
@@ -24,7 +24,7 @@ char* binary_left_shifting(char* binary, int t_length)
     *(binary + 0));
 }
 
-// Function takes in total length of binary;
+// Inputs: binary, total length;
 char* binary_right_shifting(char* binary, int t_length)
 {
   char* new_binary = generate_empty_string(t_length);
@@ -38,7 +38,7 @@ char* binary_right_shifting(char* binary, int t_length)
   return new_binary;
 }
 
-// Function takes in total length of binary;
+// Inputs: binary, binary, total length;
 char* binary_and_opperation(char* first, char* second,
   int t_length)
 {
@@ -54,7 +54,7 @@ char* binary_and_opperation(char* first, char* second,
   return new_binary;
 }
 
-// Function takes in total length of binary;
+// Inputs: binary, binary, total length;
 char* binary_or_opperation(char* first, char* second,
   int t_length)
 {
@@ -70,7 +70,7 @@ char* binary_or_opperation(char* first, char* second,
   return new_binary;
 }
 
-// Function takes in total length of binary;
+// Inputs: binary, binary, total length;
 char* binary_xor_opperation(char* first, char* second,
   int t_length)
 {
@@ -86,7 +86,7 @@ char* binary_xor_opperation(char* first, char* second,
   return new_binary;
 }
 
-// Function takes in total length of binary;
+// Inputs: binary, binary, total length;
 char* binary_not_opperation(char* binary, int t_length)
 {
   char* new_binary = generate_empty_string(t_length);
