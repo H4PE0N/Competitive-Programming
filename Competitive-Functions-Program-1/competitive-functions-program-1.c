@@ -117,10 +117,11 @@ int* delete_array_value(int* array, int t_length,
 
 // Function takes in current length of array;
 int compare_integer_arrays(int* first, int* second,
-  int length)
+  int c_length)
 {
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < c_length; index++)
   {
+
     if(*(first + index) != *(second + index))
     { return false; }
   }

@@ -12,7 +12,7 @@ int allocate_array_value_test(int* i_array, int index,
   int number, int* o_array)
 {
   i_array = allocate_array_value(i_array,index,number);
-  int length = calculate_array_length(i_array);
+  int length = calculate_array_length(o_array);
   return compare_integer_arrays(i_array,o_array,length);
 }
 
