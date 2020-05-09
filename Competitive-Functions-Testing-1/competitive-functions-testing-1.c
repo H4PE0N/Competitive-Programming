@@ -6,23 +6,21 @@
 #include "../Competitive-Functions-Program-1/\
 competitive-functions-program-1.h"
 
-// Function takes in the number, length and index;
-int allocate_array_value_test(int number, int length,
-  int index)
+// Input array, index, number, output array;
+int allocate_array_value_test(int* i_array, int index,
+  int number, int* o_array)
 {
-  int* array = generate_empty_array(length);
-  array = allocate_array_value(array, index, number);
-  return (*(array + index) == number);
+  i_array = allocate_array_value(i_array,index,number);
+  int length = calculate_array_length(i_array);
+  return compare_integer_arrays(i_array,o_array,length);
 }
 
-// Function takes in the number, length and index;
-int delete_array_value_test(int number, int length,
-  int index)
+// Input array, total length, index, output array;
+int delete_array_value_test(int* i_array, int length,
+  int index, int* o_array)
 {
-  int* array = generate_empty_array(length);
-  array = allocate_array_value(array, index, number);
-  array = delete_array_value(array, length, index);
-  return !array_contains_number(array,length,number);
+  i_array = delete_array_value(i_array,length,index);
+  return compare_integer_arrays(i_array,o_array,length);
 }
 
 /* Made by Roy Hampus Fridholm */

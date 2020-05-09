@@ -115,4 +115,16 @@ int* delete_array_value(int* array, int t_length,
   return allocate_array_value(array, t_length, '\0');
 }
 
+// Function takes in current length of array;
+int compare_integer_arrays(int* first, int* second,
+  int length)
+{
+  for(int index = 0; index < length; index++)
+  {
+    if(*(first + index) != *(second + index))
+    { return false; }
+  }
+  return true;
+}
+
 /* Made by Roy Hampus Fridholm */

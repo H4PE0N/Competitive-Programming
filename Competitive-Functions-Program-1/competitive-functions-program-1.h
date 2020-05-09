@@ -37,6 +37,9 @@ int* bubble_sort_iteration(int*, int);
 
 int* switch_array_numbers(int*, int);
 
+// Function takes in current length of array;
+int compare_integer_arrays(int*, int*, int);
+
 #endif
 
 /* Made by Roy Hampus Fridholm */
