@@ -85,8 +85,8 @@ int** add_matrix_number(int** matrix, int c_length,
   return matrix;
 }
 
-/* Inputs: matrix, matrix, matrix length, array
-length; */
+/* Inputs: first matrix, second matrix, matrix length,
+array length; */
 int compare_matrix_arrays(int** first, int** second,
   int m_length, int a_length)
 {

@@ -30,8 +30,8 @@ int** remove_matrix_number(int**, int, int);
 // Inputs: matrix, current length, number;
 int** add_matrix_number(int**, int, int);
 
-/* Inputs: matrix, matrix, matrix length,
-array length; */
+/* Inputs: first matrix, second matrix, matrix
+length, array length; */
 int compare_matrix_arrays(int**, int**, int,
   int);
 

@@ -41,7 +41,8 @@ int* remove_array_number(int*, int, int);
 // Inputs: array, total length, index;
 int* delete_array_value(int*, int, int);
 
-// Inputs: array, array, total length;
+/* Inputs: first array, second array,
+total length; */
 int compare_integer_arrays(int*, int*,
   int);
 

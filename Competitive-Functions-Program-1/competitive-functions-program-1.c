@@ -119,13 +119,13 @@ int* delete_array_value(int* array, int t_length,
   return allocate_array_value(array, t_length, '\0');
 }
 
-// Inputs: array, array, total length;
-int compare_integer_arrays(int* first, int* second,
+// Inputs: first array, second array, total length;
+int compare_integer_arrays(int* f_array, int* s_array,
   int t_length)
 {
   for(int index = 0; index < t_length; index++)
   {
-    if(*(first + index) != *(second + index))
+    if(*(f_array + index) != *(s_array + index))
     { return false; }
   }
   return true;

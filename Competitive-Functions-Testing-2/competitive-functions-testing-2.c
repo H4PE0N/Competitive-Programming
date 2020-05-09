@@ -32,7 +32,8 @@ int allocate_matrix_value_test(int** i_matrix, int x,
 int delete_matrix_value_test(int** i_matrix, int x,
   int y, int t_length, int** o_matrix)
 {
-  i_matrix = delete_matrix_value(i_matrix,x,y,t_length);
+  i_matrix = delete_matrix_value(i_matrix, x, y,
+    t_length);
   return compare_matrix_arrays(i_matrix, o_matrix,
     x, y);
 }

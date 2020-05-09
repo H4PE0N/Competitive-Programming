@@ -1,6 +1,5 @@
 
-1. Download the GCC Compiler from the internet: "https://sourceforge.net/\
-projects/tdm-gcc/".
+1. Download the GCC Compiler from the internet: "https://sourceforge.net/projects/mingw-w64/".
 
 2. Make sure you have it downloaded by typing "gcc" in the terminal.
 

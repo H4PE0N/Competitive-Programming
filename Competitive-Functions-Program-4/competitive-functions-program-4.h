@@ -32,6 +32,9 @@ char* remove_string_character(char*, int, char);
 // Inputs: string, current length, character;
 char* add_string_character(char*, int, char);
 
+// Inputs: f string, s string, total length;
+int compare_strings_together(char*,char*,int);
+
 #endif
 
 /* Made by Roy Hampus Fridholm */

@@ -91,4 +91,16 @@ char* add_string_character(char* string, int c_length,
   return allocate_string_value(string,c_length+1,'\0');
 }
 
+// Inputs: f string, s string, total length;
+int compare_strings_together(char*f_string,char*s_string,
+  int t_length)
+{
+  for(int index = 0; index < t_length; index++)
+  {
+    if(*(f_string + index) != *(s_string + index))
+    { return false; }
+  }
+  return true;
+}
+
 /* Made by Roy Hampus Fridholm */
