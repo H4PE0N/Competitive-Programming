@@ -26,6 +26,9 @@ int** remove_matrix_number(int**, int, int);
 // Function takes in current length of matrix;
 int** add_matrix_number(int**, int, int);
 
+// Function takes in total length of matrix / array;
+int compare_matrix_arrays(int**, int**, int, int);
+
 #endif
 
 /* Made by Roy Hampus Fridholm */

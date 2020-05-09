@@ -115,13 +115,12 @@ int* delete_array_value(int* array, int t_length,
   return allocate_array_value(array, t_length, '\0');
 }
 
-// Function takes in current length of array;
+// Function takes in total length of array;
 int compare_integer_arrays(int* first, int* second,
-  int c_length)
+  int t_length)
 {
-  for(int index = 0; index < c_length; index++)
+  for(int index = 0; index < t_length; index++)
   {
-
     if(*(first + index) != *(second + index))
     { return false; }
   }

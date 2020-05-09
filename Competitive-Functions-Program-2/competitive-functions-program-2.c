@@ -84,4 +84,17 @@ int** add_matrix_number(int** matrix, int c_length,
   return matrix;
 }
 
+// Function takes in total length of matrix / array;
+int compare_matrix_arrays(int** first, int** second,
+  int a_length, int m_length)
+{
+  for(int index = 0; index < m_length; index++)
+  {
+    if(!compare_integer_arrays(*(first + index),
+      *(second + index), a_length))
+    { return false; }
+  }
+  return true;
+}
+
 /* Made by Roy Hampus Fridholm */
