@@ -48,41 +48,41 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
 }
 
 // Inputs: hashmap, keyword;
-int calculate_keyword_index(int** map, int keyword)
+int calculate_keyword_index(int** hashmap,int keyword)
 {
-  int length = calculate_hashmap_length(map);
+  int length = calculate_hashmap_length(hashmap);
   for(int index = 0; index < length; index++)
   {
-    if(*(*(map + index)) == keyword) { return index; }
+    if(*(*(hashmap + index)) == keyword){return index;}
   }
   return -1;
 }
 
 // Inputs: hashmap, keyword;
-int** increment_hashmap_value(int** map, int keyword)
+int** increment_hashmap_value(int** hashmap,int keyword)
 {
-  int index = calculate_keyword_index(map, keyword);
-  *(*(map + index) + 1) += 1; return map;
+  int index = calculate_keyword_index(hashmap, keyword);
+  *(*(hashmap + index) + 1) += 1; return hashmap;
 }
 
 // Inputs: hashmap, keyword;
-int** generate_hashmap_keyword(int** map, int keyword)
+int** generate_hashmap_keyword(int** hashmap,int keyword)
 {
-  int length = calculate_hashmap_length(map);
-  *(*(map + length) + 0) = keyword;
-  *(*(map + length) + 1) = 1; return map;
+  int length = calculate_hashmap_length(hashmap);
+  *(*(hashmap + length) + 0) = keyword;
+  *(*(hashmap + length) + 1) = 1; return hashmap;
 }
 
 // Inputs: hashmap, keyword;
-int** allocate_hashmap_value(int** map, int keyword)
+int** allocate_hashmap_value(int** hashmap,int keyword)
 {
-  if(!hashmap_keyword_exists(map, keyword))
+  if(!hashmap_keyword_exists(hashmap, keyword))
   {
-    map = generate_hashmap_keyword(map, keyword);
+    hashmap=generate_hashmap_keyword(hashmap,keyword);
   } else {
-    map = increment_hashmap_value(map, keyword);
+    hashmap=increment_hashmap_value(hashmap,keyword);
   }
-  return map;
+  return hashmap;
 }
 
 // Inputs: array, current length;

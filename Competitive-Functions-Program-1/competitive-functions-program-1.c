@@ -120,12 +120,12 @@ int* delete_array_value(int* array, int t_length,
 }
 
 // Inputs: first array, second array, total length;
-int compare_integer_arrays(int* f_array, int* s_array,
+int compare_integer_arrays(int* first, int* second,
   int t_length)
 {
   for(int index = 0; index < t_length; index++)
   {
-    if(*(f_array + index) != *(s_array + index))
+    if(*(first + index) != *(second + index))
     { return false; }
   }
   return true;
