@@ -12,7 +12,7 @@ int allocate_array_value_test(int* i_array, int index,
   int number, int* o_array)
 {
   i_array = allocate_array_value(i_array,index,number);
-  int length = calculate_array_length(o_array);
+  int length = calculate_array_length(i_array);
   return compare_integer_arrays(i_array,o_array,length);
 }
 
@@ -50,8 +50,8 @@ int calculate_array_length_test(int* i_array, int length)
 int array_contains_number_test(int* i_array, int length,
   int number, int boolean)
 {
-  int answer=array_contains_number(i_array,length,number);
-  return (answer == boolean);
+  int output=array_contains_number(i_array,length,number);
+  return (output == boolean);
 }
 
 // Input array, index, output array;
@@ -59,7 +59,7 @@ int switch_array_numbers_test(int* i_array, int index,
   int* o_array)
 {
   i_array = switch_array_numbers(i_array, index);
-  int length = calculate_array_length(o_array);
+  int length = calculate_array_length(i_array);
   return compare_integer_arrays(i_array,o_array,length);
 }
 
@@ -68,7 +68,7 @@ int bubble_sort_iteration_test(int* i_array, int index,
   int* o_array)
 {
   i_array = bubble_sort_iteration(i_array, index);
-  int length = calculate_array_length(o_array);
+  int length = calculate_array_length(i_array);
   return compare_integer_arrays(i_array,o_array,length);
 }
 
@@ -85,7 +85,7 @@ int add_array_number_test(int* i_array, int c_length,
   int number, int* o_array)
 {
   i_array = add_array_number(i_array, c_length, number);
-  c_length = calculate_array_length(o_array);
+  c_length = calculate_array_length(i_array);
   return compare_integer_arrays(i_array,o_array,c_length);
 }
 

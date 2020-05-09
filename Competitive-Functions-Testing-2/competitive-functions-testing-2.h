@@ -1,10 +1,30 @@
 
-/*  */
+/* This program contains functions that test the
+functions in file competitive-functions-program-2.h*/
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING__H
-#define COMPETITIVE_FUNCTIONS_TESTING__H
+#ifndef COMPETITIVE_FUNCTIONS_TESTING_2_H
+#define COMPETITIVE_FUNCTIONS_TESTING_2_H
 
+// Input total length and width, output matrix;
+int generate_matrix_array_test(int, int, int**);
 
+// Input matrix, x, y, number, output matrix;
+int allocate_matrix_value_test(int**,int,int,int,int**);
+
+// Input matrix, x, y, total length, output matrix;
+int delete_matrix_value_test(int**,int,int,int,int**);
+
+// Input matrix, totla array length, output length;
+int calculate_matrix_length_test(int**, int, int);
+
+// Input matrix, total length, number, output boolean;
+int matrix_contains_number_test(int**, int, int, int);
+
+// Input matrix, current length, number, output matrix;
+int remove_matrix_number_test(int**, int, int, int**);
+
+// Input matrix, current length, number, output matrix;
+int add_matrix_number_test(int**, int, int, int**);
 
 #endif
 
