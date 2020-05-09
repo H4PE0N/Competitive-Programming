@@ -14,7 +14,7 @@ int reduce_binary_decimal(char* binary, int t_length,
   int decimal)
 {
   int weight = t_length - calculate_string_length(binary);
-  if(decimal - pow(2, weight) >= 0) decimal -= pow(2,weight);
+  if(decimal-pow(2,weight) >= 0) decimal -= pow(2,weight);
   return decimal;
 }
 
