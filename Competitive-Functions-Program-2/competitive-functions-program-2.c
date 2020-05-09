@@ -45,23 +45,22 @@ int calculate_matrix_length(int** matrix, int t_length)
 }
 
 // Function takes in total length of array;
-int matrix_contains_number(int** matrix, int t_length,
-  int number)
+int matrix_contains_number(int** matrix, int m_length,
+  int a_length, int number)
 {
-  int length = calculate_matrix_length(matrix, t_length);
-  for(int index = 0; index <= length; index++)
+  for(int index = 0; index < m_length; index++)
   {
     if(array_contains_number(*(matrix + index),
-    t_length, number)) { return true; }
+    a_length, number)) { return true; }
   }
   return false;
 }
 
-// Function takes in current length of matrix;
-int** remove_matrix_number(int** matrix, int c_length,
+// Function takes in total length of matrix;
+int** remove_matrix_number(int** matrix, int t_length,
   int number)
 {
-  for(int index = c_length; index >= 0; index--)
+  for(int index = t_length - 1; index >= 0; index--)
   {
     int a_length = calculate_array_length(*(matrix +
       index));
@@ -86,13 +85,12 @@ int** add_matrix_number(int** matrix, int c_length,
 
 // Function takes in total length of matrix / array;
 int compare_matrix_arrays(int** first, int** second,
-  int a_length, int m_length)
+  int m_length, int a_length)
 {
   for(int index = 0; index < m_length; index++)
   {
     if(!compare_integer_arrays(*(first + index),
-      *(second + index), a_length))
-    { return false; }
+      *(second + index), a_length)) {return false;}
   }
   return true;
 }

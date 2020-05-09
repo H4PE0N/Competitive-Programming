@@ -47,33 +47,33 @@ int calculate_matrix_length_test(int** i_matrix,
 
 // Input matrix, total length, number, output boolean;
 int matrix_contains_number_test(int** i_matrix,
-  int t_length, int number, int boolean)
+  int m_length, int a_length, int number, int boolean)
 {
-  int output = matrix_contains_number(i_matrix,t_length,
-    number);
+  int output = matrix_contains_number(i_matrix,m_length,
+    a_length, number);
   return (output == boolean);
 }
 
-// Input matrix, current length, number, output matrix;
+// Input matrix, total length, number, output matrix;
 int remove_matrix_number_test(int** i_matrix,
-  int c_length, int number, int** o_matrix)
+  int t_length, int number, int** o_matrix)
 {
-  i_matrix = remove_matrix_number(i_matrix, c_length,
+  i_matrix = remove_matrix_number(i_matrix, t_length,
     number);
   int a_length = calculate_array_length(*(i_matrix));
   return compare_matrix_arrays(i_matrix, o_matrix,
-    c_length, a_length);
+    t_length, a_length);
 }
 
-// Input matrix, current length, number, output matrix;
-int add_matrix_number_test(int** i_matrix, int c_length,
-  int number, int** o_matrix)
+// Input matrix,total length/width,number,output matrix;
+int add_matrix_number_test(int** i_matrix,int m_length,
+  int a_length, int number, int** o_matrix)
 {
-  i_matrix = add_matrix_number(i_matrix, c_length,
-    number);
-  int a_length = calculate_array_length(*(i_matrix));
+  int c_length=calculate_matrix_length(i_matrix,
+    a_length);
+  i_matrix=add_matrix_number(i_matrix,c_length,number);
   return compare_matrix_arrays(i_matrix, o_matrix,
-    c_length, a_length);
+    m_length, a_length);
 }
 
 /* Made by Roy Hampus Fridholm */

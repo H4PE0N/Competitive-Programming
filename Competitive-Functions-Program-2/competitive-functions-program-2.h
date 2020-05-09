@@ -18,9 +18,9 @@ int** delete_matrix_value(int**, int, int, int);
 int calculate_matrix_length(int**, int);
 
 // Function takes in total length of array;
-int matrix_contains_number(int**, int, int);
+int matrix_contains_number(int**, int, int, int);
 
-// Function takes in current length of matrix;
+// Function takes in total length of matrix;
 int** remove_matrix_number(int**, int, int);
 
 // Function takes in current length of matrix;

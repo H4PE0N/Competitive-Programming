@@ -18,13 +18,13 @@ int delete_matrix_value_test(int**,int,int,int,int**);
 int calculate_matrix_length_test(int**, int, int);
 
 // Input matrix, total length, number, output boolean;
-int matrix_contains_number_test(int**, int, int, int);
+int matrix_contains_number_test(int**,int,int,int,int);
 
-// Input matrix, current length, number, output matrix;
+// Input matrix, total length, number, output matrix;
 int remove_matrix_number_test(int**, int, int, int**);
 
 // Input matrix, current length, number, output matrix;
-int add_matrix_number_test(int**, int, int, int**);
+int add_matrix_number_test(int**,int,int,int,int**);
 
 #endif
 

@@ -3,6 +3,7 @@ This is a file that you store your ideas about the
 project.
 
 1. Look through all the files and change if needed.
+  (Delete and allocate function in testing file 2. )
 
 2. Create a new folder that have hexadecimal conversions.
 
