@@ -5,10 +5,10 @@
 #define COMPETITIVE_FUNCTIONS_TESTING_1_H
 
 // Function takes in the number and index;
-int allocate_array_value_test(int, int);
+int allocate_array_value_test(int, int, int);
 
 // Function takes in the number and index;
-int delete_array_value_test(int, int);
+int delete_array_value_test(int, int, int);
 
 #endif
 
