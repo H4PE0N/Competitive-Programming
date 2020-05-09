@@ -24,7 +24,7 @@ int calculate_integer_amount(int* array, int t_length,
   int amount = 0;
   for(int index = 0; index < t_length; index++)
   {
-    if(*(array + index) == number) { amount += 1; }
+    if(*(array + index) == number) amount = (amount + 1);
   }
   return amount;
 }
@@ -42,7 +42,7 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
   int length = calculate_hashmap_length(hashmap);
   for(int index = 0; index < length; index++)
   {
-    if(*(*(hashmap + index)) == keyword){return true;}
+    if(*(*(hashmap + index)) == keyword) return true;
   }
   return false;
 }
@@ -53,7 +53,7 @@ int calculate_keyword_index(int** hashmap,int keyword)
   int length = calculate_hashmap_length(hashmap);
   for(int index = 0; index < length; index++)
   {
-    if(*(*(hashmap + index)) == keyword){return index;}
+    if(*(*(hashmap + index)) == keyword) return index;
   }
   return -1;
 }

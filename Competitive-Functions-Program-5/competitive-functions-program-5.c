@@ -14,8 +14,8 @@ int reduce_binary_decimal(char* binary, int t_length,
   int decimal)
 {
   int weight = t_length - calculate_string_length(binary);
-  if(decimal - pow(2, weight) >= 0)
-  { decimal = decimal - pow(2, weight); } return decimal;
+  if(decimal - pow(2, weight) >= 0) decimal -= pow(2,weight);
+  return decimal;
 }
 
 // Inputs: binary, total length, decimal;
@@ -26,8 +26,7 @@ char* allocate_binary_value(char* binary, int t_length,
   (t_length - 1) - index;
   if(decimal - pow(2, weight) >= 0)
   { binary = add_string_character(binary, index, '1'); }
-  else
-  { add_string_character(binary, index, '0'); }
+  else add_string_character(binary, index, '0');
   return binary;
 }
 
@@ -56,7 +55,7 @@ int calculate_real_binary_length(const int decimal)
 int calculate_nearest_binary_length(const int decimal)
 {
   int chars = 0, length = 2;
-  while(decimal >= pow(2, chars)) {chars = (chars + 1);}
+  while(decimal >= pow(2, chars)) chars = (chars + 1);
   while(chars > pow(2, length))
   { length = (length + 1); } return pow(2, length);
 }

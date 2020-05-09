@@ -42,7 +42,7 @@ int string_contains_character(char* string, int t_length,
 {
   for(int index = 0; index < t_length; index++)
   {
-    if(*(string + index) == character) { return true; }
+    if(*(string + index) == character) return true;
   }
   return false;
 }
@@ -74,8 +74,7 @@ char* remove_string_character(char* string, int c_length,
   int start = c_length;
   for(int index = (c_length - 1); index >= 0; index--)
   {
-    if(*(string + index) == character)
-    { start = index; break; }
+    if(*(string+index) == character)start = index;break;
   }
   string = move_string_characters(string, c_length,
     start);

@@ -32,7 +32,7 @@ double calculate_array_median(int* array, int c_length)
 {
   if(c_length % 2 != 0) // check if length is odd;
   { return calculate_odd_median(array, c_length); }
-  else { return calculate_even_median(array,c_length);}
+  else return calculate_even_median(array,c_length);
 }
 
 // Inputs: array, current length;

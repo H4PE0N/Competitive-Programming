@@ -42,7 +42,7 @@ int array_contains_number(int* array, int t_length,
 {
   for(int index = 0; index < t_length; index++)
   {
-    if(*(array + index) == number) { return true; }
+    if(*(array + index) == number) return true;
   }
   return false;
 }

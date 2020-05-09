@@ -53,7 +53,7 @@ int matrix_contains_number(int** matrix, int m_length,
   for(int index = 0; index < m_length; index++)
   {
     if(array_contains_number(*(matrix + index),
-    a_length, number)) { return true; }
+    a_length, number)) return true;
   }
   return false;
 }
@@ -67,9 +67,8 @@ int** remove_matrix_number(int** matrix, int t_length,
     int a_length = calculate_array_length(*(matrix +
       index));
     if(array_contains_number(*(matrix + index),a_length,
-      number)) { *(matrix + index) =
-      remove_array_number(*(matrix + index), a_length,
-      number); break; }
+      number)) *(matrix + index) = remove_array_number(
+      *(matrix + index), a_length, number); break;
   }
   return matrix;
 }
@@ -93,7 +92,7 @@ int compare_matrix_arrays(int** first, int** second,
   for(int index = 0; index < m_length; index++)
   {
     if(!compare_integer_arrays(*(first + index),
-      *(second + index), a_length)) {return false;}
+      *(second + index), a_length)) return false;
   }
   return true;
 }
