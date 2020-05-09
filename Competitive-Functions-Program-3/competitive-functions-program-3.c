@@ -11,30 +11,32 @@ competitive-functions-program-1.h"
 #include "../Competitive-Functions-Program-2/\
 competitive-functions-program-2.h"
 
-// Function takes in total length of hashmap;
+// Inputs: total length;
 int** generate_integer_hashmap(const int t_length)
 {
   return generate_matrix_array(t_length, 2);
 }
 
-// Function takes in current length of array;
-int calculate_integer_amount(int* array, int c_length,
+// Inputs: array, total length, number;
+int calculate_integer_amount(int* array, int t_length,
   int number)
 {
   int amount = 0;
-  for(int index = 0; index < c_length; index++)
+  for(int index = 0; index < t_length; index++)
   {
     if(*(array + index) == number) { amount += 1; }
   }
   return amount;
 }
 
+// Inputs: hashmap;
 int calculate_hashmap_length(int** hashmap)
 {
   int index = 0; while(*(*(hashmap + index) + 1) != 0)
   { index++; } return index;
 }
 
+// Inputs: hashmap, keyword;
 int hashmap_keyword_exists(int** hashmap, int keyword)
 {
   int length = calculate_hashmap_length(hashmap);
@@ -45,6 +47,7 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
   return false;
 }
 
+// Inputs: hashmap, keyword;
 int calculate_keyword_index(int** map, int keyword)
 {
   int length = calculate_hashmap_length(map);
@@ -55,12 +58,14 @@ int calculate_keyword_index(int** map, int keyword)
   return -1;
 }
 
+// Inputs: hashmap, keyword;
 int** increment_hashmap_value(int** map, int keyword)
 {
   int index = calculate_keyword_index(map, keyword);
   *(*(map + index) + 1) += 1; return map;
 }
 
+// Inputs: hashmap, keyword;
 int** generate_hashmap_keyword(int** map, int keyword)
 {
   int length = calculate_hashmap_length(map);
@@ -68,6 +73,7 @@ int** generate_hashmap_keyword(int** map, int keyword)
   *(*(map + length) + 1) = 1; return map;
 }
 
+// Inputs: hashmap, keyword;
 int** allocate_hashmap_value(int** map, int keyword)
 {
   if(!hashmap_keyword_exists(map, keyword))
@@ -79,7 +85,7 @@ int** allocate_hashmap_value(int** map, int keyword)
   return map;
 }
 
-// Function takes in current length of array;
+// Inputs: array, current length;
 int** allocate_array_hashmap(int* array,int c_length)
 {
   int** hashmap=generate_integer_hashmap(c_length+1);
@@ -91,6 +97,7 @@ int** allocate_array_hashmap(int* array,int c_length)
   return hashmap;
 }
 
+// Inputs: hashmap;
 int* hashmap_keyword_array(int** hashmap)
 {
   int length = calculate_hashmap_length(hashmap);

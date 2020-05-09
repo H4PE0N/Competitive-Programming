@@ -5,13 +5,14 @@ strings, character arrays. */
 #include <stdlib.h>
 #include <stdbool.h>
 
+// Inputs: string, index, character;
 char* allocate_string_value(char* string, int index,
   char character)
 {
   *(string + index) = character; return string;
 }
 
-// Function takes in total length of string;
+// Inputs: string, total length;
 char* allocate_string_values(char* string, int t_length)
 {
   for(int index = 0; index < t_length; index++)
@@ -21,30 +22,32 @@ char* allocate_string_values(char* string, int t_length)
   return string;
 }
 
-// Function takes in total length of string;
+// Inputs: total length;
 char* generate_empty_string(const int t_length)
 {
   char* string = malloc(sizeof(string) * t_length);
   return allocate_string_values(string, t_length);
 }
 
+// Inputs: string;
 int calculate_string_length(const char* string)
 {
   int length = 0; while(*(string + length) != '\0')
   { length += 1; } return length;
 }
 
-// Function takes in current length of string;
-int string_contains_character(char* string, int c_length,
+// Inputs: string, total length, character;
+int string_contains_character(char* string, int t_length,
   char character)
 {
-  for(int index = 0; index < c_length; index++)
+  for(int index = 0; index < t_length; index++)
   {
     if(*(string + index) == character) { return true; }
   }
   return false;
 }
 
+// Inputs: string, index;
 char* switch_string_characters(char* string, int index)
 {
   char switch_value = *(string + index);
@@ -53,7 +56,7 @@ char* switch_string_characters(char* string, int index)
   return string;
 }
 
-// Function takes in current length of string;
+// Inputs: string, current length, start;
 char* move_string_characters(char* string, int c_length,
   int start)
 {
@@ -64,7 +67,7 @@ char* move_string_characters(char* string, int c_length,
   return string;
 }
 
-// Function takes in current length of string;
+// Inputs: string, current length, character;
 char* remove_string_character(char* string, int c_length,
   char character)
 {
@@ -79,7 +82,7 @@ char* remove_string_character(char* string, int c_length,
   return allocate_string_value(string,c_length,'\0');
 }
 
-// Function takes in current length of string;
+// Inputs: string, current length, character;
 char* add_string_character(char* string, int c_length,
   char character)
 {

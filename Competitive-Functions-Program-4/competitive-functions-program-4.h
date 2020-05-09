@@ -5,29 +5,32 @@ with strings, character arrays. */
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_4_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_4_H
 
-// Function takes in total length of string;
-char* generate_empty_string(const int);
+// Inputs: string, index, character;
+char* allocate_string_value(char*, int,char);
 
-// Function takes in total length of string;
+// Inputs: string, total length;
 char* allocate_string_values(char*, int);
 
-char* allocate_string_value(char*, int, char);
+// Inputs: total length;
+char* generate_empty_string(const int);
 
+// Inputs: string;
 int calculate_string_length(const char*);
 
-// Function takes in current length of string;
-int string_contains_character(char*, int, char);
+// Inputs: string, total length, character;
+int string_contains_character(char*,int,char);
 
-// Function takes in current length of string;
-char* add_string_character(char*, int, char);
+// Inputs: string, index;
+char* switch_string_characters(char*, int);
 
-// Function takes in current length of string;
-char* remove_string_character(char*, int, char);
-
-// Function takes in current length of string;
+// Inputs: string, current length, start;
 char* move_string_characters(char*, int, int);
 
-char* switch_string_characters(char*, int);
+// Inputs: string, current length, character;
+char* remove_string_character(char*, int, char);
+
+// Inputs: string, current length, character;
+char* add_string_character(char*, int, char);
 
 #endif
 

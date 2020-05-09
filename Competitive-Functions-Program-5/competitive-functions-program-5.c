@@ -9,7 +9,7 @@ characters. */
 #include "../Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
-// Function takes in total length of binary;
+// Inputs: binary, total length, decimal;
 int reduce_binary_decimal(char* binary, int t_length,
   int decimal)
 {
@@ -18,7 +18,7 @@ int reduce_binary_decimal(char* binary, int t_length,
   { decimal = decimal - pow(2, weight); } return decimal;
 }
 
-// Function takes in total length of binary;
+// Inputs: binary, total length, decimal;
 char* allocate_binary_value(char* binary, int t_length,
   int decimal)
 {
@@ -31,7 +31,7 @@ char* allocate_binary_value(char* binary, int t_length,
   return binary;
 }
 
-// Function takes in total length of binary;
+// Inputs: binary, total length, decimal;
 char* allocate_binary_values(char* binary, int t_length,
   int decimal)
 {
@@ -45,12 +45,14 @@ char* allocate_binary_values(char* binary, int t_length,
   return binary;
 }
 
+// Inputs: decimal;
 int calculate_real_binary_length(const int decimal)
 {
   int length = 0; while(decimal > pow(2, length))
   { length = (length + 1); } return length;
 }
 
+// Inputs: decimal;
 int calculate_nearest_binary_length(const int decimal)
 {
   int chars = 0, length = 2;
@@ -59,6 +61,7 @@ int calculate_nearest_binary_length(const int decimal)
   { length = (length + 1); } return pow(2, length);
 }
 
+// Inputs: decimal;
 char* convert_decimal_binary(const int decimal)
 {
   int length = calculate_nearest_binary_length(decimal);
@@ -66,11 +69,13 @@ char* convert_decimal_binary(const int decimal)
   return allocate_binary_values(binary, length, decimal);
 }
 
+// Inputs: character;
 char* convert_character_binary(char character)
 {
   return convert_decimal_binary(character);
 }
 
+// Inputs: binary, index, decimal;
 int calculate_decimal_binary(char* binary, int index,
   int decimal)
 {
@@ -82,6 +87,7 @@ int calculate_decimal_binary(char* binary, int index,
   return decimal;
 }
 
+// Inputs: binary;
 int convert_binary_decimal(char* binary)
 {
   int length=calculate_string_length(binary),decimal=0;
