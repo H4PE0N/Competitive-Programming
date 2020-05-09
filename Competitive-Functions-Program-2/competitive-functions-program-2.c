@@ -8,7 +8,7 @@ matrixis and some data that have with it to do. */
 #include "../Competitive-Functions-Program-1/\
 competitive-functions-program-1.h"
 
-// Function takes in total length and width;
+// Inputs: total length, total width;
 int** generate_matrix_array(int t_length, int t_width)
 {
   int** matrix = malloc(sizeof(matrix) * t_length);
@@ -19,6 +19,7 @@ int** generate_matrix_array(int t_length, int t_width)
   return matrix;
 }
 
+// Inputs: matrix, matrix index, array index, number;
 int** allocate_matrix_value(int** matrix, int m_index,
   int a_index, int number)
 {
@@ -27,7 +28,8 @@ int** allocate_matrix_value(int** matrix, int m_index,
   return matrix;
 }
 
-// Function takes in total length of array;
+/* Inputs: matrix, matrix index, array index, total
+length; */
 int** delete_matrix_value(int** matrix, int m_index,
   int a_index, int t_length)
 {
@@ -36,7 +38,7 @@ int** delete_matrix_value(int** matrix, int m_index,
   return matrix;
 }
 
-// Function takes in total length of array;
+// Inputs: matrix, total length;
 int calculate_matrix_length(int** matrix, int t_length)
 {
   int length = 0;
@@ -44,7 +46,7 @@ int calculate_matrix_length(int** matrix, int t_length)
   >= t_length) { length += 1; } return length;
 }
 
-// Function takes in total length of array;
+// Inputs: matrix, matrix length, array length, number;
 int matrix_contains_number(int** matrix, int m_length,
   int a_length, int number)
 {
@@ -56,7 +58,7 @@ int matrix_contains_number(int** matrix, int m_length,
   return false;
 }
 
-// Function takes in total length of matrix;
+// Inputs: matrix, total length, number;
 int** remove_matrix_number(int** matrix, int t_length,
   int number)
 {
@@ -72,7 +74,7 @@ int** remove_matrix_number(int** matrix, int t_length,
   return matrix;
 }
 
-// Function takes in current length of matrix;
+// Inputs: matrix, current length, number;
 int** add_matrix_number(int** matrix, int c_length,
   int number)
 {
@@ -83,7 +85,8 @@ int** add_matrix_number(int** matrix, int c_length,
   return matrix;
 }
 
-// Function takes in total length of matrix / array;
+/* Inputs: matrix, matrix, matrix length, array
+length; */
 int compare_matrix_arrays(int** first, int** second,
   int m_length, int a_length)
 {

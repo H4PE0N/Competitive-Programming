@@ -10,7 +10,7 @@ competitive-functions-program-1.h"
 #include "../Competitive-Functions-Program-2/\
 competitive-functions-program-2.h"
 
-// Input total length and width, output matrix;
+// Inputs: total length, total width, o matrix;
 int generate_matrix_array_test(int t_length,int t_width,
   int** o_matrix)
 {
@@ -19,7 +19,7 @@ int generate_matrix_array_test(int t_length,int t_width,
     t_length, t_width);
 }
 
-// Input matrix, x, y, number, output matrix;
+// Inputs: i matrix, x, y, number, o matrix;
 int allocate_matrix_value_test(int** i_matrix, int x,
   int y, int number, int** o_matrix)
 {
@@ -28,7 +28,7 @@ int allocate_matrix_value_test(int** i_matrix, int x,
     x, y);
 }
 
-// Input matrix, x, y, total length, output matrix;
+// Inputs: i matrix, x, y, total length, o matrix;
 int delete_matrix_value_test(int** i_matrix, int x,
   int y, int t_length, int** o_matrix)
 {
@@ -37,7 +37,7 @@ int delete_matrix_value_test(int** i_matrix, int x,
     x, y);
 }
 
-// Input matrix, totla array length, output length;
+// Inputs: i matrix, total array length, o length;
 int calculate_matrix_length_test(int** i_matrix,
   int i_length, int o_length)
 {
@@ -45,7 +45,8 @@ int calculate_matrix_length_test(int** i_matrix,
   return (length == o_length);
 }
 
-// Input matrix, total length, number, output boolean;
+/* Inputs: i matrix, m length, a length number,
+o boolean; */
 int matrix_contains_number_test(int** i_matrix,
   int m_length, int a_length, int number, int boolean)
 {
@@ -54,7 +55,7 @@ int matrix_contains_number_test(int** i_matrix,
   return (output == boolean);
 }
 
-// Input matrix, total length, number, output matrix;
+// Inputs: i matrix, total length, number, o matrix;
 int remove_matrix_number_test(int** i_matrix,
   int t_length, int number, int** o_matrix)
 {
@@ -65,7 +66,8 @@ int remove_matrix_number_test(int** i_matrix,
     t_length, a_length);
 }
 
-// Input matrix,total length/width,number,output matrix;
+/* Inputs: i matrix, m length, a length, number,
+o matrix; */
 int add_matrix_number_test(int** i_matrix,int m_length,
   int a_length, int number, int** o_matrix)
 {
