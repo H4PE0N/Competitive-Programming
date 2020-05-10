@@ -8,9 +8,6 @@ binary strings and bitwise operations. */
 #include "../Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
-#include "../Competitive-Functions-Program-5/\
-competitive-functions-program-5.h"
-
 // Inputs: binary, total length;
 char* binary_left_shifting(char* binary, int t_length)
 {

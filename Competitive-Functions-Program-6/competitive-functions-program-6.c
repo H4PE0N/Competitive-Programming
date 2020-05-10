@@ -8,6 +8,9 @@ probability and calculations about arrays. */
 #include "../Competitive-Functions-Program-1/\
 competitive-functions-program-1.h"
 
+#include "../Competitive-Functions-Program-2/\
+competitive-functions-program-2.h"
+
 #include "../Competitive-Functions-Program-3/\
 competitive-functions-program-3.h"
 
@@ -62,9 +65,10 @@ int calculate_common_value(int** hashmap, int c_length)
 // Inputs: array, current length;
 int calculate_array_typical(int* array, int c_length)
 {
-  int** hashmap=allocate_array_hashmap(array,c_length);
-  int hash_length = calculate_hashmap_length(hashmap);
-  return calculate_common_value(hashmap, hash_length);
+  int** hashmap = allocate_array_hashmap(array,
+    c_length);
+  int hash_length=calculate_hashmap_length(hashmap);
+  return calculate_common_value(hashmap,hash_length);
 }
 
 /* Made by Roy Hampus Fridholm */
