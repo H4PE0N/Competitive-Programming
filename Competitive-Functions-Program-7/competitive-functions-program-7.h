@@ -1,6 +1,6 @@
 
-/* This program contains functions that deals
-with binary strings and bitwise operations. */
+/* This program do opperations to binary
+strings. */
 
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_7_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_7_H

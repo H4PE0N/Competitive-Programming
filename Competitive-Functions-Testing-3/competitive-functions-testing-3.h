@@ -1,8 +1,9 @@
 
-/*  */
+/* This program contains functions that test the
+functions in file competitive-functions-program-3.h */
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING__H
-#define COMPETITIVE_FUNCTIONS_TESTING__H
+#ifndef COMPETITIVE_FUNCTIONS_TESTING_3_H
+#define COMPETITIVE_FUNCTIONS_TESTING_3_H
 
 
 

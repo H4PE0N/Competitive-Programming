@@ -71,7 +71,7 @@ char* convert_decimal_binary(const int decimal)
 {
   int length = calculate_nearest_binary_length(decimal);
   char* binary = generate_empty_string(length);
-  return allocate_binary_values(binary, length, decimal);
+  return allocate_binary_values(binary,length,decimal);
 }
 
 // Inputs: character;

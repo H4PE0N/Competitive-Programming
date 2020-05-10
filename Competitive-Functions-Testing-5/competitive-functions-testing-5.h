@@ -6,7 +6,7 @@ functions in file competitive-functions-program-5.h */
 #define COMPETITIVE_FUNCTIONS_TESTING_5_H
 
 // Inputs: binary, total length, decimal, boolean
-int binary_decimal_enough_test(char*, int, int, int);
+int binary_decimal_enough_test(char*,int,int,int);
 
 /* Inputs: binary, total length, input decimal,
 output decimal; */
@@ -34,7 +34,8 @@ int convert_character_binary_test(char, char*);
 
 /* Inputs: binary, index, input decimal,
 output decimal */
-int calculate_decimal_binary_test(char*,int,int,int);
+int calculate_decimal_binary_test(char*, int, int,
+  int);
 
 // Inputs: binary, output decimal;
 int convert_binary_decimal_test(char*, int);

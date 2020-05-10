@@ -5,8 +5,9 @@ functions in file competitive-functions-program-4.h */
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_4_H
 #define COMPETITIVE_FUNCTIONS_TESTING_4_H
 
-// Inputs: input string, index, character,output string;
-int allocate_string_value_test(char*, int, char, char*);
+/* Inputs: input string, index, character,
+output string; */
+int allocate_string_value_test(char*,int,char,char*);
 
 // Inputs: input string, total length, output string;
 int allocate_string_values_test(char*, int, char*);
@@ -33,7 +34,7 @@ int remove_string_character_test(char*,int,char,char*);
 
 /* Inputs: input string, current length, character,
 output string; */
-int add_string_character_test(char*, int, char, char*);
+int add_string_character_test(char*,int,char,char*);
 
 #endif
 

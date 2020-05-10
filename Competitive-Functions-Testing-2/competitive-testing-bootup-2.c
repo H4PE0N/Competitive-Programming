@@ -1,6 +1,6 @@
 
 /* You can run the test functions from file:
-competitive-functions-testing-3.c here. */
+competitive-functions-testing-2.c here. */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,8 +26,8 @@ competitive-functions-program-6.h"
 #include "../Competitive-Functions-Program-7/\
 competitive-functions-program-7.h"
 
-#include "../Competitive-Functions-Testing-3/\
-competitive-functions-testing-3.h"
+#include "../Competitive-Functions-Testing-2/\
+competitive-functions-testing-2.h"
 
 int main(int argc, char** argv)
 {

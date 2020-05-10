@@ -1,6 +1,5 @@
 
-/* This program contains functions that deals with
-binary strings and bitwise operations. */
+/* This program do opperations to binary strings. */
 
 #include <stdlib.h>
 #include <string.h>
