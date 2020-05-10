@@ -66,10 +66,11 @@ int increment_hashmap_value_test(int** i_hashmap,
 }
 
 // Inputs: input hashmap, keyword, output hashmap;
-int generate_hashmap_value_test(int** i_hashmap,
+int generate_hashmap_keyword_test(int** i_hashmap,
   int keyword, int** o_hashmap)
 {
-  i_hashmap=generate_hashmap_value(i_hashmap,keyword);
+  i_hashmap = generate_hashmap_keyword(i_hashmap,
+    keyword);
   int length = calculate_hashmap_length(i_hashmap);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length, 2);

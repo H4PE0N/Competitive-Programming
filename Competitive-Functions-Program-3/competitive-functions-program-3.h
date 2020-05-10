@@ -24,7 +24,7 @@ int calculate_keyword_index(int**, int);
 int** increment_hashmap_value(int**, int);
 
 // Inputs: hashmap, keyword;
-int** generate_hashmap_value(int**, int);
+int** generate_hashmap_keyword(int**, int);
 
 // Inputs: hashmap, keyword;
 int** allocate_hashmap_value(int**, int);
