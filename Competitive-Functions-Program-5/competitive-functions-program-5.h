@@ -7,6 +7,9 @@ decimal and characters. */
 #define COMPETITIVE_FUNCTIONS_PROGRAM_5_H
 
 // Inputs: binary, total length, decimal;
+int binary_decimal_enough(char*, int, int);
+
+// Inputs: binary, total length, decimal;
 int reduce_binary_decimal(char*, int, int);
 
 // Inputs: binary, total length, decimal;

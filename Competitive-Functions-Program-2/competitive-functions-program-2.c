@@ -1,6 +1,6 @@
 
-/*  This program contains functions that deals with
-matrixis and some data that have with it to do. */
+/* This program contains functions about matrix
+and two dimensional arrays. */
 
 #include <stdlib.h>
 #include <stdbool.h>

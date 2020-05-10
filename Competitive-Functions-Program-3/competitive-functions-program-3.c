@@ -1,6 +1,6 @@
 
-/*  This program contains functions that deals with
-hashmaps and manipulation of them. */
+/* This program have functions that make hashmaps out of
+two dimenstional arrays. */
 
 #include <stdlib.h>
 #include <stdbool.h>
@@ -14,7 +14,7 @@ competitive-functions-program-2.h"
 // Inputs: total length;
 int** generate_integer_hashmap(const int t_length)
 {
-  return generate_matrix_array(t_length, 2);
+  return generate_matrix_array( (t_length + 1), 2);
 }
 
 // Inputs: array, total length, number;
@@ -88,7 +88,7 @@ int** allocate_hashmap_value(int** hashmap,int keyword)
 // Inputs: array, current length;
 int** allocate_array_hashmap(int* array,int c_length)
 {
-  int** hashmap=generate_integer_hashmap(c_length+1);
+  int** hashmap = generate_integer_hashmap(c_length);
   for(int index = 0; index < c_length; index++)
   {
     hashmap = allocate_hashmap_value(hashmap,

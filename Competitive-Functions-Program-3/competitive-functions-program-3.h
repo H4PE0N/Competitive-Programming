@@ -1,6 +1,6 @@
 
-/* This program contains functions that deals
-with hashmaps and manipulation of them.*/
+/* This program have functions that make
+hashmaps out of two dimenstional arrays. */
 
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_3_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_3_H

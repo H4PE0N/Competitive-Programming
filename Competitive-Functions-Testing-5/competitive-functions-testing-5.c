@@ -10,6 +10,15 @@ competitive-functions-program-4.h"
 #include "../Competitive-Functions-Program-5/\
 competitive-functions-program-5.h"
 
+// Inputs: binary, total length, decimal, boolean
+int binary_decimal_enough_test(char* binary,
+  int t_length, int decimal, int boolean)
+{
+  int output = binary_decimal_enough(binary, t_length,
+    decimal);
+  return (output == boolean);
+}
+
 /* Inputs: binary, total length, input decimal,
 output decimal; */
 int reduce_binary_decimal_test(char* binary,

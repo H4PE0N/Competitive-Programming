@@ -1,5 +1,6 @@
 
-/* Here can you test and run your funcitons. */
+/* You can run the test functions and see if
+everything work as expected. */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,8 +25,6 @@ competitive-functions-program-6.h"
 
 #include "../Competitive-Functions-Program-7/\
 competitive-functions-program-7.h"
-
-
 
 #include "../Competitive-Functions-Testing-1/\
 competitive-functions-testing-1.h"

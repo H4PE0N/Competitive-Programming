@@ -1,7 +1,6 @@
 
-/* This program contains functions that deals
-with matrixis and some data that have with it
-to do. */
+/* This program contains functions about matrix
+and two dimensional arrays. */
 
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_2_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_2_H

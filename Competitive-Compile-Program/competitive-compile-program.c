@@ -1,5 +1,6 @@
 
-/* A program that you can whrite code */
+/* You can write your program here and copy
+the functions you used to make it work. */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -27,7 +28,6 @@ competitive-functions-program-7.h"
 
 int main(int argc, char** argv)
 {
-  printf("%s\n", "Write your code here!");
   return 0;
 }
 

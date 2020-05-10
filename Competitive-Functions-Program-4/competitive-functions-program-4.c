@@ -1,5 +1,5 @@
 
-/*  This program contains functions that deals with
+/* This program contains functions that deals with
 strings, character arrays. */
 
 #include <stdlib.h>
@@ -25,8 +25,8 @@ char* allocate_string_values(char* string, int t_length)
 // Inputs: total length;
 char* generate_empty_string(const int t_length)
 {
-  char* string = malloc(sizeof(string) * t_length);
-  return allocate_string_values(string, t_length);
+  char* string = malloc(sizeof(string) * (t_length+1));
+  return allocate_string_values(string, (t_length+1));
 }
 
 // Inputs: string;

@@ -25,8 +25,8 @@ int* allocate_array_values(int* array, int t_length)
 // Inputs: total length;
 int* generate_empty_array(const int t_length)
 {
-  int* array = malloc(sizeof(array) * t_length);
-  return allocate_array_values(array, t_length);
+  int* array = malloc(sizeof(array) * (t_length + 1));
+  return allocate_array_values(array, (t_length + 1));
 }
 
 // Inputs: array;
