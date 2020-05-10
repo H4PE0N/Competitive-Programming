@@ -10,7 +10,4 @@ int main(int argc, char** argv)
   return 0;
 }
 
-/* gcc -o competitive-testing-bootup-4 competitive-testing-bootup-4.c \
-competitive-functions-testing-4.c */
-
 /* Made by Roy Hampus Fridholm */

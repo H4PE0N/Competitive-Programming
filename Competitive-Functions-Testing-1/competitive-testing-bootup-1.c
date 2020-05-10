@@ -51,8 +51,4 @@ int main(int argc, char** argv)
   return 0;
 }
 
-/* gcc -o competitive-testing-bootup-1 competitive-testing-bootup-1.c \
-../Competitive-Functions-Program-1/competitive-functions-program-1.c \
-../Competitive-Functions-Testing-1/competitive-functions-testing-1.c */
-
 /* Made by Roy Hampus Fridholm */
