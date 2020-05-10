@@ -6,7 +6,7 @@ with strings, character arrays. */
 #define COMPETITIVE_FUNCTIONS_PROGRAM_4_H
 
 // Inputs: string, index, character;
-char* allocate_string_value(char*, int,char);
+char* allocate_string_value(char*, int, char);
 
 // Inputs: string, total length;
 char* allocate_string_values(char*, int);
@@ -27,7 +27,7 @@ char* switch_string_characters(char*, int);
 char* move_string_characters(char*, int, int);
 
 // Inputs: string, current length, character;
-char* remove_string_character(char*, int, char);
+char* remove_string_character(char*,int,char);
 
 // Inputs: string, current length, character;
 char* add_string_character(char*, int, char);

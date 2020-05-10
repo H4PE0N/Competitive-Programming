@@ -13,13 +13,7 @@ gcc -o competitive-testing-bootup-1 competitive-testing-bootup-1.c \
 ../Competitive-Functions-Program-5/competitive-functions-program-5.c \
 ../Competitive-Functions-Program-6/competitive-functions-program-6.c \
 ../Competitive-Functions-Program-7/competitive-functions-program-7.c \
-../Competitive-Functions-Testing-1/competitive-functions-testing-1.c \
-../Competitive-Functions-Testing-2/competitive-functions-testing-2.c \
-../Competitive-Functions-Testing-3/competitive-functions-testing-3.c \
-../Competitive-Functions-Testing-4/competitive-functions-testing-4.c \
-../Competitive-Functions-Testing-5/competitive-functions-testing-5.c \
-../Competitive-Functions-Testing-6/competitive-functions-testing-6.c \
-../Competitive-Functions-Testing-7/competitive-functions-testing-7.c -lm
+../Competitive-Functions-Testing-1/competitive-functions-testing-1.c -lm
 
 4. To run the program you can type: "./competitive-testing-bootup-1"
 
