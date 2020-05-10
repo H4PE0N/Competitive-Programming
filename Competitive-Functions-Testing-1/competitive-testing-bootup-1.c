@@ -1,6 +1,5 @@
 
-/* This program runs all the tests from file:
-competitive-functions-testing-1.c */
+/* This program starts all the testing functions and prints result. */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -54,6 +53,6 @@ int main(int argc, char** argv)
 
 /* gcc -o competitive-testing-bootup-1 competitive-testing-bootup-1.c \
 ../Competitive-Functions-Program-1/competitive-functions-program-1.c \
-competitive-functions-testing-1.c */
+../Competitive-Functions-Testing-1/competitive-functions-testing-1.c */
 
 /* Made by Roy Hampus Fridholm */

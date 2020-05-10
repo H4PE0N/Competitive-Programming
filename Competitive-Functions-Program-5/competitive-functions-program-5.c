@@ -22,12 +22,13 @@ int reduce_binary_decimal(char* binary, int t_length,
 char* allocate_binary_value(char* binary, int t_length,
   int decimal)
 {
-  int index = calculate_string_length(binary), weight =
-  (t_length - 1) - index;
+  int c_length = calculate_string_length(binary),
+  weight = (t_length - 1) - c_length;
   if(decimal - pow(2, weight) >= 0)
-  { binary = add_string_character(binary, index, '1'); }
-  else add_string_character(binary, index, '0');
-  return binary;
+  {
+    return add_string_character(binary, c_length, '1');
+  }
+  return add_string_character(binary, c_length, '0');
 }
 
 // Inputs: binary, total length, decimal;

@@ -13,7 +13,7 @@ int reduce_binary_decimal(char*, int, int);
 char* allocate_binary_value(char*, int, int);
 
 // Inputs: binary, total length, decimal;
-char* allocate_binary_values(char*, int);
+char* allocate_binary_values(char*, int, int);
 
 // Inputs: decimal;
 int calculate_real_binary_length(const int);
