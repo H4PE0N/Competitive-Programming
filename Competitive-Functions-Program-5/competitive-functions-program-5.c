@@ -14,7 +14,7 @@ int binary_decimal_enough(char* binary, int t_length,
   int decimal)
 {
   int c_length = calculate_string_length(binary);
-  return decimal - pow(1, (t_length-1-c_length)) >= 0;
+  return decimal - pow(2, (t_length-1-c_length)) >= 0;
 }
 
 // Inputs: binary, total length, decimal;
@@ -61,10 +61,9 @@ int calculate_real_binary_length(const int decimal)
 // Inputs: decimal;
 int calculate_nearest_binary_length(const int decimal)
 {
-  int chars = 0, length = 2;
-  while(decimal >= pow(2, chars)) chars = (chars + 1);
-  while(chars > pow(2, length))
-  { length = (length + 1); } return pow(2, length);
+  int length = calculate_real_binary_length(decimal);
+  int index = 2; while(length > pow(2, index))
+  { index = (index + 1); } return pow(2, index);
 }
 
 // Inputs: decimal;
