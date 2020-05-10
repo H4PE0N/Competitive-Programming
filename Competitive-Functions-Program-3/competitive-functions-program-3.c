@@ -48,7 +48,7 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
 }
 
 // Inputs: hashmap, keyword;
-int calculate_keyword_index(int** hashmap,int keyword)
+int calculate_keyword_index(int** hashmap, int keyword)
 {
   int length = calculate_hashmap_length(hashmap);
   for(int index = 0; index < length; index++)
@@ -74,7 +74,7 @@ int** generate_hashmap_keyword(int** hashmap,int keyword)
 }
 
 // Inputs: hashmap, keyword;
-int** allocate_hashmap_value(int** hashmap,int keyword)
+int** allocate_hashmap_value(int** hashmap, int keyword)
 {
   if(!hashmap_keyword_exists(hashmap, keyword))
   {
@@ -86,7 +86,7 @@ int** allocate_hashmap_value(int** hashmap,int keyword)
 }
 
 // Inputs: array, current length;
-int** allocate_array_hashmap(int* array,int c_length)
+int** allocate_array_hashmap(int* array, int c_length)
 {
   int** hashmap = generate_integer_hashmap(c_length);
   for(int index = 0; index < c_length; index++)
