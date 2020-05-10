@@ -1,5 +1,5 @@
 
-/* This program run all the tests from file:
+/* This program runs all the tests from file:
 competitive-functions-testing-1.c */
 
 #include <stdio.h>
@@ -10,14 +10,6 @@ competitive-functions-program-1.h"
 
 #include "../Competitive-Functions-Testing-1/\
 competitive-functions-testing-1.h"
-
-/*
-
-gcc -o competitive-testing-bootup-1 competitive-testing-bootup-1.c \
-../Competitive-Functions-Program-1/competitive-functions-program-1.c \
-competitive-functions-testing-1.c
-
-*/
 
 int main(int argc, char** argv)
 {
@@ -59,5 +51,9 @@ int main(int argc, char** argv)
 
   return 0;
 }
+
+/* gcc -o competitive-testing-bootup-1 competitive-testing-bootup-1.c \
+../Competitive-Functions-Program-1/competitive-functions-program-1.c \
+competitive-functions-testing-1.c */
 
 /* Made by Roy Hampus Fridholm */
