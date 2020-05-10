@@ -37,7 +37,7 @@ int calculate_string_length(const char* string)
 }
 
 // Inputs: string, total length, character;
-int string_contains_character(char* string, int t_length,
+int string_contains_character(char* string,int t_length,
   char character)
 {
   for(int index = 0; index < t_length; index++)
@@ -68,16 +68,16 @@ char* move_string_characters(char* string, int c_length,
 }
 
 // Inputs: string, current length, character;
-char* remove_string_character(char* string, int c_length,
+char* remove_string_character(char* string,int c_length,
   char character)
 {
   int start = c_length;
   for(int index = (c_length - 1); index >= 0; index--)
   {
-    if(*(string+index) == character)start = index;break;
+    if(*(string + index) == character)
+    { start = index; break; }
   }
-  string = move_string_characters(string, c_length,
-    start);
+  string=move_string_characters(string,c_length,start);
   return allocate_string_value(string,c_length,'\0');
 }
 
@@ -91,7 +91,7 @@ char* add_string_character(char* string, int c_length,
 }
 
 // Inputs: first string, second string, total length;
-int compare_strings_together(char* first, char* second,
+int compare_strings_together(char* first,char* second,
   int t_length)
 {
   for(int index = 0; index < t_length; index++)
