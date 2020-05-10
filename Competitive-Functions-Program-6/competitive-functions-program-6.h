@@ -17,6 +17,14 @@ double calculate_array_median(int*, int);
 // Inputs: array, current length;
 double calculate_array_average(int*, int);
 
+// Inputs: hashmap, index, common value;
+int change_common_value(int**, int, int);
+
+/* Inputs: hashmap, index, common value,
+common key; */
+int change_common_key(int**, int, int,
+  int);
+
 // Inputs: hashmap, current length;
 int calculate_common_value(int**, int);
 

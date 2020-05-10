@@ -49,15 +49,34 @@ double calculate_array_average(int* array, int c_length)
   return (array_total / c_length);
 }
 
+// Inputs: hashmap, index, common value;
+int change_common_value(int** hashmap, int index,
+  int common_value)
+{
+  if(*(*(hashmap + index) + 1) > common_value)
+  { return *(*(hashmap + index) + 1); }
+  return common_value;
+}
+
+// Inputs: hashmap, index, common value, common key;
+int change_common_key(int** hashmap, int index,
+  int common_value, int common_key)
+{
+  if(*(*(hashmap + index) + 1) > common_value)
+  { return *(*(hashmap + index) + 0); }
+  return common_key;
+}
+
 // Inputs: hashmap, current length;
 int calculate_common_value(int** hashmap, int c_length)
 {
   int common_key = -1, common_value=*(*(hashmap+0)+1);
   for(int index = 0; index < c_length; index++)
   {
-    if(*(*(hashmap + index) + 1) > common_value)
-    { common_value = *(*(hashmap + index) + 1);
-      common_key = *(*(hashmap + index) + 0); }
+    common_value = change_common_value(hashmap, index,
+      common_value);
+    common_key = change_common_key(hashmap, index,
+      common_value, common_key);
   }
   return common_key;
 }
