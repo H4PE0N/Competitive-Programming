@@ -1,8 +1,4 @@
 
-/*  This program contains functions that deals with
-binary strings and conversions between decimal and
-characters. */
-
 #include <stdlib.h>
 #include <math.h>
 
@@ -103,5 +99,3 @@ int convert_binary_decimal(char* binary)
   }
   return decimal;
 }
-
-/* Made by Roy Hampus Fridholm */

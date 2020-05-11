@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-6.h */
-
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
@@ -88,5 +85,3 @@ int calculate_array_typical_test(int* array,
   int typical=calculate_array_typical(array,c_length);
   return (typical == o_typical);
 }
-
-/* Made by Roy Hampus Fridholm */

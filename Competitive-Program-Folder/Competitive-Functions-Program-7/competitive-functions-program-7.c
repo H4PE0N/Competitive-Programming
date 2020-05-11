@@ -1,6 +1,4 @@
 
-/* This program do opperations to binary strings. */
-
 #include <stdlib.h>
 #include <string.h>
 
@@ -95,5 +93,3 @@ char* binary_not_opperation(char* binary, int t_length)
   }
   return new_binary;
 }
-
-/* Made by Roy Hampus Fridholm */

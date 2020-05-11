@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-2.h*/
-
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_2_H
 #define COMPETITIVE_FUNCTIONS_TESTING_2_H
 
@@ -39,5 +36,3 @@ int add_matrix_number_test(int**, int, int, int,
   int**);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

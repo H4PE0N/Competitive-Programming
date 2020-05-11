@@ -1,7 +1,4 @@
 
-/* This program contains functions that deals with
-probability and calculations about arrays. */
-
 #include <stdlib.h>
 #include <math.h>
 
@@ -89,5 +86,3 @@ int calculate_array_typical(int* array, int c_length)
   int hash_length=calculate_hashmap_length(hashmap);
   return calculate_common_value(hashmap,hash_length);
 }
-
-/* Made by Roy Hampus Fridholm */

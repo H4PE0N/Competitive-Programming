@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-7.h*/
-
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_7_H
 #define COMPETITIVE_FUNCTIONS_TESTING_7_H
 
@@ -30,5 +27,3 @@ int binary_xor_opperation_test(char*, char*, int,
 int binary_not_opperation_test(char*, int, char*);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

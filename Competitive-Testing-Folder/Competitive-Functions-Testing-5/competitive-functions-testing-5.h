@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-5.h */
-
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_5_H
 #define COMPETITIVE_FUNCTIONS_TESTING_5_H
 
@@ -41,5 +38,3 @@ int calculate_decimal_binary_test(char*, int, int,
 int convert_binary_decimal_test(char*, int);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

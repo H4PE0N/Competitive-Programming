@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-4.h */
-
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_4_H
 #define COMPETITIVE_FUNCTIONS_TESTING_4_H
 
@@ -37,5 +34,3 @@ output string; */
 int add_string_character_test(char*,int,char,char*);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

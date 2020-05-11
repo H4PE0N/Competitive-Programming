@@ -1,7 +1,4 @@
 
-/* This program contains functions about matrix
-and two dimensional arrays. */
-
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -96,5 +93,3 @@ int compare_matrix_arrays(int** first, int** second,
   }
   return true;
 }
-
-/* Made by Roy Hampus Fridholm */

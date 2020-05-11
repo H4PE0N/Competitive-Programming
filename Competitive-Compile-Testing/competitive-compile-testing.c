@@ -1,7 +1,4 @@
 
-/* You can run the test functions and see if
-everything work as expected. */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -65,5 +62,3 @@ int main(int argc, char** argv)
 {
   return 0;
 }
-
-/* Made by Roy Hampus Fridholm */

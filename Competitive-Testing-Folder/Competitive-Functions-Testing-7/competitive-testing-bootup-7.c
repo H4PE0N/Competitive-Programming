@@ -1,7 +1,4 @@
 
-/* You can run the test functions from file:
-competitive-functions-testing-7.c here. */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -40,5 +37,3 @@ int main(int argc, char** argv)
 {
   return 0;
 }
-
-/* Made by Roy Hampus Fridholm */

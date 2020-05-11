@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-5.h */
-
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
@@ -106,5 +103,3 @@ int convert_binary_decimal_test(char* binary,
   int decimal = convert_binary_decimal(binary);
   return (decimal == o_decimal);
 }
-
-/* Made by Roy Hampus Fridholm */

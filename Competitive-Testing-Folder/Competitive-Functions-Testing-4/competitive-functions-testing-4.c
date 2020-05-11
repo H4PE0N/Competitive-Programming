@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-4.h */
-
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
@@ -94,5 +91,3 @@ int add_string_character_test(char* i_string,
   return compare_strings_together(i_string,o_string,
     c_length + 1);
 }
-
-/* Made by Roy Hampus Fridholm */

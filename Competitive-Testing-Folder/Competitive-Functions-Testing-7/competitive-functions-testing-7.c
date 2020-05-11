@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-7.h */
-
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
@@ -71,5 +68,3 @@ int binary_not_opperation_test(char* i_binary,
   return compare_strings_together(i_binary, o_binary,
     t_length);
 }
-
-/* Made by Roy Hampus Fridholm */

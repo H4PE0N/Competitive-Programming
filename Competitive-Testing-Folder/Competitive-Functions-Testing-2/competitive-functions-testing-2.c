@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-2.h */
-
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
@@ -83,5 +80,3 @@ int add_matrix_number_test(int** i_matrix,int m_length,
   return compare_matrix_arrays(i_matrix, o_matrix,
     m_length, a_length);
 }
-
-/* Made by Roy Hampus Fridholm */

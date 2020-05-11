@@ -1,7 +1,4 @@
 
-/* This program have functions that make
-hashmaps out of two dimenstional arrays. */
-
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_3_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_3_H
 
@@ -36,5 +33,3 @@ int** allocate_array_hashmap(int*, int);
 int* hashmap_keyword_array(int**);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-1.h */
-
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_1_H
 #define COMPETITIVE_FUNCTIONS_TESTING_1_H
 
@@ -50,5 +47,3 @@ output array; */
 int remove_array_number_test(int*,int,int,int*);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

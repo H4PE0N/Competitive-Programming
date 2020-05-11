@@ -1,7 +1,4 @@
 
-/* This program contains functions that deals
-with strings, character arrays. */
-
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_4_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_4_H
 
@@ -37,5 +34,3 @@ total length; */
 int compare_strings_together(char*,char*,int);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

@@ -1,7 +1,4 @@
 
-/* This program contains functions about matrix
-and two dimensional arrays. */
-
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_2_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_2_H
 
@@ -29,11 +26,9 @@ int** remove_matrix_number(int**, int, int);
 // Inputs: matrix, current length, number;
 int** add_matrix_number(int**, int, int);
 
-/* Inputs: first matrix, second matrix, matrix
-length, array length; */
-int compare_matrix_arrays(int**, int**, int,
+/* Inputs: first matrix, second matrix,
+matrix length, array length; */
+int compare_matrix_arrays(int**,int**,int,
   int);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

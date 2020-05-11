@@ -1,8 +1,4 @@
 
-/* This program contains functions that deals
-with binary strings and conversions between
-decimal and characters. */
-
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_5_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_5_H
 
@@ -37,5 +33,3 @@ int calculate_decimal_binary(char*,int,int);
 int convert_binary_decimal(char*);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

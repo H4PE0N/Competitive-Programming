@@ -1,7 +1,4 @@
 
-/* This program contains functions that deals with
-strings, character arrays. */
-
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -101,5 +98,3 @@ int compare_strings_together(char* first,char* second,
   }
   return true;
 }
-
-/* Made by Roy Hampus Fridholm */

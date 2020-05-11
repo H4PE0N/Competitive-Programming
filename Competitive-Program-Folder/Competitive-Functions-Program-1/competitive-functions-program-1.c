@@ -1,7 +1,4 @@
 
-/* This program contains functions that deals with
-arrays and calculates thingd using it's data. */
-
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -130,5 +127,3 @@ int compare_integer_arrays(int* first, int* second,
   }
   return true;
 }
-
-/* Made by Roy Hampus Fridholm */

@@ -1,7 +1,4 @@
 
-/* This program contains functions that deals with
-arrays and calculates thingd using it's data. */
-
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_1_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_1_H
 
@@ -47,5 +44,3 @@ int compare_integer_arrays(int*, int*,
   int);
 
 #endif
-
-/* Made by Roy Hampus Fridholm */

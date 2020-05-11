@@ -1,7 +1,4 @@
 
-/* This program have functions that make hashmaps out of
-two dimenstional arrays. */
-
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -108,5 +105,3 @@ int* hashmap_keyword_array(int** hashmap)
   }
   return array;
 }
-
-/* Made by Roy Hampus Fridholm */

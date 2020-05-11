@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-1.h */
-
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
@@ -128,5 +125,3 @@ int remove_array_number_test(int* i_array,
   return compare_integer_arrays(i_array,o_array,
     c_length);
 }
-
-/* Made by Roy Hampus Fridholm */

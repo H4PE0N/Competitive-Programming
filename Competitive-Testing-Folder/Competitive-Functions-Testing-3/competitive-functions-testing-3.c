@@ -1,7 +1,4 @@
 
-/* This program contains functions that test the
-functions in file competitive-functions-program-3.h */
-
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
@@ -109,5 +106,3 @@ int hashmap_keyword_array_test(int** hashmap,
   return compare_integer_arrays(array, o_array,
     length);
 }
-
-/* Made by Roy Hampus Fridholm */
