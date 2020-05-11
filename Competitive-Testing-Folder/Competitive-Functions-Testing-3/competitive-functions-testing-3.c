@@ -4,13 +4,16 @@ functions in file competitive-functions-program-3.h */
 
 #include <stdlib.h>
 
-#include "../Competitive-Functions-Program-1/\
+#include "../../Competitive-Program-Folder/\
+Competitive-Functions-Program-1/\
 competitive-functions-program-1.h"
 
-#include "../Competitive-Functions-Program-2/\
+#include "../../Competitive-Program-Folder/\
+Competitive-Functions-Program-2/\
 competitive-functions-program-2.h"
 
-#include "../Competitive-Functions-Program-3/\
+#include "../../Competitive-Program-Folder/\
+Competitive-Functions-Program-3/\
 competitive-functions-program-3.h"
 
 // Inputs: total length, output hashmap;

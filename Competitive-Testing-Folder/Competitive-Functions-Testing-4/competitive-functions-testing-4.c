@@ -4,7 +4,8 @@ functions in file competitive-functions-program-4.h */
 
 #include <stdlib.h>
 
-#include "../Competitive-Functions-Program-4/\
+#include "../../Competitive-Program-Folder/\
+Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
 // Inputs: input string, index, character,output string;

@@ -4,10 +4,12 @@ functions in file competitive-functions-program-7.h */
 
 #include <stdlib.h>
 
-#include "../Competitive-Functions-Program-4/\
+#include "../../Competitive-Program-Folder/\
+Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
-#include "../Competitive-Functions-Program-7/\
+#include "../../Competitive-Program-Folder/\
+Competitive-Functions-Program-7/\
 competitive-functions-program-7.h"
 
 // Inputs: input binary, total length, output binary;
