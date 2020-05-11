@@ -1,0 +1,19 @@
+
+1. Download the GCC Compiler from the internet: "https://sourceforge.net/projects/mingw-w64/".
+
+2. Make sure you have it downloaded by typing "gcc" in the terminal.
+
+3. Then type the following command to compile the program.
+
+gcc -o competitive-compile-program competitive-compile-program.c \
+../Competitive-Functions-Program-1/competitive-functions-program-1.c \
+../Competitive-Functions-Program-2/competitive-functions-program-2.c \
+../Competitive-Functions-Program-3/competitive-functions-program-3.c \
+../Competitive-Functions-Program-4/competitive-functions-program-4.c \
+../Competitive-Functions-Program-5/competitive-functions-program-5.c \
+../Competitive-Functions-Program-6/competitive-functions-program-6.c \
+../Competitive-Functions-Program-7/competitive-functions-program-7.c -lm
+
+4. To run the program you can type: "./competitive-compile-program"
+
+Made by Roy Hampus Fridholm
