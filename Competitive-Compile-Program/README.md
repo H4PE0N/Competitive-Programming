@@ -1,5 +1,5 @@
 
-To compile the program, make sure you have the GCC compiler downloaded,
+To compile the program, make sure you have the GCC compiler downloaded,  
 and execute the following command in the same folder as the program.
 
 ```
@@ -13,7 +13,7 @@ gcc -o competitive-compile-program competitive-compile-program.c \
 ../Competitive-Functions-Program-7/competitive-functions-program-7.c -lm
 ```
 
-After you have compiled the program, type the following command to run
+After you have compiled the program, type the following command to run  
 the executable file, that is going to appear in the folder:
 
 ```
