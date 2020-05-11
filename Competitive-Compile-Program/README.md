@@ -1,5 +1,5 @@
 
-To compile the program, make sure you have the gcc compilor downloaded
+To compile the program, make sure you have the GCC compiler downloaded,
 and execute the following command in the same folder as the program.
 
 ```
@@ -13,7 +13,14 @@ gcc -o competitive-compile-program competitive-compile-program.c \
 ../Competitive-Functions-Program-7/competitive-functions-program-7.c -lm
 ```
 
-To download the GCC compilor you can go to: "https://sourceforge.net/
-projects/mingw-w64/", there you can download the MinGW file.
+After you have compiled the program, type the following command to run
+the executable file, that is going to appear in the folder:
+
+```
+./competitive-compile-program
+```
+
+To download the GCC compiler for this project, go to the website below:
+* https://sourceforge.net/projects/mingw-w64/
 
 Made by Roy Hampus Fridholm
