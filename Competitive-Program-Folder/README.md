@@ -13,3 +13,5 @@ Here is a list of all the folders and what the  program  does:
 * Competiti-Functions-Program-5: Binary Strings
 * Competiti-Functions-Program-6: Statistics, Probability
 * Competiti-Functions-Program-7: Binary Operations
+
+Made by Roy Hampus Fridholm
