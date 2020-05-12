@@ -2,7 +2,7 @@
 This folder has functions that builds up the function library.  
 Every folder has a header file and a c file that has functions  
 for competitive programming. For example has the first  folder  
-functions about arrays, manipulation and calculations.
+functions about integer arrays, manipulation and calculations.
 
 Here is a list of all the folders and what the  program  does:
 

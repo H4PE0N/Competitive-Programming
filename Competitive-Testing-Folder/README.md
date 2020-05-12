@@ -9,7 +9,7 @@ this folder contains test functions of array-functions.
 
 Here is a list of all the folders and what the program does:
 
-* Competiti-Functions-Testing-1: Arrays
+* Competiti-Functions-Testing-1: Integer Arrays
 * Competiti-Functions-Testing-2: Matrices
 * Competiti-Functions-Testing-3: Hashmaps
 * Competiti-Functions-Testing-4: Strings
