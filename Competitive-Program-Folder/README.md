@@ -1,10 +1,10 @@
 
 This folder has functions that builds up the function library.  
-Every foler has a header file and a c file that has functions  
-for competitive programming. For example has the first folder
+Every folder has a header file and a c file that has functions  
+for competitive programming. For example has the first  folder  
 functions about arrays, manipulation and calculations.
 
-Here is a list of all the folders and what the program does:
+Here is a list of all the folders and what the  program  does:
 
 * Competiti-Functions-Program-1: Arrays
 * Competiti-Functions-Program-2: Matrices

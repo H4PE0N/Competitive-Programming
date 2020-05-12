@@ -1,6 +1,6 @@
 
 To compile the program, make sure you have the GCC compiler  
-downloaded, and execute the following command in the same  
+downloaded, and execute the following command in  the  same  
 folder as the program.
 
 ```
@@ -15,7 +15,7 @@ gcc -o competitive-testing-bootup-5 competitive-testing-bootup-5.c \
 ../Competitive-Functions-Testing-5/competitive-functions-testing-5.c -lm
 ```
 
-After you have compiled the program, type the following  
+After you have compiled the  program,  type  the  following  
 command to run the executable file, that is going to appear  
 in the folder:
 
@@ -23,7 +23,7 @@ in the folder:
 ./competitive-testing-bootup-5
 ```
 
-To download the GCC compiler for this project, go to the  
+To download the GCC compiler for this project,  go  to  the  
 website: https://sourceforge.net/projects/mingw-w64/
 
 Made by Roy Hampus Fridholm
