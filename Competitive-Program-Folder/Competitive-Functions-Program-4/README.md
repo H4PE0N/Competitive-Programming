@@ -5,24 +5,14 @@ folder.
 
 Here is a list of all the functions that is  in  the  program:
 
-* allocate_string_value
+* allocate_string_value         switch_string_characters
 
-* allocate_string_values
+* allocate_string_values        move_string_characters
 
-* generate_empty_string
+* generate_empty_string         remove_string_character
 
-* calculate_string_length
+* calculate_string_length       add_string_character
 
-* string_contains_character
-
-* switch_string_characters
-
-* move_string_characters
-
-* remove_string_character
-
-* add_string_character
-
-* compare_strings_together
+* string_contains_character     compare_strings_together
 
 Made by Roy Hampus Fridholm

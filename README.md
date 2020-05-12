@@ -8,4 +8,11 @@ corresponding test function. The test function should take in
 the arguments of the real function and a hypothesis  of  what  
 the function returns, depending on what you put as arguments.
 
+Here is a list of what the folders contains:
+
+* Competitive-Compile-Program: Write and compile a program
+* Competitive-Compile-Testing: Test the library functions
+* Competitive-Program-Folder: A folder with library functions
+* Competitive-Testing-Folder: A folder with test functions
+
 Made by Roy Hampus Fridholm

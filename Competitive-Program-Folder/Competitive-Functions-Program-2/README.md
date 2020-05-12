@@ -5,20 +5,12 @@ function in the other folder.
 
 Here is a list of all the functions that is  in  the  program:
 
-* generate_matrix_array
+* generate_matrix_array       matrix_contains_number
 
-* allocate_matrix_value
+* allocate_matrix_value       remove_matrix_number
 
-* delete_matrix_value
+* delete_matrix_value         add_matrix_number
 
-* calculate_matrix_length
-
-* matrix_contains_number
-
-* remove_matrix_number
-
-* add_matrix_number
-
-* compare_matrix_arrays
+* calculate_matrix_length     compare_matrix_arrays
 
 Made by Roy Hampus Fridholm

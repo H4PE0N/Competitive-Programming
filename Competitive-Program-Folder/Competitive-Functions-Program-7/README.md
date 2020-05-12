@@ -6,16 +6,10 @@ other folder.
 
 Here is a list of all the functions that is  in  the  program:
 
-* binary_left_shifting
+* binary_left_shifting        binary_or_opperation
 
-* binary_right_shifting
+* binary_right_shifting       binary_xor_opperation
 
-* binary_and_opperation
-
-* binary_or_opperation
-
-* binary_xor_opperation
-
-* binary_not_opperation
+* binary_and_opperation       binary_not_opperation
 
 Made by Roy Hampus Fridholm
