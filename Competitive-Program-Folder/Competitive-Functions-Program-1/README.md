@@ -5,6 +5,7 @@ folder.
 
 Here is a list of all the functions that is  in  the  program:
 
+```
 * allocate_array_value        bubble_sort_iteration
 
 * allocate_array_values       bubble_sort_array
@@ -18,5 +19,7 @@ Here is a list of all the functions that is  in  the  program:
 * switch_array_numbers        delete_array_value
 
 * compare_integer_arrays
+
+```
 
 Made by Roy Hampus Fridholm
