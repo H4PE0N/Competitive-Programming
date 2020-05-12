@@ -1,7 +1,7 @@
 
-This  program  contains  functions  that  uses  arrays.  Every  
-function here, has it's own  testing  function  in  the  other  
-folder.
+This program contains  functions  that  uses  integer  arrays.  
+Every function here, has it's  own  testing  function  in  the
+other folder.
 
 Here is a list of all the functions that is  in  the  program:
 
