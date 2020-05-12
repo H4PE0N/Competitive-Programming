@@ -6,19 +6,19 @@ folder.
 Here is a list of all the functions that is  in  the  program:
 
 ```
-* allocate_array_value        bubble_sort_iteration
+allocate_array_value        bubble_sort_iteration
 
-* allocate_array_values       bubble_sort_array
+allocate_array_values       bubble_sort_array
 
-* generate_empty_array        add_array_number
+generate_empty_array        add_array_number
 
-* calculate_array_length      move_array_numbers
+calculate_array_length      move_array_numbers
 
-* array_contains_number       remove_array_number
+array_contains_number       remove_array_number
 
-* switch_array_numbers        delete_array_value
+switch_array_numbers        delete_array_value
 
-* compare_integer_arrays
+compare_integer_arrays
 
 ```
 

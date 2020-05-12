@@ -35,7 +35,7 @@ char* allocate_binary_value(char* binary, int t_length,
 }
 
 // Inputs: binary, total length, decimal;
-char* allocate_binary_values(char* binary, int t_length,
+char* allocate_binary_values(char* binary,int t_length,
   int decimal)
 {
   for(int index = 0; index < t_length; index++)
@@ -48,16 +48,16 @@ char* allocate_binary_values(char* binary, int t_length,
 }
 
 // Inputs: decimal;
-int calculate_real_binary_length(const int decimal)
+int calculate_real_length(const int decimal)
 {
   int length = 0; while(decimal > pow(2, length))
   { length = (length + 1); } return length;
 }
 
 // Inputs: decimal;
-int calculate_nearest_binary_length(const int decimal)
+int calculate_nearest_length(const int decimal)
 {
-  int length = calculate_real_binary_length(decimal);
+  int length = calculate_real_length(decimal);
   int index = 2; while(length > pow(2, index))
   { index = (index + 1); } return pow(2, index);
 }
@@ -65,7 +65,7 @@ int calculate_nearest_binary_length(const int decimal)
 // Inputs: decimal;
 char* convert_decimal_binary(const int decimal)
 {
-  int length = calculate_nearest_binary_length(decimal);
+  int length = calculate_nearest_length(decimal);
   char* binary = generate_empty_string(length);
   return allocate_binary_values(binary,length,decimal);
 }

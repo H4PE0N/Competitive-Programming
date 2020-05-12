@@ -11,17 +11,19 @@ int reduce_binary_decimal_test(char*,int,int,int);
 
 /* Inputs: input binary, total length, decimal,
 output binary; */
-int allocate_binary_value_test(char*,int,int,char*);
+int allocate_binary_value_test(char*, int, int,
+  char*);
 
 /* Inputs: input binary, total length, decimal,
 output binary; */
-int allocate_binary_values_test(char*,int,int,char*);
+int allocate_binary_values_test(char*, int, int,
+  char*);
 
 // Inputs: decimal, output length;
-int calculate_real_binary_length_test(int, int);
+int calculate_real_length_test(int, int);
 
 // Inputs: decimal, output length;
-int calculate_nearest_binary_length_test(int, int);
+int calculate_nearest_length_test(int, int);
 
 // Inputs: decimal, output binary;
 int convert_decimal_binary_test(int, char*);
@@ -31,7 +33,7 @@ int convert_character_binary_test(char, char*);
 
 /* Inputs: binary, index, input decimal,
 output decimal */
-int calculate_decimal_binary_test(char*, int, int,
+int calculate_decimal_binary_test(char*,int,int,
   int);
 
 // Inputs: binary, output decimal;

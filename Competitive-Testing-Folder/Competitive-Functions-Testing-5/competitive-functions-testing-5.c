@@ -33,7 +33,7 @@ output binary; */
 int allocate_binary_value_test(char* i_binary,
   int t_length, int decimal, char* o_binary)
 {
-  i_binary = allocate_binary_value(i_binary, t_length,
+  i_binary = allocate_binary_value(i_binary,t_length,
     decimal);
   return compare_strings_together(i_binary, o_binary,
     t_length);
@@ -44,25 +44,25 @@ output binary; */
 int allocate_binary_values_test(char* i_binary,
   int t_length, int decimal, char* o_binary)
 {
-  i_binary = allocate_binary_values(i_binary, t_length,
+  i_binary = allocate_binary_values(i_binary,t_length,
     decimal);
   return compare_strings_together(i_binary, o_binary,
     t_length);
 }
 
 // Inputs: decimal, output length;
-int calculate_real_binary_length_test(int decimal,
+int calculate_real_length_test(int decimal,
   int o_length)
 {
-  int length = calculate_real_binary_length(decimal);
+  int length = calculate_real_length(decimal);
   return (length == o_length);
 }
 
 // Inputs: decimal, output length;
-int calculate_nearest_binary_length_test(int decimal,
+int calculate_nearest_length_test(int decimal,
   int o_length)
 {
-  int length=calculate_nearest_binary_length(decimal);
+  int length=calculate_nearest_length(decimal);
   return (length == o_length);
 }
 
