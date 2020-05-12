@@ -1,5 +1,7 @@
 
-
+This  program  contains  functions  about  matrices  and   two  
+dimensional arrays. Every function here, has it's own  testing  
+function in the other folder.
 
 Here is a list of all the functions that is  in  the  program:
 
