@@ -37,10 +37,10 @@ int allocate_array_values_test(int* i_array,
 }
 
 // Inputs: total length, output array;
-int generate_empty_array_test(int t_length,
+int generate_integer_array_test(int t_length,
   int* o_array)
 {
-  int* array = generate_empty_array(t_length);
+  int* array = generate_integer_array(t_length);
   return compare_integer_arrays(array, o_array,
     t_length);
 }

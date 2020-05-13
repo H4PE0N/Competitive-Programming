@@ -9,7 +9,7 @@ int* allocate_array_value(int*, int, int);
 int* allocate_array_values(int*, int);
 
 // Inputs: total length;
-int* generate_empty_array(const int);
+int* generate_integer_array(const int);
 
 // Inputs: array;
 int calculate_array_length(const int*);

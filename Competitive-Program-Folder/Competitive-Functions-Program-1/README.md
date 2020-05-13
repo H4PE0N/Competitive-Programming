@@ -10,7 +10,7 @@ allocate_array_value        bubble_sort_iteration
 
 allocate_array_values       bubble_sort_array
 
-generate_empty_array        add_array_number
+generate_integer_array      add_array_number
 
 calculate_array_length      move_array_numbers
 
