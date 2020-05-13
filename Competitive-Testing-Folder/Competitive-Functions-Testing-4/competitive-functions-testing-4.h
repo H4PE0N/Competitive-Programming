@@ -4,10 +4,11 @@
 
 /* Inputs: input string, index, character,
 output string; */
-int allocate_string_value_test(char*,int,char,char*);
+int allocate_string_character_test(char*, int, char,
+  char*);
 
 // Inputs: input string, total length, output string;
-int allocate_string_values_test(char*, int, char*);
+int allocate_string_characters_test(char*, int, char*);
 
 // Inputs: total length, output string;
 int generate_empty_string_test(int, char*);

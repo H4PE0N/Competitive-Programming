@@ -3,10 +3,10 @@
 #define COMPETITIVE_FUNCTIONS_PROGRAM_4_H
 
 // Inputs: string, index, character;
-char* allocate_string_value(char*, int, char);
+char* allocate_string_character(char*,int,char);
 
 // Inputs: string, total length;
-char* allocate_string_values(char*, int);
+char* allocate_string_characters(char*, int);
 
 // Inputs: total length;
 char* generate_empty_string(const int);

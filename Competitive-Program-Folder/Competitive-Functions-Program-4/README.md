@@ -7,9 +7,9 @@ folder.
 Here is a list of all the functions that is  in  the  program:
 
 ```
-allocate_string_value         switch_string_characters
+allocate_string_character     switch_string_characters
 
-allocate_string_values        move_string_characters
+allocate_string_characters    move_string_characters
 
 generate_empty_string         remove_string_character
 

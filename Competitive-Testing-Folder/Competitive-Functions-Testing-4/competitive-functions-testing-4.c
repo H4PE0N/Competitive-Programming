@@ -6,20 +6,21 @@ Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
 // Inputs: input string, index, character,output string;
-int allocate_string_value_test(char* i_string,
+int allocate_string_character_test(char* i_string,
   int index, char character, char* o_string)
 {
-  i_string = allocate_string_value(i_string, index,
+  i_string = allocate_string_character(i_string, index,
     character);
   return compare_strings_together(i_string, o_string,
     calculate_string_length(i_string));
 }
 
 // Inputs: input string, total length, output string;
-int allocate_string_values_test(char* i_string,
+int allocate_string_characters_test(char* i_string,
   int t_length, char* o_string)
 {
-  i_string = allocate_string_values(i_string,t_length);
+  i_string = allocate_string_characters(i_string,
+    t_length);
   return compare_strings_together(i_string, o_string,
     t_length);
 }

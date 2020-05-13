@@ -3,18 +3,18 @@
 #include <stdbool.h>
 
 // Inputs: string, index, character;
-char* allocate_string_value(char* string, int index,
+char* allocate_string_character(char* string, int index,
   char character)
 {
   *(string + index) = character; return string;
 }
 
 // Inputs: string, total length;
-char* allocate_string_values(char* string, int t_length)
+char* allocate_string_characters(char* string,int t_length)
 {
   for(int index = 0; index < t_length; index++)
   {
-    string = allocate_string_value(string, index, '\0');
+    string = allocate_string_character(string,index,'\0');
   }
   return string;
 }
@@ -23,7 +23,7 @@ char* allocate_string_values(char* string, int t_length)
 char* generate_empty_string(const int t_length)
 {
   char* string = malloc(sizeof(string) * (t_length+1));
-  return allocate_string_values(string, (t_length+1));
+  return allocate_string_characters(string, (t_length+1));
 }
 
 // Inputs: string;
@@ -47,9 +47,9 @@ int string_contains_character(char* string,int t_length,
 // Inputs: string, index;
 char* switch_string_characters(char* string, int index)
 {
-  char switch_value = *(string + index);
+  char switch_character = *(string + index);
   *(string + index) = *(string + (index + 1) );
-  *(string + (index + 1) ) = switch_value;
+  *(string + (index + 1) ) = switch_character;
   return string;
 }
 
@@ -75,16 +75,17 @@ char* remove_string_character(char* string,int c_length,
     { start = index; break; }
   }
   string=move_string_characters(string,c_length,start);
-  return allocate_string_value(string,c_length,'\0');
+  return allocate_string_character(string,c_length,'\0');
 }
 
 // Inputs: string, current length, character;
 char* add_string_character(char* string, int c_length,
   char character)
 {
-  string = allocate_string_value(string, c_length,
+  string = allocate_string_character(string, c_length,
     character);
-  return allocate_string_value(string,c_length+1,'\0');
+  return allocate_string_character(string, c_length + 1,
+    '\0');
 }
 
 // Inputs: first string, second string, total length;
