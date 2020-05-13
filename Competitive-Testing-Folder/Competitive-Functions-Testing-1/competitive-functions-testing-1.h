@@ -2,17 +2,17 @@
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_1_H
 #define COMPETITIVE_FUNCTIONS_TESTING_1_H
 
-/* Inputs: input array, index, number,
+/* Inputs: input array, index, integer,
 output array; */
-int allocate_array_value_test(int*,int,int,int*);
+int allocate_array_integer_test(int*,int,int,int*);
 
 /* Inputs: input array, total length, index,
 output array; */
-int delete_array_value_test(int*,int,int,int*);
+int delete_array_integer_test(int*,int,int,int*);
 
 /* Inputs: input array, total length,
 output array; */
-int allocate_array_values_test(int*, int, int*);
+int allocate_array_integers_test(int*, int, int*);
 
 // Inputs: total length, output array;
 int generate_integer_array_test(int, int*);
@@ -20,12 +20,12 @@ int generate_integer_array_test(int, int*);
 // Inputs: input array, length;
 int calculate_array_length_test(int*, int);
 
-/* Inputs: input array, total length, number,
+/* Inputs: input array, total length, integer,
 boolean; */
-int array_contains_number_test(int*,int,int,int);
+int array_contains_integer_test(int*,int,int,int);
 
 // Inputs: input array, index, output array;
-int switch_array_numbers_test(int*, int, int*);
+int switch_array_integers_test(int*, int, int*);
 
 // Inputs: input array, index, output array;
 int bubble_sort_iteration_test(int*, int, int*);
@@ -34,16 +34,16 @@ int bubble_sort_iteration_test(int*, int, int*);
 array; */
 int bubble_sort_array_test(int*, int, int*);
 
-/* Inputs: input array, current length, number,
+/* Inputs: input array, current length, integer,
 output array; */
-int add_array_number_test(int*, int, int, int*);
+int add_array_integer_test(int*, int, int, int*);
 
 /* Inputs: input array, current length, start,
 output array; */
-int move_array_numbers_test(int*,int,int,int*);
+int move_array_integers_test(int*,int,int,int*);
 
-/* Inputs: input array, current length, number,
+/* Inputs: input array, current length, integer,
 output array; */
-int remove_array_number_test(int*,int,int,int*);
+int remove_array_integer_test(int*,int,int,int*);
 
 #endif

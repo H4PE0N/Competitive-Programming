@@ -5,12 +5,13 @@
 Competitive-Functions-Program-1/\
 competitive-functions-program-1.h"
 
-// Inputs: input array, index, number, output array;
-int allocate_array_value_test(int* i_array,
-  int index, int number, int* o_array)
+/* Inputs: input array, index, integer,
+output array; */
+int allocate_array_integer_test(int* i_array,
+  int index, int integer, int* o_array)
 {
-  i_array = allocate_array_value(i_array,index,
-    number);
+  i_array = allocate_array_integer(i_array,index,
+    integer);
   int length = calculate_array_length(i_array);
   return compare_integer_arrays(i_array,o_array,
     length);
@@ -18,20 +19,21 @@ int allocate_array_value_test(int* i_array,
 
 /* Inputs: input array, total length, index,
 output array; */
-int delete_array_value_test(int* i_array,
+int delete_array_integer_test(int* i_array,
   int t_length, int index, int* o_array)
 {
-  i_array = delete_array_value(i_array, t_length,
+  i_array = delete_array_integer(i_array, t_length,
     index);
   return compare_integer_arrays(i_array, o_array,
     t_length);
 }
 
 // Inputs: input array, total length, output array;
-int allocate_array_values_test(int* i_array,
+int allocate_array_integers_test(int* i_array,
   int t_length, int* o_array)
 {
-  i_array = allocate_array_values(i_array,t_length);
+  i_array = allocate_array_integers(i_array,
+    t_length);
   return compare_integer_arrays(i_array, o_array,
     t_length);
 }
@@ -53,20 +55,20 @@ int calculate_array_length_test(int* i_array,
   return (o_length == length);
 }
 
-/* Inputs: input array, total length, number,
+/* Inputs: input array, total length, integer,
 boolean; */
-int array_contains_number_test(int* i_array,
-  int t_length, int number, int boolean)
+int array_contains_integer_test(int* i_array,
+  int t_length, int integer, int boolean)
 {
-  int output=array_contains_number(i_array,
-    t_length, number); return (output == boolean);
+  int output=array_contains_integer(i_array,
+    t_length, integer); return (output == boolean);
 }
 
 // Inputs: input array, index, output array;
-int switch_array_numbers_test(int* i_array,
+int switch_array_integers_test(int* i_array,
   int index, int* o_array)
 {
-  i_array = switch_array_numbers(i_array, index);
+  i_array = switch_array_integers(i_array, index);
   int length = calculate_array_length(i_array);
   return compare_integer_arrays(i_array ,o_array,
     length);
@@ -92,13 +94,13 @@ int bubble_sort_array_test(int* i_array,
     c_length);
 }
 
-/* Inputs: input array, current length, number,
+/* Inputs: input array, current length, integer,
 output array; */
-int add_array_number_test(int* i_array,
-  int c_length, int number, int* o_array)
+int add_array_integer_test(int* i_array,
+  int c_length, int integer, int* o_array)
 {
-  i_array = add_array_number(i_array, c_length,
-    number);
+  i_array = add_array_integer(i_array, c_length,
+    integer);
   c_length = calculate_array_length(i_array);
   return compare_integer_arrays(i_array, o_array,
     c_length);
@@ -106,22 +108,22 @@ int add_array_number_test(int* i_array,
 
 /* Inputs: input array, current length, start,
 output array; */
-int move_array_numbers_test(int* i_array,
+int move_array_integers_test(int* i_array,
   int c_length, int start, int* o_array)
 {
-  i_array = move_array_numbers(i_array,c_length,
+  i_array = move_array_integers(i_array,c_length,
     start);
   return compare_integer_arrays(i_array,o_array,
     c_length);
 }
 
-/* Inputs: input array, current length, number,
+/* Inputs: input array, current length, integer,
 output array; */
-int remove_array_number_test(int* i_array,
-  int c_length, int number, int* o_array)
+int remove_array_integer_test(int* i_array,
+  int c_length, int integer, int* o_array)
 {
-  i_array = remove_array_number(i_array,c_length,
-    number);
+  i_array = remove_array_integer(i_array,c_length,
+    integer);
   return compare_integer_arrays(i_array,o_array,
     c_length);
 }

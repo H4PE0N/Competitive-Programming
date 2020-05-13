@@ -2,11 +2,11 @@
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_1_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_1_H
 
-// Inputs: array, index, number;
-int* allocate_array_value(int*, int, int);
+// Inputs: array, index, integer;
+int* allocate_array_integer(int*,int,int);
 
 // Inputs: array, total length;
-int* allocate_array_values(int*, int);
+int* allocate_array_integers(int*, int);
 
 // Inputs: total length;
 int* generate_integer_array(const int);
@@ -15,28 +15,28 @@ int* generate_integer_array(const int);
 int calculate_array_length(const int*);
 
 // Inputs: array, total length;
-int array_contains_number(int*, int, int);
+int array_contains_integer(int*,int,int);
 
 // Inputs: array, index;
-int* switch_array_numbers(int*, int);
+int* switch_array_integers(int*, int);
 
 // Inputs: array, iteration;
 int* bubble_sort_iteration(int*, int);
 
 // Inputs: array, current length;
-int* bubble_sort_array(int*, const int);
+int* bubble_sort_array(int*, int);
 
-// Inputs: array, current length, number;
-int* add_array_number(int*, int, int);
+// Inputs: array, current length, integer;
+int* add_array_integer(int*, int, int);
 
 // Inputs: array, current length, start;
-int* move_array_numbers(int*, int, int);
+int* move_array_integers(int*, int, int);
 
-// Inputs: array, current length, number;
-int* remove_array_number(int*, int, int);
+// Inputs: array, current length, integer;
+int* remove_array_integer(int*, int, int);
 
 // Inputs: array, total length, index;
-int* delete_array_value(int*, int, int);
+int* delete_array_integer(int*, int, int);
 
 /* Inputs: first array, second array,
 total length; */

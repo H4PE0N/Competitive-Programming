@@ -16,21 +16,21 @@ int** generate_matrix_array(int t_length, int t_width)
   return matrix;
 }
 
-// Inputs: matrix, matrix index, array index, number;
-int** allocate_matrix_value(int** matrix, int m_index,
-  int a_index, int number)
+// Inputs: matrix, matrix index, array index, integer;
+int** allocate_matrix_integer(int** matrix, int m_index,
+  int a_index, int integer)
 {
-  *(matrix + m_index) = allocate_array_value(
-    *(matrix + m_index), a_index, number);
+  *(matrix + m_index) = allocate_array_integer(
+    *(matrix + m_index), a_index, integer);
   return matrix;
 }
 
 /* Inputs: matrix, matrix index, array index, total
 length; */
-int** delete_matrix_value(int** matrix, int m_index,
+int** delete_matrix_integer(int** matrix, int m_index,
   int a_index, int t_length)
 {
-  *(matrix + m_index) = delete_array_value(
+  *(matrix + m_index) = delete_array_integer(
     *(matrix + m_index), t_length, a_index);
   return matrix;
 }
@@ -43,41 +43,41 @@ int calculate_matrix_length(int** matrix, int t_length)
   >= t_length) { length += 1; } return length;
 }
 
-// Inputs: matrix, matrix length, array length, number;
-int matrix_contains_number(int** matrix, int m_length,
-  int a_length, int number)
+// Inputs: matrix, matrix length, array length, integer;
+int matrix_contains_integer(int** matrix, int m_length,
+  int a_length, int integer)
 {
   for(int index = 0; index < m_length; index++)
   {
-    if(array_contains_number(*(matrix + index),
-    a_length, number)) return true;
+    if(array_contains_integer(*(matrix + index),
+    a_length, integer)) return true;
   }
   return false;
 }
 
-// Inputs: matrix, total length, number;
-int** remove_matrix_number(int** matrix, int t_length,
-  int number)
+// Inputs: matrix, total length, integer;
+int** remove_matrix_integer(int** matrix, int t_length,
+  int integer)
 {
   for(int index = t_length - 1; index >= 0; index--)
   {
     int a_length = calculate_array_length(*(matrix +
       index));
-    if(array_contains_number(*(matrix + index),a_length,
-      number)) *(matrix + index) = remove_array_number(
-      *(matrix + index), a_length, number); break;
+    if(array_contains_integer(*(matrix + index),a_length,
+      integer)) *(matrix + index) = remove_array_integer(
+      *(matrix + index), a_length, integer); break;
   }
   return matrix;
 }
 
-// Inputs: matrix, current length, number;
-int** add_matrix_number(int** matrix, int c_length,
-  int number)
+// Inputs: matrix, current length, integer;
+int** add_matrix_integer(int** matrix, int c_length,
+  int integer)
 {
   int a_length = calculate_array_length(*(matrix +
     c_length));
-  *(matrix + c_length) = add_array_number(*(matrix +
-    c_length), a_length, number);
+  *(matrix + c_length) = add_array_integer(*(matrix +
+    c_length), a_length, integer);
   return matrix;
 }
 

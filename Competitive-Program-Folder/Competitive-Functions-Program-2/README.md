@@ -6,11 +6,11 @@ function in the other folder.
 Here is a list of all the functions that is  in  the  program:
 
 ```
-generate_matrix_array       matrix_contains_number
+generate_matrix_array       matrix_contains_integer
 
-allocate_matrix_value       remove_matrix_number
+allocate_matrix_integer     remove_matrix_integer
 
-delete_matrix_value         add_matrix_number
+delete_matrix_integer       add_matrix_integer
 
 calculate_matrix_length     compare_matrix_arrays
 ```

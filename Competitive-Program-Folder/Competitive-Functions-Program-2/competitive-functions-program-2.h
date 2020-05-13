@@ -6,25 +6,28 @@
 int** generate_matrix_array(int, int);
 
 /* Inputs: matrix, matrix index, array index,
-number */
-int** allocate_matrix_value(int**,int,int,int);
+integer */
+int** allocate_matrix_integer(int**,int,int,
+  int);
 
 /* Inputs: matrix, matrix index, array index,
 total length; */
-int** delete_matrix_value(int**,int,int,int);
+int** delete_matrix_integer(int**,int,int,
+  int);
 
 // Inputs: matrix, total length;
 int calculate_matrix_length(int**, int);
 
-/* Inputs: matrix, matrix length, array length,
-number; */
-int matrix_contains_number(int**,int,int,int);
+/* Inputs: matrix, matrix length,
+array length, integer; */
+int matrix_contains_integer(int**,int,int,
+  int);
 
-// Inputs: matrix, total length, number;
-int** remove_matrix_number(int**, int, int);
+// Inputs: matrix, total length, integer;
+int** remove_matrix_integer(int**,int,int);
 
-// Inputs: matrix, current length, number;
-int** add_matrix_number(int**, int, int);
+// Inputs: matrix, current length, integer;
+int** add_matrix_integer(int**, int, int);
 
 /* Inputs: first matrix, second matrix,
 matrix length, array length; */
