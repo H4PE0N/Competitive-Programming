@@ -6,9 +6,9 @@ other folder.
 Here is a list of all the functions that is  in  the  program:
 
 ```
-allocate_array_integer      bubble_sort_iteration
+allocate_array_integer      sort_integer_iteration
 
-allocate_array_integers     bubble_sort_array
+allocate_array_integers     sort_integer_array
 
 generate_integer_array      add_array_integer
 

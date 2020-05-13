@@ -75,10 +75,10 @@ int switch_array_integers_test(int* i_array,
 }
 
 // Inputs: input array, index, output array;
-int bubble_sort_iteration_test(int* i_array,
+int sort_integer_iteration_test(int* i_array,
   int index, int* o_array)
 {
-  i_array = bubble_sort_iteration(i_array, index);
+  i_array = sort_integer_iteration(i_array, index);
   int length = integer_array_length(i_array);
   return compare_integer_arrays(i_array ,o_array,
     length);
@@ -86,10 +86,10 @@ int bubble_sort_iteration_test(int* i_array,
 
 /* Inputs: input array, current length,
 output array; */
-int bubble_sort_array_test(int* i_array,
+int sort_integer_array_test(int* i_array,
   int c_length, int* o_array)
 {
-  i_array = bubble_sort_array(i_array, c_length);
+  i_array = sort_integer_array(i_array, c_length);
   return compare_integer_arrays(i_array, o_array,
     c_length);
 }

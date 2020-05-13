@@ -14,14 +14,14 @@ competitive-functions-program-3.h"
 // Inputs: array, current length;
 double calculate_odd_median(int* array, int c_length)
 {
-  array = bubble_sort_array(array, c_length);
+  array = sort_integer_array(array, c_length);
   return *(array + ( (c_length - 1) / 2) );
 }
 
 // Inputs: array, current length;
 double calculate_even_median(int* array, int c_length)
 {
-  array = bubble_sort_array(array, c_length);
+  array = sort_integer_array(array, c_length);
   double first = (double) *(array + ((c_length-2) / 2)),
   second = (double) *(array + ( c_length / 2));
   return ( ( second + first) / 2);

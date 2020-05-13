@@ -54,7 +54,7 @@ int* switch_array_integers(int* array, int index)
 }
 
 // Inputs: array, iteration;
-int* bubble_sort_iteration(int* array, int iteration)
+int* sort_integer_iteration(int* array, int iteration)
 {
   for(int index = 0; index < (iteration - 1); index++)
   {
@@ -67,11 +67,11 @@ int* bubble_sort_iteration(int* array, int iteration)
 }
 
 // Inputs: array, current length;
-int* bubble_sort_array(int* array, int c_length)
+int* sort_integer_array(int* array, int c_length)
 {
   for(int index = c_length; index >= 0; index--)
   {
-    array = bubble_sort_iteration(array, index);
+    array = sort_integer_iteration(array, index);
   }
   return array;
 }

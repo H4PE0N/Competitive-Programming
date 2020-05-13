@@ -21,10 +21,10 @@ int array_contains_integer(int*,int,int);
 int* switch_array_integers(int*, int);
 
 // Inputs: array, iteration;
-int* bubble_sort_iteration(int*, int);
+int* sort_integer_iteration(int*, int);
 
 // Inputs: array, current length;
-int* bubble_sort_array(int*, int);
+int* sort_integer_array(int*, int);
 
 // Inputs: array, current length, integer;
 int* add_array_integer(int*, int, int);

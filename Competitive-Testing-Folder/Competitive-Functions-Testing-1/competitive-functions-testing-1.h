@@ -29,11 +29,11 @@ int array_contains_integer_test(int*,int,int,int);
 int switch_array_integers_test(int*, int, int*);
 
 // Inputs: input array, index, output array;
-int bubble_sort_iteration_test(int*, int, int*);
+int sort_integer_iteration_test(int*, int, int*);
 
 /* Inputs: input array, current length, output
 array; */
-int bubble_sort_array_test(int*, int, int*);
+int sort_integer_array_test(int*, int, int*);
 
 /* Inputs: input array, current length, integer,
 output array; */
