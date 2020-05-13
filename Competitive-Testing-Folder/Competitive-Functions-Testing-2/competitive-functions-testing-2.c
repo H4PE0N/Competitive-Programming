@@ -65,7 +65,7 @@ int remove_matrix_integer_test(int** i_matrix,
 {
   i_matrix = remove_matrix_integer(i_matrix, t_length,
     integer);
-  int a_length = calculate_array_length(*(i_matrix));
+  int a_length = integer_array_length(*(i_matrix));
   return compare_matrix_arrays(i_matrix, o_matrix,
     t_length, a_length);
 }

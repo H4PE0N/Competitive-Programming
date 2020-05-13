@@ -102,7 +102,7 @@ int hashmap_keyword_array_test(int** hashmap,
   int* o_array)
 {
   int* array = hashmap_keyword_array(hashmap);
-  int length = calculate_array_length(array);
+  int length = integer_array_length(array);
   return compare_integer_arrays(array, o_array,
     length);
 }

@@ -18,7 +18,7 @@ int allocate_array_integers_test(int*, int, int*);
 int generate_integer_array_test(int, int*);
 
 // Inputs: input array, length;
-int calculate_array_length_test(int*, int);
+int integer_array_length_test(int*, int);
 
 /* Inputs: input array, total length, integer,
 boolean; */

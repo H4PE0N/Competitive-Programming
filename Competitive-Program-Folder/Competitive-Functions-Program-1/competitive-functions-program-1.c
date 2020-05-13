@@ -27,7 +27,7 @@ int* generate_integer_array(const int t_length)
 }
 
 // Inputs: array;
-int calculate_array_length(const int* array)
+int integer_array_length(const int* array)
 {
   int length = 0; while(*(array + length) != '\0')
   { length += 1; } return length;

@@ -39,7 +39,7 @@ int** delete_matrix_integer(int** matrix, int m_index,
 int calculate_matrix_length(int** matrix, int t_length)
 {
   int length = 0;
-  while(calculate_array_length(*(matrix + length))
+  while(integer_array_length(*(matrix + length))
   >= t_length) { length += 1; } return length;
 }
 
@@ -61,7 +61,7 @@ int** remove_matrix_integer(int** matrix, int t_length,
 {
   for(int index = t_length - 1; index >= 0; index--)
   {
-    int a_length = calculate_array_length(*(matrix +
+    int a_length = integer_array_length(*(matrix +
       index));
     if(array_contains_integer(*(matrix + index),a_length,
       integer)) *(matrix + index) = remove_array_integer(
@@ -74,7 +74,7 @@ int** remove_matrix_integer(int** matrix, int t_length,
 int** add_matrix_integer(int** matrix, int c_length,
   int integer)
 {
-  int a_length = calculate_array_length(*(matrix +
+  int a_length = integer_array_length(*(matrix +
     c_length));
   *(matrix + c_length) = add_array_integer(*(matrix +
     c_length), a_length, integer);

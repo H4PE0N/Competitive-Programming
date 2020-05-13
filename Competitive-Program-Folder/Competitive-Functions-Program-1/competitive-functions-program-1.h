@@ -12,7 +12,7 @@ int* allocate_array_integers(int*, int);
 int* generate_integer_array(const int);
 
 // Inputs: array;
-int calculate_array_length(const int*);
+int integer_array_length(const int*);
 
 // Inputs: array, total length;
 int array_contains_integer(int*,int,int);

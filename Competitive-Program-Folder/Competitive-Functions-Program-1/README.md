@@ -12,7 +12,7 @@ allocate_array_integers     bubble_sort_array
 
 generate_integer_array      add_array_integer
 
-calculate_array_length      move_array_integers
+integer_array_length        move_array_integers
 
 array_contains_integer      remove_array_integer
 

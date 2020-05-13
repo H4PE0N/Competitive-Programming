@@ -12,7 +12,7 @@ int allocate_array_integer_test(int* i_array,
 {
   i_array = allocate_array_integer(i_array,index,
     integer);
-  int length = calculate_array_length(i_array);
+  int length = integer_array_length(i_array);
   return compare_integer_arrays(i_array,o_array,
     length);
 }
@@ -48,10 +48,10 @@ int generate_integer_array_test(int t_length,
 }
 
 // Inputs: input array, length;
-int calculate_array_length_test(int* i_array,
+int integer_array_length_test(int* i_array,
   int length)
 {
-  int o_length = calculate_array_length(i_array);
+  int o_length = integer_array_length(i_array);
   return (o_length == length);
 }
 
@@ -69,7 +69,7 @@ int switch_array_integers_test(int* i_array,
   int index, int* o_array)
 {
   i_array = switch_array_integers(i_array, index);
-  int length = calculate_array_length(i_array);
+  int length = integer_array_length(i_array);
   return compare_integer_arrays(i_array ,o_array,
     length);
 }
@@ -79,7 +79,7 @@ int bubble_sort_iteration_test(int* i_array,
   int index, int* o_array)
 {
   i_array = bubble_sort_iteration(i_array, index);
-  int length = calculate_array_length(i_array);
+  int length = integer_array_length(i_array);
   return compare_integer_arrays(i_array ,o_array,
     length);
 }
@@ -101,7 +101,7 @@ int add_array_integer_test(int* i_array,
 {
   i_array = add_array_integer(i_array, c_length,
     integer);
-  c_length = calculate_array_length(i_array);
+  c_length = integer_array_length(i_array);
   return compare_integer_arrays(i_array, o_array,
     c_length);
 }
