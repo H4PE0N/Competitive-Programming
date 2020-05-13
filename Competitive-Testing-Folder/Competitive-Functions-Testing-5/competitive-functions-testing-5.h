@@ -2,21 +2,24 @@
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_5_H
 #define COMPETITIVE_FUNCTIONS_TESTING_5_H
 
-// Inputs: binary, total length, decimal, boolean
-int binary_decimal_enough_test(char*,int,int,int);
+/* Inputs: binary, total length, decimal,
+boolean */
+int binary_decimal_enough_test(char*, int, int,
+  int);
 
 /* Inputs: binary, total length, input decimal,
 output decimal; */
-int reduce_binary_decimal_test(char*,int,int,int);
+int reduce_binary_decimal_test(char* ,int, int,
+  int);
 
 /* Inputs: input binary, total length, decimal,
 output binary; */
-int allocate_binary_value_test(char*, int, int,
+int allocate_binary_bit_test(char*, int, int,
   char*);
 
 /* Inputs: input binary, total length, decimal,
 output binary; */
-int allocate_binary_values_test(char*, int, int,
+int allocate_binary_bits_test(char*, int, int,
   char*);
 
 // Inputs: decimal, output length;

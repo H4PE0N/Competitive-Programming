@@ -9,10 +9,10 @@ int binary_decimal_enough(char*, int, int);
 int reduce_binary_decimal(char*, int, int);
 
 // Inputs: binary, total length, decimal;
-char* allocate_binary_value(char*,int,int);
+char* allocate_binary_bit(char*,int,int);
 
 // Inputs: binary, total length, decimal;
-char* allocate_binary_values(char*,int,int);
+char* allocate_binary_bits(char*,int,int);
 
 // Inputs: decimal;
 int calculate_real_length(const int);

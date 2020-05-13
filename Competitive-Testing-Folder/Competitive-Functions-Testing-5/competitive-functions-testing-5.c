@@ -30,10 +30,10 @@ int reduce_binary_decimal_test(char* binary,
 
 /* Inputs: input binary, total length, decimal,
 output binary; */
-int allocate_binary_value_test(char* i_binary,
+int allocate_binary_bit_test(char* i_binary,
   int t_length, int decimal, char* o_binary)
 {
-  i_binary = allocate_binary_value(i_binary,t_length,
+  i_binary = allocate_binary_bit(i_binary,t_length,
     decimal);
   return compare_strings_together(i_binary, o_binary,
     t_length);
@@ -41,10 +41,10 @@ int allocate_binary_value_test(char* i_binary,
 
 /* Inputs: input binary, total length, decimal,
 output binary; */
-int allocate_binary_values_test(char* i_binary,
+int allocate_binary_bits_test(char* i_binary,
   int t_length, int decimal, char* o_binary)
 {
-  i_binary = allocate_binary_values(i_binary,t_length,
+  i_binary = allocate_binary_bits(i_binary,t_length,
     decimal);
   return compare_strings_together(i_binary, o_binary,
     t_length);

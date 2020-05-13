@@ -17,30 +17,31 @@ int binary_decimal_enough(char* binary, int t_length,
 int reduce_binary_decimal(char* binary, int t_length,
   int decimal)
 {
-  int index = t_length-calculate_string_length(binary);
-  if(binary_decimal_enough(binary, t_length+1, decimal))
+  int index=t_length-calculate_string_length(binary);
+  if(binary_decimal_enough(binary, t_length + 1,
+    decimal))
   { return decimal - pow(2, index); } return decimal;
 }
 
 // Inputs: binary, total length, decimal;
-char* allocate_binary_value(char* binary, int t_length,
+char* allocate_binary_bit(char* binary, int t_length,
   int decimal)
 {
   int c_length = calculate_string_length(binary);
   if(binary_decimal_enough(binary, t_length, decimal))
   {
-    return add_string_character(binary, c_length, '1');
+    return add_string_character(binary,c_length,'1');
   }
   return add_string_character(binary, c_length, '0');
 }
 
 // Inputs: binary, total length, decimal;
-char* allocate_binary_values(char* binary,int t_length,
+char* allocate_binary_bits(char* binary,int t_length,
   int decimal)
 {
   for(int index = 0; index < t_length; index++)
   {
-    binary = allocate_binary_value(binary, t_length,
+    binary = allocate_binary_bit(binary, t_length,
       decimal); decimal =
    reduce_binary_decimal(binary, t_length, decimal);
   }
@@ -67,7 +68,7 @@ char* convert_decimal_binary(const int decimal)
 {
   int length = calculate_nearest_length(decimal);
   char* binary = generate_empty_string(length);
-  return allocate_binary_values(binary,length,decimal);
+  return allocate_binary_bits(binary,length,decimal);
 }
 
 // Inputs: character;
