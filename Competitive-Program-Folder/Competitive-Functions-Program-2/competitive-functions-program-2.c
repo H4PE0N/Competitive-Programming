@@ -11,7 +11,7 @@ int** generate_matrix_array(int t_length, int t_width)
   int** matrix = malloc(sizeof(matrix) * t_length);
   for(int index = 0; index < t_length; index++)
   {
-    *(matrix + index) = generate_empty_array(t_width);
+    *(matrix + index) = generate_integer_array(t_width);
   }
   return matrix;
 }
