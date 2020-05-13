@@ -1,7 +1,7 @@
 
-This program  has  functions  that  generate  strings  and  do
+This program  has  functions  that  generate  strings  and  do  
 operations to them. Like adding / removing a character.  Every  
-function here, has it's own  testing  function  in  the  other
+function here, has it's own  testing  function  in  the  other  
 folder.
 
 Here is a list of all the functions that is  in  the  program:

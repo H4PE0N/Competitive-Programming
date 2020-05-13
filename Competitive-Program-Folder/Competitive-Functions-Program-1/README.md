@@ -1,6 +1,6 @@
 
 This program contains  functions  that  uses  integer  arrays.  
-Every function here, has it's  own  testing  function  in  the
+Every function here, has it's  own  testing  function  in  the  
 other folder.
 
 Here is a list of all the functions that is  in  the  program:
@@ -16,7 +16,7 @@ integer_array_length        move_array_integers
 
 array_contains_integer      remove_array_integer
 
-switch_array_integers       delete_array_value
+switch_array_integers       delete_array_integer
 
 compare_integer_arrays      remove_array_integers
 

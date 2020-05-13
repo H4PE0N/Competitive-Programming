@@ -1,6 +1,6 @@
 
-This program have functions that  created  binary  bits. The
-program even converts between decimal, binary  and  characters
+This program have functions  that  created  binary  bits.  The  
+program even converts between decimal, binary  and  characters  
 Every function here, has it's  own  testing  function  in  the  
 other folder.
 
