@@ -127,3 +127,14 @@ int remove_array_integer_test(int* i_array,
   return compare_integer_arrays(i_array,o_array,
     c_length);
 }
+
+// Inputs: input array, integer, output array;
+int remove_array_integers_test(int* i_array,
+  int integer, int* o_array)
+{
+  i_array = remove_array_integers(i_array,
+    integer);
+  int c_length = integer_array_length(i_array);
+  return compare_integer_arrays(i_array, o_array,
+    c_length);
+}

@@ -130,3 +130,16 @@ int compare_integer_arrays(int* first, int* second,
   }
   return true;
 }
+
+// Inputs: array, integer;
+int* remove_array_integers(int* array, int integer)
+{
+  int c_length = integer_array_length(array);
+  while(array_contains_integer(array, c_length,
+    integer))
+  {
+    array = remove_array_integer(array, c_length,
+      integer);
+  }
+  return array;
+}

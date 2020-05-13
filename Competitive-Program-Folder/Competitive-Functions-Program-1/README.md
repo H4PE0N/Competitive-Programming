@@ -18,7 +18,7 @@ array_contains_integer      remove_array_integer
 
 switch_array_integers       delete_array_value
 
-compare_integer_arrays
+compare_integer_arrays      remove_array_integers
 
 ```
 

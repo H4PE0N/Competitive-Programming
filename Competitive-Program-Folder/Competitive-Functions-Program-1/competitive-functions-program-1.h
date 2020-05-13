@@ -43,4 +43,7 @@ total length; */
 int compare_integer_arrays(int*, int*,
   int);
 
+// Inputs: array, integer;
+int* remove_array_integers(int*, int);
+
 #endif

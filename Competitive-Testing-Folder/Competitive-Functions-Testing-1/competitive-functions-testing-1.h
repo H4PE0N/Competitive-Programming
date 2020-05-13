@@ -4,7 +4,8 @@
 
 /* Inputs: input array, index, integer,
 output array; */
-int allocate_array_integer_test(int*,int,int,int*);
+int allocate_array_integer_test(int*, int, int,
+  int*);
 
 /* Inputs: input array, total length, index,
 output array; */
@@ -45,5 +46,8 @@ int move_array_integers_test(int*,int,int,int*);
 /* Inputs: input array, current length, integer,
 output array; */
 int remove_array_integer_test(int*,int,int,int*);
+
+// Inputs: input array, integer, output array;
+int remove_array_integers_test(int*, int, int*);
 
 #endif
