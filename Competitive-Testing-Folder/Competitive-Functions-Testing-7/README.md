@@ -1,4 +1,8 @@
 
+These  functions  are  created  from  de  original  library  
+functions. You  can  visit  the  original  functions  here:
+[Competitive-Function-Program-1](https://github.com/H4PE0N/Competitive-Programming/tree/master/Competitive-Program-Folder/Competitive-Functions-Program-7)
+
 To compile the program, make sure you have the GCC compiler  
 downloaded, and execute the following command in  the  same  
 folder as the program.
