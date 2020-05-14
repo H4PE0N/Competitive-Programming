@@ -2,49 +2,43 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-// Inputs: array, index, integer;
 int* allocate_array_integer(int* array, int index,
   int integer)
 {
   *(array + index) = integer; return array;
 }
 
-// Inputs: array, total length;
-int* allocate_array_integers(int* array, int t_length)
+int* allocate_array_integers(int* array, int length)
 {
-  for(int index = 0; index < t_length; index++)
+  for(int index = 0; index < length; index++)
   {
     allocate_array_integer(array, index, '\0');
   }
   return array;
 }
 
-// Inputs: total length;
-int* generate_integer_array(const int t_length)
+int* generate_integer_array(const int length)
 {
-  int* array = malloc(sizeof(array) * (t_length + 1));
-  return allocate_array_integers(array, t_length + 1);
+  int* array = malloc(sizeof(array) * (length + 1));
+  return allocate_array_integers(array, length + 1);
 }
 
-// Inputs: array;
 int integer_array_length(const int* array)
 {
   int length = 0; while(*(array + length) != '\0')
-  { length += 1; } return length;
+  { length  = (length + 1); } return length;
 }
 
-// Inputs: array, total length;
-int array_contains_integer(int* array, int t_length,
+int array_contains_integer(int* array, int length,
   int integer)
 {
-  for(int index = 0; index < t_length; index++)
+  for(int index = 0; index < length; index++)
   {
     if(*(array + index) == integer) return true;
   }
   return false;
 }
 
-// Inputs: array, index;
 int* switch_array_integers(int* array, int index)
 {
   int switch_integer = *(array + index);
@@ -53,10 +47,9 @@ int* switch_array_integers(int* array, int index)
   return array;
 }
 
-// Inputs: array, iteration;
-int* sort_integer_iteration(int* array, int iteration)
+int* sort_integer_iteration(int* array,int iteration)
 {
-  for(int index = 0; index < (iteration - 1); index++)
+  for(int index = 0; index < (iteration - 1);index++)
   {
     if(*(array + index) > *(array + (index + 1) ))
     {
@@ -66,64 +59,58 @@ int* sort_integer_iteration(int* array, int iteration)
   return array;
 }
 
-// Inputs: array, current length;
-int* sort_integer_array(int* array, int c_length)
+int* sort_integer_array(int* array, int length)
 {
-  for(int index = c_length; index >= 0; index--)
+  for(int index = length; index >= 0; index--)
   {
     array = sort_integer_iteration(array, index);
   }
   return array;
 }
 
-// Inputs: array, current length, integer;
-int* add_array_integer(int* array, int c_length,
+int* add_array_integer(int* array, int length,
   int integer)
 {
-  array = allocate_array_integer(array, c_length,
+  array = allocate_array_integer(array, length,
     integer);
-  return allocate_array_integer(array, (c_length + 1),
+  return allocate_array_integer(array, (length + 1),
     '\0');
 }
 
-// Inputs: array, current length, start;
-int* move_array_integers(int* array, int c_length,
+int* move_array_integers(int* array, int length,
   int start)
 {
-  for(int index = start; index < c_length; index++)
+  for(int index = start; index < length; index++)
   {
     array = switch_array_integers(array, index);
   }
   return array;
 }
 
-// Inputs: array, current length, integer;
-int* remove_array_integer(int* array, int c_length,
+int* remove_array_integer(int* array, int length,
   int integer)
 {
-  int start = c_length;
-  for(int index = (c_length-1); index >= 0; index--)
+  int start = length;
+  for(int index = (length - 1); index >= 0; index--)
   {
     if(*(array + index) == integer) {start = index;
       break;}
   }
-  array = move_array_integers(array,c_length,start);
-  return allocate_array_integer(array,c_length,'\0');
+  array = move_array_integers(array, length, start);
+  return allocate_array_integer(array, length, '\0');
 }
 
-// Inputs: array, total length, index;
-int* delete_array_integer(int* array, int t_length,
+int* delete_array_integer(int* array, int length,
   int index)
 {
-  array = move_array_integers(array, t_length, index);
-  return allocate_array_integer(array, t_length,'\0');
+  array = move_array_integers(array, length, index);
+  return allocate_array_integer(array, length,'\0');
 }
 
-// Inputs: first array, second array, total length;
 int compare_integer_arrays(int* first, int* second,
-  int t_length)
+  int length)
 {
-  for(int index = 0; index < t_length; index++)
+  for(int index = 0; index < length; index++)
   {
     if(*(first + index) != *(second + index))
     { return false; }
@@ -131,14 +118,12 @@ int compare_integer_arrays(int* first, int* second,
   return true;
 }
 
-// Inputs: array, integer;
 int* remove_array_integers(int* array, int integer)
 {
-  int c_length = integer_array_length(array);
-  while(array_contains_integer(array, c_length,
-    integer))
+  int length = integer_array_length(array);
+  while(array_contains_integer(array,length,integer))
   {
-    array = remove_array_integer(array, c_length,
+    array = remove_array_integer(array, length,
       integer);
   }
   return array;
