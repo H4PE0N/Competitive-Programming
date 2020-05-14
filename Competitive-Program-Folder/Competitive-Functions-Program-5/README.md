@@ -2,7 +2,7 @@
 This program have functions that create  binary  strings.  The  
 program even converts between decimal, binary and  characters.  
 Every function here, has  it's  own  testing-function  in  the  
-other folder: [Competitive-Functions-Testing-5](./Competitive-Testing-Folder/Competitive-Functions-Testing-5)
+other folder: [Competitive-Functions-Testing-5](https://github.com/H4PE0N/Competitive-Programming/tree/master/Competitive-Testing-Folder/Competitive-Functions-Testing-5)
 
 Here is a list of all the functions that is  in  the  program:
 

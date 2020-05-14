@@ -2,7 +2,7 @@
 This program uses hashmaps with integers, they are created  by  
 matrices and two dimensional arrays. Every function here,  has  
 it's own testing function in the other folder:  
-[Competitive-Functions-Testing-3](./Competitive-Testing-Folder/Competitive-Functions-Testing-3)
+[Competitive-Functions-Testing-3](https://github.com/H4PE0N/Competitive-Programming/tree/master/Competitive-Testing-Folder/Competitive-Functions-Testing-3)
 
 Here is a list of all the functions that is  in  the  program:
 

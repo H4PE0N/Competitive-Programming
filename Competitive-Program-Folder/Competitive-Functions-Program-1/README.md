@@ -1,7 +1,7 @@
 
 This program contains  functions  that  uses  integer  arrays.  
 Every function here, has it's  own  testing  function  in  the  
-other folder: [Competitive-Functions-Testing-1](./Competitive-Testing-Folder/Competitive-Functions-Testing-1)
+other folder: [Competitive-Functions-Testing-1](https://github.com/H4PE0N/Competitive-Programming/tree/master/Competitive-Testing-Folder/Competitive-Functions-Testing-1)
 
 Here is a list of all the functions that is  in  the  program:
 
