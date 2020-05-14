@@ -34,4 +34,7 @@ matrix length, array length; */
 int compare_matrix_arrays(int**,int**,int,
   int);
 
+// Inputs: matrix, integer, array length;
+int** remove_matrix_integers(int**,int,int);
+
 #endif

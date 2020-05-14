@@ -13,6 +13,8 @@ allocate_matrix_integer     remove_matrix_integer
 delete_matrix_integer       add_matrix_integer
 
 calculate_matrix_length     compare_matrix_arrays
+
+remove_matrix_integers
 ```
 
 Made by Roy Hampus Fridholm

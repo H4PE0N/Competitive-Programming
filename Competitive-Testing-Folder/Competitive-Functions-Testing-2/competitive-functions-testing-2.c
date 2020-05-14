@@ -82,3 +82,16 @@ int add_matrix_integer_test(int** i_matrix,
   return compare_matrix_arrays(i_matrix, o_matrix,
     m_length, a_length);
 }
+
+/* Inputs: input matrix, integer, array length,
+output matrix; */
+int remove_matrix_integers_test(int** i_matrix,
+  int integer, int a_length, int** o_matrix)
+{
+  i_matrix = remove_matrix_integers(i_matrix, integer,
+    a_length);
+  int m_length = calculate_matrix_length(i_matrix,
+    a_length);
+  return compare_matrix_arrays(i_matrix, o_matrix,
+    m_length, a_length);
+}

@@ -93,3 +93,16 @@ int compare_matrix_arrays(int** first, int** second,
   }
   return true;
 }
+
+// Inputs: matrix, integer, array length;
+int** remove_matrix_integers(int** matrix, int integer,
+  int a_length)
+{
+  int c_length=calculate_matrix_length(matrix,a_length);
+  for(int index = 0; index <= c_length; index++)
+  {
+    *(matrix + index) = remove_array_integers(
+      *(matrix + index), integer);
+  }
+  return matrix;
+}

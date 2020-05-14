@@ -8,7 +8,7 @@ int generate_matrix_array_test(int, int, int**);
 
 /* Inputs: input matrix, x, y, integer,
 output matrix; */
-int allocate_matrix_integer_test(int**, int, int,
+int allocate_matrix_integer_test(int**,int,int,
   int, int**);
 
 /* Inputs: input matrix, x, y, total length,
@@ -33,6 +33,11 @@ int remove_matrix_integer_test(int**, int, int,
 /* Inputs: input matrix, m length, a length,
 integer, output matrix; */
 int add_matrix_integer_test(int**,int,int,int,
+  int**);
+
+/* Inputs: input matrix, integer, array length,
+output matrix; */
+int remove_matrix_integers_test(int**,int,int,
   int**);
 
 #endif

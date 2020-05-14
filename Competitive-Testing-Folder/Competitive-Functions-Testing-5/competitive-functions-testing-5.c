@@ -13,7 +13,7 @@ competitive-functions-program-5.h"
 int binary_decimal_enough_test(char* binary,
   int t_length, int decimal, int boolean)
 {
-  int output = binary_decimal_enough(binary, t_length,
+  int output = binary_decimal_enough(binary,t_length,
     decimal);
   return (output == boolean);
 }
@@ -23,7 +23,7 @@ output decimal; */
 int reduce_binary_decimal_test(char* binary,
   int t_length, int i_decimal, int o_decimal)
 {
-  i_decimal = reduce_binary_decimal(binary, t_length,
+  i_decimal = reduce_binary_decimal(binary,t_length,
     i_decimal);
   return (i_decimal == o_decimal);
 }
@@ -35,7 +35,7 @@ int allocate_binary_bit_test(char* i_binary,
 {
   i_binary = allocate_binary_bit(i_binary,t_length,
     decimal);
-  return compare_strings_together(i_binary, o_binary,
+  return compare_strings_together(i_binary,o_binary,
     t_length);
 }
 
@@ -46,7 +46,7 @@ int allocate_binary_bits_test(char* i_binary,
 {
   i_binary = allocate_binary_bits(i_binary,t_length,
     decimal);
-  return compare_strings_together(i_binary, o_binary,
+  return compare_strings_together(i_binary,o_binary,
     t_length);
 }
 
