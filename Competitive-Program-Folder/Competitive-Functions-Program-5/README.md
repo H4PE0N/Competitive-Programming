@@ -1,7 +1,7 @@
 
-This program have functions  that  created  binary  bits.  The  
-program even converts between decimal, binary  and  characters  
-Every function here, has it's  own  testing  function  in  the  
+This program have functions that create  binary  strings.  The  
+program even converts between decimal, binary and  characters.  
+Every function here, has  it's  own  testing-function  in  the  
 other folder.
 
 Here is a list of all the functions that is  in  the  program:
