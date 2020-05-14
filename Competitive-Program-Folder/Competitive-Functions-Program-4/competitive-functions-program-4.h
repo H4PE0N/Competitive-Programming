@@ -33,4 +33,7 @@ char* add_string_character(char*, int, char);
 total length; */
 int compare_strings_together(char*,char*,int);
 
+// Inputs: string, current length, character;
+char* remove_string_characters(char*,int,char);
+
 #endif

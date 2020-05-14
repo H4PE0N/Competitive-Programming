@@ -10,11 +10,12 @@ char* allocate_string_character(char* string, int index,
 }
 
 // Inputs: string, total length;
-char* allocate_string_characters(char* string,int t_length)
+char* allocate_string_characters(char* string,
+  int t_length)
 {
   for(int index = 0; index < t_length; index++)
   {
-    string = allocate_string_character(string,index,'\0');
+    string=allocate_string_character(string,index,'\0');
   }
   return string;
 }
@@ -23,7 +24,7 @@ char* allocate_string_characters(char* string,int t_length)
 char* generate_empty_string(const int t_length)
 {
   char* string = malloc(sizeof(string) * (t_length+1));
-  return allocate_string_characters(string, (t_length+1));
+  return allocate_string_characters(string,t_length + 1);
 }
 
 // Inputs: string;
@@ -98,4 +99,17 @@ int compare_strings_together(char* first,char* second,
     { return false; }
   }
   return true;
+}
+
+// Inputs: string, current length, character;
+char* remove_string_characters(char* string,int c_length,
+  char character)
+{
+  while(string_contains_character(string, c_length,
+    character))
+  {
+    string = remove_string_character(string, c_length,
+      character);
+  }
+  return string;
 }

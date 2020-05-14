@@ -16,6 +16,8 @@ generate_empty_string         remove_string_character
 calculate_string_length       add_string_character
 
 string_contains_character     compare_strings_together
+
+remove_string_characters
 ```
 
 Made by Roy Hampus Fridholm

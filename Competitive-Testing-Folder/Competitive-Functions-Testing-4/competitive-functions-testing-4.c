@@ -5,13 +5,14 @@
 Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
-// Inputs: input string, index, character,output string;
+/* Inputs: input string, index, character,
+output string; */
 int allocate_string_character_test(char* i_string,
   int index, char character, char* o_string)
 {
-  i_string = allocate_string_character(i_string, index,
-    character);
-  return compare_strings_together(i_string, o_string,
+  i_string = allocate_string_character(i_string,
+    index, character);
+  return compare_strings_together(i_string,o_string,
     calculate_string_length(i_string));
 }
 
@@ -79,7 +80,7 @@ int remove_string_character_test(char* i_string,
   i_string = remove_string_character(i_string,
     c_length, character);
   return compare_strings_together(i_string, o_string,
-    c_length);
+    calculate_string_length(i_string));
 }
 
 /* Inputs: input string, current length, character,
@@ -91,4 +92,15 @@ int add_string_character_test(char* i_string,
     character);
   return compare_strings_together(i_string,o_string,
     c_length + 1);
+}
+
+/* Inputs: input string, current length, character
+output string; */
+int remove_string_characters_test(char* i_string,
+  int c_length, char character, char* o_string)
+{
+  i_string = remove_string_characters(i_string,
+    c_length, character);
+  return compare_strings_together(i_string,o_string,
+    calculate_string_length(i_string));
 }
