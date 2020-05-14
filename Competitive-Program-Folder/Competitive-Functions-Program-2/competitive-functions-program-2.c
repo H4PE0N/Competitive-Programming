@@ -86,7 +86,7 @@ array length; */
 int compare_matrix_arrays(int** first, int** second,
   int m_length, int a_length)
 {
-  for(int index = 0; index < m_length; index++)
+  for(int index = 0; index <= m_length; index++)
   {
     if(!compare_integer_arrays(*(first + index),
       *(second + index), a_length)) return false;
