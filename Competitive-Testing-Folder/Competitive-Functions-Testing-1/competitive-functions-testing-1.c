@@ -112,7 +112,7 @@ int remove_array_integer_test(int* i_array,
 int remove_array_integers_test(int* i_array,
   int integer, int* o_array)
 {
-  i_array = remove_array_integers(i_array, integer);
+  i_array = remove_array_integers(i_array,integer);
   int length = integer_array_length(i_array);
   return compare_integer_arrays(i_array, o_array,
     length);
