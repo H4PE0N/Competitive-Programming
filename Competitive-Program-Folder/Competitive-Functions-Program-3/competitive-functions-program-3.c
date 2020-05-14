@@ -21,7 +21,7 @@ int calculate_integer_amount(int* array, int t_length,
   int amount = 0;
   for(int index = 0; index < t_length; index++)
   {
-    if(*(array + index) == number) amount = (amount + 1);
+    if(*(array + index) == number)amount = (amount + 1);
   }
   return amount;
 }
@@ -98,10 +98,41 @@ int** allocate_array_hashmap(int* array, int c_length)
 int* hashmap_keyword_array(int** hashmap)
 {
   int length = calculate_hashmap_length(hashmap);
-  int* array = generate_integer_array(length);
+  int* array = generate_integer_array(c_length);
   for(int index = 0; index < length; index++)
   {
     *(array + index) = *(*(hashmap + index) + 0);
   }
   return array;
+}
+
+// Inputs: hashmap, keyword;
+int integer_hashmap_value(int** hashmap, int keyword)
+{
+  int index = calculate_keyword_index(hashmap, keyword);
+  return (index >= 0 ? *(*(hashmap + index) + 1) : -1);
+
+}
+
+// Inputs: hashmap, keywords, value, hashmap length;
+int* integer_value_keywords(int** hashmap,int* keywords,
+  int value, int h_length)
+{
+  for(int index = 0; index < h_length; index++)
+  {
+    if(*(*(hashmap + index) + 1) != value) continue;
+    int length = integer_array_length(keywords);
+    keywords = add_array_integer(keywords, length,
+      *(*(hashmap + index) + 0));
+  }
+  return keywords;
+}
+
+// Inputs: hashmap, value;
+int* integer_hashmap_keywords(int** hashmap, int value)
+{
+  int length = calculate_hashmap_length(hashmap);
+  int* keywords = generate_integer_array(length);
+  return integer_value_keywords(hashmap,keywords,value,
+    length);
 }

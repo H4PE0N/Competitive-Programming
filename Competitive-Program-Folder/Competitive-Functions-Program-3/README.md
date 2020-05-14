@@ -16,6 +16,10 @@ calculate_hashmap_length      allocate_hashmap_value
 hashmap_keyword_exists        allocate_array_hashmap
 
 calculate_keyword_index       hashmap_keyword_array
+
+integer_value_keywords        integer_hashmap_keywords
+
+integer_hashmap_value
 ```
 
 Made by Roy Hampus Fridholm

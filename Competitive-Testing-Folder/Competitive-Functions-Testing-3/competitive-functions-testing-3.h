@@ -38,4 +38,15 @@ int allocate_array_hashmap_test(int*,int,int**);
 // Inputs: hashmap, output array;
 int hashmap_keyword_array_test(int**, int*);
 
+/* Inputs: input hashmap, input keywords, value,
+current length, ouput keywords; */
+int integer_value_keywords_test(int**, int*, int,
+  int, int*);
+
+// Inputs: hashmap, value, output keywords;
+int integer_hashmap_keywords_test(int**,int,int*);
+
+// Inputs: hashmap, keyword, ouput value;
+int integer_hashmap_value_test(int**, int, int);
+
 #endif
