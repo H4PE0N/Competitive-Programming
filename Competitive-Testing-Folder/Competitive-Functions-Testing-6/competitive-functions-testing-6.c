@@ -52,20 +52,20 @@ int calculate_array_average_test(int* array,
 
 /* Inputs: hashmap, index, common value,
 output common value; */
-int change_common_value_test(int** hashmap, int index,
+int update_common_value_test(int** hashmap,int index,
   int common_v, int o_common)
 {
-  common_v = change_common_value(hashmap, index,
+  common_v = update_common_value(hashmap, index,
     common_v);
   return (common_v == o_common);
 }
 
 /* Inputs: hashmap, index, common value, common key,
 output common key; */
-int change_common_key_test(int** hashmap, int index,
+int update_common_key_test(int** hashmap, int index,
   int common_v, int common_k, int o_common)
 {
-  common_k = change_common_key(hashmap, index,
+  common_k = update_common_key(hashmap, index,
     common_v, common_k);
   return (common_k == o_common);
 }

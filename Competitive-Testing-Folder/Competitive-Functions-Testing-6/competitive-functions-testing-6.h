@@ -16,11 +16,11 @@ int calculate_array_average_test(int*,int,double);
 
 /* Inputs: hashmap, index, common value,
 output common value; */
-int change_common_value_test(int**,int,int,int);
+int update_common_value_test(int**, int, int,int);
 
 /* Inputs: hashmap, index, common value,
 common key, output common key; */
-int change_common_key_test(int**,int,int,int,int);
+int update_common_key_test(int**,int,int,int,int);
 
 // Inputs: hashmap, current length, output common;
 int calculate_common_value_test(int**, int, int);
