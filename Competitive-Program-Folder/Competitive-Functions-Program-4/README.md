@@ -2,7 +2,7 @@
 This program  has  functions  that  generate  strings  and  do  
 operations to them. Like adding / removing a character.  Every  
 function here, has it's own  testing  function  in  the  other  
-folder.
+folder: [Competitive-Functions-Testing-4](./Competitive-Testing-Folder/Competitive-Functions-Testing-4)
 
 Here is a list of all the functions that is  in  the  program:
 

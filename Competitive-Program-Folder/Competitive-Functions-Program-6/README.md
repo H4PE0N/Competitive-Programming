@@ -2,7 +2,7 @@
 This program have functions that  calculates  probability,  it  
 has functions that calculates things like typical, average and  
 common value.  Every  function  here,  has  it's  own  testing  
-function in the other folder.
+function in the other folder: [Competitive-Functions-Testing-6](./Competitive-Testing-Folder/Competitive-Functions-Testing-6)
 
 Here is a list of all the functions that is  in  the  program:
 
