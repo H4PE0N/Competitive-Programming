@@ -24,8 +24,8 @@ int* hashmap_keyword_array(int**);
 
 int integer_hashmap_value(int**, int);
 
-int* integer_value_keywords(int**,int*,
-  int, int);
+int* integer_value_keywords(int**,int*,int,
+  int);
 
 int* integer_hashmap_keywords(int**,int);
 

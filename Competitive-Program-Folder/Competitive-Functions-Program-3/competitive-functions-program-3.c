@@ -88,7 +88,7 @@ int** allocate_array_hashmap(int* array, int length)
 int* hashmap_keyword_array(int** hashmap)
 {
   int length = calculate_hashmap_length(hashmap);
-  int* array = generate_integer_array(c_length);
+  int* array = generate_integer_array(length);
   for(int index = 0; index < length; index++)
   {
     *(array + index) = *(*(hashmap + index) + 0);

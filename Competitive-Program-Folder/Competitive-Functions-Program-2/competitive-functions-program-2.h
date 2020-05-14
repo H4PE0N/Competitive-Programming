@@ -22,7 +22,6 @@ int** add_matrix_integer(int**, int, int);
 int compare_matrix_arrays(int**,int**,int,
   int);
 
-int** remove_matrix_integers(int**, int,
-  int);
+int** remove_matrix_integers(int**,int,int);
 
 #endif
