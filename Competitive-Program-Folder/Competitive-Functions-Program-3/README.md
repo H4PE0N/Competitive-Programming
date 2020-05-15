@@ -13,13 +13,15 @@ calculate_integer_amount      generate_hashmap_keyword
 
 calculate_hashmap_length      allocate_hashmap_value
 
-hashmap_keyword_exists        allocate_array_hashmap
+hashmap_keyword_exists        convert_array_hashmap
 
 calculate_keyword_index       hashmap_keyword_array
 
 integer_value_keywords        integer_hashmap_keywords
 
-integer_hashmap_value
+integer_hashmap_value         reduce_hashmap_value
+
+delete_hashmap_keyword
 ```
 
 Made by Roy Hampus Fridholm

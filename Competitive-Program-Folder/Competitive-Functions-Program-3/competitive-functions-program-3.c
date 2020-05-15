@@ -59,6 +59,7 @@ int** increment_hashmap_value(int** hashmap,int keyword)
 int** generate_hashmap_keyword(int** hashmap,int keyword)
 {
   int length = calculate_hashmap_length(hashmap);
+  *(hashmap + length) = generate_integer_array(3);
   *(*(hashmap + length) + 0) = keyword;
   *(*(hashmap + length) + 1) = 1; return hashmap;
 }
@@ -74,7 +75,7 @@ int** allocate_hashmap_value(int** hashmap, int keyword)
   return hashmap;
 }
 
-int** allocate_array_hashmap(int* array, int length)
+int** convert_array_hashmap(int* array, int length)
 {
   int** hashmap = generate_integer_hashmap(length);
   for(int index = 0; index < length; index++)
@@ -103,9 +104,10 @@ int integer_hashmap_value(int** hashmap, int keyword)
 
 }
 
-int* integer_value_keywords(int** hashmap,int* keywords,
-  int value, int i_length)
+int* integer_value_keywords(int** hashmap, int value,
+  int i_length)
 {
+  int* keywords = generate_integer_array(i_length);
   for(int index = 0; index < i_length; index++)
   {
     if(*(*(hashmap + index) + 1) != value) continue;
@@ -119,7 +121,24 @@ int* integer_value_keywords(int** hashmap,int* keywords,
 int* integer_hashmap_keywords(int** hashmap, int value)
 {
   int length = calculate_hashmap_length(hashmap);
-  int* keywords = generate_integer_array(length);
-  return integer_value_keywords(hashmap,keywords,value,
-    length);
+  return integer_value_keywords(hashmap, value, length);
+}
+
+int** delete_hashmap_keyword(int** hashmap, int length,
+  int keyword)
+{
+  int index = calculate_keyword_index(hashmap, keyword);
+  hashmap = move_matrix_arrays(hashmap, length, index);
+  *(hashmap + (length-1)) = allocate_array_integers(
+    *(hashmap + (length-1)), 2);
+  return hashmap;
+}
+
+int** reduce_hashmap_value(int** hashmap, int keyword)
+{
+  int index = calculate_keyword_index(hashmap, keyword);
+  int length = calculate_hashmap_length(hashmap);
+  if(*(*(hashmap + index) + 1) > 1)
+  { *(*(hashmap + index) + 1) -= 1; return hashmap; }
+  return delete_hashmap_keyword(hashmap,length,keyword);
 }

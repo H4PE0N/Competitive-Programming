@@ -14,7 +14,9 @@ delete_matrix_integer       add_matrix_integer
 
 integer_matrix_height       compare_matrix_arrays
 
-remove_matrix_integers
+remove_matrix_integers      move_matrix_arrays
+
+switch_matrix_arrays        switch_matrix_integers
 ```
 
 Made by Roy Hampus Fridholm

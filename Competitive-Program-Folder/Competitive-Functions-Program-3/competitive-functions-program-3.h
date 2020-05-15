@@ -19,15 +19,20 @@ int** generate_hashmap_keyword(int**,int);
 
 int** allocate_hashmap_value(int**, int);
 
-int** allocate_array_hashmap(int*, int);
+int** convert_array_hashmap(int*, int);
 
 int* hashmap_keyword_array(int**);
 
 int integer_hashmap_value(int**, int);
 
-int* integer_value_keywords(int**, int*,
-  int, int);
+int* integer_value_keywords(int**, int,
+  int);
 
 int* integer_hashmap_keywords(int**,int);
+
+int** delete_hashmap_keyword(int**, int,
+  int);
+
+int** reduce_hashmap_value(int**, int);
 
 #endif

@@ -19,16 +19,14 @@ int** allocate_matrix_integer(int** matrix,int height,
   int width, int integer)
 {
   *(matrix + height) = allocate_array_integer(
-    *(matrix + height), width, integer);
-  return matrix;
+    *(matrix + height), width, integer);return matrix;
 }
 
 int** delete_matrix_integer(int** matrix, int height,
-  int width, int length)
+  int width, int index)
 {
   *(matrix + height) = delete_array_integer(
-    *(matrix + height), length, width);
-  return matrix;
+    *(matrix + height), width, index); return matrix;
 }
 
 int integer_matrix_height(int** matrix, int width)
@@ -91,6 +89,38 @@ int** remove_matrix_integers(int** matrix,int integer,
   {
     *(matrix + index) = remove_array_integers(
       *(matrix + index), width, integer);
+  }
+  return matrix;
+}
+
+int** switch_matrix_integers(int** matrix, int width,
+  int index)
+{
+  int switch_integer = *(*(matrix + width) + index);
+  matrix[width][index] = matrix[width + 1][index];
+  *(*(matrix + width + 1) + index) = switch_integer;
+  return matrix;
+}
+
+int** switch_matrix_arrays(int** matrix, int width,
+  int i_index)
+{
+  for(int index = 0; index < width; index++)
+  {
+    matrix = switch_matrix_integers(matrix, i_index,
+      index);
+  }
+  return matrix;
+}
+
+int** move_matrix_arrays(int** matrix, int height,
+  int start)
+{
+  int width = integer_array_length(*(matrix + 0));
+  for(int index = start; index < (height-1); index++)
+  {
+    matrix = switch_matrix_arrays(matrix, width,
+      index);
   }
   return matrix;
 }
