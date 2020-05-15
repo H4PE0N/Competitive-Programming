@@ -17,7 +17,7 @@ int generate_integer_hashmap_test(int i_length,
   int** o_hashmap)
 {
   int** hashmap = generate_integer_hashmap(i_length);
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   return compare_matrix_arrays(hashmap, o_hashmap,
     length, 2);
 }
@@ -29,10 +29,10 @@ int calculate_integer_amount_test(int* array,
     number) == amount;
 }
 
-int calculate_hashmap_length_test(int** hashmap,
+int integer_hashmap_length_test(int** hashmap,
   int length)
 {
-  return (calculate_hashmap_length(hashmap) == length);
+  return (integer_hashmap_length(hashmap) == length);
 }
 
 int hashmap_keyword_exists_test(int** hashmap,
@@ -53,7 +53,7 @@ int increment_hashmap_value_test(int** i_hashmap,
   int keyword, int** o_hashmap)
 {
   i_hashmap=increment_hashmap_value(i_hashmap,keyword);
-  int length = calculate_hashmap_length(i_hashmap);
+  int length = integer_hashmap_length(i_hashmap);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length, 2);
 }
@@ -63,7 +63,7 @@ int generate_hashmap_keyword_test(int** i_hashmap,
 {
   i_hashmap = generate_hashmap_keyword(i_hashmap,
     keyword);
-  int length = calculate_hashmap_length(i_hashmap);
+  int length = integer_hashmap_length(i_hashmap);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length, 2);
 }
@@ -72,7 +72,7 @@ int allocate_hashmap_value_test(int** i_hashmap,
   int keyword, int** o_hashmap)
 {
   i_hashmap=allocate_hashmap_value(i_hashmap,keyword);
-  int length = calculate_hashmap_length(i_hashmap);
+  int length = integer_hashmap_length(i_hashmap);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length, 2);
 }
@@ -81,7 +81,7 @@ int convert_array_hashmap_test(int* array,int i_length,
   int** i_hashmap)
 {
   int** hashmap=convert_array_hashmap(array,i_length);
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   return compare_matrix_arrays(hashmap, i_hashmap,
     length, 2);
 }
@@ -124,7 +124,7 @@ int integer_hashmap_value_test(int** hashmap,
 int delete_hashmap_keyword_test(int** i_hashmap,
   int keyword, int** o_hashmap)
 {
-  int length = calculate_hashmap_length(i_hashmap);
+  int length = integer_hashmap_length(i_hashmap);
   i_hashmap = delete_hashmap_keyword(i_hashmap,length,
     keyword);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
@@ -135,7 +135,7 @@ int reduce_hashmap_value_test(int** i_hashmap,
   int keyword, int** o_hashmap)
 {
   i_hashmap = reduce_hashmap_value(i_hashmap, keyword);
-  int length = calculate_hashmap_length(i_hashmap);
+  int length = integer_hashmap_length(i_hashmap);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length - 1, 2);
 }

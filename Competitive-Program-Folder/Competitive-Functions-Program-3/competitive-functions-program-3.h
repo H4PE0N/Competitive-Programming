@@ -7,7 +7,7 @@ int** generate_integer_hashmap(int);
 int calculate_integer_amount(int*, int,
   int);
 
-int calculate_hashmap_length(int**);
+int integer_hashmap_length(int**);
 
 int hashmap_keyword_exists(int**, int);
 

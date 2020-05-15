@@ -74,6 +74,6 @@ int calculate_array_typical(int* array, int i_length)
 {
   int** hashmap = convert_array_hashmap(array,
     i_length);
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   return calculate_common_value(hashmap, length);
 }

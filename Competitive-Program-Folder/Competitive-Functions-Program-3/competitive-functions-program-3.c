@@ -24,7 +24,7 @@ int calculate_integer_amount(int* array, int length,
   return amount;
 }
 
-int calculate_hashmap_length(int** hashmap)
+int integer_hashmap_length(int** hashmap)
 {
   int index = 0; while(*(*(hashmap + index) + 1) != 0)
   { index++; } return index;
@@ -32,7 +32,7 @@ int calculate_hashmap_length(int** hashmap)
 
 int hashmap_keyword_exists(int** hashmap, int keyword)
 {
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   for(int index = 0; index < length; index++)
   {
     if(*(*(hashmap + index)) == keyword) return true;
@@ -42,7 +42,7 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
 
 int calculate_keyword_index(int** hashmap, int keyword)
 {
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   for(int index = 0; index < length; index++)
   {
     if(*(*(hashmap + index)) == keyword) return index;
@@ -58,7 +58,7 @@ int** increment_hashmap_value(int** hashmap,int keyword)
 
 int** generate_hashmap_keyword(int** hashmap,int keyword)
 {
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   *(hashmap + length) = generate_integer_array(3);
   *(*(hashmap + length) + 0) = keyword;
   *(*(hashmap + length) + 1) = 1; return hashmap;
@@ -88,7 +88,7 @@ int** convert_array_hashmap(int* array, int length)
 
 int* hashmap_keyword_array(int** hashmap)
 {
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   int* array = generate_integer_array(length);
   for(int index = 0; index < length; index++)
   {
@@ -120,7 +120,7 @@ int* integer_value_keywords(int** hashmap, int value,
 
 int* integer_hashmap_keywords(int** hashmap, int value)
 {
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   return integer_value_keywords(hashmap, value, length);
 }
 
@@ -137,7 +137,7 @@ int** delete_hashmap_keyword(int** hashmap, int length,
 int** reduce_hashmap_value(int** hashmap, int keyword)
 {
   int index = calculate_keyword_index(hashmap, keyword);
-  int length = calculate_hashmap_length(hashmap);
+  int length = integer_hashmap_length(hashmap);
   if(*(*(hashmap + index) + 1) > 1)
   { *(*(hashmap + index) + 1) -= 1; return hashmap; }
   return delete_hashmap_keyword(hashmap,length,keyword);

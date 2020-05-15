@@ -11,7 +11,7 @@ generate_integer_hashmap      increment_hashmap_value
 
 calculate_integer_amount      generate_hashmap_keyword
 
-calculate_hashmap_length      allocate_hashmap_value
+integer_hashmap_length        allocate_hashmap_value
 
 hashmap_keyword_exists        convert_array_hashmap
 
