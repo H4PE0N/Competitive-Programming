@@ -17,71 +17,54 @@ competitive-functions-program-3.h"
 Competitive-Functions-Program-6/\
 competitive-functions-program-6.h"
 
-// Inputs: array, current length, output median;
-int calculate_odd_median_test(int* array, int c_length,
-  double o_median)
+int calculate_odd_median_test(int* array, int length,
+  double median)
 {
-  double median = calculate_odd_median(array, c_length);
-  return (median == o_median);
+  return calculate_odd_median(array, length)==median;
 }
 
-// Inputs: array, current length, output median;
-int calculate_even_median_test(int* array, int c_length,
-  double o_median)
+int calculate_even_median_test(int* array, int length,
+  double median)
 {
-  double median = calculate_even_median(array,c_length);
-  return (median == o_median);
+  return calculate_even_median(array,length)==median;
 }
 
-// Inputs: array, current length, output median;
-int calculate_array_median_test(int* array,int c_length,
-  double o_median)
+int calculate_array_median_test(int* array,int length,
+  double median)
 {
-  double median=calculate_array_median(array,c_length);
-  return (median == o_median);
+  return calculate_array_median(array,length)==median;
 }
 
-// Inputs: array, current length, output average;
 int calculate_array_average_test(int* array,
-  int c_length, double o_average)
+  int length, double average)
 {
-  double average = calculate_array_average(array,
-    c_length);
-  return (average == o_average);
+  return calculate_array_average(array, length) ==
+    average;
 }
 
-/* Inputs: hashmap, index, common value,
-output common value; */
-int update_common_value_test(int** hashmap,int index,
-  int common_v, int o_common)
+int update_common_value_test(int** hashmap, int index,
+  int i_value, int o_value)
 {
-  common_v = update_common_value(hashmap, index,
-    common_v);
-  return (common_v == o_common);
+  return update_common_value(hashmap,index,i_value) ==
+    o_value;
 }
 
-/* Inputs: hashmap, index, common value, common key,
-output common key; */
 int update_common_key_test(int** hashmap, int index,
-  int common_v, int common_k, int o_common)
+  int value, int i_key, int o_key)
 {
-  common_k = update_common_key(hashmap, index,
-    common_v, common_k);
-  return (common_k == o_common);
+  return update_common_key(hashmap, index, value,
+    i_key) == o_key;
 }
 
-// Inputs: hashmap, current length, output common;
 int calculate_common_value_test(int** hashmap,
-  int c_length, int o_common)
+  int length, int value)
 {
-  int common=calculate_common_value(hashmap,c_length);
-  return (common == o_common);
+  return calculate_common_value(hashmap,length)==value;
 }
 
-// Inputs: array, current length, output typical;
-int calculate_array_typical_test(int* array,
-  int c_length, int o_typical)
+int calculate_array_typical_test(int* array,int length,
+  int typical)
 {
-  int typical=calculate_array_typical(array,c_length);
-  return (typical == o_typical);
+  return calculate_array_typical(array, length) ==
+    typical;
 }
