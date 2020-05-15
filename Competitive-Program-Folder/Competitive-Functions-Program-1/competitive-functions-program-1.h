@@ -34,6 +34,7 @@ int* delete_array_integer(int*, int,
 int compare_integer_arrays(int*, int*,
   int);
 
-int* remove_array_integers(int*, int);
+int* remove_array_integers(int*, int,
+  int);
 
 #endif

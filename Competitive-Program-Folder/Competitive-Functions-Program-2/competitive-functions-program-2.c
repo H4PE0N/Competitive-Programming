@@ -86,11 +86,11 @@ int compare_matrix_arrays(int** first, int** second,
 int** remove_matrix_integers(int** matrix,int integer,
   int width)
 {
-  int length=integer_matrix_height(matrix, width);
-  for(int index = 0; index <= length; index++)
+  int height=integer_matrix_height(matrix, width);
+  for(int index = 0; index <= height; index++)
   {
     *(matrix + index) = remove_array_integers(
-      *(matrix + index), integer);
+      *(matrix + index), width, integer);
   }
   return matrix;
 }

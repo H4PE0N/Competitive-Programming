@@ -10,9 +10,8 @@ int allocate_array_integer_test(int* i_array,
 {
   i_array = allocate_array_integer(i_array,index,
     integer);
-  int length = integer_array_length(i_array);
   return compare_integer_arrays(i_array,o_array,
-    length);
+    index + 1);
 }
 
 int delete_array_integer_test(int* i_array,
@@ -110,10 +109,10 @@ int remove_array_integer_test(int* i_array,
 }
 
 int remove_array_integers_test(int* i_array,
-  int integer, int* o_array)
+  int length, int integer, int* o_array)
 {
-  i_array = remove_array_integers(i_array,integer);
-  int length = integer_array_length(i_array);
+  i_array = remove_array_integers(i_array, length,
+    integer);
   return compare_integer_arrays(i_array, o_array,
     length);
 }

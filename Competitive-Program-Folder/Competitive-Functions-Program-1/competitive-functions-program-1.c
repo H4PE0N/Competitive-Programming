@@ -94,7 +94,7 @@ int* remove_array_integer(int* array, int length,
   for(int index = (length - 1); index >= 0; index--)
   {
     if(*(array + index) != integer) continue;
-    start = index; break; 
+    start = index; break;
   }
   array = move_array_integers(array, length, start);
   return allocate_array_integer(array, length, '\0');
@@ -118,9 +118,9 @@ int compare_integer_arrays(int* first, int* second,
   return true;
 }
 
-int* remove_array_integers(int* array, int integer)
+int* remove_array_integers(int* array, int length,
+  int integer)
 {
-  int length = integer_array_length(array);
   while(array_contains_integer(array,length,integer))
   {
     array = remove_array_integer(array, length,
