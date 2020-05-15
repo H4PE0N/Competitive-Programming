@@ -8,7 +8,7 @@ competitive-functions-program-1.h"
 #include "../Competitive-Functions-Program-2/\
 competitive-functions-program-2.h"
 
-int** generate_integer_hashmap(const int length)
+int** generate_integer_hashmap(int length)
 {
   return generate_matrix_array( (length + 1), 2);
 }

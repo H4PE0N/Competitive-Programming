@@ -7,9 +7,9 @@ int* allocate_array_integer(int*, int,
 
 int* allocate_array_integers(int*,int);
 
-int* generate_integer_array(const int);
+int* generate_integer_array(int);
 
-int integer_array_length(const int*);
+int integer_array_length(int*);
 
 int array_contains_integer(int*, int,
   int);

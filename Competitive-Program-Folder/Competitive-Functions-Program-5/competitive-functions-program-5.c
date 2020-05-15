@@ -44,20 +44,20 @@ char* allocate_binary_bits(char* binary, int length,
   return binary;
 }
 
-int calculate_real_length(const int decimal)
+int calculate_real_length(int decimal)
 {
   int length = 0; while(decimal > pow(2, length))
   { length = (length + 1); } return length;
 }
 
-int calculate_nearest_length(const int decimal)
+int calculate_nearest_length(int decimal)
 {
   int length = calculate_real_length(decimal);
   int index = 2; while(length > pow(2, index))
   { index = (index + 1); } return pow(2, index);
 }
 
-char* convert_decimal_binary(const int decimal)
+char* convert_decimal_binary(int decimal)
 {
   int length = calculate_nearest_length(decimal);
   char* binary = generate_empty_string(length);

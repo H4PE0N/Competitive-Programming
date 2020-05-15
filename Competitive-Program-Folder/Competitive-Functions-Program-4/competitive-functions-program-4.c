@@ -18,13 +18,13 @@ char* allocate_string_characters(char* string,
   return string;
 }
 
-char* generate_empty_string(const int length)
+char* generate_empty_string(int length)
 {
   char* string = malloc(sizeof(string) * (length + 1));
   return allocate_string_characters(string,length + 1);
 }
 
-int calculate_string_length(const char* string)
+int calculate_string_length(char* string)
 {
   int length = 0; while(*(string + length) != '\0')
   { length += 1; } return length;
@@ -64,8 +64,8 @@ char* remove_string_character(char* string, int length,
   int start = length;
   for(int index = (length - 1); index >= 0; index--)
   {
-    if(*(string + index) == character)
-    { start = index; break; }
+    if(*(string + index) != character) continue;
+    start = index; break;
   }
   string = move_string_characters(string,length,start);
   return allocate_string_character(string,length,'\0');

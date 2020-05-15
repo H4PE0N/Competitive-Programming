@@ -4,11 +4,11 @@
 
 char* allocate_string_character(char*,int,char);
 
-char* allocate_string_characters(char*, int);
+char* allocate_string_characters(char*,int);
 
-char* generate_empty_string(const int);
+char* generate_empty_string(int);
 
-int calculate_string_length(const char*);
+int calculate_string_length(char*);
 
 int string_contains_character(char*,int,char);
 

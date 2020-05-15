@@ -17,13 +17,13 @@ int* allocate_array_integers(int* array, int length)
   return array;
 }
 
-int* generate_integer_array(const int length)
+int* generate_integer_array(int length)
 {
   int* array = malloc(sizeof(array) * (length + 1));
   return allocate_array_integers(array, length + 1);
 }
 
-int integer_array_length(const int* array)
+int integer_array_length(int* array)
 {
   int length = 0; while(*(array + length) != '\0')
   { length  = (length + 1); } return length;

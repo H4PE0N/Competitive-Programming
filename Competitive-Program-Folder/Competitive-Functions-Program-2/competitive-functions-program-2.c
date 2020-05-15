@@ -33,9 +33,9 @@ int** delete_matrix_integer(int** matrix, int height,
 
 int integer_matrix_height(int** matrix, int width)
 {
-  int length = 0;
-  while(integer_array_length(*(matrix + length))
-  >= width) { length += 1; } return length;
+  int height = 0;
+  while(integer_array_length(*(matrix + height))
+  >= width) { height += 1; } return height;
 }
 
 int matrix_contains_integer(int** matrix, int height,

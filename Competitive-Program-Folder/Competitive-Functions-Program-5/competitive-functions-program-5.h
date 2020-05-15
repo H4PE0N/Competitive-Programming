@@ -10,11 +10,11 @@ char* allocate_binary_bit(char*,int,int);
 
 char* allocate_binary_bits(char*,int,int);
 
-int calculate_real_length(const int);
+int calculate_real_length(int);
 
-int calculate_nearest_length(const int);
+int calculate_nearest_length(int);
 
-char* convert_decimal_binary(const int);
+char* convert_decimal_binary(int);
 
 char* convert_character_binary(char);
 
