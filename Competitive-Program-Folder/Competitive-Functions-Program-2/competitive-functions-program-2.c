@@ -5,89 +5,88 @@
 #include "../Competitive-Functions-Program-1/\
 competitive-functions-program-1.h"
 
-int** generate_matrix_array(int length, int width)
+int** generate_matrix_array(int height, int width)
 {
-  int** matrix = malloc(sizeof(matrix) * length);
-  for(int index = 0; index < length; index++)
+  int** matrix = malloc(sizeof(matrix) * height);
+  for(int index = 0; index < height; index++)
   {
     *(matrix + index) = generate_integer_array(width);
   }
   return matrix;
 }
 
-int** allocate_matrix_integer(int** matrix,int m_index,
-  int a_index, int integer)
+int** allocate_matrix_integer(int** matrix,int height,
+  int width, int integer)
 {
-  *(matrix + m_index) = allocate_array_integer(
-    *(matrix + m_index), a_index, integer);
+  *(matrix + height) = allocate_array_integer(
+    *(matrix + height), width, integer);
   return matrix;
 }
 
-int** delete_matrix_integer(int** matrix, int m_index,
-  int a_index, int length)
+int** delete_matrix_integer(int** matrix, int height,
+  int width, int length)
 {
-  *(matrix + m_index) = delete_array_integer(
-    *(matrix + m_index), length, a_index);
+  *(matrix + height) = delete_array_integer(
+    *(matrix + height), length, width);
   return matrix;
 }
 
-int calculate_matrix_length(int** matrix, int i_length)
+int integer_matrix_height(int** matrix, int width)
 {
   int length = 0;
   while(integer_array_length(*(matrix + length))
-  >= i_length) { length += 1; } return length;
+  >= width) { length += 1; } return length;
 }
 
-int matrix_contains_integer(int** matrix, int m_length,
-  int a_length, int integer)
+int matrix_contains_integer(int** matrix, int height,
+  int width, int integer)
 {
-  for(int index = 0; index < m_length; index++)
+  for(int index = 0; index < height; index++)
   {
     if(array_contains_integer(*(matrix + index),
-    a_length, integer)) return true;
+      width, integer)) return true;
   }
   return false;
 }
 
-int** remove_matrix_integer(int** matrix, int length,
+int** remove_matrix_integer(int** matrix, int height,
   int integer)
 {
-  for(int index = (length - 1); index >= 0; index--)
+  for(int index = (height - 1); index >= 0; index--)
   {
-    int a_length=integer_array_length(*(matrix+index));
-
+    int width = integer_array_length(*(matrix+index));
     if(!array_contains_integer(*(matrix + index),
-      a_length, integer)) continue;
+      width, integer)) continue;
     *(matrix + index) = remove_array_integer(
-      *(matrix + index), a_length, integer); break;
+      *(matrix + index), width, integer); break;
   }
   return matrix;
 }
 
-int** add_matrix_integer(int** matrix, int length,
+int** add_matrix_integer(int** matrix, int height,
   int integer)
 {
-  int a_length=integer_array_length(*(matrix+length));
-  *(matrix + length) = add_array_integer(*(matrix +
-    length), a_length, integer);
+  int width = integer_array_length(*(matrix+height));
+  *(matrix + height) = add_array_integer(*(matrix +
+    height), width, integer);
   return matrix;
 }
 
 int compare_matrix_arrays(int** first, int** second,
-  int m_length, int a_length)
+  int height, int width)
 {
-  for(int index = 0; index <= m_length; index++)
+  for(int index = 0; index <= height; index++)
   {
     if(!compare_integer_arrays(*(first + index),
-      *(second + index), a_length)) return false;
+      *(second + index), width)) return false;
   }
   return true;
 }
 
-int** remove_matrix_integers(int** matrix, int integer,
-  int a_length)
+int** remove_matrix_integers(int** matrix,int integer,
+  int width)
 {
-  int length=calculate_matrix_length(matrix,a_length);
+  int length=integer_matrix_height(matrix, width);
   for(int index = 0; index <= length; index++)
   {
     *(matrix + index) = remove_array_integers(

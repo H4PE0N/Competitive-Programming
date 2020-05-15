@@ -9,15 +9,15 @@ competitive-functions-program-1.h"
 Competitive-Functions-Program-2/\
 competitive-functions-program-2.h"
 
-int generate_matrix_array_test(int length, int width,
-  int** o_matrix)
+int generate_matrix_array_test(int height, int width,
+  int** i_matrix)
 {
-  int** matrix=generate_matrix_array(length, width);
-  return compare_matrix_arrays(matrix, o_matrix,
-    length, width);
+  int** matrix = generate_matrix_array(height, width);
+  return compare_matrix_arrays(matrix,i_matrix,height,
+    width);
 }
 
-int allocate_matrix_integer_test(int** i_matrix, int x,
+int allocate_matrix_integer_test(int** i_matrix,int x,
   int y, int integer, int** o_matrix)
 {
   i_matrix = allocate_matrix_integer(i_matrix, x, y,
@@ -27,58 +27,55 @@ int allocate_matrix_integer_test(int** i_matrix, int x,
 }
 
 int delete_matrix_integer_test(int** i_matrix, int x,
-  int y, int length, int** o_matrix)
+  int y, int height, int** o_matrix)
 {
   i_matrix = delete_matrix_integer(i_matrix, x, y,
-    length);
+    height);
   return compare_matrix_arrays(i_matrix, o_matrix,
     x, y);
 }
 
-int calculate_matrix_length_test(int** i_matrix,
-  int i_length, int o_length)
+int integer_matrix_height_test(int** matrix,
+  int width, int height)
 {
-  int length = calculate_matrix_length(i_matrix,
-    i_length);
-  return (length == o_length);
+  return integer_matrix_height(matrix,width)==height;
 }
 
-int matrix_contains_integer_test(int** i_matrix,
-  int length, int width, int integer, int boolean)
+int matrix_contains_integer_test(int** matrix,
+  int height, int width, int integer, int output)
 {
-  int output = matrix_contains_integer(i_matrix,
-    length, width, integer);
-  return (output == boolean);
+  return matrix_contains_integer(matrix, height,
+    width, integer) == output;
 }
 
 int remove_matrix_integer_test(int** i_matrix,
-  int length, int integer, int** o_matrix)
+  int height, int integer, int** o_matrix)
 {
-  i_matrix = remove_matrix_integer(i_matrix, length,
+  i_matrix = remove_matrix_integer(i_matrix, height,
     integer);
-  int a_length = integer_array_length(*(i_matrix));
+  int width = integer_array_length(*(i_matrix));
   return compare_matrix_arrays(i_matrix, o_matrix,
-    length, a_length);
+    height, width);
 }
 
 int add_matrix_integer_test(int** i_matrix,
-  int i_length,int height,int integer,int** o_matrix)
+  int i_height,int width,int integer,int** o_matrix)
 {
-  int length = calculate_matrix_length(i_matrix,
-    height);
-  i_matrix = add_matrix_integer(i_matrix, length,
+  int height = integer_matrix_height(i_matrix,
+    width);
+  i_matrix = add_matrix_integer(i_matrix, height,
     integer);
   return compare_matrix_arrays(i_matrix, o_matrix,
-    i_length, height);
+    i_height, width);
 }
 
 int remove_matrix_integers_test(int** i_matrix,
-  int integer, int height, int** o_matrix)
+  int integer, int width, int** o_matrix)
 {
-  i_matrix = remove_matrix_integers(i_matrix, integer,
-    height);
-  int length = calculate_matrix_length(i_matrix,
-    height);
+  i_matrix = remove_matrix_integers(i_matrix,integer,
+    width);
+  int length = integer_matrix_height(i_matrix,
+    width);
   return compare_matrix_arrays(i_matrix, o_matrix,
-    length, height);
+    length, width);
 }

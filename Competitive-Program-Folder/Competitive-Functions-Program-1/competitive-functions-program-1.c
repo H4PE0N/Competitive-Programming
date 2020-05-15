@@ -93,8 +93,8 @@ int* remove_array_integer(int* array, int length,
   int start = length;
   for(int index = (length - 1); index >= 0; index--)
   {
-    if(*(array + index) == integer) {start = index;
-      break;}
+    if(*(array + index) != integer) continue;
+    start = index; break; 
   }
   array = move_array_integers(array, length, start);
   return allocate_array_integer(array, length, '\0');
