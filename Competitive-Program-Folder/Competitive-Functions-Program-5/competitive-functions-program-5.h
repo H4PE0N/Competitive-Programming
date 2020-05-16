@@ -2,25 +2,29 @@
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_5_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_5_H
 
-int binary_decimal_enough(char*,int,int);
+int binary_integer_enough(char*, int,
+  int);
 
-int reduce_binary_decimal(char*,int,int);
+int reduce_binary_integer(char*, int,
+  int);
 
-char* allocate_binary_bit(char*,int,int);
+char* allocate_binary_bit(char*, int,
+  int);
 
-char* allocate_binary_bits(char*,int,int);
+char* allocate_binary_bits(char*,int,
+  int);
 
 int calculate_real_length(int);
 
 int calculate_nearest_length(int);
 
-char* convert_decimal_binary(int);
+char* convert_integer_binary(int);
 
 char* convert_character_binary(char);
 
-int calculate_decimal_binary(char*, int,
-  int);
+int calculate_integer_binary(char*,
+  int, int);
 
-int convert_binary_decimal(char*);
+int convert_binary_integer(char*);
 
 #endif
