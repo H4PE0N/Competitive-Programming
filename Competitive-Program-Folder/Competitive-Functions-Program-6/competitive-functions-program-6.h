@@ -2,20 +2,21 @@
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_6_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_6_H
 
-double calculate_odd_median(int*, int);
+double integer_odd_median(int*, int);
 
-double calculate_even_median(int*, int);
+double integer_even_median(int*, int);
 
-double calculate_array_median(int*, int);
+double integer_array_median(int*, int);
 
-double calculate_array_average(int*, int);
+double integer_array_average(int*, int);
 
-int update_common_value(int**,int,int);
+int update_integer_value(int**,int,int);
 
-int update_common_key(int**,int,int,int);
+int update_integer_key(int**,int,int,
+  int);
 
-int calculate_common_value(int**, int);
+int integer_common_value(int**, int);
 
-int calculate_array_typical(int*, int);
+int integer_array_typical(int*, int);
 
 #endif
