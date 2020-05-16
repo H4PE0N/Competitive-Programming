@@ -9,13 +9,13 @@ Here is a list of all the functions that is  in  the  program:
 ```
 generate_integer_hashmap      increment_hashmap_value
 
-calculate_integer_amount      generate_hashmap_keyword
+array_integer_amount          generate_hashmap_keyword
 
 integer_hashmap_length        allocate_hashmap_value
 
 hashmap_keyword_exists        convert_array_hashmap
 
-calculate_keyword_index       hashmap_keyword_array
+integer_keyword_index         hashmap_keyword_array
 
 integer_value_keywords        integer_hashmap_keywords
 

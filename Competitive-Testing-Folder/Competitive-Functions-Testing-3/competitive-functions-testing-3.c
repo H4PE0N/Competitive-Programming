@@ -22,10 +22,10 @@ int generate_integer_hashmap_test(int i_length,
     length, 2);
 }
 
-int calculate_integer_amount_test(int* array,
+int array_integer_amount_test(int* array,
   int length, int number, int amount)
 {
-  return calculate_integer_amount(array, length,
+  return array_integer_amount(array, length,
     number) == amount;
 }
 
@@ -42,10 +42,10 @@ int hashmap_keyword_exists_test(int** hashmap,
   return (output == boolean);
 }
 
-int calculate_keyword_index_test(int** hashmap,
+int integer_keyword_index_test(int** hashmap,
   int keyword, int index)
 {
-  return calculate_keyword_index(hashmap,keyword) ==
+  return integer_keyword_index(hashmap,keyword) ==
     index;
 }
 
