@@ -89,3 +89,10 @@ int convert_binary_integer_test(char* binary,
   int integer = convert_binary_integer(binary);
   return (integer == i_integer);
 }
+
+int convert_binary_character_test(char* binary,
+  char i_character)
+{
+  int character = convert_binary_character(binary);
+  return (character == i_character);
+}

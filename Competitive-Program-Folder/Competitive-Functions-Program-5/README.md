@@ -16,6 +16,8 @@ allocate_binary_bit           convert_character_binary
 allocate_binary_bits          calculate_integer_binary
 
 calculate_real_length         convert_binary_integer
+
+convert_binary_character
 ```
 
 Made by Roy Hampus Fridholm

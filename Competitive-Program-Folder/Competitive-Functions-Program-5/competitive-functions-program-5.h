@@ -27,4 +27,6 @@ int calculate_integer_binary(char*,
 
 int convert_binary_integer(char*);
 
+char convert_binary_character(char*);
+
 #endif

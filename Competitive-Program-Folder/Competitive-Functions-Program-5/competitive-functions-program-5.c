@@ -91,3 +91,8 @@ int convert_binary_integer(char* binary)
   }
   return integer;
 }
+
+char convert_binary_character(char* binary)
+{
+  return convert_binary_integer(binary);
+}
