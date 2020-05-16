@@ -83,10 +83,18 @@ double convert_decimal_procent(double decimal)
   return (decimal * 100);
 }
 
-double integer_array_frequence(int* array,
+double array_integer_frequence(int* array,
   int length, int integer)
 {
   int amount = array_integer_amount(array, length,
     integer);
-  return convert_decimal_procent(amount / length);
+  return ((double) amount / (double) length);
+}
+
+double array_integer_procent(int* array,int length,
+  int integer)
+{
+  double amount = array_integer_frequence(array,
+    length, integer);
+  return convert_decimal_procent(amount);
 }

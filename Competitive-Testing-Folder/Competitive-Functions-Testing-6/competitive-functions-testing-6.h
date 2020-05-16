@@ -22,7 +22,10 @@ int integer_array_typical_test(int*, int, int);
 
 int convert_decimal_procent_test(double,double);
 
-int integer_array_frequence_test(int*,int,int,
+int array_integer_frequence_test(int*,int,int,
+  double);
+
+int array_integer_procent_test(int*, int, int,
   double);
 
 #endif
