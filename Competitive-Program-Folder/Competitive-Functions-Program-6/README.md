@@ -14,6 +14,8 @@ integer_even_median         update_integer_key
 integer_array_median        integer_common_value
 
 integer_array_average       integer_array_typical
+
+integer_array_frequence     convert_decimal_procent
 ```
 
 Made by Roy Hampus Fridholm

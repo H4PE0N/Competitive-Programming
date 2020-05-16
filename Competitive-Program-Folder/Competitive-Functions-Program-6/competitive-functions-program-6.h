@@ -19,4 +19,9 @@ int integer_common_value(int**, int);
 
 int integer_array_typical(int*, int);
 
+double convert_decimal_procent(double);
+
+double integer_array_frequence(int*,int,
+  int);
+
 #endif

@@ -74,3 +74,17 @@ int integer_array_typical_test(int* array, int length,
   int typical = integer_array_typical(array, length);
   return (typical == i_typical);
 }
+
+int convert_decimal_procent_test(double decimal,
+  double procent)
+{
+  return convert_decimal_procent(decimal) == procent;
+}
+
+int integer_array_frequence_test(int* array,int length,
+  int integer, double i_procent)
+{
+  int procent = integer_array_frequence(array, length,
+    integer);
+  return (procent == i_procent);
+}

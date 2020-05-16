@@ -77,3 +77,16 @@ int integer_array_typical(int* array, int i_length)
   int length = integer_hashmap_length(hashmap);
   return integer_common_value(hashmap, length);
 }
+
+double convert_decimal_procent(double decimal)
+{
+  return (decimal * 100);
+}
+
+double integer_array_frequence(int* array,
+  int length, int integer)
+{
+  int amount = array_integer_amount(array, length,
+    integer);
+  return convert_decimal_procent(amount / length);
+}
