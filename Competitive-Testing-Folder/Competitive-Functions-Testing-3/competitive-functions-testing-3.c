@@ -22,11 +22,11 @@ int generate_integer_hashmap_test(int i_length,
     length, 2);
 }
 
-int array_integer_amount_test(int* array,
-  int length, int number, int amount)
+int array_integer_amount_test(int* array, int length,
+  int number, int amount)
 {
-  return array_integer_amount(array, length,
-    number) == amount;
+  return array_integer_amount(array, length,number) ==
+  amount;
 }
 
 int integer_hashmap_length_test(int** hashmap,
@@ -45,7 +45,7 @@ int hashmap_keyword_exists_test(int** hashmap,
 int integer_keyword_index_test(int** hashmap,
   int keyword, int index)
 {
-  return integer_keyword_index(hashmap,keyword) ==
+  return integer_keyword_index(hashmap, keyword) ==
     index;
 }
 
@@ -134,7 +134,7 @@ int delete_hashmap_keyword_test(int** i_hashmap,
 int reduce_hashmap_value_test(int** i_hashmap,
   int keyword, int** o_hashmap)
 {
-  i_hashmap = reduce_hashmap_value(i_hashmap, keyword);
+  i_hashmap = reduce_hashmap_value(i_hashmap,keyword);
   int length = integer_hashmap_length(i_hashmap);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length - 1, 2);
