@@ -22,6 +22,8 @@ int integer_array_typical_test(int*, int, int);
 
 int convert_decimal_procent_test(double,double);
 
+int convert_procent_decimal_test(double,double);
+
 int array_integer_frequence_test(int*,int,int,
   double);
 

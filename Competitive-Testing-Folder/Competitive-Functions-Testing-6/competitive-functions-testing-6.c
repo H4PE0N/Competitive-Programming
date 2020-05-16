@@ -81,6 +81,12 @@ int convert_decimal_procent_test(double decimal,
   return convert_decimal_procent(decimal) == procent;
 }
 
+int convert_procent_decimal_test(double procent,
+  double decimal)
+{
+  return convert_procent_decimal(procent) == decimal;
+}
+
 int array_integer_frequence_test(int* array,int length,
   int integer, double i_amount)
 {

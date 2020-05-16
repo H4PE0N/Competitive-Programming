@@ -17,7 +17,7 @@ integer_array_average       integer_array_typical
 
 array_integer_frequence     convert_decimal_procent
 
-array_integer_procent
+array_integer_procent       convert_procent_decimal
 ```
 
 Made by Roy Hampus Fridholm

@@ -21,6 +21,8 @@ int integer_array_typical(int*, int);
 
 double convert_decimal_procent(double);
 
+double convert_procent_decimal(double);
+
 double array_integer_frequence(int*,int,
   int);
 
