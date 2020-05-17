@@ -19,14 +19,14 @@ int integer_common_value(int**, int);
 
 int integer_array_typical(int*, int);
 
-double convert_decimal_procent(double);
+double convert_decimal_percent(double);
 
-double convert_procent_decimal(double);
+double convert_percent_decimal(double);
 
 double array_integer_frequence(int*,int,
   int);
 
-double array_integer_procent(int*, int,
+double array_integer_percent(int*, int,
   int);
 
 #endif

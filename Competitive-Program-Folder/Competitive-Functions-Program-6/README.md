@@ -15,9 +15,9 @@ integer_array_median        integer_common_value
 
 integer_array_average       integer_array_typical
 
-array_integer_frequence     convert_decimal_procent
+array_integer_frequence     convert_decimal_percent
 
-array_integer_procent       convert_procent_decimal
+array_integer_percent       convert_percent_decimal
 ```
 
 Made by Roy Hampus Fridholm

@@ -20,14 +20,14 @@ int integer_common_value_test(int**, int, int);
 
 int integer_array_typical_test(int*, int, int);
 
-int convert_decimal_procent_test(double,double);
+int convert_decimal_percent_test(double,double);
 
-int convert_procent_decimal_test(double,double);
+int convert_percent_decimal_test(double,double);
 
 int array_integer_frequence_test(int*,int,int,
   double);
 
-int array_integer_procent_test(int*, int, int,
+int array_integer_percent_test(int*, int, int,
   double);
 
 #endif

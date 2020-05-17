@@ -75,16 +75,16 @@ int integer_array_typical_test(int* array, int length,
   return (typical == i_typical);
 }
 
-int convert_decimal_procent_test(double decimal,
-  double procent)
+int convert_decimal_percent_test(double decimal,
+  double percent)
 {
-  return convert_decimal_procent(decimal) == procent;
+  return convert_decimal_percent(decimal) == percent;
 }
 
-int convert_procent_decimal_test(double procent,
+int convert_percent_decimal_test(double percent,
   double decimal)
 {
-  return convert_procent_decimal(procent) == decimal;
+  return convert_percent_decimal(percent) == decimal;
 }
 
 int array_integer_frequence_test(int* array,int length,
@@ -95,10 +95,10 @@ int array_integer_frequence_test(int* array,int length,
   return (amount == i_amount);
 }
 
-int array_integer_procent_test(int* array, int length,
-  int integer, double i_procent)
+int array_integer_percent_test(int* array, int length,
+  int integer, double i_percent)
 {
-  double procent = array_integer_procent(array, length,
+  double percent = array_integer_percent(array, length,
     integer);
-  return (procent == i_procent);
+  return (percent == i_percent);
 }

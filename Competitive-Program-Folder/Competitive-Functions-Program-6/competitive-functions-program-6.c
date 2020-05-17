@@ -78,14 +78,14 @@ int integer_array_typical(int* array, int i_length)
   return integer_common_value(hashmap, length);
 }
 
-double convert_decimal_procent(double decimal)
+double convert_decimal_percent(double decimal)
 {
   return (decimal * 100);
 }
 
-double convert_procent_decimal(double procent)
+double convert_percent_decimal(double percent)
 {
-  return (procent / 100);
+  return (percent / 100);
 }
 
 double array_integer_frequence(int* array,
@@ -96,10 +96,10 @@ double array_integer_frequence(int* array,
   return ((double) amount / (double) length);
 }
 
-double array_integer_procent(int* array,int length,
+double array_integer_percent(int* array,int length,
   int integer)
 {
   double amount = array_integer_frequence(array,
     length, integer);
-  return convert_decimal_procent(amount);
+  return convert_decimal_percent(amount);
 }
