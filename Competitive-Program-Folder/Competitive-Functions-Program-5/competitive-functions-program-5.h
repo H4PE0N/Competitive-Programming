@@ -2,6 +2,8 @@
 #ifndef COMPETITIVE_FUNCTIONS_PROGRAM_5_H
 #define COMPETITIVE_FUNCTIONS_PROGRAM_5_H
 
+int calculate_bit_integer(int);
+
 int binary_integer_enough(char*, int,
   int);
 

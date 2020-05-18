@@ -9,6 +9,13 @@ competitive-functions-program-4.h"
 Competitive-Functions-Program-5/\
 competitive-functions-program-5.h"
 
+int calculate_bit_integer_test(int integer,
+  int i_product)
+{
+  int product = calculate_bit_integer(integer);
+  return (product == i_product);
+}
+
 int binary_integer_enough_test(char* binary,
   int length, int integer, int boolean)
 {

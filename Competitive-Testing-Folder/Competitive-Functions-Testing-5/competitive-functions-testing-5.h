@@ -2,6 +2,8 @@
 #ifndef COMPETITIVE_FUNCTIONS_TESTING_5_H
 #define COMPETITIVE_FUNCTIONS_TESTING_5_H
 
+int calculate_bit_integer_test(int, int);
+
 int binary_integer_enough_test(char*, int,
   int, int);
 
@@ -30,5 +32,5 @@ int convert_binary_integer_test(char*, int);
 
 int convert_binary_character_test(char*,
   char);
-  
+
 #endif

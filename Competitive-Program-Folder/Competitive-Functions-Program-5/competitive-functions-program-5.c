@@ -5,11 +5,17 @@
 #include "../Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
+int calculate_bit_integer(int power_integer)
+{
+  return (pow(2, power_integer));
+}
+
 int binary_integer_enough(char* binary, int i_length,
   int integer)
 {
   int length = calculate_string_length(binary);
-  int product = pow(2, (i_length - 1 - length));
+  int product = calculate_bit_integer(i_length - 1 -
+    length);
   return  ( (integer - product) >= 0);
 }
 
@@ -18,7 +24,8 @@ int reduce_binary_integer(char* binary, int length,
 {
   int index = length-calculate_string_length(binary);
   if(binary_integer_enough(binary,length+1,integer))
-  { return integer - pow(2, index); } return integer;
+  { return integer - calculate_bit_integer(index); }
+  return integer;
 }
 
 char* allocate_binary_bit(char* binary, int i_length,
@@ -46,15 +53,17 @@ char* allocate_binary_bits(char* binary, int length,
 
 int calculate_real_length(int integer)
 {
-  int length = 0; while(integer > pow(2, length))
+  int length = 0;
+  while(integer > calculate_bit_integer(length))
   { length = (length + 1); } return length;
 }
 
 int calculate_nearest_length(int integer)
 {
   int length = calculate_real_length(integer);
-  int index = 2; while(length > pow(2, index))
-  { index = (index + 1); } return pow(2, index);
+  int index = 2;
+  while(length > calculate_bit_integer(index))
+  { index++; } return calculate_bit_integer(index);
 }
 
 char* convert_integer_binary(int integer)
