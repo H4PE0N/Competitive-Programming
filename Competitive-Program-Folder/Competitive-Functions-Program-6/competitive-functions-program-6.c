@@ -80,12 +80,12 @@ int integer_array_typical(int* array, int i_length)
 
 double convert_decimal_percent(double decimal)
 {
-  return (decimal * 100);
+  int percent = (decimal * 100); return percent;
 }
 
 double convert_percent_decimal(double percent)
 {
-  return (percent / 100);
+  int decimal = (percent / 100); return decimal;
 }
 
 double array_integer_frequence(int* array,
