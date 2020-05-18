@@ -75,7 +75,8 @@ char* convert_integer_binary(int integer)
 
 char* convert_character_binary(char character)
 {
-  return convert_integer_binary(character);
+  char* binary = convert_integer_binary(character);
+  return binary;
 }
 
 int calculate_integer_binary(char* binary, int index,
@@ -103,5 +104,6 @@ int convert_binary_integer(char* binary)
 
 char convert_binary_character(char* binary)
 {
-  return convert_binary_integer(binary);
+  char character = convert_binary_integer(binary);
+  return character;
 }
