@@ -36,9 +36,10 @@ int delete_matrix_integer_test(int** i_matrix, int x,
 }
 
 int integer_matrix_height_test(int** matrix,
-  int width, int height)
+  int width, int i_height)
 {
-  return integer_matrix_height(matrix,width)==height;
+  int height = integer_matrix_height(matrix,width);
+  return (height == i_height);
 }
 
 int matrix_contains_integer_test(int** matrix,
