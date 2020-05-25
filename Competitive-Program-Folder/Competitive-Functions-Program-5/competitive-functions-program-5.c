@@ -24,7 +24,7 @@ int reduce_binary_integer(char* binary, int length,
 {
   int index = length-calculate_string_length(binary);
   if(binary_integer_enough(binary,length+1,integer))
-  { return integer - calculate_bit_integer(index); }
+    return integer - calculate_bit_integer(index);
   return integer;
 }
 
@@ -56,7 +56,7 @@ int calculate_real_length(int integer)
 {
   int length = 0;
   while(integer > calculate_bit_integer(length))
-  { length = (length + 1); } return length;
+    { length = (length + 1); } return length;
 }
 
 int calculate_nearest_length(int integer)
@@ -86,8 +86,8 @@ int calculate_integer_binary(char* binary, int index,
   int length = calculate_string_length(binary);
   if(*(binary + index) == '1')
   {
-    return integer + calculate_bit_integer(length -
-      (index + 1));
+    return integer +
+      calculate_bit_integer(length - (index + 1));
   }
   return integer;
 }
