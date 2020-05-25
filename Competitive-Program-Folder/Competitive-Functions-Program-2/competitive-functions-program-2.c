@@ -8,7 +8,7 @@ competitive-functions-program-1.h"
 int** generate_matrix_array(int height, int width)
 {
   int** matrix = malloc(sizeof(matrix) * height);
-  for(int index = 0; index < height; index++)
+  for(int index = 0; index < height; index += 1)
   {
     *(matrix + index) = generate_integer_array(width);
   }
@@ -33,13 +33,13 @@ int integer_matrix_height(int** matrix, int width)
 {
   int height = 0;
   while(integer_array_length(*(matrix + height))
-  >= width) { height += 1; } return height;
+    >= width) { height += 1; } return height;
 }
 
 int matrix_contains_integer(int** matrix, int height,
   int width, int integer)
 {
-  for(int index = 0; index < height; index++)
+  for(int index = 0; index < height; index = index+1)
   {
     if(array_contains_integer(*(matrix + index),
       width, integer)) return true;
@@ -73,7 +73,7 @@ int** add_matrix_integer(int** matrix, int height,
 int compare_matrix_arrays(int** first, int** second,
   int height, int width)
 {
-  for(int index = 0; index <= height; index++)
+  for(int index = 0; index <= height; index += 1)
   {
     if(!compare_integer_arrays(*(first + index),
       *(second + index), width)) return false;
@@ -85,7 +85,7 @@ int** remove_matrix_integers(int** matrix,int integer,
   int width)
 {
   int height=integer_matrix_height(matrix, width);
-  for(int index = 0; index <= height; index++)
+  for(int index = 0; index <= height; index += 1)
   {
     *(matrix + index) = remove_array_integers(
       *(matrix + index), width, integer);
@@ -105,7 +105,7 @@ int** switch_matrix_integers(int** matrix, int width,
 int** switch_matrix_arrays(int** matrix, int width,
   int i_index)
 {
-  for(int index = 0; index < width; index++)
+  for(int index = 0; index < width; index = index + 1)
   {
     matrix = switch_matrix_integers(matrix, i_index,
       index);

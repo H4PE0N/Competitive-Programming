@@ -10,7 +10,7 @@ int* allocate_array_integer(int* array, int index,
 
 int* allocate_array_integers(int* array, int length)
 {
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < length; index += 1)
   {
     allocate_array_integer(array, index, '\0');
   }
@@ -26,13 +26,13 @@ int* generate_integer_array(int length)
 int integer_array_length(int* array)
 {
   int length = 0; while(*(array + length) != '\0')
-  { length  = (length + 1); } return length;
+    { length  = (length + 1); } return length;
 }
 
 int array_contains_integer(int* array, int length,
   int integer)
 {
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < length; index += 1)
   {
     if(*(array + index) == integer) return true;
   }
@@ -42,8 +42,8 @@ int array_contains_integer(int* array, int length,
 int* switch_array_integers(int* array, int index)
 {
   int switch_integer = *(array + index);
-  *(array + index) = *(array + (index + 1) );
-  *(array + (index + 1) ) = switch_integer;
+  *(array + index) = *(array + (index + 1));
+  *(array + (index + 1)) = switch_integer;
   return array;
 }
 
@@ -60,7 +60,7 @@ int* sort_integer_iteration(int* array,int iteration)
 
 int* sort_integer_array(int* array, int length)
 {
-  for(int index = length; index >= 0; index--)
+  for(int index = length; index >= 0; index -= 1)
   {
     array = sort_integer_iteration(array, index);
   }
@@ -109,7 +109,7 @@ int* delete_array_integer(int* array, int length,
 int compare_integer_arrays(int* first, int* second,
   int length)
 {
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < length; index += 1)
   {
     if(*(first + index) != *(second + index))
     { return false; }
