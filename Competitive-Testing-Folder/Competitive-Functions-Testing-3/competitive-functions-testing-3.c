@@ -14,25 +14,25 @@ Competitive-Functions-Program-3/\
 competitive-functions-program-3.h"
 
 int generate_integer_hashmap_test(int i_length,
-  int** o_hashmap)
+  int** i_hashmap)
 {
   int** hashmap = generate_integer_hashmap(i_length);
   int length = integer_hashmap_length(hashmap);
-  return compare_matrix_arrays(hashmap, o_hashmap,
+  return compare_matrix_arrays(hashmap, i_hashmap,
     length, 2);
 }
 
 int array_integer_amount_test(int* array, int length,
-  int number, int amount)
+  int number, int i_amount)
 {
-  return array_integer_amount(array, length,number) ==
-  amount;
+  int amount=array_integer_amount(array,length,number);
+  return (amount == i_amount);
 }
 
 int integer_hashmap_length_test(int** hashmap,
   int length)
 {
-  return (integer_hashmap_length(hashmap) == length);
+  return integer_hashmap_length(hashmap) == length;
 }
 
 int hashmap_keyword_exists_test(int** hashmap,
@@ -43,10 +43,10 @@ int hashmap_keyword_exists_test(int** hashmap,
 }
 
 int integer_keyword_index_test(int** hashmap,
-  int keyword, int index)
+  int keyword, int i_index)
 {
-  return integer_keyword_index(hashmap, keyword) ==
-    index;
+  int index = integer_keyword_index(hashmap, keyword);
+  return (index == i_index);
 }
 
 int increment_hashmap_value_test(int** i_hashmap,
@@ -71,7 +71,7 @@ int generate_hashmap_keyword_test(int** i_hashmap,
 int allocate_hashmap_value_test(int** i_hashmap,
   int keyword, int** o_hashmap)
 {
-  i_hashmap=allocate_hashmap_value(i_hashmap,keyword);
+  i_hashmap =allocate_hashmap_value(i_hashmap,keyword);
   int length = integer_hashmap_length(i_hashmap);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length, 2);
@@ -115,10 +115,10 @@ int integer_hashmap_keywords_test(int** hashmap,
 }
 
 int integer_hashmap_value_test(int** hashmap,
-  int keyword, int value)
+  int keyword, int i_value)
 {
-  return integer_hashmap_value(hashmap, keyword) ==
-    value;
+  int value = integer_hashmap_value(hashmap, keyword);
+  return (value == i_value);
 }
 
 int delete_hashmap_keyword_test(int** i_hashmap,

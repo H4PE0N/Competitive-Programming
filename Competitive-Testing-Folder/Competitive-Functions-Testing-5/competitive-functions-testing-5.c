@@ -19,7 +19,7 @@ int calculate_bit_integer_test(int integer,
 int binary_integer_enough_test(char* binary,
   int length, int integer, int boolean)
 {
-  int output = binary_integer_enough(binary, length,
+  int output = binary_integer_enough(binary,length,
     integer);
   return (output == boolean);
 }

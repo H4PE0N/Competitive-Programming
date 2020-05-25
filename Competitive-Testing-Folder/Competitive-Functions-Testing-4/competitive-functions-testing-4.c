@@ -31,10 +31,10 @@ int generate_empty_string_test(int length,
     length);
 }
 
-int calculate_string_length_test(char* i_string,
+int calculate_string_length_test(char* string,
   int i_length)
 {
-  int length = calculate_string_length(i_string);
+  int length = calculate_string_length(string);
   return (length == i_length);
 }
 
