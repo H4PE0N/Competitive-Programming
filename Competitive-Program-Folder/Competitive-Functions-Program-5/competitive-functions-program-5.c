@@ -25,7 +25,7 @@ int reduce_binary_integer(char* binary, int length,
   int index = length-calculate_string_length(binary);
   if(binary_integer_enough(binary,length+1,integer))
     return integer - calculate_bit_integer(index);
-  return integer;
+  else return integer;
 }
 
 char* allocate_binary_bit(char* binary, int i_length,
@@ -61,10 +61,10 @@ int calculate_real_length(int integer)
 
 int calculate_nearest_length(int integer)
 {
-  int length = calculate_real_length(integer);
-  int index = 2;
+  int length = calculate_real_length(integer),
+    index = 2;
   while(length > calculate_bit_integer(index))
-  { index++; } return calculate_bit_integer(index);
+  { index ++; } return calculate_bit_integer(index);
 }
 
 char* convert_integer_binary(int integer)
@@ -84,19 +84,16 @@ int calculate_integer_binary(char* binary, int index,
   int integer)
 {
   int length = calculate_string_length(binary);
-  if(*(binary + index) == '1')
-  {
-    return integer +
-      calculate_bit_integer(length - (index + 1));
-  }
-  return integer;
+  if(*(binary + index) == '1') return integer +
+    calculate_bit_integer(length - (index + 1));
+  else return integer;
 }
 
 int convert_binary_integer(char* binary)
 {
   int length = calculate_string_length(binary),
     integer = 0;
-  for(int index = 0; index < length; index += 1)
+  for(int index = 0; index < length; index = index+1)
   {
     integer = calculate_integer_binary(binary,index,
       integer);

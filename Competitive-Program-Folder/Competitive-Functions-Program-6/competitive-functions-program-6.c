@@ -21,20 +21,21 @@ double integer_even_median(int* array, int length)
 {
   array = sort_integer_array(array, length);
   return ( *(array + ( (length - 2) / 2) ) +
-  *(array + ( length / 2) ) ) / 2;
+    *(array + ( length / 2) ) ) / 2;
 }
 
 double integer_array_median(int* array, int length)
 {
   if(length % 2 != 0)
-  { return integer_odd_median(array, length); }
-  else return integer_even_median(array, length);
+    return integer_odd_median(array, length);
+  else
+    return integer_even_median(array, length);
 }
 
 double integer_array_average(int* array,int length)
 {
   double array_total = 0;
-  for(int index = 0; index < length; index++)
+  for(int index = 0; index < length; index += 1)
   {
     array_total += (double) *(array + index);
   }
@@ -45,16 +46,16 @@ int update_integer_value(int** hashmap, int index,
   int common_value)
 {
   if(*(*(hashmap + index) + 1) > common_value)
-  { return *(*(hashmap + index) + 1); }
-  return common_value;
+    return *(*(hashmap + index) + 1);
+  else return common_value;
 }
 
 int update_integer_key(int** hashmap, int index,
   int common_value, int common_key)
 {
   if(*(*(hashmap + index) + 1) > common_value)
-  { return *(*(hashmap + index) + 0); }
-  return common_key;
+    return *(*(hashmap + index) + 0);
+  else return common_key;
 }
 
 int integer_common_value(int** hashmap, int length)

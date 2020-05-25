@@ -112,7 +112,7 @@ int compare_integer_arrays(int* first, int* second,
   for(int index = 0; index < length; index += 1)
   {
     if(*(first + index) != *(second + index))
-    { return false; }
+      return false;
   }
   return true;
 }
