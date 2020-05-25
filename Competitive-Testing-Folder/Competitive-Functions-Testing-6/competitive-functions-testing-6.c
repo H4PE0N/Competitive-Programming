@@ -98,7 +98,7 @@ int array_integer_frequence_test(int* array,int length,
 int array_integer_percent_test(int* array, int length,
   int integer, double i_percent)
 {
-  double percent = array_integer_percent(array, length,
+  double percent = array_integer_percent(array,length,
     integer);
   return (percent == i_percent);
 }

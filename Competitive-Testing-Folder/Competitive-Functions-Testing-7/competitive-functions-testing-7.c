@@ -52,8 +52,8 @@ int binary_xor_opperation_test(char* first,char* second,
     length);
 }
 
-int binary_not_opperation_test(char* i_binary,
-  int length, char* o_binary)
+int binary_not_opperation_test(char*i_binary,int length,
+  char* o_binary)
 {
   i_binary = binary_not_opperation(i_binary, length);
   return compare_strings_together(i_binary, o_binary,
