@@ -16,8 +16,8 @@ competitive-functions-program-3.h"
 int generate_integer_hashmap_test(int i_length,
   int** i_hashmap)
 {
-  int** hashmap = generate_integer_hashmap(i_length);
-  int length = integer_hashmap_length(hashmap);
+  int** hashmap = generate_integer_hashmap(i_length),
+    length = integer_hashmap_length(hashmap);
   return compare_matrix_arrays(hashmap, i_hashmap,
     length, 2);
 }

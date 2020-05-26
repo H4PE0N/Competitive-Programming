@@ -38,8 +38,8 @@ int integer_array_median_test(int* array,int length,
   return (median == i_median);
 }
 
-int integer_array_average_test(int* array,
-  int length, double i_average)
+int integer_array_average_test(int* array, int length,
+  double i_average)
 {
   int average = integer_array_average(array, length);
   return (average == i_average);

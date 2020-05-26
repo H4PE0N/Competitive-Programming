@@ -5,27 +5,27 @@
 #include "../Competitive-Functions-Program-4/\
 competitive-functions-program-4.h"
 
-char* binary_left_shifting(char* binary, int length)
+char* binary_left_shifting(char* i_binary, int length)
 {
   char* binary = generate_empty_string(length);
   for(int index = 1; index < length; index = index + 1)
   {
     binary = add_string_character(binary, index - 1,
-      *(binary + index));
+      *(i_binary + index));
   }
   return add_string_character(binary, length-1,
-    *(binary + 0));
+    *(i_binary + 0));
 }
 
-char* binary_right_shifting(char* binary, int length)
+char* binary_right_shifting(char* i_binary, int length)
 {
   char* binary = generate_empty_string(length);
   binary = add_string_character(binary, 0,
-    *(binary + length - 1));
+    *(i_binary + length - 1));
   for(int index = 0; index < (length - 1); index += 1)
   {
     binary = add_string_character(binary, index + 1,
-      *(binary + index));
+      *(i_binary + index));
   }
   return binary;
 }
@@ -72,12 +72,12 @@ char* binary_xor_opperation(char* first, char* second,
   return binary;
 }
 
-char* binary_not_opperation(char* binary, int length)
+char* binary_not_opperation(char* i_binary, int length)
 {
   char* binary = generate_empty_string(length);
   for(int index = 0; index < length; index = index + 1)
   {
-    if(*(binary + index) == '1')
+    if(*(i_binary + index) == '1')
       binary =add_string_character(binary, index, '0');
     else
       binary =add_string_character(binary, index, '1');
