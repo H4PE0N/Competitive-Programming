@@ -10,9 +10,9 @@ the function returns, depending on what you put as arguments.
 
 Here is a list of what the folders contains:
 
+* Competitive-Bootup-Folder: Write some tests for the functions
 * Competitive-Compile-Program: Write and compile a program
-* Competitive-Compile-Testing: Test the library functions
-* Competitive-Program-Folder: A folder with library functions
-* Competitive-Testing-Folder: A folder with test functions
+* Competitive-Program-Folder: Folder containing library functions
+* Competitive-Testing-Folder: Folder containing test functions
 
 Made by Roy Hampus Fridholm

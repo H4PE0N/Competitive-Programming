@@ -1,10 +1,10 @@
 
-This folder  contains  functions  that  tests  the  library  
-functions. Every library function  have  it's corresponding  
-test function, with an added `_test` to the function  name.
+This  folder  contains  functions  that  tests   the   library  
+functions. Every  library  function  have  it's  corresponding  
+test function, with an added `_test`  to  the  function  name.
 
-The folders contains the same  kind  of  functions  as  the  
-function library folders. That means the  first  folder  in  
+The folders  contains  the  same  kind  of  functions  as  the  
+function library folders.  That  means  the  first  folder  in  
 this folder contains test functions of array-functions.
 
 Here is a list of all the folders and what the program does:
