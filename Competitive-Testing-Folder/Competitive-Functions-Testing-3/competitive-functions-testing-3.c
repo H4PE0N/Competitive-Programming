@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-1/\
+Competitive-Functions-Folder-1/\
 competitive-functions-program-1.h"
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-2/\
+Competitive-Functions-Folder-2/\
 competitive-functions-program-2.h"
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-3/\
+Competitive-Functions-Folder-3/\
 competitive-functions-program-3.h"
 
 int generate_integer_hashmap_test(int i_length,

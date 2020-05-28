@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-4/\
+Competitive-Functions-Folder-4/\
 competitive-functions-program-4.h"
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-7/\
+Competitive-Functions-Folder-7/\
 competitive-functions-program-7.h"
 
 int binary_left_shifting_test(char*i_binary, int length,

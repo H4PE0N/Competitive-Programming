@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "../Competitive-Functions-Program-1/\
+#include "../Competitive-Functions-Folder-1/\
 competitive-functions-program-1.h"
 
 int** generate_matrix_array(int height, int width)

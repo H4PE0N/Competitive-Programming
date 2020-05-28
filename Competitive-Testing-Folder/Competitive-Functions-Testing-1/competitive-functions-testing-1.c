@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-1/\
+Competitive-Functions-Folder-1/\
 competitive-functions-program-1.h"
 
 int allocate_array_integer_test(int* i_array,

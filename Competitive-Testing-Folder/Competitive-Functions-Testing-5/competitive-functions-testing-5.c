@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-4/\
+Competitive-Functions-Folder-4/\
 competitive-functions-program-4.h"
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-5/\
+Competitive-Functions-Folder-5/\
 competitive-functions-program-5.h"
 
 int calculate_bit_integer_test(int integer,

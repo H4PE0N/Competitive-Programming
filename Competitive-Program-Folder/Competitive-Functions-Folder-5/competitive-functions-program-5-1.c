@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "../Competitive-Functions-Program-4/\
+#include "../Competitive-Functions-Folder-4/\
 competitive-functions-program-4.h"
 
 int calculate_bit_integer(int power_integer)

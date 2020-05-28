@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "../../Competitive-Program-Folder/\
-Competitive-Functions-Program-4/\
+Competitive-Functions-Folder-4/\
 competitive-functions-program-4.h"
 
 int allocate_string_character_test(char* i_string,

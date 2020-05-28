@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "../Competitive-Functions-Program-1/\
+#include "../Competitive-Functions-Folder-1/\
 competitive-functions-program-1.h"
 
-#include "../Competitive-Functions-Program-2/\
+#include "../Competitive-Functions-Folder-2/\
 competitive-functions-program-2.h"
 
 int** generate_integer_hashmap(int length)

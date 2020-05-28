@@ -6,12 +6,12 @@ functions about integer arrays, manipulation and calculations.
 
 Here is a list of all the folders and what the  program  does:
 
-* Competiti-Functions-Program-1: Integer Arrays
-* Competiti-Functions-Program-2: Matrices
-* Competiti-Functions-Program-3: Integer Hashmaps
-* Competiti-Functions-Program-4: Strings
-* Competiti-Functions-Program-5: Binary Strings
-* Competiti-Functions-Program-6: Statistics, Probability
-* Competiti-Functions-Program-7: Binary Operations
+* Competiti-Functions-Folder-1: Integer Arrays
+* Competiti-Functions-Folder-2: Matrices
+* Competiti-Functions-Folder-3: Integer Hashmaps
+* Competiti-Functions-Folder-4: Strings
+* Competiti-Functions-Folder-5: Binary Strings
+* Competiti-Functions-Folder-6: Statistics, Probability
+* Competiti-Functions-Folder-7: Binary Operations
 
 Made by Roy Hampus Fridholm
