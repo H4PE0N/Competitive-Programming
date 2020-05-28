@@ -6,6 +6,7 @@ folder as the program.
 ```
 gcc -o competitive-compile-testing competitive-compile-testing.c \
 ../Competitive-Program-Folder/Competitive-Functions-Folder-1/competitive-functions-program-1-1.c \
+../Competitive-Program-Folder/Competitive-Functions-Folder-1/competitive-functions-program-1-2.c \
 ../Competitive-Program-Folder/Competitive-Functions-Folder-2/competitive-functions-program-2-1.c \
 ../Competitive-Program-Folder/Competitive-Functions-Folder-3/competitive-functions-program-3-1.c \
 ../Competitive-Program-Folder/Competitive-Functions-Folder-4/competitive-functions-program-4-1.c \
