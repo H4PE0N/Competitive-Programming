@@ -30,7 +30,8 @@ competitive-functions-program-6.h"
 Competitive-Functions-Folder-7/\
 competitive-functions-program-7.h"
 
-#include "../Competitive-Functions-Testing-1/\
+#include "../../Competitive-Testing-Folder/\
+Competitive-Functions-Testing-1/\
 competitive-functions-testing-1.h"
 
 int main(int argc, char** argv)
