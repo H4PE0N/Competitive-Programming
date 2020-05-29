@@ -1,9 +1,10 @@
 
-#include <stdlib.h>
-
 #include "../../Competitive-Program-Folder/\
 Competitive-Functions-Folder-4/\
 competitive-functions-program-4.h"
+
+#include "../Competitive-Functions-Testing-4/\
+competitive-functions-testing-4.h"
 
 int allocate_string_character_test(char* i_string,
   int index, char character, char* o_string)

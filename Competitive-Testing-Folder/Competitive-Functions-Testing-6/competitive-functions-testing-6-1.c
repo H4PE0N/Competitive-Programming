@@ -1,6 +1,4 @@
 
-#include <stdlib.h>
-
 #include "../../Competitive-Program-Folder/\
 Competitive-Functions-Folder-1/\
 competitive-functions-program-1.h"
@@ -16,6 +14,9 @@ competitive-functions-program-3.h"
 #include "../../Competitive-Program-Folder/\
 Competitive-Functions-Folder-6/\
 competitive-functions-program-6.h"
+
+#include "../Competitive-Functions-Testing-6/\
+competitive-functions-testing-6.h"
 
 int integer_odd_median_test(int* array, int length,
   double i_median)
@@ -93,12 +94,4 @@ int array_integer_frequence_test(int* array,int length,
   double amount = array_integer_frequence(array,length,
     integer);
   return (amount == i_amount);
-}
-
-int array_integer_percent_test(int* array, int length,
-  int integer, double i_percent)
-{
-  double percent = array_integer_percent(array,length,
-    integer);
-  return (percent == i_percent);
 }

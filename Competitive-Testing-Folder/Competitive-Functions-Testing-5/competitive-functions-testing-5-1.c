@@ -1,6 +1,4 @@
 
-#include <stdlib.h>
-
 #include "../../Competitive-Program-Folder/\
 Competitive-Functions-Folder-4/\
 competitive-functions-program-4.h"
@@ -8,6 +6,9 @@ competitive-functions-program-4.h"
 #include "../../Competitive-Program-Folder/\
 Competitive-Functions-Folder-5/\
 competitive-functions-program-5.h"
+
+#include "../Competitive-Functions-Testing-5/\
+competitive-functions-testing-5.h"
 
 int calculate_bit_integer_test(int integer,
   int i_product)
@@ -95,11 +96,4 @@ int convert_binary_integer_test(char* binary,
 {
   int integer = convert_binary_integer(binary);
   return (integer == i_integer);
-}
-
-int convert_binary_character_test(char* binary,
-  char i_character)
-{
-  int character = convert_binary_character(binary);
-  return (character == i_character);
 }
