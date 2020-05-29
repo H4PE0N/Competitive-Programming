@@ -22,6 +22,8 @@ array_contains_integer_test      remove_array_integer_test
 switch_array_integers_test       delete_array_integer_test
 
 compare_integer_arrays_test      remove_array_integers_test
+
+array_integer_amount_test
 ```
 
 Made by Roy Hampus Fridholm

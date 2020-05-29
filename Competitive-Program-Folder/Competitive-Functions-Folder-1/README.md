@@ -24,6 +24,7 @@ switch_array_integers       delete_array_integer
 
 compare_integer_arrays      remove_array_integers
 
+array_integer_amount
 ```
 
 Made by Roy Hampus Fridholm

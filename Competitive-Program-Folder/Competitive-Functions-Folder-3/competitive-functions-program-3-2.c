@@ -11,23 +11,6 @@ competitive-functions-program-2.h"
 #include "../Competitive-Functions-Folder-3/\
 competitive-functions-program-3.h"
 
-int* hashmap_keyword_array(int** hashmap)
-{
-  int length = integer_hashmap_length(hashmap),
-    *array = generate_integer_array(length);
-  for(int index = 0; index < length; index = index + 1)
-  {
-    *(array + index) = *(*(hashmap + index) + 0);
-  }
-  return array;
-}
-
-int integer_hashmap_value(int** hashmap, int keyword)
-{
-  int index = integer_keyword_index(hashmap, keyword);
-  return (index >= 0 ? *(*(hashmap + index) + 1) : -1);
-}
-
 int* integer_value_keywords(int** hashmap, int value,
   int i_length)
 {

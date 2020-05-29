@@ -4,9 +4,6 @@
 
 int generate_integer_hashmap_test(int,int**);
 
-int array_integer_amount_test(int*, int, int,
-  int);
-
 int integer_hashmap_length_test(int**, int);
 
 int hashmap_keyword_exists_test(int**, int,

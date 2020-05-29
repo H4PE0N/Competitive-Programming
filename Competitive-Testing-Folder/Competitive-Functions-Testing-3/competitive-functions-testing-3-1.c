@@ -23,13 +23,6 @@ int generate_integer_hashmap_test(int i_length,
     length, 2);
 }
 
-int array_integer_amount_test(int* array, int length,
-  int number, int i_amount)
-{
-  int amount=array_integer_amount(array,length,number);
-  return (amount == i_amount);
-}
-
 int integer_hashmap_length_test(int** hashmap,
   int length)
 {
@@ -93,4 +86,14 @@ int hashmap_keyword_array_test(int** hashmap,
   int* array = hashmap_keyword_array(hashmap);
   int length = integer_array_length(array);
   return compare_integer_arrays(array,i_array,length);
+}
+
+int integer_value_keywords_test(int** hashmap,
+  int value, int i_length, int* o_keywords)
+{
+  int* i_keywords = integer_value_keywords(hashmap,
+    value, i_length);
+  int length = integer_array_length(i_keywords);
+  return compare_integer_arrays(i_keywords,o_keywords,
+    length);
 }

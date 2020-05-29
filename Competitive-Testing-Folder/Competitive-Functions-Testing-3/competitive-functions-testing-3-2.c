@@ -14,16 +14,6 @@ competitive-functions-program-3.h"
 #include "../Competitive-Functions-Testing-3/\
 competitive-functions-testing-3.h"
 
-int integer_value_keywords_test(int** hashmap,
-  int value, int i_length, int* o_keywords)
-{
-  int* i_keywords = integer_value_keywords(hashmap,
-    value, i_length);
-  int length = integer_array_length(i_keywords);
-  return compare_integer_arrays(i_keywords,o_keywords,
-    length);
-}
-
 int integer_hashmap_keywords_test(int** hashmap,
   int value, int* i_keywords)
 {

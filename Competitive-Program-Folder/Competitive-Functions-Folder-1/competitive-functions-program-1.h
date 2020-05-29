@@ -5,6 +5,8 @@
 int* allocate_array_integer(int*, int,
   int);
 
+int array_integer_amount(int*,int,int);
+
 int* allocate_array_integers(int*,int);
 
 int* generate_integer_array(int);

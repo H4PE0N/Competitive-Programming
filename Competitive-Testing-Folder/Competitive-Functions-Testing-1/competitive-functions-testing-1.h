@@ -5,6 +5,9 @@
 int allocate_array_integer_test(int*, int,
   int,int*);
 
+int array_integer_amount_test(int*,int,int,
+  int);
+
 int delete_array_integer_test(int*,int,int,
   int*);
 

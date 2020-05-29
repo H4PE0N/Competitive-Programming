@@ -34,3 +34,10 @@ int remove_array_integers_test(int* i_array,
   return compare_integer_arrays(i_array, o_array,
     length);
 }
+
+int array_integer_amount_test(int* array,
+  int length, int number, int i_amount)
+{
+  int amount = array_integer_amount(array, length,
+    number); return (amount == i_amount);
+}

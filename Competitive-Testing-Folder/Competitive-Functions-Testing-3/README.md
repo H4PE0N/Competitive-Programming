@@ -11,8 +11,6 @@ Here is the functions that  tests  the  original  functions:
 ```
 generate_integer_hashmap_test      increment_hashmap_value_test
 
-array_integer_amount_test          generate_hashmap_keyword_test
-
 integer_hashmap_length_test        allocate_hashmap_value_test
 
 hashmap_keyword_exists_test        convert_array_hashmap_test
@@ -23,7 +21,7 @@ integer_value_keywords_test        integer_hashmap_keywords_test
 
 integer_hashmap_value_test         reduce_hashmap_value_test
 
-delete_hashmap_keyword_test
+delete_hashmap_keyword_test       generate_hashmap_keyword_test
 ```
 
 Made by Roy Hampus Fridholm

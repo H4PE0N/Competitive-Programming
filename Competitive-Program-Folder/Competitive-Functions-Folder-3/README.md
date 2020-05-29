@@ -12,8 +12,6 @@ Here is a list of all the functions that is  in  the  program:
 ```
 generate_integer_hashmap      increment_hashmap_value
 
-array_integer_amount          generate_hashmap_keyword
-
 integer_hashmap_length        allocate_hashmap_value
 
 hashmap_keyword_exists        convert_array_hashmap
@@ -24,7 +22,7 @@ integer_value_keywords        integer_hashmap_keywords
 
 integer_hashmap_value         reduce_hashmap_value
 
-delete_hashmap_keyword
+delete_hashmap_keyword        generate_hashmap_keyword
 ```
 
 Made by Roy Hampus Fridholm

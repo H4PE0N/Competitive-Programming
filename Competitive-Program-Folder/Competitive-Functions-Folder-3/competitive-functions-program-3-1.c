@@ -16,17 +16,6 @@ int** generate_integer_hashmap(int length)
   return generate_matrix_array( (length + 1), 2);
 }
 
-int array_integer_amount(int* array, int length,
-  int number)
-{
-  int amount = 0;
-  for(int index = 0; index < length; index = index + 1)
-  {
-    if(*(array + index) == number) amount = amount + 1;
-  }
-  return amount;
-}
-
 int integer_hashmap_length(int** hashmap)
 {
   int index = 0; while(*(*(hashmap + index) + 1) != 0)
@@ -88,4 +77,21 @@ int** convert_array_hashmap(int* array, int length)
       *(array + index));
   }
   return hashmap;
+}
+
+int* hashmap_keyword_array(int** hashmap)
+{
+  int length = integer_hashmap_length(hashmap),
+    *array = generate_integer_array(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    *(array + index) = *(*(hashmap + index) + 0);
+  }
+  return array;
+}
+
+int integer_hashmap_value(int** hashmap, int keyword)
+{
+  int index = integer_keyword_index(hashmap, keyword);
+  return (index >= 0 ? *(*(hashmap + index) + 1) : -1);
 }
