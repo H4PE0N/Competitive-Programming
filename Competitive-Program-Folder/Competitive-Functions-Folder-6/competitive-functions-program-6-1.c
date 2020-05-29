@@ -92,7 +92,7 @@ double convert_percent_decimal(double percent)
   double decimal = (percent / 100); return decimal;
 }
 
-double array_integer_frequence(int* array,
+double array_integer_frequency(int* array,
   int length, int integer)
 {
   int amount = array_integer_amount(array, length,

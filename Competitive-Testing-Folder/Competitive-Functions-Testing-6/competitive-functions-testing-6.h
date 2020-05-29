@@ -24,7 +24,7 @@ int convert_decimal_percent_test(double,double);
 
 int convert_percent_decimal_test(double,double);
 
-int array_integer_frequence_test(int*,int,int,
+int array_integer_frequency_test(int*,int,int,
   double);
 
 int array_integer_percent_test(int*, int, int,

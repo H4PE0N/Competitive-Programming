@@ -23,7 +23,7 @@ double convert_decimal_percent(double);
 
 double convert_percent_decimal(double);
 
-double array_integer_frequence(int*,int,
+double array_integer_frequency(int*,int,
   int);
 
 double array_integer_percent(int*, int,

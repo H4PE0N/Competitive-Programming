@@ -17,7 +17,7 @@ competitive-functions-program-6.h"
 double array_integer_percent(int* array,int length,
   int integer)
 {
-  double amount = array_integer_frequence(array,
+  double amount = array_integer_frequency(array,
     length, integer);
   return convert_decimal_percent(amount);
 }

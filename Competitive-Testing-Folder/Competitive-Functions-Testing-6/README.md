@@ -17,7 +17,7 @@ integer_array_median_test        integer_common_value_test
 
 integer_array_average_test       integer_array_typical_test
 
-array_integer_frequence_test     convert_decimal_percent_test
+array_integer_frequency_test     convert_decimal_percent_test
 
 array_integer_percent_test       convert_percent_decimal_test
 ```

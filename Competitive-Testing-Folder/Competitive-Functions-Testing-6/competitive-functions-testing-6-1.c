@@ -88,10 +88,10 @@ int convert_percent_decimal_test(double percent,
   return convert_percent_decimal(percent) == decimal;
 }
 
-int array_integer_frequence_test(int* array,int length,
+int array_integer_frequency_test(int* array,int length,
   int integer, double i_amount)
 {
-  double amount = array_integer_frequence(array,length,
+  double amount = array_integer_frequency(array,length,
     integer);
   return (amount == i_amount);
 }
