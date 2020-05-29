@@ -8,6 +8,9 @@ competitive-functions-program-1.h"
 #include "../Competitive-Functions-Folder-2/\
 competitive-functions-program-2.h"
 
+#include "../Competitive-Functions-Folder-3/\
+competitive-functions-program-3.h"
+
 int** generate_integer_hashmap(int length)
 {
   return generate_matrix_array( (length + 1), 2);

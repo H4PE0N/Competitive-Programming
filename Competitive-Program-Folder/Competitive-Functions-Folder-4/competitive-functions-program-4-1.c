@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#include "../Competitive-Functions-Folder-4/\
+competitive-functions-program-4.h"
+
 char* allocate_string_character(char* string, int index,
   char character)
 {

@@ -5,6 +5,9 @@
 #include "../Competitive-Functions-Folder-1/\
 competitive-functions-program-1.h"
 
+#include "../Competitive-Functions-Folder-2/\
+competitive-functions-program-2.h"
+
 int** generate_matrix_array(int height, int width)
 {
   int** matrix = malloc(sizeof(matrix) * height);

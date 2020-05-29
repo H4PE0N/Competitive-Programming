@@ -11,6 +11,9 @@ competitive-functions-program-2.h"
 #include "../Competitive-Functions-Folder-3/\
 competitive-functions-program-3.h"
 
+#include "../Competitive-Functions-Folder-6/\
+competitive-functions-program-6.h"
+
 double integer_odd_median(int* array, int length)
 {
   array = sort_integer_array(array, length);
