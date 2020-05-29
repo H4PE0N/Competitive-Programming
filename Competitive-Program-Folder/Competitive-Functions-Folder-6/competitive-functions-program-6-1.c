@@ -96,11 +96,3 @@ double array_integer_frequence(int* array,
     integer);
   return ((double) amount / (double) length);
 }
-
-double array_integer_percent(int* array,int length,
-  int integer)
-{
-  double amount = array_integer_frequence(array,
-    length, integer);
-  return convert_decimal_percent(amount);
-}

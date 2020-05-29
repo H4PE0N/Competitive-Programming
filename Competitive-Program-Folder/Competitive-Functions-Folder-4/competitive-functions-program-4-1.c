@@ -90,15 +90,3 @@ int compare_strings_together(char* first,char* second,
   }
   return true;
 }
-
-char* remove_string_characters(char* string,int length,
-  char character)
-{
-  while(string_contains_character(string, length,
-    character))
-  {
-    string = remove_string_character(string, length,
-      character);
-  }
-  return string;
-}
