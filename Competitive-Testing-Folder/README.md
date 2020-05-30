@@ -9,12 +9,12 @@ this folder contains test functions of array-functions.
 
 Here is a list of all the folders and what the program does:
 
-* Competiti-Functions-Testing-1: Integer Arrays
-* Competiti-Functions-Testing-2: Matrices
-* Competiti-Functions-Testing-3: Integer Hashmaps
-* Competiti-Functions-Testing-4: Strings
-* Competiti-Functions-Testing-5: Binary Strings
-* Competiti-Functions-Testing-6: Statistics, Probability
-* Competiti-Functions-Testing-7: Binary Operations
+* Competitive-Functions-Testing-1: Integer Arrays
+* Competitive-Functions-Testing-2: Matrices
+* Competitive-Functions-Testing-3: Integer Hashmaps
+* Competitive-Functions-Testing-4: Strings
+* Competitive-Functions-Testing-5: Binary Strings
+* Competitive-Functions-Testing-6: Statistics, Probability
+* Competitive-Functions-Testing-7: Binary Operations
 
 Made by Roy Hampus Fridholm
