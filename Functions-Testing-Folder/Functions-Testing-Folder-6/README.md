@@ -22,5 +22,9 @@ array_integer_frequency_test     convert_decimal_percent_test
 
 array_integer_percent_test       convert_percent_decimal_test
 
+integer_range_between_test      generate_random_integer_test
+
+integer_power_operation_test
+
 Made by Roy Hampus Fridholm
 </pre>

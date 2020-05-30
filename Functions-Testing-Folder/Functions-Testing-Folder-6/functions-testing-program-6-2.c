@@ -42,3 +42,10 @@ int generate_random_integer_test(int i_minimum,
   return integer_range_between(integer, o_minimum,
     o_maximum);
 }
+
+int integer_power_operation_test(int integer,int power,
+  int i_product)
+{
+  int product = integer_power_operation(integer,power);
+  return (product == i_product);
+}

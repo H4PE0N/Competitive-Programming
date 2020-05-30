@@ -25,5 +25,9 @@ array_integer_frequency     convert_decimal_percent
 
 array_integer_percent       convert_percent_decimal
 
+integer_range_between       generate_random_integer
+
+integer_power_operation
+
 Made by Roy Hampus Fridholm
 </pre>

@@ -33,4 +33,6 @@ int integer_range_between(int,int,int);
 
 int generate_random_integer(int, int);
 
+int integer_power_operation(int, int);
+
 #endif

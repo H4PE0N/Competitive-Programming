@@ -32,3 +32,13 @@ int generate_random_integer(int minimum,int maximum)
 {
   return (minimum + (rand() % (maximum - minimum)));
 }
+
+int integer_power_operation(int integer, int power)
+{
+  int product = 1;
+  for(int index = 0; index < power; index = index+1)
+  {
+    product = (product * integer);
+  }
+  return product;
+}
