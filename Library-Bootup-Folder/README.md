@@ -7,13 +7,13 @@ functions here.
 
 Here is a list of all the folders and  what  they  contain:
 
-* Competitive-Testing-Bootup-1: Integer Arrays
-* Competitive-Testing-Bootup-2: Matrices
-* Competitive-Testing-Bootup-3: Integer Hash-maps
-* Competitive-Testing-Bootup-4: Strings
-* Competitive-Testing-Bootup-5: Binary Strings
-* Competitive-Testing-Bootup-6: Statistics, Probability
-* Competitive-Testing-Bootup-7: Binary Operations
+* Functions-Testing-Bootup-1: Integer Arrays
+* Functions-Testing-Bootup-2: Matrices
+* Functions-Testing-Bootup-3: Integer Hash-maps
+* Functions-Testing-Bootup-4: Strings
+* Functions-Testing-Bootup-5: Binary Strings
+* Functions-Testing-Bootup-6: Statistics, Probability
+* Functions-Testing-Bootup-7: Binary Operations
 
 Made by Roy Hampus Fridholm
 </pre>

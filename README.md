@@ -12,10 +12,10 @@ arguments.
 
 Here is a list of all the folders and  what  they  contain:
 
-* Competitive-Bootup-Folder:    Write some tests for the functions
-* Competitive-Compile-Program:  Write and compile a program
-* Competitive-Program-Folder:   Folder containing library functions
-* Competitive-Testing-Folder:   Folder containing test functions
+* Library-Bootup-Folder:    Write some tests for the functions
+* Library-Compile-Folder:  Write and compile a program
+* Library-Program-Folder:   Folder containing library functions
+* Library-Testing-Folder:   Folder containing test functions
 
 Made by Roy Hampus Fridholm
 </pre>
