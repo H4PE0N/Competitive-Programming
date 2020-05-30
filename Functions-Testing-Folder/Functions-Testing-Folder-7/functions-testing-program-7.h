@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING_7_H
-#define COMPETITIVE_FUNCTIONS_TESTING_7_H
+#ifndef FUNCTIONS_TESTING_PROGRAM_7_H
+#define FUNCTIONS_TESTING_PROGRAM_7_H
 
 int binary_left_shifting_test(char*, int,char*);
 

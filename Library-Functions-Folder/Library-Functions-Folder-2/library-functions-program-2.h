@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_PROGRAM_2_H
-#define COMPETITIVE_FUNCTIONS_PROGRAM_2_H
+#ifndef LIBRARY_FUNCTIONS_PROGRAM_2_H
+#define LIBRARY_FUNCTIONS_PROGRAM_2_H
 
 int** generate_matrix_array(int, int);
 

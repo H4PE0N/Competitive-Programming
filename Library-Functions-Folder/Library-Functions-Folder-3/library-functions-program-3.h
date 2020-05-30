@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_PROGRAM_3_H
-#define COMPETITIVE_FUNCTIONS_PROGRAM_3_H
+#ifndef LIBRARY_FUNCTIONS_PROGRAM_3_H
+#define LIBRARY_FUNCTIONS_PROGRAM_3_H
 
 int** generate_integer_hashmap(int);
 

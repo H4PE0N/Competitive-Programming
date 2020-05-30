@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING_2_H
-#define COMPETITIVE_FUNCTIONS_TESTING_2_H
+#ifndef FUNCTIONS_TESTING_PROGRAM_2_H
+#define FUNCTIONS_TESTING_PROGRAM_2_H
 
 int generate_matrix_array_test(int, int, int**);
 
@@ -30,7 +30,6 @@ int switch_matrix_integers_test(int**,int,int,
 int switch_matrix_arrays_test(int**, int, int,
   int**);
 
-int move_matrix_arrays_test(int**, int, int,
-  int**);
+int move_matrix_arrays_test(int**,int,int,int**);
 
 #endif

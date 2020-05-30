@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING_5_H
-#define COMPETITIVE_FUNCTIONS_TESTING_5_H
+#ifndef FUNCTIONS_TESTING_PROGRAM_5_H
+#define FUNCTIONS_TESTING_PROGRAM_5_H
 
 int calculate_bit_integer_test(int, int);
 

@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_PROGRAM_6_H
-#define COMPETITIVE_FUNCTIONS_PROGRAM_6_H
+#ifndef LIBRARY_FUNCTIONS_PROGRAM_6_H
+#define LIBRARY_FUNCTIONS_PROGRAM_6_H
 
 double integer_odd_median(int*, int);
 

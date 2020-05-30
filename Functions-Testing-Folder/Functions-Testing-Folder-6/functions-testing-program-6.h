@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING_6_H
-#define COMPETITIVE_FUNCTIONS_TESTING_6_H
+#ifndef FUNCTIONS_TESTING_PROGRAM_6_H
+#define FUNCTIONS_TESTING_PROGRAM_6_H
 
 int integer_odd_median_test(int*, int, double);
 

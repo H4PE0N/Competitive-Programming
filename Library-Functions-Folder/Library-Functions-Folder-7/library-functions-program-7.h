@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_PROGRAM_7_H
-#define COMPETITIVE_FUNCTIONS_PROGRAM_7_H
+#ifndef LIBRARY_FUNCTIONS_PROGRAM_7_H
+#define LIBRARY_FUNCTIONS_PROGRAM_7_H
 
 char* binary_left_shifting(char*, int);
 

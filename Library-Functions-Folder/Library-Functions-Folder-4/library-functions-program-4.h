@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_PROGRAM_4_H
-#define COMPETITIVE_FUNCTIONS_PROGRAM_4_H
+#ifndef LIBRARY_FUNCTIONS_PROGRAM_4_H
+#define LIBRARY_FUNCTIONS_PROGRAM_4_H
 
 char* allocate_string_character(char*,int,char);
 

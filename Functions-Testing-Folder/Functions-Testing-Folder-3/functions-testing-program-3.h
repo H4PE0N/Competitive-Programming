@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING_3_H
-#define COMPETITIVE_FUNCTIONS_TESTING_3_H
+#ifndef FUNCTIONS_TESTING_PROGRAM_3_H
+#define FUNCTIONS_TESTING_PROGRAM_3_H
 
 int generate_integer_hashmap_test(int,int**);
 

@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING_1_H
-#define COMPETITIVE_FUNCTIONS_TESTING_1_H
+#ifndef FUNCTIONS_TESTING_PROGRAM_1_H
+#define FUNCTIONS_TESTING_PROGRAM_1_H
 
 int allocate_array_integer_test(int*, int,
   int,int*);

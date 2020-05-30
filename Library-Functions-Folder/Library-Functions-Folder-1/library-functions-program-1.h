@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_PROGRAM_1_H
-#define COMPETITIVE_FUNCTIONS_PROGRAM_1_H
+#ifndef LIBRARY_FUNCTIONS_PROGRAM_1_H
+#define LIBRARY_FUNCTIONS_PROGRAM_1_H
 
 int* allocate_array_integer(int*, int,
   int);

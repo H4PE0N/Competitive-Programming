@@ -1,6 +1,6 @@
 
-#ifndef COMPETITIVE_FUNCTIONS_TESTING_4_H
-#define COMPETITIVE_FUNCTIONS_TESTING_4_H
+#ifndef FUNCTIONS_TESTING_PROGRAM_4_H
+#define FUNCTIONS_TESTING_PROGRAM_4_H
 
 int allocate_string_character_test(char*, int,
   char, char*);
