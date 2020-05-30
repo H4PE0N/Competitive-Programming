@@ -1,6 +1,7 @@
 
 <pre>
-This program contains functions that
+These programs contains functions that uses integer  arrays
+to calculate different statistics and probability things.
 
 If you want to create a new function to this  library,  you
 will have to make the test function before. After the  test

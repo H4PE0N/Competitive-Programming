@@ -9,7 +9,7 @@ Here is a list of all the folders and  what  they  contain:
 
 * Competitive-Testing-Bootup-1: Integer Arrays
 * Competitive-Testing-Bootup-2: Matrices
-* Competitive-Testing-Bootup-3: Integer Hashmaps
+* Competitive-Testing-Bootup-3: Integer Hash-maps
 * Competitive-Testing-Bootup-4: Strings
 * Competitive-Testing-Bootup-5: Binary Strings
 * Competitive-Testing-Bootup-6: Statistics, Probability
