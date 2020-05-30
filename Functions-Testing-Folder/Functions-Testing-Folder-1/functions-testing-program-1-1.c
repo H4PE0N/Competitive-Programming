@@ -4,7 +4,7 @@ Library-Functions-Folder-1/\
 library-functions-program-1.h"
 
 #include "../Functions-Testing-Folder-1/\
-competitive-functions-testing-1.h"
+functions-testing-program-1.h"
 
 int allocate_array_integer_test(int* i_array,
   int index, int integer, int* o_array)
