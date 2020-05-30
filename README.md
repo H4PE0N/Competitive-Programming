@@ -12,10 +12,10 @@ arguments.
 
 Here is a list of all the folders and  what  they  contain:
 
-* Testing-Functions-Bootup: Write some tests for the functions
 * Compile-Program-Folder:   Write and compile a program
+* Functions-Testing-Bootup: Write some tests for the functions
+* Functions-Testing-Folder: Folder containing test functions
 * Library-Functions-Folder: Folder containing library functions
-* Testing-Functions-Folder: Folder containing test functions
 
 Made by Roy Hampus Fridholm
 </pre>
