@@ -1,4 +1,5 @@
 
+<pre>
 To compile the program, make sure you have the GCC compiler  
 downloaded, and execute the following command in  the  same  
 folder as the program.
@@ -34,3 +35,4 @@ To download the GCC compiler for this project,  go  to  the
 website: https://sourceforge.net/projects/mingw-w64/
 
 Made by Roy Hampus Fridholm
+</pre>
