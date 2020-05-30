@@ -1,9 +1,9 @@
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-1/\
-competitive-functions-program-1.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-1/\
+library-functions-program-1.h"
 
-#include "../Competitive-Functions-Testing-1/\
+#include "../Functions-Testing-Folder-1/\
 competitive-functions-testing-1.h"
 
 int allocate_array_integer_test(int* i_array,

@@ -1,22 +1,22 @@
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-1/\
-competitive-functions-program-1.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-1/\
+library-functions-program-1.h"
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-2/\
-competitive-functions-program-2.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-2/\
+library-functions-program-2.h"
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-3/\
-competitive-functions-program-3.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-3/\
+library-functions-program-3.h"
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-6/\
-competitive-functions-program-6.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-6/\
+library-functions-program-6.h"
 
-#include "../Competitive-Functions-Testing-6/\
-competitive-functions-testing-6.h"
+#include "../Functions-Testing-Folder-6/\
+functions-testing-program-6.h"
 
 int integer_odd_median_test(int* array, int length,
   double i_median)

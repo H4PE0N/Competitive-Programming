@@ -1,14 +1,14 @@
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-4/\
-competitive-functions-program-4.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-4/\
+library-functions-program-4.h"
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-5/\
-competitive-functions-program-5.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-5/\
+library-functions-program-5.h"
 
-#include "../Competitive-Functions-Testing-5/\
-competitive-functions-testing-5.h"
+#include "../Functions-Testing-Folder-5/\
+functions-testing-program-5.h"
 
 int calculate_bit_integer_test(int integer,
   int i_product)

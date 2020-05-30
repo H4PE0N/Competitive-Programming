@@ -1,14 +1,14 @@
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-4/\
-competitive-functions-program-4.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-4/\
+library-functions-program-4.h"
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-7/\
-competitive-functions-program-7.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-7/\
+library-functions-program-7.h"
 
-#include "../Competitive-Functions-Testing-7/\
-competitive-functions-testing-7.h"
+#include "../Functions-Testing-Folder-7/\
+functions-testing-program-7.h"
 
 int binary_left_shifting_test(char*i_binary, int length,
   char* o_binary)

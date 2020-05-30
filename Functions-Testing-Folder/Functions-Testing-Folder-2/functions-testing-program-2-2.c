@@ -1,14 +1,14 @@
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-1/\
-competitive-functions-program-1.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-1/\
+library-functions-program-1.h"
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-2/\
-competitive-functions-program-2.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-2/\
+library-functions-program-2.h"
 
-#include "../Competitive-Functions-Testing-2/\
-competitive-functions-testing-2.h"
+#include "../Functions-Testing-Folder-2/\
+functions-testing-program-2.h"
 
 int switch_matrix_arrays_test(int** i_matrix,
   int width, int index, int** o_matrix)

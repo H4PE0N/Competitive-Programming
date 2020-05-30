@@ -1,10 +1,10 @@
 
-#include "../../Competitive-Program-Folder/\
-Competitive-Functions-Folder-1/\
-competitive-functions-program-1.h"
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-1/\
+library-functions-program-1.h"
 
-#include "../Competitive-Functions-Testing-1/\
-competitive-functions-testing-1.h"
+#include "../Functions-Testing-Folder-1/\
+functions-testing-program-1.h"
 
 int move_array_integers_test(int* i_array,
   int length, int start, int* o_array)
