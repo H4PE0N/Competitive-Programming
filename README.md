@@ -1,4 +1,5 @@
 
+<pre>
 This Repository contains a library of competitive programming  
 functions that you can use. The purpose of this project is to  
 write functions and increase the library.
@@ -16,3 +17,4 @@ Here is a list of what the folders contains:
 * Competitive-Testing-Folder: Folder containing test functions
 
 Made by Roy Hampus Fridholm
+</pre>
