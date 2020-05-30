@@ -1,9 +1,9 @@
 
+<pre>
 To compile the program, make sure you have the GCC compiler  
 downloaded, and execute the following command in  the  same  
 folder as the program.
 
-```
 gcc -o competitive-testing-bootup-7 competitive-testing-bootup-7.c \
 ../../Competitive-Program-Folder/Competitive-Functions-Folder-1/competitive-functions-program-1-1.c \
 ../../Competitive-Program-Folder/Competitive-Functions-Folder-1/competitive-functions-program-1-2.c \
@@ -20,17 +20,15 @@ gcc -o competitive-testing-bootup-7 competitive-testing-bootup-7.c \
 ../../Competitive-Program-Folder/Competitive-Functions-Folder-7/competitive-functions-program-7-1.c \
 ../../Competitive-Program-Folder/Competitive-Functions-Folder-7/competitive-functions-program-7-2.c \
 ../../Competitive-Testing-Folder/Competitive-Functions-Testing-7/competitive-functions-testing-7-1.c -lm
-```
 
 After you have compiled the  program,  type  the  following  
 command to run the executable file, that is going to appear  
 in the folder:
 
-```
 ./competitive-testing-bootup-7
-```
 
 To download the GCC compiler for this project,  go  to  the  
 website: https://sourceforge.net/projects/mingw-w64/
 
 Made by Roy Hampus Fridholm
+</pre>
