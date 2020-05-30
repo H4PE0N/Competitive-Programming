@@ -30,7 +30,7 @@ char* binary_right_shifting(char* i_binary, int length)
   return binary;
 }
 
-char* binary_and_opperation(char* first, char* second,
+char* binary_and_operation(char* first, char* second,
   int length)
 {
   char* binary = generate_empty_string(length);
@@ -44,7 +44,7 @@ char* binary_and_opperation(char* first, char* second,
   return binary;
 }
 
-char* binary_or_opperation(char* first, char* second,
+char* binary_or_operation(char* first, char* second,
   int length)
 {
   char* binary = generate_empty_string(length);
@@ -58,7 +58,7 @@ char* binary_or_opperation(char* first, char* second,
   return binary;
 }
 
-char* binary_xor_opperation(char* first, char* second,
+char* binary_xor_operation(char* first, char* second,
   int length)
 {
   char* binary = generate_empty_string(length);
@@ -72,7 +72,7 @@ char* binary_xor_opperation(char* first, char* second,
   return binary;
 }
 
-char* binary_not_opperation(char* i_binary, int length)
+char* binary_not_operation(char* i_binary, int length)
 {
   char* binary = generate_empty_string(length);
   for(int index = 0; index < length; index = index + 1)

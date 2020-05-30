@@ -10,11 +10,11 @@ original function in the 'Competitive-Program-Folder'.
 
 Here is a list of the functions that the programs contains:
 
-binary_left_shifting_test        binary_or_opperation_test
+binary_left_shifting_test        binary_or_operation_test
 
-binary_right_shifting_test       binary_xor_opperation_test
+binary_right_shifting_test       binary_xor_operation_test
 
-binary_and_opperation_test       binary_not_opperation_test
+binary_and_operation_test       binary_not_operation_test
 
 Made by Roy Hampus Fridholm
 </pre>

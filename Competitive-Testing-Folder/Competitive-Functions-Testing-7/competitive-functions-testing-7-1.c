@@ -26,37 +26,37 @@ int binary_right_shifting_test(char*i_binary,int length,
     length);
 }
 
-int binary_and_opperation_test(char* first,char* second,
+int binary_and_operation_test(char* first,char* second,
   int length, char* i_binary)
 {
-  char* binary = binary_and_opperation(first, second,
+  char* binary = binary_and_operation(first, second,
     length);
   return compare_strings_together(binary, i_binary,
     length);
 }
 
-int binary_or_opperation_test(char* first, char* second,
+int binary_or_operation_test(char* first, char* second,
   int length, char* i_binary)
 {
-  char* binary = binary_or_opperation(first, second,
+  char* binary = binary_or_operation(first, second,
     length);
   return compare_strings_together(binary, i_binary,
     length);
 }
 
-int binary_xor_opperation_test(char* first,char* second,
+int binary_xor_operation_test(char* first,char* second,
   int length, char* i_binary)
 {
-  char* binary = binary_xor_opperation(first, second,
+  char* binary = binary_xor_operation(first, second,
     length);
   return compare_strings_together(binary, i_binary,
     length);
 }
 
-int binary_not_opperation_test(char*i_binary,int length,
+int binary_not_operation_test(char*i_binary,int length,
   char* o_binary)
 {
-  i_binary = binary_not_opperation(i_binary, length);
+  i_binary = binary_not_operation(i_binary, length);
   return compare_strings_together(i_binary, o_binary,
     length);
 }

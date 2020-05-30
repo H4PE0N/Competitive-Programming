@@ -13,11 +13,11 @@ a positive output.
 
 Here is a list of the functions that the programs contains:
 
-binary_left_shifting        binary_or_opperation
+binary_left_shifting        binary_or_operation
 
-binary_right_shifting       binary_xor_opperation
+binary_right_shifting       binary_xor_operation
 
-binary_and_opperation       binary_not_opperation
+binary_and_operation       binary_not_operation
 
 Made by Roy Hampus Fridholm
 </pre>

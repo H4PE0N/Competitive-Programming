@@ -6,15 +6,15 @@ char* binary_left_shifting(char*, int);
 
 char* binary_right_shifting(char*, int);
 
-char* binary_and_opperation(char*,char*,
+char* binary_and_operation(char*, char*,
   int);
 
-char* binary_or_opperation(char*,char*,
+char* binary_or_operation(char*, char*,
   int);
 
-char* binary_xor_opperation(char*,char*,
+char* binary_xor_operation(char*, char*,
   int);
 
-char* binary_not_opperation(char*,int);
+char* binary_not_operation(char*, int);
 
 #endif
