@@ -29,4 +29,8 @@ double array_integer_frequency(int*,int,
 double array_integer_percent(int*, int,
   int);
 
+int integer_range_between(int,int,int);
+
+int generate_random_integer(int, int);
+
 #endif

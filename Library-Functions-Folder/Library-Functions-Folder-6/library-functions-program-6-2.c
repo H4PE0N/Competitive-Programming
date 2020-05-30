@@ -21,3 +21,14 @@ double array_integer_percent(int* array,int length,
     length, integer);
   return convert_decimal_percent(amount);
 }
+
+int integer_range_between(int integer, int minimum,
+  int maximum)
+{
+  return (integer <= maximum && integer >= minimum);
+}
+
+int generate_random_integer(int minimum,int maximum)
+{
+  return (minimum + (rand() % (maximum - minimum)));
+}

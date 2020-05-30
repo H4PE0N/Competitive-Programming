@@ -30,4 +30,10 @@ int array_integer_frequency_test(int*,int,int,
 int array_integer_percent_test(int*, int, int,
   double);
 
+int integer_range_between_test(int, int, int,
+  int);
+
+int generate_random_integer_test(int, int, int,
+  int);
+  
 #endif
