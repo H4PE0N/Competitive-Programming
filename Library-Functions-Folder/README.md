@@ -1,20 +1,20 @@
 
 <pre>
-This folder has  functions  that  builds  up  the  function
-library. Every folder contains different type of  functions
-for competitive programming.  For  example  has  the  first
+This folder has functions  that  builds  up  the  function-
+library. Every folder contains different types of functions
+that is used in programming.  For  example  has  the  first
 folder functions about  integer  arrays,  manipulation  and
 calculations.
 
 Here is a list of all the folders and  what  they  contain:
 
-* Competitive-Functions-Folder-1: Integer Arrays
-* Competitive-Functions-Folder-2: Matrices
-* Competitive-Functions-Folder-3: Integer Hash-maps
-* Competitive-Functions-Folder-4: Strings
-* Competitive-Functions-Folder-5: Binary Strings
-* Competitive-Functions-Folder-6: Statistics, Probability
-* Competitive-Functions-Folder-7: Binary Operations
+* Library-Functions-Folder-1: Integer Arrays
+* Library-Functions-Folder-2: Matrices
+* Library-Functions-Folder-3: Integer Hash-maps
+* Library-Functions-Folder-4: Strings
+* Library-Functions-Folder-5: Binary Strings
+* Library-Functions-Folder-6: Statistics, Probability
+* Library-Functions-Folder-7: Binary Operations
 
 Made by Roy Hampus Fridholm
 </pre>
