@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "../Competitive-Functions-Folder-1/\
-competitive-functions-program-1.h"
+#include "../Library-Functions-Folder-1/\
+library-functions-program-1.h"
 
-#include "../Competitive-Functions-Folder-2/\
-competitive-functions-program-2.h"
+#include "../Library-Functions-Folder-2/\
+library-functions-program-2.h"
 
-#include "../Competitive-Functions-Folder-3/\
-competitive-functions-program-3.h"
+#include "../Library-Functions-Folder-3/\
+library-functions-program-3.h"
 
 int* integer_value_keywords(int** hashmap, int value,
   int i_length)

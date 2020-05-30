@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "../Competitive-Functions-Folder-4/\
-competitive-functions-program-4.h"
+#include "../Library-Functions-Folder-4/\
+library-functions-program-4.h"
 
 char* remove_string_characters(char* string,int length,
   char character)

@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "../Competitive-Functions-Folder-1/\
-competitive-functions-program-1.h"
+#include "../Library-Functions-Folder-1/\
+library-functions-program-1.h"
 
 int* remove_array_integer(int* array, int length,
   int integer)

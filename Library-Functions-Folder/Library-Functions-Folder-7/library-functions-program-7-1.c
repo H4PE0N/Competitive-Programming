@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "../Competitive-Functions-Folder-4/\
-competitive-functions-program-4.h"
+#include "../Library-Functions-Folder-4/\
+library-functions-program-4.h"
 
 char* binary_left_shifting(char* i_binary, int length)
 {
