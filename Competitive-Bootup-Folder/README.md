@@ -1,10 +1,11 @@
 
-This folder contains programs that you can write the tests in.  
-It is one folder for every test program, so  if  you  want  to  
-test the integer array  functions,  you  will  call  the  test  
+<pre>
+This folder contains programs that you can write the  tests
+in. It is one folder for every test program, so if you want
+to test the integer array functions, you will call the test
 functions here.
 
-Here is a list of which test functions the programs have:
+Here is a list of all the folders and  what  they  contain:
 
 * Competitive-Testing-Bootup-1: Integer Arrays
 * Competitive-Testing-Bootup-2: Matrices
@@ -15,3 +16,4 @@ Here is a list of which test functions the programs have:
 * Competitive-Testing-Bootup-7: Binary Operations
 
 Made by Roy Hampus Fridholm
+</pre>
