@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#include "../Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 #include "../Library-Functions-Folder-1/\
 library-functions-program-1.h"
 
@@ -43,9 +46,33 @@ int array_integer_amount(int* array, int length,
   int number)
 {
   int amount = 0;
-  for(int index = 0; index < length; index = index + 1)
+  for(int index = 0; index < length; index = index+1)
   {
-    if(*(array + index) == number) amount = amount + 1;
+    if(*(array + index) == number) amount = amount+1;
   }
   return amount;
+}
+
+int integers_range_between(int* array, int minimum,
+  int maximum)
+{
+  int length = integer_array_length(array);
+  for(int index = 0; index < length; index = index+1)
+  {
+    if(!integer_range_between(*(array + index),
+      minimum, maximum)) return false;
+  }
+  return true;
+}
+
+int* generate_random_integers(int length,int minimum,
+  int maximum)
+{
+  int* array = generate_integer_array(length);
+  for(int index = 0; index < length; index = index+1)
+  {
+    array = allocate_array_integer(array, index,
+      generate_random_integer(minimum, maximum));
+  }
+  return array;
 }

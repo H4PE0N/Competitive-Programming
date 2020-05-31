@@ -39,4 +39,10 @@ int compare_integer_arrays(int*, int*,
 int* remove_array_integers(int*, int,
   int);
 
+int integers_range_between(int*, int,
+  int);
+
+int* generate_random_integers(int,int,
+  int);
+
 #endif

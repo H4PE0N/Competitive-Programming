@@ -5,7 +5,7 @@ programs  from  the  'Library-Functions-Folder'.  When  you
 want to create a new  function,  you  will  make  the  test
 function here first. Then you will call the  test  function
 with  some  different  arguments  and  outputs   from   the
-'Functions-Testing-Bootup'. After that you can  create  the 
+'Functions-Testing-Bootup'. After that you can  create  the
 original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
@@ -24,7 +24,9 @@ switch_array_integers_test       delete_array_integer_test
 
 compare_integer_arrays_test      remove_array_integers_test
 
-array_integer_amount_test
+array_integer_amount_test       generate_random_integers_test
+
+integers_range_between_test
 
 Made by Roy Hampus Fridholm
 </pre>

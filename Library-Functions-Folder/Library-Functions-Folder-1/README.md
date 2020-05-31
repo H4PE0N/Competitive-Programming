@@ -27,7 +27,9 @@ switch_array_integers       delete_array_integer
 
 compare_integer_arrays      remove_array_integers
 
-array_integer_amount
+array_integer_amount        generate_random_integers
+
+integers_range_between
 
 Made by Roy Hampus Fridholm
 </pre>
