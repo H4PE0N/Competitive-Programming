@@ -11,10 +11,6 @@ library-functions-program-2.h"
 Library-Functions-Folder-3/\
 library-functions-program-3.h"
 
-#include "../../Functions-Testing-Folder/\
-Functions-Testing-Folder-3/\
-functions-testing-program-3.h"
-
 int generate_integer_hashmap_test(int i_length,
   int** i_hashmap)
 {

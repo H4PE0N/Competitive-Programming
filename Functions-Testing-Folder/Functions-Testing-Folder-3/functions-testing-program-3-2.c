@@ -11,10 +11,6 @@ library-functions-program-2.h"
 Library-Functions-Folder-3/\
 library-functions-program-3.h"
 
-#include "../../Functions-Testing-Folder/\
-Functions-Testing-Folder-3/\
-functions-testing-program-3.h"
-
 int integer_hashmap_keywords_test(int** hashmap,
   int value, int* i_keywords)
 {
