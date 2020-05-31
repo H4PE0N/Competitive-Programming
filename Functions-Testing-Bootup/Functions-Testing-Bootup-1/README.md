@@ -19,6 +19,8 @@ gcc -o testing-bootup-program-1 testing-bootup-program-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-6/library-functions-program-6-2.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-7/library-functions-program-7-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-7/library-functions-program-7-2.c \
+../../Library-Functions-Folder/Library-Functions-Folder-8/library-functions-program-8-1.c \
+../../Library-Functions-Folder/Library-Functions-Folder-8/library-functions-program-8-2.c \
 ../../Functions-Testing-Folder/Functions-Testing-Folder-1/functions-testing-program-1-1.c \
 ../../Functions-Testing-Folder/Functions-Testing-Folder-1/functions-testing-program-1-2.c -lm
 

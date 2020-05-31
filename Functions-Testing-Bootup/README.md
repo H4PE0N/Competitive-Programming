@@ -14,6 +14,7 @@ Here is a list of all the folders and  what  they  contain:
 * Functions-Testing-Bootup-5: Binary Strings
 * Functions-Testing-Bootup-6: Statistics, Probability
 * Functions-Testing-Bootup-7: Binary Operations
+* Functions-Testing-Bootup-8: Integers
 
 Made by Roy Hampus Fridholm
 </pre>

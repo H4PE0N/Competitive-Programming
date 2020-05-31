@@ -30,6 +30,10 @@ library-functions-program-6.h"
 Library-Functions-Folder-7/\
 library-functions-program-7.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 #include "../../Functions-Testing-Folder/\
 Functions-Testing-Folder-1/\
 functions-testing-program-1.h"
