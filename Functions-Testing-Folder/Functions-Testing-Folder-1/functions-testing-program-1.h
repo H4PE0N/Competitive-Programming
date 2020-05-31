@@ -21,7 +21,7 @@ int integer_array_length_test(int*, int);
 int array_contains_integer_test(int*, int,
   int,int);
 
-int switch_array_integers_test(int*, int,
+int switch_adjacent_integers_test(int*,int,
   int*);
 
 int sort_integer_iteration_test(int*, int,
@@ -46,5 +46,8 @@ int integers_range_between_test(int*, int,
 
 int generate_random_integers_test(int, int,
   int, int, int);
+
+int switch_array_integers_test(int*, int,
+  int, int*);
 
 #endif

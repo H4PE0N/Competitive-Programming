@@ -51,14 +51,14 @@ int integer_array_length_test(int* array,
 int array_contains_integer_test(int* array,
   int length, int integer, int boolean)
 {
-  int output = array_contains_integer(array,
-    length, integer); return (output == boolean);
+  int output = array_contains_integer(array, length,
+    integer); return (output == boolean);
 }
 
-int switch_array_integers_test(int* i_array,
+int switch_adjacent_integers_test(int* i_array,
   int index, int* o_array)
 {
-  i_array = switch_array_integers(i_array, index);
+  i_array = switch_adjacent_integers(i_array,index);
   int length = integer_array_length(i_array);
   return compare_integer_arrays(i_array, o_array,
     length);
@@ -73,16 +73,16 @@ int sort_integer_iteration_test(int* i_array,
     length);
 }
 
-int sort_integer_array_test(int* i_array,
-  int length, int* o_array)
+int sort_integer_array_test(int* i_array,int length,
+  int* o_array)
 {
   i_array = sort_integer_array(i_array, length);
   return compare_integer_arrays(i_array, o_array,
     length);
 }
 
-int add_array_integer_test(int* i_array,
-  int length, int integer, int* o_array)
+int add_array_integer_test(int* i_array, int length,
+  int integer, int* o_array)
 {
   i_array = add_array_integer(i_array, length,
     integer);

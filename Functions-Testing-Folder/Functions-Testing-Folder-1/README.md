@@ -10,23 +10,23 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
-allocate_array_integer_test      sort_integer_iteration_test
+allocate_array_integer_test       sort_integer_iteration_test
 
-allocate_array_integers_test     sort_integer_array_test
+allocate_array_integers_test      sort_integer_array_test
 
-generate_integer_array_test      add_array_integer_test
+generate_integer_array_test       add_array_integer_test
 
-integer_array_length_test        move_array_integers_test
+integer_array_length_test         move_array_integers_test
 
-array_contains_integer_test      remove_array_integer_test
+array_contains_integer_test       remove_array_integer_test
 
-switch_array_integers_test       delete_array_integer_test
+switch_adjacent_integers_test     delete_array_integer_test
 
-compare_integer_arrays_test      remove_array_integers_test
+compare_integer_arrays_test       remove_array_integers_test
 
-array_integer_amount_test       generate_random_integers_test
+array_integer_amount_test         generate_random_integers_test
 
-integers_range_between_test
+integers_range_between_test       switch_array_integers_test
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -16,7 +16,8 @@ int integer_array_length(int*);
 int array_contains_integer(int*, int,
   int);
 
-int* switch_array_integers(int*, int);
+int* switch_adjacent_integers(int*,
+  int);
 
 int* sort_integer_iteration(int*,int);
 
@@ -44,5 +45,10 @@ int integers_range_between(int*, int,
 
 int* generate_random_integers(int,int,
   int);
+
+int* switch_array_integers(int*, int,
+  int);
+
+int* shuffle_integer_array(int*, int);
 
 #endif

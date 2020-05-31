@@ -45,12 +45,9 @@ int array_contains_integer(int* array, int length,
   return false;
 }
 
-int* switch_array_integers(int* array, int index)
+int* switch_adjacent_integers(int* array, int index)
 {
-  int switch_integer = *(array + index);
-  *(array + index) = *(array + (index + 1));
-  *(array + (index + 1)) = switch_integer;
-  return array;
+  return switch_array_integers(array,index,index+1);
 }
 
 int* sort_integer_iteration(int* array,int iteration)
@@ -59,7 +56,7 @@ int* sort_integer_iteration(int* array,int iteration)
   {
     if(*(array + index) <= *(array + (index + 1) ))
       continue;
-    array = switch_array_integers(array, index);
+    array = switch_adjacent_integers(array, index);
   }
   return array;
 }
@@ -87,7 +84,7 @@ int* move_array_integers(int* array, int length,
 {
   for(int index = start; index < (length-1); index++)
   {
-    array = switch_array_integers(array, index);
+    array = switch_adjacent_integers(array, index);
   }
   return array;
 }

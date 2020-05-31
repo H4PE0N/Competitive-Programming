@@ -76,3 +76,23 @@ int* generate_random_integers(int length,int minimum,
   }
   return array;
 }
+
+int* switch_array_integers(int* array, int first,
+  int second)
+{
+  int switch_integer = array[first]; array[first] =
+    array[second]; array[second] = switch_integer;
+  return array;
+}
+
+int* shuffle_integer_array(int* array, int length)
+{
+  for(int index = 0; index < length; index = index+1)
+  {
+    int random_index = generate_random_integer(0,
+      length);
+    array = switch_array_integers(array, index,
+      random_index);
+  }
+  return array;
+}

@@ -23,13 +23,15 @@ integer_array_length        move_array_integers
 
 array_contains_integer      remove_array_integer
 
-switch_array_integers       delete_array_integer
+switch_adjacent_integers    delete_array_integer
 
 compare_integer_arrays      remove_array_integers
 
 array_integer_amount        generate_random_integers
 
-integers_range_between
+integers_range_between      switch_array_integers
+
+shuffle_integer_array
 
 Made by Roy Hampus Fridholm
 </pre>
