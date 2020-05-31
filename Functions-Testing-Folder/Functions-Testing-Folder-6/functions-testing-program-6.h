@@ -20,22 +20,10 @@ int integer_common_value_test(int**, int, int);
 
 int integer_array_typical_test(int*, int, int);
 
-int convert_decimal_percent_test(double,double);
-
-int convert_percent_decimal_test(double,double);
-
 int array_integer_frequency_test(int*,int,int,
   double);
 
 int array_integer_percent_test(int*, int, int,
   double);
-
-int integer_range_between_test(int, int, int,
-  int);
-
-int generate_random_integer_test(int, int, int,
-  int);
-
-int integer_power_operation_test(int, int, int);
 
 #endif

@@ -77,18 +77,6 @@ int integer_array_typical_test(int* array, int length,
   return (typical == i_typical);
 }
 
-int convert_decimal_percent_test(double decimal,
-  double percent)
-{
-  return convert_decimal_percent(decimal) == percent;
-}
-
-int convert_percent_decimal_test(double percent,
-  double decimal)
-{
-  return convert_percent_decimal(percent) == decimal;
-}
-
 int array_integer_frequency_test(int* array,int length,
   int integer, double i_amount)
 {
