@@ -11,6 +11,9 @@ library-functions-program-2.h"
 #include "../Library-Functions-Folder-3/\
 library-functions-program-3.h"
 
+#include "../Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 #include "../Library-Functions-Folder-6/\
 library-functions-program-6.h"
 
@@ -80,16 +83,6 @@ int integer_array_typical(int* array, int i_length)
     i_length);
   int length = integer_hashmap_length(hashmap);
   return integer_common_value(hashmap, length);
-}
-
-double convert_decimal_percent(double decimal)
-{
-  double percent = (decimal * 100); return percent;
-}
-
-double convert_percent_decimal(double percent)
-{
-  double decimal = (percent / 100); return decimal;
 }
 
 double array_integer_frequency(int* array,

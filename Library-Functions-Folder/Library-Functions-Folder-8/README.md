@@ -1,6 +1,6 @@
 
 <pre>
-These programs contains functions  that  
+These programs contains functions that deals with integers.
 
 If you want to create a new function to this  library,  you
 will have to make the test function before. After the  test
@@ -12,7 +12,11 @@ a positive output.
 
 Here is a list of the functions that the programs contains:
 
+integer_power_operation     convert_percent_decimal
 
+integer_range_between       generate_random_integer
+
+convert_decimal_percent
 
 Made by Roy Hampus Fridholm
 </pre>

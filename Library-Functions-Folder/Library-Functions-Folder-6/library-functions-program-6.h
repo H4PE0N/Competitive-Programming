@@ -19,20 +19,10 @@ int integer_common_value(int**, int);
 
 int integer_array_typical(int*, int);
 
-double convert_decimal_percent(double);
-
-double convert_percent_decimal(double);
-
 double array_integer_frequency(int*,int,
   int);
 
 double array_integer_percent(int*, int,
   int);
-
-int integer_range_between(int,int,int);
-
-int generate_random_integer(int, int);
-
-int integer_power_operation(int, int);
 
 #endif
