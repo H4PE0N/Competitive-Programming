@@ -15,7 +15,8 @@ library-functions-program-3.h"
 Library-Functions-Folder-6/\
 library-functions-program-6.h"
 
-#include "../Functions-Testing-Folder-6/\
+#include "../../Functions-Testing-Folder/\
+Functions-Testing-Folder-6/\
 functions-testing-program-6.h"
 
 int array_integer_percent_test(int* array, int length,

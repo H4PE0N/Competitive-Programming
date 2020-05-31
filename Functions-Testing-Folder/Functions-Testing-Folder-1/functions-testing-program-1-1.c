@@ -3,7 +3,8 @@
 Library-Functions-Folder-1/\
 library-functions-program-1.h"
 
-#include "../Functions-Testing-Folder-1/\
+#include "../../Functions-Testing-Folder/\
+Functions-Testing-Folder-1/\
 functions-testing-program-1.h"
 
 int allocate_array_integer_test(int* i_array,

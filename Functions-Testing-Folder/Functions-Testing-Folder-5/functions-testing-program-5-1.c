@@ -7,7 +7,8 @@ library-functions-program-4.h"
 Library-Functions-Folder-5/\
 library-functions-program-5.h"
 
-#include "../Functions-Testing-Folder-5/\
+#include "../../Functions-Testing-Folder/\
+Functions-Testing-Folder-5/\
 functions-testing-program-5.h"
 
 int calculate_bit_integer_test(int integer,

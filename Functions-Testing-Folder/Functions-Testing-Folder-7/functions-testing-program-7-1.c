@@ -7,7 +7,8 @@ library-functions-program-4.h"
 Library-Functions-Folder-7/\
 library-functions-program-7.h"
 
-#include "../Functions-Testing-Folder-7/\
+#include "../../Functions-Testing-Folder/\
+Functions-Testing-Folder-7/\
 functions-testing-program-7.h"
 
 int binary_left_shifting_test(char*i_binary, int length,
