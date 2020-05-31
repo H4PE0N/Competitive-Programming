@@ -17,6 +17,7 @@ Here is a list of all the folders and  what  they  contain:
 * Competitive-Functions-Testing-5:  Binary Strings
 * Competitive-Functions-Testing-6:  Statistics, Probability
 * Competitive-Functions-Testing-7:  Binary Operations
+* Competitive-Functions-Testing-8:  Integers
 
 Made by Roy Hampus Fridholm
 </pre>
