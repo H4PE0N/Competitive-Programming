@@ -68,3 +68,11 @@ int switch_array_integers_test(int* i_array,
   return compare_integer_arrays(i_array, o_array,
     length);
 }
+
+int compare_integer_arrays_test(int* first,
+  int* second, int length, int boolean)
+{
+  int output = compare_integer_arrays(first, second,
+    length);
+  return (output == boolean);
+}

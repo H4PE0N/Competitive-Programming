@@ -50,4 +50,7 @@ int generate_random_integers_test(int, int,
 int switch_array_integers_test(int*, int,
   int, int*);
 
+int compare_integer_arrays_test(int*, int*,
+  int, int);
+
 #endif

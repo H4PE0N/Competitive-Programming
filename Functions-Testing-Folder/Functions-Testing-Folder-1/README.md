@@ -28,5 +28,7 @@ array_integer_amount_test         generate_random_integers_test
 
 integers_range_between_test       switch_array_integers_test
 
+compare_integer_arrays_test
+
 Made by Roy Hampus Fridholm
 </pre>
