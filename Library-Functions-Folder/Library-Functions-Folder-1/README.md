@@ -31,7 +31,7 @@ array_integer_amount        generate_random_integers
 
 integers_range_between      switch_array_integers
 
-shuffle_integer_array
+shuffle_integer_array       integer_array_stdout
 
 Made by Roy Hampus Fridholm
 </pre>

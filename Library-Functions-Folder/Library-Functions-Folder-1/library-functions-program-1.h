@@ -51,4 +51,6 @@ int* switch_array_integers(int*, int,
 
 int* shuffle_integer_array(int*, int);
 
+void integer_array_stdout(int*, int);
+
 #endif
