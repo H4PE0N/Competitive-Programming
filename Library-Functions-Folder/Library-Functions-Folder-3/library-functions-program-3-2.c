@@ -1,6 +1,7 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #include "../Library-Functions-Folder-1/\
 library-functions-program-1.h"
@@ -47,4 +48,13 @@ int** reduce_hashmap_value(int** hashmap, int keyword)
   if(*(*(hashmap + index) + 1) > 1)
     { *(*(hashmap + index) + 1) -= 1; return hashmap; }
   return delete_hashmap_keyword(hashmap,length,keyword);
+}
+
+void integer_hashmap_stdout(int** hashmap, int length)
+{
+  for(int index = 0; index < length; index = index+1)
+  {
+    printf("%d -> %d\n", *(*(hashmap + index) + 0),
+      *(*(hashmap + index) + 1));
+  }
 }

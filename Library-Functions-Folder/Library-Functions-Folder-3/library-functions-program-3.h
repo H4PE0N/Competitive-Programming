@@ -32,4 +32,6 @@ int** delete_hashmap_keyword(int**, int,
 
 int** reduce_hashmap_value(int**, int);
 
+void integer_hashmap_stdout(int**, int);
+
 #endif
