@@ -35,4 +35,7 @@ int** switch_matrix_arrays(int**, int,
 
 int** move_matrix_arrays(int**,int,int);
 
+int** generate_random_matrix(int, int,
+  int, int);
+
 #endif

@@ -39,3 +39,15 @@ int** move_matrix_arrays(int** matrix, int height,
   }
   return matrix;
 }
+
+int** generate_random_matrix(int height, int width,
+  int minimum, int maximum)
+{
+  int** matrix = generate_matrix_array(height, width);
+  for(int index = 0; index < height; index = index+1)
+  {
+    *(matrix + index) = generate_random_integers(
+      width, minimum, maximum);
+  }
+  return matrix;
+}
