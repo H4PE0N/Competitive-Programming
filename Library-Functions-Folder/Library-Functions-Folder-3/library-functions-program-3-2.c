@@ -58,3 +58,11 @@ void integer_hashmap_stdout(int** hashmap, int length)
       *(*(hashmap + index) + 1));
   }
 }
+
+int** generate_random_hashmap(int length, int minimum,
+  int maximum)
+{
+  int* array = generate_random_integers(length,minimum,
+    maximum);
+  return convert_array_hashmap(array, length);
+}

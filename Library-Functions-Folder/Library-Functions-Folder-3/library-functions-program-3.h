@@ -34,4 +34,7 @@ int** reduce_hashmap_value(int**, int);
 
 void integer_hashmap_stdout(int**, int);
 
+int** generate_random_hashmap(int, int,
+  int);
+
 #endif

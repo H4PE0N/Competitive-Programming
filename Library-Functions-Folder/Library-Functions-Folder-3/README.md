@@ -27,7 +27,7 @@ integer_hashmap_value         reduce_hashmap_value
 
 delete_hashmap_keyword        generate_hashmap_keyword
 
-integer_hashmap_stdout
+integer_hashmap_stdout        generate_random_hashmap
 
 Made by Roy Hampus Fridholm
 </pre>
