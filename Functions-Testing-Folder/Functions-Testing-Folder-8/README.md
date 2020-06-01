@@ -10,7 +10,11 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
+convert_decimal_percent_test    generate_random_integer_test
 
+convert_percent_decimal_test    integer_power_operation_test
+
+integer_range_between_test
 
 Made by Roy Hampus Fridholm
 </pre>
