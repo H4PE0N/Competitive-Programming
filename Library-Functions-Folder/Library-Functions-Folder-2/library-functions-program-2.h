@@ -38,4 +38,6 @@ int** move_matrix_arrays(int**,int,int);
 int** generate_random_matrix(int, int,
   int, int);
 
+void integer_matrix_stdout(int**, int);
+
 #endif

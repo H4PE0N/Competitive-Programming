@@ -1,6 +1,7 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #include "../Library-Functions-Folder-1/\
 library-functions-program-1.h"
@@ -50,4 +51,14 @@ int** generate_random_matrix(int height, int width,
       width, minimum, maximum);
   }
   return matrix;
+}
+
+void integer_matrix_stdout(int** matrix, int height)
+{
+  int width = integer_array_length(*(matrix + 0));
+  for(int index = 0; index < height; index = index+1)
+  {
+    integer_array_stdout(*(matrix + index), width);
+    printf("\n");
+  }
 }

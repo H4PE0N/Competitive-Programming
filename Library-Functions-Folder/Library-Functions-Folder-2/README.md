@@ -25,7 +25,7 @@ remove_matrix_integers      move_matrix_arrays
 
 switch_matrix_arrays        switch_matrix_integers
 
-generate_random_matrix
+generate_random_matrix      integer_matrix_stdout
 
 Made by Roy Hampus Fridholm
 </pre>
