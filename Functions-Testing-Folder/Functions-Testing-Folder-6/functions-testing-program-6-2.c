@@ -18,11 +18,3 @@ library-functions-program-6.h"
 #include "../../Library-Functions-Folder/\
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
-
-int array_integer_percent_test(int* array, int length,
-  int integer, double i_percent)
-{
-  double percent = array_integer_percent(array,length,
-    integer);
-  return (percent == i_percent);
-}

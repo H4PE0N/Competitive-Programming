@@ -10,9 +10,9 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
-binary_left_shifting_test        binary_or_operation_test
+binary_left_shifting_test       binary_or_operation_test
 
-binary_right_shifting_test       binary_xor_operation_test
+binary_right_shifting_test      binary_xor_operation_test
 
 binary_and_operation_test       binary_not_operation_test
 
