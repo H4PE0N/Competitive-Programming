@@ -8,21 +8,21 @@ library-functions-program-1.h"
 #include "../Library-Functions-Folder-2/\
 library-functions-program-2.h"
 
-int** switch_matrix_integers(int** matrix, int width,
-  int index)
+int** switch_matrix_integers(int** matrix, int height,
+  int width)
 {
-  int switch_integer = *(*(matrix + width) + index);
-  matrix[width][index] = matrix[width + 1][index];
-  *(*(matrix + width + 1) + index) = switch_integer;
+  int switch_integer = matrix[height][width];
+  matrix[height][width] = matrix[height + 1][width];
+  matrix[height + 1][width] = switch_integer;
   return matrix;
 }
 
 int** switch_matrix_arrays(int** matrix, int width,
-  int i_index)
+  int height)
 {
   for(int index = 0; index < width; index = index + 1)
   {
-    matrix = switch_matrix_integers(matrix, i_index,
+    matrix = switch_matrix_integers(matrix, height,
       index);
   }
   return matrix;
