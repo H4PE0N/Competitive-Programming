@@ -7,6 +7,7 @@ folder as the program.
 gcc -o testing-bootup-program-4 testing-bootup-program-4.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-2.c \
+../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-3.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-2/library-functions-program-2-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-2/library-functions-program-2-2.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-3/library-functions-program-3-1.c \
