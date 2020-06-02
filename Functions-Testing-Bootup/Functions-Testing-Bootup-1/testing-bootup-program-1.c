@@ -43,17 +43,7 @@ int main(int argc, char** argv)
 {
   srand(time(NULL));
 
-  int* i_array = generate_random_integers(10, 1, 9);
 
-  int length = integer_array_length(i_array);
-
-  int* o_array = duplicate_integer_array(i_array, length);
-
-  i_array = shuffle_integer_array(i_array, length);
-  int result = !compare_integer_arrays(i_array,
-    o_array, length);
-   printf("%d and %d\n", result, compare_integers_content(i_array,
-    o_array, length) );
 
   return 0;
 }
