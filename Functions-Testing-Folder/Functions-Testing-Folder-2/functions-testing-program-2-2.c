@@ -7,7 +7,7 @@ library-functions-program-1.h"
 Library-Functions-Folder-2/\
 library-functions-program-2.h"
 
-int switch_matrix_arrays_test(int** i_matrix, int width,
+int switch_matrix_arrays_test(int** i_matrix,int width,
   int i_height, int** o_matrix)
 {
   i_matrix = switch_matrix_arrays(i_matrix, width,
@@ -24,4 +24,12 @@ int move_matrix_arrays_test(int** i_matrix, int height,
     start);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, integer_array_length(*(i_matrix + 0)));
+}
+
+int compare_matrix_arrays_test(int** first,
+  int** second, int height, int width, int boolean)
+{
+  int output = compare_matrix_arrays(first, second,
+    height, width);
+  return (output == boolean);
 }

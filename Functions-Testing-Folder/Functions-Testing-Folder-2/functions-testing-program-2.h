@@ -32,4 +32,7 @@ int switch_matrix_arrays_test(int**, int, int,
 
 int move_matrix_arrays_test(int**,int,int,int**);
 
+int compare_matrix_arrays_test(int**, int**, int,
+  int, int);
+
 #endif

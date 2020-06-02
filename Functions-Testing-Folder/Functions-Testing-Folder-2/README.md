@@ -22,5 +22,7 @@ remove_matrix_integers_test      move_matrix_arrays_test
 
 switch_matrix_arrays_test        switch_matrix_integers_test
 
+compare_matrix_arrays_test
+
 Made by Roy Hampus Fridholm
 </pre>
