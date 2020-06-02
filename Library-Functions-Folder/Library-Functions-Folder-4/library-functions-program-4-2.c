@@ -5,6 +5,9 @@
 #include "../Library-Functions-Folder-4/\
 library-functions-program-4.h"
 
+#include "../Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 char* remove_string_characters(char* string,int length,
   char character)
 {
@@ -19,5 +22,5 @@ char* remove_string_characters(char* string,int length,
 
 char generate_random_character(int minimum,int maximum)
 {
-  return generete_random_integer(minimum, maximum);
+  return generate_random_integer(minimum, maximum);
 }

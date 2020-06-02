@@ -3,6 +3,10 @@
 Library-Functions-Folder-4/\
 library-functions-program-4.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 int allocate_string_character_test(char* i_string,
   int index, char character, char* o_string)
 {
