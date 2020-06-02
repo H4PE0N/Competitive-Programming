@@ -30,5 +30,7 @@ integers_range_between_test       switch_array_integers_test
 
 compare_integer_arrays_test       shuffle_integer_array_test
 
+duplicate_integer_array_test
+
 Made by Roy Hampus Fridholm
 </pre>

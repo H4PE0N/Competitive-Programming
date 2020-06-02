@@ -56,4 +56,7 @@ int compare_integer_arrays_test(int*, int*,
 int shuffle_integer_array_test(int*, int,
   int*);
 
+int duplicate_integer_array_test(int*, int,
+  int*);
+
 #endif

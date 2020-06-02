@@ -43,7 +43,7 @@ int* remove_array_integers(int*, int,
 int integers_range_between(int*, int,
   int);
 
-int* generate_random_integers(int,int,
+int* generate_random_integers(int, int,
   int);
 
 int* switch_array_integers(int*, int,
@@ -53,7 +53,9 @@ int* shuffle_integer_array(int*, int);
 
 void integer_array_stdout(int*, int);
 
-int compare_integers_content(int*,
-  int*, int);
+int compare_integers_content(int*,int*,
+  int);
+
+int* duplicate_integer_array(int*,int);
 
 #endif

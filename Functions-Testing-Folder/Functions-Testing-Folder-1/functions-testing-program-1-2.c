@@ -86,3 +86,12 @@ int shuffle_integer_array_test(int* i_array,
   return result && compare_integers_content(i_array,
     o_array, length);
 }
+
+int duplicate_integer_array_test(int* i_array,
+  int length, int* o_array)
+{
+  int* array = duplicate_integer_array(i_array,
+    length);
+  return compare_integer_arrays(array, o_array,
+    length);
+}
