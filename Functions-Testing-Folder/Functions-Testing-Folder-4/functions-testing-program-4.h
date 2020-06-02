@@ -30,4 +30,7 @@ int add_string_character_test(char*, int, char,
 int remove_string_characters_test(char*,int,
   char, char*);
 
+int compare_strings_together_test(char*, char*,
+  int, int);
+
 #endif

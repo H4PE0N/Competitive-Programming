@@ -8,7 +8,7 @@ int allocate_string_character_test(char* i_string,
 {
   i_string = allocate_string_character(i_string,
     index, character);
-  return compare_strings_together(i_string,o_string,
+  return compare_strings_together(i_string, o_string,
     calculate_string_length(i_string));
 }
 
@@ -48,7 +48,7 @@ int switch_string_characters_test(char* i_string,
 {
   i_string = switch_string_characters(i_string,
     index);
-  return compare_strings_together(i_string,o_string,
+  return compare_strings_together(i_string, o_string,
     calculate_string_length(i_string));
 }
 
@@ -73,9 +73,9 @@ int remove_string_character_test(char* i_string,
 int add_string_character_test(char* i_string,
   int length, char character, char* o_string)
 {
-  i_string = add_string_character(i_string,length,
+  i_string = add_string_character(i_string, length,
     character);
-  return compare_strings_together(i_string,o_string,
+  return compare_strings_together(i_string, o_string,
     length + 1);
 }
 
@@ -84,6 +84,14 @@ int remove_string_characters_test(char* i_string,
 {
   i_string = remove_string_characters(i_string,
     length, character);
-  return compare_strings_together(i_string,o_string,
+  return compare_strings_together(i_string, o_string,
     calculate_string_length(i_string));
+}
+
+int compare_strings_together_test(char* first,
+  char* second, int length, int boolean)
+{
+  int output = compare_strings_together(first,second,
+    length);
+  return (output == boolean);
 }
