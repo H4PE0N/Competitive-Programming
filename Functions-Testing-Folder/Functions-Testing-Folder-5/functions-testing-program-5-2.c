@@ -17,10 +17,10 @@ int convert_binary_character_test(char* binary,
 int generate_random_binary_test(int i_minimum,
   int i_maximum, int o_minimum, int o_maximum)
 {
-  int binary = generate_random_binary(minimum,
-    maximum);
-  return binary_range_between(binary, minimum,
-    maximum);
+  char* binary = generate_random_binary(i_minimum,
+    i_maximum);
+  return binary_range_between(binary, o_minimum,
+    o_maximum);
 }
 
 int binary_range_between_test(char* binary,
