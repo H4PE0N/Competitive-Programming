@@ -1,6 +1,7 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #include "../Library-Functions-Folder-4/\
 library-functions-program-4.h"
@@ -46,7 +47,6 @@ char* generate_random_string(int length, int minimum,
 void character_string_stdout(char* string, int length)
 {
   for(int index = 0; index < length; index = index + 1)
-  {
-    printf("%c\n", *(string + index));
-  }
+  { printf("%c", *(string + index)); } printf("\n");
+
 }
