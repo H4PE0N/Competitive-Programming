@@ -53,4 +53,7 @@ int* shuffle_integer_array(int*, int);
 
 void integer_array_stdout(int*, int);
 
+int compare_integers_content(int*,
+  int*, int);
+
 #endif

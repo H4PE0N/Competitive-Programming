@@ -76,3 +76,13 @@ int compare_integer_arrays_test(int* first,
     length);
   return (output == boolean);
 }
+
+int shuffle_integer_array_test(int* i_array,
+  int length, int* o_array)
+{
+  i_array = shuffle_integer_array(i_array, length);
+  int result = !compare_integer_arrays(i_array,
+    o_array, length);
+  return result && compare_integers_content(i_array,
+    o_array, length);
+}

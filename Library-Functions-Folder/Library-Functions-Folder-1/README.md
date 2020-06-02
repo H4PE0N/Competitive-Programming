@@ -33,5 +33,7 @@ integers_range_between      switch_array_integers
 
 shuffle_integer_array       integer_array_stdout
 
+compare_integers_content
+
 Made by Roy Hampus Fridholm
 </pre>

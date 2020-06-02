@@ -16,3 +16,11 @@ void integer_array_stdout(int* array, int length)
     printf("%d ", *(array + index));
   }
 }
+
+int compare_integers_content(int* first, int* second,
+  int length)
+{
+  first = sort_integer_array(first, length);
+  return compare_integer_arrays(first,
+    sort_integer_array(second, length), length);
+}

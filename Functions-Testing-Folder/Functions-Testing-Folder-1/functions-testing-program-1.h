@@ -53,4 +53,7 @@ int switch_array_integers_test(int*, int,
 int compare_integer_arrays_test(int*, int*,
   int, int);
 
+int shuffle_integer_array_test(int*, int,
+  int*);
+
 #endif
