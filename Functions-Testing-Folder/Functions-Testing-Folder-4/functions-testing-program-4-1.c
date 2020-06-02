@@ -91,11 +91,3 @@ int remove_string_characters_test(char* i_string,
   return compare_strings_together(i_string, o_string,
     calculate_string_length(i_string));
 }
-
-int compare_strings_together_test(char* first,
-  char* second, int length, int boolean)
-{
-  int output = compare_strings_together(first,second,
-    length);
-  return (output == boolean);
-}

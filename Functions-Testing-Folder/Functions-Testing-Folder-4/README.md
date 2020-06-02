@@ -20,7 +20,7 @@ calculate_string_length_test      add_string_character_test
 
 string_contains_character_test    compare_strings_together_test
 
-remove_string_characters_test
+remove_string_characters_test     generate_random_character_test
 
 Made by Roy Hampus Fridholm
 </pre>
