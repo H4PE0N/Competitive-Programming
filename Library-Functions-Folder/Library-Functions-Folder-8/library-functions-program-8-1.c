@@ -13,7 +13,7 @@ int integer_range_between(int integer, int minimum,
 
 int generate_random_integer(int minimum,int maximum)
 {
-  return (minimum + (rand() % (maximum - minimum)));
+  return minimum + (rand() % (maximum - minimum+1));
 }
 
 int integer_power_operation(int integer, int power)
