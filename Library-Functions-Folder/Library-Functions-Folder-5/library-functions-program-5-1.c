@@ -8,6 +8,9 @@ library-functions-program-4.h"
 #include "../Library-Functions-Folder-5/\
 library-functions-program-5.h"
 
+#include "../Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 int calculate_bit_integer(int power_integer)
 {
   return ( pow(2, power_integer) );

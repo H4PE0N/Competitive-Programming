@@ -13,3 +13,20 @@ int convert_binary_character_test(char* binary,
   int character = convert_binary_character(binary);
   return (character == i_character);
 }
+
+int generate_random_binary_test(int i_minimum,
+  int i_maximum, int o_minimum, int o_maximum)
+{
+  int binary = generate_random_binary(minimum,
+    maximum);
+  return binary_range_between(binary, minimum,
+    maximum);
+}
+
+int binary_range_between_test(char* binary,
+  int minimum, int maximum, int boolean)
+{
+  int output = binary_range_between(binary,minimum,
+    maximum);
+  return (output == boolean);
+}

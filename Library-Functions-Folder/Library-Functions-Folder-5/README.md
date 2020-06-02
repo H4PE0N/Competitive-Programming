@@ -25,5 +25,7 @@ calculate_real_length         convert_binary_integer
 
 convert_binary_character      calculate_bit_integer
 
+generate_random_binary        binary_range_between
+
 Made by Roy Hampus Fridholm
 </pre>

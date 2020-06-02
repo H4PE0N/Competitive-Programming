@@ -33,4 +33,10 @@ int convert_binary_integer_test(char*, int);
 int convert_binary_character_test(char*,
   char);
 
+int generate_random_binary_test(int,int,int,
+  int);
+
+int binary_range_between_test(char*,int,int,
+  int);
+
 #endif
