@@ -88,10 +88,10 @@ int shuffle_integer_array_test(int* i_array,
 }
 
 int duplicate_integer_array_test(int* i_array,
-  int length, int* o_array)
+  int length)
 {
   int* array = duplicate_integer_array(i_array,
     length);
-  return compare_integer_arrays(array, o_array,
+  return compare_integer_arrays(array, i_array,
     length);
 }
