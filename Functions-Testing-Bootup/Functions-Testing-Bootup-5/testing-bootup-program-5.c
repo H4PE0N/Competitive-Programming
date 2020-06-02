@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "../../Library-Functions-Folder/\
 Library-Functions-Folder-1/\
@@ -40,5 +41,9 @@ functions-testing-program-5.h"
 
 int main(int argc, char** argv)
 {
+  srand(time(NULL));
+
+
+  
   return 0;
 }
