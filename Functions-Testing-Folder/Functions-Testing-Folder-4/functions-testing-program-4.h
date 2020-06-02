@@ -36,4 +36,7 @@ int compare_strings_together_test(char*, char*,
 int generate_random_character_test(int,int,int,
   int);
 
+int character_range_between_test(char, int, int,
+  int);
+
 #endif

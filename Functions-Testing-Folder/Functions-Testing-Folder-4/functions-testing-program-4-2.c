@@ -23,3 +23,11 @@ int generate_random_character_test(int i_minimum,
   return character_range_between(character,o_minimum,
     o_maximum);
 }
+
+int character_range_between_test(char character,
+  int minimum, int maximum, int boolean)
+{
+  int output = character_range_between(character,
+    minimum, maximum);
+  return (output == boolean);
+}
