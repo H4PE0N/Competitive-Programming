@@ -18,8 +18,8 @@ int string_contains_character(char*,
 char* switch_string_characters(char*,
   int);
 
-char* move_string_characters(char*,
-  int, int);
+char* move_string_characters(char*,int,
+  int);
 
 char* remove_string_character(char*,
   int,char);
@@ -40,6 +40,9 @@ int character_range_between(char, int,
   int);
 
 char* generate_random_string(int, int,
+  int);
+
+void character_string_stdout(char*,
   int);
 
 #endif

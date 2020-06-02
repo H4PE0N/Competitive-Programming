@@ -27,5 +27,7 @@ remove_string_characters      generate_random_character
 
 character_range_between       generate_random_string
 
+character_string_stdout
+
 Made by Roy Hampus Fridholm
 </pre>
