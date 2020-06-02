@@ -30,3 +30,15 @@ int character_range_between(char character,int minimum,
 {
   return (character <= maximum && character >=minimum);
 }
+
+char* generate_random_string(int length, int minimum,
+  int maximum)
+{
+  char* string = generate_empty_string(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    string = allocate_string_character(string, index,
+      generate_random_character(minimum, maximum));
+  }
+  return string;
+}

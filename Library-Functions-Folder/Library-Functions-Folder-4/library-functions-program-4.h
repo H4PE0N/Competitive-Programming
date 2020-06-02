@@ -39,4 +39,7 @@ char generate_random_character(int,
 int character_range_between(char, int,
   int);
 
+char* generate_random_string(int, int,
+  int);
+
 #endif
