@@ -38,6 +38,17 @@ int** move_matrix_arrays(int**,int,int);
 int** generate_random_matrix(int, int,
   int, int);
 
-void integer_matrix_stdout(int**, int);
+void integer_matrix_stdout(int**, int,
+  int);
+
+int** shuffle_integer_matrix(int**,int);
+
+int** duplicate_integer_matrix(int**,
+  int, int);
+
+int** sort_integer_matrix(int**, int);
+
+int compare_matrix_content(int**, int**,
+  int, int);
 
 #endif

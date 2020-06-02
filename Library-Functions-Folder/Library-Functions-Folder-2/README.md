@@ -27,5 +27,9 @@ switch_matrix_arrays        switch_matrix_integers
 
 generate_random_matrix      integer_matrix_stdout
 
+shuffle_integer_matrix      duplicate_integer_matrix
+
+sort_integer_matrix         compare_matrix_content
+
 Made by Roy Hampus Fridholm
 </pre>

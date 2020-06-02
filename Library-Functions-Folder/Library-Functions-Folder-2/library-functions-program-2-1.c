@@ -10,8 +10,8 @@ library-functions-program-2.h"
 
 int** generate_matrix_array(int height, int width)
 {
-  int** matrix = malloc(sizeof(matrix) * height);
-  for(int index = 0; index < height; index += 1)
+  int** matrix = malloc(sizeof(matrix) * (height+1));
+  for(int index = 0; index <= height; index += 1)
   {
     *(matrix + index) = generate_integer_array(width);
   }
@@ -36,7 +36,7 @@ int integer_matrix_height(int** matrix, int width)
 {
   int height = 0;
   while(integer_array_length(*(matrix + height))
-    >= width) { height += 1; } return height;
+    >= width) { height = height + 1; } return height;
 }
 
 int matrix_contains_integer(int** matrix, int height,

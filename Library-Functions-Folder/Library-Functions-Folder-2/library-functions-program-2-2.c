@@ -53,12 +53,53 @@ int** generate_random_matrix(int height, int width,
   return matrix;
 }
 
-void integer_matrix_stdout(int** matrix, int height)
+void integer_matrix_stdout(int** matrix, int height,
+  int width)
 {
-  int width = integer_array_length(*(matrix + 0));
   for(int index = 0; index < height; index = index+1)
   {
     integer_array_stdout(*(matrix + index), width);
-    printf("\n");
   }
+}
+
+int** shuffle_integer_matrix(int** matrix,int height)
+{
+  for(int index = 0; index < height; index = index+1)
+  {
+    int width = integer_array_length(matrix[index]);
+    *(matrix + index) = shuffle_integer_array(
+      *(matrix + index), width);
+  }
+  return matrix;
+}
+
+int** duplicate_integer_matrix(int** i_matrix,
+  int height, int width)
+{
+  int** matrix = generate_matrix_array(height,width);
+  for(int index = 0; index < height; index = index+1)
+  {
+    *(matrix + index) = duplicate_integer_array(
+      *(i_matrix + index), width);
+  }
+  return matrix;
+}
+
+int** sort_integer_matrix(int** matrix, int height)
+{
+  for(int index = 0; index < height; index = index+1)
+  {
+    int width = integer_array_length(matrix[index]);
+    *(matrix + index) = sort_integer_array(
+      *(matrix + index), width);
+  }
+  return matrix;
+}
+
+int compare_matrix_content(int** first, int** second,
+  int height, int width)
+{
+  first = sort_integer_matrix(first, height);
+  return compare_matrix_arrays(first,
+    sort_integer_matrix(first, height),height,width);
 }

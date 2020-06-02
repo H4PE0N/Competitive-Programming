@@ -12,9 +12,7 @@ library-functions-program-1.h"
 void integer_array_stdout(int* array, int length)
 {
   for(int index = 0; index < length; index = index+1)
-  {
-    printf("%d ", *(array + index));
-  }
+  { printf("%d ", *(array + index)); } printf("\n");
 }
 
 int compare_integers_content(int* first, int* second,
