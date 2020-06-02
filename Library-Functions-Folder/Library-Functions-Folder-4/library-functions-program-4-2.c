@@ -16,3 +16,8 @@ char* remove_string_characters(char* string,int length,
   }
   return string;
 }
+
+char generate_random_character(int minimum,int maximum)
+{
+  return generete_random_integer(minimum, maximum);
+}

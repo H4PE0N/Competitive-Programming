@@ -33,4 +33,7 @@ int compare_strings_together(char*,
 char* remove_string_characters(char*,
   int, char);
 
+char generate_random_character(int,
+  int);
+
 #endif

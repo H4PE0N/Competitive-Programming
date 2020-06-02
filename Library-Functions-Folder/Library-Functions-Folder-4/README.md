@@ -23,7 +23,7 @@ calculate_string_length       add_string_character
 
 string_contains_character     compare_strings_together
 
-remove_string_characters
+remove_string_characters      generate_random_character
 
 Made by Roy Hampus Fridholm
 </pre>
