@@ -24,7 +24,7 @@ char* move_string_characters(char*,
 char* remove_string_character(char*,
   int,char);
 
-char* add_string_character(char*,int,
+char* add_string_character(char*, int,
   char);
 
 int compare_strings_together(char*,
@@ -34,6 +34,9 @@ char* remove_string_characters(char*,
   int, char);
 
 char generate_random_character(int,
+  int);
+
+int character_range_between(char, int,
   int);
 
 #endif

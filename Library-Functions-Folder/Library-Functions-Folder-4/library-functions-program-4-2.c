@@ -24,3 +24,9 @@ char generate_random_character(int minimum,int maximum)
 {
   return generate_random_integer(minimum, maximum);
 }
+
+int character_range_between(char character,int minimum,
+  int maximum)
+{
+  return (character <= minimum && character >=maximum);
+}

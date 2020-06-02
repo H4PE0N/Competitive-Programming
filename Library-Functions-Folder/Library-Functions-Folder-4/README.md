@@ -25,5 +25,7 @@ string_contains_character     compare_strings_together
 
 remove_string_characters      generate_random_character
 
+character_range_between
+
 Made by Roy Hampus Fridholm
 </pre>
