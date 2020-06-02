@@ -10,17 +10,17 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
-allocate_string_character_test     switch_string_characters_test
+allocate_string_character_test    switch_string_characters_test
 
-allocate_string_characters_test    move_string_characters_test
+allocate_string_characters_test   move_string_characters_test
 
-generate_empty_string_test         remove_string_character_test
+generate_empty_string_test        remove_string_character_test
 
-calculate_string_length_test       add_string_character_test
+calculate_string_length_test      add_string_character_test
 
 string_contains_character_test    compare_strings_together_test
 
-remove_string_characters_test     compare_strings_together_test
+remove_string_characters_test
 
 Made by Roy Hampus Fridholm
 </pre>
