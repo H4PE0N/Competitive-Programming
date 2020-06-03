@@ -8,7 +8,7 @@ int integer_hashmap_length(int**);
 
 int hashmap_keyword_exists(int**, int);
 
-int integer_keyword_index(int**, int);
+int hashmap_keyword_index(int**, int);
 
 int** increase_hashmap_value(int**, int);
 

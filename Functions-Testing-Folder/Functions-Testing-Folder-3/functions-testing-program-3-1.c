@@ -33,10 +33,10 @@ int hashmap_keyword_exists_test(int** hashmap,
   return (output == boolean);
 }
 
-int integer_keyword_index_test(int** hashmap,
+int hashmap_keyword_index_test(int** hashmap,
   int keyword, int i_index)
 {
-  int index = integer_keyword_index(hashmap, keyword);
+  int index = hashmap_keyword_index(hashmap, keyword);
   return (index == i_index);
 }
 

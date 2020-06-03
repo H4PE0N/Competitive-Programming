@@ -35,7 +35,7 @@ int* integer_hashmap_keywords(int** hashmap, int value)
 int** delete_hashmap_keyword(int** hashmap, int length,
   int keyword)
 {
-  int index = integer_keyword_index(hashmap, keyword);
+  int index = hashmap_keyword_index(hashmap, keyword);
   hashmap = move_matrix_arrays(hashmap, length, index);
   *(hashmap + (length - 1)) = allocate_array_integers(
     *(hashmap + (length - 1)), 2); return hashmap;
@@ -43,7 +43,7 @@ int** delete_hashmap_keyword(int** hashmap, int length,
 
 int** reduce_hashmap_value(int** hashmap, int keyword)
 {
-  int index = integer_keyword_index(hashmap, keyword),
+  int index = hashmap_keyword_index(hashmap, keyword),
     length = integer_hashmap_length(hashmap);
   if(*(*(hashmap + index) + 1) > 1)
     { *(*(hashmap + index) + 1) -= 1; return hashmap; }

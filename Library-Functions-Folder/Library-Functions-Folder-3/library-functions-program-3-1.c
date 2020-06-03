@@ -32,7 +32,7 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
   return false;
 }
 
-int integer_keyword_index(int** hashmap, int keyword)
+int hashmap_keyword_index(int** hashmap, int keyword)
 {
   int length = integer_hashmap_length(hashmap);
   for(int index = 0; index < length; index = index + 1)
@@ -44,7 +44,7 @@ int integer_keyword_index(int** hashmap, int keyword)
 
 int** increase_hashmap_value(int** hashmap,int keyword)
 {
-  int index = integer_keyword_index(hashmap, keyword);
+  int index = hashmap_keyword_index(hashmap, keyword);
   *(*(hashmap + index) + 1) += 1; return hashmap;
 }
 
@@ -89,6 +89,6 @@ int* hashmap_keyword_array(int** hashmap, int length)
 
 int integer_hashmap_value(int** hashmap, int keyword)
 {
-  int index = integer_keyword_index(hashmap, keyword);
+  int index = hashmap_keyword_index(hashmap, keyword);
   return (index >= 0 ? *(*(hashmap + index) + 1) : -1);
 }

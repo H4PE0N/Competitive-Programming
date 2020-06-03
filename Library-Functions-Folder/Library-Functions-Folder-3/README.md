@@ -19,7 +19,7 @@ integer_hashmap_length        allocate_hashmap_value
 
 hashmap_keyword_exists        convert_array_hashmap
 
-integer_keyword_index         hashmap_keyword_array
+hashmap_keyword_index         hashmap_keyword_array
 
 integer_value_keywords        integer_hashmap_keywords
 

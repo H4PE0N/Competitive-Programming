@@ -16,7 +16,7 @@ integer_hashmap_length_test        allocate_hashmap_value_test
 
 hashmap_keyword_exists_test        convert_array_hashmap_test
 
-integer_keyword_index_test         hashmap_keyword_array_test
+hashmap_keyword_index_test         hashmap_keyword_array_test
 
 integer_value_keywords_test        integer_hashmap_keywords_test
 
