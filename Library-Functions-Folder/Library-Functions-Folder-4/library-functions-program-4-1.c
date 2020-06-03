@@ -46,11 +46,11 @@ int string_contains_character(char* string, int length,
   return false;
 }
 
-char* switch_string_characters(char* string, int index)
+char* switch_string_characters(char* string, int first,
+  int second)
 {
-  char switch_character = *(string + index);
-  *(string + index) = *(string + (index + 1));
-  *(string + (index + 1)) = switch_character;
+  char switch_character = string[index];string[index] =
+  string[index+1]; string[index+1] = switch_character;
   return string;
 }
 
@@ -59,7 +59,7 @@ char* move_string_characters(char* string, int length,
 {
   for(int index = start; index < length; index += 1)
   {
-    string = switch_string_characters(string, index);
+    string = switch_adjacent_characters(string, index);
   }
   return string;
 }

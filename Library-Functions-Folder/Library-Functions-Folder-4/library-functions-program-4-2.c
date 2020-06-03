@@ -50,3 +50,62 @@ void character_string_stdout(char* string, int length)
   { printf("%c", *(string + index)); } printf("\n");
 
 }
+
+char* shuffle_character_string(char* string,int length)
+{
+  for(int index = 0; index < length; index = index + 1)
+  {
+    int random_index = generate_random_integer(0,
+      length - 1);
+    string = switch_string_characters(string, index,
+      random_index);
+  }
+  return string;
+}
+
+char* duplicate_character_string(char* i_string,
+  int length)
+{
+  char* string = generate_empty_string(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    string = allocate_string_character(string, index,
+      *(i_string + index));
+  }
+  return string;
+}
+
+char* switch_adjacent_characters(char* string,
+  int index)
+{
+  return switch_string_characters(string,index,
+    index + 1);
+}
+
+char* sort_string_iteration(char* string,int iteration)
+{
+  for(int index = 0; index < (iteration - 1); index++)
+  {
+    if(*(string + index) <= *(string + index + 1))
+      continue;
+    string = switch_adjacent_characters(string, index);
+  }
+  return string
+}
+
+char* sort_character_string(char* string, int length)
+{
+  for(int index = length; index >= 0; index = index-1)
+  {
+    string = sort_string_iteration(string, index);
+  }
+  return string;
+}
+
+int compare_string_content(char* first, char* second,
+  int length)
+{
+  first = sort_character_string(first, length);
+  return compare_strings_together(first,
+    sort_character_string(second, length), length);
+}

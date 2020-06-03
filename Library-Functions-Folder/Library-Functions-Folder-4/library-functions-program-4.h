@@ -45,4 +45,20 @@ char* generate_random_string(int, int,
 void character_string_stdout(char*,
   int);
 
+char* shuffle_character_string(char*,
+  int);
+
+char* duplicate_character_string(char*,
+  int);
+
+char* switch_adjacent_characters(char*,
+  int);
+
+char* sort_string_iteration(char*,int);
+
+char* sort_character_string(char*,int);
+
+int compare_string_content(char*,
+  char*);
+
 #endif

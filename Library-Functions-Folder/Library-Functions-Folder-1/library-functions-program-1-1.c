@@ -18,7 +18,7 @@ int* allocate_array_integers(int* array, int length)
 {
   for(int index = 0; index < length; index += 1)
   {
-    allocate_array_integer(array, index, '\0');
+    array = allocate_array_integer(array,index,'\0');
   }
   return array;
 }

@@ -27,7 +27,13 @@ remove_string_characters      generate_random_character
 
 character_range_between       generate_random_string
 
-character_string_stdout
+character_string_stdout       shuffle_character_string
+
+duplicate_character_string    switch_adjacent_characters
+
+sort_string_iteration         sort_character_string
+
+compare_string_content
 
 Made by Roy Hampus Fridholm
 </pre>
