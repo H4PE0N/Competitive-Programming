@@ -43,17 +43,7 @@ int main(int argc, char** argv)
 {
   srand(time(NULL));
 
-  // shuffle_character_string_test();
-  //
-  // int duplicate_character_string_test();
-  //
-  // int switch_adjacent_characters_test();
-  //
-  // int sort_character_string_test();
-  //
-  // int sort_string_iteration_test();
-  //
-  // int compare_string_content_test();
+
 
   return 0;
 }

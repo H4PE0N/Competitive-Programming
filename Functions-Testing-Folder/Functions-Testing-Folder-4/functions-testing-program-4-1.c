@@ -48,10 +48,10 @@ int string_contains_character_test(char* string,
 }
 
 int switch_string_characters_test(char* i_string,
-  int index, char* o_string)
+  int first, int second, char* o_string)
 {
   i_string = switch_string_characters(i_string,
-    index);
+    first, second);
   return compare_strings_together(i_string, o_string,
     calculate_string_length(i_string));
 }

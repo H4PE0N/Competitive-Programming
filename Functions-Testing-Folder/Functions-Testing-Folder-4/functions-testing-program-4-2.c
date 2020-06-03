@@ -50,7 +50,15 @@ int duplicate_character_string_test(char* i_string,
     length);
 }
 
-// int switch_adjacent_characters_test()
+int switch_adjacent_characters_test(char* i_string,
+  int index, char* o_string)
+{
+  i_string =switch_adjacent_characters(i_string,
+    index);
+  int length = calculate_string_length(i_string);
+  return compare_strings_together(i_string, o_string,
+    length);
+}
 
 int sort_character_string_test(char* i_string,
   int iteration, char* o_string)
@@ -64,7 +72,7 @@ int sort_character_string_test(char* i_string,
 int sort_string_iteration_test(char* i_string,
   int length, char* o_string)
 {
-  i_string = sort_string_iteration(i_stirng, length);
+  i_string = sort_string_iteration(i_string, length);
   return compare_strings_together(i_string, o_string,
     length);
 }

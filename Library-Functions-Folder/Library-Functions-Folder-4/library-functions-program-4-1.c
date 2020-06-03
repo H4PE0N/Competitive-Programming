@@ -49,8 +49,8 @@ int string_contains_character(char* string, int length,
 char* switch_string_characters(char* string, int first,
   int second)
 {
-  char switch_character = string[index];string[index] =
-  string[index+1]; string[index+1] = switch_character;
+  char switch_character = string[first];string[first] =
+  string[second]; string[second] = switch_character;
   return string;
 }
 

@@ -16,7 +16,7 @@ int string_contains_character_test(char*, int,
   char, int);
 
 int switch_string_characters_test(char*, int,
-  char*);
+  int, char*);
 
 int move_string_characters_test(char*, int, int,
   char*);

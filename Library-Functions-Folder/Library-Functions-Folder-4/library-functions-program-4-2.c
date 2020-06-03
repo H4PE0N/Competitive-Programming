@@ -48,7 +48,6 @@ void character_string_stdout(char* string, int length)
 {
   for(int index = 0; index < length; index = index + 1)
   { printf("%c", *(string + index)); } printf("\n");
-
 }
 
 char* shuffle_character_string(char* string,int length)
@@ -90,5 +89,5 @@ char* sort_string_iteration(char* string,int iteration)
       continue;
     string = switch_adjacent_characters(string, index);
   }
-  return string
+  return string;
 }

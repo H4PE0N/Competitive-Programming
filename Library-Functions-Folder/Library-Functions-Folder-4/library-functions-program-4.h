@@ -16,7 +16,7 @@ int string_contains_character(char*,
   int, char);
 
 char* switch_string_characters(char*,
-  int);
+  int, int);
 
 char* move_string_characters(char*,int,
   int);
@@ -59,6 +59,6 @@ char* sort_string_iteration(char*,int);
 char* sort_character_string(char*,int);
 
 int compare_string_content(char*,
-  char*);
+  char*, int);
 
 #endif
