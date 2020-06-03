@@ -22,7 +22,13 @@ string_contains_character_test    compare_strings_together_test
 
 remove_string_characters_test     generate_random_character_test
 
-character_range_between_test
+character_range_between_test      shuffle_character_string_test
+
+duplicate_character_string_test   switch_adjacent_characters_test
+
+sort_character_string_test        sort_string_iteration_test
+
+compare_string_content_test
 
 Made by Roy Hampus Fridholm
 </pre>

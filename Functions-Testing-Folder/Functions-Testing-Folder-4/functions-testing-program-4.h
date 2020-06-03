@@ -39,4 +39,18 @@ int generate_random_character_test(int,int,int,
 int character_range_between_test(char, int, int,
   int);
 
+int shuffle_character_string_test(char*, int,
+  char*);
+
+int duplicate_character_string_test(char*, int);
+
+int switch_adjacent_characters_test();
+
+int sort_character_string_test(char*,int,char*);
+
+int sort_string_iteration_test(char*,int,char*);
+
+int compare_string_content_test(char*,char*,int,
+  int);
+
 #endif
