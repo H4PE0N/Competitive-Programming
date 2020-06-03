@@ -19,7 +19,7 @@ reduce_binary_integer         convert_integer_binary
 
 allocate_binary_bit           convert_character_binary
 
-allocate_binary_bits          calculate_integer_binary
+allocate_binary_bits          increase_binary_integer
 
 calculate_real_length         convert_binary_integer
 

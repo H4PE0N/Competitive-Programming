@@ -16,7 +16,7 @@ reduce_binary_integer_test        convert_integer_binary_test
 
 allocate_binary_bit_test          convert_character_binary_test
 
-allocate_binary_bits_test         calculate_integer_binary_test
+allocate_binary_bits_test         increase_binary_integer_test
 
 calculate_real_length_test        convert_binary_integer_test
 

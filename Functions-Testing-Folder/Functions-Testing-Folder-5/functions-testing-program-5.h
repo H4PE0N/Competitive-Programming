@@ -25,7 +25,7 @@ int convert_integer_binary_test(int, char*);
 int convert_character_binary_test(char,
   char*);
 
-int calculate_integer_binary_test(char*,int,
+int increase_binary_integer_test(char*, int,
   int, int);
 
 int convert_binary_integer_test(char*, int);

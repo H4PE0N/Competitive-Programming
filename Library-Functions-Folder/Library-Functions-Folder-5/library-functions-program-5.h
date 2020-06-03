@@ -24,7 +24,7 @@ char* convert_integer_binary(int);
 
 char* convert_character_binary(char);
 
-int calculate_integer_binary(char*,
+int increase_binary_integer(char*,
   int, int);
 
 int convert_binary_integer(char*);

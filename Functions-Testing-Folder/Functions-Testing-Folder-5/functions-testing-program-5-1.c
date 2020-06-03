@@ -80,10 +80,10 @@ int convert_character_binary_test(char character,
     length);
 }
 
-int calculate_integer_binary_test(char* binary,
+int increase_binary_integer_test(char* binary,
   int index, int i_integer, int o_integer)
 {
-  i_integer=calculate_integer_binary(binary, index,
+  i_integer=increase_binary_integer(binary, index,
     i_integer);
   return (i_integer == o_integer);
 }

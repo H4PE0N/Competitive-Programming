@@ -17,7 +17,7 @@ int convert_binary_integer(char* binary)
     integer = 0;
   for(int index = 0; index < length; index = index+1)
   {
-    integer = calculate_integer_binary(binary,index,
+    integer = increase_binary_integer(binary, index,
       integer);
   }
   return integer;

@@ -86,7 +86,7 @@ char* convert_character_binary(char character)
   return binary;
 }
 
-int calculate_integer_binary(char* binary, int index,
+int increase_binary_integer(char* binary, int index,
   int integer)
 {
   int length = calculate_string_length(binary);
