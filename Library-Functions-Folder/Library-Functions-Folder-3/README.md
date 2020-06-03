@@ -13,7 +13,7 @@ a positive output.
 
 Here is a list of the functions that the programs contains:
 
-generate_integer_hashmap      increment_hashmap_value
+generate_integer_hashmap      increase_hashmap_value
 
 integer_hashmap_length        allocate_hashmap_value
 

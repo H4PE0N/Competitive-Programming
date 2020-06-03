@@ -40,10 +40,10 @@ int integer_keyword_index_test(int** hashmap,
   return (index == i_index);
 }
 
-int increment_hashmap_value_test(int** i_hashmap,
+int increase_hashmap_value_test(int** i_hashmap,
   int keyword, int** o_hashmap)
 {
-  i_hashmap=increment_hashmap_value(i_hashmap,keyword);
+  i_hashmap =increase_hashmap_value(i_hashmap,keyword);
   int length = integer_hashmap_length(i_hashmap);
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length, 2);

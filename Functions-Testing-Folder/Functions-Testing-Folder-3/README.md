@@ -10,7 +10,7 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
-generate_integer_hashmap_test      increment_hashmap_value_test
+generate_integer_hashmap_test      increase_hashmap_value_test
 
 integer_hashmap_length_test        allocate_hashmap_value_test
 

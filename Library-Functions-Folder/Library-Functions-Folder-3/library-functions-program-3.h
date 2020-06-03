@@ -10,7 +10,7 @@ int hashmap_keyword_exists(int**, int);
 
 int integer_keyword_index(int**, int);
 
-int** increment_hashmap_value(int**, int);
+int** increase_hashmap_value(int**, int);
 
 int** generate_hashmap_keyword(int**,int);
 

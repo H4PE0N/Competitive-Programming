@@ -42,7 +42,7 @@ int integer_keyword_index(int** hashmap, int keyword)
   return -1;
 }
 
-int** increment_hashmap_value(int** hashmap,int keyword)
+int** increase_hashmap_value(int** hashmap,int keyword)
 {
   int index = integer_keyword_index(hashmap, keyword);
   *(*(hashmap + index) + 1) += 1; return hashmap;
@@ -62,7 +62,7 @@ int** allocate_hashmap_value(int** hashmap,int keyword)
   if(!hashmap_keyword_exists(hashmap, keyword))
     hashmap = generate_hashmap_keyword(hashmap,keyword);
   else
-    hashmap = increment_hashmap_value(hashmap,keyword);
+    hashmap = increase_hashmap_value(hashmap,keyword);
   return hashmap;
 }
 

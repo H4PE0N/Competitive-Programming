@@ -12,7 +12,7 @@ int hashmap_keyword_exists_test(int**, int,
 int integer_keyword_index_test(int**, int,
   int);
 
-int increment_hashmap_value_test(int**, int,
+int increase_hashmap_value_test(int**, int,
   int**);
 
 int generate_hashmap_value_test(int**, int,
