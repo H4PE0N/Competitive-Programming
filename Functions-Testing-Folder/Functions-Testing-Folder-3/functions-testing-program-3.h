@@ -24,7 +24,8 @@ int allocate_hashmap_value_test(int**, int,
 int allocate_array_hashmap_test(int*, int,
   int**);
 
-int hashmap_keyword_array_test(int**, int*);
+int hashmap_keyword_array_test(int**, int,
+  int*);
 
 int integer_value_keywords_test(int**, int,
   int, int*);

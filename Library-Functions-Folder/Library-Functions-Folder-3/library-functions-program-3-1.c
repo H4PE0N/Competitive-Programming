@@ -77,10 +77,9 @@ int** convert_array_hashmap(int* array, int length)
   return hashmap;
 }
 
-int* hashmap_keyword_array(int** hashmap)
+int* hashmap_keyword_array(int** hashmap, int length)
 {
-  int length = integer_hashmap_length(hashmap),
-    *array = generate_integer_array(length);
+  int* array = generate_integer_array(length);
   for(int index = 0; index < length; index = index + 1)
   {
     *(array + index) = *(*(hashmap + index) + 0);

@@ -78,9 +78,9 @@ int convert_array_hashmap_test(int* array,int i_length,
 }
 
 int hashmap_keyword_array_test(int** hashmap,
-  int* i_array)
+  int i_length, int* i_array)
 {
-  int* array = hashmap_keyword_array(hashmap);
+  int* array = hashmap_keyword_array(hashmap,i_length);
   int length = integer_array_length(array);
   return compare_integer_arrays(array,i_array,length);
 }

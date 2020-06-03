@@ -18,7 +18,7 @@ int** allocate_hashmap_value(int**, int);
 
 int** convert_array_hashmap(int*, int);
 
-int* hashmap_keyword_array(int**);
+int* hashmap_keyword_array(int**, int);
 
 int integer_hashmap_value(int**, int);
 
