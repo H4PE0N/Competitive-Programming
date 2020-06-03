@@ -17,7 +17,7 @@ allocate_string_character     switch_string_characters
 
 allocate_string_characters    move_string_characters
 
-generate_empty_string         remove_string_character
+generate_character_string     remove_string_character
 
 calculate_string_length       add_string_character
 

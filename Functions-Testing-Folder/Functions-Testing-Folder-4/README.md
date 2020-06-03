@@ -14,7 +14,7 @@ allocate_string_character_test    switch_string_characters_test
 
 allocate_string_characters_test   move_string_characters_test
 
-generate_empty_string_test        remove_string_character_test
+generate_character_string_test    remove_string_character_test
 
 calculate_string_length_test      add_string_character_test
 

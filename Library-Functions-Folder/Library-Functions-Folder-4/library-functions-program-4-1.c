@@ -25,7 +25,7 @@ char* allocate_string_characters(char* string,
   return string;
 }
 
-char* generate_empty_string(int length)
+char* generate_character_string(int length)
 {
   char* string = malloc(sizeof(string) * (length + 1));
   return allocate_string_characters(string,length + 1);

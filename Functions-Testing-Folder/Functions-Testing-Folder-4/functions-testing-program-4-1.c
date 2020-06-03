@@ -25,10 +25,10 @@ int allocate_string_characters_test(char* i_string,
     length);
 }
 
-int generate_empty_string_test(int length,
+int generate_character_string_test(int length,
   char* o_string)
 {
-  char* string = generate_empty_string(length);
+  char* string = generate_character_string(length);
   return compare_strings_together(string, o_string,
     length);
 }

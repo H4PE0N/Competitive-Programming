@@ -76,7 +76,7 @@ int calculate_nearest_length(int integer)
 char* convert_integer_binary(int integer)
 {
   int length = calculate_nearest_length(integer);
-  char* binary = generate_empty_string(length);
+  char* binary = generate_character_string(length);
   return allocate_binary_bits(binary,length,integer);
 }
 

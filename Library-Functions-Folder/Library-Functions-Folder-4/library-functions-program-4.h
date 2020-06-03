@@ -8,7 +8,7 @@ char* allocate_string_character(char*,
 char* allocate_string_characters(char*,
   int);
 
-char* generate_empty_string(int);
+char* generate_character_string(int);
 
 int calculate_string_length(char*);
 

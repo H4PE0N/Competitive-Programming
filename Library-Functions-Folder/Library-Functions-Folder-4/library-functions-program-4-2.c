@@ -35,7 +35,7 @@ int character_range_between(char character,int minimum,
 char* generate_random_string(int length, int minimum,
   int maximum)
 {
-  char* string = generate_empty_string(length);
+  char* string = generate_character_string(length);
   for(int index = 0; index < length; index = index + 1)
   {
     string = allocate_string_character(string, index,
@@ -65,7 +65,7 @@ char* shuffle_character_string(char* string,int length)
 char* duplicate_character_string(char* i_string,
   int length)
 {
-  char* string = generate_empty_string(length);
+  char* string = generate_character_string(length);
   for(int index = 0; index < length; index = index + 1)
   {
     string = allocate_string_character(string, index,
