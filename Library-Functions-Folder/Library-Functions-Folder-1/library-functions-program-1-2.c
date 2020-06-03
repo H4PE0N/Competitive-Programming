@@ -43,12 +43,12 @@ int* remove_array_integers(int* array, int length,
 }
 
 int array_integer_amount(int* array, int length,
-  int number)
+  int integer)
 {
   int amount = 0;
   for(int index = 0; index < length; index = index+1)
   {
-    if(*(array + index) == number) amount = amount+1;
+    if(*(array + index) == integer) amount += 1;
   }
   return amount;
 }

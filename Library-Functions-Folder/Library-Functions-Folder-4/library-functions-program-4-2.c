@@ -77,7 +77,7 @@ char* duplicate_character_string(char* i_string,
 char* switch_adjacent_characters(char* string,
   int index)
 {
-  return switch_string_characters(string,index,
+  return switch_string_characters(string, index,
     index + 1);
 }
 

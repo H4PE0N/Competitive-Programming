@@ -13,7 +13,7 @@ library-functions-program-8.h"
 
 int calculate_bit_integer(int power_integer)
 {
-  return ( pow(2, power_integer) );
+  return integer_power_operation(2, power_integer);
 }
 
 int binary_integer_enough(char* binary, int i_length,

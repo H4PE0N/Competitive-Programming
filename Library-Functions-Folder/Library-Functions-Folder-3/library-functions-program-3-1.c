@@ -19,7 +19,7 @@ int** generate_integer_hashmap(int length)
 int integer_hashmap_length(int** hashmap)
 {
   int index = 0; while(*(*(hashmap + index) + 1) != 0)
-  { index = index + 1; } return index;
+    { index = index + 1; } return index;
 }
 
 int hashmap_keyword_exists(int** hashmap, int keyword)
@@ -60,11 +60,9 @@ int** generate_hashmap_keyword(int** hashmap,
 int** allocate_hashmap_value(int** hashmap,int keyword)
 {
   if(!hashmap_keyword_exists(hashmap, keyword))
-  {
     hashmap = generate_hashmap_keyword(hashmap,keyword);
-  } else {
+  else
     hashmap = increment_hashmap_value(hashmap,keyword);
-  }
   return hashmap;
 }
 

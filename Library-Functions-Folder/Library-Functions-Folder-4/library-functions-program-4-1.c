@@ -19,7 +19,8 @@ char* allocate_string_characters(char* string,
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    string=allocate_string_character(string,index,'\0');
+    string = allocate_string_character(string ,index,
+      '\0');
   }
   return string;
 }
@@ -50,7 +51,7 @@ char* switch_string_characters(char* string, int first,
   int second)
 {
   char switch_character = string[first];string[first] =
-  string[second]; string[second] = switch_character;
+    string[second]; string[second] = switch_character;
   return string;
 }
 
@@ -86,13 +87,13 @@ char* add_string_character(char* string, int length,
     '\0');
 }
 
-int compare_strings_together(char* first,char* second,
+int compare_strings_together(char* first, char* second,
   int length)
 {
   for(int index = 0; index < length; index = index + 1)
   {
     if(*(first + index) != *(second + index))
-      { return false; }
+      return false;
   }
   return true;
 }
