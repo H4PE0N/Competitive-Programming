@@ -38,55 +38,42 @@ double integer_array_median(int* array, int length)
     return integer_even_median(array, length);
 }
 
-double integer_array_average(int* array,int length)
+double integer_array_average(int* array, int length)
 {
   double array_total = 0;
-  for(int index = 0; index < length; index += 1)
+  for(int index = 0; index < length; index = index+1)
   {
     array_total += (double) *(array + index);
   }
   return (array_total / length);
 }
 
-int update_integer_value(int** hashmap, int index,
-  int common_value)
+int* update_typical_variables(int* typical_variables,
+  int current_amount, int integer)
 {
-  if(*(*(hashmap + index) + 1) > common_value)
-    return *(*(hashmap + index) + 1);
-  else return common_value;
-}
-
-int update_integer_key(int** hashmap, int index,
-  int common_value, int common_key)
-{
-  if(*(*(hashmap + index) + 1) > common_value)
-    return *(*(hashmap + index) + 0);
-  else return common_key;
-}
-
-int integer_common_value(int** hashmap, int length)
-{
-  int common_key = -1, common_value = hashmap[0][1];
-  for(int index = 0; index < length; index++)
+  if(current_amount > *(typical_variables + 0))
   {
-    common_value = update_integer_value(hashmap,
-      index, common_value);
-    common_key = update_integer_key(hashmap,index,
-      common_value, common_key);
+    *(typical_variables + 0) = current_amount;
+    *(typical_variables + 1) = integer;
   }
-  return common_key;
+  return typical_variables;
 }
 
-int integer_array_typical(int* array, int i_length)
+int integer_array_typical(int* array, int length)
 {
-  int** hashmap = convert_array_hashmap(array,
-    i_length);
-  int length = integer_hashmap_length(hashmap);
-  return integer_common_value(hashmap, length);
+  int* typical_variables = generate_integer_array(3);
+  for(int index = 0; index < length; index = index+1)
+  {
+    int amount = array_integer_amount(array, length,
+      *(array + index));
+    typical_variables = update_typical_variables(
+      typical_variables, amount, *(array + index));
+  }
+  return *(typical_variables + 1);
 }
 
-double array_integer_frequency(int* array,
-  int length, int integer)
+double array_integer_frequency(int* array,int length,
+  int integer)
 {
   int amount = array_integer_amount(array, length,
     integer);

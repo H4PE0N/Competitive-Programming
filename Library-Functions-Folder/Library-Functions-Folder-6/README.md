@@ -13,15 +13,13 @@ a positive output.
 
 Here is a list of the functions that the programs contains:
 
-integer_odd_median          update_integer_value
+integer_odd_median          array_integer_frequency
 
-integer_even_median         update_integer_key
+integer_even_median         array_integer_percent
 
-integer_array_median        integer_common_value
+integer_array_median        update_typical_variables
 
 integer_array_average       integer_array_typical
-
-array_integer_frequency     array_integer_percent
 
 Made by Roy Hampus Fridholm
 </pre>
