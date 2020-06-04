@@ -46,11 +46,11 @@ int shuffle_integer_matrix_test(int** i_matrix,
 }
 
 int duplicate_integer_matrix_test(int** i_matrix,
-  int height, int width)
+  int height, int width, int** o_matrix)
 {
   int** matrix = duplicate_integer_matrix(i_matrix,
     height, width);
-  return compare_matrix_arrays(i_matrix, matrix,
+  return compare_matrix_arrays(matrix, o_matrix,
     height, width);
 }
 
