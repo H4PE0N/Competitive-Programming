@@ -42,7 +42,8 @@ int character_range_between_test(char, int, int,
 int shuffle_character_string_test(char*, int,
   char*);
 
-int duplicate_character_string_test(char*, int);
+int duplicate_character_string_test(char*, int,
+  char*);
 
 int switch_adjacent_characters_test();
 

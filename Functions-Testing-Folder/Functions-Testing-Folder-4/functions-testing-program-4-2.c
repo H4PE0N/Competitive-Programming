@@ -42,11 +42,11 @@ int shuffle_character_string_test(char* i_string,
 }
 
 int duplicate_character_string_test(char* i_string,
-  int length)
+  int length, char* o_string)
 {
   char* string = duplicate_character_string(i_string,
     length);
-  return compare_strings_together(i_string, string,
+  return compare_strings_together(string, o_string,
     length);
 }
 
