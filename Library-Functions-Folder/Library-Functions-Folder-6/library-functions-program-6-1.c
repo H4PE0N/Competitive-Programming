@@ -20,14 +20,14 @@ library-functions-program-6.h"
 double integer_odd_median(int* array, int length)
 {
   array = sort_integer_array(array, length);
-  return *(array + ( (length - 1) / 2) );
+  return array_index_integer(array, (length-1) / 2);
 }
 
 double integer_even_median(int* array, int length)
 {
   array = sort_integer_array(array, length);
-  return ( *(array + ( (length - 2) / 2) ) +
-    *(array + ( length / 2) ) ) / 2;
+  return (array_index_integer(array, (length-1) / 2)+
+    array_index_integer(array, length / 2 ) ) / 2;
 }
 
 double integer_array_median(int* array, int length)
@@ -43,7 +43,8 @@ double integer_array_average(int* array, int length)
   double array_total = 0;
   for(int index = 0; index < length; index = index+1)
   {
-    array_total += (double) *(array + index);
+    array_total += (double)array_index_integer(array,
+      index);
   }
   return (array_total / length);
 }
@@ -65,7 +66,7 @@ int integer_array_typical(int* array, int length)
   for(int index = 0; index < length; index = index+1)
   {
     int amount = array_integer_amount(array, length,
-      *(array + index));
+      array_index_integer(array, index));
     typical_variables = update_typical_variables(
       typical_variables, amount, *(array + index));
   }
