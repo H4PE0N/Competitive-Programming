@@ -14,7 +14,8 @@ int* remove_array_integer(int* array, int length,
   int start = length;
   for(int index = (length - 1); index >= 0; index--)
   {
-    if(*(array + index) != integer) continue;
+    if(array_index_integer(array, index) != integer)
+      continue;
     start = index; break;
   }
   return delete_array_integer(array, length, start);
@@ -48,7 +49,8 @@ int array_integer_amount(int* array, int length,
   int amount = 0;
   for(int index = 0; index < length; index = index+1)
   {
-    if(*(array + index) == integer) amount += 1;
+    if(array_index_integer(array, index) == integer)
+      amount = (amount + 1);
   }
   return amount;
 }

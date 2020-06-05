@@ -40,7 +40,8 @@ int array_contains_integer(int* array, int length,
 {
   for(int index = 0; index < length; index += 1)
   {
-    if(*(array + index) == integer) return true;
+    if(array_index_integer(array, index) == integer)
+      return true;
   }
   return false;
 }
