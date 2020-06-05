@@ -45,4 +45,6 @@ int sort_integer_matrix_test(int**, int, int**);
 int compare_matrix_content_test(int**, int**,
   int, int, int);
 
+int matrix_index_array_test(int**, int, int*);
+
 #endif

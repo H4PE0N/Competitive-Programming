@@ -26,7 +26,7 @@ compare_matrix_arrays_test      shuffle_integer_matrix_test
 
 duplicate_integer_matrix_test   sort_integer_matrix_test
 
-compare_matrix_content_test
+compare_matrix_content_test     matrix_index_array_test
 
 Made by Roy Hampus Fridholm
 </pre>

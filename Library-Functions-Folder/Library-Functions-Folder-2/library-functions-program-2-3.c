@@ -30,3 +30,8 @@ int compare_matrix_content(int** first, int** second,
   return compare_matrix_arrays(first,
     sort_integer_matrix(first, height),height,width);
 }
+
+int* matrix_index_array(int** matrix_array,int index)
+{
+  return *(matrix_array + index);
+}

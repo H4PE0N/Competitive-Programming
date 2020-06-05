@@ -31,5 +31,7 @@ shuffle_integer_matrix      duplicate_integer_matrix
 
 sort_integer_matrix         compare_matrix_content
 
+matrix_index_array
+
 Made by Roy Hampus Fridholm
 </pre>

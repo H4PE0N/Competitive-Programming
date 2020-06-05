@@ -64,9 +64,17 @@ int sort_integer_matrix_test(int** i_matrix,int height,
 }
 
 int compare_matrix_content_test(int** first,
-  int** second, int height, int width,int boolean)
+  int** second, int height, int width, int boolean)
 {
   int output = compare_matrix_content(first, second,
     height, width);
   return (output == boolean);
+}
+
+int matrix_index_array_test(int** matrix, int index,
+  int* i_array)
+{
+  int* array = matrix_index_array(matrix, index);
+  int length = integer_array_length(array);
+  return compare_integer_arrays(array,i_array,length);
 }
