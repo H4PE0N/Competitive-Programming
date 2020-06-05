@@ -16,9 +16,10 @@ int** sort_integer_matrix(int** matrix, int height)
 {
   for(int index = 0; index < height; index = index+1)
   {
-    int width = integer_array_length(matrix[index]);
-    *(matrix + index) = sort_integer_array(
-      *(matrix + index), width);
+    int* array = matrix_index_array(matrix, index);
+    int width = integer_array_length(array);
+    *(matrix + index) = sort_integer_array(array,
+      width);
   }
   return matrix;
 }

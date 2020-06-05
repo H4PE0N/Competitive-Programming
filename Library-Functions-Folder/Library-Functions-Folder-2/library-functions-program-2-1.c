@@ -24,15 +24,17 @@ int** generate_matrix_array(int height, int width)
 int** allocate_matrix_integer(int** matrix,int height,
   int width, int integer)
 {
+  int* array = matrix_index_array(matrix, height);
   *(matrix + height) = allocate_array_integer(
-    *(matrix + height), width, integer);return matrix;
+    array, width, integer); return matrix;
 }
 
 int** delete_matrix_integer(int** matrix, int height,
   int width, int index)
 {
+  int* array = matrix_index_array(matrix, height);
   *(matrix + height) = delete_array_integer(
-    *(matrix + height), width, index); return matrix;
+    array, width, index); return matrix;
 }
 
 int integer_matrix_height(int** matrix, int width)
@@ -47,8 +49,9 @@ int matrix_contains_integer(int** matrix, int height,
 {
   for(int index = 0; index < height; index = index+1)
   {
-    if(array_contains_integer(*(matrix + index),
-      width, integer)) return true;
+    int* array = matrix_index_array(matrix, index);
+    if(array_contains_integer(array, width, integer))
+      return true;
   }
   return false;
 }
@@ -70,19 +73,22 @@ int** remove_matrix_integer(int** matrix, int height,
 int** add_matrix_integer(int** matrix, int height,
   int integer)
 {
-  int width = integer_array_length(*(matrix+height));
-  *(matrix + height) = add_array_integer(*(matrix +
-    height), width, integer);
+  int* array = matrix_index_array(matrix, height);
+  int width = integer_array_length(array);
+  *(matrix + height) = add_array_integer(array, width,
+    integer);
   return matrix;
 }
 
 int compare_matrix_arrays(int** first, int** second,
   int height, int width)
 {
-  for(int index = 0; index <= height; index += 1)
+  for(int index = 0; index <= height; index = index+1)
   {
-    if(!compare_integer_arrays(*(first + index),
-      *(second + index), width)) return false;
+    int* f_array = matrix_index_array(first, index);
+    int* s_array = matrix_index_array(second, index);
+    if(!compare_integer_arrays(f_array, s_array,
+      width)) return false;
   }
   return true;
 }
@@ -90,11 +96,12 @@ int compare_matrix_arrays(int** first, int** second,
 int** remove_matrix_integers(int** matrix,int integer,
   int width)
 {
-  int height=integer_matrix_height(matrix, width);
-  for(int index = 0; index <= height; index += 1)
+  int height = integer_matrix_height(matrix, width);
+  for(int index = 0; index <= height; index = index+1)
   {
+    int* array = matrix_index_array(matrix, index);
     *(matrix + index) = remove_array_integers(
-      *(matrix + index), width, integer);
+      array, width, integer);
   }
   return matrix;
 }

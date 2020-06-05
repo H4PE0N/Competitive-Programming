@@ -61,7 +61,8 @@ void integer_matrix_stdout(int** matrix, int height,
 {
   for(int index = 0; index < height; index = index+1)
   {
-    integer_array_stdout(*(matrix + index), width);
+    int* array = matrix_index_array(matrix, index);
+    integer_array_stdout(array, width);
   }
 }
 
@@ -69,9 +70,10 @@ int** shuffle_integer_matrix(int** matrix,int height)
 {
   for(int index = 0; index < height; index = index+1)
   {
-    int width = integer_array_length(matrix[index]);
-    *(matrix + index) = shuffle_integer_array(
-      *(matrix + index), width);
+    int* array = matrix_index_array(matrix, index);
+    int width = integer_array_length(array);
+    *(matrix + index) = shuffle_integer_array(array,
+      width);
   }
   return matrix;
 }
@@ -82,8 +84,9 @@ int** duplicate_integer_matrix(int** i_matrix,
   int** matrix = generate_matrix_array(height,width);
   for(int index = 0; index < height; index = index+1)
   {
-    *(matrix + index) = duplicate_integer_array(
-      *(i_matrix + index), width);
+    int* array = matrix_index_array(matrix, index);
+    *(matrix + index) =duplicate_integer_array(array, 
+      width);
   }
   return matrix;
 }
