@@ -58,4 +58,6 @@ int shuffle_integer_array_test(int*, int,
 
 int duplicate_integer_array_test(int*,int);
 
+int array_index_integer_test(int*,int,int);
+
 #endif

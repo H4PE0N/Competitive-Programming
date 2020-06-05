@@ -41,7 +41,6 @@ functions-testing-program-1.h"
 
 int main(int argc, char** argv)
 {
-  srand(time(NULL));
 
 
 

@@ -33,3 +33,8 @@ int* duplicate_integer_array(int* i_array,int length)
   }
   return array;
 }
+
+int array_index_integer(int* integer_array,int index)
+{
+  return *(integer_array + index);
+}

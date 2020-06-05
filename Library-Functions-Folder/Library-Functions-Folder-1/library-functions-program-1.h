@@ -58,4 +58,6 @@ int compare_integers_content(int*,int*,
 
 int* duplicate_integer_array(int*,int);
 
+int array_index_integer(int*, int);
+
 #endif
