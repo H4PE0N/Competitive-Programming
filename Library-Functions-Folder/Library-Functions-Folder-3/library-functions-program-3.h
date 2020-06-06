@@ -39,4 +39,9 @@ int** generate_random_hashmap(int, int,
 
 int hashmap_index_value(int**, int);
 
+int hashmap_index_keyword(int**, int);
+
+int* allocate_value_keyword(int*, int,
+  int**);
+
 #endif

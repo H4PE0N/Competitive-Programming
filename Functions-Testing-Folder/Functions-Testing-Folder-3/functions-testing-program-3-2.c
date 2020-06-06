@@ -53,3 +53,20 @@ int hashmap_index_value_test(int** hashmap, int index,
   int value = hashmap_index_value(hashmap, index);
   return (value == i_value);
 }
+
+int hashmap_index_keyword_test(int**hashmap,int index,
+  int i_keyword)
+{
+  int keyword = hashmap_index_keyword(hashmap, index);
+  return (keyword == i_keyword);
+}
+
+int allocate_value_keyword_test(int* i_keywords,
+  int index, int** hashmap, int* o_keywords)
+{
+  i_keywords=allocate_value_keyword(i_keywords, index,
+    hashmap);
+  int length = integer_array_length(i_keywords);
+  return compare_integer_arrays(i_keywords,o_keywords,
+    length);
+}

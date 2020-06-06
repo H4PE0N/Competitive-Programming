@@ -13,12 +13,14 @@ library-functions-program-3.h"
 
 int** generate_integer_hashmap(int length)
 {
-  return generate_matrix_array( (length + 1), 2);
+  int** matrix = generate_matrix_array((length + 1), 2);
+  return matrix;
 }
 
 int integer_hashmap_length(int** hashmap)
 {
-  int index = 0; while(*(*(hashmap + index) + 1) != 0)
+  int index = 0;
+  while(hashmap_index_value(hashmap, index) != 0)
   { index = index + 1; } return index;
 }
 
@@ -27,7 +29,8 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
   int length = integer_hashmap_length(hashmap);
   for(int index = 0; index < length; index = index + 1)
   {
-    if(*(*(hashmap + index)) == keyword) return true;
+    if(hashmap_index_keyword(hashmap,index) == keyword)
+      return true;
   }
   return false;
 }
@@ -37,7 +40,8 @@ int hashmap_keyword_index(int** hashmap, int keyword)
   int length = integer_hashmap_length(hashmap);
   for(int index = 0; index < length; index = index + 1)
   {
-    if(*(*(hashmap + index)) == keyword) return index;
+    if(hashmap_index_keyword(hashmap,index) == keyword)
+      return index;
   }
   return -1;
 }
@@ -84,7 +88,8 @@ int* hashmap_keyword_array(int** hashmap, int length)
   int* array = generate_integer_array(length);
   for(int index = 0; index < length; index = index + 1)
   {
-    *(array + index) = *(*(hashmap + index) + 0);
+    *(array + index) = hashmap_index_keyword(hashmap,
+      index);
   }
   return array;
 }
@@ -92,5 +97,6 @@ int* hashmap_keyword_array(int** hashmap, int length)
 int hashmap_keyword_value(int** hashmap, int keyword)
 {
   int index = hashmap_keyword_index(hashmap, keyword);
-  return (index >= 0 ? *(*(hashmap + index) + 1) : -1);
+  if(index >= 0) return hashmap_index_value(hashmap,
+    index); return -1;
 }

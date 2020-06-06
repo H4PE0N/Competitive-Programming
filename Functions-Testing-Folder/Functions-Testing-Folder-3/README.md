@@ -10,21 +10,23 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
-generate_integer_hashmap_test      increase_hashmap_value_test
+generate_integer_hashmap_test     increase_hashmap_value_test
 
-integer_hashmap_length_test        allocate_hashmap_value_test
+integer_hashmap_length_test       allocate_hashmap_value_test
 
-hashmap_keyword_exists_test        convert_array_hashmap_test
+hashmap_keyword_exists_test       convert_array_hashmap_test
 
-hashmap_keyword_index_test         hashmap_keyword_array_test
+hashmap_keyword_index_test        hashmap_keyword_array_test
 
-integer_value_keywords_test        integer_hashmap_keywords_test
+integer_value_keywords_test       integer_hashmap_keywords_test
 
-hashmap_keyword_value_test         reduce_hashmap_value_test
+hashmap_keyword_value_test        reduce_hashmap_value_test
 
 delete_hashmap_keyword_test       generate_hashmap_keyword_test
 
-hashmap_index_value_test
+hashmap_index_value_test          hashmap_index_keyword_test
+
+allocate_value_keyword_test
 
 Made by Roy Hampus Fridholm
 </pre>

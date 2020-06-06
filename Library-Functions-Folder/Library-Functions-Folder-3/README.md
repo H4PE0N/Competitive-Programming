@@ -29,7 +29,9 @@ delete_hashmap_keyword        generate_hashmap_keyword
 
 integer_hashmap_stdout        generate_random_hashmap
 
-hashmap_index_value
+hashmap_index_value           hashmap_index_keyword
+
+allocate_value_keyword
 
 Made by Roy Hampus Fridholm
 </pre>

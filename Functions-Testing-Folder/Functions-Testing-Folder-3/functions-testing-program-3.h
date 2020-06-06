@@ -46,4 +46,10 @@ int reduce_hashmap_value_test(int**, int,
 int hashmap_index_value_test(int**, int,
   int);
 
+int hashmap_index_keyword_test(int**, int,
+  int);
+
+int allocate_value_keyword_test(int*, int,
+  int**, int*);
+
 #endif
