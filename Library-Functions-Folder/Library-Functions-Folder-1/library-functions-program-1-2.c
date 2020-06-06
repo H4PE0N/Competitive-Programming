@@ -82,9 +82,10 @@ int* generate_random_integers(int length,int minimum,
 int* switch_array_integers(int* array, int first,
   int second)
 {
-  int switch_integer = array[first]; array[first] =
-    array[second]; array[second] = switch_integer;
-  return array;
+  int switch_integer = array_index_integer(array,
+    first);
+  *(array + first)=array_index_integer(array,second);
+  *(array + second) = switch_integer; return array;
 }
 
 int* shuffle_integer_array(int* array, int length)
