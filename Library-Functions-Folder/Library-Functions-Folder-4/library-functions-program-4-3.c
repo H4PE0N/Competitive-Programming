@@ -28,5 +28,5 @@ int compare_string_content(char* first, char* second,
 
 char string_index_character(char* string, int index)
 {
-  return *(string + index);
+  char character = *(string + index);return character;
 }

@@ -33,13 +33,15 @@ char* generate_random_binary(int minimum,int maximum)
 {
   int integer = generate_random_integer(minimum,
     maximum);
-  return convert_integer_binary(integer);
+  char* binary = convert_integer_binary(integer);
+  return binary;
 }
 
 int binary_range_between(char* binary, int minimum,
   int maximum)
 {
   int integer = convert_binary_integer(binary);
-  return integer_range_between(integer, minimum,
+  int output = integer_range_between(integer,minimum,
     maximum);
+  return output;
 }

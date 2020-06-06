@@ -23,13 +23,17 @@ char* remove_string_characters(char* string,int length,
 
 char generate_random_character(int minimum,int maximum)
 {
-  return generate_random_integer(minimum, maximum);
+  char character = generate_random_integer(minimum,
+    maximum);
+  return character;
 }
 
 int character_range_between(char character,int minimum,
   int maximum)
 {
-  return (character <= maximum && character >=minimum);
+  int output = (character <= maximum && character >=
+    minimum);
+  return output;
 }
 
 char* generate_random_string(int length, int minimum,
@@ -68,17 +72,17 @@ char* duplicate_character_string(char* i_string,
   char* string = generate_character_string(length);
   for(int index = 0; index < length; index = index + 1)
   {
+    char character = string_index_character(i_string,
+      index);
     string = allocate_string_character(string, index,
-      *(i_string + index));
+      character);
   }
   return string;
 }
 
-char* switch_adjacent_characters(char* string,
-  int index)
+char* switch_adjacent_characters(char* string,int index)
 {
-  return switch_string_characters(string, index,
-    index + 1);
+  return switch_string_characters(string,index,index+1);
 }
 
 char* sort_string_iteration(char* string,int iteration)

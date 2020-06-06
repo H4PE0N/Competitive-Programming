@@ -50,9 +50,11 @@ int string_contains_character(char* string, int length,
 char* switch_string_characters(char* string, int first,
   int second)
 {
-  char switch_character = string[first];string[first] =
-    string[second]; string[second] = switch_character;
-  return string;
+  char switch_character =string_index_character(string,
+    first);
+  *(string + first) = string_index_character(string,
+    second);
+  *(string + second) = switch_character; return string;
 }
 
 char* move_string_characters(char* string, int length,
@@ -92,8 +94,11 @@ int compare_strings_together(char* first, char* second,
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    if(*(first + index) != *(second + index))
-      return false;
+    char f_character = string_index_character(first,
+      index);
+    char s_character = string_index_character(second,
+      index);
+    if(f_character != s_character) return false;
   }
   return true;
 }
