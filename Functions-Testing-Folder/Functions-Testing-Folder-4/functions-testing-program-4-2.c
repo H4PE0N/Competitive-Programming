@@ -84,3 +84,11 @@ int compare_string_content_test(char* first,
     length);
   return (output == boolean);
 }
+
+int string_index_character_test(char* string,
+  int index, char i_character)
+{
+  char character = string_index_character(string,
+    index);
+  return (i_character == character);
+}

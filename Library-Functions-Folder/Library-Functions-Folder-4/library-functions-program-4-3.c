@@ -25,3 +25,8 @@ int compare_string_content(char* first, char* second,
   return compare_strings_together(first,
     sort_character_string(second, length), length);
 }
+
+char string_index_character(char* string, int index)
+{
+  return *(string + index);
+}

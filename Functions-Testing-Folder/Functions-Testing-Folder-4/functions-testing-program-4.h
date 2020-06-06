@@ -54,4 +54,6 @@ int sort_string_iteration_test(char*,int,char*);
 int compare_string_content_test(char*,char*,int,
   int);
 
+int string_index_character_test(char*,int,char);
+
 #endif

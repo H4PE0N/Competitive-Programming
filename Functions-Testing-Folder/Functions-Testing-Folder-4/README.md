@@ -28,7 +28,7 @@ duplicate_character_string_test   switch_adjacent_characters_test
 
 sort_character_string_test        sort_string_iteration_test
 
-compare_string_content_test
+compare_string_content_test       string_index_character_test
 
 Made by Roy Hampus Fridholm
 </pre>

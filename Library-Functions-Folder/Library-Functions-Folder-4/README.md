@@ -33,7 +33,7 @@ duplicate_character_string    switch_adjacent_characters
 
 sort_string_iteration         sort_character_string
 
-compare_string_content
+compare_string_content        string_index_character
 
 Made by Roy Hampus Fridholm
 </pre>
