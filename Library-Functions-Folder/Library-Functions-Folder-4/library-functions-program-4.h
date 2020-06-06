@@ -63,4 +63,12 @@ int compare_string_content(char*,
 
 char string_index_character(char*,int);
 
+char* generate_lower_alphabet(int);
+
+char* generate_higher_alphabet(int);
+
+char lower_alphabet_character(int);
+
+char higher_alphabet_character(int);
+
 #endif

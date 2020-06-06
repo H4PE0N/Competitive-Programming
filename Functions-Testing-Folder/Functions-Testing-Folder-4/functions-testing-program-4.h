@@ -56,4 +56,12 @@ int compare_string_content_test(char*,char*,int,
 
 int string_index_character_test(char*,int,char);
 
+int generate_lower_alphabet_test(int, char*);
+
+int generate_higher_alphabet_test(int, char*);
+
+int lower_alphabet_character_test(int, char);
+
+int higher_alphabet_character_test(int, char);
+
 #endif

@@ -30,3 +30,39 @@ char string_index_character(char* string, int index)
 {
   char character = *(string + index);return character;
 }
+
+char* generate_lower_alphabet(int characters)
+{
+  char* alphabet = generate_character_string(
+    characters);
+  for(int index = 1; index <= characters; index += 1)
+  {
+    alphabet = allocate_string_character(alphabet,
+      index - 1, lower_alphabet_character(index));
+  }
+  return alphabet;
+}
+
+char* generate_higher_alphabet(int characters)
+{
+  char* alphabet = generate_character_string(
+    characters);
+  for(int index = 1; index <= characters; index += 1)
+  {
+    alphabet = allocate_string_character(alphabet,
+      index - 1, higher_alphabet_character(index));
+  }
+  return alphabet;
+}
+
+char lower_alphabet_character(int index)
+{
+  if(index >= 1 && index <= 26) return (96 + index);
+  return '-';
+}
+
+char higher_alphabet_character(int index)
+{
+  if(index >= 1 && index <= 26) return (64 + index);
+  return '-';
+}

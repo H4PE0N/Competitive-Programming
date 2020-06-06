@@ -35,5 +35,9 @@ sort_string_iteration         sort_character_string
 
 compare_string_content        string_index_character
 
+generate_lower_alphabet       generate_higher_alphabet
+
+lower_alphabet_character      higher_alphabet_character
+
 Made by Roy Hampus Fridholm
 </pre>
