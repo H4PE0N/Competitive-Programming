@@ -23,7 +23,7 @@ integer_matrix_height       compare_matrix_arrays
 
 remove_matrix_integers      move_matrix_arrays
 
-switch_matrix_arrays        switch_matrix_integers
+switch_matrix_arrays        switch_adjacent_arrays
 
 generate_random_matrix      integer_matrix_stdout
 

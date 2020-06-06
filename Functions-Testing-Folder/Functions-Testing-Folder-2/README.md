@@ -20,7 +20,7 @@ integer_matrix_height_test      compare_matrix_arrays_test
 
 remove_matrix_integers_test     move_matrix_arrays_test
 
-switch_matrix_arrays_test       switch_matrix_integers_test
+switch_matrix_arrays_test       switch_adjacent_arrays_test
 
 compare_matrix_arrays_test      shuffle_integer_matrix_test
 

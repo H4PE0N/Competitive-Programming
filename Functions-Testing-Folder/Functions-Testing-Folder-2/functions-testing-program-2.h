@@ -24,8 +24,7 @@ int add_matrix_integer_test(int**,int,int,int,
 int remove_matrix_integers_test(int**,int,int,
   int**);
 
-int switch_matrix_integers_test(int**,int,int,
-  int**);
+int switch_adjacent_arrays_test(int**,int,int**);
 
 int switch_matrix_arrays_test(int**, int, int,
   int**);

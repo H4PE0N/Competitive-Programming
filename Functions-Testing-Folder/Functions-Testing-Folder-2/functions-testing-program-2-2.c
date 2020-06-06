@@ -7,11 +7,13 @@ library-functions-program-1.h"
 Library-Functions-Folder-2/\
 library-functions-program-2.h"
 
-int switch_matrix_arrays_test(int** i_matrix,int width,
-  int i_height, int** o_matrix)
+int switch_matrix_arrays_test(int** i_matrix,int first,
+  int second, int** o_matrix)
 {
-  i_matrix = switch_matrix_arrays(i_matrix, width,
-    i_height);
+  i_matrix = switch_matrix_arrays(i_matrix, first,
+    second);
+  int* array = matrix_index_array(i_matrix, 0);
+  int width = integer_array_length(array);
   int height = integer_matrix_height(i_matrix,width);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, width);
@@ -22,8 +24,9 @@ int move_matrix_arrays_test(int** i_matrix, int height,
 {
   i_matrix = move_matrix_arrays(i_matrix, height,
     start);
+  int* array = matrix_index_array(i_matrix, 0);
   return compare_matrix_arrays(i_matrix, o_matrix,
-    height, integer_array_length(*(i_matrix + 0)));
+    height, integer_array_length(array));
 }
 
 int compare_matrix_arrays_test(int** first,
