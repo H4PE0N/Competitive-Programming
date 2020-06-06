@@ -11,15 +11,15 @@ int integer_range_between(int integer, int minimum,
   return (integer <= maximum && integer >= minimum);
 }
 
-int generate_random_integer(int minimum,int maximum)
+int generate_random_integer(int minimum, int maximum)
 {
-  return minimum + (rand() % (maximum - minimum+1));
+  return minimum + (rand() % (maximum - minimum + 1));
 }
 
 int integer_power_operation(int integer, int power)
 {
   int product = 1;
-  for(int index = 0; index < power; index = index+1)
+  for(int index = 0; index < power; index = index + 1)
   {
     product = (product * integer);
   }
@@ -34,4 +34,9 @@ double convert_decimal_percent(double decimal)
 double convert_percent_decimal(double percent)
 {
   double decimal = (percent / 100); return decimal;
+}
+
+int integer_divisible_by_two(int integer)
+{
+  int output = (integer % 2 == 0); return output;
 }

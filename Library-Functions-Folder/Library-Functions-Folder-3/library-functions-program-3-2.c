@@ -52,7 +52,7 @@ int** reduce_hashmap_value(int** hashmap, int keyword)
 
 void integer_hashmap_stdout(int** hashmap, int length)
 {
-  for(int index = 0; index < length; index = index+1)
+  for(int index = 0; index < length; index = index + 1)
   {
     printf("%d -> %d\n", *(*(hashmap + index) + 0),
       *(*(hashmap + index) + 1));

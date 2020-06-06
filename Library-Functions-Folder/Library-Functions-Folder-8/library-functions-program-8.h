@@ -12,4 +12,6 @@ double convert_decimal_percent(double);
 
 double convert_percent_decimal(double);
 
+int integer_divisible_by_two(int);
+
 #endif

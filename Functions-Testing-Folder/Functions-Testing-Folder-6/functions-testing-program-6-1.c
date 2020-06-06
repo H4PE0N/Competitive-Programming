@@ -33,7 +33,7 @@ int integer_even_median_test(int* array, int length,
   return (median == i_median);
 }
 
-int integer_array_median_test(int* array,int length,
+int integer_array_median_test(int* array, int length,
   double i_median)
 {
   int median = integer_array_median(array, length);
@@ -74,7 +74,14 @@ int array_integer_frequency_test(int* array,int length,
 int array_integer_percent_test(int* array, int length,
   int integer, double i_percent)
 {
-  double percent = array_integer_percent(array,length,
+  double percent = array_integer_percent(array, length,
     integer);
   return (percent == i_percent);
+}
+
+int greater_integer_amount_test(int current,
+  int typical, int boolean)
+{
+  int output = greater_integer_amount(current,typical);
+  return (output == boolean);
 }

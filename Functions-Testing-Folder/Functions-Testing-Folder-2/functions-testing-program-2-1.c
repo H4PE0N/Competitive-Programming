@@ -36,7 +36,7 @@ int delete_matrix_integer_test(int** i_matrix, int x,
 int integer_matrix_height_test(int** matrix,
   int width, int i_height)
 {
-  int height = integer_matrix_height(matrix,width);
+  int height = integer_matrix_height(matrix, width);
   return (height == i_height);
 }
 
@@ -52,16 +52,16 @@ int remove_matrix_integer_test(int** i_matrix,
 {
   i_matrix = remove_matrix_integer(i_matrix, height,
     integer);
-  int width = integer_array_length(*(i_matrix));
+  int* array = matrix_index_array(i_matrix, 0);
+  int width = integer_array_length(array);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, width);
 }
 
 int add_matrix_integer_test(int** i_matrix,
-  int i_height,int width,int integer,int** o_matrix)
+  int i_height, int width, int integer,int** o_matrix)
 {
-  int height = integer_matrix_height(i_matrix,
-    width);
+  int height = integer_matrix_height(i_matrix, width);
   i_matrix = add_matrix_integer(i_matrix, height,
     integer);
   return compare_matrix_arrays(i_matrix, o_matrix,
@@ -71,9 +71,9 @@ int add_matrix_integer_test(int** i_matrix,
 int remove_matrix_integers_test(int** i_matrix,
   int integer, int width, int** o_matrix)
 {
-  i_matrix = remove_matrix_integers(i_matrix,integer,
+  i_matrix = remove_matrix_integers(i_matrix, integer,
     width);
-  int height = integer_matrix_height(i_matrix,width);
+  int height = integer_matrix_height(i_matrix, width);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, width);
 }
@@ -83,7 +83,7 @@ int switch_adjacent_arrays_test(int** i_matrix,
 {
   int* array = matrix_index_array(i_matrix, 0);
   int width = integer_array_length(array);
-  i_matrix = switch_adjacent_arrays(i_matrix,height);
+  i_matrix = switch_adjacent_arrays(i_matrix, height);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, width);
 }

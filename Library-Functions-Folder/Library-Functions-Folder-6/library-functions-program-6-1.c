@@ -20,60 +20,67 @@ library-functions-program-6.h"
 double integer_odd_median(int* array, int length)
 {
   array = sort_integer_array(array, length);
-  return array_index_integer(array, (length-1) / 2);
+  return array_index_integer(array, (length - 1) / 2);
 }
 
 double integer_even_median(int* array, int length)
 {
   array = sort_integer_array(array, length);
-  return (array_index_integer(array, (length-1) / 2)+
+  return (array_index_integer(array, (length -1) / 2) +
     array_index_integer(array, length / 2 ) ) / 2;
 }
 
 double integer_array_median(int* array, int length)
 {
-  if(length % 2 != 0)
+  if(integer_divisible_by_two(length))
+  {
     return integer_odd_median(array, length);
-  else
-    return integer_even_median(array, length);
+  }
+  return integer_even_median(array, length);
 }
 
 double integer_array_average(int* array, int length)
 {
   double array_total = 0;
-  for(int index = 0; index < length; index = index+1)
+  for(int index = 0; index < length; index = index + 1)
   {
-    array_total += (double)array_index_integer(array,
+    array_total += (double) array_index_integer(array,
       index);
   }
   return (array_total / length);
 }
 
-int* update_typical_variables(int* typical_variables,
-  int current_amount, int integer)
+int greater_integer_amount(int current, int typical)
 {
-  if(current_amount > *(typical_variables + 0))
+  int output = (current > typical); return output;
+}
+
+int* update_typical_variables(int*variables,int amount,
+  int integer)
+{
+  int typical_amount=array_index_integer(variables, 0);
+  if(greater_integer_amount(amount, typical_amount))
   {
-    *(typical_variables + 0) = current_amount;
-    *(typical_variables + 1) = integer;
+    *(variables + 0) = amount; *(variables + 1) =
+      integer;
   }
-  return typical_variables;
+  return variables;
 }
 
 int integer_array_typical(int* array, int length)
 {
-  int* typical_variables = generate_integer_array(3);
-  for(int index = 0; index < length; index = index+1)
+  int* variables = generate_integer_array(2);
+  for(int index = 0; index < length; index = index + 1)
   {
     int amount = array_integer_amount(array, length,
+      array_index_integer(array, index)); variables =
+    update_typical_variables(variables, amount,
       array_index_integer(array, index));
-    typical_variables = update_typical_variables(
-      typical_variables, amount, *(array + index));
   }
-  return *(typical_variables + 1);
+  return array_index_integer(variables, 1);
 }
 
-double array_integer_frequency(int* array,int length,
+double array_integer_frequency(int* array, int length,
   int integer)
 {
   int amount = array_integer_amount(array, length,

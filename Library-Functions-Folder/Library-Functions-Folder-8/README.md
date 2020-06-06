@@ -16,7 +16,7 @@ integer_power_operation     convert_percent_decimal
 
 integer_range_between       generate_random_integer
 
-convert_decimal_percent
+convert_decimal_percent     integer_divisible_by_two
 
 Made by Roy Hampus Fridholm
 </pre>

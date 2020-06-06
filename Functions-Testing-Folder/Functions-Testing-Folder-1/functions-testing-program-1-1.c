@@ -67,7 +67,7 @@ int switch_adjacent_integers_test(int* i_array,
 int sort_integer_iteration_test(int* i_array,
   int index, int* o_array)
 {
-  i_array = sort_integer_iteration(i_array,index);
+  i_array = sort_integer_iteration(i_array,i ndex);
   int length = integer_array_length(i_array);
   return compare_integer_arrays(i_array, o_array,
     length);

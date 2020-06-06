@@ -11,21 +11,21 @@ char* binary_left_shifting(char* i_binary, int length)
   for(int index = 1; index < length; index = index + 1)
   {
     binary = add_string_character(binary, index - 1,
-      *(i_binary + index));
+      string_index_character(i_binary, index));
   }
   return add_string_character(binary, length-1,
-    *(i_binary + 0));
+    string_index_character(i_binary, 0));
 }
 
 char* binary_right_shifting(char* i_binary, int length)
 {
   char* binary = generate_character_string(length);
   binary = add_string_character(binary, 0,
-    *(i_binary + length - 1));
+    string_index_character(i_binary, length - 1));
   for(int index = 0; index < (length - 1); index += 1)
   {
     binary = add_string_character(binary, index + 1,
-      *(i_binary + index));
+      string_index_character(i_binary, index));
   }
   return binary;
 }

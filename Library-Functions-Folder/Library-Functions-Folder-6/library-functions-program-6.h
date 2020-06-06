@@ -21,4 +21,6 @@ double array_integer_frequency(int*,int,
 double array_integer_percent(int*, int,
   int);
 
+int greater_integer_amount(int, int);
+
 #endif

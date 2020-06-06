@@ -14,7 +14,7 @@ int switch_matrix_arrays_test(int** i_matrix,int first,
     second);
   int* array = matrix_index_array(i_matrix, 0);
   int width = integer_array_length(array);
-  int height = integer_matrix_height(i_matrix,width);
+  int height = integer_matrix_height(i_matrix, width);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, width);
 }

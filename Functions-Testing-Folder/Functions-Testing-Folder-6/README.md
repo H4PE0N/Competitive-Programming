@@ -18,5 +18,7 @@ integer_array_median_test       update_typical_variables_test
 
 integer_array_average_test      integer_array_typical_test
 
+greater_integer_amount_test
+
 Made by Roy Hampus Fridholm
 </pre>

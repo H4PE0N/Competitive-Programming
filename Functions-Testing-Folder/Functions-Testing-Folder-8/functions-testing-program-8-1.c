@@ -38,3 +38,10 @@ int integer_power_operation_test(int integer,int power,
   int product = integer_power_operation(integer,power);
   return (product == i_product);
 }
+
+int integer_divisible_by_two_test(int integer,
+  int boolean)
+{
+  int output = integer_divisible_by_two(integer);
+  return (output == boolean);
+}

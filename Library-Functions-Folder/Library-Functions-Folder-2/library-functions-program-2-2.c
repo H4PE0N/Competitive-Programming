@@ -12,7 +12,7 @@ library-functions-program-8.h"
 #include "../Library-Functions-Folder-2/\
 library-functions-program-2.h"
 
-int** switch_adjacent_arrays(int** matrix,int height)
+int** switch_adjacent_arrays(int** matrix, int height)
 {
   return switch_matrix_arrays(matrix, height,
     height + 1);
@@ -21,7 +21,7 @@ int** switch_adjacent_arrays(int** matrix,int height)
 int** switch_matrix_arrays(int** matrix, int first,
   int second)
 {
-  int* switch_array=matrix_index_array(matrix,first);
+  int* switch_array=matrix_index_array(matrix, first);
   *(matrix + first) = matrix_index_array(matrix,
     second);
   *(matrix + second) = switch_array; return matrix;
@@ -30,9 +30,9 @@ int** switch_matrix_arrays(int** matrix, int first,
 int** move_matrix_arrays(int** matrix, int height,
   int start)
 {
-  for(int index = start; index < (height-1); index++)
+  for(int index = start; index < (height - 1); index++)
   {
-    matrix =switch_adjacent_arrays(matrix, index);
+    matrix = switch_adjacent_arrays(matrix, index);
   }
   return matrix;
 }
@@ -40,8 +40,8 @@ int** move_matrix_arrays(int** matrix, int height,
 int** generate_random_matrix(int height, int width,
   int minimum, int maximum)
 {
-  int** matrix = generate_matrix_array(height,width);
-  for(int index = 0; index < height; index = index+1)
+  int** matrix = generate_matrix_array(height, width);
+  for(int index = 0; index < height; index = index + 1)
   {
     *(matrix + index) = generate_random_integers(
       width, minimum, maximum);
@@ -52,16 +52,16 @@ int** generate_random_matrix(int height, int width,
 void integer_matrix_stdout(int** matrix, int height,
   int width)
 {
-  for(int index = 0; index < height; index = index+1)
+  for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
     integer_array_stdout(array, width);
   }
 }
 
-int** shuffle_integer_matrix(int** matrix,int height)
+int** shuffle_integer_matrix(int** matrix, int height)
 {
-  for(int index = 0; index < height; index = index+1)
+  for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
     int width = integer_array_length(array);
@@ -74,8 +74,8 @@ int** shuffle_integer_matrix(int** matrix,int height)
 int** duplicate_integer_matrix(int** i_matrix,
   int height, int width)
 {
-  int** matrix = generate_matrix_array(height,width);
-  for(int index = 0; index < height; index = index+1)
+  int** matrix = generate_matrix_array(height, width);
+  for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(i_matrix, index);
     *(matrix + index) =duplicate_integer_array(array,

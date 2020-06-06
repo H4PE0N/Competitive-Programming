@@ -17,7 +17,7 @@ library-functions-program-8.h"
 #include "../Library-Functions-Folder-6/\
 library-functions-program-6.h"
 
-double array_integer_percent(int* array,int length,
+double array_integer_percent(int* array, int length,
   int integer)
 {
   double amount = array_integer_frequency(array,
