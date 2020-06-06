@@ -23,7 +23,7 @@ hashmap_keyword_index         hashmap_keyword_array
 
 integer_value_keywords        integer_hashmap_keywords
 
-integer_hashmap_value         reduce_hashmap_value
+hashmap_keyword_value         reduce_hashmap_value
 
 delete_hashmap_keyword        generate_hashmap_keyword
 

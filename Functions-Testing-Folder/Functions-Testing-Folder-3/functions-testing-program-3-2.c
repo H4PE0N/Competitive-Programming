@@ -21,10 +21,10 @@ int integer_hashmap_keywords_test(int** hashmap,
     length);
 }
 
-int integer_hashmap_value_test(int** hashmap,
+int hashmap_keyword_value_test(int** hashmap,
   int keyword, int i_value)
 {
-  int value = integer_hashmap_value(hashmap, keyword);
+  int value = hashmap_keyword_value(hashmap, keyword);
   return (value == i_value);
 }
 

@@ -33,7 +33,7 @@ int integer_value_keywords_test(int**, int,
 int integer_hashmap_keywords_test(int**,int,
   int*);
 
-int integer_hashmap_value_test(int**, int,
+int hashmap_keyword_value_test(int**, int,
   int);
 
 int delete_hashmap_keyword_test(int**, int,

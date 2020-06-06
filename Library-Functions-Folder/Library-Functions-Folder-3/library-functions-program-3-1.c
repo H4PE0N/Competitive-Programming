@@ -89,7 +89,7 @@ int* hashmap_keyword_array(int** hashmap, int length)
   return array;
 }
 
-int integer_hashmap_value(int** hashmap, int keyword)
+int hashmap_keyword_value(int** hashmap, int keyword)
 {
   int index = hashmap_keyword_index(hashmap, keyword);
   return (index >= 0 ? *(*(hashmap + index) + 1) : -1);

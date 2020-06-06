@@ -20,7 +20,7 @@ hashmap_keyword_index_test         hashmap_keyword_array_test
 
 integer_value_keywords_test        integer_hashmap_keywords_test
 
-integer_hashmap_value_test         reduce_hashmap_value_test
+hashmap_keyword_value_test         reduce_hashmap_value_test
 
 delete_hashmap_keyword_test       generate_hashmap_keyword_test
 
