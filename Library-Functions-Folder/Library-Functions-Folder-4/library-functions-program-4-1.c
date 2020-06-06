@@ -19,7 +19,7 @@ char* allocate_string_characters(char* string,
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    string = allocate_string_character(string ,index,
+    string = allocate_string_character(string, index,
       '\0');
   }
   return string;
@@ -33,8 +33,9 @@ char* generate_character_string(int length)
 
 int calculate_string_length(char* string)
 {
-  int length = 0; while(*(string + length) != '\0')
-    { length = length + 1; } return length;
+  int length = 0;
+  while(string_index_character(string, length) != '\0')
+  { length = length + 1; } return length;
 }
 
 int string_contains_character(char* string, int length,
@@ -42,7 +43,8 @@ int string_contains_character(char* string, int length,
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    if(*(string + index) == character) return true;
+    if(string_index_character(string,index)==character)
+      return true;
   }
   return false;
 }
@@ -73,7 +75,8 @@ char* remove_string_character(char* string, int length,
   int start = length;
   for(int index = (length - 1); index >= 0; index -= 1)
   {
-    if(*(string + index) != character) continue;
+    if(string_index_character(string,index)!=character) 
+      continue;
     start = index; break;
   }
   string = move_string_characters(string,length,start);

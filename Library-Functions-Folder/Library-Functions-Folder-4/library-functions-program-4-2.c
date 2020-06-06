@@ -51,7 +51,8 @@ char* generate_random_string(int length, int minimum,
 void character_string_stdout(char* string, int length)
 {
   for(int index = 0; index < length; index = index + 1)
-  { printf("%c", *(string + index)); } printf("\n");
+    printf("%c",string_index_character(string, index));
+  printf("\n");
 }
 
 char* shuffle_character_string(char* string,int length)

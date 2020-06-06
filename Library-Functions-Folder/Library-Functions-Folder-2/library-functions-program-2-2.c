@@ -14,16 +14,14 @@ library-functions-program-2.h"
 
 int** switch_adjacent_arrays(int** matrix, int height)
 {
-  return switch_matrix_arrays(matrix, height,
-    height + 1);
+  return switch_matrix_arrays(matrix,height, height+1);
 }
 
 int** switch_matrix_arrays(int** matrix, int first,
   int second)
 {
-  int* switch_array=matrix_index_array(matrix, first);
-  *(matrix + first) = matrix_index_array(matrix,
-    second);
+  int* switch_array = matrix_index_array(matrix,first);
+  *(matrix + first)=matrix_index_array(matrix, second);
   *(matrix + second) = switch_array; return matrix;
 }
 

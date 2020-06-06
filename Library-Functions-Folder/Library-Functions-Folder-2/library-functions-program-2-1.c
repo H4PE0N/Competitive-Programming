@@ -76,8 +76,7 @@ int** add_matrix_integer(int** matrix, int height,
   int* array = matrix_index_array(matrix, height);
   int width = integer_array_length(array);
   *(matrix + height) = add_array_integer(array, width,
-    integer);
-  return matrix;
+    integer); return matrix;
 }
 
 int compare_matrix_arrays(int** first, int** second,
