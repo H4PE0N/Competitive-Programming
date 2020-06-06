@@ -2,9 +2,10 @@
 #ifndef FUNCTIONS_TESTING_PROGRAM_3_H
 #define FUNCTIONS_TESTING_PROGRAM_3_H
 
-int generate_integer_hashmap_test(int,int**);
+int generate_integer_hashmap_test(int,
+  int**);
 
-int integer_hashmap_length_test(int**, int);
+int integer_hashmap_length_test(int**,int);
 
 int hashmap_keyword_exists_test(int**, int,
   int);
@@ -41,5 +42,8 @@ int delete_hashmap_keyword_test(int**, int,
 
 int reduce_hashmap_value_test(int**, int,
   int**);
+
+int hashmap_index_value_test(int**, int,
+  int);
 
 #endif

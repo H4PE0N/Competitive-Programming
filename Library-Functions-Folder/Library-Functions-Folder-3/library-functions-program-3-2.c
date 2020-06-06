@@ -66,3 +66,8 @@ int** generate_random_hashmap(int length, int minimum,
     maximum);
   return convert_array_hashmap(array, length);
 }
+
+int hashmap_index_value(int** hashmap, int index)
+{
+  return *(*(hashmap + index) + 1);
+}

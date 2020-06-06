@@ -46,3 +46,10 @@ int reduce_hashmap_value_test(int** i_hashmap,
   return compare_matrix_arrays(i_hashmap, o_hashmap,
     length - 1, 2);
 }
+
+int hashmap_index_value_test(int** hashmap, int index,
+  int i_value)
+{
+  int value = hashmap_index_value(hashmap, index);
+  return (value == i_value);
+}

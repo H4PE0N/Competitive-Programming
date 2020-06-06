@@ -29,5 +29,7 @@ delete_hashmap_keyword        generate_hashmap_keyword
 
 integer_hashmap_stdout        generate_random_hashmap
 
+hashmap_index_value
+
 Made by Roy Hampus Fridholm
 </pre>

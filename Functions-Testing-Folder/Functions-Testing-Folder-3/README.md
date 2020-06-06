@@ -24,5 +24,7 @@ hashmap_keyword_value_test         reduce_hashmap_value_test
 
 delete_hashmap_keyword_test       generate_hashmap_keyword_test
 
+hashmap_index_value_test
+
 Made by Roy Hampus Fridholm
 </pre>
