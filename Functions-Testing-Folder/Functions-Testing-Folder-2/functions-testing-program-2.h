@@ -48,4 +48,7 @@ int matrix_index_array_test(int**, int, int*);
 
 int matrix_array_length_test(int**, int, int);
 
+int matrix_array_contains_test(int**, int, int,
+  int);
+
 #endif

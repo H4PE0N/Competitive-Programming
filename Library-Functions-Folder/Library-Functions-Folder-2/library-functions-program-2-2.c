@@ -62,7 +62,7 @@ int** shuffle_integer_matrix(int** matrix, int height)
   for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
-    int width = integer_array_length(array);
+    int width = matrix_array_length(matrix, index);
     *(matrix + index) = shuffle_integer_array(array,
       width);
   }

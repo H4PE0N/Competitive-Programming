@@ -88,3 +88,11 @@ int matrix_array_length_test(int** matrix, int index,
   int length = matrix_array_length(matrix, index);
   return (length == i_length);
 }
+
+int matrix_array_contains_test(int** matrix,int index,
+  int integer, int boolean)
+{
+  int output = matrix_array_contains(matrix, index,
+    integer);
+  return (output == boolean);
+}

@@ -56,16 +56,25 @@ int matrix_contains_integer(int** matrix, int height,
   return false;
 }
 
+int matrix_array_contains(int** matrix, int index,
+  int integer)
+{
+  int* array = matrix_index_array(matrix, index);
+  int width = matrix_array_length(matrix, index);
+  return array_contains_integer(array, width, integer);
+}
+
+
 int** remove_matrix_integer(int** matrix, int height,
   int integer)
 {
   for(int index = (height - 1); index >= 0; index -= 1)
   {
-    int width = integer_array_length(*(matrix +index));
-    if(!array_contains_integer(*(matrix + index),width,
-      integer)) continue;
-    *(matrix + index) = remove_array_integer(
-      *(matrix + index), width, integer); break;
+    if(!matrix_array_contains(matrix, index, integer))
+      continue;
+    matrix[index] = remove_array_integer(matrix[index],
+      matrix_array_length(matrix, index), integer);
+    break;
   }
   return matrix;
 }
@@ -92,8 +101,8 @@ int compare_matrix_arrays(int** first, int** second,
   return true;
 }
 
-int** remove_matrix_integers(int** matrix, int integer,
-  int width)
+int** remove_matrix_integers(int** matrix, int width,
+  int integer)
 {
   int height = integer_matrix_height(matrix, width);
   for(int index = 0; index <= height; index = index +1)

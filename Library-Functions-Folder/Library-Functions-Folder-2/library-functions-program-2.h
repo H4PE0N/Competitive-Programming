@@ -54,4 +54,7 @@ int* matrix_index_array(int**, int);
 
 int matrix_array_length(int**, int);
 
+int matrix_array_contains(int**, int,
+  int);
+
 #endif

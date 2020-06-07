@@ -69,10 +69,10 @@ int add_matrix_integer_test(int** i_matrix,
 }
 
 int remove_matrix_integers_test(int** i_matrix,
-  int integer, int width, int** o_matrix)
+  int width, int integer, int** o_matrix)
 {
-  i_matrix = remove_matrix_integers(i_matrix, integer,
-    width);
+  i_matrix = remove_matrix_integers(i_matrix, width,
+    integer);
   int height = integer_matrix_height(i_matrix, width);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, width);
