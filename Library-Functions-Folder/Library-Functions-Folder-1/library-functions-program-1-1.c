@@ -31,7 +31,8 @@ int* generate_integer_array(int length)
 
 int integer_array_length(int* array)
 {
-  int length = 0; while(*(array + length) != '\0')
+  int length = 0;
+  while(array_index_integer(array, length) != '\0')
   { length  = (length + 1); } return length;
 }
 
