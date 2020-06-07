@@ -57,8 +57,10 @@ int** generate_hashmap_keyword(int** hashmap,
 {
   int length = integer_hashmap_length(hashmap);
   *(hashmap + length) = generate_integer_array(2);
-  *(*(hashmap + length) + 0) = keyword;
-  *(*(hashmap + length) + 1) = 1; return hashmap;
+  hashmap = allocate_matrix_integer(hashmap, length, 0,
+    keyword);
+  hashmap =allocate_matrix_integer(hashmap,length,1,1);
+  return hashmap;
 }
 
 int** allocate_hashmap_value(int** hashmap,int keyword)
