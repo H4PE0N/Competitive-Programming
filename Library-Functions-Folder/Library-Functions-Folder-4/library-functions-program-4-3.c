@@ -66,3 +66,17 @@ char higher_alphabet_character(int index)
   if(index >= 1 && index <= 26) return (64 + index);
   return '-';
 }
+
+int compare_strings_together(char* first, char* second,
+  int length)
+{
+  for(int index = 0; index < length; index = index + 1)
+  {
+    char f_character = string_index_character(first,
+      index);
+    char s_character = string_index_character(second,
+      index);
+    if(f_character != s_character) return false;
+  }
+  return true;
+}

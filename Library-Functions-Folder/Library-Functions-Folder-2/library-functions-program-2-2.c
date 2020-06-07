@@ -81,3 +81,16 @@ int** duplicate_integer_matrix(int** i_matrix,
   }
   return matrix;
 }
+
+int** remove_matrix_integers(int** matrix, int width,
+  int integer)
+{
+  int height = integer_matrix_height(matrix, width);
+  for(int index = 0; index <= height; index = index +1)
+  {
+    int* array = matrix_index_array(matrix, index);
+    *(matrix + index) = remove_array_integers(array,
+      width, integer);
+  }
+  return matrix;
+}

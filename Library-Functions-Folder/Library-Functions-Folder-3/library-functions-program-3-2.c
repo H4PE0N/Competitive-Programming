@@ -89,3 +89,10 @@ int hashmap_index_keyword(int** hashmap, int index)
 {
   int keyword = *(*(hashmap + index)); return keyword;
 }
+
+int hashmap_keyword_value(int** hashmap, int keyword)
+{
+  int index = hashmap_keyword_index(hashmap, keyword);
+  if(index >= 0) return hashmap_index_value(hashmap,
+    index); return -1;
+}

@@ -75,7 +75,7 @@ char* remove_string_character(char* string, int length,
   int start = length;
   for(int index = (length - 1); index >= 0; index -= 1)
   {
-    if(string_index_character(string,index)!=character) 
+    if(string_index_character(string,index)!=character)
       continue;
     start = index; break;
   }
@@ -90,18 +90,4 @@ char* add_string_character(char* string, int length,
     character);
   return allocate_string_character(string, length + 1,
     '\0');
-}
-
-int compare_strings_together(char* first, char* second,
-  int length)
-{
-  for(int index = 0; index < length; index = index + 1)
-  {
-    char f_character = string_index_character(first,
-      index);
-    char s_character = string_index_character(second,
-      index);
-    if(f_character != s_character) return false;
-  }
-  return true;
 }

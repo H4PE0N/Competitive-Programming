@@ -87,15 +87,3 @@ char* convert_character_binary(char character)
   char* binary = convert_integer_binary(character);
   return binary;
 }
-
-int increase_binary_integer(char* binary, int index,
-  int integer)
-{
-  int length = calculate_string_length(binary);
-  if(string_index_character(binary, index) == '1')
-  {
-    return integer +
-      calculate_bit_integer(length - (index + 1));
-  }
-  return integer;
-}

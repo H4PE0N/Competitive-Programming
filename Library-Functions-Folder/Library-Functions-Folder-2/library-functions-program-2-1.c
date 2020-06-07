@@ -40,7 +40,7 @@ int** delete_matrix_integer(int** matrix, int height,
 int integer_matrix_height(int** matrix, int width)
 {
   int height = 0;
-  while(matrix_array_length(matrix, height) >= width) 
+  while(matrix_array_length(matrix, height) >= width)
   { height = height + 1; } return height;
 }
 
@@ -86,30 +86,4 @@ int** add_matrix_integer(int** matrix, int height,
   int width = integer_array_length(array);
   *(matrix + height) = add_array_integer(array, width,
     integer); return matrix;
-}
-
-int compare_matrix_arrays(int** first, int** second,
-  int height, int width)
-{
-  for(int index = 0; index <= height; index = index +1)
-  {
-    int* f_array = matrix_index_array(first, index);
-    int* s_array = matrix_index_array(second, index);
-    if(!compare_integer_arrays(f_array,s_array, width))
-      return false;
-  }
-  return true;
-}
-
-int** remove_matrix_integers(int** matrix, int width,
-  int integer)
-{
-  int height = integer_matrix_height(matrix, width);
-  for(int index = 0; index <= height; index = index +1)
-  {
-    int* array = matrix_index_array(matrix, index);
-    *(matrix + index) = remove_array_integers(array,
-      width, integer);
-  }
-  return matrix;
 }

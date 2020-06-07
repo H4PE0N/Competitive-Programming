@@ -95,10 +95,3 @@ int* hashmap_keyword_array(int** hashmap, int length)
   }
   return array;
 }
-
-int hashmap_keyword_value(int** hashmap, int keyword)
-{
-  int index = hashmap_keyword_index(hashmap, keyword);
-  if(index >= 0) return hashmap_index_value(hashmap,
-    index); return -1;
-}
