@@ -30,5 +30,9 @@ sort_character_string_test        sort_string_iteration_test
 
 compare_string_content_test       string_index_character_test
 
+generate_lower_alphabet_test      generate_higher_alphabet_test
+
+lower_alphabet_character_test     higher_alphabet_character_test
+
 Made by Roy Hampus Fridholm
 </pre>
