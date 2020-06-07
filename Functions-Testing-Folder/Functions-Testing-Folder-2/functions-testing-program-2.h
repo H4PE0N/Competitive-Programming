@@ -46,4 +46,6 @@ int compare_matrix_content_test(int**, int**,
 
 int matrix_index_array_test(int**, int, int*);
 
+int matrix_array_length_test(int**, int, int);
+
 #endif

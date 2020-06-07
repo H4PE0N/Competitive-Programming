@@ -52,4 +52,6 @@ int compare_matrix_content(int**, int**,
 
 int* matrix_index_array(int**, int);
 
+int matrix_array_length(int**, int);
+
 #endif

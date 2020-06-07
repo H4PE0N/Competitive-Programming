@@ -35,3 +35,9 @@ int* matrix_index_array(int** matrix, int index)
 {
   int* array = *(matrix + index); return array;
 }
+
+int matrix_array_length(int** matrix, int index)
+{
+  int* array = matrix_index_array(matrix, index);
+  return integer_array_length(array);
+}

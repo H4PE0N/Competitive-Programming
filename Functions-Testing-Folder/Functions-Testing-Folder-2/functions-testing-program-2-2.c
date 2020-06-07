@@ -81,3 +81,10 @@ int matrix_index_array_test(int** matrix, int index,
   int length = integer_array_length(array);
   return compare_integer_arrays(array,i_array,length);
 }
+
+int matrix_array_length_test(int** matrix, int index,
+  int i_length)
+{
+  int length = matrix_array_length(matrix, index);
+  return (length == i_length);
+}
