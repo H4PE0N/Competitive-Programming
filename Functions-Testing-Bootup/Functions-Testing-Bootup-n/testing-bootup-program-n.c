@@ -36,8 +36,8 @@ Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
 #include "../../Functions-Testing-Folder/\
-Functions-Testing-Folder-8/\
-functions-testing-program-8.h"
+Functions-Testing-Folder-n/\
+functions-testing-program-n.h"
 
 int main(int argc, char** argv)
 {

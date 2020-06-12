@@ -35,6 +35,10 @@ library-functions-program-7.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-9/\
+library-functions-program-9.h"
+
 #include "../../Functions-Testing-Folder/\
 Functions-Testing-Folder-7/\
 functions-testing-program-7.h"
@@ -44,6 +48,6 @@ int main(int argc, char** argv)
   srand(time(NULL));
 
 
-  
+
   return 0;
 }

@@ -16,6 +16,7 @@ Here is a list of all the folders and  what  they  contain:
 * Library-Functions-Folder-6: Statistics, Probability
 * Library-Functions-Folder-7: Binary Operations
 * Library-Functions-Folder-8: Integers
+* Library-Functions-Folder-9: Sentences
 
 Made by Roy Hampus Fridholm
 </pre>

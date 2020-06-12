@@ -40,8 +40,8 @@ Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
 #include "../../Functions-Testing-Folder/\
-Functions-Testing-Folder-1/\
-functions-testing-program-1.h"
+Functions-Testing-Folder-9/\
+functions-testing-program-9.h"
 
 int main(int argc, char** argv)
 {

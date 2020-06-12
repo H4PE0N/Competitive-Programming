@@ -4,7 +4,7 @@ To compile the program, make sure you have the GCC compiler
 downloaded, and execute the following command in  the  same  
 folder as the program.
 
-gcc -o testing-bootup-program-8 testing-bootup-program-8.c \
+gcc -o testing-bootup-program-9 testing-bootup-program-9.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-2.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-3.c \
@@ -25,14 +25,13 @@ gcc -o testing-bootup-program-8 testing-bootup-program-8.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-8/library-functions-program-8-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-8/library-functions-program-8-2.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-1.c \
-../../Functions-Testing-Folder/Functions-Testing-Folder-8/functions-testing-program-8-1.c \
-../../Functions-Testing-Folder/Functions-Testing-Folder-8/functions-testing-program-8-2.c -lm
+../../Functions-Testing-Folder/Functions-Testing-Folder-9/functions-testing-program-9-1.c -lm
 
 After you have compiled the  program,  type  the  following  
 command to run the executable file, that is going to appear  
 in the folder:
 
-./testing-bootup-program-8
+./testing-bootup-program-9
 
 To download the GCC compiler for this project,  go  to  the  
 website: https://sourceforge.net/projects/mingw-w64/
