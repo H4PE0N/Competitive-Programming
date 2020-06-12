@@ -18,7 +18,7 @@ generate_character_string_test    remove_string_character_test
 
 calculate_string_length_test      add_string_character_test
 
-string_contains_character_test    compare_strings_together_test
+string_contains_character_test    compare_character_strings_test
 
 remove_string_characters_test     generate_random_character_test
 

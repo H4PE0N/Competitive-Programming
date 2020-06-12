@@ -24,7 +24,7 @@ int compare_string_content(char* first, char* second,
   int length)
 {
   first = sort_character_string(first, length);
-  return compare_strings_together(first,
+  return compare_character_strings(first,
     sort_character_string(second, length), length);
 }
 
@@ -69,7 +69,7 @@ char higher_alphabet_character(int index)
   return '-';
 }
 
-int compare_strings_together(char* first, char* second,
+int compare_character_strings(char* first,char* second,
   int length)
 {
   for(int index = 0; index < length; index = index + 1)

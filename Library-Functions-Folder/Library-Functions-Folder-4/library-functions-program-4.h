@@ -27,7 +27,7 @@ char* remove_string_character(char*,
 char* add_string_character(char*, int,
   char);
 
-int compare_strings_together(char*,
+int compare_character_strings(char*,
   char*, int);
 
 char* remove_string_characters(char*,

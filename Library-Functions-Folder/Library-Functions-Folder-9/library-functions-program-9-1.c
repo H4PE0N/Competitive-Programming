@@ -34,7 +34,7 @@ int compare_string_sentences(char**first, char**second,
   {
     char* f_string=sentence_index_string(first, index);
     char* s_string=sentence_index_string(second,index);
-    if(!compare_strings_together(f_string, s_string,
+    if(!compare_character_strings(f_string, s_string,
       width)) return false;
   }
   return true;

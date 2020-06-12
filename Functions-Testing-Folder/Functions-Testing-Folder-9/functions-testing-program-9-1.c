@@ -29,6 +29,6 @@ int sentence_index_string_test(char** sentence,
 {
   char* string = sentence_index_string(sentence,index);
   int length = calculate_string_length(string);
-  return compare_strings_together(string, i_string,
+  return compare_character_strings(string, i_string,
     length);
 }

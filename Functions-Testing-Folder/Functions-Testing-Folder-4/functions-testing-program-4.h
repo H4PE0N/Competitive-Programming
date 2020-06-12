@@ -30,7 +30,7 @@ int add_string_character_test(char*, int, char,
 int remove_string_characters_test(char*,int,
   char, char*);
 
-int compare_strings_together_test(char*, char*,
+int compare_character_strings_test(char*, char*,
   int, int);
 
 int generate_random_character_test(int,int,int,

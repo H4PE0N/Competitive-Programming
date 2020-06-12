@@ -26,7 +26,7 @@ int generate_random_binary_test(int i_minimum,
 int binary_range_between_test(char* binary,
   int minimum, int maximum, int boolean)
 {
-  int output = binary_range_between(binary,minimum,
+  int output = binary_range_between(binary, minimum,
     maximum);
   return (output == boolean);
 }
