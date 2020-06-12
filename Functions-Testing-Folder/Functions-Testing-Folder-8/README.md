@@ -16,5 +16,7 @@ convert_percent_decimal_test    integer_power_operation_test
 
 integer_range_between_test      integer_divisible_by_two_test
 
+integer_between_integers_test
+
 Made by Roy Hampus Fridholm
 </pre>

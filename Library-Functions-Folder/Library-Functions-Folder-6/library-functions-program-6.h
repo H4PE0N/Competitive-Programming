@@ -4,23 +4,28 @@
 
 double integer_odd_median(int*, int);
 
-double integer_even_median(int*, int);
+double integer_even_median(int*,int);
 
-double integer_array_median(int*, int);
-
-double integer_array_average(int*, int);
-
-int* update_typical_variables(int*,int,
+double integer_array_median(int*,
   int);
+
+double integer_array_average(int*,
+  int);
+
+int* update_typical_variables(int*,
+  int, int);
 
 int integer_array_typical(int*, int);
 
-double array_integer_frequency(int*,int,
-  int);
+double array_integer_frequency(int*,
+  int, int);
 
-double array_integer_percent(int*, int,
-  int);
+double array_integer_percent(int*,
+  int, int);
 
 int greater_integer_amount(int, int);
+
+int array_integers_sequences(int*,
+  int);
 
 #endif

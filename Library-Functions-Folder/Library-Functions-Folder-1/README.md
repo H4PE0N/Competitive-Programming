@@ -35,7 +35,7 @@ shuffle_integer_array       integer_array_stdout
 
 compare_integers_content    duplicate_integer_array
 
-array_index_integer
+array_index_integer         generate_integer_vector
 
 Made by Roy Hampus Fridholm
 </pre>

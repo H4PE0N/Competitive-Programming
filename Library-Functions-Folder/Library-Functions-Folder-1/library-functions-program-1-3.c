@@ -51,3 +51,10 @@ int* shuffle_integer_array(int* array, int length)
   }
   return array;
 }
+
+int* generate_integer_vector(int first, int second)
+{
+  int* vector = generate_integer_array(2);
+  vector = allocate_array_integer(vector, 0, first);
+  return allocate_array_integer(vector, 1, second);
+}

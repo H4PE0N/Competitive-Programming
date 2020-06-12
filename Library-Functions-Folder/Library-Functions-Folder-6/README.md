@@ -21,7 +21,7 @@ integer_array_median        update_typical_variables
 
 integer_array_average       integer_array_typical
 
-integer_odd_median
+integer_odd_median          array_integers_sequences
 
 Made by Roy Hampus Fridholm
 </pre>

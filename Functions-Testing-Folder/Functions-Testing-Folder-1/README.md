@@ -32,5 +32,7 @@ compare_integer_arrays_test       shuffle_integer_array_test
 
 duplicate_integer_array_test      array_index_integer_test
 
+generate_integer_vector_test
+
 Made by Roy Hampus Fridholm
 </pre>

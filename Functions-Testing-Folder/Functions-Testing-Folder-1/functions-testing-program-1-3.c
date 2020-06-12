@@ -13,3 +13,11 @@ int array_index_integer_test(int* array, int index,
   int integer = array_index_integer(array, index);
   return (integer == i_integer);
 }
+
+int generate_integer_vector_test(int first,
+  int second, int* i_vector)
+{
+  int* vector = generate_integer_vector(first,
+    second);
+  return compare_integer_arrays(vector, i_vector,2);
+}

@@ -10,7 +10,7 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
-integer_odd_median_test         array_integer_percent_test
+array_integers_sequences_test   array_integer_percent_test
 
 integer_even_median_test        array_integer_frequency_test
 
@@ -18,7 +18,7 @@ integer_array_median_test       update_typical_variables_test
 
 integer_array_average_test      integer_array_typical_test
 
-greater_integer_amount_test
+greater_integer_amount_test     integer_odd_median_test
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -4,7 +4,7 @@
 
 int integer_odd_median_test(int*, int, double);
 
-int integer_even_median_test(int*, int, double);
+int integer_even_median_test(int*,int,double);
 
 int integer_array_median_test(int*,int,double);
 
@@ -22,5 +22,8 @@ int array_integer_percent_test(int*, int, int,
   double);
 
 int greater_integer_amount_test(int, int, int);
+
+int array_integers_sequences_test(int*, int,
+  int);
 
 #endif

@@ -14,4 +14,7 @@ double convert_percent_decimal(double);
 
 int integer_divisible_by_two(int);
 
+double integer_between_integers(int,
+  int);
+
 #endif

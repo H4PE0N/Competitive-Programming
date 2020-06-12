@@ -19,34 +19,6 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int integer_odd_median_test(int* array, int length,
-  double i_median)
-{
-  int median = integer_odd_median(array, length);
-  return (median == i_median);
-}
-
-int integer_even_median_test(int* array, int length,
-  double i_median)
-{
-  int median = integer_even_median(array, length);
-  return (median == i_median);
-}
-
-int integer_array_median_test(int* array, int length,
-  double i_median)
-{
-  int median = integer_array_median(array, length);
-  return (median == i_median);
-}
-
-int integer_array_average_test(int* array, int length,
-  double i_average)
-{
-  int average = integer_array_average(array, length);
-  return (average == i_average);
-}
-
 int update_typical_variables_test(int* i_variables,
   int current_amount, int integer, int* o_variables)
 {
@@ -79,9 +51,45 @@ int array_integer_percent_test(int* array, int length,
   return (percent == i_percent);
 }
 
+int integer_array_median_test(int* array, int length,
+  double i_median)
+{
+  int median = integer_array_median(array, length);
+  return (median == i_median);
+}
+
+int integer_array_average_test(int* array, int length,
+  double i_average)
+{
+  int average = integer_array_average(array, length);
+  return (average == i_average);
+}
+
 int greater_integer_amount_test(int current,
   int typical, int boolean)
 {
   int output = greater_integer_amount(current,typical);
   return (output == boolean);
+}
+
+int integer_odd_median_test(int* array, int length,
+  double i_median)
+{
+  int median = integer_odd_median(array, length);
+  return (median == i_median);
+}
+
+int integer_even_median_test(int* array, int length,
+  double i_median)
+{
+  int median = integer_even_median(array, length);
+  return (median == i_median);
+}
+
+int array_integers_sequences_test(int*array,int length,
+  int i_sequences)
+{
+  int sequences = array_integers_sequences(array,
+    length);
+  return (sequences == i_sequences);
 }
