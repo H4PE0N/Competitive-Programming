@@ -1,6 +1,7 @@
 
 <pre>
-These programs contains functions that .
+These  programs  contains  functions  that  generates   and
+manipulates string sentences. They are string arrays.
 
 If you want to create a new function to this  library,  you
 will have to make the test function before. After the  test
@@ -12,7 +13,11 @@ a positive output.
 
 Here is a list of the functions that the programs contains:
 
+generate_string_sentence    generate_random_sentence
 
+sentence_index_string       compare_string_sentences
+
+string_sentence_stdout
 
 Made by Roy Hampus Fridholm
 </pre>

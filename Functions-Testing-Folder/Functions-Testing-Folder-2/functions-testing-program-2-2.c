@@ -29,8 +29,8 @@ int move_matrix_arrays_test(int** i_matrix, int height,
     height, integer_array_length(array));
 }
 
-int compare_matrix_arrays_test(int** first,
-  int** second, int height, int width, int boolean)
+int compare_matrix_arrays_test(int**first, int**second,
+  int height, int width, int boolean)
 {
   int output = compare_matrix_arrays(first, second,
     height, width);
