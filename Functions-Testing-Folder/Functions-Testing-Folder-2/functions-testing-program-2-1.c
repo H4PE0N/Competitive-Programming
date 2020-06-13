@@ -52,8 +52,7 @@ int remove_matrix_integer_test(int** i_matrix,
 {
   i_matrix = remove_matrix_integer(i_matrix, height,
     integer);
-  int* array = matrix_index_array(i_matrix, 0);
-  int width = integer_array_length(array);
+  int width = matrix_array_length(i_matrix, 0);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, width);
 }
@@ -81,8 +80,7 @@ int remove_matrix_integers_test(int** i_matrix,
 int switch_adjacent_arrays_test(int** i_matrix,
   int height, int** o_matrix)
 {
-  int* array = matrix_index_array(i_matrix, 0);
-  int width = integer_array_length(array);
+  int width = matrix_array_length(i_matrix, 0);
   i_matrix = switch_adjacent_arrays(i_matrix, height);
   return compare_matrix_arrays(i_matrix, o_matrix,
     height, width);
