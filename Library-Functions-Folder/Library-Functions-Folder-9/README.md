@@ -17,7 +17,9 @@ generate_string_sentence    generate_random_sentence
 
 sentence_index_string       compare_string_sentences
 
-string_sentence_stdout
+string_sentence_stdout      allocate_sentence_character
+
+delete_sentence_character
 
 Made by Roy Hampus Fridholm
 </pre>

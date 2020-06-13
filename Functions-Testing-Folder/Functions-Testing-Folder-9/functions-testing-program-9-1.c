@@ -32,3 +32,21 @@ int sentence_index_string_test(char** sentence,
   return compare_character_strings(string, i_string,
     length);
 }
+
+int allocate_sentence_character_test(char** input,
+  int height, int width, char character, char** output)
+{
+  input = allocate_sentence_character(input, height,
+    width, character);
+  return compare_string_sentences(input, output,height,
+    width);
+}
+
+int delete_sentence_character_test(char** input,
+  int height, int width, int index, char** output)
+{
+  input = delete_sentence_character(input,height,width,
+    index);
+  return compare_string_sentences(input, output,height, 
+    width);
+}

@@ -34,5 +34,7 @@ generate_lower_alphabet_test      generate_higher_alphabet_test
 
 lower_alphabet_character_test     higher_alphabet_character_test
 
+delete_string_character_test
+
 Made by Roy Hampus Fridholm
 </pre>

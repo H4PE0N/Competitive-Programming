@@ -36,3 +36,12 @@ int higher_alphabet_character_test(int index,
   char character = higher_alphabet_character(index);
   return (character == i_character);
 }
+
+int delete_string_character_test(char* i_string,
+  int length, int index, char* o_string)
+{
+  i_string = delete_string_character(i_string, length,
+    index);
+  return compare_character_strings(i_string, o_string,
+    length);
+}

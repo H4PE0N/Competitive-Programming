@@ -10,7 +10,11 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
+allocate_sentence_character_test  delete_sentence_character_test
 
+sentence_index_string_test        compare_string_sentences_test
+
+generate_string_sentence_test
 
 Made by Roy Hampus Fridholm
 </pre>

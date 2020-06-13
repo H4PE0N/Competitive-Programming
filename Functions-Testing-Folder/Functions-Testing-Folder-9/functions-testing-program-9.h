@@ -9,4 +9,10 @@ int compare_string_sentences_test(char**, char**,
 
 int generate_string_sentence_test(int,int,char**);
 
+int allocate_sentence_character_test(char**, int,
+  int, char, char**);
+
+int delete_sentence_character_test(char**, int,
+  int, int, char**);
+
 #endif

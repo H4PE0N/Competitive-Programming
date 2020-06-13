@@ -15,4 +15,10 @@ char** generate_random_sentence(int, int,
 void string_sentence_stdout(char**, int,
   int);
 
+char** allocate_sentence_character(char**,
+  int, int, char);
+
+char** delete_sentence_character(char**,
+  int, int, int);
+
 #endif

@@ -62,3 +62,21 @@ void string_sentence_stdout(char** sentence, int height,
     character_string_stdout(string, width);
   }
 }
+
+char** allocate_sentence_character(char** sentence,
+  int height, int width, char character)
+{
+  char* string=sentence_index_string(sentence, height);
+  *(sentence + height) = allocate_string_character(
+    string, width, character);
+  return sentence;
+}
+
+char** delete_sentence_character(char** sentence,
+  int height, int width, int index)
+{
+  char* string=sentence_index_string(sentence, height);
+  *(sentence + height) =delete_string_character(string,
+    width, index);
+  return sentence;
+}

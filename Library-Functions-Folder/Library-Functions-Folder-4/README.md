@@ -39,5 +39,7 @@ generate_lower_alphabet       generate_higher_alphabet
 
 lower_alphabet_character      higher_alphabet_character
 
+delete_string_character
+
 Made by Roy Hampus Fridholm
 </pre>

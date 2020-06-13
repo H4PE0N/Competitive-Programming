@@ -15,26 +15,26 @@ int generate_matrix_array_test(int height, int width,
     width);
 }
 
-int allocate_matrix_integer_test(int** i_matrix,int x,
-  int y, int integer, int** o_matrix)
+int allocate_matrix_integer_test(int** i_matrix,
+  int height, int width, int integer, int** o_matrix)
 {
-  i_matrix = allocate_matrix_integer(i_matrix, x, y,
-    integer);
+  i_matrix = allocate_matrix_integer(i_matrix, height,
+    width, integer);
   return compare_matrix_arrays(i_matrix, o_matrix,
-    x, y);
+    height, width);
 }
 
-int delete_matrix_integer_test(int** i_matrix, int x,
-  int y, int height, int** o_matrix)
+int delete_matrix_integer_test(int** i_matrix,
+  int height, int width, int index, int** o_matrix)
 {
-  i_matrix = delete_matrix_integer(i_matrix, x, y,
-    height);
+  i_matrix = delete_matrix_integer(i_matrix, height,
+    width, index);
   return compare_matrix_arrays(i_matrix, o_matrix,
-    x, y);
+    height, width);
 }
 
-int integer_matrix_height_test(int** matrix,
-  int width, int i_height)
+int integer_matrix_height_test(int** matrix,int width,
+  int i_height)
 {
   int height = integer_matrix_height(matrix, width);
   return (height == i_height);

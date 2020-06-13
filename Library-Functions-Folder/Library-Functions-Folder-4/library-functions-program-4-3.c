@@ -82,3 +82,11 @@ int compare_character_strings(char* first,char* second,
   }
   return true;
 }
+
+char* delete_string_character(char* string, int length,
+  int index)
+{
+  string = move_string_characters(string,length,index);
+  return allocate_string_character(string, length - 1,
+    '\0');
+}

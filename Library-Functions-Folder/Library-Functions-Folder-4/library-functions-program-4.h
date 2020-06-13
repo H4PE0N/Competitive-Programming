@@ -71,4 +71,7 @@ char lower_alphabet_character(int);
 
 char higher_alphabet_character(int);
 
+char* delete_string_character(char*,int,
+  int);
+
 #endif

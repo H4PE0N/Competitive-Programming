@@ -81,8 +81,7 @@ char* remove_string_character(char* string, int length,
       continue;
     start = index; break;
   }
-  string = move_string_characters(string,length,start);
-  return allocate_string_character(string,length,'\0');
+  return delete_string_character(string, length, start);
 }
 
 char* add_string_character(char* string, int length,
