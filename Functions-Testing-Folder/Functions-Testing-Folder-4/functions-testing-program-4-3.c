@@ -8,40 +8,39 @@ Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
 int generate_lower_alphabet_test(int characters,
-  char* i_alphabet)
+  char* output)
 {
   char* alphabet = generate_lower_alphabet(characters);
-  return compare_character_strings(alphabet,i_alphabet,
+  return compare_character_strings(alphabet, output,
     characters);
 }
 
 int generate_higher_alphabet_test(int characters,
-  char* i_alphabet)
+  char* output)
 {
   char* alphabet =generate_higher_alphabet(characters);
-  return compare_character_strings(alphabet,i_alphabet,
+  return compare_character_strings(alphabet, output,
     characters);
 }
 
 int lower_alphabet_character_test(int index,
-  char i_character)
+  char output)
 {
   char character = lower_alphabet_character(index);
-  return (character == i_character);
+  return (character == output);
 }
 
 int higher_alphabet_character_test(int index,
-  char i_character)
+  char output)
 {
   char character = higher_alphabet_character(index);
-  return (character == i_character);
+  return (character == output);
 }
 
-int delete_string_character_test(char* i_string,
-  int length, int index, char* o_string)
+int delete_string_character_test(char* string,
+  int length, int index, char* output)
 {
-  i_string = delete_string_character(i_string, length,
-    index);
-  return compare_character_strings(i_string, o_string,
+  string=delete_string_character(string, length,index);
+  return compare_character_strings(string, output,
     length);
 }

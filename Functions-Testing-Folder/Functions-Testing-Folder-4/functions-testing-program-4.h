@@ -33,9 +33,6 @@ int remove_string_characters_test(char*,int,
 int compare_character_strings_test(char*, char*,
   int, int);
 
-int generate_random_character_test(int,int,int,
-  int);
-
 int character_range_between_test(char, int, int,
   int);
 

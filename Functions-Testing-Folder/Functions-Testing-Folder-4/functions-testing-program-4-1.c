@@ -7,87 +7,85 @@ library-functions-program-4.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int allocate_string_character_test(char* i_string,
-  int index, char character, char* o_string)
+int allocate_string_character_test(char* string,
+  int index, char character, char* output)
 {
-  i_string = allocate_string_character(i_string,
-    index, character);
-  return compare_character_strings(i_string,o_string,
-    calculate_string_length(i_string));
+  string = allocate_string_character(string, index,
+    character);
+  return compare_character_strings(string, output,
+    calculate_string_length(string));
 }
 
-int allocate_string_characters_test(char* i_string,
-  int length, char* o_string)
+int allocate_string_characters_test(char* string,
+  int length, char* output)
 {
-  i_string = allocate_string_characters(i_string,
-    length);
-  return compare_character_strings(i_string,o_string,
+  string = allocate_string_characters(string, length);
+  return compare_character_strings(string, output,
     length);
 }
 
 int generate_character_string_test(int length,
-  char* o_string)
+  char* output)
 {
   char* string = generate_character_string(length);
-  return compare_character_strings(string, o_string,
+  return compare_character_strings(string, output,
     length);
 }
 
 int calculate_string_length_test(char* string,
-  int i_length)
+  int output)
 {
   int length = calculate_string_length(string);
-  return (length == i_length);
+  return (length == output);
 }
 
 int string_contains_character_test(char* string,
-  int length, char character, int boolean)
+  int length, char character, int output)
 {
-  return (string_contains_character(string, length,
-    character) == boolean);
+  int boolean=string_contains_character(string, length,
+    character); return (boolean == output);
 }
 
-int switch_string_characters_test(char* i_string,
-  int first, int second, char* o_string)
+int switch_string_characters_test(char* string,
+  int first, int second, char* output)
 {
-  i_string = switch_string_characters(i_string,
-    first, second);
-  return compare_character_strings(i_string,o_string,
-    calculate_string_length(i_string));
+  string = switch_string_characters(string, first,
+    second);
+  return compare_character_strings(string, output,
+    calculate_string_length(string));
 }
 
-int move_string_characters_test(char* i_string,
-  int length, int start, char* o_string)
+int move_string_characters_test(char* string,
+  int length, int start, char* output)
 {
-  i_string = move_string_characters(i_string, length,
-    start);
-  return compare_character_strings(i_string,o_string,
+  string = move_string_characters(string,length,start);
+  return compare_character_strings(string, output,
     length);
 }
 
-int remove_string_character_test(char* i_string,
-  int length, char character, char* o_string)
+int remove_string_character_test(char* string,
+  int length, char character, char* output)
 {
-  i_string = remove_string_character(i_string,length,
+  string = remove_string_character(string, length,
     character);
-  return compare_character_strings(i_string,o_string,
-    calculate_string_length(i_string));
+  return compare_character_strings(string, output,
+    calculate_string_length(string));
 }
 
-int add_string_character_test(char* i_string,
-  int length, char character, char* o_string)
+int add_string_character_test(char* string, int length,
+  char character, char* output)
 {
-  i_string = add_string_character(i_string, length,
+  string = add_string_character(string, length,
     character);
-  return compare_character_strings(i_string,o_string,
+  return compare_character_strings(string,output,
     length + 1);
 }
 
-int remove_string_characters_test(char* i_string,
-  int length, char character, char* o_string)
+int remove_string_characters_test(char* string,
+  int length, char character, char* output)
 {
-  i_string = remove_string_characters(i_string,
-    length, character);
-  return compare_character_strings(i_string,o_string,
-    calculate_string_length(i_string));
+  string = remove_string_characters(string, length,
+    character);
+  return compare_character_strings(string, output,
+    calculate_string_length(string));
 }

@@ -19,50 +19,47 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int update_typical_variables_test(int* i_variables,
-  int current_amount, int integer, int* o_variables)
+int update_typical_variables_test(int* variables,
+  int amount, int integer, int* output)
 {
-  i_variables = update_typical_variables(i_variables,
-    current_amount, integer);
-  return compare_integer_arrays(i_variables,
-    o_variables, 2);
+  variables=update_typical_variables(variables, amount,
+    integer);
+  return compare_integer_arrays(variables, output, 2);
 }
 
 int integer_array_typical_test(int* array, int length,
-  int i_typical)
+  int output)
 {
   int typical = integer_array_typical(array, length);
-  return (typical == i_typical);
+  return (typical == output);
 }
 
 int array_integer_frequency_test(int* array,int length,
-  int integer, double i_amount)
+  int integer, double output)
 {
   double amount = array_integer_frequency(array,length,
-    integer);
-  return (amount == i_amount);
+    integer); return (amount == output);
 }
 
 int array_integer_percent_test(int* array, int length,
-  int integer, double i_percent)
+  int integer, double output)
 {
   double percent = array_integer_percent(array, length,
-    integer);
-  return (percent == i_percent);
+    integer); return (percent == output);
 }
 
 int integer_array_median_test(int* array, int length,
-  double i_median)
+  double output)
 {
   int median = integer_array_median(array, length);
-  return (median == i_median);
+  return (median == output);
 }
 
 int integer_array_average_test(int* array, int length,
-  double i_average)
+  double output)
 {
   int average = integer_array_average(array, length);
-  return (average == i_average);
+  return (average == output);
 }
 
 int greater_integer_amount_test(int current,
@@ -73,23 +70,22 @@ int greater_integer_amount_test(int current,
 }
 
 int integer_odd_median_test(int* array, int length,
-  double i_median)
+  double output)
 {
   int median = integer_odd_median(array, length);
-  return (median == i_median);
+  return (median == output);
 }
 
 int integer_even_median_test(int* array, int length,
-  double i_median)
+  double output)
 {
   int median = integer_even_median(array, length);
-  return (median == i_median);
+  return (median == output);
 }
 
 int array_integers_sequences_test(int*array,int length,
-  int i_sequences)
+  int output)
 {
   int sequences = array_integers_sequences(array,
-    length);
-  return (sequences == i_sequences);
+    length); return (sequences == output);
 }

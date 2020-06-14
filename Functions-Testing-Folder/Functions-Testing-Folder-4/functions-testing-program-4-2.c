@@ -11,81 +11,67 @@ int compare_character_strings_test(char* first,
   char* second, int length, int boolean)
 {
   int output = compare_character_strings(first, second,
-    length);
-  return (output == boolean);
-}
-
-int generate_random_character_test(int i_minimum,
-  int i_maximum, int o_minimum, int o_maximum)
-{
-  char character = generate_random_character(i_minimum,
-    i_maximum);
-  return character_range_between(character,o_minimum,
-    o_maximum);
+    length); return (output == boolean);
 }
 
 int character_range_between_test(char character,
   int minimum, int maximum, int boolean)
 {
   int output = character_range_between(character,
-    minimum, maximum);
-  return (output == boolean);
+    minimum, maximum); return (output == boolean);
 }
 
-int shuffle_character_string_test(char* i_string,
-  int length, char* o_string)
+int shuffle_character_string_test(char* string,
+  int length, char* output)
 {
-  i_string = shuffle_character_string(i_string,length);
-  return compare_string_content(i_string, o_string,
+  string = shuffle_character_string(string, length);
+  return compare_string_content(string, output,length);
+}
+
+int duplicate_character_string_test(char* string,
+  int length, char* output)
+{
+  string = duplicate_character_string(string, length);
+  return compare_character_strings(string, output,
     length);
 }
 
-int duplicate_character_string_test(char* i_string,
-  int length, char* o_string)
+int switch_adjacent_characters_test(char* string,
+  int index, char* output)
 {
-  char* string = duplicate_character_string(i_string,
-    length);
-  return compare_character_strings(string, o_string,
-    length);
-}
-
-int switch_adjacent_characters_test(char* i_string,
-  int index, char* o_string)
-{
-  i_string =switch_adjacent_characters(i_string,index);
-  int length = calculate_string_length(i_string);
-  return compare_character_strings(i_string, o_string,
+  string = switch_adjacent_characters(string, index);
+  int length = calculate_string_length(string);
+  return compare_character_strings(string, output,
     length);
 }
 
-int sort_character_string_test(char* i_string,
-  int iteration, char* o_string)
+int sort_character_string_test(char* string,
+  int iteration, char* output)
 {
-  i_string = sort_character_string(i_string,iteration);
-  int length = calculate_string_length(i_string);
-  return compare_character_strings(i_string, o_string,
+  string = sort_character_string(string, iteration);
+  int length = calculate_string_length(string);
+  return compare_character_strings(string, output,
     length);
 }
 
-int sort_string_iteration_test(char* i_string,
-  int length, char* o_string)
+int sort_string_iteration_test(char* string,int length,
+  char* output)
 {
-  i_string = sort_string_iteration(i_string, length);
-  return compare_character_strings(i_string, o_string,
+  string = sort_string_iteration(string, length);
+  return compare_character_strings(string, output,
     length);
 }
 
 int compare_string_content_test(char* first,
-  char* second, int length, int boolean)
+  char* second, int length, int output)
 {
-  int output = compare_string_content(first, second,
-    length);
-  return (output == boolean);
+  int boolean = compare_string_content(first, second,
+    length); return (boolean == output);
 }
 
 int string_index_character_test(char* string,int index,
-  char i_character)
+  char output)
 {
   char character=string_index_character(string, index);
-  return (i_character == character);
+  return (character == output);
 }

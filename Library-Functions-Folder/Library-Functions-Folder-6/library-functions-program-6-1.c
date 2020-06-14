@@ -59,7 +59,7 @@ double integer_array_median(int* array, int length)
 
 int greater_integer_amount(int current, int typical)
 {
-  int output = (current > typical); return output;
+  int boolean = (current > typical); return boolean;
 }
 
 int* update_typical_variables(int*variables,int amount,
@@ -68,9 +68,6 @@ int* update_typical_variables(int*variables,int amount,
   int typical_amount=array_index_integer(variables, 0);
   if(greater_integer_amount(amount, typical_amount))
   {
-    // *(variables + 0) = amount; *(variables + 1) =
-    //   integer;
-
     variables = allocate_array_integer(variables, 0,
       amount);
     variables = allocate_array_integer(variables, 1,

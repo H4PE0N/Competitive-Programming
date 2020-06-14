@@ -22,7 +22,7 @@ calculate_real_length_test        convert_binary_integer_test
 
 convert_binary_character_test     calculate_bit_integer_test
 
-generate_random_binary_test       binary_range_between_test
+binary_range_between_test
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -8,89 +8,82 @@ Library-Functions-Folder-5/\
 library-functions-program-5.h"
 
 int binary_integer_enough_test(char* binary,int length,
-  int integer, int boolean)
+  int integer, int output)
 {
-  int output = binary_integer_enough(binary, length,
-    integer);
-  return (output == boolean);
+  int boolean = binary_integer_enough(binary, length,
+    integer); return (boolean == output);
 }
 
-int calculate_bit_integer_test(int integer,
-  int i_product)
+int convert_binary_integer_test(char* binary,
+  int output)
+{
+  int integer = convert_binary_integer(binary);
+  return (integer == output);
+}
+
+int calculate_bit_integer_test(int integer, int output)
 {
   int product = calculate_bit_integer(integer);
-  return (product == i_product);
+  return (product == output);
 }
 
-int reduce_binary_integer_test(char* binary,int length,
-  int i_integer, int o_integer)
+int convert_integer_binary_test(int integer,
+  char* output)
 {
-  i_integer = reduce_binary_integer(binary, length,
-    i_integer);
-  return (i_integer == o_integer);
-}
-
-int allocate_binary_bit_test(char* i_binary,int length,
-  int integer, char* o_binary)
-{
-  i_binary = allocate_binary_bit(i_binary, length,
-    integer);
-  return compare_character_strings(i_binary, o_binary,
+  char* binary = convert_integer_binary(integer);
+  int length = calculate_string_length(binary);
+  return compare_character_strings(binary, output,
     length);
 }
 
-int calculate_real_length_test(int integer,
-  int i_length)
+int reduce_binary_integer_test(char* binary,int length,
+  int integer, int output)
 {
-  int length = calculate_real_length(integer);
-  return (length == i_length);
+  integer = reduce_binary_integer(binary, length,
+    integer); return (integer == output);
 }
 
-int allocate_binary_bits_test(char*i_binary,int length,
-  int integer, char* o_binary)
+int increase_binary_integer_test(char*binary,int index,
+  int integer, int output)
 {
-  i_binary = allocate_binary_bits(i_binary, length,
-    integer);
-  return compare_character_strings(i_binary, o_binary,
+  integer = increase_binary_integer(binary, index,
+    integer); return (integer == output);
+}
+
+int allocate_binary_bit_test(char* binary, int length,
+  int integer, char* output)
+{
+  binary = allocate_binary_bit(binary,length,integer);
+  return compare_character_strings(binary, output,
     length);
 }
 
 int calculate_nearest_length_test(int integer,
-  int i_length)
+  int output)
 {
   int length = calculate_nearest_length(integer);
-  return (length == i_length);
+  return (length == output);
+}
+
+int calculate_real_length_test(int integer,int output)
+{
+  int length = calculate_real_length(integer);
+  return (length == output);
 }
 
 int convert_character_binary_test(char character,
-  char* i_binary)
+  char* output)
 {
   char* binary = convert_character_binary(character);
   int length = calculate_string_length(binary);
-  return compare_character_strings(binary, i_binary,
+  return compare_character_strings(binary, output,
     length);
 }
 
-int convert_binary_integer_test(char* binary,
-  int i_integer)
+int allocate_binary_bits_test(char* binary, int length,
+  int integer, char* output)
 {
-  int integer = convert_binary_integer(binary);
-  return (integer == i_integer);
-}
-
-int convert_integer_binary_test(int integer,
-  char* i_binary)
-{
-  char* binary = convert_integer_binary(integer);
-  int length = calculate_string_length(binary);
-  return compare_character_strings(binary, i_binary,
+  binary = allocate_binary_bits(binary,length,integer);
+  return compare_character_strings(binary, output,
     length);
-}
-
-int increase_binary_integer_test(char*binary,int index,
-  int i_integer, int o_integer)
-{
-  i_integer = increase_binary_integer(binary, index,
-    i_integer);
-  return (i_integer == o_integer);
 }

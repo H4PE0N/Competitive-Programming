@@ -8,45 +8,43 @@ Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
 int generate_string_sentence_test(int height,int width,
-  char** i_sentence)
+  char** output)
 {
   char** sentence = generate_string_sentence(height,
     width);
-  return compare_string_sentences(sentence, i_sentence,
+  return compare_string_sentences(sentence, output,
     height, width);
 }
 
 int compare_string_sentences_test(char** first,
-  char** second, int height, int width, int boolean)
+  char** second, int height, int width, int output)
 {
-  int output = compare_string_sentences(first, second,
-    height, width);
-  return (output == boolean);
+  int boolean = compare_string_sentences(first, second,
+    height, width); return (boolean == output);
 }
 
 int sentence_index_string_test(char** sentence,
-  int index, char* i_string)
+  int index, char* output)
 {
   char* string = sentence_index_string(sentence,index);
-  int length = calculate_string_length(string);
-  return compare_character_strings(string, i_string,
-    length);
+  return compare_character_strings(string, output,
+    calculate_string_length(string));
 }
 
-int allocate_sentence_character_test(char** input,
+int allocate_sentence_character_test(char** sentence,
   int height, int width, char character, char** output)
 {
-  input = allocate_sentence_character(input, height,
+  sentence=allocate_sentence_character(sentence,height,
     width, character);
-  return compare_string_sentences(input, output,height,
-    width);
+  return compare_string_sentences(sentence, output,
+    height, width);
 }
 
-int delete_sentence_character_test(char** input,
+int delete_sentence_character_test(char** sentence,
   int height, int width, int index, char** output)
 {
-  input = delete_sentence_character(input,height,width,
-    index);
-  return compare_string_sentences(input, output,height, 
-    width);
+  sentence = delete_sentence_character(sentence,height,
+    width, index);
+  return compare_string_sentences(sentence, output,
+    height, width);
 }
