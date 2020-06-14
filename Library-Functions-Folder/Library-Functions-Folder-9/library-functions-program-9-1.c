@@ -40,29 +40,6 @@ int compare_string_sentences(char**first, char**second,
   return true;
 }
 
-char** generate_random_sentence(int height, int width,
-  int minimum, int maximum)
-{
-  char** sentence = generate_string_sentence(height,
-    width);
-  for(int index = 0; index < height; index = index + 1)
-  {
-    *(sentence + index) = generate_random_string(width,
-      minimum, maximum);
-  }
-  return sentence;
-}
-
-void string_sentence_stdout(char** sentence, int height,
-  int width)
-{
-  for(int index = 0; index < height; index = index + 1)
-  {
-    char* string=sentence_index_string(sentence,index);
-    character_string_stdout(string, width);
-  }
-}
-
 char** allocate_sentence_character(char** sentence,
   int height, int width, char character)
 {
@@ -72,11 +49,49 @@ char** allocate_sentence_character(char** sentence,
   return sentence;
 }
 
-char** delete_sentence_character(char** sentence,
-  int height, int width, int index)
+char** allocate_sentence_string(char** sentence,
+  int index, char* string)
 {
-  char* string=sentence_index_string(sentence, height);
-  *(sentence + height) =delete_string_character(string,
-    width, index);
+  *(sentence + index) = string; return sentence;
+}
+
+char** switch_sentence_strings(char** sentence,
+  int first, int second)
+{
+  char* switch_string = sentence_index_string(sentence,
+    first);
+  *(sentence + first) = sentence_index_string(sentence,
+    second);
+  sentence = allocate_sentence_string(sentence, second,
+    switch_string); return sentence;
+}
+
+char** switch_adjacent_strings(char** sentence,
+  int height)
+{
+  return switch_sentence_strings(sentence, height,
+    height + 1);
+}
+
+char** move_sentence_strings(char**sentence,int height,
+  int start)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    sentence = switch_adjacent_strings(sentence,index);
+  }
   return sentence;
+}
+
+int string_sentence_height(char** sentence, int width)
+{
+  int height = 0;
+  while(sentence_string_length(sentence, height) >=
+    width) { height = (height + 1); } return height;
+}
+
+int sentence_string_length(char** sentence, int index)
+{
+  char* string = sentence_index_string(sentence,index);
+  return calculate_string_length(string);
 }

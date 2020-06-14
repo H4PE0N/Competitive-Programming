@@ -18,7 +18,7 @@ integer_range_between       generate_random_integer
 
 convert_decimal_percent     integer_divisible_by_two
 
-integer_between_integers
+integer_between_integers    increase_integer_variable
 
 Made by Roy Hampus Fridholm
 </pre>

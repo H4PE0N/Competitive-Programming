@@ -19,7 +19,13 @@ sentence_index_string       compare_string_sentences
 
 string_sentence_stdout      allocate_sentence_character
 
-delete_sentence_character
+delete_sentence_character   switch_adjacent_strings
+
+allocate_sentence_string    switch_sentence_strings
+
+delete_sentence_string      sentence_string_length
+
+move_sentence_strings       string_sentence_height
 
 Made by Roy Hampus Fridholm
 </pre>

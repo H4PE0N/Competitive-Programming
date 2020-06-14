@@ -21,4 +21,22 @@ char** allocate_sentence_character(char**,
 char** delete_sentence_character(char**,
   int, int, int);
 
+char** allocate_sentence_string(char**,int,
+  char*);
+
+char** delete_sentence_string(char**, int,
+  int);
+
+char** move_sentence_strings(char**, int,
+  int);
+
+int string_sentence_height(char**, int);
+
+int sentence_string_length(char**, int);
+
+char** switch_sentence_strings(char**, int,
+  int);
+
+char** switch_adjacent_strings(char**,int);
+
 #endif

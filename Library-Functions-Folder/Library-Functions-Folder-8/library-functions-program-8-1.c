@@ -35,6 +35,11 @@ int integer_power_operation(int integer, int power)
   return product;
 }
 
+int increase_integer_variable(int integer)
+{
+  integer = (integer + 1); return integer;
+}
+
 int generate_random_integer(int minimum, int maximum)
 {
   return minimum + (rand() % (maximum - minimum + 1));

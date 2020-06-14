@@ -50,3 +50,9 @@ int integer_between_integers_test(int first,int second,
   double integer = integer_between_integers(first,
     second); return (integer == output);
 }
+
+int increase_integer_variable_test(int integer,
+  int output)
+{
+  return increase_integer_variable(integer) == output;
+}

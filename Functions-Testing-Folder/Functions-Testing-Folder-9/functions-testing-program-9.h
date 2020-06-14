@@ -15,4 +15,23 @@ int allocate_sentence_character_test(char**, int,
 int delete_sentence_character_test(char**, int,
   int, int, char**);
 
+int allocate_sentence_string_test(char**, int,
+  char*, char**);
+
+int switch_sentence_strings_test(char**, int, int,
+  char**);
+
+int delete_sentence_string_test(char**, int, int,
+  int, char**);
+
+int sentence_string_length_test(char**, int, int);
+
+int move_sentence_strings_test(char**, int, int,
+  char**);
+
+int string_sentence_height_test(char**, int, int);
+
+int switch_adjacent_strings_test(char**, int,
+  char**);
+
 #endif

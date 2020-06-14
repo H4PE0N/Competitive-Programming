@@ -14,7 +14,13 @@ allocate_sentence_character_test  delete_sentence_character_test
 
 sentence_index_string_test        compare_string_sentences_test
 
-generate_string_sentence_test
+generate_string_sentence_test     switch_adjacent_strings_test
+
+allocate_sentence_string_test     switch_sentence_strings_test
+
+delete_sentence_string_test       sentence_string_length_test
+
+move_sentence_strings_test        string_sentence_height_test
 
 Made by Roy Hampus Fridholm
 </pre>

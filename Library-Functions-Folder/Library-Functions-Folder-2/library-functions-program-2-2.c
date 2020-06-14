@@ -25,7 +25,8 @@ int** switch_matrix_arrays(int** matrix, int first,
 {
   int* switch_array = matrix_index_array(matrix,first);
   *(matrix + first)=matrix_index_array(matrix, second);
-  *(matrix + second) = switch_array; return matrix;
+  matrix = allocate_matrix_array(matrix, second,
+    switch_array); return matrix;
 }
 
 int** move_matrix_arrays(int** matrix, int height,
