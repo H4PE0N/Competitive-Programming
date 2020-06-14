@@ -11,62 +11,58 @@ library-functions-program-2.h"
 Library-Functions-Folder-3/\
 library-functions-program-3.h"
 
+int hashmap_keyword_value_test(int** hashmap,
+  int keyword, int output)
+{
+  int value = hashmap_keyword_value(hashmap, keyword);
+  return (value == output);
+}
+
+int delete_hashmap_keyword_test(int** hashmap,
+  int keyword, int** ouput)
+{
+  int length = integer_hashmap_length(hashmap);
+  hashmap = delete_hashmap_keyword(hashmap, length,
+    keyword);
+  return compare_matrix_arrays(hashmap,ouput,length,2);
+}
+
+int reduce_hashmap_value_test(int**hashmap,int keyword,
+  int** output)
+{
+  hashmap = reduce_hashmap_value(hashmap, keyword);
+  return compare_matrix_arrays(hashmap, output,
+    integer_hashmap_length(hashmap) - 1, 2);
+}
+
 int integer_hashmap_keywords_test(int** hashmap,
-  int value, int* i_keywords)
+  int value, int* output)
 {
   int* keywords = integer_hashmap_keywords(hashmap,
     value);
-  int length = integer_array_length(keywords);
-  return compare_integer_arrays(keywords, i_keywords,
-    length);
-}
-
-int hashmap_keyword_value_test(int** hashmap,
-  int keyword, int i_value)
-{
-  int value = hashmap_keyword_value(hashmap, keyword);
-  return (value == i_value);
-}
-
-int delete_hashmap_keyword_test(int** i_hashmap,
-  int keyword, int** o_hashmap)
-{
-  int length = integer_hashmap_length(i_hashmap);
-  i_hashmap = delete_hashmap_keyword(i_hashmap,length,
-    keyword);
-  return compare_matrix_arrays(i_hashmap, o_hashmap,
-    length, 2);
-}
-
-int reduce_hashmap_value_test(int** i_hashmap,
-  int keyword, int** o_hashmap)
-{
-  i_hashmap = reduce_hashmap_value(i_hashmap,keyword);
-  int length = integer_hashmap_length(i_hashmap);
-  return compare_matrix_arrays(i_hashmap, o_hashmap,
-    length - 1, 2);
+  return compare_integer_arrays(keywords, output,
+    integer_array_length(keywords));
 }
 
 int hashmap_index_value_test(int** hashmap, int index,
-  int i_value)
+  int output)
 {
   int value = hashmap_index_value(hashmap, index);
-  return (value == i_value);
+  return (value == output);
 }
 
-int hashmap_index_keyword_test(int**hashmap,int index,
-  int i_keyword)
+int hashmap_index_keyword_test(int** hashmap,int index,
+  int output)
 {
   int keyword = hashmap_index_keyword(hashmap, index);
-  return (keyword == i_keyword);
+  return (keyword == output);
 }
 
-int allocate_value_keyword_test(int* i_keywords,
-  int index, int** hashmap, int* o_keywords)
+int allocate_value_keyword_test(int*keywords,int index,
+  int** hashmap, int* output)
 {
-  i_keywords=allocate_value_keyword(i_keywords, index,
+  keywords = allocate_value_keyword(keywords, index,
     hashmap);
-  int length = integer_array_length(i_keywords);
-  return compare_integer_arrays(i_keywords,o_keywords,
-    length);
+  return compare_integer_arrays(keywords, output,
+    integer_array_length(keywords));
 }

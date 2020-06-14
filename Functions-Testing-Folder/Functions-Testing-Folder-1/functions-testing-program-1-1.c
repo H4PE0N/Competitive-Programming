@@ -7,86 +7,73 @@ library-functions-program-8.h"
 Library-Functions-Folder-1/\
 library-functions-program-1.h"
 
-int allocate_array_integer_test(int* i_array,
-  int index, int integer, int* o_array)
+int allocate_array_integer_test(int* array, int index,
+  int integer, int* output)
 {
-  i_array = allocate_array_integer(i_array, index,
-    integer);
-  return compare_integer_arrays(i_array, o_array,
-    index + 1);
+  array = allocate_array_integer(array,index,integer);
+  return compare_integer_arrays(array,output,index+1);
 }
 
-int delete_array_integer_test(int* i_array,
-  int length, int index, int* o_array)
+int delete_array_integer_test(int* array, int length,
+  int index, int* output)
 {
-  i_array = delete_array_integer(i_array, length,
-    index);
-  return compare_integer_arrays(i_array, o_array,
-    length);
+  array = delete_array_integer(array, length, index);
+  return compare_integer_arrays(array,output,length);
 }
 
-int allocate_array_integers_test(int* i_array,
-  int length, int* o_array)
+int allocate_array_integers_test(int* array,int length,
+  int* output)
 {
-  i_array =allocate_array_integers(i_array, length);
-  return compare_integer_arrays(i_array, o_array,
-    length);
+  array =allocate_array_integers(array, length);
+  return compare_integer_arrays(array, output, length);
 }
 
-int generate_integer_array_test(int length,
-  int* i_array)
+int generate_integer_array_test(int length,int* output)
 {
   int* array = generate_integer_array(length);
-  return compare_integer_arrays(array, i_array,
-    length);
+  return compare_integer_arrays(array, output, length);
 }
 
-int integer_array_length_test(int* array,
-  int i_length)
+int integer_array_length_test(int* array, int output)
 {
   int length = integer_array_length(array);
-  return (length == i_length);
+  return (length == output);
 }
 
-int array_contains_integer_test(int* array,
-  int length, int integer, int boolean)
+int array_contains_integer_test(int* array, int length,
+  int integer, int output)
 {
-  int output = array_contains_integer(array, length,
-    integer); return (output == boolean);
+  int boolean = array_contains_integer(array, length,
+    integer); return (boolean == output);
 }
 
-int switch_adjacent_integers_test(int* i_array,
-  int index, int* o_array)
+int switch_adjacent_integers_test(int* array,int index,
+  int* output)
 {
-  i_array = switch_adjacent_integers(i_array,index);
-  int length = integer_array_length(i_array);
-  return compare_integer_arrays(i_array, o_array,
-    length);
+  array = switch_adjacent_integers(array, index);
+  int length = integer_array_length(array);
+  return compare_integer_arrays(array, output, length);
 }
 
-int sort_integer_iteration_test(int* i_array,
-  int index, int* o_array)
+int sort_integer_iteration_test(int* array, int index,
+  int* output)
 {
-  i_array = sort_integer_iteration(i_array, index);
-  int length = integer_array_length(i_array);
-  return compare_integer_arrays(i_array, o_array,
-    length);
+  array = sort_integer_iteration(array, index);
+  int length = integer_array_length(array);
+  return compare_integer_arrays(array, output, length);
 }
 
-int sort_integer_array_test(int* i_array,int length,
-  int* o_array)
+int sort_integer_array_test(int* array, int length,
+  int* output)
 {
-  i_array = sort_integer_array(i_array, length);
-  return compare_integer_arrays(i_array, o_array,
-    length);
+  array = sort_integer_array(array, length);
+  return compare_integer_arrays(array, output, length);
 }
 
-int add_array_integer_test(int* i_array, int length,
-  int integer, int* o_array)
+int add_array_integer_test(int* array, int length,
+  int integer, int* output)
 {
-  i_array = add_array_integer(i_array, length,
-    integer);
-  length = integer_array_length(i_array);
-  return compare_integer_arrays(i_array, o_array,
-    length);
+  array = add_array_integer(array, length, integer);
+  length = integer_array_length(array);
+  return compare_integer_arrays(array, output, length);
 }

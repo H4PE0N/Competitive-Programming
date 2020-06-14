@@ -8,80 +8,76 @@ Library-Functions-Folder-2/\
 library-functions-program-2.h"
 
 int generate_matrix_array_test(int height, int width,
-  int** i_matrix)
+  int** output)
 {
   int** matrix = generate_matrix_array(height, width);
-  return compare_matrix_arrays(matrix,i_matrix,height,
+  return compare_matrix_arrays(matrix, output, height,
     width);
 }
 
-int allocate_matrix_integer_test(int** i_matrix,
-  int height, int width, int integer, int** o_matrix)
+int allocate_matrix_integer_test(int** matrix,
+  int height, int width, int integer, int** output)
 {
-  i_matrix = allocate_matrix_integer(i_matrix, height,
-    width, integer);
-  return compare_matrix_arrays(i_matrix, o_matrix,
-    height, width);
+  matrix = allocate_matrix_integer(matrix,height,width,
+    integer);
+  return compare_matrix_arrays(matrix, output, height,
+    width);
 }
 
-int delete_matrix_integer_test(int** i_matrix,
-  int height, int width, int index, int** o_matrix)
+int delete_matrix_integer_test(int** matrix,int height,
+  int width, int index, int** output)
 {
-  i_matrix = delete_matrix_integer(i_matrix, height,
-    width, index);
-  return compare_matrix_arrays(i_matrix, o_matrix,
-    height, width);
+  matrix = delete_matrix_integer(matrix, height, width,
+    index);
+  return compare_matrix_arrays(matrix, output, height,
+    width);
 }
 
-int integer_matrix_height_test(int** matrix,int width,
-  int i_height)
+int integer_matrix_height_test(int** matrix, int width,
+  int output)
 {
   int height = integer_matrix_height(matrix, width);
-  return (height == i_height);
+  return (height == output);
 }
 
 int matrix_contains_integer_test(int** matrix,
   int height, int width, int integer, int output)
 {
-  return matrix_contains_integer(matrix, height,
-    width, integer) == output;
+  return matrix_contains_integer(matrix, height, width,
+    integer) == output;
 }
 
-int remove_matrix_integer_test(int** i_matrix,
-  int height, int integer, int** o_matrix)
+int remove_matrix_integer_test(int** matrix,int height,
+  int integer, int** output)
 {
-  i_matrix = remove_matrix_integer(i_matrix, height,
-    integer);
-  int width = matrix_array_length(i_matrix, 0);
-  return compare_matrix_arrays(i_matrix, o_matrix,
-    height, width);
+  matrix=remove_matrix_integer(matrix, height,integer);
+  int width = matrix_array_length(matrix, 0);
+  return compare_matrix_arrays(matrix, output, height,
+    width);
 }
 
-int add_matrix_integer_test(int** i_matrix,
-  int i_height, int width, int integer,int** o_matrix)
+int add_matrix_integer_test(int** matrix, int height,
+  int width, int integer, int** output)
 {
-  int height = integer_matrix_height(i_matrix, width);
-  i_matrix = add_matrix_integer(i_matrix, height,
-    integer);
-  return compare_matrix_arrays(i_matrix, o_matrix,
-    i_height, width);
+  matrix = add_matrix_integer(matrix,
+    integer_matrix_height(matrix, width), integer);
+  return compare_matrix_arrays(matrix, output, height,
+    width);
 }
 
-int remove_matrix_integers_test(int** i_matrix,
-  int width, int integer, int** o_matrix)
+int remove_matrix_integers_test(int** matrix,int width,
+  int integer, int** output)
 {
-  i_matrix = remove_matrix_integers(i_matrix, width,
-    integer);
-  int height = integer_matrix_height(i_matrix, width);
-  return compare_matrix_arrays(i_matrix, o_matrix,
-    height, width);
+  matrix=remove_matrix_integers(matrix, width,integer);
+  int height = integer_matrix_height(matrix, width);
+  return compare_matrix_arrays(matrix, output, height,
+    width);
 }
 
-int switch_adjacent_arrays_test(int** i_matrix,
-  int height, int** o_matrix)
+int switch_adjacent_arrays_test(int**matrix,int height,
+  int** output)
 {
-  int width = matrix_array_length(i_matrix, 0);
-  i_matrix = switch_adjacent_arrays(i_matrix, height);
-  return compare_matrix_arrays(i_matrix, o_matrix,
-    height, width);
+  matrix = switch_adjacent_arrays(matrix, height);
+  return compare_matrix_arrays(matrix, output, height,
+    matrix_array_length(matrix, 0));
 }

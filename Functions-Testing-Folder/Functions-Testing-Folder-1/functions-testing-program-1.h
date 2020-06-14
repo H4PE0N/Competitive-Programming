@@ -44,9 +44,6 @@ int remove_array_integers_test(int*, int,
 int integers_range_between_test(int*, int,
   int, int);
 
-int generate_random_integers_test(int, int,
-  int, int, int);
-
 int switch_array_integers_test(int*, int,
   int, int*);
 

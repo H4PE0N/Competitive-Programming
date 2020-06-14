@@ -24,15 +24,13 @@ switch_adjacent_integers_test     delete_array_integer_test
 
 compare_integer_arrays_test       remove_array_integers_test
 
-array_integer_amount_test         generate_random_integers_test
+array_integer_amount_test         generate_integer_vector_test
 
 integers_range_between_test       switch_array_integers_test
 
 compare_integer_arrays_test       shuffle_integer_array_test
 
 duplicate_integer_array_test      array_index_integer_test
-
-generate_integer_vector_test
 
 Made by Roy Hampus Fridholm
 </pre>
