@@ -32,3 +32,9 @@ int** allocate_index_value(int** hashmap, int index,
   hashmap = allocate_matrix_integer(hashmap, index, 1,
     value); return hashmap;
 }
+
+int compare_hashmap_arrays(int** first, int** second,
+  int length)
+{
+  return compare_matrix_content(first,second,length,2);
+}

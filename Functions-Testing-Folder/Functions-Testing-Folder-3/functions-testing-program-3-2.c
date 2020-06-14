@@ -19,20 +19,20 @@ int hashmap_keyword_value_test(int** hashmap,
 }
 
 int delete_hashmap_keyword_test(int** hashmap,
-  int keyword, int** ouput)
+  int keyword, int** output)
 {
   int length = integer_hashmap_length(hashmap);
   hashmap = delete_hashmap_keyword(hashmap, length,
     keyword);
-  return compare_matrix_arrays(hashmap,ouput,length,2);
+  return compare_hashmap_arrays(hashmap,output,length);
 }
 
 int reduce_hashmap_value_test(int**hashmap,int keyword,
   int** output)
 {
   hashmap = reduce_hashmap_value(hashmap, keyword);
-  return compare_matrix_arrays(hashmap, output,
-    integer_hashmap_length(hashmap) - 1, 2);
+  int length = integer_hashmap_length(hashmap);
+  return compare_hashmap_arrays(hashmap,output,length);
 }
 
 int integer_hashmap_keywords_test(int** hashmap,
@@ -73,8 +73,7 @@ int allocate_keyword_value_test(int** hashmap,
   hashmap = allocate_keyword_value(hashmap, keyword,
     value);
   int length = integer_hashmap_length(hashmap);
-  return compare_matrix_arrays(hashmap, output, length,
-    2);
+  return compare_hashmap_arrays(hashmap,output,length);
 }
 
 int allocate_index_value_test(int** hashmap, int index,
@@ -82,6 +81,12 @@ int allocate_index_value_test(int** hashmap, int index,
 {
   hashmap = allocate_index_value(hashmap, index,value);
   int length = integer_hashmap_length(hashmap);
-  return compare_matrix_arrays(hashmap, output, length,
-    2);
+  return compare_hashmap_arrays(hashmap,output,length);
+}
+
+int compare_hashmap_arrays_test(int** first,
+  int** second, int length, int output)
+{
+  int boolean = compare_hashmap_arrays(first, second,
+    length); return (boolean == output);
 }

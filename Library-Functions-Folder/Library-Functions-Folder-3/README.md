@@ -33,7 +33,9 @@ hashmap_index_value           hashmap_index_keyword
 
 allocate_value_keyword        allocate_keyword_value
 
-allocate_index_value
+allocate_index_value          compare_hashmap_arrays
+
+increase_hashmap_value
 
 Made by Roy Hampus Fridholm
 </pre>

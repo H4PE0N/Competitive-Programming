@@ -52,4 +52,7 @@ int** allocate_index_value(int**, int,
 int** allocate_keyword_value(int**, int,
   int);
 
+int compare_hashmap_arrays(int**, int**,
+  int);
+
 #endif
