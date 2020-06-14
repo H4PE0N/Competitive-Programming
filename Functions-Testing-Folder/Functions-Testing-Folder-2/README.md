@@ -30,5 +30,7 @@ compare_matrix_content_test     matrix_index_array_test
 
 matrix_array_length_test        matrix_array_contains_test
 
+allocate_matrix_array_test      delete_matrix_array_test
+
 Made by Roy Hampus Fridholm
 </pre>

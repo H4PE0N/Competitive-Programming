@@ -33,7 +33,9 @@ sort_integer_matrix         compare_matrix_content
 
 matrix_index_array          matrix_array_length
 
-matrix_array_contains
+matrix_array_contains       allocate_matrix_array
+
+delete_matrix_array
 
 Made by Roy Hampus Fridholm
 </pre>

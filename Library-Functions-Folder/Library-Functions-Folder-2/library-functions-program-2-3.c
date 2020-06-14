@@ -57,3 +57,18 @@ int compare_matrix_arrays(int** first, int** second,
   }
   return true;
 }
+
+int** allocate_matrix_array(int** matrix, int index,
+  int* array)
+{
+  *(matrix + index) = array; return matrix;
+}
+
+int** delete_matrix_array(int** matrix, int height,
+  int index)
+{
+  matrix = move_matrix_arrays(matrix, height, index);
+  int length = matrix_array_length(matrix, 0);
+  int* array = generate_integer_array(length);
+  return allocate_matrix_array(matrix,height-1, array);
+}

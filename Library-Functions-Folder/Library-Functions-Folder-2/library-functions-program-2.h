@@ -57,4 +57,10 @@ int matrix_array_length(int**, int);
 int matrix_array_contains(int**, int,
   int);
 
+int** delete_matrix_array(int**, int,
+  int);
+
+int** allocate_matrix_array(int**, int,
+  int*);
+
 #endif
