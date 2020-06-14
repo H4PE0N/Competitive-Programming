@@ -24,11 +24,11 @@ library-functions-program-8.h"
 
 int array_integers_sequences(int* array, int length)
 {
-  int combinations = 1;
+  int sequences = 1;
   for(int index = 0; index < length; index = index + 1)
   {
     int integer = array_index_integer(array, index);
-    combinations = (combinations * integer);
+    sequences = (sequences * integer);
   }
-  return combinations;
+  return sequences;
 }

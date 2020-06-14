@@ -60,3 +60,13 @@ int* generate_integer_vector(int first, int second)
   vector = allocate_array_integer(vector, 0, first);
   return allocate_array_integer(vector, 1, second);
 }
+
+int integer_array_total(int* array, int length)
+{
+  int total = 0;
+  for(int index = 0; index < length; index = index + 1)
+  {
+    total = (total + array_index_integer(array,index));
+  }
+  return total;
+}

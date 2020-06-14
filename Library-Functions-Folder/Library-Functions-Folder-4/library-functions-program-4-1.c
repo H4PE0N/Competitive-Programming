@@ -10,23 +10,6 @@ library-functions-program-4.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-char* allocate_string_character(char* string, int index,
-  char character)
-{
-  *(string + index) = character; return string;
-}
-
-char* allocate_string_characters(char* string,
-  int length)
-{
-  for(int index = 0; index < length; index = index + 1)
-  {
-    string = allocate_string_character(string, index,
-      '\0');
-  }
-  return string;
-}
-
 char* generate_character_string(int length)
 {
   char* string = malloc(sizeof(string) * (length + 1));
@@ -51,6 +34,12 @@ int string_contains_character(char* string, int length,
   return false;
 }
 
+char* allocate_string_character(char* string,int index,
+  char character)
+{
+  *(string + index) = character; return string;
+}
+
 char* switch_string_characters(char* string, int first,
   int second)
 {
@@ -71,6 +60,17 @@ char* move_string_characters(char* string, int length,
   return string;
 }
 
+char* allocate_string_characters(char* string,
+  int length)
+{
+  for(int index = 0; index < length; index = index + 1)
+  {
+    string = allocate_string_character(string, index,
+      '\0');
+  }
+  return string;
+}
+
 char* remove_string_character(char* string, int length,
   char character)
 {
@@ -81,7 +81,7 @@ char* remove_string_character(char* string, int length,
       continue;
     start = index; break;
   }
-  return delete_string_character(string, length, start);
+  return delete_string_character(string, length,start);
 }
 
 char* add_string_character(char* string, int length,

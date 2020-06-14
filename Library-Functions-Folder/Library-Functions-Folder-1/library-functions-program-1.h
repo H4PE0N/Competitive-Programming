@@ -62,4 +62,6 @@ int array_index_integer(int*, int);
 
 int* generate_integer_vector(int, int);
 
+int integer_array_total(int*, int);
+
 #endif

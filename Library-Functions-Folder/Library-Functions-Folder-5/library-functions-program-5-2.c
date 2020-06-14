@@ -42,18 +42,14 @@ int binary_range_between(char* binary, int minimum,
 {
   int integer = convert_binary_integer(binary);
   int output = integer_range_between(integer, minimum,
-    maximum);
-  return output;
+    maximum); return output;
 }
 
 int increase_binary_integer(char* binary, int index,
   int integer)
 {
   int length = calculate_string_length(binary);
-  if(string_index_character(binary, index) == '1')
-  {
-    return integer +
-      calculate_bit_integer(length - (index + 1));
-  }
-  return integer;
+  if(string_index_character(binary, index) == '0')
+    return integer;
+  return integer+calculate_bit_integer(length-index-1);
 }

@@ -20,3 +20,10 @@ int generate_integer_vector_test(int first, int second,
   int* vector = generate_integer_vector(first, second);
   return compare_integer_arrays(vector, output, 2);
 }
+
+int integer_array_total_test(int* array, int length,
+  int output)
+{
+  int total = integer_array_total(array, length);
+  return (total == output);
+}

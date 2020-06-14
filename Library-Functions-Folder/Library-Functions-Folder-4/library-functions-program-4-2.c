@@ -11,6 +11,19 @@ library-functions-program-4.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
+char generate_random_character(int minimum,int maximum)
+{
+  char character = generate_random_integer(minimum,
+    maximum); return character;
+}
+
+int character_range_between(char character,int minimum,
+  int maximum)
+{
+  int output = (character <= maximum && character >=
+    minimum); return output;
+}
+
 char* remove_string_characters(char* string,int length,
   char character)
 {
@@ -21,21 +34,6 @@ char* remove_string_characters(char* string,int length,
       character);
   }
   return string;
-}
-
-char generate_random_character(int minimum,int maximum)
-{
-  char character = generate_random_integer(minimum,
-    maximum);
-  return character;
-}
-
-int character_range_between(char character,int minimum,
-  int maximum)
-{
-  int output = (character <= maximum && character >=
-    minimum);
-  return output;
 }
 
 char* generate_random_string(int length, int minimum,
@@ -61,10 +59,8 @@ char* shuffle_character_string(char* string,int length)
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    int random_index = generate_random_integer(0,
-      length - 1);
     string = switch_string_characters(string, index,
-      random_index);
+      generate_random_integer(0,length - 1));
   }
   return string;
 }

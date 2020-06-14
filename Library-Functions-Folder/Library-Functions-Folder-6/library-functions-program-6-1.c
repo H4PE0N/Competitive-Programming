@@ -24,19 +24,22 @@ library-functions-program-8.h"
 
 double integer_array_average(int* array, int length)
 {
-  double array_total = 0;
-  for(int index = 0; index < length; index = index + 1)
-  {
-    array_total += (double) array_index_integer(array,
-      index);
-  }
-  return (array_total / length);
+  int total = integer_array_total(array, length);
+  return (total / length);
 }
 
 double integer_odd_median(int* array, int length)
 {
   array = sort_integer_array(array, length);
   return array_index_integer(array, (length - 1) / 2);
+}
+
+double array_integer_frequency(int* array, int length,
+  int integer)
+{
+  int amount = array_integer_amount(array, length,
+    integer);
+  return ((double) amount / (double) length);
 }
 
 double integer_even_median(int* array, int length)
@@ -48,6 +51,11 @@ double integer_even_median(int* array, int length)
   return integer_between_integers(first, second);
 }
 
+int greater_integer_amount(int current, int typical)
+{
+  int boolean = (current > typical); return boolean;
+}
+
 double integer_array_median(int* array, int length)
 {
   if(integer_divisible_by_two(length))
@@ -55,11 +63,6 @@ double integer_array_median(int* array, int length)
     return integer_odd_median(array, length);
   }
   return integer_even_median(array, length);
-}
-
-int greater_integer_amount(int current, int typical)
-{
-  int boolean = (current > typical); return boolean;
 }
 
 int* update_typical_variables(int*variables,int amount,
@@ -90,18 +93,9 @@ int integer_array_typical(int* array, int length)
   return array_index_integer(variables, 1);
 }
 
-double array_integer_frequency(int* array, int length,
-  int integer)
-{
-  int amount = array_integer_amount(array, length,
-    integer);
-  return ((double) amount / (double) length);
-}
-
 double array_integer_percent(int* array, int length,
   int integer)
 {
   double amount = array_integer_frequency(array,length,
-    integer);
-  return convert_decimal_percent(amount);
+    integer); return convert_decimal_percent(amount);
 }

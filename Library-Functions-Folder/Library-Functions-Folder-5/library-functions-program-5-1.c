@@ -14,18 +14,17 @@ library-functions-program-5.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
+int binary_integer_enough(char* binary, int total,
+  int integer)
+{
+  int length = calculate_string_length(binary);
+  int product = calculate_bit_integer(total -1-length);
+  return  ( (integer - product) >= 0);
+}
+
 int calculate_bit_integer(int power_integer)
 {
   return integer_power_operation(2, power_integer);
-}
-
-int binary_integer_enough(char* binary, int i_length,
-  int integer)
-{
-  int length = calculate_string_length(binary),
-    power_integer = (i_length - 1 - length);
-  int product = calculate_bit_integer(power_integer);
-  return  ( (integer - product) >= 0);
 }
 
 int reduce_binary_integer(char* binary, int length,
@@ -39,15 +38,22 @@ int reduce_binary_integer(char* binary, int length,
   else return integer;
 }
 
-char* allocate_binary_bit(char* binary, int i_length,
+char* allocate_binary_bit(char* binary, int total,
   int integer)
 {
   int length = calculate_string_length(binary);
-  if(binary_integer_enough(binary, i_length, integer))
+  if(binary_integer_enough(binary, total, integer))
   {
     return add_string_character(binary, length, '1');
   }
   return add_string_character(binary, length, '0');
+}
+
+int calculate_real_length(int integer)
+{
+  int length = 0;
+  while(integer > calculate_bit_integer(length))
+  { length = (length + 1); } return length;
 }
 
 char* allocate_binary_bits(char* binary, int length,
@@ -63,18 +69,10 @@ char* allocate_binary_bits(char* binary, int length,
   return binary;
 }
 
-int calculate_real_length(int integer)
-{
-  int length = 0;
-  while(integer > calculate_bit_integer(length))
-  { length = (length + 1); } return length;
-}
-
 int calculate_nearest_length(int integer)
 {
   int length=calculate_real_length(integer), index = 2;
-  while(length > calculate_bit_integer(index))
-    index = (index + 1);
+  while(length > calculate_bit_integer(index)) index++;
   return calculate_bit_integer(index);
 }
 
