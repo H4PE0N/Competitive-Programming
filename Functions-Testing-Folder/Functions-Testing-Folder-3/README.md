@@ -18,7 +18,7 @@ hashmap_keyword_exists_test       convert_array_hashmap_test
 
 hashmap_keyword_index_test        hashmap_keyword_array_test
 
-integer_value_keywords_test       integer_hashmap_keywords_test
+hashmap_value_keywords_test       integer_hashmap_keywords_test
 
 hashmap_keyword_value_test        reduce_hashmap_value_test
 
@@ -26,7 +26,9 @@ delete_hashmap_keyword_test       generate_hashmap_keyword_test
 
 hashmap_index_value_test          hashmap_index_keyword_test
 
-allocate_value_keyword_test
+allocate_value_keyword_test       allocate_keyword_value_test
+
+allocate_index_value_test         increase_keyword_value_test
 
 Made by Roy Hampus Fridholm
 </pre>

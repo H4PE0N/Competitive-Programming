@@ -66,3 +66,22 @@ int allocate_value_keyword_test(int*keywords,int index,
   return compare_integer_arrays(keywords, output,
     integer_array_length(keywords));
 }
+
+int allocate_keyword_value_test(int** hashmap,
+  int keyword, int value, int** output)
+{
+  hashmap = allocate_keyword_value(hashmap, keyword,
+    value);
+  int length = integer_hashmap_length(hashmap);
+  return compare_matrix_arrays(hashmap, output, length,
+    2);
+}
+
+int allocate_index_value_test(int** hashmap, int index,
+  int value, int** output)
+{
+  hashmap = allocate_index_value(hashmap, index,value);
+  int length = integer_hashmap_length(hashmap);
+  return compare_matrix_arrays(hashmap, output, length,
+    2);
+}

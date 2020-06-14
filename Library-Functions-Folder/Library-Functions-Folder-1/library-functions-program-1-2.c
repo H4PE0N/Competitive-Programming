@@ -60,7 +60,7 @@ int integers_range_between(int* array, int minimum,
   int maximum)
 {
   int length = integer_array_length(array);
-  for(int index = 0; index < length; index = index+1)
+  for(int index = 0; index < length; index = index + 1)
   {
     int integer = array_index_integer(array, index);
     if(!integer_range_between(integer, minimum,

@@ -10,12 +10,6 @@ library-functions-program-1.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int* allocate_array_integer(int* array, int index,
-  int integer)
-{
-  *(array + index) = integer; return array;
-}
-
 int* allocate_array_integers(int* array, int length)
 {
   for(int index = 0; index < length; index = index + 1)
@@ -23,6 +17,12 @@ int* allocate_array_integers(int* array, int length)
     array = allocate_array_integer(array, index, '\0');
   }
   return array;
+}
+
+int* allocate_array_integer(int* array, int index,
+  int integer)
+{
+  *(array + index) = integer; return array;
 }
 
 int* generate_integer_array(int length)

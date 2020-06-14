@@ -15,20 +15,11 @@ library-functions-program-2.h"
 Library-Functions-Folder-3/\
 library-functions-program-3.h"
 
-int* allocate_value_keyword(int* keywords, int index,
-  int** hashmap)
+int* hashmap_value_keywords(int** hashmap, int length,
+  int value)
 {
-  int length = integer_array_length(keywords);
-  keywords = add_array_integer(keywords, length,
-    hashmap_index_keyword(hashmap, index));
-  return keywords;
-}
-
-int* integer_value_keywords(int** hashmap, int value,
-  int i_length)
-{
-  int* keywords = generate_integer_array(i_length);
-  for(int index = 0; index < i_length; index = index+1)
+  int* keywords = generate_integer_array(length);
+  for(int index = 0; index < length; index = index + 1)
   {
     if(hashmap_index_value(hashmap, index) != value)
       continue;
@@ -41,7 +32,16 @@ int* integer_value_keywords(int** hashmap, int value,
 int* integer_hashmap_keywords(int** hashmap, int value)
 {
   int length = integer_hashmap_length(hashmap);
-  return integer_value_keywords(hashmap, value, length);
+  return hashmap_value_keywords(hashmap, length,value);
+}
+
+int* allocate_value_keyword(int* keywords, int index,
+  int** hashmap)
+{
+  int length = integer_array_length(keywords);
+  keywords = add_array_integer(keywords, length,
+    hashmap_index_keyword(hashmap, index));
+  return keywords;
 }
 
 int** delete_hashmap_keyword(int** hashmap, int length,

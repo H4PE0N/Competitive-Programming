@@ -26,17 +26,17 @@ int** sort_integer_matrix(int** matrix, int height)
   return matrix;
 }
 
+int* matrix_index_array(int** matrix, int index)
+{
+  int* array = *(matrix + index); return array;
+}
+
 int compare_matrix_content(int** first, int** second,
   int height, int width)
 {
   first = sort_integer_matrix(first, height);
   return compare_matrix_arrays(first,
     sort_integer_matrix(first, height), height, width);
-}
-
-int* matrix_index_array(int** matrix, int index)
-{
-  int* array = *(matrix + index); return array;
 }
 
 int matrix_array_length(int** matrix, int index)
