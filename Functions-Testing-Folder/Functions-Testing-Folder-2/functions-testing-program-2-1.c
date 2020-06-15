@@ -25,10 +25,10 @@ int allocate_matrix_integer_test(int** matrix,
 }
 
 int delete_matrix_integer_test(int** matrix,int height,
-  int width, int index, int** output)
+  int index, int** output)
 {
-  matrix = delete_matrix_integer(matrix, height, width,
-    index);
+  matrix = delete_matrix_integer(matrix, height,index);
+  int width = matrix_array_length(matrix, height);
   return compare_matrix_arrays(matrix, output, height,
     width);
 }

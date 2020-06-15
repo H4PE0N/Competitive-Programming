@@ -7,7 +7,7 @@ int generate_matrix_array_test(int, int, int**);
 int allocate_matrix_integer_test(int**,int,int,
   int, int**);
 
-int delete_matrix_integer_test(int**,int,int,int,
+int delete_matrix_integer_test(int**, int, int,
   int**);
 
 int integer_matrix_height_test(int**,int,int);

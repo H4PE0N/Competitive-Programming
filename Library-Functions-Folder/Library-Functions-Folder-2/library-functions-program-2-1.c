@@ -33,9 +33,10 @@ int** allocate_matrix_integer(int** matrix, int height,
 }
 
 int** delete_matrix_integer(int** matrix, int height,
-  int width, int index)
+  int index)
 {
   int* array = matrix_index_array(matrix, height);
+  int width = matrix_array_length(matrix, height);
   *(matrix + height) = delete_array_integer(array,
     width, index); return matrix;
 }

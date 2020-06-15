@@ -8,7 +8,7 @@ int** allocate_matrix_integer(int**,int,
   int, int);
 
 int** delete_matrix_integer(int**, int,
-  int, int);
+  int);
 
 int integer_matrix_height(int**,int);
 
