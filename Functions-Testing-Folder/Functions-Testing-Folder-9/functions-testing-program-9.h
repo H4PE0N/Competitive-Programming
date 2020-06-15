@@ -13,7 +13,7 @@ int allocate_sentence_character_test(char**, int,
   int, char, char**);
 
 int delete_sentence_character_test(char**, int,
-  int, int, char**);
+  int, char**);
 
 int allocate_sentence_string_test(char**, int,
   char*, char**);
@@ -22,7 +22,7 @@ int switch_sentence_strings_test(char**, int, int,
   char**);
 
 int delete_sentence_string_test(char**, int, int,
-  int, char**);
+  char**);
 
 int sentence_string_length_test(char**, int, int);
 
@@ -33,5 +33,8 @@ int string_sentence_height_test(char**, int, int);
 
 int switch_adjacent_strings_test(char**, int,
   char**);
+
+int duplicate_string_sentence_test(char**, int,
+  int, char**);
 
 #endif

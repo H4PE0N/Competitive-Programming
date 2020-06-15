@@ -46,9 +46,9 @@ int shuffle_integer_matrix_test(int**matrix,int height,
 int duplicate_integer_matrix_test(int** matrix,
   int height, int width, int** output)
 {
-  matrix = duplicate_integer_matrix(matrix, height,
+  int** doublet=duplicate_integer_matrix(matrix,height,
     width);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_matrix_arrays(doublet, output, height,
     width);
 }
 

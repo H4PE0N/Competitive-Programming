@@ -13,8 +13,9 @@ library-functions-program-9.h"
 
 char** generate_string_sentence(int height, int width)
 {
-  char** sentence = malloc(sizeof(*sentence) * height);
-  for(int index = 0; index < height; index = index + 1)
+  char** sentence = malloc(sizeof(*sentence) *
+    (height + 1));
+  for(int index = 0; index <= height; index = index + 1)
   {
     *(sentence + index) = generate_character_string(
       width);
@@ -76,7 +77,7 @@ char** switch_adjacent_strings(char** sentence,
 char** move_sentence_strings(char**sentence,int height,
   int start)
 {
-  for(int index = 0; index < height; index = index + 1)
+  for(int index = start; index < (height - 1); index++)
   {
     sentence = switch_adjacent_strings(sentence,index);
   }

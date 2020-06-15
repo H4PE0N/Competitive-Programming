@@ -27,5 +27,7 @@ delete_sentence_string      sentence_string_length
 
 move_sentence_strings       string_sentence_height
 
+duplicate_string_sentence
+
 Made by Roy Hampus Fridholm
 </pre>

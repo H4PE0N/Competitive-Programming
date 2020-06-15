@@ -19,7 +19,7 @@ char** allocate_sentence_character(char**,
   int, int, char);
 
 char** delete_sentence_character(char**,
-  int, int, int);
+  int, int);
 
 char** allocate_sentence_string(char**,int,
   char*);
@@ -38,5 +38,8 @@ char** switch_sentence_strings(char**, int,
   int);
 
 char** switch_adjacent_strings(char**,int);
+
+char** duplicate_string_sentence(char**,
+  int, int);
 
 #endif

@@ -73,17 +73,17 @@ int** shuffle_integer_matrix(int** matrix, int height)
   return matrix;
 }
 
-int** duplicate_integer_matrix(int** i_matrix,
-  int height, int width)
+int** duplicate_integer_matrix(int** matrix,int height,
+  int width)
 {
-  int** matrix = generate_matrix_array(height, width);
+  int** doublet = generate_matrix_array(height, width);
   for(int index = 0; index < height; index = index + 1)
   {
-    int* array = matrix_index_array(i_matrix, index);
-    *(matrix + index) =duplicate_integer_array(array,
+    int* array = matrix_index_array(matrix, index);
+    *(doublet + index) =duplicate_integer_array(array,
       width);
   }
-  return matrix;
+  return doublet;
 }
 
 int** remove_matrix_integers(int** matrix, int width,

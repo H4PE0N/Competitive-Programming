@@ -22,5 +22,7 @@ delete_sentence_string_test       sentence_string_length_test
 
 move_sentence_strings_test        string_sentence_height_test
 
+duplicate_string_sentence_test
+
 Made by Roy Hampus Fridholm
 </pre>

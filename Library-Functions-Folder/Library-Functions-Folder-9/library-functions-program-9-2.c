@@ -12,12 +12,12 @@ Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
 char** delete_sentence_character(char** sentence,
-  int height, int width, int index)
+  int height, int width)
 {
   char* string=sentence_index_string(sentence, height);
+  int length = sentence_string_length(sentence, height);
   *(sentence + height) =delete_string_character(string,
-    width, index);
-  return sentence;
+    length, width); return sentence;
 }
 
 char** delete_sentence_string(char** sentence,
@@ -51,4 +51,18 @@ char** generate_random_sentence(int height, int width,
       minimum, maximum);
   }
   return sentence;
+}
+
+char** duplicate_string_sentence(char** sentence,
+  int height, int width)
+{
+  char** doublet = generate_string_sentence(height,
+    width);
+  for(int index = 0; index < height; index = index + 1)
+  {
+    char* string=sentence_index_string(sentence,index);
+    *(doublet + index) = duplicate_character_string(
+      string, width);
+  }
+  return doublet;
 }
