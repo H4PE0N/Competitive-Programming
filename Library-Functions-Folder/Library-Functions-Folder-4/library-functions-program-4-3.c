@@ -86,3 +86,11 @@ char* delete_string_character(char* string, int length,
   return allocate_string_character(string, length - 1,
     '\0');
 }
+
+int compare_string_characters(char* string, int first,
+  int second)
+{
+  char character=string_index_character(string, first);
+  return (character == string_index_character(string,
+    second));
+}

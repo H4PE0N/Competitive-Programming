@@ -74,4 +74,7 @@ char higher_alphabet_character(int);
 char* delete_string_character(char*,int,
   int);
 
+int compare_string_characters(char*,int,
+  int);
+
 #endif

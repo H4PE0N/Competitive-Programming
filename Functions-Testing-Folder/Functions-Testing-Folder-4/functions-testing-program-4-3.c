@@ -44,3 +44,10 @@ int delete_string_character_test(char* string,
   return compare_character_strings(string, output,
     length);
 }
+
+int compare_string_characters_test(char* string,
+  int first, int second, int output)
+{
+  int boolean = compare_string_characters(string,first,
+    second); return (boolean == output);
+}
