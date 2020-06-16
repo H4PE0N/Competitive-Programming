@@ -64,4 +64,7 @@ int* generate_integer_vector(int, int);
 
 int integer_array_total(int*, int);
 
+int compare_array_integers(int*, int,
+  int);
+
 #endif

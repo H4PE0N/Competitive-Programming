@@ -27,3 +27,10 @@ int integer_array_total_test(int* array, int length,
   int total = integer_array_total(array, length);
   return (total == output);
 }
+
+int compare_array_integers_test(int* array, int first,
+  int second, int output)
+{
+  int boolean = compare_array_integers(array, first,
+    second); return (boolean == output);
+}

@@ -37,7 +37,7 @@ compare_integers_content    duplicate_integer_array
 
 array_index_integer         generate_integer_vector
 
-integer_array_total
+integer_array_total         compare_array_integers
 
 Made by Roy Hampus Fridholm
 </pre>

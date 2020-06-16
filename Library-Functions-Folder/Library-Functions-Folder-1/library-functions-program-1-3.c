@@ -70,3 +70,10 @@ int integer_array_total(int* array, int length)
   }
   return total;
 }
+
+int compare_array_integers(int* array, int first,
+  int second)
+{
+  int integer = array_index_integer(array, first);
+  return (integer==array_index_integer(array, second));
+}

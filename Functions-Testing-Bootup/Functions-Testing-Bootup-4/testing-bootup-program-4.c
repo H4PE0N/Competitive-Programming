@@ -47,15 +47,7 @@ int main(int argc, char** argv)
 {
   srand(time(NULL));
 
-  char* string = generate_random_string(2, 97, 98);
 
-  character_string_stdout(string, 2);
-
-  int boolean = compare_string_characters(string, 0, 1);
-
-  int test = compare_string_characters_test(string, 0, 1, boolean);
-
-  printf("Output: %d\tTest: %d\n", boolean, test);
 
   return 0;
 }

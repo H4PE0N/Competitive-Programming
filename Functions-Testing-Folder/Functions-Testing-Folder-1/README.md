@@ -32,7 +32,7 @@ compare_integer_arrays_test       shuffle_integer_array_test
 
 duplicate_integer_array_test      array_index_integer_test
 
-integer_array_total_test
+integer_array_total_test          compare_array_integers_test
 
 Made by Roy Hampus Fridholm
 </pre>
