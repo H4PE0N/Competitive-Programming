@@ -15,7 +15,7 @@ char** generate_string_sentence(int height, int width)
 {
   char** sentence = malloc(sizeof(*sentence) *
     (height + 1));
-  for(int index = 0; index <= height; index = index + 1)
+  for(int index = 0; index <= height; index =index + 1)
   {
     *(sentence + index) = generate_character_string(
       width);
@@ -46,14 +46,7 @@ char** allocate_sentence_character(char** sentence,
 {
   char* string=sentence_index_string(sentence, height);
   *(sentence + height) = allocate_string_character(
-    string, width, character);
-  return sentence;
-}
-
-char** allocate_sentence_string(char** sentence,
-  int index, char* string)
-{
-  *(sentence + index) = string; return sentence;
+    string, width, character); return sentence;
 }
 
 char** switch_sentence_strings(char** sentence,
@@ -67,11 +60,10 @@ char** switch_sentence_strings(char** sentence,
     switch_string); return sentence;
 }
 
-char** switch_adjacent_strings(char** sentence,
-  int height)
+char** allocate_sentence_string(char** sentence,
+  int index, char* string)
 {
-  return switch_sentence_strings(sentence, height,
-    height + 1);
+  *(sentence + index) = string; return sentence;
 }
 
 char** move_sentence_strings(char**sentence,int height,
@@ -82,6 +74,13 @@ char** move_sentence_strings(char**sentence,int height,
     sentence = switch_adjacent_strings(sentence,index);
   }
   return sentence;
+}
+
+char** switch_adjacent_strings(char** sentence,
+  int index)
+{
+  return switch_sentence_strings(sentence, index,
+    index + 1);
 }
 
 int string_sentence_height(char** sentence, int width)

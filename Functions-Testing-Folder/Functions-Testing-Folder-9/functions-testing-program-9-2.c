@@ -20,7 +20,7 @@ int move_sentence_strings_test(char** sentence,
 int string_sentence_height_test(char** sentence,
   int width, int output)
 {
-  int height = string_sentence_height(sentence,width);
+  int height = string_sentence_height(sentence, width);
   return (height == output);
 }
 
