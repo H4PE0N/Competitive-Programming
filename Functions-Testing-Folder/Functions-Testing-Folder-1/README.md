@@ -34,5 +34,7 @@ duplicate_integer_array_test      array_index_integer_test
 
 integer_array_total_test          compare_array_integers_test
 
+compare_arrays_integer_test
+
 Made by Roy Hampus Fridholm
 </pre>

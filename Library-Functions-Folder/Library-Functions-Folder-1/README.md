@@ -39,5 +39,7 @@ array_index_integer         generate_integer_vector
 
 integer_array_total         compare_array_integers
 
+compare_arrays_integer
+
 Made by Roy Hampus Fridholm
 </pre>

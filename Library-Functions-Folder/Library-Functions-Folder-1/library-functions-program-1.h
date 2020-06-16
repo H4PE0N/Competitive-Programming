@@ -67,4 +67,7 @@ int integer_array_total(int*, int);
 int compare_array_integers(int*, int,
   int);
 
+int compare_arrays_integer(int*, int*,
+  int);
+
 #endif

@@ -77,3 +77,10 @@ int compare_array_integers(int* array, int first,
   int integer = array_index_integer(array, first);
   return (integer==array_index_integer(array, second));
 }
+
+int compare_arrays_integer(int* first, int* second,
+  int index)
+{
+  int integer = array_index_integer(first, index);
+  return (integer==array_index_integer(second, index));
+}

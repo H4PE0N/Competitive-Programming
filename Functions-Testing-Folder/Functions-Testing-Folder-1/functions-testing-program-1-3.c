@@ -34,3 +34,10 @@ int compare_array_integers_test(int* array, int first,
   int boolean = compare_array_integers(array, first,
     second); return (boolean == output);
 }
+
+int compare_arrays_integer_test(int* first,int* second,
+  int index, int output)
+{
+  int boolean = compare_arrays_integer(first, second,
+    index); return (boolean == output);
+}
