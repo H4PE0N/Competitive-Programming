@@ -15,9 +15,9 @@ library-functions-program-2.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int** switch_adjacent_arrays(int** matrix, int height)
+int** switch_adjacent_arrays(int** matrix, int index)
 {
-  return switch_matrix_arrays(matrix,height, height+1);
+  return switch_matrix_arrays(matrix,index, index + 1);
 }
 
 int** switch_matrix_arrays(int** matrix, int first,
@@ -86,13 +86,13 @@ int** duplicate_integer_matrix(int** matrix,int height,
   return doublet;
 }
 
-int** remove_matrix_integers(int** matrix, int width,
+int** remove_matrix_integers(int** matrix, int height,
   int integer)
 {
-  int height = integer_matrix_height(matrix, width);
-  for(int index = 0; index <= height; index = index +1)
+  for(int index = 0; index <= height; index =index + 1)
   {
     int* array = matrix_index_array(matrix, index);
+    int width = matrix_array_length(matrix, index);
     *(matrix + index) = remove_array_integers(array,
       width, integer);
   }

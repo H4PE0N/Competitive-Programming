@@ -33,12 +33,12 @@ int** allocate_matrix_integer(int** matrix, int height,
 }
 
 int** delete_matrix_integer(int** matrix, int height,
-  int index)
+  int width)
 {
   int* array = matrix_index_array(matrix, height);
-  int width = matrix_array_length(matrix, height);
+  int length = matrix_array_length(matrix, height);
   *(matrix + height) = delete_array_integer(array,
-    width, index); return matrix;
+    length, width); return matrix;
 }
 
 int integer_matrix_height(int** matrix, int width)
@@ -67,7 +67,6 @@ int matrix_array_contains(int** matrix, int index,
   int width = matrix_array_length(matrix, index);
   return array_contains_integer(array, width, integer);
 }
-
 
 int** remove_matrix_integer(int** matrix, int height,
   int integer)
