@@ -67,4 +67,7 @@ int delete_string_character_test(char*, int,int,
 int compare_string_characters_test(char*, int,
   int, int);
 
+int compare_strings_character_test(char*, char*,
+  int, int);
+
 #endif

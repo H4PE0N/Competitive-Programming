@@ -51,3 +51,10 @@ int compare_string_characters_test(char* string,
   int boolean = compare_string_characters(string,first,
     second); return (boolean == output);
 }
+
+int compare_strings_character_test(char* first,
+  char* second, int index, int output)
+{
+  int boolean = compare_strings_character(first,second,
+    index); return (boolean == output);
+}
