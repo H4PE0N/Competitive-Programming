@@ -34,7 +34,7 @@ int move_matrix_arrays_test(int**,int,int,int**);
 int compare_matrix_arrays_test(int**, int**, int,
   int, int);
 
-int shuffle_integer_matrix_test(int**,int,int**);
+int shuffle_matrix_arrays_test(int**,int, int**);
 
 int duplicate_integer_matrix_test(int**,int,int,
   int**);

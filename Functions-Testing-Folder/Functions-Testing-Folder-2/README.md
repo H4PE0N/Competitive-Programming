@@ -22,7 +22,7 @@ remove_matrix_integers_test     move_matrix_arrays_test
 
 switch_matrix_arrays_test       switch_adjacent_arrays_test
 
-compare_matrix_arrays_test      shuffle_integer_matrix_test
+compare_matrix_arrays_test      shuffle_matrix_arrays_test
 
 duplicate_integer_matrix_test   sort_integer_matrix_test
 

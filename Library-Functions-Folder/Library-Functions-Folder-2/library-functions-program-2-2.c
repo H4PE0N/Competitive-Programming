@@ -61,7 +61,7 @@ void integer_matrix_stdout(int** matrix, int height,
   }
 }
 
-int** shuffle_integer_matrix(int** matrix, int height)
+int** shuffle_matrix_arrays(int** matrix, int height)
 {
   for(int index = 0; index < height; index = index + 1)
   {

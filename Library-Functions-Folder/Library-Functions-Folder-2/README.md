@@ -27,7 +27,7 @@ switch_matrix_arrays        switch_adjacent_arrays
 
 generate_random_matrix      integer_matrix_stdout
 
-shuffle_integer_matrix      duplicate_integer_matrix
+shuffle_matrix_arrays       duplicate_integer_matrix
 
 sort_integer_matrix         compare_matrix_content
 

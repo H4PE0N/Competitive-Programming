@@ -32,11 +32,11 @@ int compare_matrix_arrays_test(int** first,int**second,
     height, width); return (boolean == output);
 }
 
-int shuffle_integer_matrix_test(int**matrix,int height,
+int shuffle_matrix_arrays_test(int* *matrix,int height,
   int** output)
 {
   int width = matrix_array_length(matrix, 0);
-  matrix = shuffle_integer_matrix(matrix, height);
+  matrix = shuffle_matrix_arrays(matrix, height);
   int result = !compare_matrix_arrays(matrix, output,
     height, width);
   return result && compare_matrix_content(matrix,

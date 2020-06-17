@@ -40,7 +40,7 @@ int** generate_random_matrix(int, int,
 void integer_matrix_stdout(int**, int,
   int);
 
-int** shuffle_integer_matrix(int**,int);
+int** shuffle_matrix_arrays(int**,int);
 
 int** duplicate_integer_matrix(int**,
   int, int);
