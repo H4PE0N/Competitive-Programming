@@ -11,7 +11,6 @@ gcc -o library-compile-program library-compile-program.c \
 ../Library-Functions-Folder/Library-Functions-Folder-2/library-functions-program-2-1.c \
 ../Library-Functions-Folder/Library-Functions-Folder-2/library-functions-program-2-2.c \
 ../Library-Functions-Folder/Library-Functions-Folder-2/library-functions-program-2-3.c \
-../Library-Functions-Folder/Library-Functions-Folder-2/library-functions-program-2-4.c \
 ../Library-Functions-Folder/Library-Functions-Folder-3/library-functions-program-3-1.c \
 ../Library-Functions-Folder/Library-Functions-Folder-3/library-functions-program-3-2.c \
 ../Library-Functions-Folder/Library-Functions-Folder-3/library-functions-program-3-3.c \
