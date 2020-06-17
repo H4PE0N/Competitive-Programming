@@ -27,13 +27,13 @@ switch_adjacent_integers    delete_array_integer
 
 compare_integer_arrays      remove_array_integers
 
-array_integer_amount        generate_random_integers
+array_integer_amount        generate_random_array
 
 integers_range_between      switch_array_integers
 
 shuffle_integer_array       integer_array_stdout
 
-compare_integers_content    duplicate_integer_array
+compare_array_content       duplicate_integer_array
 
 array_index_integer         generate_integer_vector
 

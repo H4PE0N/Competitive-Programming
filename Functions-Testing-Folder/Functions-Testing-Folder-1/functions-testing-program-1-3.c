@@ -41,3 +41,10 @@ int compare_arrays_integer_test(int* first,int* second,
   int boolean = compare_arrays_integer(first, second,
     index); return (boolean == output);
 }
+
+int compare_array_content_test(int* first, int* second,
+  int length, int output)
+{
+  int boolean = compare_array_content(first, second,
+    length); return (boolean == output);
+}

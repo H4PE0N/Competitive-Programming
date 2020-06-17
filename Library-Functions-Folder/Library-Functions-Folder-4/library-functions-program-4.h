@@ -58,8 +58,8 @@ char* sort_string_iteration(char*,int);
 
 char* sort_character_string(char*,int);
 
-int compare_string_content(char*,
-  char*, int);
+int compare_string_content(char*,char*,
+  int);
 
 char string_index_character(char*,int);
 

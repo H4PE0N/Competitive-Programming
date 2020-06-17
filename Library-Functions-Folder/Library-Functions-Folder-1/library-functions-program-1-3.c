@@ -18,7 +18,7 @@ void integer_array_stdout(int* array, int length)
   printf("\n");
 }
 
-int compare_integers_content(int* first, int* second,
+int compare_array_content(int* first, int* second,
   int length)
 {
   first = sort_integer_array(first, length);

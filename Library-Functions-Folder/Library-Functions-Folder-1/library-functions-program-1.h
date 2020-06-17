@@ -25,8 +25,7 @@ int* sort_integer_array(int*, int);
 
 int* add_array_integer(int*,int, int);
 
-int* move_array_integers(int*, int,
-  int);
+int* move_array_integers(int*,int,int);
 
 int* remove_array_integer(int*, int,
   int);
@@ -43,7 +42,7 @@ int* remove_array_integers(int*, int,
 int integers_range_between(int*, int,
   int);
 
-int* generate_random_integers(int, int,
+int* generate_random_array(int, int,
   int);
 
 int* switch_array_integers(int*, int,
@@ -53,7 +52,7 @@ int* shuffle_integer_array(int*, int);
 
 void integer_array_stdout(int*, int);
 
-int compare_integers_content(int*,int*,
+int compare_array_content(int*, int*,
   int);
 
 int* duplicate_integer_array(int*,int);

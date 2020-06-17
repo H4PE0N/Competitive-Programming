@@ -45,7 +45,7 @@ int** generate_random_matrix(int height, int width,
   int** matrix = generate_matrix_array(height, width);
   for(int index = 0; index < height; index = index + 1)
   {
-    *(matrix + index) = generate_random_integers(width,
+    *(matrix + index) = generate_random_array(width,
       minimum, maximum);
   }
   return matrix;

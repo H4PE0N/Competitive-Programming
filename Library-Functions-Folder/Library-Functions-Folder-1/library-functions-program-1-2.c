@@ -68,7 +68,7 @@ int integers_range_between(int* array, int minimum,
   return true;
 }
 
-int* generate_random_integers(int length,int minimum,
+int* generate_random_array(int length, int minimum,
   int maximum)
 {
   int* array = generate_integer_array(length);
