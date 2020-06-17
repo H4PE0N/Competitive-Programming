@@ -46,10 +46,8 @@ int* shuffle_integer_array(int* array, int length)
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    int random_index = generate_random_integer(0,
-      length - 1);
-    array = switch_array_integers(array, index,
-      random_index);
+    int random = generate_random_integer(0,length - 1);
+    array = switch_array_integers(array, index,random);
   }
   return array;
 }

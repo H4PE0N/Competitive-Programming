@@ -13,7 +13,7 @@ int switch_matrix_arrays_test(int** matrix, int first,
   matrix = switch_matrix_arrays(matrix, first, second);
   int width = matrix_array_length(matrix, 0);
   int height = integer_matrix_height(matrix, width);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_integer_matrix(matrix, output, height,
     width);
 }
 
@@ -21,23 +21,23 @@ int move_matrix_arrays_test(int** matrix, int height,
   int start, int** output)
 {
   matrix = move_matrix_arrays(matrix, height, start);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_integer_matrix(matrix, output, height,
     matrix_array_length(matrix, 0));
 }
 
-int compare_matrix_arrays_test(int** first,int**second,
+int compare_integer_matrix_test(int** first,int**second,
   int height, int width, int output)
 {
-  int boolean = compare_matrix_arrays(first, second,
+  int boolean = compare_integer_matrix(first, second,
     height, width); return (boolean == output);
 }
 
-int shuffle_matrix_arrays_test(int* *matrix,int height,
+int shuffle_matrix_arrays_test(int** matrix,int height,
   int** output)
 {
   int width = matrix_array_length(matrix, 0);
   matrix = shuffle_matrix_arrays(matrix, height);
-  int result = !compare_matrix_arrays(matrix, output,
+  int result = !compare_integer_matrix(matrix, output,
     height, width);
   return result && compare_matrix_content(matrix,
     output, height, width);
@@ -48,17 +48,16 @@ int duplicate_integer_matrix_test(int** matrix,
 {
   int** doublet=duplicate_integer_matrix(matrix,height,
     width);
-  return compare_matrix_arrays(doublet, output, height,
+  return compare_integer_matrix(doublet, output,height,
     width);
 }
 
-int sort_integer_matrix_test(int** matrix, int height,
+int sort_matrix_arrays_test(int** matrix, int height,
   int** output)
 {
-  matrix = sort_integer_matrix(matrix, height);
-  int width = matrix_array_length(matrix, 0);
-  return compare_matrix_arrays(matrix, output, height,
-    width);
+  matrix = sort_matrix_arrays(matrix, height);
+  return compare_integer_matrix(matrix, output, height,
+     matrix_array_length(matrix, 0));
 }
 
 int compare_matrix_content_test(int** first,

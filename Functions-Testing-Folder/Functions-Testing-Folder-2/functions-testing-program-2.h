@@ -31,7 +31,7 @@ int switch_matrix_arrays_test(int**, int, int,
 
 int move_matrix_arrays_test(int**,int,int,int**);
 
-int compare_matrix_arrays_test(int**, int**, int,
+int compare_integer_matrix_test(int**, int**,int,
   int, int);
 
 int shuffle_matrix_arrays_test(int**,int, int**);
@@ -56,5 +56,27 @@ int delete_matrix_array_test(int**, int, int,
 
 int allocate_matrix_array_test(int**, int, int*,
   int**);
+
+int shuffle_integer_matrix_test(int**, int,
+  int**);
+
+int sort_matrix_arrays_test(int**, int, int**);
+
+int matrix_array_total_test(int**, int, int);
+
+int matrix_array_greater_test(int**, int, int,
+  int, int);
+
+int matrix_array_integer_test(int**, int, int,
+  int);
+
+int sort_matrix_iteration_test(int**, int, int,
+  int**);
+
+int matrix_integer_greater_test(int**, int, int,
+  int, int);
+
+int matrix_integer_smaller_test(int**, int, int,
+  int, int);
 
 #endif

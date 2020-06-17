@@ -19,7 +19,7 @@ allocate_matrix_integer     remove_matrix_integer
 
 delete_matrix_integer       add_matrix_integer
 
-integer_matrix_height       compare_matrix_arrays
+integer_matrix_height       compare_integer_matrix
 
 remove_matrix_integers      move_matrix_arrays
 
@@ -35,7 +35,13 @@ matrix_index_array          matrix_array_length
 
 matrix_array_contains       allocate_matrix_array
 
-delete_matrix_array
+delete_matrix_array         shuffle_integer_matrix
+
+matrix_array_total          sort_matrix_arrays
+
+matrix_array_greater        sort_matrix_iteration
+
+matrix_array_integer
 
 Made by Roy Hampus Fridholm
 </pre>

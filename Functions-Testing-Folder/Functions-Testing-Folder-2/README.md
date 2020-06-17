@@ -16,13 +16,13 @@ allocate_matrix_integer_test    remove_matrix_integer_test
 
 delete_matrix_integer_test      add_matrix_integer_test
 
-integer_matrix_height_test      compare_matrix_arrays_test
+integer_matrix_height_test      sort_matrix_arrays_test
 
 remove_matrix_integers_test     move_matrix_arrays_test
 
 switch_matrix_arrays_test       switch_adjacent_arrays_test
 
-compare_matrix_arrays_test      shuffle_matrix_arrays_test
+compare_integer_matrix_test     shuffle_matrix_arrays_test
 
 duplicate_integer_matrix_test   sort_integer_matrix_test
 
@@ -31,6 +31,14 @@ compare_matrix_content_test     matrix_index_array_test
 matrix_array_length_test        matrix_array_contains_test
 
 allocate_matrix_array_test      delete_matrix_array_test
+
+shuffle_integer_matrix_test     matrix_array_total_test
+
+matrix_array_greater_test       matrix_array_integer_test
+
+sort_matrix_iteration_test      matrix_integer_greater_test
+
+matrix_integer_smaller_test
 
 Made by Roy Hampus Fridholm
 </pre>

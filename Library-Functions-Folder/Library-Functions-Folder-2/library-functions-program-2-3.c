@@ -15,7 +15,7 @@ library-functions-program-2.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int** sort_integer_matrix(int** matrix, int height)
+int** sort_matrix_arrays(int** matrix, int height)
 {
   for(int index = 0; index < height; index = index + 1)
   {
@@ -35,8 +35,8 @@ int compare_matrix_content(int** first, int** second,
   int height, int width)
 {
   first = sort_integer_matrix(first, height);
-  return compare_matrix_arrays(first,
-    sort_integer_matrix(first, height), height, width);
+  return compare_integer_matrix(first,
+    sort_integer_matrix(second, height), height,width);
 }
 
 int matrix_array_length(int** matrix, int index)
@@ -45,7 +45,7 @@ int matrix_array_length(int** matrix, int index)
   return integer_array_length(array);
 }
 
-int compare_matrix_arrays(int** first, int** second,
+int compare_integer_matrix(int** first, int** second,
   int height, int width)
 {
   for(int index = 0; index <= height; index =index + 1)
@@ -71,4 +71,81 @@ int** delete_matrix_array(int** matrix, int height,
   int length = matrix_array_length(matrix, 0);
   return allocate_matrix_array(matrix, (height - 1),
     generate_integer_array(length));
+}
+
+int** shuffle_integer_matrix(int** matrix, int height)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    int random = generate_random_integer(0,height - 1);
+    matrix = switch_matrix_arrays(matrix,index,random);
+  }
+  return matrix;
+}
+
+int matrix_array_total(int** matrix, int index)
+{
+  int* array = matrix_index_array(matrix, index);
+  int length = integer_array_length(array);
+  return integer_array_total(array, length);
+}
+
+int** sort_matrix_iteration(int** matrix, int height,
+  int iteration)
+{
+  for(int index = 0; index < (iteration - 1); index++)
+  {
+    if(!matrix_array_greater(matrix, height, index,
+      index + 1)) continue;
+    matrix = switch_adjacent_arrays(matrix, index);
+  }
+  return matrix;
+}
+
+int** sort_integer_matrix(int** matrix, int height)
+{
+  for(int index = height; index >= 0; index =index - 1)
+  {
+    matrix=sort_matrix_iteration(matrix,height, index);
+  }
+  return matrix;
+}
+
+int matrix_integer_greater(int** matrix, int first,
+  int second, int index)
+{
+  int integer=matrix_array_integer(matrix,first,index);
+  return integer > matrix_array_integer(matrix, second,
+    index);
+}
+
+int matrix_integer_smaller(int** matrix, int first,
+  int second, int index)
+{
+  int integer=matrix_array_integer(matrix,first,index);
+  return integer < matrix_array_integer(matrix, second,
+    index);
+}
+
+int matrix_array_integer(int** matrix, int height,
+  int width)
+{
+  int* array = matrix_index_array(matrix, height);
+  int integer = array_index_integer(array, width);
+  return integer;
+}
+
+int matrix_array_greater(int** matrix, int height,
+  int first, int second)
+{
+  matrix = sort_matrix_arrays(matrix, height);
+  int width = matrix_array_length(matrix, first);
+  for(int index = 0; index < width; index = index + 1)
+  {
+    if(matrix_integer_smaller(matrix, first, second,
+      index)) return false;
+    if(matrix_integer_greater(matrix, first, second,
+      index)) return true;
+  }
+  return false;
 }

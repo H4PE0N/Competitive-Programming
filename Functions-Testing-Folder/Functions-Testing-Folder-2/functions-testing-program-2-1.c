@@ -11,7 +11,7 @@ int generate_matrix_array_test(int height, int width,
   int** output)
 {
   int** matrix = generate_matrix_array(height, width);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_integer_matrix(matrix, output, height,
     width);
 }
 
@@ -20,7 +20,7 @@ int allocate_matrix_integer_test(int** matrix,
 {
   matrix = allocate_matrix_integer(matrix,height,width,
     integer);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_integer_matrix(matrix, output, height,
     width);
 }
 
@@ -29,7 +29,7 @@ int delete_matrix_integer_test(int** matrix,int height,
 {
   matrix = delete_matrix_integer(matrix, height,width);
   int length = matrix_array_length(matrix, height);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_integer_matrix(matrix, output, height,
     length);
 }
 
@@ -52,7 +52,7 @@ int remove_matrix_integer_test(int** matrix,int height,
 {
   matrix=remove_matrix_integer(matrix, height,integer);
   int width = matrix_array_length(matrix, 0);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_integer_matrix(matrix, output, height,
     width);
 }
 
@@ -61,7 +61,7 @@ int add_matrix_integer_test(int** matrix, int height,
 {
   matrix = add_matrix_integer(matrix,
     integer_matrix_height(matrix, width), integer);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_integer_matrix(matrix, output, height,
     width);
 }
 
@@ -69,7 +69,7 @@ int remove_matrix_integers_test(int**matrix,int height,
   int integer, int** output)
 {
   matrix=remove_matrix_integers(matrix,height,integer);
-  return compare_matrix_arrays(matrix, output, height,
+  return compare_integer_matrix(matrix, output, height,
     matrix_array_length(matrix, 0));
 }
 
@@ -79,6 +79,6 @@ int switch_adjacent_arrays_test(int** matrix,int index,
   matrix = switch_adjacent_arrays(matrix, index);
   int width = matrix_array_length(matrix, 0);
   int height = integer_matrix_height(matrix, width);
-  return compare_matrix_arrays(matrix, output, index,
+  return compare_integer_matrix(matrix, output, index,
     height);
 }
