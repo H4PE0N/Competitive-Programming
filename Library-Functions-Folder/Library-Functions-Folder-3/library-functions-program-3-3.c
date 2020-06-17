@@ -15,6 +15,10 @@ library-functions-program-2.h"
 Library-Functions-Folder-3/\
 library-functions-program-3.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 int* hashmap_keyword_array(int** hashmap, int length)
 {
   int* array = generate_integer_array(length);

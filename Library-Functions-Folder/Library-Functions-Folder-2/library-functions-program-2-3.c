@@ -48,7 +48,7 @@ int matrix_array_length(int** matrix, int index)
 int compare_matrix_arrays(int** first, int** second,
   int height, int width)
 {
-  for(int index = 0; index <= height; index = index +1)
+  for(int index = 0; index <= height; index =index + 1)
   {
     int* f_array = matrix_index_array(first, index);
     int* s_array = matrix_index_array(second, index);
@@ -69,6 +69,6 @@ int** delete_matrix_array(int** matrix, int height,
 {
   matrix = move_matrix_arrays(matrix, height, index);
   int length = matrix_array_length(matrix, 0);
-  int* array = generate_integer_array(length);
-  return allocate_matrix_array(matrix,height-1, array);
+  return allocate_matrix_array(matrix, (height - 1),
+    generate_integer_array(length));
 }

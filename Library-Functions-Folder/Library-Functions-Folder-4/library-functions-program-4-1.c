@@ -20,7 +20,10 @@ int calculate_string_length(char* string)
 {
   int length = 0;
   while(string_index_character(string, length) != '\0')
-  { length = length + 1; } return length;
+  {
+    length = increase_integer_variable(length);
+  }
+  return length;
 }
 
 int string_contains_character(char* string, int length,

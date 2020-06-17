@@ -53,7 +53,10 @@ int calculate_real_length(int integer)
 {
   int length = 0;
   while(integer > calculate_bit_integer(length))
-  { length = (length + 1); } return length;
+  {
+    length = increase_integer_variable(length);
+  }
+  return length;
 }
 
 char* allocate_binary_bits(char* binary, int length,
@@ -72,7 +75,10 @@ char* allocate_binary_bits(char* binary, int length,
 int calculate_nearest_length(int integer)
 {
   int length=calculate_real_length(integer), index = 2;
-  while(length > calculate_bit_integer(index)) index++;
+  while(length > calculate_bit_integer(index))
+  {
+    index = increase_integer_variable(index);
+  }
   return calculate_bit_integer(index);
 }
 

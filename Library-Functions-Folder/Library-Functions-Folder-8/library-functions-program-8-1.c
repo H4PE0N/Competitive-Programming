@@ -35,11 +35,6 @@ int integer_power_operation(int integer, int power)
   return product;
 }
 
-int increase_integer_variable(int integer)
-{
-  integer = (integer + 1); return integer;
-}
-
 int generate_random_integer(int minimum, int maximum)
 {
   return minimum + (rand() % (maximum - minimum + 1));
@@ -53,6 +48,11 @@ double convert_percent_decimal(double percent)
 int integer_divisible_by_two(int integer)
 {
   int output = (integer % 2 == 0); return output;
+}
+
+int increase_integer_variable(int variable)
+{
+  variable = (variable + 1); return variable;
 }
 
 double integer_between_integers(int first, int second)

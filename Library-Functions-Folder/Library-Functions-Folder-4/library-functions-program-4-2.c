@@ -60,7 +60,7 @@ char* shuffle_character_string(char* string,int length)
   for(int index = 0; index < length; index = index + 1)
   {
     string = switch_string_characters(string, index,
-      generate_random_integer(0,length - 1));
+      generate_random_integer(0, length - 1));
   }
   return string;
 }

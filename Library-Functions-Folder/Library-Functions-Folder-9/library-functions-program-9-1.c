@@ -8,6 +8,10 @@ Library-Functions-Folder-4/\
 library-functions-program-4.h"
 
 #include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
+#include "../../Library-Functions-Folder/\
 Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
@@ -87,7 +91,8 @@ int string_sentence_height(char** sentence, int width)
 {
   int height = 0;
   while(sentence_string_length(sentence, height) >=
-    width) { height = (height + 1); } return height;
+    width) height = increase_integer_variable(height);
+  return height;
 }
 
 int sentence_string_length(char** sentence, int index)

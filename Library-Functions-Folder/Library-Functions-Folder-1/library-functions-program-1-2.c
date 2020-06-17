@@ -50,7 +50,7 @@ int array_integer_amount(int* array, int length,
   for(int index = 0; index < length; index = index + 1)
   {
     if(array_index_integer(array, index) == integer)
-      amount = (amount + 1);
+      amount = increase_integer_variable(amount);
   }
   return amount;
 }

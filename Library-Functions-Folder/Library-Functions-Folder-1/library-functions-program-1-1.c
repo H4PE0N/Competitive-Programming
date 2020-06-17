@@ -35,7 +35,10 @@ int integer_array_length(int* array)
 {
   int length = 0;
   while(array_index_integer(array, length) != '\0')
-  { length  = (length + 1); } return length;
+  {
+    length  = increase_integer_variable(length);
+  }
+  return length;
 }
 
 int array_contains_integer(int* array, int length,
@@ -67,7 +70,7 @@ int* sort_integer_iteration(int* array,int iteration)
 
 int* sort_integer_array(int* array, int length)
 {
-  for(int index = length; index >= 0; index = index -1)
+  for(int index = length; index >= 0; index =index - 1)
   {
     array = sort_integer_iteration(array, index);
   }

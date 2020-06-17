@@ -14,6 +14,10 @@ library-functions-program-2.h"
 Library-Functions-Folder-3/\
 library-functions-program-3.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 int** generate_integer_hashmap(int length)
 {
   int** matrix = generate_matrix_array(length + 1, 2);
@@ -33,9 +37,12 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
 
 int integer_hashmap_length(int** hashmap)
 {
-  int index = 0;
-  while(hashmap_index_value(hashmap, index) != 0)
-  { index = index + 1; } return index;
+  int length = 0;
+  while(hashmap_index_value(hashmap, length) != 0)
+  {
+    length = increase_integer_variable(length);
+  }
+  return length;
 }
 
 int hashmap_keyword_index(int** hashmap, int keyword)
