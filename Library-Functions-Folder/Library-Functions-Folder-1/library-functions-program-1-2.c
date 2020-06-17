@@ -27,7 +27,7 @@ int compare_integer_arrays(int* first, int* second,
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    if(*(first + index) != *(second + index))
+    if(!compare_arrays_integer(first, second, index))
       return false;
   }
   return true;
@@ -38,8 +38,7 @@ int* remove_array_integers(int* array, int length,
 {
   while(array_contains_integer(array, length, integer))
   {
-    array = remove_array_integer(array, length,
-      integer);
+    array = remove_array_integer(array,length,integer);
   }
   return array;
 }

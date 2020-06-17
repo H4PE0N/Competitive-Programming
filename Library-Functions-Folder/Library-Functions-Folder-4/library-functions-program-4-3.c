@@ -60,8 +60,7 @@ int compare_character_strings(char* first,char* second,
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    char character=string_index_character(first,index);
-    if(character!=string_index_character(second,index))
+    if(!compare_strings_character(first, second,index))
       return false;
   }
   return true;
