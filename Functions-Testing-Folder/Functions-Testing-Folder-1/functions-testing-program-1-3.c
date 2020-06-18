@@ -48,3 +48,17 @@ int compare_array_content_test(int* first, int* second,
   int boolean = compare_array_content(first, second,
     length); return (boolean == output);
 }
+
+int array_integer_smaller_test(int* array, int first,
+  int second, int output)
+{
+  int boolean = array_integer_smaller(array, first,
+    second); return (boolean == output);
+}
+
+int array_integer_greater_test(int* array, int first,
+  int second, int output)
+{
+  int boolean = array_integer_greater(array, first,
+    second); return (boolean == output);
+}

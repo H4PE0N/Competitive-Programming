@@ -71,4 +71,10 @@ int compare_arrays_integer_test(int*, int*,
 int compare_array_content_test(int*, int*,
   int, int);
 
+int array_integer_greater_test(int*, int,
+  int, int);
+
+int array_integer_smaller_test(int*, int,
+  int, int);
+
 #endif

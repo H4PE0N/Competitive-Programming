@@ -69,4 +69,10 @@ int compare_array_integers(int*, int,
 int compare_arrays_integer(int*, int*,
   int);
 
+int array_integer_greater(int*, int,
+  int);
+
+int array_integer_smaller(int*, int,
+  int);
+
 #endif
