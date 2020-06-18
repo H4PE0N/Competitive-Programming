@@ -15,7 +15,7 @@ Here is a list of the functions that the programs contains:
 
 generate_string_sentence    generate_random_sentence
 
-sentence_index_string       compare_string_sentences
+sentence_index_string       compare_string_sentence
 
 string_sentence_stdout      allocate_sentence_character
 
@@ -37,7 +37,7 @@ sort_string_sentence        sort_sentence_strings
 
 sort_sentence_iteration     sentence_string_character
 
-compare_sentence_content
+compare_sentence_content    sentence_string_contains
 
 Made by Roy Hampus Fridholm
 </pre>

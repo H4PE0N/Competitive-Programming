@@ -4,7 +4,7 @@
 
 char** generate_string_sentence(int, int);
 
-int compare_string_sentences(char**,char**,
+int compare_string_sentence(char**,char**,
   int, int);
 
 char* sentence_index_string(char**, int);
@@ -42,12 +42,18 @@ char** switch_adjacent_strings(char**,int);
 char** duplicate_string_sentence(char**,
   int, int);
 
-// remove_sentence_character
-//
-// add_sentence_character
-//
-// remove_sentence_characters
-//
+char** remove_sentence_character(char**,
+  int, char);
+
+char** add_sentence_character(char**, int,
+  char);
+
+char** remove_sentence_characters(char**,
+  int, char);
+
+int sentence_string_contains(char**, int,
+  char);
+
 // shuffle_sentence_strings
 //
 // shuffle_string_sentence

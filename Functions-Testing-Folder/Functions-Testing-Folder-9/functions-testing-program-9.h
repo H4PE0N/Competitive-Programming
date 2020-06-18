@@ -37,12 +37,18 @@ int switch_adjacent_strings_test(char**, int,
 int duplicate_string_sentence_test(char**, int,
   int, char**);
 
-// remove_sentence_character_test
-//
-// add_sentence_character_test
-//
-// remove_sentence_characters_test
-//
+int remove_sentence_character_test(char**, int,
+  char, char**);
+
+int remove_sentence_characters_test(char**, int,
+  char, char**);
+
+int add_sentence_character_test(char**, int, char,
+  char**);
+
+int sentence_string_contains_test(char**, int,
+  char, int);
+
 // shuffle_sentence_strings_test
 //
 // shuffle_string_sentence_test

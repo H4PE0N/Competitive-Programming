@@ -32,7 +32,7 @@ sort_string_sentence_test         sort_sentence_strings_test
 
 sort_sentence_iteration_test      sentence_string_character_test
 
-compare_sentence_content_test
+compare_sentence_content_test     sentence_string_contains_test
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -12,14 +12,14 @@ int generate_string_sentence_test(int height,int width,
 {
   char** sentence = generate_string_sentence(height,
     width);
-  return compare_string_sentences(sentence, output,
+  return compare_string_sentence(sentence, output,
     height, width);
 }
 
-int compare_string_sentences_test(char** first,
+int compare_string_sentence_test(char** first,
   char** second, int height, int width, int output)
 {
-  int boolean = compare_string_sentences(first, second,
+  int boolean = compare_string_sentence(first, second,
     height, width); return (boolean == output);
 }
 
@@ -36,7 +36,7 @@ int allocate_sentence_character_test(char** sentence,
 {
   sentence=allocate_sentence_character(sentence,height,
     width, character);
-  return compare_string_sentences(sentence, output,
+  return compare_string_sentence(sentence, output,
     height, width);
 }
 
@@ -45,7 +45,7 @@ int delete_sentence_character_test(char** sentence,
 {
   sentence = delete_sentence_character(sentence,height,
     width);
-  return compare_string_sentences(sentence, output,
+  return compare_string_sentence(sentence, output,
     height, width);
 }
 
@@ -56,7 +56,7 @@ int allocate_sentence_string_test(char** sentence,
     string);
   int width = sentence_string_length(sentence, 0);
   int height = string_sentence_height(sentence, width);
-  return compare_string_sentences(sentence, output,
+  return compare_string_sentence(sentence, output,
     height, width);
 }
 
@@ -67,7 +67,7 @@ int switch_sentence_strings_test(char** sentence,
     second);
   int width = sentence_string_length(sentence, 0);
   int height = string_sentence_height(sentence, width);
-  return compare_string_sentences(sentence, output,
+  return compare_string_sentence(sentence, output,
     height, width);
 }
 
@@ -77,7 +77,7 @@ int delete_sentence_string_test(char** sentence,
   sentence = delete_sentence_string(sentence, height,
     index);
   int width = sentence_string_length(sentence, 0);
-  return compare_string_sentences(sentence, output,
+  return compare_string_sentence(sentence, output,
     height, width);
 }
 

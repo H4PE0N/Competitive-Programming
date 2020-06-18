@@ -46,7 +46,7 @@ int integer_matrix_height(int** matrix, int width)
   int height = 0;
   while(matrix_array_length(matrix, height) >= width)
   {
-    height = increase_integer_variable(height); 
+    height = increase_integer_variable(height);
   }
   return height;
 }
@@ -67,8 +67,8 @@ int matrix_array_contains(int** matrix, int index,
   int integer)
 {
   int* array = matrix_index_array(matrix, index);
-  int width = matrix_array_length(matrix, index);
-  return array_contains_integer(array, width, integer);
+  int length = matrix_array_length(matrix, index);
+  return array_contains_integer(array, length,integer);
 }
 
 int** remove_matrix_integer(int** matrix, int height,
@@ -89,7 +89,7 @@ int** add_matrix_integer(int** matrix, int height,
   int integer)
 {
   int* array = matrix_index_array(matrix, height);
-  int width = integer_array_length(array);
-  *(matrix + height) = add_array_integer(array, width,
+  int length = matrix_array_length(matrix, height);
+  *(matrix + height) = add_array_integer(array, length,
     integer); return matrix;
 }

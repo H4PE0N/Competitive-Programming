@@ -32,10 +32,10 @@ char* sentence_index_string(char** sentence, int index)
   char* string = *(sentence + index); return string;
 }
 
-int compare_string_sentences(char**first, char**second,
+int compare_string_sentence(char** first,char** second,
   int height, int width)
 {
-  for(int index = 0; index < height; index = index + 1)
+  for(int index = 0; index <= height; index = index + 1)
   {
     char* f_string=sentence_index_string(first, index);
     char* s_string=sentence_index_string(second,index);
