@@ -42,3 +42,23 @@ int duplicate_string_sentence_test(char** sentence,
   return compare_string_sentences(doublet, output,
     height, width);
 }
+
+// remove_sentence_character_test
+//
+// add_sentence_character_test
+//
+// remove_sentence_characters_test
+//
+// shuffle_sentence_strings_test
+//
+// shuffle_string_sentence_test
+//
+// sort_string_sentence_test
+//
+// sort_sentence_strings_test
+//
+// sort_sentence_iteration_test
+//
+// sentence_string_character_test
+//
+// compare_sentence_content_test

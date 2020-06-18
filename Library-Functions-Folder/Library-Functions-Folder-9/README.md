@@ -27,7 +27,17 @@ delete_sentence_string      sentence_string_length
 
 move_sentence_strings       string_sentence_height
 
-duplicate_string_sentence
+duplicate_string_sentence   remove_sentence_character
+
+add_sentence_character      remove_sentence_characters
+
+shuffle_sentence_strings    shuffle_string_sentence
+
+sort_string_sentence        sort_sentence_strings
+
+sort_sentence_iteration     sentence_string_character
+
+compare_sentence_content
 
 Made by Roy Hampus Fridholm
 </pre>

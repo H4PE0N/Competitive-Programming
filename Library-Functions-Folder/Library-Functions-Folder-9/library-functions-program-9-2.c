@@ -70,3 +70,23 @@ char** duplicate_string_sentence(char** sentence,
   }
   return doublet;
 }
+
+// remove_sentence_character
+//
+// add_sentence_character
+//
+// remove_sentence_characters
+//
+// shuffle_sentence_strings
+//
+// shuffle_string_sentence
+//
+// sort_string_sentence
+//
+// sort_sentence_strings
+//
+// sort_sentence_iteration
+//
+// sentence_string_character
+//
+// compare_sentence_content
