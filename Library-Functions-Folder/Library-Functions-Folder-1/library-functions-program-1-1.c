@@ -61,7 +61,7 @@ int* sort_integer_iteration(int* array,int iteration)
 {
   for(int index = 0; index < (iteration - 1); index++)
   {
-    if(*(array + index) <= *(array + index + 1))
+    if(array_integer_smaller(array, index, index +1))
       continue;
     array = switch_adjacent_integers(array, index);
   }
