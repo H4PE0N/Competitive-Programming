@@ -20,7 +20,7 @@ int** sort_matrix_iteration(int** matrix, int height,
 {
   for(int index = 0; index < (iteration - 1); index++)
   {
-    if(!matrix_array_greater(matrix, height, index,
+    if(matrix_array_smaller(matrix, height, index,
       index + 1)) continue;
     matrix = switch_adjacent_arrays(matrix, index);
   }
