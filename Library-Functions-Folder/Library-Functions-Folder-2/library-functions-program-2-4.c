@@ -74,3 +74,18 @@ int matrix_array_greater(int** matrix, int height,
   }
   return false;
 }
+
+int matrix_array_smaller(int** matrix, int height,
+  int first, int second)
+{
+  matrix = sort_matrix_arrays(matrix, height);
+  int width = matrix_array_length(matrix, first);
+  for(int index = 0; index < width; index = index + 1)
+  {
+    if(matrix_integer_greater(matrix, first, second,
+      index)) return false;
+    if(matrix_integer_smaller(matrix, first, second,
+      index)) return true;
+  }
+  return false;
+}

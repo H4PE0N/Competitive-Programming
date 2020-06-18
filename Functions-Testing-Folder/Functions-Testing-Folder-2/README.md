@@ -38,7 +38,7 @@ matrix_array_greater_test       matrix_array_integer_test
 
 sort_matrix_iteration_test      matrix_integer_greater_test
 
-matrix_integer_smaller_test
+matrix_integer_smaller_test     matrix_array_smaller_test
 
 Made by Roy Hampus Fridholm
 </pre>

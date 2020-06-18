@@ -87,3 +87,10 @@ int matrix_integer_smaller_test(int** matrix, int first,
   int boolean = matrix_integer_smaller(matrix, first,
     second, index); return (boolean == output);
 }
+
+int matrix_array_smaller_test(int** matrix, int height,
+  int first, int second, int output)
+{
+  int boolean = matrix_array_smaller(matrix, height,
+    first, second); return (boolean == output);
+}

@@ -85,4 +85,7 @@ int matrix_integer_greater(int**, int,
 int matrix_integer_smaller(int**, int,
   int, int);
 
+int matrix_array_smaller(int**, int,int,
+  int);
+
 #endif

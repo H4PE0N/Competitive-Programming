@@ -41,7 +41,7 @@ matrix_array_total          sort_matrix_arrays
 
 matrix_array_greater        sort_matrix_iteration
 
-matrix_array_integer
+matrix_array_integer        matrix_array_smaller
 
 Made by Roy Hampus Fridholm
 </pre>

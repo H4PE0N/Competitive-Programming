@@ -79,4 +79,7 @@ int matrix_integer_greater_test(int**, int, int,
 int matrix_integer_smaller_test(int**, int, int,
   int, int);
 
+int matrix_array_smaller_test(int**, int, int,
+  int, int);
+
 #endif
