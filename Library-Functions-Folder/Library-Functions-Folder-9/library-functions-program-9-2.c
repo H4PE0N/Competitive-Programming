@@ -116,16 +116,116 @@ char** remove_sentence_character(char** sentence,
   return sentence;
 }
 
-// shuffle_sentence_strings
-//
+char string_sentence_character(char** sentence,
+  int height, int width)
+{
+  char* string=sentence_index_string(sentence, height);
+  char character=string_index_character(string, width);
+  return character;
+}
+
+char** sort_sentence_strings(char**sentence,int height)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    char* string=sentence_index_string(sentence,index);
+    int length=sentence_string_length(sentence, index);
+    *(sentence + index) = sort_character_string(string,
+      length);
+  }
+  return sentence;
+}
+
+char** shuffle_sentence_strings(char** sentence,
+  int height)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    char* string=sentence_index_string(sentence,index);
+    *(sentence + index) = shuffle_character_string(
+      string, sentence_string_length(sentence, index));
+  }
+  return sentence;
+}
+
+int compare_sentence_content(char**first, char**second,
+  int height, int width)
+{
+  first = sort_string_sentence(first, height);
+  return compare_string_sentence(first,
+    sort_string_sentence(second, height),height,width);
+}
+
+char** sort_string_sentence(char** sentence,int height)
+{
+  for(int index = height; index >= 0; index =index - 1)
+  {
+    sentence = sort_sentence_iteration(sentence,height,
+      index);
+  }
+  return sentence;
+}
+
+char** sort_sentence_iteration(char** sentence,
+  int height, int iteration)
+{
+  for(int index = 0; index < (iteration - 1); index++)
+  {
+    if(sentence_string_smaller(sentence, height, index,
+      index + 1)) continue;
+    sentence = switch_adjacent_strings(sentence,index);
+  }
+  return sentence;
+}
+
+int sentence_character_smaller(char** sentence,
+  int first, int second, int index)
+{
+  char character = string_sentence_character(sentence,
+    first, index);
+  return character <string_sentence_character(sentence,
+    second, index);
+}
+
+int sentence_character_greater(char** sentence,
+  int first, int second, int index)
+{
+  char character = string_sentence_character(sentence,
+    first, index);
+  return character >string_sentence_character(sentence,
+    second, index);
+}
+
+int sentence_string_smaller(char** sentence,int height,
+  int first, int second)
+{
+  sentence = sort_sentence_strings(sentence, height);
+  int width = sentence_string_length(sentence, 0);
+  for(int index = 0; index < width; index = index + 1)
+  {
+    if(sentence_character_greater(sentence, first,
+      second, index)) return false;
+    if(sentence_character_smaller(sentence, first,
+      second, index)) return true;
+  }
+  return false;
+}
+
+int sentence_string_greater(char** sentence,int height,
+  int first, int second)
+{
+  sentence = sort_sentence_strings(sentence, height);
+  int width = sentence_string_length(sentence, 0);
+  for(int index = 0; index < width; index = index + 1)
+  {
+    if(sentence_character_smaller(sentence, first,
+      second, index)) return false;
+    if(sentence_character_greater(sentence, first,
+      second, index)) return true;
+  }
+  return false;
+}
+
 // shuffle_string_sentence
-//
+
 // sort_string_sentence
-//
-// sort_sentence_strings
-//
-// sort_sentence_iteration
-//
-// sentence_string_character
-//
-// compare_sentence_content

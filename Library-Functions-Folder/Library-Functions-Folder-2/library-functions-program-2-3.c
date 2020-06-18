@@ -20,8 +20,8 @@ int** sort_matrix_arrays(int** matrix, int height)
   for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
-    int width = integer_array_length(array);
-    *(matrix + index)=sort_integer_array(array, width);
+    int length = integer_array_length(array);
+    *(matrix + index)=sort_integer_array(array,length);
   }
   return matrix;
 }
@@ -73,6 +73,13 @@ int** delete_matrix_array(int** matrix, int height,
     generate_integer_array(length));
 }
 
+int matrix_array_total(int** matrix, int index)
+{
+  int* array = matrix_index_array(matrix, index);
+  int length = integer_array_length(array);
+  return integer_array_total(array, length);
+}
+
 int** shuffle_integer_matrix(int** matrix, int height)
 {
   for(int index = 0; index < height; index = index + 1)
@@ -81,11 +88,4 @@ int** shuffle_integer_matrix(int** matrix, int height)
     matrix = switch_matrix_arrays(matrix,index,random);
   }
   return matrix;
-}
-
-int matrix_array_total(int** matrix, int index)
-{
-  int* array = matrix_index_array(matrix, index);
-  int length = integer_array_length(array);
-  return integer_array_total(array, length);
 }

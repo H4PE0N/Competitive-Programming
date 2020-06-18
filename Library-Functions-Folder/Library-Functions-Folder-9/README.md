@@ -35,9 +35,13 @@ shuffle_sentence_strings    shuffle_string_sentence
 
 sort_string_sentence        sort_sentence_strings
 
-sort_sentence_iteration     sentence_string_character
+sort_sentence_iteration     string_sentence_character
 
 compare_sentence_content    sentence_string_contains
+
+sentence_string_smaller     sentence_string_greater
+
+sentence_character_greater  sentence_character_smaller
 
 Made by Roy Hampus Fridholm
 </pre>

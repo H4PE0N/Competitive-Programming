@@ -54,18 +54,32 @@ char** remove_sentence_characters(char**,
 int sentence_string_contains(char**, int,
   char);
 
-// shuffle_sentence_strings
-//
-// shuffle_string_sentence
-//
-// sort_string_sentence
-//
-// sort_sentence_strings
-//
-// sort_sentence_iteration
-//
-// sentence_string_character
-//
-// compare_sentence_content
+char string_sentence_character(char**, int,
+  int);
+
+char** sort_sentence_strings(char**, int);
+
+char** shuffle_sentence_strings(char**,
+  int);
+
+int sentence_character_greater(char**, int,
+  int, int);
+
+int sentence_character_smaller(char**, int,
+  int, int);
+
+int sentence_string_smaller(char**,int,int,
+  int);
+
+int sentence_string_greater(char**,int,int,
+  int);
+
+char** sort_string_sentence(char**, int);
+
+char** sort_sentence_iteration(char**, int,
+  int);
+
+int compare_sentence_content(char**,char**,
+  int, int);
 
 #endif

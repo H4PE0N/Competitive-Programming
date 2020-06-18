@@ -77,16 +77,80 @@ int sentence_string_contains_test(char** sentence,
     character); return (boolean == output);
 }
 
-// shuffle_sentence_strings_test
-//
-// shuffle_string_sentence_test
-//
-// sort_string_sentence_test
-//
-// sort_sentence_strings_test
-//
-// sort_sentence_iteration_test
-//
-// sentence_string_character_test
-//
-// compare_sentence_content_test
+int string_sentence_character_test(char** sentence,
+  int height, int width, char output)
+{
+  char character = string_sentence_character(sentence,
+    height, width); return (character == output);
+}
+
+int sort_sentence_strings_test(char** sentence,
+  int height, char** output)
+{
+  sentence = sort_sentence_strings(sentence, height);
+  return compare_string_sentence(sentence, output,
+    height, sentence_string_length(sentence, 0));
+}
+
+int shuffle_sentence_strings_test(char** sentence,
+  int height, char** output)
+{
+  sentence = shuffle_sentence_strings(sentence,height);
+  int width = sentence_string_length(sentence, 0);
+  int boolean = !compare_string_sentence(sentence,
+    output, height, width);
+  return boolean && compare_sentence_content(sentence,
+    output, height, width);
+}
+
+int sentence_character_greater_test(char** sentence,
+  int first, int second, int index, int output)
+{
+  int boolean = sentence_character_greater(sentence,
+    first, second, index); return (boolean == output);
+}
+
+int sentence_character_smaller_test(char** sentence,
+  int first, int second, int index, int output)
+{
+  int boolean = sentence_character_smaller(sentence,
+    first, second, index); return (boolean == output);
+}
+
+int sentence_string_smaller_test(char** sentence,
+  int height, int first, int second, int output)
+{
+  int boolean=sentence_string_smaller(sentence, height,
+    first, second); return (boolean == output);
+}
+
+int sentence_string_greater_test(char** sentence,
+  int height, int first, int second, int output)
+{
+  int boolean=sentence_string_greater(sentence, height,
+    first, second); return (boolean == output);
+}
+
+int sort_string_sentence_test(char** sentence,
+  int height, char** output)
+{
+  sentence = sort_string_sentence(sentence, height);
+  return compare_string_sentence(sentence, output,
+    height, sentence_string_length(sentence, 0));
+}
+
+int sort_sentence_iteration_test(char** sentence,
+  int height, int iteration, char** output)
+{
+  sentence = sort_sentence_iteration(sentence, height,
+    iteration);
+  return compare_string_sentence(sentence, output,
+    height, sentence_string_length(sentence, 0));
+}
+
+int compare_sentence_content_test(char** first,
+  char** second, int height, int width, int output)
+{
+  int boolean = compare_sentence_content(first, second,
+    height, width); return (boolean == output);
+}

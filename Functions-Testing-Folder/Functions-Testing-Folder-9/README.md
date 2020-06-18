@@ -34,5 +34,9 @@ sort_sentence_iteration_test      sentence_string_character_test
 
 compare_sentence_content_test     sentence_string_contains_test
 
+sentence_string_greater_test      sentence_string_smaller_test
+
+sentence_character_smaller_test   sentence_character_greater_test
+
 Made by Roy Hampus Fridholm
 </pre>

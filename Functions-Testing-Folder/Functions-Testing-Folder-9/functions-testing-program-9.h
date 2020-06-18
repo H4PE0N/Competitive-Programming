@@ -49,18 +49,32 @@ int add_sentence_character_test(char**, int, char,
 int sentence_string_contains_test(char**, int,
   char, int);
 
-// shuffle_sentence_strings_test
-//
-// shuffle_string_sentence_test
-//
-// sort_string_sentence_test
-//
-// sort_sentence_strings_test
-//
-// sort_sentence_iteration_test
-//
-// sentence_string_character_test
-//
-// compare_sentence_content_test
+int sentence_character_greater_test(char**, int,
+  int, int, int);
+
+int sentence_character_smaller_test(char**, int,
+  int, int, int);
+
+int sentence_string_smaller_test(char**, int, int,
+  int, int);
+
+int sentence_string_greater_test(char**, int, int,
+  int, int);
+
+int sort_string_sentence_test(char**, int,char**);
+
+int sort_sentence_iteration_test(char**, int, int,
+  char**);
+
+int compare_sentence_content_test(char**, char**,
+  int, int, int);
+
+int string_sentence_character_test(char**, int,
+  int, char);
+
+int sort_sentence_strings_test(char**,int,char**);
+
+int shuffle_sentence_strings_test(char**, int,
+  char**);
 
 #endif
