@@ -98,5 +98,5 @@ int string_sentence_height(char** sentence, int width)
 int sentence_string_length(char** sentence, int index)
 {
   char* string = sentence_index_string(sentence,index);
-  return calculate_string_length(string);
+  return character_string_length(string);
 }

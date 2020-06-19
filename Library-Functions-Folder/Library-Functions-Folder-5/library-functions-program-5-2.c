@@ -21,7 +21,7 @@ int binary_range_between(char* binary, int minimum,
 
 int convert_binary_integer(char* binary)
 {
-  int length = calculate_string_length(binary),
+  int length = character_string_length(binary),
     integer = 0;
   for(int index = 0; index < length; index = index + 1)
   {
@@ -48,7 +48,7 @@ char* generate_random_binary(int minimum, int maximum)
 int increase_binary_integer(char* binary, int index,
   int integer)
 {
-  int length = calculate_string_length(binary);
+  int length = character_string_length(binary);
   if(string_index_character(binary, index) == '0')
     return integer;
   return integer+calculate_bit_integer(length-index-1);

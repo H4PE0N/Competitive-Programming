@@ -111,7 +111,7 @@ char** remove_sentence_character(char** sentence,
       character)) continue;
     char* string=sentence_index_string(sentence,index);
     sentence[index] = remove_string_character(string,
-      calculate_string_length(string),character);break;
+      character_string_length(string),character);break;
   }
   return sentence;
 }

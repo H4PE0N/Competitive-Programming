@@ -40,7 +40,7 @@ int switch_adjacent_characters_test(char* string,
   int index, char* output)
 {
   string = switch_adjacent_characters(string, index);
-  int length = calculate_string_length(string);
+  int length = character_string_length(string);
   return compare_character_strings(string, output,
     length);
 }
@@ -49,7 +49,7 @@ int sort_character_string_test(char* string,
   int iteration, char* output)
 {
   string = sort_character_string(string, iteration);
-  int length = calculate_string_length(string);
+  int length = character_string_length(string);
   return compare_character_strings(string, output,
     length);
 }

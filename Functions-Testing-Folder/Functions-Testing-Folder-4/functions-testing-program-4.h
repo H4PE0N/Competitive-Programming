@@ -10,7 +10,7 @@ int allocate_string_characters_test(char*, int,
 
 int generate_character_string_test(int, char*);
 
-int calculate_string_length_test(char*, int);
+int character_string_length_test(char*, int);
 
 int string_contains_character_test(char*, int,
   char, int);

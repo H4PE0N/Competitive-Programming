@@ -28,7 +28,7 @@ int sentence_index_string_test(char** sentence,
 {
   char* string = sentence_index_string(sentence,index);
   return compare_character_strings(string, output,
-    calculate_string_length(string));
+    character_string_length(string));
 }
 
 int allocate_sentence_character_test(char** sentence,

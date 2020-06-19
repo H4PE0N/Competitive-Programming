@@ -16,7 +16,7 @@ char* generate_character_string(int length)
   return allocate_string_characters(string,length + 1);
 }
 
-int calculate_string_length(char* string)
+int character_string_length(char* string)
 {
   int length = 0;
   while(string_index_character(string, length) != '\0')

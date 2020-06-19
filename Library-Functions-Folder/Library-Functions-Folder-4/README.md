@@ -19,7 +19,7 @@ allocate_string_characters    move_string_characters
 
 generate_character_string     remove_string_character
 
-calculate_string_length       add_string_character
+character_string_length       add_string_character
 
 string_contains_character     compare_character_strings
 

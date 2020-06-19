@@ -13,7 +13,7 @@ int allocate_string_character_test(char* string,
   string = allocate_string_character(string, index,
     character);
   return compare_character_strings(string, output,
-    calculate_string_length(string));
+    character_string_length(string));
 }
 
 int allocate_string_characters_test(char* string,
@@ -32,10 +32,10 @@ int generate_character_string_test(int length,
     length);
 }
 
-int calculate_string_length_test(char* string,
+int character_string_length_test(char* string,
   int output)
 {
-  int length = calculate_string_length(string);
+  int length = character_string_length(string);
   return (length == output);
 }
 
@@ -52,7 +52,7 @@ int switch_string_characters_test(char* string,
   string = switch_string_characters(string, first,
     second);
   return compare_character_strings(string, output,
-    calculate_string_length(string));
+    character_string_length(string));
 }
 
 int move_string_characters_test(char* string,
@@ -69,7 +69,7 @@ int remove_string_character_test(char* string,
   string = remove_string_character(string, length,
     character);
   return compare_character_strings(string, output,
-    calculate_string_length(string));
+    character_string_length(string));
 }
 
 int add_string_character_test(char* string, int length,
@@ -87,5 +87,5 @@ int remove_string_characters_test(char* string,
   string = remove_string_characters(string, length,
     character);
   return compare_character_strings(string, output,
-    calculate_string_length(string));
+    character_string_length(string));
 }

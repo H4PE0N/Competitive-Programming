@@ -17,7 +17,7 @@ library-functions-program-8.h"
 int binary_integer_enough(char* binary, int total,
   int integer)
 {
-  int length = calculate_string_length(binary);
+  int length = character_string_length(binary);
   int product = calculate_bit_integer(total -1-length);
   return  ( (integer - product) >= 0);
 }
@@ -30,7 +30,7 @@ int calculate_bit_integer(int power_integer)
 int reduce_binary_integer(char* binary, int length,
   int integer)
 {
-  int index = length - calculate_string_length(binary);
+  int index = length - character_string_length(binary);
   if(binary_integer_enough(binary, length + 1,integer))
   {
     return integer - calculate_bit_integer(index);
@@ -41,7 +41,7 @@ int reduce_binary_integer(char* binary, int length,
 char* allocate_binary_bit(char* binary, int total,
   int integer)
 {
-  int length = calculate_string_length(binary);
+  int length = character_string_length(binary);
   if(binary_integer_enough(binary, total, integer))
   {
     return add_string_character(binary, length, '1');
