@@ -41,7 +41,9 @@ lower_alphabet_character      higher_alphabet_character
 
 delete_string_character       compare_string_characters
 
-compare_strings_character
+compare_strings_character     string_character_smaller
+
+string_character_greater
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -70,4 +70,10 @@ int compare_string_characters_test(char*, int,
 int compare_strings_character_test(char*, char*,
   int, int);
 
+int string_character_greater_test(char*, int,
+  int, int);
+
+int string_character_smaller_test(char*, int,
+  int, int);
+
 #endif

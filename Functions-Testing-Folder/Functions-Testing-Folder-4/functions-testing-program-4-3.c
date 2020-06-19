@@ -58,3 +58,17 @@ int compare_strings_character_test(char* first,
   int boolean = compare_strings_character(first,second,
     index); return (boolean == output);
 }
+
+int string_character_greater_test(char* string,
+  int first, int second, int output)
+{
+  int boolean = string_character_greater(string, first,
+    second); return (boolean == output);
+}
+
+int string_character_smaller_test(char* string,
+  int first, int second, int output)
+{
+  int boolean = string_character_smaller(string, first,
+    second); return (boolean == output);
+}

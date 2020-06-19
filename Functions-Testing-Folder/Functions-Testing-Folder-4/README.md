@@ -36,5 +36,7 @@ lower_alphabet_character_test     higher_alphabet_character_test
 
 compare_string_characters_test    compare_strings_character_test
 
+string_character_greater_test     string_character_smaller_test
+
 Made by Roy Hampus Fridholm
 </pre>

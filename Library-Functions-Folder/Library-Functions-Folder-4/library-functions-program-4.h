@@ -80,4 +80,10 @@ int compare_string_characters(char*,
 int compare_strings_character(char*,
   char*, int);
 
+int string_character_smaller(char*,int,
+  int);
+
+int string_character_greater(char*,int,
+  int);
+
 #endif
