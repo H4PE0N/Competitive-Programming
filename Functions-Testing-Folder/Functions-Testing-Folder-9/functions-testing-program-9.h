@@ -77,4 +77,7 @@ int sort_sentence_strings_test(char**,int,char**);
 int shuffle_sentence_strings_test(char**, int,
   char**);
 
+int shuffle_string_sentence_test(char**, int,
+  char**);
+
 #endif

@@ -82,4 +82,6 @@ char** sort_sentence_iteration(char**, int,
 int compare_sentence_content(char**,char**,
   int, int);
 
+char** shuffle_string_sentence(char**,int);
+
 #endif

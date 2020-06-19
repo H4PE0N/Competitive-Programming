@@ -73,3 +73,14 @@ int compare_sentence_content_test(char** first,
   int boolean = compare_sentence_content(first, second,
     height, width); return (boolean == output);
 }
+
+int shuffle_string_sentence_test(char** sentence,
+  int height, char** output)
+{
+  int width = sentence_string_length(sentence, 0);
+  sentence = shuffle_string_sentence(sentence, height);
+  int boolean = !compare_string_sentence(sentence,
+    output, height, width);
+  return boolean && compare_sentence_content(sentence,
+    output, height, width);
+}
