@@ -32,3 +32,10 @@ int array_integers_sequences(int* array, int length)
   }
   return sequences;
 }
+
+double array_integer_percent(int* array, int length,
+  int integer)
+{
+  double amount = array_integer_frequency(array,length,
+    integer); return convert_decimal_percent(amount);
+}

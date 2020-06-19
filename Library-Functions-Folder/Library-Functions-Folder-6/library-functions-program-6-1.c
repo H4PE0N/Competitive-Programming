@@ -38,8 +38,7 @@ double array_integer_frequency(int* array, int length,
   int integer)
 {
   int amount = array_integer_amount(array, length,
-    integer);
-  return ((double) amount / (double) length);
+    integer); return (double) amount / (double) length;
 }
 
 double integer_even_median(int* array, int length)
@@ -91,11 +90,4 @@ int integer_array_typical(int* array, int length)
       amount, integer);
   }
   return array_index_integer(variables, 1);
-}
-
-double array_integer_percent(int* array, int length,
-  int integer)
-{
-  double amount = array_integer_frequency(array,length,
-    integer); return convert_decimal_percent(amount);
 }

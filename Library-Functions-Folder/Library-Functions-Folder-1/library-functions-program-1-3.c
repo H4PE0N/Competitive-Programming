@@ -14,7 +14,9 @@ library-functions-program-8.h"
 void integer_array_stdout(int* array, int length)
 {
   for(int index = 0; index < length; index = index + 1)
+  {
     printf("%d ", array_index_integer(array, index));
+  }
   printf("\n");
 }
 

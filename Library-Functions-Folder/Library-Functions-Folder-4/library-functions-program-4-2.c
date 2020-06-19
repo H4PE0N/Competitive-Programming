@@ -51,7 +51,9 @@ char* generate_random_string(int length, int minimum,
 void character_string_stdout(char* string, int length)
 {
   for(int index = 0; index < length; index = index + 1)
-    printf("%c ",string_index_character(string, index));
+  {
+    printf("%c ",string_index_character(string,index));
+  }
   printf("\n");
 }
 
@@ -88,7 +90,7 @@ char* sort_string_iteration(char* string,int iteration)
 {
   for(int index = 0; index < (iteration - 1); index++)
   {
-    if(*(string + index) <= *(string + index + 1))
+    if(string_character_smaller(string,index,index + 1))
       continue;
     string = switch_adjacent_characters(string, index);
   }
