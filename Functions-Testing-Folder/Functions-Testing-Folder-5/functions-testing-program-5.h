@@ -16,9 +16,9 @@ int allocate_binary_bit_test(char*, int,int,
 int allocate_binary_bits_test(char*,int,int,
   char*);
 
-int calculate_real_length_test(int, int);
+int actual_binary_length_test(int, int);
 
-int calculate_nearest_length_test(int, int);
+int nearest_binary_length_test(int, int);
 
 int convert_integer_binary_test(int, char*);
 

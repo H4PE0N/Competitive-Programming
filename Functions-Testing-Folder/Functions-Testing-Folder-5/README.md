@@ -10,7 +10,7 @@ original function in the 'Library-Functions-Folder'.
 
 Here is a list of the functions that the programs contains:
 
-binary_integer_enough_test        calculate_nearest_length_test
+binary_integer_enough_test        nearest_binary_length_test
 
 reduce_binary_integer_test        convert_integer_binary_test
 
@@ -18,7 +18,7 @@ allocate_binary_bit_test          convert_character_binary_test
 
 allocate_binary_bits_test         increase_binary_integer_test
 
-calculate_real_length_test        convert_binary_integer_test
+actual_binary_length_test         convert_binary_integer_test
 
 convert_binary_character_test     calculate_bit_integer_test
 

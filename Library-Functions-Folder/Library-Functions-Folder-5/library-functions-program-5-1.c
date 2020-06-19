@@ -38,6 +38,16 @@ int reduce_binary_integer(char* binary, int length,
   else return integer;
 }
 
+int actual_binary_length(int integer)
+{
+  int length = 0;
+  while(integer > calculate_bit_integer(length))
+  {
+    length = increase_integer_variable(length);
+  }
+  return length;
+}
+
 char* allocate_binary_bit(char* binary, int total,
   int integer)
 {
@@ -49,14 +59,27 @@ char* allocate_binary_bit(char* binary, int total,
   return add_string_character(binary, length, '0');
 }
 
-int calculate_real_length(int integer)
+char* convert_integer_binary(int integer)
 {
-  int length = 0;
-  while(integer > calculate_bit_integer(length))
+  int length = nearest_binary_length(integer);
+  char* binary = generate_character_string(length);
+  return allocate_binary_bits(binary, length, integer);
+}
+
+char* convert_character_binary(char character)
+{
+  char* binary = convert_integer_binary(character);
+  return binary;
+}
+
+int nearest_binary_length(int integer)
+{
+  int length=actual_binary_length(integer), index = 2;
+  while(length > calculate_bit_integer(index))
   {
-    length = increase_integer_variable(length);
+    index = increase_integer_variable(index);
   }
-  return length;
+  return calculate_bit_integer(index);
 }
 
 char* allocate_binary_bits(char* binary, int length,
@@ -69,28 +92,5 @@ char* allocate_binary_bits(char* binary, int length,
     integer = reduce_binary_integer(binary, length,
       integer);
   }
-  return binary;
-}
-
-int calculate_nearest_length(int integer)
-{
-  int length=calculate_real_length(integer), index = 2;
-  while(length > calculate_bit_integer(index))
-  {
-    index = increase_integer_variable(index);
-  }
-  return calculate_bit_integer(index);
-}
-
-char* convert_integer_binary(int integer)
-{
-  int length = calculate_nearest_length(integer);
-  char* binary = generate_character_string(length);
-  return allocate_binary_bits(binary, length, integer);
-}
-
-char* convert_character_binary(char character)
-{
-  char* binary = convert_integer_binary(character);
   return binary;
 }

@@ -58,16 +58,15 @@ int allocate_binary_bit_test(char* binary, int length,
     length);
 }
 
-int calculate_nearest_length_test(int integer,
-  int output)
+int nearest_binary_length_test(int integer,int output)
 {
-  int length = calculate_nearest_length(integer);
+  int length = nearest_binary_length(integer);
   return (length == output);
 }
 
-int calculate_real_length_test(int integer,int output)
+int actual_binary_length_test(int integer, int output)
 {
-  int length = calculate_real_length(integer);
+  int length = actual_binary_length(integer);
   return (length == output);
 }
 

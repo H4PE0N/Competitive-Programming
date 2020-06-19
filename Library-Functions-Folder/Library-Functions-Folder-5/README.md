@@ -13,7 +13,7 @@ a positive output.
 
 Here is a list of the functions that the programs contains:
 
-binary_integer_enough         calculate_nearest_length
+binary_integer_enough         nearest_binary_length
 
 reduce_binary_integer         convert_integer_binary
 
@@ -21,7 +21,7 @@ allocate_binary_bit           convert_character_binary
 
 allocate_binary_bits          increase_binary_integer
 
-calculate_real_length         convert_binary_integer
+actual_binary_length          convert_binary_integer
 
 convert_binary_character      calculate_bit_integer
 
