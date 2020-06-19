@@ -29,9 +29,9 @@ int shuffle_integer_matrix_test(int**matrix,int height,
 {
   int width = matrix_array_length(matrix, 0);
   matrix = shuffle_integer_matrix(matrix, height);
-  int result = !compare_integer_matrix(matrix, output,
+  int boolean = !compare_integer_matrix(matrix, output,
     height, width);
-  return result && compare_matrix_content(matrix,
+  return boolean && compare_matrix_content(matrix,
     output, height, width);
 }
 

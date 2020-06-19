@@ -25,7 +25,10 @@ int shuffle_character_string_test(char* string,
   int length, char* output)
 {
   string = shuffle_character_string(string, length);
-  return compare_string_content(string, output,length);
+  int boolean=!compare_character_strings(string,output,
+    length);
+  return boolean && compare_string_content(string,
+    output, length);
 }
 
 int duplicate_character_string_test(char* string,

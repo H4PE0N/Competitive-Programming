@@ -64,9 +64,9 @@ int shuffle_integer_array_test(int* array, int length,
   int* output)
 {
   array = shuffle_integer_array(array, length);
-  int result = !compare_integer_arrays(array, output,
+  int boolean = !compare_integer_arrays(array, output,
     length);
-  return result && compare_array_content(array, output,
+  return boolean && compare_array_content(array,output,
     length);
 }
 
