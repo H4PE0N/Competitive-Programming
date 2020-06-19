@@ -74,5 +74,3 @@ char** shuffle_string_sentence(char** sentence,
   }
   return sentence;
 }
-
-// sort_string_sentence
