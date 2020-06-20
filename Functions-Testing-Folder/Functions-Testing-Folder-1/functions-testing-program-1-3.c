@@ -62,3 +62,10 @@ int array_integer_greater_test(int* array, int first,
   int boolean = array_integer_greater(array, first,
     second); return (boolean == output);
 }
+
+int reverse_integer_array_test(int* array, int length,
+  int* output)
+{
+  int* reverse = reverse_integer_array(array, length);
+  return compare_integer_arrays(reverse,output,length);
+}

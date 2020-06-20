@@ -41,7 +41,7 @@ integer_array_total         compare_array_integers
 
 compare_arrays_integer      array_integer_greater
 
-array_integer_smaller
+array_integer_smaller       reverse_integer_array
 
 Made by Roy Hampus Fridholm
 </pre>

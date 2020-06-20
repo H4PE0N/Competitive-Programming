@@ -91,10 +91,3 @@ int array_integer_greater(int* array, int first,
   int integer = array_index_integer(array, first);
   return integer > array_index_integer(array, second);
 }
-
-int array_integer_smaller(int* array, int first,
-  int second)
-{
-  int integer = array_index_integer(array, first);
-  return integer < array_index_integer(array, second);
-}

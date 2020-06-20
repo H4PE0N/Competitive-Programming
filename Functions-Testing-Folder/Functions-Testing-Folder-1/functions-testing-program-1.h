@@ -77,4 +77,7 @@ int array_integer_greater_test(int*, int,
 int array_integer_smaller_test(int*, int,
   int, int);
 
+int reverse_integer_array_test(int*, int,
+  int*);
+
 #endif

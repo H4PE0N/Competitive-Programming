@@ -38,5 +38,7 @@ compare_arrays_integer_test       compare_array_content_test
 
 array_integer_greater_test        array_integer_smaller_test
 
+reverse_integer_array_test
+
 Made by Roy Hampus Fridholm
 </pre>
