@@ -38,7 +38,9 @@ sentence_string_greater_test      sentence_string_smaller_test
 
 sentence_character_smaller_test   sentence_character_greater_test
 
-shuffle_string_sentence_test
+shuffle_string_sentence_test      reverse_string_sentence_test
+
+reverse_sentence_strings_test
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -74,3 +74,28 @@ char** shuffle_string_sentence(char** sentence,
   }
   return sentence;
 }
+
+char** reverse_string_sentence(char** sentence,
+  int height, int width)
+{
+  char** reverse = generate_string_sentence(height,
+    width);
+  for(int index = 0; index < height; index = index + 1)
+  {
+    *(reverse + index) =sentence_index_string(sentence,
+      height - (index + 1));
+  }
+  return reverse;
+}
+
+char** reverse_sentence_strings(char** sentence,
+  int height, int width)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    char* string=sentence_index_string(sentence,index);
+    *(sentence +index)=reverse_character_string(string,
+      width);
+  }
+  return sentence;
+}

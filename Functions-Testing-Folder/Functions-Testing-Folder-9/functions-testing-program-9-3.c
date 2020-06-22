@@ -84,3 +84,21 @@ int shuffle_string_sentence_test(char** sentence,
   return boolean && compare_sentence_content(sentence,
     output, height, width);
 }
+
+int reverse_string_sentence_test(char** sentence,
+  int height, int width, char** output)
+{
+  sentence = reverse_string_sentence(sentence, height,
+    width);
+  return compare_string_sentence(sentence, output,
+    height, width);
+}
+
+int reverse_sentence_strings_test(char** sentence,
+  int height, int width, char** output)
+{
+  sentence = reverse_sentence_strings(sentence, height,
+    width);
+  return compare_string_sentence(sentence, output,
+    height, width);
+}

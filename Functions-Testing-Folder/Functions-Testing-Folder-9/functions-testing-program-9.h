@@ -80,4 +80,10 @@ int shuffle_sentence_strings_test(char**, int,
 int shuffle_string_sentence_test(char**, int,
   char**);
 
+int reverse_string_sentence_test(char**, int, int,
+  char**);
+
+int reverse_sentence_strings_test(char**, int, int, 
+  char**);
+
 #endif

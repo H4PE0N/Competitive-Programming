@@ -43,7 +43,9 @@ sentence_string_smaller     sentence_string_greater
 
 sentence_character_greater  sentence_character_smaller
 
-shuffle_string_sentence
+shuffle_string_sentence     reverse_string_sentence
+
+reverse_sentence_strings
 
 Made by Roy Hampus Fridholm
 </pre>
