@@ -11,14 +11,14 @@ this folder contains test functions of array-functions.
 Here is a list of all the folders and  what  they  contain:
 
 * Functions-Testing-Folder-1: Integer Arrays
-* Functions-Testing-Folder-2: Matrices
+* Functions-Testing-Folder-2: Integer Matrices
 * Functions-Testing-Folder-3: Integer Hash-maps
 * Functions-Testing-Folder-4: Strings
 * Functions-Testing-Folder-5: Binary Strings
-* Functions-Testing-Folder-6: Statistics, Probability
+* Functions-Testing-Folder-6: Statistics
 * Functions-Testing-Folder-7: Binary Operations
 * Functions-Testing-Folder-8: Integers
-* Functions-Testing-Folder-9: Sentences
+* Functions-Testing-Folder-9: String Sentences
 
 Made by Roy Hampus Fridholm
 </pre>
