@@ -24,7 +24,7 @@ int** reverse_integer_matrix(int** matrix, int height,
     *(reverse + index) = matrix_index_array(matrix,
       height - (index + 1));
   }
-  return matrix;
+  return reverse;
 }
 
 int** reverse_matrix_arrays(int** matrix, int height,

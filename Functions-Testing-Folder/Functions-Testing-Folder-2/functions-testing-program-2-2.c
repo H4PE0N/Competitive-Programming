@@ -7,6 +7,10 @@ library-functions-program-1.h"
 Library-Functions-Folder-2/\
 library-functions-program-2.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 int switch_matrix_arrays_test(int** matrix, int first,
   int second, int** output)
 {

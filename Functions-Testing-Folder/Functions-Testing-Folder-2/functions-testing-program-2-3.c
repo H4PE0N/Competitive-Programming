@@ -7,6 +7,10 @@ library-functions-program-1.h"
 Library-Functions-Folder-2/\
 library-functions-program-2.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 int delete_matrix_array_test(int** matrix, int height,
   int index, int** output)
 {
@@ -86,11 +90,4 @@ int matrix_integer_smaller_test(int** matrix, int first,
 {
   int boolean = matrix_integer_smaller(matrix, first,
     second, index); return (boolean == output);
-}
-
-int matrix_array_smaller_test(int** matrix, int height,
-  int first, int second, int output)
-{
-  int boolean = matrix_array_smaller(matrix, height,
-    first, second); return (boolean == output);
 }

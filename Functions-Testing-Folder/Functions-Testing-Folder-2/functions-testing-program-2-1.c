@@ -7,6 +7,10 @@ library-functions-program-1.h"
 Library-Functions-Folder-2/\
 library-functions-program-2.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
 int generate_matrix_array_test(int height, int width,
   int** output)
 {
