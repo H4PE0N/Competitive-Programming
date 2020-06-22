@@ -43,7 +43,7 @@ delete_string_character       compare_string_characters
 
 compare_strings_character     string_character_smaller
 
-string_character_greater
+string_character_greater      reverse_character_string
 
 Made by Roy Hampus Fridholm
 </pre>

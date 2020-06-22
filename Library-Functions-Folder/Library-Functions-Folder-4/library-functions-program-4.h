@@ -86,4 +86,7 @@ int string_character_smaller(char*,int,
 int string_character_greater(char*,int,
   int);
 
+char* reverse_character_string(char*,
+  int);
+
 #endif

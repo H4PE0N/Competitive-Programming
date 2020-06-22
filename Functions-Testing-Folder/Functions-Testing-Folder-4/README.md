@@ -38,5 +38,7 @@ compare_string_characters_test    compare_strings_character_test
 
 string_character_greater_test     string_character_smaller_test
 
+reverse_character_string_test
+
 Made by Roy Hampus Fridholm
 </pre>

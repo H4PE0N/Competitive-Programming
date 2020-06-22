@@ -72,3 +72,11 @@ int string_character_smaller_test(char* string,
   int boolean = string_character_smaller(string, first,
     second); return (boolean == output);
 }
+
+int reverse_character_string_test(char* string,
+  int length, char* output)
+{
+  char*reverse=reverse_character_string(string,length);
+  return compare_character_strings(reverse, output,
+    length);
+}

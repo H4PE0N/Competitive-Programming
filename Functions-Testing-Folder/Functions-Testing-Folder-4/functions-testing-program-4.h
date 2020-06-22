@@ -76,4 +76,7 @@ int string_character_greater_test(char*, int,
 int string_character_smaller_test(char*, int,
   int, int);
 
+int reverse_character_string_test(char*, int,
+  char*);
+
 #endif
