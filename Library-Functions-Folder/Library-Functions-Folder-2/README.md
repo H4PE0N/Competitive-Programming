@@ -43,5 +43,7 @@ matrix_array_greater        sort_matrix_iteration
 
 matrix_array_integer        matrix_array_smaller
 
+reverse_integer_matrix      reverse_matrix_arrays
+
 Made by Roy Hampus Fridholm
 </pre>

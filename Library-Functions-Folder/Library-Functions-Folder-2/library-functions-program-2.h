@@ -88,4 +88,10 @@ int matrix_integer_smaller(int**, int,
 int matrix_array_smaller(int**, int,int,
   int);
 
+int** reverse_integer_matrix(int**, int,
+  int);
+
+int** reverse_matrix_arrays(int**, int,
+  int);
+
 #endif
