@@ -1,10 +1,10 @@
 
 <pre>
-The functions in this folder are all based on the same type
-area in programming. In this folder you will find functions
-that are based on binary operations, like "and",  "or"  and
-"not". The folder also contains operations  that  are  less
-common, like bit shifting.
+The functions in this folder are all based on the same area
+in programming. In this folder you will find functions that
+are based on binary operations, like "and", "or" and "not".
+The folder also contains operations that are  less  common,
+like bit shifting.
 
 Here is a list of the functions that the programs contains:
 

@@ -1,7 +1,7 @@
 
 <pre>
 This folder contains programs that you can write some tests
-for every function in that specific type  of  program.  The
+for every function in that  specific  data-type  area.  The
 test-functions is made in the test folders,  you  can  call
 them from here with different types of inputs  and  outputs
 to see if they are working as expected. If the test returns

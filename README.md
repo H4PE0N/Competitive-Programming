@@ -21,8 +21,8 @@ following some rules. These rules is just  some  things  to
 make the project look nicer and make the reader  understand
 what the programs do.
 
-Here is a list of some of the functions that you will  have
-to consider, when working in the project:
+Here is a list of some of the rules that you will  have  to
+consider, when working in the project:
 
 * The  lines  of  code  should  only  be  as  long  as  the
   "holy for loop". Two extra spaces are included before:

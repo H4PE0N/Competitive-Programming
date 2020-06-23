@@ -5,9 +5,9 @@ reader about the specific  folder.  That  means  you  as  a
 developer working on the project will fill in the sentences
 as you create a new folder with a new type of functions.
 
-The functions in this folder are all based on the same type
-area in programming. In this folder you will find functions
-that are based on
+The functions in this folder are all based on the same area
+in programming. In this folder you will find functions that
+are based on 
 
 Here is a list of the functions that the programs contains:
 

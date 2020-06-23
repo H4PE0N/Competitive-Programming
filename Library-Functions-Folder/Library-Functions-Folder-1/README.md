@@ -1,8 +1,8 @@
 
 <pre>
-The functions in this folder are all based on the same type
-area in programming. In this folder you will find functions
-that are based on integer arrays, that means you  can  call
+The functions in this folder are all based on the same area
+in programming. In this folder you will find functions that
+are based on  integer  arrays,  that  means  you  can  call
 functions from here that helps you with your arrays.
 
 Here is a list of the functions that the programs contains:

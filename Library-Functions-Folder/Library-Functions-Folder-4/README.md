@@ -1,8 +1,8 @@
 
 <pre>
-The functions in this folder are all based on the same type
-area in programming. In this folder you will find functions
-that are based on character strings. Strings is a array  of
+The functions in this folder are all based on the same area
+in programming. In this folder you will find functions that
+are based on character  strings.  Strings  is  a  array  of
 characters, it is the same as an  integer  array  but  with
 characters instead of integers.
 

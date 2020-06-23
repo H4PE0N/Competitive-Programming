@@ -1,9 +1,9 @@
 
 <pre>
-The functions in this folder are all based on the same type
-area in programming. In this folder you will find functions
-that are based on integer matrices,  that  means  you  will
-find functions that returns the height of your matrix,  and
+The functions in this folder are all based on the same area
+in programming. In this folder you will find functions that
+are based on integer matrices, that  means  you  will  find
+functions that returns  the  height  of  your  matrix,  and
 similar types of functions.
 
 Here is a list of the functions that the programs contains:

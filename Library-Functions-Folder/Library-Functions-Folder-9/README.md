@@ -1,12 +1,12 @@
 
 <pre>
-The functions in this folder are all based on the same type
-area in programming. In this folder you will find functions
-that are based on string sentences. Sentences is  an  array
-on strings, or a two dimensional array  on  characters.  It
-could be used when working with a  sentence.  Or  something
-like a deck of cards, when you want to  have  an  array  of
-strings (cards).
+The functions in this folder are all based on the same area
+in programming. In this folder you will find functions that
+are based on string sentences. Sentences  is  an  array  on
+strings, or a two dimensional array on characters. It could
+be used when working with a sentence. Or something  like  a
+deck of cards, when you want to have an  array  of  strings
+(cards).
 
 Here is a list of the functions that the programs contains:
 
