@@ -1,9 +1,10 @@
 
 <pre>
-This folder contains programs that you can write the  tests
-in. It is one folder for every test program, so if you want
-to test the integer array functions, you will call the test
-functions here.
+This folder contains programs that you can write some tests
+for every function in that specific type  of  program.  The
+test-functions is made in the test folders,  you  can  call
+them from here with different types of inputs  and  outputs
+to see if they are working as expected.
 
 Here is a list of all the folders and  what  they  contain:
 

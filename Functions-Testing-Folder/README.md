@@ -1,12 +1,22 @@
 
 <pre>
-This folder  contains  functions  that  tests  the  library
-functions. Every  library  function have it's corresponding
-test function, with an added '_test' to the  function  name.
+This folder  contains  functions  that  test  the  original
+functions   from   'Library-Functions-Folder'.   When   you
+want to create a new function, you will first make the test
+function  here.  Then  you  will  call  the  test  function
+with some  different  types  of  inputs  and  outputs  from
+'Functions-Testing-Bootup' . After that you can create  the
+original function  in  the  'Library-Functions-Folder'.  By
+doing  that  you  are  are  working  in   a   test   driven
+development. That means that the risk of creating bugs in a
+function is very low, if you  have  made  some  requirement
+first.
 
-The folders contains the same  kind  of  functions  as  the
-function library folders. That means the  first  folder  in
-this folder contains test functions of array-functions.
+When you are giving a name to the test function,  you  will
+take the original functions name and add a "_test" at  they
+end  of  the  name.  That  makes  it  easier  to  find  the
+corresponding function when you want to access them in your
+programs
 
 Here is a list of all the folders and  what  they  contain:
 

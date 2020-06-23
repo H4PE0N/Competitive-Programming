@@ -2,9 +2,10 @@
 <pre>
 This folder has functions  that  builds  up  the  function-
 library. Every folder contains different types of functions
-that is used in programming.  For  example  has  the  first
-folder functions about  integer  arrays,  manipulation  and
-calculations.
+that is used in programming.  When  you  are  thinking  of
+making a new function to the library.  You  should  follow
+the "test driven development" rules, you can find them  in
+the "Functions-Testing-Folder" markdown file.
 
 Here is a list of all the folders and  what  they  contain:
 
