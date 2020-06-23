@@ -24,7 +24,7 @@ Here is a list of all the folders and  what  they  contain:
 * Functions-Testing-Folder-1: Integer Arrays
 * Functions-Testing-Folder-2: Integer Matrices
 * Functions-Testing-Folder-3: Integer Hash-maps
-* Functions-Testing-Folder-4: Strings
+* Functions-Testing-Folder-4: Character Strings
 * Functions-Testing-Folder-5: Binary Strings
 * Functions-Testing-Folder-6: Statistics
 * Functions-Testing-Folder-7: Binary Operations

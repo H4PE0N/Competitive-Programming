@@ -13,7 +13,7 @@ Here is a list of all the folders and  what  they  contain:
 * Functions-Testing-Bootup-1: Integer Arrays
 * Functions-Testing-Bootup-2: Integer Matrices
 * Functions-Testing-Bootup-3: Integer Hash-maps
-* Functions-Testing-Bootup-4: Strings
+* Functions-Testing-Bootup-4: Character Strings
 * Functions-Testing-Bootup-5: Binary Strings
 * Functions-Testing-Bootup-6: Statistics
 * Functions-Testing-Bootup-7: Binary Operations

@@ -12,7 +12,7 @@ Here is a list of all the folders and  what  they  contain:
 * Library-Functions-Folder-1: Integer Arrays
 * Library-Functions-Folder-2: Integer Matrices
 * Library-Functions-Folder-3: Integer Hash-maps
-* Library-Functions-Folder-4: Strings
+* Library-Functions-Folder-4: Character Strings
 * Library-Functions-Folder-5: Binary Strings
 * Library-Functions-Folder-6: Statistics
 * Library-Functions-Folder-7: Binary Operations
