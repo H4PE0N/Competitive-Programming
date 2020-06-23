@@ -7,16 +7,15 @@ function  here.  Then  you  will  call  the  test  function
 with some  different  types  of  inputs  and  outputs  from
 'Functions-Testing-Bootup' . After that you can create  the
 original function  in  the  'Library-Functions-Folder'.  By
-doing  that  you  are  are  working  in   a   test   driven
-development. That means that the risk of creating bugs in a
-function is very low, if you  have  made  some  requirement
-first.
+doing that you are working with  "test driven development".
+That means that the risk of creating bugs in a function  is
+very low, if you have made some requirement first.
 
 When you are giving a name to the test function,  you  will
 take the original functions name and add a "_test" at  they
 end  of  the  name.  That  makes  it  easier  to  find  the
 corresponding function when you want to access them in your
-programs
+programs.
 
 Here is a list of all the folders and  what  they  contain:
 

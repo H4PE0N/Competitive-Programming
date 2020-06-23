@@ -4,7 +4,9 @@ This folder contains programs that you can write some tests
 for every function in that specific type  of  program.  The
 test-functions is made in the test folders,  you  can  call
 them from here with different types of inputs  and  outputs
-to see if they are working as expected.
+to see if they are working as expected. If the test returns
+a positive output, it means that your function has done its
+purpose.
 
 Here is a list of all the folders and  what  they  contain:
 

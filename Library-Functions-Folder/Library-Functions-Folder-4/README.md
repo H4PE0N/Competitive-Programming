@@ -1,15 +1,10 @@
 
 <pre>
-These  programs  contains  functions  that  generates   and
-perform different types of operations on strings.
-
-If you want to create a new function to this  library,  you
-will have to make the test function before. After the  test
-function is done, you will have to call the  function  with
-some   different   arguments   and   outputs    from    the
-'Functions-Testing-Bootup'. After that you  can  write  the
-original function and hope that the test calls will  return
-a positive output.
+The functions in this folder are all based on the same type
+area in programming. In this folder you will find functions
+that are based on character strings. Strings is a array  of
+characters, it is the same as an  integer  array  but  with
+characters instead of integers.
 
 Here is a list of the functions that the programs contains:
 

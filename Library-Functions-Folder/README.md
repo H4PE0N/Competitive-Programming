@@ -5,7 +5,7 @@ library. Every folder contains different types of functions
 that is used in programming.  When  you  are  thinking  of
 making a new function to the library.  You  should  follow
 the "test driven development" rules, you can find them  in
-the "Functions-Testing-Folder" markdown file.
+the "Functions-Testing-Folder"-markdown file.
 
 Here is a list of all the folders and  what  they  contain:
 
