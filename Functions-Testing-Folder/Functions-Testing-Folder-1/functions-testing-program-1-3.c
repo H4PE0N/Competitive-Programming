@@ -69,3 +69,10 @@ int reverse_integer_array_test(int* array, int length,
   int* reverse = reverse_integer_array(array, length);
   return compare_integer_arrays(reverse,output,length);
 }
+
+int array_integer_index_test(int* array, int length,
+  int integer, int output)
+{
+  int index =array_integer_index(array,length,integer);
+  return (index == output);
+}

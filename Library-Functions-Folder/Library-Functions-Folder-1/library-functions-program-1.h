@@ -77,4 +77,6 @@ int array_integer_smaller(int*, int,
 
 int* reverse_integer_array(int*, int);
 
+int array_integer_index(int*, int,int);
+
 #endif

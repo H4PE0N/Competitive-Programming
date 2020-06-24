@@ -18,6 +18,18 @@ int array_integer_smaller(int* array, int first,
   return integer < array_index_integer(array, second);
 }
 
+int array_integer_index(int* array, int length,
+  int integer)
+{
+  int integer_index = -1;
+  for(int index = length - 1; index >= 0; index -= 1)
+  {
+    if(array_index_integer(array, index) == integer)
+      integer_index = index;
+  }
+  return integer_index;
+}
+
 int* reverse_integer_array(int* array, int length)
 {
   int* reverse = generate_integer_array(length);

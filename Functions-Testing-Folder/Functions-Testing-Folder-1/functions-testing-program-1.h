@@ -80,4 +80,7 @@ int array_integer_smaller_test(int*, int,
 int reverse_integer_array_test(int*, int,
   int*);
 
+int array_integer_index_test(int*, int,int,
+  int);
+
 #endif
