@@ -88,4 +88,6 @@ int reverse_integer_matrix_test(int**, int, int,
 int reverse_matrix_arrays_test(int**, int, int,
   int**);
 
+int matrix_array_index_test(int**,int,int*,int);
+
 #endif

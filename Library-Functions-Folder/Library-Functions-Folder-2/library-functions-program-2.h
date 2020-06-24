@@ -94,4 +94,6 @@ int** reverse_integer_matrix(int**, int,
 int** reverse_matrix_arrays(int**, int,
   int);
 
+int matrix_array_index(int**, int,int*);
+
 #endif

@@ -25,7 +25,7 @@ int array_integer_index(int* array, int length,
   for(int index = (length - 1); index >= 0; index -= 1)
   {
     if(array_index_integer(array, index) == integer)
-      integer_index = index;
+      { integer_index = index; break; }
   }
   return integer_index;
 }

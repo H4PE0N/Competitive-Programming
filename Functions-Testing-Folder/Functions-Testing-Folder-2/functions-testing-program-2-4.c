@@ -33,3 +33,10 @@ int reverse_matrix_arrays_test(int** matrix,int height,
   return compare_integer_matrix(matrix, output, height,
     width);
 }
+
+int matrix_array_index_test(int** matrix, int height,
+  int* array, int output)
+{
+  int index = matrix_array_index(matrix, height,array);
+  return (index == output);
+}

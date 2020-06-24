@@ -52,7 +52,7 @@ int string_character_index(char* string, int length,
   for(int index = (length - 1); index >= 0; index -= 1)
   {
     if(string_index_character(string,index)==character)
-      character_index = index;
+      { character_index = index; break; }
   }
   return character_index;
 }
