@@ -79,4 +79,7 @@ int string_character_smaller_test(char*, int,
 int reverse_character_string_test(char*, int,
   char*);
 
+int string_character_index_test(char*, int,char,
+  int);
+
 #endif

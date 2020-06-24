@@ -44,3 +44,15 @@ char* reverse_character_string(char* string,int length)
   }
   return reverse;
 }
+
+int string_character_index(char* string, int length,
+  char character)
+{
+  int character_index = -1;
+  for(int index = (length - 1); index >= 0; index -= 1)
+  {
+    if(string_index_character(string,index)==character)
+      character_index = index;
+  }
+  return character_index;
+}

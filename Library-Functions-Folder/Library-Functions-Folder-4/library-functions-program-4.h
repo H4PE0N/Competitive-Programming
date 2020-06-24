@@ -89,4 +89,7 @@ int string_character_greater(char*,int,
 char* reverse_character_string(char*,
   int);
 
+int string_character_index(char*, int,
+  char);
+
 #endif

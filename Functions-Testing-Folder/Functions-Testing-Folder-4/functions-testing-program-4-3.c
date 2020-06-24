@@ -80,3 +80,10 @@ int reverse_character_string_test(char* string,
   return compare_character_strings(reverse, output,
     length);
 }
+
+int string_character_index_test(char*string,int length,
+  char character, int output)
+{
+  int index = string_character_index(string, length,
+    character); return (index == output);
+}
