@@ -93,12 +93,3 @@ int reverse_string_sentence_test(char** sentence,
   return compare_string_sentence(sentence, output,
     height, width);
 }
-
-int reverse_sentence_strings_test(char** sentence,
-  int height, int width, char** output)
-{
-  sentence = reverse_sentence_strings(sentence, height,
-    width);
-  return compare_string_sentence(sentence, output,
-    height, width);
-}

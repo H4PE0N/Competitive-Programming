@@ -83,7 +83,10 @@ int shuffle_string_sentence_test(char**, int,
 int reverse_string_sentence_test(char**, int, int,
   char**);
 
-int reverse_sentence_strings_test(char**, int, int, 
+int reverse_sentence_strings_test(char**, int, int,
   char**);
+
+int sentence_string_index_test(char**, int, char*,
+  int);
 
 #endif

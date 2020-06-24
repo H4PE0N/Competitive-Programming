@@ -87,6 +87,9 @@ char** shuffle_string_sentence(char**,int);
 char** reverse_string_sentence(char**, int,
   int);
 
+int sentence_string_index(char**, int,
+  char*);
+
 char** reverse_sentence_strings(char**,int,
   int);
 
