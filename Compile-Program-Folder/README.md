@@ -30,7 +30,8 @@ gcc -o library-compile-program library-compile-program.c \
 ../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-1.c \
 ../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-2.c \
 ../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-3.c \
-../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-4.c -lm
+../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-4.c \
+../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-5.c -lm
 
 After you have compiled the  program,  type  the  following
 command to run the executable file, that is going to appear
