@@ -69,8 +69,8 @@ int** delete_matrix_array(int** matrix, int height,
 {
   matrix = move_matrix_arrays(matrix, height, index);
   int length = matrix_array_length(matrix, 0);
-  return allocate_matrix_array(matrix, (height - 1),
-    generate_integer_array(length));
+  int* array = generate_integer_array(length);
+  return allocate_matrix_array(matrix, height, array);
 }
 
 int matrix_array_total(int** matrix, int index)

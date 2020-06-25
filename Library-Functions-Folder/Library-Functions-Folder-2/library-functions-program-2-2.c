@@ -32,7 +32,7 @@ int** switch_matrix_arrays(int** matrix, int first,
 int** move_matrix_arrays(int** matrix, int height,
   int start)
 {
-  for(int index = start; index < (height - 1); index++)
+  for(int index = start; index < height; index += 1)
   {
     matrix = switch_adjacent_arrays(matrix, index);
   }

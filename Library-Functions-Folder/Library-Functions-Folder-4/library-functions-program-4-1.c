@@ -77,14 +77,9 @@ char* allocate_string_characters(char* string,
 char* remove_string_character(char* string, int length,
   char character)
 {
-  int start = length;
-  for(int index = (length - 1); index >= 0; index -= 1)
-  {
-    if(string_index_character(string,index)!=character)
-      continue;
-    start = index; break;
-  }
-  return delete_string_character(string, length,start);
+  int index = string_character_index(string, character,
+    length);
+  return delete_string_character(string, length,index);
 }
 
 char* add_string_character(char* string, int length,
