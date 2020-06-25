@@ -35,7 +35,7 @@ int sentence_string_index(char** sentence, int height,
   {
     char* index_string=sentence_index_string(sentence,
       index);
-    int length = character_string_length(string);
+    int length=sentence_string_length(sentence, index);
     if(compare_character_strings(string, index_string,
       length)) { string_index = index; break; }
   }

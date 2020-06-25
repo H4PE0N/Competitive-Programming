@@ -40,3 +40,12 @@ int matrix_array_index_test(int** matrix, int height,
   int index = matrix_array_index(matrix, height,array);
   return (index == output);
 }
+
+int remove_matrix_array_test(int** matrix, int height,
+  int* array, int** output)
+{
+  matrix = remove_matrix_array(matrix, height, array);
+  int width = matrix_array_length(matrix, 0);
+  return compare_integer_matrix(matrix, output, height,
+    width);
+}

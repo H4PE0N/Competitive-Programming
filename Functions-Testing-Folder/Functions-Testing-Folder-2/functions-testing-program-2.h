@@ -90,4 +90,7 @@ int reverse_matrix_arrays_test(int**, int, int,
 
 int matrix_array_index_test(int**,int,int*,int);
 
+int remove_matrix_array_test(int**, int, int*,
+  int**);
+
 #endif

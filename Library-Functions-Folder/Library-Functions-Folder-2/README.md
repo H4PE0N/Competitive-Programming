@@ -40,7 +40,7 @@ matrix_array_integer        matrix_array_smaller
 
 reverse_integer_matrix      reverse_matrix_arrays
 
-matrix_array_index
+matrix_array_index          remove_matrix_array
 
 Made by Roy Hampus Fridholm
 </pre>

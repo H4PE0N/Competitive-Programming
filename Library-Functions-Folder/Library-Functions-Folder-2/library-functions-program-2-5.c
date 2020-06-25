@@ -46,9 +46,16 @@ int matrix_array_index(int** matrix, int height,
   for(int index = (height - 1); index >= 0; index -= 1)
   {
     int* index_array=matrix_index_array(matrix, index);
-    int length = integer_array_length(array);
+    int length = matrix_array_length(matrix, index);
     if(compare_integer_arrays(array, index_array,
       length)) { array_index = index; break; }
   }
   return array_index;
+}
+
+int** remove_matrix_array(int** matrix, int height,
+  int* array)
+{
+  int index = matrix_array_index(matrix, height,array);
+  return delete_matrix_array(matrix, height, index);
 }
