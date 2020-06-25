@@ -30,7 +30,7 @@ char** reverse_sentence_strings(char** sentence,
 int sentence_string_index(char** sentence, int height,
   char* string)
 {
-  int string_index = -1;
+  int string_index = height;
   for(int index = (height - 1); index >= 0; index -= 1)
   {
     char* index_string=sentence_index_string(sentence,

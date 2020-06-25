@@ -42,7 +42,7 @@ int** reverse_matrix_arrays(int** matrix, int height,
 int matrix_array_index(int** matrix, int height,
   int* array)
 {
-  int array_index = -1;
+  int array_index = height;
   for(int index = (height - 1); index >= 0; index -= 1)
   {
     int* index_array=matrix_index_array(matrix, index);

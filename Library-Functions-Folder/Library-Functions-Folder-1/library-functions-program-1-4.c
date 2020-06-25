@@ -21,7 +21,7 @@ int array_integer_smaller(int* array, int first,
 int array_integer_index(int* array, int length,
   int integer)
 {
-  int integer_index = -1;
+  int integer_index = length;
   for(int index = (length - 1); index >= 0; index -= 1)
   {
     if(array_index_integer(array, index) == integer)
