@@ -93,4 +93,6 @@ int matrix_array_index_test(int**,int,int*,int);
 int remove_matrix_array_test(int**, int, int*,
   int**);
 
+int add_matrix_array_test(int**,int,int*,int**);
+
 #endif

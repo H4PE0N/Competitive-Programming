@@ -86,7 +86,5 @@ char* add_string_character(char* string, int length,
   char character)
 {
   string = allocate_string_character(string, length,
-    character);
-  return allocate_string_character(string, length + 1,
-    '\0');
+    character); return string;
 }

@@ -44,9 +44,11 @@ sort_matrix_iteration_test      matrix_integer_greater_test
 
 matrix_integer_smaller_test     matrix_array_smaller_test
 
+add_matrix_array_test           remove_matrix_array_test
+
 reverse_integer_matrix_test     reverse_matrix_arrays_test
 
-matrix_array_index_test         remove_matrix_array_test
+matrix_array_index_test
 
 Made by Roy Hampus Fridholm
 </pre>

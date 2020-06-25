@@ -77,10 +77,8 @@ int* switch_adjacent_integers(int* array, int index)
 int* add_array_integer(int* array, int length,
   int integer)
 {
-  array = allocate_array_integer(array, length,
-    integer);
-  return allocate_array_integer(array, (length + 1),
-    '\0');
+  array = allocate_array_integer(array,length,integer);
+  return array;
 }
 
 int* sort_integer_iteration(int* array,int iteration)

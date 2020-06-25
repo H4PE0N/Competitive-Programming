@@ -59,3 +59,10 @@ int** remove_matrix_array(int** matrix, int height,
   int index = matrix_array_index(matrix, height,array);
   return delete_matrix_array(matrix, height, index);
 }
+
+int** add_matrix_array(int** matrix, int height,
+  int* array)
+{
+  matrix = allocate_matrix_array(matrix, height,array);
+  return matrix;
+}

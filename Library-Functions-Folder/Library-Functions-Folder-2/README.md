@@ -38,9 +38,11 @@ matrix_array_greater        sort_matrix_iteration
 
 matrix_array_integer        matrix_array_smaller
 
+add_matrix_array            remove_matrix_array
+
 reverse_integer_matrix      reverse_matrix_arrays
 
-matrix_array_index          remove_matrix_array
+matrix_array_index
 
 Made by Roy Hampus Fridholm
 </pre>
