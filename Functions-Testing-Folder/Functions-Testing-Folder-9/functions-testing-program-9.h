@@ -89,4 +89,7 @@ int reverse_sentence_strings_test(char**, int, int,
 int sentence_string_index_test(char**, int, char*,
   int);
 
+int add_sentence_string_test(char**, int, char*,
+  char**);
+
 #endif

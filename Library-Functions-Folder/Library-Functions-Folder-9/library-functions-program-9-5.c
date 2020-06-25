@@ -41,3 +41,10 @@ int sentence_string_index(char** sentence, int height,
   }
   return string_index;
 }
+
+char** add_sentence_string(char** sentence, int height,
+  char* string)
+{
+  sentence = allocate_sentence_string(sentence, height,
+    string); return sentence;
+}

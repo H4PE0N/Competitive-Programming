@@ -84,6 +84,9 @@ int compare_sentence_content(char**,char**,
 
 char** shuffle_string_sentence(char**,int);
 
+char** add_sentence_string(char**, int,
+  char*);
+
 char** reverse_string_sentence(char**, int,
   int);
 

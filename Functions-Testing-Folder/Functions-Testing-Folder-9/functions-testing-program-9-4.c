@@ -26,3 +26,12 @@ int sentence_string_index_test(char** sentence,
   int index = sentence_string_index(sentence, height,
     string); return (index == output);
 }
+
+int add_sentence_string_test(char**sentence,int height,
+  char* string, char** output)
+{
+  sentence=add_sentence_string(sentence,height,string);
+  int width = sentence_string_length(sentence, 0);
+  return compare_string_sentence(sentence, output,
+    height, width);
+}

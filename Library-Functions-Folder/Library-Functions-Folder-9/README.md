@@ -42,7 +42,9 @@ sentence_character_greater  sentence_character_smaller
 
 shuffle_string_sentence     reverse_string_sentence
 
-reverse_sentence_strings    sentence_string_index
+add_sentence_string         sentence_string_index
+
+reverse_sentence_strings
 
 Made by Roy Hampus Fridholm
 </pre>
