@@ -13,13 +13,8 @@ library-functions-program-8.h"
 int* remove_array_integer(int* array, int length,
   int integer)
 {
-  int start = length;
-  for(int index = (length - 1); index >= 0; index--)
-  {
-    if(array_index_integer(array, index) != integer)
-      continue; start = index; break;
-  }
-  return delete_array_integer(array, length, start);
+  int index =array_integer_index(array,length,integer);
+  return delete_array_integer(array, length, index);
 }
 
 int compare_integer_arrays(int* first, int* second,
@@ -87,4 +82,15 @@ int* switch_array_integers(int* array, int first,
     first);
   *(array + first) = array_index_integer(array,second);
   *(array + second) = switch_integer; return array;
+}
+
+int* reverse_integer_array(int* array, int length)
+{
+  int* reverse = generate_integer_array(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    *(reverse + index) = array_index_integer(array,
+      length - (index + 1));
+  }
+  return reverse;
 }

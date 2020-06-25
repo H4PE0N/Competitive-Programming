@@ -52,9 +52,35 @@ int array_contains_integer(int* array, int length,
   return false;
 }
 
+int* move_array_integers(int* array, int length,
+  int start)
+{
+  for(int index = start; index < length; index += 1)
+  {
+    array = switch_adjacent_integers(array, index);
+  }
+  return array;
+}
+
+int* delete_array_integer(int* array, int length,
+  int index)
+{
+  array = move_array_integers(array, length, index);
+  return allocate_array_integer(array, length, '\0');
+}
+
 int* switch_adjacent_integers(int* array, int index)
 {
   return switch_array_integers(array,index, index + 1);
+}
+
+int* add_array_integer(int* array, int length,
+  int integer)
+{
+  array = allocate_array_integer(array, length,
+    integer);
+  return allocate_array_integer(array, (length + 1),
+    '\0');
 }
 
 int* sort_integer_iteration(int* array,int iteration)
@@ -75,30 +101,4 @@ int* sort_integer_array(int* array, int length)
     array = sort_integer_iteration(array, index);
   }
   return array;
-}
-
-int* add_array_integer(int* array, int length,
-  int integer)
-{
-  array = allocate_array_integer(array, length,
-    integer);
-  return allocate_array_integer(array, (length + 1),
-    '\0');
-}
-
-int* move_array_integers(int* array, int length,
-  int start)
-{
-  for(int index = start; index < (length - 1); index++)
-  {
-    array = switch_adjacent_integers(array, index);
-  }
-  return array;
-}
-
-int* delete_array_integer(int* array, int length,
-  int index)
-{
-  array = move_array_integers(array, length, index);
-  return allocate_array_integer(array,length - 1,'\0');
 }

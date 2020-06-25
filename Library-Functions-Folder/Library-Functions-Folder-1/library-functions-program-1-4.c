@@ -29,14 +29,3 @@ int array_integer_index(int* array, int length,
   }
   return integer_index;
 }
-
-int* reverse_integer_array(int* array, int length)
-{
-  int* reverse = generate_integer_array(length);
-  for(int index = 0; index < length; index = index + 1)
-  {
-    *(reverse + index) = array_index_integer(array,
-      length - (index + 1));
-  }
-  return reverse;
-}
