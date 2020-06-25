@@ -46,7 +46,7 @@ shuffle_string_sentence_test      reverse_string_sentence_test
 
 add_sentence_string_test          sentence_string_index_test
 
-reverse_sentence_strings_test
+reverse_sentence_strings_test     remove_sentence_string_test
 
 Made by Roy Hampus Fridholm
 </pre>

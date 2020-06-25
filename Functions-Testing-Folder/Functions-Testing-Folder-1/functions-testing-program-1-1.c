@@ -74,6 +74,5 @@ int add_array_integer_test(int* array, int length,
   int integer, int* output)
 {
   array = add_array_integer(array, length, integer);
-  length = integer_array_length(array);
-  return compare_integer_arrays(array, output, length);
+  return compare_integer_arrays(array,output,length+1);
 }

@@ -48,3 +48,11 @@ char** add_sentence_string(char** sentence, int height,
   sentence = allocate_sentence_string(sentence, height,
     string); return sentence;
 }
+
+char** remove_sentence_string(char** sentence,
+  int height, char* string)
+{
+  int index = sentence_string_index(sentence, height,
+    string);
+  return delete_sentence_string(sentence,height,index);
+}

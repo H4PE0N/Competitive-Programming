@@ -73,7 +73,7 @@ char** allocate_sentence_string(char** sentence,
 char** move_sentence_strings(char**sentence,int height,
   int start)
 {
-  for(int index = start; index < (height - 1); index++)
+  for(int index = start; index < height; index += 1)
   {
     sentence = switch_adjacent_strings(sentence,index);
   }

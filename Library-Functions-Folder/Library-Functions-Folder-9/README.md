@@ -44,7 +44,7 @@ shuffle_string_sentence     reverse_string_sentence
 
 add_sentence_string         sentence_string_index
 
-reverse_sentence_strings
+reverse_sentence_strings    remove_sentence_string
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -96,4 +96,7 @@ int sentence_string_index(char**, int,
 char** reverse_sentence_strings(char**,int,
   int);
 
+char** remove_sentence_string(char**, int,
+  char*);
+
 #endif

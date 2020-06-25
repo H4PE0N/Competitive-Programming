@@ -30,8 +30,9 @@ char** delete_sentence_string(char** sentence,
   sentence = move_sentence_strings(sentence, height,
     index);
   int length = sentence_string_length(sentence, 0);
-  return allocate_sentence_string(sentence, height - 1,
+  return allocate_sentence_string(sentence, height,
     generate_character_string(length));
+
 }
 
 void string_sentence_stdout(char** sentence, int height,

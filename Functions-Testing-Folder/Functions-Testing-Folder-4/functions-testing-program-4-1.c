@@ -77,7 +77,7 @@ int add_string_character_test(char* string, int length,
 {
   string = add_string_character(string, length,
     character);
-  return compare_character_strings(string,output,
+  return compare_character_strings(string, output,
     length + 1);
 }
 
