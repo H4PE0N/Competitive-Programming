@@ -38,16 +38,6 @@ int reduce_binary_integer(char* binary, int length,
   else return integer;
 }
 
-int actual_binary_length(int integer)
-{
-  int length = 0;
-  while(integer > calculate_bit_integer(length))
-  {
-    length = increase_integer_variable(length);
-  }
-  return length;
-}
-
 char* allocate_binary_bit(char* binary, int total,
   int integer)
 {
@@ -64,6 +54,16 @@ char* convert_integer_binary(int integer)
   int length = nearest_binary_length(integer);
   char* binary = generate_character_string(length);
   return allocate_binary_bits(binary, length, integer);
+}
+
+int actual_binary_length(int integer)
+{
+  int length = 0;
+  while(integer > calculate_bit_integer(length))
+  {
+    length = increase_integer_variable(length);
+  }
+  return length;
 }
 
 char* convert_character_binary(char character)

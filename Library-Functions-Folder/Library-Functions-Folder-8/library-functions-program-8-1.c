@@ -25,6 +25,11 @@ double convert_decimal_percent(double decimal)
   double percent = (decimal * 100); return percent;
 }
 
+int increase_integer_variable(int variable)
+{
+  variable = (variable + 1); return variable;
+}
+
 int integer_power_operation(int integer, int power)
 {
   int product = 1;
@@ -48,11 +53,6 @@ double convert_percent_decimal(double percent)
 int integer_divisible_by_two(int integer)
 {
   int output = (integer % 2 == 0); return output;
-}
-
-int increase_integer_variable(int variable)
-{
-  variable = (variable + 1); return variable;
 }
 
 double integer_between_integers(int first, int second)
