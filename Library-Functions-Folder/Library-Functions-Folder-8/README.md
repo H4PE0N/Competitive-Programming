@@ -18,5 +18,7 @@ convert_decimal_percent     integer_divisible_by_two
 
 integer_between_integers    increase_integer_variable
 
+integer_greater_than        integer_smaller_than
+
 Made by Roy Hampus Fridholm
 </pre>

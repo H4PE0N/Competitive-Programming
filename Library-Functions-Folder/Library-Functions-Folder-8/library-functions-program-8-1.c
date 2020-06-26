@@ -40,6 +40,11 @@ int integer_power_operation(int integer, int power)
   return product;
 }
 
+int integer_smaller_than(int first, int second)
+{
+  int boolean = (first < second); return boolean;
+}
+
 int generate_random_integer(int minimum, int maximum)
 {
   return minimum + (rand() % (maximum - minimum + 1));
@@ -50,13 +55,18 @@ double convert_percent_decimal(double percent)
   double decimal = (percent / 100); return decimal;
 }
 
-int integer_divisible_by_two(int integer)
+int integer_greater_than(int first, int second)
 {
-  int output = (integer % 2 == 0); return output;
+  int boolean = (first > second); return boolean;
 }
 
 double integer_between_integers(int first, int second)
 {
   int* vector = generate_integer_vector(first,second);
   return integer_array_average(vector, 2);
+}
+
+int integer_divisible_by_two(int integer)
+{
+  int output = (integer % 2 == 0); return output;
 }

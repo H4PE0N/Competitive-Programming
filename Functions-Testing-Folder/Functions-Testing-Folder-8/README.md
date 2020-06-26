@@ -20,7 +20,9 @@ convert_percent_decimal_test    integer_power_operation_test
 
 integer_range_between_test      integer_divisible_by_two_test
 
-increase_integer_variable_test
+increase_integer_variable_test  integer_greater_than_test
+
+integer_smaller_than_test
 
 Made by Roy Hampus Fridholm
 </pre>

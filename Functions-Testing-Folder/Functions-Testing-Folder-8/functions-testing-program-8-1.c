@@ -56,3 +56,17 @@ int increase_integer_variable_test(int integer,
 {
   return increase_integer_variable(integer) == output;
 }
+
+int integer_greater_than_test(int first, int second,
+  int output)
+{
+  int boolean = integer_greater_than(first, second);
+  return (boolean == output);
+}
+
+int integer_smaller_than_test(int first, int second,
+  int output)
+{
+  int boolean = integer_smaller_than(first, second);
+  return (boolean == output);
+}

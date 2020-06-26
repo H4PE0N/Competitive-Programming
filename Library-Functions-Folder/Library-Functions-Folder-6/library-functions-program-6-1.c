@@ -55,15 +55,6 @@ int greater_integer_amount(int current, int typical)
   int boolean = (current > typical); return boolean;
 }
 
-double integer_array_median(int* array, int length)
-{
-  if(integer_divisible_by_two(length))
-  {
-    return integer_odd_median(array, length);
-  }
-  return integer_even_median(array, length);
-}
-
 int* update_typical_variables(int*variables,int amount,
   int integer)
 {
@@ -76,6 +67,15 @@ int* update_typical_variables(int*variables,int amount,
       integer);
   }
   return variables;
+}
+
+double integer_array_median(int* array, int length)
+{
+  if(integer_divisible_by_two(length))
+  {
+    return integer_odd_median(array, length);
+  }
+  return integer_even_median(array, length);
 }
 
 int integer_array_typical(int* array, int length)

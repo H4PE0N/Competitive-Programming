@@ -10,11 +10,15 @@ int increase_integer_variable(int);
 
 int integer_power_operation(int, int);
 
+int integer_greater_than(int, int);
+
 double convert_decimal_percent(double);
 
 int integer_divisible_by_two(int);
 
 double convert_percent_decimal(double);
+
+int integer_smaller_than(int, int);
 
 double integer_between_integers(int,
   int);
