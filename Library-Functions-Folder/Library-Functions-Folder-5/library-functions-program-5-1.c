@@ -14,12 +14,14 @@ library-functions-program-5.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int binary_integer_enough(char* binary, int total,
+int binary_integer_enough(char* binary, int length,
   int integer)
 {
-  int length = character_string_length(binary);
-  int product = calculate_bit_integer(total -1-length);
-  return  ( (integer - product) >= 0);
+  int index = character_string_length(binary);
+  int binary_index = (length - index - 1);
+  int difference = (integer - calculate_bit_integer(
+    binary_index));
+  return !integer_smaller_than(difference, 0);
 }
 
 int calculate_bit_integer(int power_integer)
@@ -35,18 +37,18 @@ int reduce_binary_integer(char* binary, int length,
   {
     return integer - calculate_bit_integer(index);
   }
-  else return integer;
+  return integer;
 }
 
-char* allocate_binary_bit(char* binary, int total,
+char* allocate_binary_bit(char* binary, int length,
   int integer)
 {
-  int length = character_string_length(binary);
-  if(binary_integer_enough(binary, total, integer))
+  int index = character_string_length(binary);
+  if(binary_integer_enough(binary, length, integer))
   {
-    return add_string_character(binary, length, '1');
+    return add_string_character(binary, index, '1');
   }
-  return add_string_character(binary, length, '0');
+  return add_string_character(binary, index, '0');
 }
 
 char* convert_integer_binary(int integer)

@@ -37,19 +37,20 @@ char convert_binary_character(char* binary)
   return character;
 }
 
-char* generate_random_binary(int minimum, int maximum)
-{
-  int integer = generate_random_integer(minimum,
-    maximum);
-  char* binary = convert_integer_binary(integer);
-  return binary;
-}
-
 int increase_binary_integer(char* binary, int index,
   int integer)
 {
   int length = character_string_length(binary);
   if(string_index_character(binary, index) == '0')
     return integer;
-  return integer+calculate_bit_integer(length-index-1);
+  int binary_index = (length - index - 1);
+  return integer + calculate_bit_integer(binary_index);
+}
+
+char* generate_random_binary(int minimum, int maximum)
+{
+  int integer = generate_random_integer(minimum,
+    maximum);
+  char* binary = convert_integer_binary(integer);
+  return binary;
 }
