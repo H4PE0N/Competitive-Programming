@@ -23,8 +23,6 @@ double array_integer_frequency(int*,
 double array_integer_percent(int*,
   int, int);
 
-int greater_integer_amount(int, int);
-
 int array_integers_sequences(int*,
   int);
 

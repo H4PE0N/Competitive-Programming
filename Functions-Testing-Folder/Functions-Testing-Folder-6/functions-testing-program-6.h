@@ -21,8 +21,6 @@ int array_integer_frequency_test(int*,int,int,
 int array_integer_percent_test(int*, int, int,
   double);
 
-int greater_integer_amount_test(int, int, int);
-
 int array_integers_sequences_test(int*, int,
   int);
 

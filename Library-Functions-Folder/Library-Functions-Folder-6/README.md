@@ -9,7 +9,7 @@ probability of an event.
 
 Here is a list of the functions that the programs contains:
 
-greater_integer_amount      array_integer_frequency
+array_integer_frequency     array_integers_sequences
 
 integer_even_median         array_integer_percent
 
@@ -17,7 +17,7 @@ integer_array_median        update_typical_variables
 
 integer_array_average       integer_array_typical
 
-integer_odd_median          array_integers_sequences
+integer_odd_median
 
 Made by Roy Hampus Fridholm
 </pre>

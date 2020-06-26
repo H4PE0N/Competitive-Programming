@@ -62,13 +62,6 @@ int integer_array_average_test(int* array, int length,
   return (average == output);
 }
 
-int greater_integer_amount_test(int current,
-  int typical, int boolean)
-{
-  int output = greater_integer_amount(current,typical);
-  return (output == boolean);
-}
-
 int integer_odd_median_test(int* array, int length,
   double output)
 {
