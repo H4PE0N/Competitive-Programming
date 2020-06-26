@@ -69,7 +69,7 @@ char* binary_xor_operation(char* first, char* second,
   char* binary = generate_character_string(length);
   for(int index = 0; index < length; index = index + 1)
   {
-    if(*(first + index) != *(second + index))
+    if(!compare_strings_character(first, second,index))
       binary = add_string_character(binary, index,'1');
     else
       binary = add_string_character(binary, index,'0');
