@@ -16,13 +16,13 @@ Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
 char** reverse_sentence_strings(char** sentence,
-  int height, int width)
+  int height)
 {
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
     *(sentence +index)=reverse_character_string(string,
-      width);
+      sentence_string_length(sentence, index));
   }
   return sentence;
 }

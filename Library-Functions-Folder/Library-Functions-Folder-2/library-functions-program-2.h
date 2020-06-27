@@ -91,8 +91,7 @@ int matrix_array_smaller(int**, int,int,
 int** reverse_integer_matrix(int**, int,
   int);
 
-int** reverse_matrix_arrays(int**, int,
-  int);
+int** reverse_matrix_arrays(int**, int);
 
 int matrix_array_index(int**, int,int*);
 

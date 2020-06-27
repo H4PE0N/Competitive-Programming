@@ -82,6 +82,9 @@ char** sort_sentence_iteration(char**, int,
 int compare_sentence_content(char**,char**,
   int, int);
 
+int sentence_string_index(char**, int,
+  char*);
+
 char** shuffle_string_sentence(char**,int);
 
 char** add_sentence_string(char**, int,
@@ -90,10 +93,7 @@ char** add_sentence_string(char**, int,
 char** reverse_string_sentence(char**, int,
   int);
 
-int sentence_string_index(char**, int,
-  char*);
-
-char** reverse_sentence_strings(char**,int,
+char** reverse_sentence_strings(char**,
   int);
 
 char** remove_sentence_string(char**, int,

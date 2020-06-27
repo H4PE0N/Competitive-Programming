@@ -58,9 +58,6 @@ int sentence_character_smaller_test(char**, int,
 int sentence_string_smaller_test(char**, int, int,
   int, int);
 
-int sentence_string_greater_test(char**, int, int,
-  int, int);
-
 int sort_string_sentence_test(char**, int,char**);
 
 int sort_sentence_iteration_test(char**, int, int,
@@ -77,13 +74,16 @@ int sort_sentence_strings_test(char**,int,char**);
 int shuffle_sentence_strings_test(char**, int,
   char**);
 
+int sentence_string_greater_test(char**, int, int,
+  int, int);
+
 int shuffle_string_sentence_test(char**, int,
   char**);
 
 int reverse_string_sentence_test(char**, int, int,
   char**);
 
-int reverse_sentence_strings_test(char**, int, int,
+int reverse_sentence_strings_test(char**, int,
   char**);
 
 int sentence_string_index_test(char**, int, char*,
@@ -92,7 +92,7 @@ int sentence_string_index_test(char**, int, char*,
 int add_sentence_string_test(char**, int, char*,
   char**);
 
-int remove_sentence_string_test(char**, int, char*, 
+int remove_sentence_string_test(char**, int, char*,
   char**);
 
 #endif

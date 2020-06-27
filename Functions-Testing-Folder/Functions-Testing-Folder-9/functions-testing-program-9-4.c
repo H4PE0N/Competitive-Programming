@@ -12,12 +12,11 @@ Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
 int reverse_sentence_strings_test(char** sentence,
-  int height, int width, char** output)
+  int height, char** output)
 {
-  sentence = reverse_sentence_strings(sentence, height,
-    width);
+  sentence = reverse_sentence_strings(sentence,height);
   return compare_string_sentence(sentence, output,
-    height, width);
+    height, sentence_string_length(sentence, 0));
 }
 
 int sentence_string_index_test(char** sentence,

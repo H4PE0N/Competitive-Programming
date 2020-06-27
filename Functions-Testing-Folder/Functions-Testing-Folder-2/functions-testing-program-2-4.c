@@ -27,11 +27,11 @@ int reverse_integer_matrix_test(int**matrix,int height,
 }
 
 int reverse_matrix_arrays_test(int** matrix,int height,
-  int width, int** output)
+  int** output)
 {
-  matrix = reverse_matrix_arrays(matrix, height,width);
+  matrix = reverse_matrix_arrays(matrix, height);
   return compare_integer_matrix(matrix, output, height,
-    width);
+    matrix_array_length(matrix, 0));
 }
 
 int matrix_array_index_test(int** matrix, int height,

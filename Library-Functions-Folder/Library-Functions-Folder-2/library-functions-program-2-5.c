@@ -27,14 +27,13 @@ int** reverse_integer_matrix(int** matrix, int height,
   return reverse;
 }
 
-int** reverse_matrix_arrays(int** matrix, int height,
-  int width)
+int** reverse_matrix_arrays(int** matrix, int height)
 {
   for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
     *(matrix + index) = reverse_integer_array(array,
-      width);
+      matrix_array_length(matrix, index));
   }
   return matrix;
 }
