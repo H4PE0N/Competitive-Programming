@@ -14,26 +14,10 @@ int binary_integer_enough_test(char* binary,int length,
     integer); return (boolean == output);
 }
 
-int convert_binary_integer_test(char* binary,
-  int output)
-{
-  int integer = convert_binary_integer(binary);
-  return (integer == output);
-}
-
 int calculate_bit_integer_test(int integer, int output)
 {
   int product = calculate_bit_integer(integer);
   return (product == output);
-}
-
-int convert_integer_binary_test(int integer,
-  char* output)
-{
-  char* binary = convert_integer_binary(integer);
-  int length = character_string_length(binary);
-  return compare_character_strings(binary, output,
-    length);
 }
 
 int reduce_binary_integer_test(char* binary,int length,
@@ -41,6 +25,12 @@ int reduce_binary_integer_test(char* binary,int length,
 {
   integer = reduce_binary_integer(binary, length,
     integer); return (integer == output);
+}
+
+int convert_binary_integer_test(char* binary,
+  int output)
+{
+  return (convert_binary_integer(binary) == output);
 }
 
 int increase_binary_integer_test(char*binary,int index,
@@ -60,14 +50,20 @@ int allocate_binary_bit_test(char* binary, int length,
 
 int nearest_binary_length_test(int integer,int output)
 {
-  int length = nearest_binary_length(integer);
-  return (length == output);
+  return (nearest_binary_length(integer) == output);
+}
+
+int convert_integer_binary_test(int integer,
+  char* output)
+{
+  char* binary = convert_integer_binary(integer);
+  return compare_character_strings(binary, output,
+    character_string_length(binary));
 }
 
 int actual_binary_length_test(int integer, int output)
 {
-  int length = actual_binary_length(integer);
-  return (length == output);
+  return (actual_binary_length(integer) == output);
 }
 
 int convert_character_binary_test(char character,
@@ -85,4 +81,17 @@ int allocate_binary_bits_test(char* binary, int length,
   binary = allocate_binary_bits(binary,length,integer);
   return compare_character_strings(binary, output,
     length);
+}
+
+int convert_binary_character_test(char* binary,
+  char output)
+{
+  return (convert_binary_character(binary) == output);
+}
+
+int binary_range_between_test(char* binary,int minimum,
+  int maximum, int output)
+{
+  int boolean = binary_range_between(binary, minimum,
+    maximum); return (boolean == output);
 }

@@ -30,13 +30,6 @@ int lower_alphabet_character_test(int index,
   return (character == output);
 }
 
-int higher_alphabet_character_test(int index,
-  char output)
-{
-  char character = higher_alphabet_character(index);
-  return (character == output);
-}
-
 int delete_string_character_test(char* string,
   int length, int index, char* output)
 {
@@ -50,6 +43,13 @@ int compare_string_characters_test(char* string,
 {
   int boolean = compare_string_characters(string,first,
     second); return (boolean == output);
+}
+
+int higher_alphabet_character_test(int index,
+  char output)
+{
+  char character = higher_alphabet_character(index);
+  return (character == output);
 }
 
 int compare_strings_character_test(char* first,

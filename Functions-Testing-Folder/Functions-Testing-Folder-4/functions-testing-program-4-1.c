@@ -35,8 +35,7 @@ int generate_character_string_test(int length,
 int character_string_length_test(char* string,
   int output)
 {
-  int length = character_string_length(string);
-  return (length == output);
+  return (character_string_length(string) == output);
 }
 
 int string_contains_character_test(char* string,
