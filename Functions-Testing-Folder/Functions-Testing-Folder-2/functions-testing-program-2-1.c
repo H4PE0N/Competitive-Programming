@@ -61,12 +61,11 @@ int remove_matrix_integer_test(int** matrix,int height,
 }
 
 int add_matrix_integer_test(int** matrix, int height,
-  int width, int integer, int** output)
+  int integer, int** output)
 {
-  matrix = add_matrix_integer(matrix,
-    integer_matrix_height(matrix, width), integer);
+  matrix = add_matrix_integer(matrix, height, integer);
   return compare_integer_matrix(matrix, output, height,
-    width);
+    matrix_array_length(matrix, 0));
 }
 
 int remove_matrix_integers_test(int**matrix,int height,
@@ -83,6 +82,6 @@ int switch_adjacent_arrays_test(int** matrix,int index,
   matrix = switch_adjacent_arrays(matrix, index);
   int width = matrix_array_length(matrix, 0);
   int height = integer_matrix_height(matrix, width);
-  return compare_integer_matrix(matrix, output, index,
-    height);
+  return compare_integer_matrix(matrix, output, height,
+    width);
 }

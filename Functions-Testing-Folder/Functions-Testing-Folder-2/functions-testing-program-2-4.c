@@ -45,16 +45,14 @@ int add_matrix_array_test(int** matrix, int height,
   int* array, int** output)
 {
   matrix = add_matrix_array(matrix, height, array);
-  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix,output,height+1,
-    width);
+    matrix_array_length(matrix, 0));
 }
 
 int remove_matrix_array_test(int** matrix, int height,
   int* array, int** output)
 {
   matrix = remove_matrix_array(matrix, height, array);
-  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix, output, height,
-    width);
+    matrix_array_length(matrix, 0));
 }

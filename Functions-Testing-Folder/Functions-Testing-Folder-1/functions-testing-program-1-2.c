@@ -41,8 +41,7 @@ int integers_range_between_test(int* array,int minimum,
   int maximum, int output)
 {
   int boolean = integers_range_between(array, minimum,
-    maximum);
-  return (boolean == output);
+    maximum); return (boolean == output);
 }
 
 int switch_array_integers_test(int* array, int first,

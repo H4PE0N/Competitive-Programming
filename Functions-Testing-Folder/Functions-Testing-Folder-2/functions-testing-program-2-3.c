@@ -73,9 +73,8 @@ int sort_matrix_iteration_test(int** matrix,int height,
 {
   matrix = sort_matrix_iteration(matrix, height,
     iteration);
-  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix, output, height,
-    width);
+    matrix_array_length(matrix, 0));
 }
 
 int matrix_integer_greater_test(int** matrix, int first,
