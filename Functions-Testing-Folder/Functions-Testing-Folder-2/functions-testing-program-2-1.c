@@ -32,9 +32,8 @@ int delete_matrix_integer_test(int** matrix,int height,
   int width, int** output)
 {
   matrix = delete_matrix_integer(matrix, height,width);
-  int length = matrix_array_length(matrix, height);
   return compare_integer_matrix(matrix, output, height,
-    length);
+    width);
 }
 
 int integer_matrix_height_test(int** matrix, int width,

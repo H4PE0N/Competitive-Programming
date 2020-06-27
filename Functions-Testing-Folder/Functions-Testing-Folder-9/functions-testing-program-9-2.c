@@ -11,6 +11,13 @@ library-functions-program-8.h"
 Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
+int string_sentence_height_test(char** sentence,
+  int width, int output)
+{
+  int height = string_sentence_height(sentence, width);
+  return (height == output);
+}
+
 int move_sentence_strings_test(char** sentence,
   int height, int start, char** output)
 {
@@ -19,13 +26,6 @@ int move_sentence_strings_test(char** sentence,
   int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,
     height, width);
-}
-
-int string_sentence_height_test(char** sentence,
-  int width, int output)
-{
-  int height = string_sentence_height(sentence, width);
-  return (height == output);
 }
 
 int switch_adjacent_strings_test(char** sentence,

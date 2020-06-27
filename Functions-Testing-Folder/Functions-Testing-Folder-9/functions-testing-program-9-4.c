@@ -31,9 +31,8 @@ int add_sentence_string_test(char**sentence,int height,
   char* string, char** output)
 {
   sentence=add_sentence_string(sentence,height,string);
-  int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,
-    height + 1, width);
+    height + 1, sentence_string_length(sentence, 0));
 }
 
 int remove_sentence_string_test(char** sentence,
@@ -41,7 +40,6 @@ int remove_sentence_string_test(char** sentence,
 {
   sentence = remove_sentence_string(sentence, height,
     string);
-  int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,
-    height, width);
+    height, sentence_string_length(sentence, 0));
 }

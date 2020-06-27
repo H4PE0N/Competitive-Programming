@@ -21,7 +21,7 @@ int integer_range_between_test(int integer,int minimum,
 int convert_decimal_percent_test(double decimal,
   double output)
 {
-  return convert_decimal_percent(decimal) == output;
+  return (convert_decimal_percent(decimal) == output);
 }
 
 int integer_power_operation_test(int integer,int power,
@@ -34,7 +34,7 @@ int integer_power_operation_test(int integer,int power,
 int convert_percent_decimal_test(double percent,
   double output)
 {
-  return convert_percent_decimal(percent) == output;
+  return (convert_percent_decimal(percent) == output);
 }
 
 int integer_divisible_by_two_test(int integer,
@@ -54,7 +54,7 @@ int integer_between_integers_test(int first,int second,
 int increase_integer_variable_test(int integer,
   int output)
 {
-  return increase_integer_variable(integer) == output;
+  return(increase_integer_variable(integer) == output);
 }
 
 int integer_greater_than_test(int first, int second,
