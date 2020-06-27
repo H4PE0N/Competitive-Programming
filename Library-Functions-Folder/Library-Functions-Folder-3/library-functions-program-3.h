@@ -55,4 +55,12 @@ int** allocate_keyword_value(int**, int,
 int compare_hashmap_arrays(int**, int**,
   int);
 
+int compare_hashmap_content(int**,int**,
+  int);
+
+int** sort_integer_hashmap(int**, int);
+
+int** sort_hashmap_iteration(int**, int,
+  int);
+
 #endif

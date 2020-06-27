@@ -40,5 +40,35 @@ int** allocate_index_value(int** hashmap, int index,
 int compare_hashmap_arrays(int** first, int** second,
   int length)
 {
-  return compare_matrix_content(first,second,length,2);
+  return compare_integer_matrix(first,second,length,2);
+}
+
+int** sort_hashmap_iteration(int** hashmap, int length,
+  int iteration)
+{
+  for(int index = 0; index < (iteration - 1); index++)
+  {
+    if(matrix_integer_smaller(hashmap, index,index + 1,
+      0)) continue;
+    hashmap = switch_adjacent_arrays(hashmap, index);
+  }
+  return hashmap;
+}
+
+int** sort_integer_hashmap(int** hashmap, int length)
+{
+  for(int index = length; index >= 0; index =index - 1)
+  {
+    hashmap = sort_hashmap_iteration(hashmap, length,
+      index);
+  }
+  return hashmap;
+}
+
+int compare_hashmap_content(int** first, int** second,
+  int length)
+{
+  first = sort_integer_hashmap(first, length);
+  second = sort_integer_hashmap(second, length);
+  return compare_hashmap_arrays(first, second, length);
 }

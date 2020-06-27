@@ -30,7 +30,9 @@ allocate_value_keyword        allocate_keyword_value
 
 allocate_index_value          compare_hashmap_arrays
 
-increase_hashmap_value
+increase_hashmap_value        compare_hashmap_content
+
+sort_integer_hashmap          sort_hashmap_iteration
 
 Made by Roy Hampus Fridholm
 </pre>
