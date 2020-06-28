@@ -15,27 +15,19 @@ library-functions-program-3.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int hashmap_keyword_value_test(int** hashmap,
-  int keyword, int output)
-{
-  int value = hashmap_keyword_value(hashmap, keyword);
-  return (value == output);
-}
-
-int delete_hashmap_keyword_test(int** hashmap,
-  int keyword, int** output)
-{
-  int length = integer_hashmap_length(hashmap);
-  hashmap = delete_hashmap_keyword(hashmap, length,
-    keyword);
-  return compare_hashmap_arrays(hashmap,output,length);
-}
-
 int reduce_hashmap_value_test(int**hashmap,int keyword,
   int** output)
 {
   hashmap = reduce_hashmap_value(hashmap, keyword);
   int length = integer_hashmap_length(hashmap);
+  return compare_hashmap_arrays(hashmap,output,length);
+}
+
+int delete_hashmap_keyword_test(int** hashmap,
+  int length, int keyword, int** output)
+{
+  hashmap = delete_hashmap_keyword(hashmap, length,
+    keyword);
   return compare_hashmap_arrays(hashmap,output,length);
 }
 
@@ -52,6 +44,13 @@ int hashmap_index_value_test(int** hashmap, int index,
   int output)
 {
   int value = hashmap_index_value(hashmap, index);
+  return (value == output);
+}
+
+int hashmap_keyword_value_test(int** hashmap,
+  int keyword, int output)
+{
+  int value = hashmap_keyword_value(hashmap, keyword);
   return (value == output);
 }
 

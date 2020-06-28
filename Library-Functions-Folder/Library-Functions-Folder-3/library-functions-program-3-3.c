@@ -72,3 +72,15 @@ int compare_hashmap_content(int** first, int** second,
   second = sort_integer_hashmap(second, length);
   return compare_hashmap_arrays(first, second, length);
 }
+
+int** generate_integer_hashmap(int length)
+{
+  int** matrix = generate_matrix_array(length + 1, 2);
+  return matrix;
+}
+
+int hashmap_keyword_value(int** hashmap, int keyword)
+{
+  int index = hashmap_keyword_index(hashmap, keyword);
+  return hashmap_index_value(hashmap, index);
+}

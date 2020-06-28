@@ -38,7 +38,7 @@ int hashmap_keyword_value_test(int**, int,
   int);
 
 int delete_hashmap_keyword_test(int**, int,
-  int**);
+  int, int**);
 
 int reduce_hashmap_value_test(int**, int,
   int**);

@@ -53,17 +53,17 @@ int** delete_hashmap_keyword(int** hashmap, int length,
 {
   int index = hashmap_keyword_index(hashmap, keyword);
   hashmap = move_matrix_arrays(hashmap, length, index);
-  *(hashmap + (length - 1)) = allocate_array_integers(
-    *(hashmap + (length - 1)), 2);
+  *(hashmap + length) = allocate_array_integers(
+    *(hashmap + length), 2);
   return hashmap;
 }
 
 int** reduce_hashmap_value(int** hashmap, int keyword)
 {
   int index = hashmap_keyword_index(hashmap, keyword);
-  int length = integer_hashmap_length(hashmap);
   if(hashmap_index_value(hashmap, index) <= 1)
   {
+    int length = integer_hashmap_length(hashmap);
     return delete_hashmap_keyword(hashmap, length,
       keyword);
   }
@@ -95,11 +95,4 @@ int hashmap_index_value(int** hashmap, int index)
 int hashmap_index_keyword(int** hashmap, int index)
 {
   int keyword = *(*(hashmap + index)); return keyword;
-}
-
-int hashmap_keyword_value(int** hashmap, int keyword)
-{
-  int index = hashmap_keyword_index(hashmap, keyword);
-  if(index >= 0) return hashmap_index_value(hashmap,
-    index); return -1;
 }
