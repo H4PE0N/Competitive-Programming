@@ -24,19 +24,19 @@ int compare_array_content(int* first, int* second,
   int length)
 {
   first = sort_integer_array(first, length);
-  return compare_integer_arrays(first,
-    sort_integer_array(second, length), length);
+  second = sort_integer_array(second, length);
+  return compare_integer_arrays(first, second, length);
 }
 
-int* duplicate_integer_array(int* i_array, int length)
+int* duplicate_integer_array(int* array, int length)
 {
-  int* array = generate_integer_array(length);
+  int* doublet = generate_integer_array(length);
   for(int index = 0; index < length; index = index + 1)
   {
-    array = allocate_array_integer(array, index,
-      array_index_integer(i_array, index));
+    doublet = allocate_array_integer(doublet, index,
+      array_index_integer(array, index));
   }
-  return array;
+  return doublet;
 }
 
 int array_index_integer(int* array, int index)

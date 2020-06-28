@@ -73,7 +73,7 @@ int** increase_hashmap_value(int** hashmap,int keyword)
   {
     return generate_hashmap_keyword(hashmap, keyword);
   }
-  else return increase_keyword_value(hashmap,keyword);
+  return increase_keyword_value(hashmap,keyword);
 }
 
 int** allocate_keyword_value(int** hashmap,int keyword,

@@ -48,8 +48,8 @@ int** sort_hashmap_iteration(int** hashmap, int length,
 {
   for(int index = 0; index < (iteration - 1); index++)
   {
-    if(matrix_integer_smaller(hashmap, index,index + 1,
-      0)) continue;
+    if(matrix_integer_smaller(hashmap,index,index+1,0))
+      continue;
     hashmap = switch_adjacent_arrays(hashmap, index);
   }
   return hashmap;
