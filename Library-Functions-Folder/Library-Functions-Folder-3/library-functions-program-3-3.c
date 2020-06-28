@@ -75,7 +75,7 @@ int compare_hashmap_content(int** first, int** second,
 
 int** generate_integer_hashmap(int length)
 {
-  int** matrix = generate_matrix_array(length + 1, 2);
+  int** matrix = generate_matrix_array(length, 2);
   return matrix;
 }
 
