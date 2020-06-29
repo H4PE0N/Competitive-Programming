@@ -21,8 +21,8 @@ char** generate_string_sentence(int height, int width)
     (height + 1));
   for(int index = 0; index <= height; index =index + 1)
   {
-    *(sentence + index) = generate_character_string(
-      width);
+    sentence = add_sentence_string(sentence, index,
+      generate_character_string(width));
   }
   return sentence;
 }
@@ -91,12 +91,9 @@ int string_sentence_height(char** sentence, int width)
 {
   int height = 0;
   while(sentence_string_length(sentence, height) >=
-    width) height = increase_integer_variable(height);
+    width)
+  {
+    height = increase_integer_variable(height);
+  }
   return height;
-}
-
-int sentence_string_length(char** sentence, int index)
-{
-  char* string = sentence_index_string(sentence,index);
-  return character_string_length(string);
 }

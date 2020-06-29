@@ -19,7 +19,8 @@ int** generate_matrix_array(int height, int width)
   int** matrix =malloc(sizeof(*matrix) * (height + 1));
   for(int index = 0; index <= height; index =index + 1)
   {
-    *(matrix + index) = generate_integer_array(width);
+    int* array = generate_integer_array(width);
+    matrix = add_matrix_array(matrix, index, array);
   }
   return matrix;
 }

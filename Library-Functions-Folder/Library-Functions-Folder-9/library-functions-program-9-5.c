@@ -56,3 +56,9 @@ char** remove_sentence_string(char** sentence,
     string);
   return delete_sentence_string(sentence,height,index);
 }
+
+int sentence_string_length(char** sentence, int index)
+{
+  char* string = sentence_index_string(sentence,index);
+  return character_string_length(string);
+}

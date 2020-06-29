@@ -51,9 +51,8 @@ char** sort_sentence_strings(char**sentence,int height)
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
-    int length=sentence_string_length(sentence, index);
     *(sentence + index) = sort_character_string(string,
-      length);
+      sentence_string_length(sentence, index));
   }
   return sentence;
 }
