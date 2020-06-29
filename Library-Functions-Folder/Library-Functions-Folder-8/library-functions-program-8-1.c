@@ -17,7 +17,8 @@ library-functions-program-8.h"
 int integer_range_between(int integer, int minimum,
   int maximum)
 {
-  return (integer <= maximum && integer >= minimum);
+  return (!integer_greater_than(integer, maximum) &&
+    !integer_smaller_than(integer, minimum));
 }
 
 double convert_decimal_percent(double decimal)

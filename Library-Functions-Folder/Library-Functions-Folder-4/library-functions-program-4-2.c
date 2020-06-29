@@ -20,8 +20,8 @@ char generate_random_character(int minimum,int maximum)
 int character_range_between(char character,int minimum,
   int maximum)
 {
-  int output = (character <= maximum && character >=
-    minimum); return output;
+  int boolean=integer_range_between(character, minimum,
+    maximum); return boolean;
 }
 
 char* remove_string_characters(char* string,int length,
@@ -67,30 +67,29 @@ char* shuffle_character_string(char* string,int length)
   return string;
 }
 
-char* duplicate_character_string(char* i_string,
+char* duplicate_character_string(char* string,
   int length)
 {
-  char* string = generate_character_string(length);
+  char* doublet = generate_character_string(length);
   for(int index = 0; index < length; index = index + 1)
   {
-    char character = string_index_character(i_string,
-      index);
-    string = allocate_string_character(string, index,
-      character);
+    doublet = allocate_string_character(doublet, index,
+      string_index_character(string, index));
   }
-  return string;
+  return doublet;
 }
 
-char* switch_adjacent_characters(char* string,int index)
+char* switch_adjacent_characters(char*string,int index)
 {
-  return switch_string_characters(string,index,index+1);
+  return switch_string_characters(string, index,
+    index + 1);
 }
 
 char* sort_string_iteration(char* string,int iteration)
 {
   for(int index = 0; index < (iteration - 1); index++)
   {
-    if(string_character_smaller(string,index,index + 1))
+    if(string_character_smaller(string,index, index+1))
       continue;
     string = switch_adjacent_characters(string, index);
   }
