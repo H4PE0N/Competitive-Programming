@@ -51,28 +51,28 @@ int array_integer_percent_test(int* array, int length,
 int integer_array_median_test(int* array, int length,
   double output)
 {
-  int median = integer_array_median(array, length);
+  double median = integer_array_median(array, length);
   return (median == output);
 }
 
 int integer_array_average_test(int* array, int length,
   double output)
 {
-  int average = integer_array_average(array, length);
+  double average = integer_array_average(array,length);
   return (average == output);
 }
 
 int integer_odd_median_test(int* array, int length,
   double output)
 {
-  int median = integer_odd_median(array, length);
+  double median = integer_odd_median(array, length);
   return (median == output);
 }
 
 int integer_even_median_test(int* array, int length,
   double output)
 {
-  int median = integer_even_median(array, length);
+  double median = integer_even_median(array, length);
   return (median == output);
 }
 

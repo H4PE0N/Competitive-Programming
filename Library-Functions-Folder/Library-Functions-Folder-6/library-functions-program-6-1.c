@@ -25,7 +25,7 @@ library-functions-program-8.h"
 double integer_array_average(int* array, int length)
 {
   int total = integer_array_total(array, length);
-  return (total / length);
+  return ( (double) total / (double) length);
 }
 
 double integer_odd_median(int* array, int length)
@@ -68,9 +68,9 @@ double integer_array_median(int* array, int length)
 {
   if(integer_divisible_by_two(length))
   {
-    return integer_odd_median(array, length);
+    return integer_even_median(array, length);
   }
-  return integer_even_median(array, length);
+  return integer_odd_median(array, length);
 }
 
 int integer_array_typical(int* array, int length)
