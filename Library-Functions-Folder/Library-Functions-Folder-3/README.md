@@ -28,7 +28,7 @@ hashmap_index_value           hashmap_index_keyword
 
 allocate_value_keyword        allocate_keyword_value
 
-allocate_index_value          compare_hashmap_arrays
+allocate_index_value          compare_integer_hashmaps
 
 increase_hashmap_value        compare_hashmap_content
 

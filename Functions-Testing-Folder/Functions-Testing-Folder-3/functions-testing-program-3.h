@@ -58,7 +58,7 @@ int allocate_keyword_value_test(int**, int,
 int allocate_index_value_test(int**, int,
   int, int**);
 
-int compare_hashmap_arrays_test(int**,
+int compare_integer_hashmaps_test(int**,
   int**, int, int);
 
 int compare_hashmap_content_test(int**,

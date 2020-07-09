@@ -37,7 +37,7 @@ int** allocate_index_value(int** hashmap, int index,
     value); return hashmap;
 }
 
-int compare_hashmap_arrays(int** first, int** second,
+int compare_integer_hashmaps(int** first, int** second,
   int length)
 {
   return compare_integer_matrix(first,second,length,2);
@@ -70,7 +70,7 @@ int compare_hashmap_content(int** first, int** second,
 {
   first = sort_integer_hashmap(first, length);
   second = sort_integer_hashmap(second, length);
-  return compare_hashmap_arrays(first, second, length);
+  return compare_integer_hashmaps(first,second,length);
 }
 
 int** generate_integer_hashmap(int length)

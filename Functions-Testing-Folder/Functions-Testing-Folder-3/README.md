@@ -34,7 +34,7 @@ allocate_value_keyword_test       allocate_keyword_value_test
 
 allocate_index_value_test         increase_keyword_value_test
 
-compare_hashmap_arrays_test       compare_hashmap_content_test
+compare_integer_hashmaps_test     compare_hashmap_content_test
 
 sort_hashmap_iteration_test       sort_integer_hashmap_test
 
