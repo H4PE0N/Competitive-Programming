@@ -14,7 +14,7 @@ library-functions-program-2.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int** generate_matrix_array(int height, int width)
+int** generate_integer_matrix(int height, int width)
 {
   int** matrix =malloc(sizeof(*matrix) * (height + 1));
   for(int index = 0; index <= height; index =index + 1)

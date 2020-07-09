@@ -11,10 +11,10 @@ library-functions-program-2.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int generate_matrix_array_test(int height, int width,
+int generate_integer_matrix_test(int height, int width,
   int** output)
 {
-  int** matrix = generate_matrix_array(height, width);
+  int** matrix = generate_integer_matrix(height,width);
   return compare_integer_matrix(matrix, output, height,
     width);
 }

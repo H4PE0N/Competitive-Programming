@@ -42,7 +42,7 @@ int** move_matrix_arrays(int** matrix, int height,
 int** generate_random_matrix(int height, int width,
   int minimum, int maximum)
 {
-  int** matrix = generate_matrix_array(height, width);
+  int** matrix = generate_integer_matrix(height,width);
   for(int index = 0; index < height; index = index + 1)
   {
     *(matrix + index) = generate_random_array(width,
@@ -75,7 +75,7 @@ int** shuffle_matrix_arrays(int** matrix, int height)
 int** duplicate_integer_matrix(int** matrix,int height,
   int width)
 {
-  int** doublet = generate_matrix_array(height, width);
+  int** doublet=generate_integer_matrix(height, width);
   for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);

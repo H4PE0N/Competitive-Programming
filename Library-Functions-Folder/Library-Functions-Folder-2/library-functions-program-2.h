@@ -2,7 +2,7 @@
 #ifndef LIBRARY_FUNCTIONS_PROGRAM_2_H
 #define LIBRARY_FUNCTIONS_PROGRAM_2_H
 
-int** generate_matrix_array(int, int);
+int** generate_integer_matrix(int, int);
 
 int** allocate_matrix_integer(int**,int,
   int, int);

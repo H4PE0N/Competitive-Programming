@@ -2,7 +2,7 @@
 #ifndef FUNCTIONS_TESTING_PROGRAM_2_H
 #define FUNCTIONS_TESTING_PROGRAM_2_H
 
-int generate_matrix_array_test(int, int, int**);
+int generate_integer_matrix_test(int,int, int**);
 
 int allocate_matrix_integer_test(int**,int,int,
   int, int**);

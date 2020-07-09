@@ -18,7 +18,7 @@ library-functions-program-8.h"
 int** reverse_integer_matrix(int** matrix, int height,
   int width)
 {
-  int** reverse = generate_matrix_array(height, width);
+  int** reverse=generate_integer_matrix(height, width);
   for(int index = 0; index < height; index = index + 1)
   {
     *(reverse + index) = matrix_index_array(matrix,
