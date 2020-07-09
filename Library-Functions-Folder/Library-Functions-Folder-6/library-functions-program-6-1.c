@@ -66,7 +66,7 @@ int* update_typical_variables(int*variables,int amount,
 
 double integer_array_median(int* array, int length)
 {
-  if(integer_divisible_by_two(length))
+  if(check_integer_divisible(length, 2))
   {
     return integer_even_median(array, length);
   }

@@ -14,7 +14,7 @@ integer_power_operation     convert_percent_decimal
 
 integer_range_between       generate_random_integer
 
-convert_decimal_percent     integer_divisible_by_two
+convert_decimal_percent     check_integer_divisible
 
 integer_between_integers    increase_integer_variable
 

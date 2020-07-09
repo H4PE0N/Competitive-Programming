@@ -14,7 +14,7 @@ int integer_greater_than(int, int);
 
 double convert_decimal_percent(double);
 
-int integer_divisible_by_two(int);
+int check_integer_divisible(int, int);
 
 double convert_percent_decimal(double);
 

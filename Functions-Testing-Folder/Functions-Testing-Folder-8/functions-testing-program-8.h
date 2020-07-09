@@ -20,7 +20,7 @@ int integer_power_operation_test(int, int, int);
 
 int integer_smaller_than_test(int, int, int);
 
-int integer_divisible_by_two_test(int, int);
+int check_integer_divisible_test(int, int, int);
 
 
 #endif

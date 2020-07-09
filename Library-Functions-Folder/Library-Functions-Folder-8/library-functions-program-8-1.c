@@ -67,7 +67,7 @@ double integer_between_integers(int first, int second)
   return integer_array_average(vector, 2);
 }
 
-int integer_divisible_by_two(int integer)
+int check_integer_divisible(int first, int second)
 {
-  int output = (integer % 2 == 0); return output;
+  int output = (first % second == 0); return output;
 }

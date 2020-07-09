@@ -37,10 +37,10 @@ int convert_percent_decimal_test(double percent,
   return (convert_percent_decimal(percent) == output);
 }
 
-int integer_divisible_by_two_test(int integer,
+int check_integer_divisible_test(int first, int second,
   int output)
 {
-  int boolean = integer_divisible_by_two(integer);
+  int boolean = check_integer_divisible(first, second);
   return (boolean == output);
 }
 
