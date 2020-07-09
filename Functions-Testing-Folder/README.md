@@ -5,7 +5,7 @@ functions   from   "Library-Functions-Folder".   When   you
 want to create a new function, you will first make the test
 function  here.  Then  you  will  call  the  test  function
 with some  different  types  of  inputs  and  outputs  from
-"Functions-Testing-Bootup" . After that you can create  the
+"Functions-Bootup-Folder". After that you  can  create  the
 original function  in  the  "Library-Functions-Folder".  
 
 By  doing  that  you   are   working   with   "test driven-

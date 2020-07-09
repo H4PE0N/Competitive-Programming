@@ -12,7 +12,7 @@ similar type of function.
 Here is a list of all the folders and  what  they  contain:
 
 * Compile-Program-Folder:   Write and compile a program
-* Functions-Testing-Bootup: Write some tests for the functions
+* Functions-Bootup-Folder:  Write some tests for the functions
 * Functions-Testing-Folder: Folder containing test functions
 * Library-Functions-Folder: Folder containing library functions
 
