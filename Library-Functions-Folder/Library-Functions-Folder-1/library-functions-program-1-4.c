@@ -11,13 +11,6 @@ library-functions-program-1.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int array_integer_smaller(int* array, int first,
-  int second)
-{
-  int integer = array_index_integer(array, first);
-  return integer < array_index_integer(array, second);
-}
-
 int array_integer_index(int* array, int length,
   int integer)
 {
@@ -28,4 +21,39 @@ int array_integer_index(int* array, int length,
       { integer_index = index; break; }
   }
   return integer_index;
+}
+
+int array_integer_smaller(int* array, int first,
+  int second)
+{
+  int integer = array_index_integer(array, first);
+  return integer < array_index_integer(array, second);
+}
+
+int integers_inside_array(int* array, int length,
+  int* integers)
+{
+  int int_len = integer_array_length(integers);
+  if(integer_greater_than(int_len,length))return false;
+  for(int index = 0; index < length - int_len; index++)
+  {
+    int* section = integer_array_section(array, index,
+      length);
+    if(compare_integer_arrays(section, integers,
+      int_len)) return true;
+  }
+  return false;
+}
+
+int* integer_array_section(int* array, int first,
+  int second)
+{
+  int* section=generate_integer_array(second-first +1);
+  for(int index = first; index <= second; index += 1)
+  {
+    int length = integer_array_length(section);
+    int integer = array_index_integer(array, index);
+    section=add_array_integer(section,length, integer);
+  }
+  return section;
 }

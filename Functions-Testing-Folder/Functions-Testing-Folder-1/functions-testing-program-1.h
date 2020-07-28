@@ -83,4 +83,10 @@ int reverse_integer_array_test(int*, int,
 int array_integer_index_test(int*, int,int,
   int);
 
+int integers_inside_array_test(int*, int,
+  int*, int);
+
+int integer_array_section_test(int*, int,
+  int, int*);
+
 #endif

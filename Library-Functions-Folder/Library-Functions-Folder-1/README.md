@@ -37,7 +37,9 @@ compare_arrays_integer      array_integer_greater
 
 array_integer_smaller       reverse_integer_array
 
-array_integer_index
+array_integer_index         integers_inside_array
+
+integer_array_section
 
 Made by Roy Hampus Fridholm
 </pre>

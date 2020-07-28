@@ -79,4 +79,10 @@ int* reverse_integer_array(int*, int);
 
 int array_integer_index(int*, int,int);
 
+int integers_inside_array(int*, int,
+  int*);
+
+int* integer_array_section(int*, int,
+  int);
+
 #endif
