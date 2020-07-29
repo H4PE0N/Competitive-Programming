@@ -92,4 +92,10 @@ char* reverse_character_string(char*,
 int string_character_index(char*, int,
   char);
 
+int characters_inside_string(char*,int,
+  char*);
+
+char* character_string_section(char*,
+  int, int);
+
 #endif

@@ -82,4 +82,10 @@ int reverse_character_string_test(char*, int,
 int string_character_index_test(char*, int,char,
   int);
 
+int characters_inside_string_test(char*, int,
+  char*, int);
+
+int character_string_section_test(char*,int,int,
+  char*);
+
 #endif

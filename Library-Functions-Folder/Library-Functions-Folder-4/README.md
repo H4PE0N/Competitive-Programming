@@ -40,7 +40,9 @@ compare_strings_character     string_character_smaller
 
 string_character_greater      reverse_character_string
 
-string_character_index
+string_character_index        characters_inside_string
+
+character_string_section
 
 Made by Roy Hampus Fridholm
 </pre>

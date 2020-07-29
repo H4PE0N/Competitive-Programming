@@ -44,5 +44,7 @@ string_character_greater_test     string_character_smaller_test
 
 reverse_character_string_test     string_character_index_test
 
+characters_inside_string_test     character_string_section_test
+
 Made by Roy Hampus Fridholm
 </pre>

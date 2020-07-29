@@ -87,3 +87,10 @@ int string_character_index_test(char*string,int length,
   int index = string_character_index(string, length,
     character); return (index == output);
 }
+
+int characters_inside_string_test(char* string,
+  int length, char* characters, int output)
+{
+  int boolean = characters_inside_string(string,length,
+    characters); return (boolean == output);
+}

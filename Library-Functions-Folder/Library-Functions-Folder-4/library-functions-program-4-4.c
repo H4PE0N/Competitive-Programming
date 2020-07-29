@@ -56,3 +56,35 @@ int string_character_index(char* string, int length,
   }
   return character_index;
 }
+
+int characters_inside_string(char* string, int length,
+  char* characters)
+{
+  int char_len = character_string_length(characters);
+  if(integer_greater_than(char_len, length) || char_len
+    <= 0) return false;
+  for(int index = 0; index <= length-char_len; index++)
+  {
+    char*section=character_string_section(string,index,
+      length);
+    character_string_stdout(section, length);
+    if(compare_character_strings(section, characters,
+      char_len)) return true;
+  }
+  return false;
+}
+
+char* character_string_section(char* string, int first,
+  int second)
+{
+  char* section = generate_character_string(second -
+    first + 1);
+  for(int index = first; index <= second; index += 1)
+  {
+    int length = character_string_length(section);
+    int character=string_index_character(string,index);
+    section = add_string_character(section, length,
+      character);
+  }
+  return section;
+}
