@@ -14,7 +14,11 @@ here.
 
 Here is a list of the functions that the programs contains:
 
+start_stopwatch_operation_test    stop_stopwatch_operation_test
 
+calculate_current_time_test       seconds_delay_operation_test
+
+calculate_ending_time_test
 
 Made by Roy Hampus Fridholm
 </pre>
