@@ -32,6 +32,7 @@ gcc -o testing-bootup-program-4 testing-bootup-program-4.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-3.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-4.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-5.c \
+../../Library-Functions-Folder/Library-Functions-Folder-10/library-functions-program-10-1.c \
 ../../Functions-Testing-Folder/Functions-Testing-Folder-4/functions-testing-program-4-1.c \
 ../../Functions-Testing-Folder/Functions-Testing-Folder-4/functions-testing-program-4-2.c \
 ../../Functions-Testing-Folder/Functions-Testing-Folder-4/functions-testing-program-4-3.c \

@@ -44,8 +44,8 @@ Library-Functions-Folder-10/\
 library-functions-program-10.h"
 
 #include "../../Functions-Testing-Folder/\
-Functions-Testing-Folder-6/\
-functions-testing-program-6.h"
+Functions-Testing-Folder-10/\
+functions-testing-program-10.h"
 
 int main(int argc, char** argv)
 {

@@ -31,6 +31,8 @@ gcc -o testing-bootup-program-n testing-bootup-program-n.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-3.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-4.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-5.c \
+../../Library-Functions-Folder/Library-Functions-Folder-10/library-functions-program-10-1.c \
+../../Library-Functions-Folder/Library-Functions-Folder-n/library-functions-program-n-1.c \
 ../../Functions-Testing-Folder/Functions-Testing-Folder-n/functions-testing-program-n-1.c -lm
 
 After you have compiled the  program,  type  the  following  

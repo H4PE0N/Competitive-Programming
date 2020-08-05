@@ -39,6 +39,10 @@ library-functions-program-8.h"
 Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-10/\
+library-functions-program-10.h"
+
 #include "../../Functions-Testing-Folder/\
 Functions-Testing-Folder-9/\
 functions-testing-program-9.h"

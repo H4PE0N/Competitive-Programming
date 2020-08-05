@@ -4,7 +4,7 @@ To compile the program, make sure you have the GCC compiler
 downloaded, and execute the following command in  the  same  
 folder as the program.
 
-gcc -o testing-bootup-program-5 testing-bootup-program-5.c \
+gcc -o testing-bootup-program-10 testing-bootup-program-10.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-2.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-1/library-functions-program-1-3.c \
@@ -28,18 +28,17 @@ gcc -o testing-bootup-program-5 testing-bootup-program-5.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-7/library-functions-program-7-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-8/library-functions-program-8-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-1.c \
-../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-2.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-3.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-4.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-5.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-10/library-functions-program-10-1.c \
-../../Functions-Testing-Folder/Functions-Testing-Folder-5/functions-testing-program-5-1.c -lm
+../../Functions-Testing-Folder/Functions-Testing-Folder-10/functions-testing-program-10-1.c -lm
 
 After you have compiled the  program,  type  the  following  
 command to run the executable file, that is going to appear  
 in the folder:
 
-./testing-bootup-program-5
+./testing-bootup-program-10
 
 To download the GCC compiler for this project,  go  to  the  
 website: https://sourceforge.net/projects/mingw-w64/

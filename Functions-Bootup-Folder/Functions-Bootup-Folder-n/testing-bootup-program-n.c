@@ -35,6 +35,18 @@ library-functions-program-7.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-9/\
+library-functions-program-9.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-10/\
+library-functions-program-10.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-n/\
+library-functions-program-n.h"
+
 #include "../../Functions-Testing-Folder/\
 Functions-Testing-Folder-n/\
 functions-testing-program-n.h"

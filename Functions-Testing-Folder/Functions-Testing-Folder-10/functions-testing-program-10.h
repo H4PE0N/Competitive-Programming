@@ -1,0 +1,7 @@
+
+#ifndef FUNCTIONS_TESTING_PROGRAM_10_H
+#define FUNCTIONS_TESTING_PROGRAM_10_H
+
+
+
+#endif
