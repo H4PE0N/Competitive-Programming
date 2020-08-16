@@ -38,3 +38,12 @@ int compare_hashmap_content_test(int** first,
   int boolean = compare_hashmap_content(first, second,
     length); return (boolean == output);
 }
+
+int duplicate_integer_hashmap_test(int** hashmap,
+  int length, int** output)
+{
+  int** doublet = duplicate_integer_hashmap(hashmap,
+    length);
+  return compare_integer_hashmaps(doublet, output,
+    length);
+}

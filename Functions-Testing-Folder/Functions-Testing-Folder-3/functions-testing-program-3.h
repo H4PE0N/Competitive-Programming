@@ -70,4 +70,7 @@ int sort_hashmap_iteration_test(int**, int,
 int sort_integer_hashmap_test(int**, int,
   int**);
 
+int duplicate_integer_hashmap_test(int**,
+  int, int**);
+
 #endif

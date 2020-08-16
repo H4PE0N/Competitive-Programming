@@ -34,5 +34,7 @@ increase_hashmap_value        compare_hashmap_content
 
 sort_integer_hashmap          sort_hashmap_iteration
 
+duplicate_integer_hashmap
+
 Made by Roy Hampus Fridholm
 </pre>

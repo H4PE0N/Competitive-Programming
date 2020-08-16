@@ -38,5 +38,7 @@ compare_integer_hashmaps_test     compare_hashmap_content_test
 
 sort_hashmap_iteration_test       sort_integer_hashmap_test
 
+duplicate_integer_hashmap_test
+
 Made by Roy Hampus Fridholm
 </pre>

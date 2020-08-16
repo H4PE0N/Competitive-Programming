@@ -84,3 +84,9 @@ int hashmap_keyword_value(int** hashmap, int keyword)
   int index = hashmap_keyword_index(hashmap, keyword);
   return hashmap_index_value(hashmap, index);
 }
+
+int** duplicate_integer_hashmap(int** hashmap,
+  int length)
+{
+  return duplicate_integer_matrix(hashmap, length, 2);
+}

@@ -63,4 +63,7 @@ int** sort_integer_hashmap(int**, int);
 int** sort_hashmap_iteration(int**, int,
   int);
 
+int** duplicate_integer_hashmap(int**,
+  int);
+
 #endif
