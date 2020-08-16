@@ -90,3 +90,10 @@ int** duplicate_integer_hashmap(int** hashmap,
 {
   return duplicate_integer_matrix(hashmap, length, 2);
 }
+
+int** remove_hashmap_keyword(int** hashmap, int length,
+  int keyword)
+{
+  int index = hashmap_keyword_index(hashmap, keyword);
+  return delete_hashmap_keyword(hashmap, length,index);
+}

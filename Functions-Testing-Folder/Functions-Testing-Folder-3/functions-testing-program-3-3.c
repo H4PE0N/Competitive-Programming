@@ -47,3 +47,29 @@ int duplicate_integer_hashmap_test(int** hashmap,
   return compare_integer_hashmaps(doublet, output,
     length);
 }
+
+int reduce_index_value_test(int** hashmap, int length,
+  int index, int** output)
+{
+  hashmap = reduce_index_value(hashmap, length, index);
+  return compare_integer_hashmaps(hashmap, output,
+    length);
+}
+
+int remove_hashmap_keyword_test(int** hashmap,
+  int length, int keyword, int** output)
+{
+  hashmap = remove_hashmap_keyword(hashmap, length,
+    keyword);
+  return compare_integer_hashmaps(hashmap, output,
+    length);
+}
+
+int increase_index_value_test(int** hashmap, int index,
+  int** output)
+{
+  hashmap = increase_index_value(hashmap, index);
+  int length = integer_hashmap_length(hashmap);
+  return compare_integer_hashmaps(hashmap, output,
+    length);
+}

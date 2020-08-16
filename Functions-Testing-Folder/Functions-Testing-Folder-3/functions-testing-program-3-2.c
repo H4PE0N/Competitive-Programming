@@ -15,20 +15,20 @@ library-functions-program-3.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int reduce_hashmap_value_test(int**hashmap,int keyword,
-  int** output)
+int reduce_keyword_value_test(int** hashmap,int length,
+  int keyword, int** output)
 {
-  hashmap = reduce_hashmap_value(hashmap, keyword);
-  int length = integer_hashmap_length(hashmap);
+  hashmap = reduce_keyword_value(hashmap, length,
+    keyword);
   return compare_integer_hashmaps(hashmap, output,
     length);
 }
 
 int delete_hashmap_keyword_test(int** hashmap,
-  int length, int keyword, int** output)
+  int length, int index, int** output)
 {
   hashmap = delete_hashmap_keyword(hashmap, length,
-    keyword);
+    index);
   return compare_integer_hashmaps(hashmap, output,
     length);
 }

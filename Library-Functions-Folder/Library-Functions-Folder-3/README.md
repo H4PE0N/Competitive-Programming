@@ -18,7 +18,7 @@ hashmap_keyword_index         hashmap_keyword_array
 
 hashmap_value_keywords        integer_hashmap_keywords
 
-hashmap_keyword_value         reduce_hashmap_value
+hashmap_keyword_value         reduce_keyword_value
 
 delete_hashmap_keyword        generate_hashmap_keyword
 
@@ -33,6 +33,10 @@ allocate_index_value          compare_integer_hashmaps
 increase_hashmap_value        compare_hashmap_content
 
 sort_integer_hashmap          sort_hashmap_iteration
+
+reduce_index_value            increase_index_value
+
+remove_hashmap_keyword
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -73,4 +73,13 @@ int sort_integer_hashmap_test(int**, int,
 int duplicate_integer_hashmap_test(int**,
   int, int**);
 
+int reduce_index_value_test(int**, int,int,
+  int**);
+
+int remove_hashmap_keyword_test(int**, int,
+  int, int**);
+
+int increase_index_value_test(int**, int,
+  int**);
+
 #endif
