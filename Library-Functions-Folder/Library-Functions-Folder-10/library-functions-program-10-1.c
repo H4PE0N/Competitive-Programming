@@ -11,8 +11,16 @@ long start_stopwatch_operation() { return time(NULL); }
 
 int stop_stopwatch_operation(long start_time)
 {
-  long stop_time = calculate_current_time();
-  return (int) difftime(stop_time, start_time);
+  long current_time = calculate_current_time();
+  return (int) difftime(current_time, start_time);
+}
+
+void seconds_delay_operation(int seconds)
+{
+  long start_time = calculate_current_time();
+  long ending_time = calculate_ending_time(start_time,
+    seconds);
+  while(calculate_current_time() < ending_time);
 }
 
 long calculate_ending_time(long start_time,int seconds)
@@ -21,11 +29,3 @@ long calculate_ending_time(long start_time,int seconds)
 }
 
 long calculate_current_time() { return time(NULL); }
-
-void seconds_delay_operation(int seconds)
-{
-  long start_time = calculate_current_time();
-  long stop_time = calculate_ending_time(start_time,
-    seconds);
-  while(calculate_current_time() < stop_time);
-}
