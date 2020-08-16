@@ -39,6 +39,10 @@ library-functions-program-8.h"
 Library-Functions-Folder-9/\
 library-functions-program-9.h"
 
+#include "../Library-Functions-Folder/\
+Library-Functions-Folder-10/\
+library-functions-program-10.h"
+
 int main(int argc, char** argv)
 {
   srand(time(NULL));
