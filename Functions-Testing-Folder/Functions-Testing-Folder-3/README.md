@@ -44,5 +44,7 @@ increase_index_value_test         check_hashmap_array_test
 
 allocate_hashmap_keyword_test     allocate_hashmap_value_test
 
+hashmap_keyword_smaller_test      hashmap_keyword_greater_test
+
 Made by Roy Hampus Fridholm
 </pre>

@@ -82,4 +82,10 @@ int** allocate_hashmap_value(int**, int,
 int** allocate_hashmap_keyword(int**,
   int, int);
 
+int hashmap_keyword_greater(int**, int,
+  int);
+
+int hashmap_keyword_smaller(int**, int,
+  int);
+
 #endif

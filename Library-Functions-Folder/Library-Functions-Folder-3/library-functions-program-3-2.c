@@ -94,6 +94,6 @@ int hashmap_index_value(int** hashmap, int index)
 
 int hashmap_index_keyword(int** hashmap, int index)
 {
-  int keyword = matrix_array_integer(hashmap,index,0);
+  int keyword = matrix_array_integer(hashmap,index, 0);
   return keyword;
 }

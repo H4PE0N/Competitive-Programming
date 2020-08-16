@@ -56,3 +56,17 @@ int** allocate_hashmap_keyword(int**hashmap,int index,
   return allocate_matrix_integer(hashmap, index, 0,
     keyword);
 }
+
+int hashmap_keyword_smaller(int** hashmap, int first,
+  int second)
+{
+  return matrix_integer_smaller(hashmap, first,second,
+    0);
+}
+
+int hashmap_keyword_greater(int** hashmap, int first,
+  int second)
+{
+  return matrix_integer_greater(hashmap, first,second,
+    0);
+}

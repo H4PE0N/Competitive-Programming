@@ -40,5 +40,7 @@ remove_hashmap_keyword        check_hashmap_array
 
 allocate_hashmap_value        allocate_hashmap_keyword
 
+hashmap_keyword_greater       hashmap_keyword_smaller
+
 Made by Roy Hampus Fridholm
 </pre>

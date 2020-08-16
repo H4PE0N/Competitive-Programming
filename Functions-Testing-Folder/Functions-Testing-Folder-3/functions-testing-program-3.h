@@ -91,4 +91,10 @@ int allocate_hashmap_value_test(int**, int,
 int check_hashmap_array_test(int**, int,
   int);
 
+int hashmap_keyword_smaller_test(int**,int,
+  int, int);
+
+int hashmap_keyword_greater_test(int**,int,
+  int, int);
+
 #endif
