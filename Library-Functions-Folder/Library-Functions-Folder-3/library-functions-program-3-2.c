@@ -88,10 +88,12 @@ int** generate_random_hashmap(int length, int minimum,
 
 int hashmap_index_value(int** hashmap, int index)
 {
-  int value = *(*(hashmap + index) + 1); return value;
+  int value = matrix_array_integer(hashmap, index, 1);
+  return value;
 }
 
 int hashmap_index_keyword(int** hashmap, int index)
 {
-  int keyword = *(*(hashmap + index)); return keyword;
+  int keyword = matrix_array_integer(hashmap,index,0);
+  return keyword;
 }

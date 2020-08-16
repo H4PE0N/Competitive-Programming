@@ -77,7 +77,7 @@ int integer_hashmap_length_test(int** hashmap,
   int output)
 {
   int length = integer_hashmap_length(hashmap);
-  return (length = output);
+  return (length == output);
 }
 
 int convert_array_hashmap_test(int* array, int length,

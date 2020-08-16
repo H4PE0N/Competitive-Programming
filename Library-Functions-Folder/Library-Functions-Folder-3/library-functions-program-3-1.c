@@ -32,7 +32,7 @@ int hashmap_keyword_exists(int** hashmap, int keyword)
 int integer_hashmap_length(int** hashmap)
 {
   int length = 0;
-  while(hashmap_index_value(hashmap, length) != 0)
+  while(check_hashmap_array(hashmap, length) != 0)
   {
     length = increase_integer_variable(length);
   }
@@ -61,10 +61,9 @@ int** generate_hashmap_keyword(int** hashmap,
   int keyword)
 {
   int length = integer_hashmap_length(hashmap);
-  hashmap = allocate_matrix_integer(hashmap, length, 0,
+  hashmap = allocate_hashmap_keyword(hashmap, length,
     keyword);
-  hashmap =allocate_matrix_integer(hashmap,length,1,1);
-  return hashmap;
+  return allocate_hashmap_value(hashmap, length, 1);
 }
 
 int** increase_hashmap_value(int** hashmap,int keyword)
