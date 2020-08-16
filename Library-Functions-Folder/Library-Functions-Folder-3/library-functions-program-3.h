@@ -74,4 +74,12 @@ int** increase_index_value(int**, int);
 int** remove_hashmap_keyword(int**, int,
   int);
 
+int check_hashmap_array(int**, int);
+
+int** allocate_hashmap_value(int**, int,
+  int);
+
+int** allocate_hashmap_keyword(int**,
+  int, int);
+
 #endif

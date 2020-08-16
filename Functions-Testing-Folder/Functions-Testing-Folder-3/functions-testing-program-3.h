@@ -82,4 +82,13 @@ int remove_hashmap_keyword_test(int**, int,
 int increase_index_value_test(int**, int,
   int**);
 
+int allocate_hashmap_keyword_test(int**,
+  int, int, int**);
+
+int allocate_hashmap_value_test(int**, int,
+  int, int**);
+
+int check_hashmap_array_test(int**, int,
+  int);
+
 #endif

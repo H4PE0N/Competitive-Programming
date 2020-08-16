@@ -40,7 +40,9 @@ sort_hashmap_iteration_test       sort_integer_hashmap_test
 
 reduce_index_value_test           remove_hashmap_keyword_test
 
-increase_index_value_test
+increase_index_value_test         check_hashmap_array_test
+
+allocate_hashmap_keyword_test     allocate_hashmap_value_test
 
 Made by Roy Hampus Fridholm
 </pre>

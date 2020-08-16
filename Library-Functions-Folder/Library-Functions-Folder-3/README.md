@@ -36,7 +36,9 @@ sort_integer_hashmap          sort_hashmap_iteration
 
 reduce_index_value            increase_index_value
 
-remove_hashmap_keyword
+remove_hashmap_keyword        check_hashmap_array
+
+allocate_hashmap_value        allocate_hashmap_keyword
 
 Made by Roy Hampus Fridholm
 </pre>
