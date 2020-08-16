@@ -16,7 +16,7 @@ Here is a list of the functions that the programs contains:
 
 generate_integer_hashmap_test     increase_hashmap_value_test
 
-integer_hashmap_length_test       allocate_hashmap_value_test
+integer_hashmap_length_test       duplicate_integer_hashmap_test
 
 hashmap_keyword_exists_test       convert_array_hashmap_test
 
@@ -37,8 +37,6 @@ allocate_index_value_test         increase_keyword_value_test
 compare_integer_hashmaps_test     compare_hashmap_content_test
 
 sort_hashmap_iteration_test       sort_integer_hashmap_test
-
-duplicate_integer_hashmap_test
 
 Made by Roy Hampus Fridholm
 </pre>
