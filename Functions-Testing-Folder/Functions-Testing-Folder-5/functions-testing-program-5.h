@@ -36,4 +36,10 @@ int convert_binary_character_test(char*,
 int binary_range_between_test(char*,int,int,
   int);
 
+int convert_string_binary_test(char*, int,
+  char**);
+
+int convert_binary_string_test(char**, int,
+  char*);
+
 #endif

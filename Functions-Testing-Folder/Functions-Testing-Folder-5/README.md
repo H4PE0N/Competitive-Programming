@@ -26,7 +26,9 @@ actual_binary_length_test         convert_binary_integer_test
 
 convert_binary_character_test     calculate_bit_integer_test
 
-binary_range_between_test
+binary_range_between_test         convert_string_binary_test
+
+convert_binary_string_test
 
 Made by Roy Hampus Fridholm
 </pre>

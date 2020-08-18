@@ -37,4 +37,10 @@ char* generate_random_binary(int,
 int binary_range_between(char*, int,
   int);
 
+char** convert_string_binary(char*,
+  int);
+
+char* convert_binary_string(char**,
+  int);
+
 #endif

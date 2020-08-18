@@ -2,14 +2,29 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "../Library-Functions-Folder-4/\
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-1/\
+library-functions-program-1.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-2/\
+library-functions-program-2.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-4/\
 library-functions-program-4.h"
 
-#include "../Library-Functions-Folder-5/\
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-5/\
 library-functions-program-5.h"
 
-#include "../Library-Functions-Folder-8/\
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
 library-functions-program-8.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-9/\
+library-functions-program-9.h"
 
 int binary_range_between(char* binary, int minimum,
   int maximum)
@@ -52,5 +67,31 @@ char* generate_random_binary(int minimum, int maximum)
   int integer = generate_random_integer(minimum,
     maximum);
   char* binary = convert_integer_binary(integer);
+  return binary;
+}
+
+char* allocate_binary_bits(char* binary, int length,
+  int integer)
+{
+  for(int index = 0; index < length; index = index + 1)
+  {
+    binary = allocate_binary_bit(binary, length,
+      integer);
+    integer = reduce_binary_integer(binary, length,
+      integer);
+  }
+  return binary;
+}
+
+char** convert_string_binary(char* string, int length)
+{
+  char** binary = generate_string_sentence(length, 8);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    char character = string_index_character(string,
+      index);
+    char* current =convert_character_binary(character);
+    binary=add_sentence_string(binary, index, current);
+  }
   return binary;
 }

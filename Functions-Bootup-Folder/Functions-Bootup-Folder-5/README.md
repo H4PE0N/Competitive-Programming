@@ -24,6 +24,7 @@ gcc -o testing-bootup-program-5 testing-bootup-program-5.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-4/library-functions-program-4-4.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-5/library-functions-program-5-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-5/library-functions-program-5-2.c \
+../../Library-Functions-Folder/Library-Functions-Folder-5/library-functions-program-5-3.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-6/library-functions-program-6-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-6/library-functions-program-6-2.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-7/library-functions-program-7-1.c \
@@ -34,7 +35,8 @@ gcc -o testing-bootup-program-5 testing-bootup-program-5.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-4.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-9/library-functions-program-9-5.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-10/library-functions-program-10-1.c \
-../../Functions-Testing-Folder/Functions-Testing-Folder-5/functions-testing-program-5-1.c -lm
+../../Functions-Testing-Folder/Functions-Testing-Folder-5/functions-testing-program-5-1.c \
+../../Functions-Testing-Folder/Functions-Testing-Folder-5/functions-testing-program-5-2.c -lm
 
 After you have compiled the  program,  type  the  following  
 command to run the executable file, that is going to appear  

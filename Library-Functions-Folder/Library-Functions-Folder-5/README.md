@@ -23,5 +23,7 @@ convert_binary_character      calculate_bit_integer
 
 generate_random_binary        binary_range_between
 
+convert_string_binary         convert_binary_string
+
 Made by Roy Hampus Fridholm
 </pre>

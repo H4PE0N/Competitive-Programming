@@ -1,11 +1,27 @@
 
 #include "../../Library-Functions-Folder/\
+Library-Functions-Folder-1/\
+library-functions-program-1.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-2/\
+library-functions-program-2.h"
+
+#include "../../Library-Functions-Folder/\
 Library-Functions-Folder-4/\
 library-functions-program-4.h"
 
 #include "../../Library-Functions-Folder/\
 Library-Functions-Folder-5/\
 library-functions-program-5.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-9/\
+library-functions-program-9.h"
 
 int binary_integer_enough_test(char* binary,int length,
   int integer, int output)
@@ -81,17 +97,4 @@ int allocate_binary_bits_test(char* binary, int length,
   binary = allocate_binary_bits(binary,length,integer);
   return compare_character_strings(binary, output,
     length);
-}
-
-int convert_binary_character_test(char* binary,
-  char output)
-{
-  return (convert_binary_character(binary) == output);
-}
-
-int binary_range_between_test(char* binary,int minimum,
-  int maximum, int output)
-{
-  int boolean = binary_range_between(binary, minimum,
-    maximum); return (boolean == output);
 }

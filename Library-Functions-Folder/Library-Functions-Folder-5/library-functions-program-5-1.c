@@ -3,6 +3,14 @@
 #include <math.h>
 
 #include "../../Library-Functions-Folder/\
+Library-Functions-Folder-1/\
+library-functions-program-1.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-2/\
+library-functions-program-2.h"
+
+#include "../../Library-Functions-Folder/\
 Library-Functions-Folder-4/\
 library-functions-program-4.h"
 
@@ -13,6 +21,10 @@ library-functions-program-5.h"
 #include "../../Library-Functions-Folder/\
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
+
+#include "../../Library-Functions-Folder/\
+Library-Functions-Folder-9/\
+library-functions-program-9.h"
 
 int binary_integer_enough(char* binary, int length,
   int integer)
@@ -82,17 +94,4 @@ int nearest_binary_length(int integer)
     index = increase_integer_variable(index);
   }
   return calculate_bit_integer(index);
-}
-
-char* allocate_binary_bits(char* binary, int length,
-  int integer)
-{
-  for(int index = 0; index < length; index = index + 1)
-  {
-    binary = allocate_binary_bit(binary, length,
-      integer);
-    integer = reduce_binary_integer(binary, length,
-      integer);
-  }
-  return binary;
 }
