@@ -25,5 +25,7 @@ generate_random_binary        binary_range_between
 
 convert_string_binary         convert_binary_string
 
+convert_binary_array          convert_array_binary
+
 Made by Roy Hampus Fridholm
 </pre>
