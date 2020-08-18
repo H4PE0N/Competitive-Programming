@@ -97,4 +97,10 @@ int hashmap_keyword_smaller_test(int**,int,
 int hashmap_keyword_greater_test(int**,int,
   int, int);
 
+int convert_hashmap_array_test(int**, int,
+  int*);
+
+int integer_hashmap_total_test(int**, int,
+  int);
+
 #endif

@@ -85,4 +85,7 @@ int integers_inside_array(int*, int,
 int* integer_array_section(int*, int,
   int);
 
+int* add_array_integers(int*, int, int,
+  int);
+
 #endif

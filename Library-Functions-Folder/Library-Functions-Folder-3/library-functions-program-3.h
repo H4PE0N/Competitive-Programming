@@ -88,4 +88,8 @@ int hashmap_keyword_greater(int**, int,
 int hashmap_keyword_smaller(int**, int,
   int);
 
+int* convert_hashmap_array(int**, int);
+
+int integer_hashmap_total(int**, int);
+
 #endif

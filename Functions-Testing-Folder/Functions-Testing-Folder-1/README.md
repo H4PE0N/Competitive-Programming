@@ -46,5 +46,7 @@ reverse_integer_array_test        array_integer_index_test
 
 integers_inside_array_test        integer_array_section_test
 
+add_array_integers_test
+
 Made by Roy Hampus Fridholm
 </pre>

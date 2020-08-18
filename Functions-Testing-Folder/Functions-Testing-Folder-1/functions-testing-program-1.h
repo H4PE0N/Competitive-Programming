@@ -89,4 +89,7 @@ int integers_inside_array_test(int*, int,
 int integer_array_section_test(int*, int,
   int, int*);
 
+int add_array_integers_test(int*, int, int,
+  int, int*);
+
 #endif

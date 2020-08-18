@@ -36,7 +36,8 @@ gcc -o testing-bootup-program-1 testing-bootup-program-1.c \
 ../../Library-Functions-Folder/Library-Functions-Folder-10/library-functions-program-10-1.c \
 ../../Functions-Testing-Folder/Functions-Testing-Folder-1/functions-testing-program-1-1.c \
 ../../Functions-Testing-Folder/Functions-Testing-Folder-1/functions-testing-program-1-2.c \
-../../Functions-Testing-Folder/Functions-Testing-Folder-1/functions-testing-program-1-3.c -lm
+../../Functions-Testing-Folder/Functions-Testing-Folder-1/functions-testing-program-1-3.c \
+../../Functions-Testing-Folder/Functions-Testing-Folder-1/functions-testing-program-1-4.c -lm
 
 After you have compiled the  program,  type  the  following  
 command to run the executable file, that is going to appear  

@@ -58,3 +58,14 @@ int* integer_array_section(int* array, int first,
   }
   return section;
 }
+
+int* add_array_integers(int* array, int length,
+  int integer, int amount)
+{
+  for(int index = 0; index < amount; index = index + 1)
+  {
+    int current = (length + index);
+    array = add_array_integer(array, current, integer);
+  }
+  return array;
+}

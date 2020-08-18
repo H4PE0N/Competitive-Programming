@@ -42,5 +42,7 @@ allocate_hashmap_value        allocate_hashmap_keyword
 
 hashmap_keyword_greater       hashmap_keyword_smaller
 
+convert_hashmap_array         integer_hashmap_total
+
 Made by Roy Hampus Fridholm
 </pre>

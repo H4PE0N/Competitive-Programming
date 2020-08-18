@@ -39,7 +39,7 @@ array_integer_smaller       reverse_integer_array
 
 array_integer_index         integers_inside_array
 
-integer_array_section
+integer_array_section       add_array_integers
 
 Made by Roy Hampus Fridholm
 </pre>
