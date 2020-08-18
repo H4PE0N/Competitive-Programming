@@ -16,3 +16,12 @@ int character_string_section_test(char* string,
   return compare_character_strings(section, output,
     length);
 }
+
+int add_string_characters_test(char* string,int length,
+  char character, int amount, char* output)
+{
+  string=add_string_characters(string,length,character,
+    amount);
+  return compare_character_strings(string, output,
+    character_string_length(string));
+}

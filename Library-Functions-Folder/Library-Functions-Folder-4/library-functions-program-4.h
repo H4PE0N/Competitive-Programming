@@ -98,4 +98,7 @@ int characters_inside_string(char*,int,
 char* character_string_section(char*,
   int, int);
 
+char* add_string_characters(char*, int,
+  char, int);
+
 #endif

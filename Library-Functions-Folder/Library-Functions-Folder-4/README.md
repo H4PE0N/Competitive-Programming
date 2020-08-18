@@ -42,7 +42,7 @@ string_character_greater      reverse_character_string
 
 string_character_index        characters_inside_string
 
-character_string_section
+character_string_section      add_string_characters
 
 Made by Roy Hampus Fridholm
 </pre>

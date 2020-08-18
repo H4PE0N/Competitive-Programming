@@ -85,10 +85,13 @@ char* delete_string_character(char* string, int length,
   return allocate_string_character(string,length,'\0');
 }
 
-int compare_string_characters(char* string, int first,
-  int second)
+char* add_string_characters(char* string, int length,
+  char character, int amount)
 {
-  char character=string_index_character(string, first);
-  return (character == string_index_character(string,
-    second));
+  for(int index = 0; index < amount; index = index + 1)
+  {
+    string = add_string_character(string, length+index,
+      character);
+  }
+  return string;
 }

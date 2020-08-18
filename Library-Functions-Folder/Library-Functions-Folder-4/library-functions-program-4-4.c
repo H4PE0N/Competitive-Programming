@@ -88,3 +88,11 @@ char* character_string_section(char* string, int first,
   }
   return section;
 }
+
+int compare_string_characters(char* string, int first,
+  int second)
+{
+  char character=string_index_character(string, first);
+  return (character == string_index_character(string,
+    second));
+}

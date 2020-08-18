@@ -88,4 +88,7 @@ int characters_inside_string_test(char*, int,
 int character_string_section_test(char*,int,int,
   char*);
 
+int add_string_characters_test(char*, int, char,
+  int, char*);
+
 #endif
