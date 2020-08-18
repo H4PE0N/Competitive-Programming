@@ -28,7 +28,9 @@ convert_binary_character_test     calculate_bit_integer_test
 
 binary_range_between_test         convert_string_binary_test
 
-convert_binary_string_test
+convert_binary_string_test        convert_array_binary_test
+
+convert_binary_array_test
 
 Made by Roy Hampus Fridholm
 </pre>

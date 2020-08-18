@@ -42,4 +42,10 @@ int convert_string_binary_test(char*, int,
 int convert_binary_string_test(char**, int,
   char*);
 
+int convert_array_binary_test(int*, int,
+  char**);
+
+int convert_binary_array_test(char**, int,
+  int*);
+
 #endif
