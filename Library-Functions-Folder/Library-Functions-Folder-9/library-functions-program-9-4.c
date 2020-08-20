@@ -82,8 +82,9 @@ char** reverse_string_sentence(char** sentence,
     width);
   for(int index = 0; index < height; index = index + 1)
   {
-    *(reverse + index) =sentence_index_string(sentence,
+    char* string = sentence_index_string(sentence,
       height - (index + 1));
+    reverse=add_sentence_string(reverse, index,string);
   }
   return reverse;
 }

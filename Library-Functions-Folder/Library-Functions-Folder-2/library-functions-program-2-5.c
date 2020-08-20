@@ -21,8 +21,9 @@ int** reverse_integer_matrix(int** matrix, int height,
   int** reverse=generate_integer_matrix(height, width);
   for(int index = 0; index < height; index = index + 1)
   {
-    *(reverse + index) = matrix_index_array(matrix,
-      height - (index + 1));
+    int* array = matrix_index_array(matrix, height -
+      (index + 1));
+    reverse = add_matrix_array(reverse, index, array);
   }
   return reverse;
 }
