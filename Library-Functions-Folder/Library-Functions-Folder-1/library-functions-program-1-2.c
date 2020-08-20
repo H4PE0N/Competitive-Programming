@@ -89,8 +89,9 @@ int* reverse_integer_array(int* array, int length)
   int* reverse = generate_integer_array(length);
   for(int index = 0; index < length; index = index + 1)
   {
-    *(reverse + index) = array_index_integer(array,
-      length - (index + 1));
+    int integer = array_index_integer(array, length -
+      (index + 1));
+    reverse = add_array_integer(reverse,index,integer);
   }
   return reverse;
 }
