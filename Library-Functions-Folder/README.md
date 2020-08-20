@@ -16,7 +16,7 @@ Here is a list of all the folders and  what  they  contain:
 * Library-Functions-Folder-5:   Binary Strings
 * Library-Functions-Folder-6:   Statistics
 * Library-Functions-Folder-7:   Binary Operations
-* Library-Functions-Folder-8:   Integers
+* Library-Functions-Folder-8:   Number Operations
 * Library-Functions-Folder-9:   String Sentences
 * Library-Functions-Folder-10:  Time Operations
 

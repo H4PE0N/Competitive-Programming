@@ -17,7 +17,7 @@ Here is a list of all the folders and  what  they  contain:
 * Functions-Bootup-Folder-5:  Binary Strings
 * Functions-Bootup-Folder-6:  Statistics
 * Functions-Bootup-Folder-7:  Binary Operations
-* Functions-Bootup-Folder-8:  Integers
+* Functions-Bootup-Folder-8:  Number Operations
 * Functions-Bootup-Folder-9:  String Sentences
 * Functions-Bootup-Folder-10: Time Operations
 

@@ -28,7 +28,7 @@ Here is a list of all the folders and  what  they  contain:
 * Functions-Testing-Folder-5:   Binary Strings
 * Functions-Testing-Folder-6:   Statistics
 * Functions-Testing-Folder-7:   Binary Operations
-* Functions-Testing-Folder-8:   Integers
+* Functions-Testing-Folder-8:   Number Operations
 * Functions-Testing-Folder-9:   String Sentences
 * Functions-Testing-Folder-10:  Time Operations
 
