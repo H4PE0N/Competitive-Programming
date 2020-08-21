@@ -34,5 +34,7 @@ convert_fraction_percent    convert_fraction_decimal
 
 extend_fraction_variable    shorten_fraction_variable
 
+compare_decimal_variables   compare_percent_variables
+
 Made by Roy Hampus Fridholm
 </pre>

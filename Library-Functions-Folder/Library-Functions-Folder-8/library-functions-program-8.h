@@ -54,4 +54,10 @@ int* extend_fraction_variable(int*,
 int* shorten_fraction_variable(int*,
   int);
 
+int compare_decimal_variables(double,
+  double);
+
+int compare_percent_variables(double,
+  double);
+
 #endif
