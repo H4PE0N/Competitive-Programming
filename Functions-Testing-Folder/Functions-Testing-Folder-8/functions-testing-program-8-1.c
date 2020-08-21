@@ -89,3 +89,12 @@ int compare_integer_variables_test(int first,
   int boolean=compare_integer_variables(first, second);
   return (boolean == output);
 }
+
+int generate_fraction_variable_test(int numerator,
+  int denominator, int* output)
+{
+  int* fraction = generate_fraction_variable(numerator,
+    denominator);
+  return compare_integer_arrays(fraction, output, 2);
+  // This will change to be: compare_fraction_variables
+}
