@@ -70,3 +70,17 @@ int extend_fraction_variable_test(int* fraction,
   return compare_integer_arrays(fraction, output, 2);
   // This will change to be: compare_fraction_variables
 }
+
+int compare_decimal_variables_test(double first,
+  double second, int output)
+{
+  int boolean = compare_decimal_variables(first, second);
+  return (boolean == output);
+}
+
+int compare_percent_variables_test(double first,
+  double second, int output)
+{
+  int boolean = compare_percent_variables(first, second);
+  return (boolean == output);
+}

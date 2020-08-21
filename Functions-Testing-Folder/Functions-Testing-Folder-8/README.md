@@ -34,7 +34,9 @@ convert_percent_fraction_test       convert_decimal_fraction_test
 
 convert_fraction_decimal_test       extend_fraction_variable_test
 
-shorten_fraction_variable_test
+shorten_fraction_variable_test      compare_decimal_variables_test
+
+compare_percent_variables_test
 
 Made by Roy Hampus Fridholm
 </pre>

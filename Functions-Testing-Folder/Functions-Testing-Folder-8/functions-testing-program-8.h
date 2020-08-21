@@ -61,4 +61,10 @@ int extend_fraction_variable_test(int*, int,
 int shorten_fraction_variable_test(int*,int,
   int*);
 
+int compare_decimal_variables_test(double,
+  double, int);
+
+int compare_percent_variables_test(double,
+  double, int);
+
 #endif
