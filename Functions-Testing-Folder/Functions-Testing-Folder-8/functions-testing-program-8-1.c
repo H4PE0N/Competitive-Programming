@@ -83,8 +83,8 @@ int integer_variable_odd_test(int integer, int output)
   return (boolean == output);
 }
 
-int compare_integer_variable_test(int first,int second,
-  int output)
+int compare_integer_variables_test(int first,
+  int second, int output)
 {
   int boolean=compare_integer_variables(first, second);
   return (boolean == output);
