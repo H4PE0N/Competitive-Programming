@@ -1,7 +1,7 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
+#include <stdbool.h>
 
 #include "../../Library-Functions-Folder/\
 Library-Functions-Folder-1/\
@@ -14,12 +14,6 @@ library-functions-program-6.h"
 #include "../../Library-Functions-Folder/\
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
-
-int compare_decimal_variables(double first,
-  double second)
-{
-  int boolean = (first == second); return boolean;
-}
 
 int compare_percent_variables(double first,
   double second)
@@ -34,12 +28,18 @@ int* duplicate_fraction_variable(int* fraction)
 
 int greatest_common_table(int greater, int smaller)
 {
-  for(int index = smaller; index <= 2; index -= 1)
+  for(int index = smaller; index > 0; index =index + 1)
   {
     if(greater % index == 0 && smaller % index == 0)
       return index;
   }
-  return false;
+  return false; // It will never come here;
+}
+
+int compare_decimal_variables(double first,
+  double second)
+{
+  int boolean = (first == second); return boolean;
 }
 
 int* smallest_fraction_form(int* fraction)
