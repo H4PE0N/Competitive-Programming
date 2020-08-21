@@ -84,3 +84,11 @@ int compare_percent_variables_test(double first,
   int boolean = compare_percent_variables(first, second);
   return (boolean == output);
 }
+
+int duplicate_fraction_variable_test(int* fraction,
+  int* output)
+{
+  int* doublet = duplicate_fraction_variable(fraction);
+  return compare_integer_arrays(fraction, output, 2);
+  // This will change to be: compare_fraction_variables
+}

@@ -67,4 +67,11 @@ int compare_decimal_variables_test(double,
 int compare_percent_variables_test(double,
   double, int);
 
+int duplicate_fraction_variable_test(int*,
+  int*);
+
+int greatest_common_table_test(int,int,int);
+
+int smallest_fraction_form_test(int*, int*);
+
 #endif
