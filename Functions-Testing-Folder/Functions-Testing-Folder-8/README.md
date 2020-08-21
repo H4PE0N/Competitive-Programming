@@ -32,7 +32,9 @@ integer_variable_odd_test           convert_fraction_percent_test
 
 convert_percent_fraction_test       convert_decimal_fraction_test
 
-convert_fraction_decimal_test
+convert_fraction_decimal_test       extend_fraction_variable_test
+
+shorten_fraction_variable_test
 
 Made by Roy Hampus Fridholm
 </pre>

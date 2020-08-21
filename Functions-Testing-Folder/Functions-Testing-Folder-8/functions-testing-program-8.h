@@ -55,4 +55,10 @@ int convert_fraction_decimal_test(int*,
 int generate_fraction_variable_test(int,int,
   int*);
 
+int extend_fraction_variable_test(int*, int,
+  int*);
+
+int shorten_fraction_variable_test(int*,int,
+  int*);
+
 #endif

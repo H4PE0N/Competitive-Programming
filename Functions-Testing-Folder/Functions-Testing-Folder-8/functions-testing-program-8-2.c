@@ -54,3 +54,19 @@ int convert_fraction_percent_test(int* fraction,
   double percent = convert_fraction_percent(fraction);
   return (percent == output);
 }
+
+int shorten_fraction_variable_test(int* fraction,
+  int integer, int* output)
+{
+  fraction = shorten_fraction_variable(fraction, integer);
+  return compare_integer_arrays(fraction, output, 2);
+  // This will change to be: compare_fraction_variables
+}
+
+int extend_fraction_variable_test(int* fraction,
+  int integer, int* output)
+{
+  fraction = extend_fraction_variable(fraction, integer);
+  return compare_integer_arrays(fraction, output, 2);
+  // This will change to be: compare_fraction_variables
+}
