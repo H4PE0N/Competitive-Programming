@@ -40,4 +40,12 @@ int* generate_random_fraction(int, int);
 
 int fraction_variable_numerator(int*);
 
+int* convert_decimal_fraction(double);
+
+int* convert_percent_fraction(double);
+
+double convert_fraction_percent(int*);
+
+double convert_fraction_decimal(int*);
+
 #endif

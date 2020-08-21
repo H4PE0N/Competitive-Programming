@@ -28,5 +28,9 @@ generate_fraction_variable  fraction_variable_stdout
 
 generate_random_fraction    fraction_variable_numerator
 
+convert_decimal_fraction    convert_percent_fraction
+
+convert_fraction_percent    convert_fraction_decimal
+
 Made by Roy Hampus Fridholm
 </pre>

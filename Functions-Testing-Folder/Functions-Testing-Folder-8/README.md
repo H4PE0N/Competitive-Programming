@@ -28,7 +28,11 @@ fraction_variable_denominator_test  compare_integer_variable_test
 
 generate_fraction_variable_test     fraction_variable_numerator_test
 
-integer_variable_odd_test
+integer_variable_odd_test           convert_fraction_percent_test
+
+convert_percent_fraction_test       convert_decimal_fraction_test
+
+convert_fraction_decimal_test
 
 Made by Roy Hampus Fridholm
 </pre>
