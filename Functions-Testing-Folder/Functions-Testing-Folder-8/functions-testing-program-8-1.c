@@ -70,3 +70,22 @@ int integer_smaller_than_test(int first, int second,
   int boolean = integer_smaller_than(first, second);
   return (boolean == output);
 }
+
+int integer_variable_even_test(int integer, int output)
+{
+  int boolean = integer_variable_even(integer);
+  return (boolean == output);
+}
+
+int integer_variable_odd_test(int integer, int output)
+{
+  int boolean = integer_variable_odd(integer);
+  return (boolean == output);
+}
+
+int compare_integer_variable_test(int first,int second,
+  int output)
+{
+  int boolean=compare_integer_variables(first, second);
+  return (boolean == output);
+}

@@ -22,7 +22,9 @@ integer_range_between_test      check_integer_divisible_test
 
 increase_integer_variable_test  integer_greater_than_test
 
-integer_smaller_than_test
+integer_smaller_than_test       integer_variable_even_test
+
+integer_variable_odd_test       compare_integer_variable_test
 
 Made by Roy Hampus Fridholm
 </pre>
