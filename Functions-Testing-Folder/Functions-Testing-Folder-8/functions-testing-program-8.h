@@ -16,13 +16,19 @@ int integer_greater_than_test(int, int,
 
 int increase_integer_variable_test(int,int);
 
+int convert_fraction_percent_test(int*,
+  double);
+
 int integer_power_operation_test(int, int,
   int);
 
-  int convert_decimal_percent_test(double,
-    double);
+int convert_decimal_percent_test(double,
+  double);
 
 int integer_smaller_than_test(int, int,int);
+
+int convert_percent_fraction_test(double,
+  int*);
 
 int check_integer_divisible_test(int, int,
   int);
@@ -37,8 +43,14 @@ int compare_integer_variables_test(int, int,
 int fraction_variable_numerator_test(int*,
   int);
 
+int convert_decimal_fraction_test(double,
+  int*);
+
 int fraction_variable_denominator_test(int*,
   int);
+
+int convert_fraction_decimal_test(int*,
+  double);
 
 int generate_fraction_variable_test(int,int,
   int*);
