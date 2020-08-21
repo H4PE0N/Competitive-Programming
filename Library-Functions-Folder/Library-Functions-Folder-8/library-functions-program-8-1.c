@@ -86,3 +86,10 @@ int check_integer_divisible(int first, int second)
 {
   int output = (first % second == 0); return output;
 }
+
+int* generate_fraction_variable(int numerator,
+  int denominator)
+{
+  int* fraction = generate_integer_vector(numerator,
+    denominator); return fraction;
+}

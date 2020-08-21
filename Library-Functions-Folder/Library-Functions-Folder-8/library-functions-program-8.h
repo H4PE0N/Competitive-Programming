@@ -16,6 +16,8 @@ double convert_decimal_percent(double);
 
 int integer_variable_even(int);
 
+int fraction_variable_denominator(int*);
+
 int check_integer_divisible(int, int);
 
 int integer_variable_odd(int);
@@ -27,6 +29,15 @@ int integer_smaller_than(int, int);
 double integer_between_integers(int,
   int);
 
-int compare_integer_variables(int,int);
+int compare_integer_variables(int, int);
+
+int* generate_fraction_variable(int,
+  int);
+
+void fraction_variable_stdout(int*);
+
+int* generate_random_fraction(int, int);
+
+int fraction_variable_numerator(int*);
 
 #endif

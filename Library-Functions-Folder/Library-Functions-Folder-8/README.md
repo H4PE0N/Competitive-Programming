@@ -20,9 +20,13 @@ integer_between_integers    increase_integer_variable
 
 integer_greater_than        integer_smaller_than
 
-integer_variable_even       integer_variable_odd
+integer_variable_even       fraction_variable_denominator
 
-compare_integer_variables
+compare_integer_variables   integer_variable_odd
+
+generate_fraction_variable  fraction_variable_stdout
+
+generate_random_fraction    fraction_variable_numerator
 
 Made by Roy Hampus Fridholm
 </pre>
