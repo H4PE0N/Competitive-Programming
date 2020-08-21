@@ -11,10 +11,10 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int greatest_common_table_test(int first, int second,
+int greatest_common_table_test(int greater, int smaller,
   int output)
 {
-  int table = greatest_common_table(first, second);
+  int table = greatest_common_table(greater, smaller);
   return (table == output);
 }
 

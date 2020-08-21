@@ -36,5 +36,9 @@ extend_fraction_variable    shorten_fraction_variable
 
 compare_decimal_variables   compare_percent_variables
 
+smallest_fraction_form      greatest_common_table
+
+duplicate_fraction_variable
+
 Made by Roy Hampus Fridholm
 </pre>

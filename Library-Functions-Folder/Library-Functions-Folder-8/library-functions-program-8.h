@@ -60,4 +60,10 @@ int compare_decimal_variables(double,
 int compare_percent_variables(double,
   double);
 
+int* smallest_fraction_form(int*);
+
+int greatest_common_table(int, int);
+
+int* duplicate_fraction_variable(int*);
+
 #endif
