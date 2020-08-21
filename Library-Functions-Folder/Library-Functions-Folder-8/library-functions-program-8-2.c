@@ -47,10 +47,11 @@ void fraction_variable_stdout(int* fraction)
 
 int* convert_decimal_fraction(double decimal)
 {
-  int denominator = integer_power_operation(10, 10);
+  int denominator = integer_power_operation(10, 6);
   int numerator = (decimal * (double) denominator);
   int* fraction = generate_fraction_variable(numerator,
-    denominator); return fraction;
+    denominator);
+  return fraction; // Will write: smallest_fraction_form
 }
 
 int* convert_percent_fraction(double percent)
