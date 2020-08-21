@@ -48,4 +48,10 @@ double convert_fraction_percent(int*);
 
 double convert_fraction_decimal(int*);
 
+int* extend_fraction_variable(int*,
+  int);
+
+int* shorten_fraction_variable(int*,
+  int);
+
 #endif

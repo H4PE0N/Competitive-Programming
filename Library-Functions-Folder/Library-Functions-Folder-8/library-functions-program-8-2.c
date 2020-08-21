@@ -73,3 +73,25 @@ double convert_fraction_decimal(int* fraction)
     fraction);
   return ((double) numerator / (double) denominator);
 }
+
+int* shorten_fraction_variable(int* fraction,
+  int integer)
+{
+  int numerator =fraction_variable_numerator(fraction);
+  int denominator = fraction_variable_denominator(
+    fraction);
+  if(numerator % integer != 0 || denominator % integer
+    != 0) return fraction;
+  return generate_fraction_variable(numerator /integer,
+      denominator / integer);
+}
+
+int* extend_fraction_variable(int* fraction,
+  int integer)
+{
+  int numerator =fraction_variable_numerator(fraction);
+  int denominator = fraction_variable_denominator(
+    fraction);
+  return generate_fraction_variable(numerator *integer,
+    denominator * integer);
+}
