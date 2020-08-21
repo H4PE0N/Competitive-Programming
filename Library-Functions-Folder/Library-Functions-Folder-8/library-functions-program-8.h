@@ -14,7 +14,11 @@ int integer_greater_than(int, int);
 
 double convert_decimal_percent(double);
 
+int integer_variable_even(int);
+
 int check_integer_divisible(int, int);
+
+int integer_variable_odd(int);
 
 double convert_percent_decimal(double);
 
@@ -22,5 +26,7 @@ int integer_smaller_than(int, int);
 
 double integer_between_integers(int,
   int);
+
+int compare_integer_variables(int,int);
 
 #endif

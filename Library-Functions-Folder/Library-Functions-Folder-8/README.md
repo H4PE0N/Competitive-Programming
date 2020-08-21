@@ -20,5 +20,9 @@ integer_between_integers    increase_integer_variable
 
 integer_greater_than        integer_smaller_than
 
+integer_variable_even       integer_variable_odd
+
+compare_integer_variables
+
 Made by Roy Hampus Fridholm
 </pre>

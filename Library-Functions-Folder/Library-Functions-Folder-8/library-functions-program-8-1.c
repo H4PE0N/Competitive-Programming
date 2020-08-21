@@ -41,6 +41,11 @@ int integer_power_operation(int integer, int power)
   return product;
 }
 
+int compare_integer_variables(int first, int second)
+{
+  int boolean = (first == second); return boolean;
+}
+
 int integer_smaller_than(int first, int second)
 {
   int boolean = (first < second); return boolean;
@@ -61,10 +66,20 @@ int integer_greater_than(int first, int second)
   int boolean = (first > second); return boolean;
 }
 
+int integer_variable_odd(int integer)
+{
+  return !check_integer_divisible(integer, 2);
+}
+
 double integer_between_integers(int first, int second)
 {
   int* vector = generate_integer_vector(first,second);
   return integer_array_average(vector, 2);
+}
+
+int integer_variable_even(int integer)
+{
+  return check_integer_divisible(integer, 2);
 }
 
 int check_integer_divisible(int first, int second)
