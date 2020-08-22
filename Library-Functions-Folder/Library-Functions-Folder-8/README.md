@@ -46,7 +46,9 @@ fraction_variable_smaller   decimal_variable_greater
 
 percent_variable_smaller    percent_variable_greater
 
-decimal_variable_smaller
+decimal_variable_smaller    generate_random_decimal
+
+generate_random_percent
 
 Made by Roy Hampus Fridholm
 </pre>

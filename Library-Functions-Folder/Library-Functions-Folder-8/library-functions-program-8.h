@@ -17,6 +17,12 @@ int percent_variable_smaller(double,
 int percent_variable_greater(double,
   double);
 
+double generate_random_decimal(double,
+  double);
+
+double generate_random_percent(double,
+  double);
+
 int decimal_variable_smaller(double,
   double);
 
