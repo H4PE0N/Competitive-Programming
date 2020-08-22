@@ -8,6 +8,21 @@ int generate_random_integer(int, int);
 
 int increase_integer_variable(int);
 
+int fraction_variable_smaller(int*,
+  int*);
+
+int percent_variable_smaller(double,
+  double);
+
+int percent_variable_greater(double,
+  double);
+
+int decimal_variable_smaller(double,
+  double);
+
+int decimal_variable_greater(double,
+  double);
+
 int integer_power_operation(int, int);
 
 int integer_greater_than(int, int);
@@ -73,9 +88,6 @@ int greatest_common_table(int, int);
 int* duplicate_fraction_variable(int*);
 
 int calculate_common_denominator(int*,
-  int*);
-
-int fraction_variable_smaller(int*,
   int*);
 
 #endif

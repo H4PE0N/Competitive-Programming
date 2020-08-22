@@ -64,6 +64,12 @@ int* duplicate_fraction_variable(int* fraction)
   return duplicate_integer_array(fraction, 2);
 }
 
+int decimal_variable_smaller(double first,
+  double second)
+{
+  int boolean = (first < second); return boolean;
+}
+
 int fraction_variable_greater(int* first, int* second)
 {
   double f_decimal = convert_fraction_decimal(first);
@@ -85,4 +91,10 @@ int compare_fraction_variables(int* first, int* second)
   return compare_decimal_variables(f_decimal,
     s_decimal);
 
+}
+
+int decimal_variable_greater(double first,
+  double second)
+{
+  int boolean = (first > second); return boolean;
 }

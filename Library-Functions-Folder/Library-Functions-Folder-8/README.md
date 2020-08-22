@@ -42,7 +42,11 @@ duplicate_fraction_variable fraction_variable_greater
 
 compare_fraction_variables  calculate_common_denominator
 
-fraction_variable_smaller
+fraction_variable_smaller   decimal_variable_greater
+
+percent_variable_smaller    percent_variable_greater
+
+decimal_variable_smaller
 
 Made by Roy Hampus Fridholm
 </pre>
