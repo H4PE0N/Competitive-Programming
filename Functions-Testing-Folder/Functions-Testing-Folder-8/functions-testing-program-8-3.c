@@ -57,3 +57,35 @@ int compare_fraction_variables_test(int* first,
   return (boolean == output);
   // Will change to: compare_integer_variables
 }
+
+int decimal_variable_smaller_test(double first,
+  double second, int output)
+{
+  int boolean = decimal_variable_smaller(first,second);
+  return (boolean == output);
+  // Will change to: compare_integer_variables
+}
+
+int decimal_variable_greater_test(double first,
+  double second, int output)
+{
+  int boolean = decimal_variable_greater(first,second);
+  return (boolean == output);
+  // Will change to: compare_integer_variables
+}
+
+int percent_variable_smaller_test(double first,
+  double second, int output)
+{
+  int boolean = percent_variable_smaller(first,second);
+  return (boolean == output);
+  // Will change to: compare_integer_variables
+}
+
+int percent_variable_greater_test(double first,
+  double second, int output)
+{
+  int boolean = percent_variable_greater(first,second);
+  return (boolean == output);
+  // Will change to: compare_integer_variables
+}

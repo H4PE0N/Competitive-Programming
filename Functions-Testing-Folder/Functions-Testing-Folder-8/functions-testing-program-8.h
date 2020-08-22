@@ -86,4 +86,16 @@ int compare_fraction_variables_test(int*,
 
 int smallest_fraction_form_test(int*, int*);
 
+int decimal_variable_smaller_test(double,
+  double, int);
+
+int decimal_variable_greater_test(double,
+  double, int);
+
+int percent_variable_smaller_test(double,
+  double, int);
+
+int percent_variable_greater_test(double,
+  double, int);
+
 #endif

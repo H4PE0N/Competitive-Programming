@@ -44,5 +44,9 @@ calculate_common_denominator_test   fraction_variable_greater_test
 
 fraction_variable_smaller_test      compare_fraction_variables_test
 
+decimal_variable_smaller_test       decimal_variable_greater_test
+
+percent_variable_smaller_test       percent_variable_greater_test
+
 Made by Roy Hampus Fridholm
 </pre>
