@@ -15,15 +15,17 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int compare_percent_variables(double first,
-  double second)
+int* smallest_fraction_form(int* fraction)
 {
-  int boolean = (first == second); return boolean;
-}
-
-int* duplicate_fraction_variable(int* fraction)
-{
-  return duplicate_integer_array(fraction, 2);
+  if(integer_greater_than(fraction[0], fraction[1]))
+  {
+    int table = greatest_common_table(fraction[0],
+      fraction[1]);
+    return shorten_fraction_variable(fraction, table);
+  }
+  int table = greatest_common_table(fraction[1],
+    fraction[0]);
+  return shorten_fraction_variable(fraction, table);
 }
 
 int greatest_common_table(int greater, int smaller)
@@ -36,21 +38,51 @@ int greatest_common_table(int greater, int smaller)
   return false; // It will never come here;
 }
 
+int calculate_common_denominator(int*first, int*second)
+{
+  int f_numerator = fraction_variable_numerator(first);
+  int s_numerator =fraction_variable_numerator(second);
+  return (f_numerator * s_numerator);
+}
+
 int compare_decimal_variables(double first,
   double second)
 {
   int boolean = (first == second); return boolean;
 }
 
-int* smallest_fraction_form(int* fraction)
+int fraction_variable_smaller(int* first, int* second)
 {
-  if(integer_greater_than(fraction[0], fraction[1]))
-  {
-    int table = greatest_common_table(fraction[0],
-      fraction[1]);
-    return shorten_fraction_variable(fraction, table);
-  }
-  int table = greatest_common_table(fraction[1],
-    fraction[0]);
-  return shorten_fraction_variable(fraction, table);
+  double f_decimal = convert_fraction_decimal(first);
+  double s_decimal = convert_fraction_decimal(second);
+  return (f_decimal < s_decimal);
+  // Will be: decimal_variable_smaller
+}
+
+int* duplicate_fraction_variable(int* fraction)
+{
+  return duplicate_integer_array(fraction, 2);
+}
+
+int fraction_variable_greater(int* first, int* second)
+{
+  double f_decimal = convert_fraction_decimal(first);
+  double s_decimal = convert_fraction_decimal(second);
+  return (f_decimal > s_decimal);
+  // Will be: decimal_variable_greater
+}
+
+int compare_percent_variables(double first,
+  double second)
+{
+  int boolean = (first == second); return boolean;
+}
+
+int compare_fraction_variables(int* first, int* second)
+{
+  double f_decimal = convert_fraction_decimal(first);
+  double s_decimal = convert_fraction_decimal(second);
+  return compare_decimal_variables(f_decimal,
+    s_decimal);
+
 }

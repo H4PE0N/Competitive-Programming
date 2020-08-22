@@ -38,7 +38,11 @@ compare_decimal_variables   compare_percent_variables
 
 smallest_fraction_form      greatest_common_table
 
-duplicate_fraction_variable
+duplicate_fraction_variable fraction_variable_greater
+
+compare_fraction_variables  calculate_common_denominator
+
+fraction_variable_smaller
 
 Made by Roy Hampus Fridholm
 </pre>

@@ -36,11 +36,17 @@ int* generate_fraction_variable(int,
 
 void fraction_variable_stdout(int*);
 
-int* generate_random_fraction(int, int);
+int* generate_random_fraction(int,int);
 
 int fraction_variable_numerator(int*);
 
 int* convert_decimal_fraction(double);
+
+int fraction_variable_greater(int*,
+  int*);
+
+int compare_fraction_variables(int*,
+  int*);
 
 int* convert_percent_fraction(double);
 
@@ -65,5 +71,11 @@ int* smallest_fraction_form(int*);
 int greatest_common_table(int, int);
 
 int* duplicate_fraction_variable(int*);
+
+int calculate_common_denominator(int*,
+  int*);
+
+int fraction_variable_smaller(int*,
+  int*);
 
 #endif
