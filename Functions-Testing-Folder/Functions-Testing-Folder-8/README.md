@@ -40,9 +40,9 @@ compare_percent_variables_test      duplicate_fraction_variable_test
 
 greatest_common_table_test          smallest_fraction_form_test
 
-caclulate_common_denominator_test   fraction_greater_than_test
+calculate_common_denominator_test   fraction_variable_greater_test
 
-fraction_smaller_than_test          compare_fraction_variables_test
+fraction_variable_smaller_test      compare_fraction_variables_test
 
 Made by Roy Hampus Fridholm
 </pre>

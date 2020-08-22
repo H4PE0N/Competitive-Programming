@@ -58,6 +58,12 @@ int generate_fraction_variable_test(int,int,
 int extend_fraction_variable_test(int*, int,
   int*);
 
+int fraction_variable_greater_test(int*,
+  int*, int);
+
+int fraction_variable_smaller_test(int*,
+  int*, int);
+
 int shorten_fraction_variable_test(int*,int,
   int*);
 
@@ -72,18 +78,12 @@ int duplicate_fraction_variable_test(int*,
 
 int greatest_common_table_test(int,int,int);
 
-int smallest_fraction_form_test(int*, int*);
-
-int caclulate_common_denominator_test(int*,
+int calculate_common_denominator_test(int*,
   int*, int);
-
-int fraction_greater_than_test(int*, int*,
-  int);
-
-int fraction_smaller_than_test(int*, int*,
-  int);
 
 int compare_fraction_variables_test(int*,
   int*, int);
+
+int smallest_fraction_form_test(int*, int*);
 
 #endif

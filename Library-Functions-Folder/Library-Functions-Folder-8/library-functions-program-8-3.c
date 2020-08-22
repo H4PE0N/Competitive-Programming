@@ -40,9 +40,9 @@ int greatest_common_table(int greater, int smaller)
 
 int calculate_common_denominator(int*first, int*second)
 {
-  int f_numerator = fraction_variable_numerator(first);
-  int s_numerator =fraction_variable_numerator(second);
-  return (f_numerator * s_numerator);
+  int f_numerator=fraction_variable_denominator(first);
+  int s_numerator = fraction_variable_denominator(
+    second); return (f_numerator * s_numerator);
 }
 
 int compare_decimal_variables(double first,

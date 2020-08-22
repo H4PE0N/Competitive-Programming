@@ -11,7 +11,7 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int greatest_common_table_test(int greater, int smaller,
+int greatest_common_table_test(int greater,int smaller,
   int output)
 {
   int table = greatest_common_table(greater, smaller);
@@ -26,7 +26,7 @@ int smallest_fraction_form_test(int* fraction,
   // This will change to be: compare_fraction_variables
 }
 
-int caclulate_common_denominator_test(int* first,
+int calculate_common_denominator_test(int* first,
   int* second, int output)
 {
   int denominator = calculate_common_denominator(first,
@@ -34,18 +34,18 @@ int caclulate_common_denominator_test(int* first,
   // Will change to: compare_integer_variables
 }
 
-int fraction_greater_than_test(int* first, int* second,
-  int output)
+int fraction_variable_greater_test(int* first,
+  int* second, int output)
 {
-  int boolean = fraction_greater_than(first, second);
+  int boolean=fraction_variable_greater(first, second);
   return (boolean == output);
   // Will change to: compare_integer_variables
 }
 
-int fraction_smaller_than_test(int* first, int* second,
-  int output)
+int fraction_variable_smaller_test(int* first,
+  int* second, int output)
 {
-  int boolean = fraction_smaller_than(first, second);
+  int boolean=fraction_variable_smaller(first, second);
   return (boolean == output);
   // Will change to: compare_integer_variables
 }
