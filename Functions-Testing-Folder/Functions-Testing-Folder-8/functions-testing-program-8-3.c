@@ -25,3 +25,35 @@ int smallest_fraction_form_test(int* fraction,
   return compare_integer_arrays(fraction, output, 2);
   // This will change to be: compare_fraction_variables
 }
+
+int caclulate_common_denominator_test(int* first,
+  int* second, int output)
+{
+  int denominator = calculate_common_denominator(first,
+    second); return (denominator == output);
+  // Will change to: compare_integer_variables
+}
+
+int fraction_greater_than_test(int* first, int* second,
+  int output)
+{
+  int boolean = fraction_greater_than(first, second);
+  return (boolean == output);
+  // Will change to: compare_integer_variables
+}
+
+int fraction_smaller_than_test(int* first, int* second,
+  int output)
+{
+  int boolean = fraction_smaller_than(first, second);
+  return (boolean == output);
+  // Will change to: compare_integer_variables
+}
+
+int compare_fraction_variables_test(int* first,
+  int* second, int output)
+{
+  int boolean=compare_fraction_variables(first,second);
+  return (boolean == output);
+  // Will change to: compare_integer_variables
+}
