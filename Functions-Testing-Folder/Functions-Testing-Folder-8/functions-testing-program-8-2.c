@@ -36,16 +36,14 @@ int convert_decimal_fraction_test(double decimal,
   int* output)
 {
   int* fraction = convert_decimal_fraction(decimal);
-  return compare_integer_arrays(fraction, output, 2);
-  // This will change to be: compare_fraction_variables
+  return compare_fraction_variables(fraction, output);
 }
 
 int convert_percent_fraction_test(double percent,
   int* output)
 {
   int* fraction = convert_percent_fraction(percent);
-  return compare_integer_arrays(fraction, output, 2);
-  // This will change to be: compare_fraction_variables
+  return compare_fraction_variables(fraction, output);
 }
 
 int convert_fraction_percent_test(int* fraction,
@@ -60,7 +58,6 @@ int shorten_fraction_variable_test(int* fraction,
 {
   fraction = shorten_fraction_variable(fraction, integer);
   return compare_integer_arrays(fraction, output, 2);
-  // This will change to be: compare_fraction_variables
 }
 
 int extend_fraction_variable_test(int* fraction,
@@ -68,7 +65,6 @@ int extend_fraction_variable_test(int* fraction,
 {
   fraction = extend_fraction_variable(fraction, integer);
   return compare_integer_arrays(fraction, output, 2);
-  // This will change to be: compare_fraction_variables
 }
 
 int compare_decimal_variables_test(double first,
@@ -90,5 +86,4 @@ int duplicate_fraction_variable_test(int* fraction,
 {
   int* doublet = duplicate_fraction_variable(fraction);
   return compare_integer_arrays(fraction, output, 2);
-  // This will change to be: compare_fraction_variables
 }

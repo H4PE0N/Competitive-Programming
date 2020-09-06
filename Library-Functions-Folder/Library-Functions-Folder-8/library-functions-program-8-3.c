@@ -35,7 +35,7 @@ int greatest_common_table(int greater, int smaller)
     if(greater % index == 0 && smaller % index == 0)
       return index;
   }
-  return false; // It will never come here;
+  return false;
 }
 
 int calculate_common_denominator(int*first, int*second)
@@ -55,8 +55,7 @@ int fraction_variable_smaller(int* first, int* second)
 {
   double f_decimal = convert_fraction_decimal(first);
   double s_decimal = convert_fraction_decimal(second);
-  return (f_decimal < s_decimal);
-  // Will be: decimal_variable_smaller
+  return decimal_variable_smaller(f_decimal,s_decimal);
 }
 
 int* duplicate_fraction_variable(int* fraction)
@@ -74,8 +73,7 @@ int fraction_variable_greater(int* first, int* second)
 {
   double f_decimal = convert_fraction_decimal(first);
   double s_decimal = convert_fraction_decimal(second);
-  return (f_decimal > s_decimal);
-  // Will be: decimal_variable_greater
+  return decimal_variable_greater(f_decimal,s_decimal);
 }
 
 int compare_percent_variables(double first,

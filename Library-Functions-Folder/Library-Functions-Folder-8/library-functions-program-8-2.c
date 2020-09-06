@@ -51,7 +51,7 @@ int* convert_decimal_fraction(double decimal)
   int numerator = (decimal * (double) denominator);
   int* fraction = generate_fraction_variable(numerator,
     denominator);
-  return fraction; // Will write: smallest_fraction_form
+  return smallest_fraction_form(fraction);
 }
 
 int* convert_percent_fraction(double percent)

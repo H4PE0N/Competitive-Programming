@@ -96,5 +96,4 @@ int generate_fraction_variable_test(int numerator,
   int* fraction = generate_fraction_variable(numerator,
     denominator);
   return compare_integer_arrays(fraction, output, 2);
-  // This will change to be: compare_fraction_variables
 }

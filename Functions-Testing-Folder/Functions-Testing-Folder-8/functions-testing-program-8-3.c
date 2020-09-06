@@ -23,69 +23,61 @@ int smallest_fraction_form_test(int* fraction,
 {
   fraction = smallest_fraction_form(fraction);
   return compare_integer_arrays(fraction, output, 2);
-  // This will change to be: compare_fraction_variables
 }
 
 int calculate_common_denominator_test(int* first,
   int* second, int output)
 {
   int denominator = calculate_common_denominator(first,
-    second); return (denominator == output);
-  // Will change to: compare_integer_variables
+    second);
+  return compare_integer_variables(denominator,output);
 }
 
 int fraction_variable_greater_test(int* first,
   int* second, int output)
 {
   int boolean=fraction_variable_greater(first, second);
-  return (boolean == output);
-  // Will change to: compare_integer_variables
+  return compare_integer_variables(boolean, output);
 }
 
 int fraction_variable_smaller_test(int* first,
   int* second, int output)
 {
   int boolean=fraction_variable_smaller(first, second);
-  return (boolean == output);
-  // Will change to: compare_integer_variables
+  return compare_integer_variables(boolean, output);
 }
 
 int compare_fraction_variables_test(int* first,
   int* second, int output)
 {
   int boolean=compare_fraction_variables(first,second);
-  return (boolean == output);
-  // Will change to: compare_integer_variables
+  return compare_integer_variables(boolean, output);
 }
 
 int decimal_variable_smaller_test(double first,
   double second, int output)
 {
   int boolean = decimal_variable_smaller(first,second);
-  return (boolean == output);
-  // Will change to: compare_integer_variables
+  return compare_integer_variables(boolean, output);
 }
 
 int decimal_variable_greater_test(double first,
   double second, int output)
 {
   int boolean = decimal_variable_greater(first,second);
-  return (boolean == output);
-  // Will change to: compare_integer_variables
+  return compare_integer_variables(boolean, output);
 }
 
 int percent_variable_smaller_test(double first,
   double second, int output)
 {
   int boolean = percent_variable_smaller(first,second);
-  return (boolean == output);
-  // Will change to: compare_integer_variables
+  return compare_integer_variables(boolean, output);
 }
 
 int percent_variable_greater_test(double first,
   double second, int output)
 {
   int boolean = percent_variable_greater(first,second);
-  return (boolean == output);
-  // Will change to: compare_integer_variables
+  return compare_integer_variables(boolean, output);
 }
