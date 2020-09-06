@@ -18,7 +18,7 @@ convert_decimal_percent     check_integer_divisible
 
 integer_between_integers    increase_integer_variable
 
-integer_greater_than        integer_smaller_than
+integer_variable_greater    integer_variable_smaller
 
 integer_variable_even       fraction_variable_denominator
 

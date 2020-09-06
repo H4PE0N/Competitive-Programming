@@ -31,7 +31,7 @@ int decimal_variable_greater(double,
 
 int integer_power_operation(int, int);
 
-int integer_greater_than(int, int);
+int integer_variable_greater(int, int);
 
 double convert_decimal_percent(double);
 
@@ -45,7 +45,7 @@ int integer_variable_odd(int);
 
 double convert_percent_decimal(double);
 
-int integer_smaller_than(int, int);
+int integer_variable_smaller(int, int);
 
 double integer_between_integers(int,
   int);

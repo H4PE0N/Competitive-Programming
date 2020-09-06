@@ -20,9 +20,9 @@ convert_percent_decimal_test        integer_power_operation_test
 
 integer_range_between_test          check_integer_divisible_test
 
-increase_integer_variable_test      integer_greater_than_test
+increase_integer_variable_test      integer_variable_greater_test
 
-integer_smaller_than_test           integer_variable_even_test
+integer_variable_smaller_test       integer_variable_even_test
 
 fraction_variable_denominator_test  compare_integer_variable_test
 

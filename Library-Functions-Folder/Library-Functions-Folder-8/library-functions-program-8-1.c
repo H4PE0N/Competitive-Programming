@@ -17,8 +17,8 @@ library-functions-program-8.h"
 int integer_range_between(int integer, int minimum,
   int maximum)
 {
-  return (!integer_greater_than(integer, maximum) &&
-    !integer_smaller_than(integer, minimum));
+  return (!integer_variable_greater(integer, maximum)
+    && !integer_variable_smaller(integer, minimum));
 }
 
 double convert_decimal_percent(double decimal)
@@ -46,7 +46,7 @@ int compare_integer_variables(int first, int second)
   int boolean = (first == second); return boolean;
 }
 
-int integer_smaller_than(int first, int second)
+int integer_variable_smaller(int first, int second)
 {
   int boolean = (first < second); return boolean;
 }
@@ -61,7 +61,7 @@ double convert_percent_decimal(double percent)
   double decimal = (percent / 100); return decimal;
 }
 
-int integer_greater_than(int first, int second)
+int integer_variable_greater(int first, int second)
 {
   int boolean = (first > second); return boolean;
 }

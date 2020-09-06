@@ -63,8 +63,8 @@ int characters_inside_string(char* string, int length,
   char* characters)
 {
   int char_len = character_string_length(characters);
-  if(integer_greater_than(char_len, length) || char_len
-    <= 0) return false;
+  if(integer_variable_greater(char_len, length) ||
+    char_len <= 0) return false;
   for(int index = 0; index <= length-char_len; index++)
   {
     char*section=character_string_section(string,index,

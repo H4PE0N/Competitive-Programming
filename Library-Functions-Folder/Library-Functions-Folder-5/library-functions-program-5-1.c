@@ -29,7 +29,7 @@ int binary_integer_enough(char* binary, int length,
   int binary_index = (length - index - 1);
   int difference = (integer - calculate_bit_integer(
     binary_index));
-  return !integer_smaller_than(difference, 0);
+  return !integer_variable_smaller(difference, 0);
 }
 
 int calculate_bit_integer(int power_integer)

@@ -54,7 +54,7 @@ int* update_typical_variables(int*variables,int amount,
   int integer)
 {
   int typical_amount=array_index_integer(variables, 0);
-  if(integer_greater_than(amount, typical_amount))
+  if(integer_variable_greater(amount, typical_amount))
   {
     variables = allocate_array_integer(variables, 0,
       amount);

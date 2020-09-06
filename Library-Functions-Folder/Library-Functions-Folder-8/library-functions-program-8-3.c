@@ -17,7 +17,7 @@ library-functions-program-8.h"
 
 int* smallest_fraction_form(int* fraction)
 {
-  if(integer_greater_than(fraction[0], fraction[1]))
+  if(integer_variable_greater(fraction[0],fraction[1]))
   {
     int table = greatest_common_table(fraction[0],
       fraction[1]);

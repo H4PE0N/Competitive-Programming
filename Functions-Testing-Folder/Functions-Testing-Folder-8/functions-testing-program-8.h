@@ -11,7 +11,7 @@ int convert_percent_decimal_test(double,
 int integer_range_between_test(int,int, int,
   int);
 
-int integer_greater_than_test(int, int,
+int integer_variable_greater_test(int, int,
   int);
 
 int increase_integer_variable_test(int,int);
@@ -25,7 +25,8 @@ int integer_power_operation_test(int, int,
 int convert_decimal_percent_test(double,
   double);
 
-int integer_smaller_than_test(int, int,int);
+int integer_variable_smaller_test(int, int,
+  int);
 
 int convert_percent_fraction_test(double,
   int*);
