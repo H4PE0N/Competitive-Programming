@@ -21,14 +21,11 @@ int fraction_variable_denominator(int* fraction)
   return denominator;
 }
 
-int* generate_random_fraction(int minimum, int maximum)
+int* generate_random_fraction(double minimum,
+  double maximum)
 {
-  int numerator = generate_random_integer(minimum,
-    maximum);
-  int denominator = generate_random_integer(minimum,
-    maximum);
-  return generate_fraction_variable(numerator,
-    denominator);
+  double decimal = generate_random_decimal(minimum,
+    maximum); return convert_decimal_fraction(decimal);
 }
 
 int fraction_variable_numerator(int* fraction)

@@ -30,7 +30,7 @@ int* smallest_fraction_form(int* fraction)
 
 int greatest_common_table(int greater, int smaller)
 {
-  for(int index = smaller; index > 0; index =index + 1)
+  for(int index = smaller; index > 0; index =index - 1)
   {
     if(greater % index == 0 && smaller % index == 0)
       return index;

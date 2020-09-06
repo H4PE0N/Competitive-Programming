@@ -57,7 +57,8 @@ int* generate_fraction_variable(int,
 
 void fraction_variable_stdout(int*);
 
-int* generate_random_fraction(int,int);
+int* generate_random_fraction(double,
+  double);
 
 int fraction_variable_numerator(int*);
 
