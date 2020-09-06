@@ -15,34 +15,48 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int* smallest_fraction_form(int* fraction)
+int* extend_fraction_variable(int* fraction,
+  int integer)
 {
-  if(integer_variable_greater(fraction[0],fraction[1]))
-  {
-    int table = greatest_common_table(fraction[0],
-      fraction[1]);
-    return shorten_fraction_variable(fraction, table);
-  }
-  int table = greatest_common_table(fraction[1],
-    fraction[0]);
-  return shorten_fraction_variable(fraction, table);
+  int numerator =fraction_variable_numerator(fraction);
+  int denominator = fraction_variable_denominator(
+    fraction);
+  return generate_fraction_variable(numerator *integer,
+    denominator * integer);
 }
 
-int greatest_common_table(int greater, int smaller)
+int integer_variable_odd(int integer)
 {
-  for(int index = smaller; index > 0; index =index - 1)
-  {
-    if(greater % index == 0 && smaller % index == 0)
-      return index;
-  }
-  return false;
+  return !check_integer_divisible(integer, 2);
 }
 
-int calculate_common_denominator(int*first, int*second)
+double convert_fraction_percent(int* fraction)
 {
-  int f_numerator=fraction_variable_denominator(first);
-  int s_numerator = fraction_variable_denominator(
-    second); return (f_numerator * s_numerator);
+  double decimal = convert_fraction_decimal(fraction);
+  return convert_decimal_percent(decimal);
+}
+
+int fraction_variable_numerator(int* fraction)
+{
+  int numerator = array_index_integer(fraction, 0);
+  return numerator;
+}
+
+int generate_random_integer(int minimum, int maximum)
+{
+  return minimum + (rand() % (maximum - minimum + 1));
+}
+
+int* shorten_fraction_variable(int* fraction,
+  int integer)
+{
+  int numerator =fraction_variable_numerator(fraction);
+  int denominator = fraction_variable_denominator(
+    fraction);
+  if(numerator % integer != 0 || denominator % integer
+    != 0) return fraction;
+  return generate_fraction_variable(numerator /integer,
+      denominator / integer);
 }
 
 int compare_decimal_variables(double first,
@@ -51,22 +65,10 @@ int compare_decimal_variables(double first,
   int boolean = (first == second); return boolean;
 }
 
-int fraction_variable_smaller(int* first, int* second)
-{
-  double f_decimal = convert_fraction_decimal(first);
-  double s_decimal = convert_fraction_decimal(second);
-  return decimal_variable_smaller(f_decimal,s_decimal);
-}
-
-int* duplicate_fraction_variable(int* fraction)
-{
-  return duplicate_integer_array(fraction, 2);
-}
-
-int decimal_variable_smaller(double first,
+int decimal_variable_greater(double first,
   double second)
 {
-  int boolean = (first < second); return boolean;
+  int boolean = (first > second); return boolean;
 }
 
 int fraction_variable_greater(int* first, int* second)
@@ -76,23 +78,20 @@ int fraction_variable_greater(int* first, int* second)
   return decimal_variable_greater(f_decimal,s_decimal);
 }
 
-int compare_percent_variables(double first,
-  double second)
+int* duplicate_fraction_variable(int* fraction)
 {
-  int boolean = (first == second); return boolean;
+  return duplicate_integer_array(fraction, 2);
 }
 
-int compare_fraction_variables(int* first, int* second)
+double generate_random_decimal(double minimum,
+  double maximum)
 {
-  double f_decimal = convert_fraction_decimal(first);
-  double s_decimal = convert_fraction_decimal(second);
-  return compare_decimal_variables(f_decimal,
-    s_decimal);
-
+  double decimals=((double)rand()/(double)(RAND_MAX));
+  return (decimals * (maximum - minimum)) + minimum;
 }
 
-int decimal_variable_greater(double first,
+int percent_variable_smaller(double first,
   double second)
 {
-  int boolean = (first > second); return boolean;
+  int boolean = (first < second); return boolean;
 }

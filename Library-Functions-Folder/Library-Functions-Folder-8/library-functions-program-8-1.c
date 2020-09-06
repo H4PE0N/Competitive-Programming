@@ -14,6 +14,16 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
+int greatest_common_table(int greater, int smaller)
+{
+  for(int index = smaller; index > 0; index =index - 1)
+  {
+    if(greater % index == 0 && smaller % index == 0)
+      return index;
+  }
+  return false;
+}
+
 int integer_range_between(int integer, int minimum,
   int maximum)
 {
@@ -26,9 +36,29 @@ double convert_decimal_percent(double decimal)
   double percent = (decimal * 100); return percent;
 }
 
+int calculate_common_denominator(int*first, int*second)
+{
+  int f_numerator=fraction_variable_denominator(first);
+  int s_numerator = fraction_variable_denominator(
+    second); return (f_numerator * s_numerator);
+}
+
 int increase_integer_variable(int variable)
 {
   variable = (variable + 1); return variable;
+}
+
+int* smallest_fraction_form(int* fraction)
+{
+  if(integer_variable_greater(fraction[0],fraction[1]))
+  {
+    int table = greatest_common_table(fraction[0],
+      fraction[1]);
+    return shorten_fraction_variable(fraction, table);
+  }
+  int table = greatest_common_table(fraction[1],
+    fraction[0]);
+  return shorten_fraction_variable(fraction, table);
 }
 
 int integer_power_operation(int integer, int power)
@@ -41,55 +71,32 @@ int integer_power_operation(int integer, int power)
   return product;
 }
 
+int fraction_variable_smaller(int* first, int* second)
+{
+  double f_decimal = convert_fraction_decimal(first);
+  double s_decimal = convert_fraction_decimal(second);
+  return decimal_variable_smaller(f_decimal,s_decimal);
+}
+
 int compare_integer_variables(int first, int second)
 {
   int boolean = (first == second); return boolean;
 }
 
+int compare_percent_variables(double first,
+  double second)
+{
+  int boolean = (first == second); return boolean;
+}
+
+int* generate_random_fraction(double minimum,
+  double maximum)
+{
+  double decimal = generate_random_decimal(minimum,
+    maximum); return convert_decimal_fraction(decimal);
+}
+
 int integer_variable_smaller(int first, int second)
 {
   int boolean = (first < second); return boolean;
-}
-
-int generate_random_integer(int minimum, int maximum)
-{
-  return minimum + (rand() % (maximum - minimum + 1));
-}
-
-double convert_percent_decimal(double percent)
-{
-  double decimal = (percent / 100); return decimal;
-}
-
-int integer_variable_greater(int first, int second)
-{
-  int boolean = (first > second); return boolean;
-}
-
-int integer_variable_odd(int integer)
-{
-  return !check_integer_divisible(integer, 2);
-}
-
-double integer_between_integers(int first, int second)
-{
-  int* vector = generate_integer_vector(first,second);
-  return integer_array_average(vector, 2);
-}
-
-int integer_variable_even(int integer)
-{
-  return check_integer_divisible(integer, 2);
-}
-
-int check_integer_divisible(int first, int second)
-{
-  int output = (first % second == 0); return output;
-}
-
-int* generate_fraction_variable(int numerator,
-  int denominator)
-{
-  int* fraction = generate_integer_vector(numerator,
-    denominator); return fraction;
 }

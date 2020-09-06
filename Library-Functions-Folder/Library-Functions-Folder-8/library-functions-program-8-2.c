@@ -15,23 +15,20 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-int fraction_variable_denominator(int* fraction)
+double integer_between_integers(int first, int second)
 {
-  int denominator = array_index_integer(fraction, 1);
-  return denominator;
+  int* vector = generate_integer_vector(first,second);
+  return integer_array_average(vector, 2);
 }
 
-int* generate_random_fraction(double minimum,
-  double maximum)
+double convert_percent_decimal(double percent)
 {
-  double decimal = generate_random_decimal(minimum,
-    maximum); return convert_decimal_fraction(decimal);
+  double decimal = (percent / 100); return decimal;
 }
 
-int fraction_variable_numerator(int* fraction)
+int integer_variable_greater(int first, int second)
 {
-  int numerator = array_index_integer(fraction, 0);
-  return numerator;
+  int boolean = (first > second); return boolean;
 }
 
 void fraction_variable_stdout(int* fraction)
@@ -51,16 +48,11 @@ int* convert_decimal_fraction(double decimal)
   return smallest_fraction_form(fraction);
 }
 
-int* convert_percent_fraction(double percent)
+int* generate_fraction_variable(int numerator,
+  int denominator)
 {
-  double decimal = convert_percent_decimal(percent);
-  return convert_decimal_fraction(decimal);
-}
-
-double convert_fraction_percent(int* fraction)
-{
-  double decimal = convert_fraction_decimal(fraction);
-  return convert_decimal_percent(decimal);
+  int* fraction = generate_integer_vector(numerator,
+    denominator); return fraction;
 }
 
 double convert_fraction_decimal(int* fraction)
@@ -71,24 +63,38 @@ double convert_fraction_decimal(int* fraction)
   return ((double) numerator / (double) denominator);
 }
 
-int* shorten_fraction_variable(int* fraction,
-  int integer)
+int integer_variable_even(int integer)
 {
-  int numerator =fraction_variable_numerator(fraction);
-  int denominator = fraction_variable_denominator(
-    fraction);
-  if(numerator % integer != 0 || denominator % integer
-    != 0) return fraction;
-  return generate_fraction_variable(numerator /integer,
-      denominator / integer);
+  return check_integer_divisible(integer, 2);
 }
 
-int* extend_fraction_variable(int* fraction,
-  int integer)
+int check_integer_divisible(int first, int second)
 {
-  int numerator =fraction_variable_numerator(fraction);
-  int denominator = fraction_variable_denominator(
-    fraction);
-  return generate_fraction_variable(numerator *integer,
-    denominator * integer);
+  int output = (first % second == 0); return output;
+}
+
+int* convert_percent_fraction(double percent)
+{
+  double decimal = convert_percent_decimal(percent);
+  return convert_decimal_fraction(decimal);
+}
+
+int decimal_variable_smaller(double first,
+  double second)
+{
+  int boolean = (first < second); return boolean;
+}
+
+int compare_fraction_variables(int* first, int* second)
+{
+  double f_decimal = convert_fraction_decimal(first);
+  double s_decimal = convert_fraction_decimal(second);
+  return compare_decimal_variables(f_decimal,
+    s_decimal);
+}
+
+int fraction_variable_denominator(int* fraction)
+{
+  int denominator = array_index_integer(fraction, 1);
+  return denominator;
 }

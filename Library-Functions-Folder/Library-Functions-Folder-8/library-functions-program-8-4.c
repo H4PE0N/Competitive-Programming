@@ -15,19 +15,6 @@ library-functions-program-6.h"
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
-double generate_random_decimal(double minimum,
-  double maximum)
-{
-  double decimals=((double)rand()/(double)(RAND_MAX));
-  return (decimals * (maximum - minimum)) + minimum;
-}
-
-int percent_variable_smaller(double first,
-  double second)
-{
-  int boolean = (first < second); return boolean;
-}
-
 int percent_variable_greater(double first,
   double second)
 {
