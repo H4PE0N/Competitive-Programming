@@ -26,28 +26,32 @@ int sentence_character_greater_test(char** sentence,
   int first, int second, int index, int output)
 {
   int boolean = sentence_character_greater(sentence,
-    first, second, index); return (boolean == output);
+    first, second, index);
+  return compare_integer_variables(boolean, output);
 }
 
 int sentence_character_smaller_test(char** sentence,
   int first, int second, int index, int output)
 {
   int boolean = sentence_character_smaller(sentence,
-    first, second, index); return (boolean == output);
+    first, second, index);
+  return compare_integer_variables(boolean, output);
 }
 
 int sentence_string_smaller_test(char** sentence,
   int height, int first, int second, int output)
 {
   int boolean=sentence_string_smaller(sentence, height,
-    first, second); return (boolean == output);
+    first, second);
+  return compare_integer_variables(boolean, output);
 }
 
 int sentence_string_greater_test(char** sentence,
   int height, int first, int second, int output)
 {
   int boolean=sentence_string_greater(sentence, height,
-    first, second); return (boolean == output);
+    first, second);
+  return compare_integer_variables(boolean, output);
 }
 
 int sort_string_sentence_test(char** sentence,
@@ -71,7 +75,8 @@ int compare_sentence_content_test(char** first,
   char** second, int height, int width, int output)
 {
   int boolean = compare_sentence_content(first, second,
-    height, width); return (boolean == output);
+    height, width);
+  return compare_integer_variables(boolean, output);
 }
 
 int shuffle_string_sentence_test(char** sentence,

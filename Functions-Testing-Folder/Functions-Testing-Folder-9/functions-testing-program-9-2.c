@@ -15,7 +15,7 @@ int string_sentence_height_test(char** sentence,
   int width, int output)
 {
   int height = string_sentence_height(sentence, width);
-  return (height == output);
+  return compare_integer_variables(height, output);
 }
 
 int move_sentence_strings_test(char** sentence,
@@ -78,7 +78,8 @@ int sentence_string_contains_test(char** sentence,
   int index, char character, int output)
 {
   int boolean=sentence_string_contains(sentence,index,
-    character); return (boolean == output);
+    character);
+  return compare_integer_variables(boolean, output);
 }
 
 int string_sentence_character_test(char** sentence,

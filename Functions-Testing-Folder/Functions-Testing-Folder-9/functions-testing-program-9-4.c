@@ -23,7 +23,8 @@ int sentence_string_index_test(char** sentence,
   int height, char* string, int output)
 {
   int index = sentence_string_index(sentence, height,
-    string); return (index == output);
+    string);
+  return compare_integer_variables(index, output);
 }
 
 int add_sentence_string_test(char**sentence,int height,

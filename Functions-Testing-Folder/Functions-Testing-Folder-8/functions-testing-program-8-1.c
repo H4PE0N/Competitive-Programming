@@ -15,7 +15,8 @@ int integer_range_between_test(int integer,int minimum,
   int maximum, int output)
 {
   int boolean = integer_range_between(integer, minimum,
-    maximum); return (boolean == output);
+    maximum);
+  return compare_integer_variables(boolean, output);
 }
 
 int convert_decimal_percent_test(double decimal,
@@ -28,7 +29,7 @@ int integer_power_operation_test(int integer,int power,
   int output)
 {
   int product = integer_power_operation(integer,power);
-  return (product == output);
+  return compare_integer_variables(product, output);
 }
 
 int convert_percent_decimal_test(double percent,
@@ -41,14 +42,15 @@ int check_integer_divisible_test(int first, int second,
   int output)
 {
   int boolean = check_integer_divisible(first, second);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int integer_between_integers_test(int first,int second,
   double output)
 {
   double integer = integer_between_integers(first,
-    second); return (integer == output);
+    second);
+  return compare_decimal_variables(integer, output);
 }
 
 int increase_integer_variable_test(int integer,
@@ -61,33 +63,33 @@ int integer_variable_greater_test(int first,int second,
   int output)
 {
   int boolean = integer_variable_greater(first,second);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int integer_variable_smaller_test(int first,int second,
   int output)
 {
   int boolean = integer_variable_smaller(first,second);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int integer_variable_even_test(int integer, int output)
 {
   int boolean = integer_variable_even(integer);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int integer_variable_odd_test(int integer, int output)
 {
   int boolean = integer_variable_odd(integer);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int compare_integer_variables_test(int first,
   int second, int output)
 {
   int boolean=compare_integer_variables(first, second);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int generate_fraction_variable_test(int numerator,

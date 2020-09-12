@@ -15,7 +15,7 @@ int greatest_common_table_test(int greater,int smaller,
   int output)
 {
   int table = greatest_common_table(greater, smaller);
-  return (table == output);
+  return compare_integer_variables(table, output);
 }
 
 int smallest_fraction_form_test(int* fraction,

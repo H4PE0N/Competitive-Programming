@@ -1,5 +1,9 @@
 
 #include "../../Library-Functions-Folder/\
+Library-Functions-Folder-8/\
+library-functions-program-8.h"
+
+#include "../../Library-Functions-Folder/\
 Library-Functions-Folder-10/\
 library-functions-program-10.h"
 
@@ -13,7 +17,7 @@ int stop_stopwatch_operation_test(long start_time,
   int output)
 {
   int difference =stop_stopwatch_operation(start_time);
-  return (difference == output);
+  return compare_integer_variables(difference, output);
 }
 
 int calculate_current_time_test(long output)

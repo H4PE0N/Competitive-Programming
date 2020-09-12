@@ -15,21 +15,22 @@ int fraction_variable_denominator_test(int* fraction,
   int output)
 {
   int denominator = fraction_variable_denominator(
-    fraction); return (denominator == output);
+    fraction);
+  return compare_integer_variables(denominator,output);
 }
 
 int fraction_variable_numerator_test(int* fraction,
   int output)
 {
   int numerator =fraction_variable_numerator(fraction);
-  return (numerator == output);
+  return compare_integer_variables(numerator, output);
 }
 
 int convert_fraction_decimal_test(int* fraction,
   double output)
 {
   double decimal = convert_fraction_decimal(fraction);
-  return (decimal == output);
+  return compare_decimal_variables(decimal, output);
 }
 
 int convert_decimal_fraction_test(double decimal,
@@ -50,7 +51,7 @@ int convert_fraction_percent_test(int* fraction,
   double output)
 {
   double percent = convert_fraction_percent(fraction);
-  return (percent == output);
+  return compare_decimal_variables(percent, output);
 }
 
 int shorten_fraction_variable_test(int* fraction,
@@ -71,19 +72,19 @@ int compare_decimal_variables_test(double first,
   double second, int output)
 {
   int boolean = compare_decimal_variables(first, second);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int compare_percent_variables_test(double first,
   double second, int output)
 {
   int boolean = compare_percent_variables(first, second);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int duplicate_fraction_variable_test(int* fraction,
   int* output)
 {
   int* doublet = duplicate_fraction_variable(fraction);
-  return compare_integer_arrays(fraction, output, 2);
+  return compare_integer_arrays(doublet, output, 2);
 }

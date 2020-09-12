@@ -24,7 +24,8 @@ int compare_string_sentence_test(char** first,
   char** second, int height, int width, int output)
 {
   int boolean = compare_string_sentence(first, second,
-    height, width); return (boolean == output);
+    height, width);
+  return compare_integer_variables(boolean, output);
 }
 
 int sentence_index_string_test(char** sentence,
@@ -89,5 +90,5 @@ int sentence_string_length_test(char** sentence,
   int index, int output)
 {
   int width = sentence_string_length(sentence, index);
-  return (width == output);
+  return compare_integer_variables(width, output);
 }
