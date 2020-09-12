@@ -31,54 +31,57 @@ int integer_array_typical_test(int* array, int length,
   int output)
 {
   int typical = integer_array_typical(array, length);
-  return (typical == output);
+  return compare_integer_variables(typical, output);
 }
 
 int array_integer_frequency_test(int* array,int length,
   int integer, double output)
 {
   double amount = array_integer_frequency(array,length,
-    integer); return (amount == output);
+    integer);
+  return compare_decimal_variables(amount, output);
 }
 
 int array_integer_percent_test(int* array, int length,
   int integer, double output)
 {
   double percent = array_integer_percent(array, length,
-    integer); return (percent == output);
+    integer);
+  return compare_decimal_variables(percent, output);
 }
 
 int integer_array_median_test(int* array, int length,
   double output)
 {
   double median = integer_array_median(array, length);
-  return (median == output);
+  return compare_decimal_variables(median, output);
 }
 
 int integer_array_average_test(int* array, int length,
   double output)
 {
   double average = integer_array_average(array,length);
-  return (average == output);
+  return compare_decimal_variables(average, output);
 }
 
 int integer_odd_median_test(int* array, int length,
   double output)
 {
   double median = integer_odd_median(array, length);
-  return (median == output);
+  return compare_decimal_variables(median, output);
 }
 
 int integer_even_median_test(int* array, int length,
   double output)
 {
   double median = integer_even_median(array, length);
-  return (median == output);
+  return compare_decimal_variables(median, output);
 }
 
 int array_integers_sequences_test(int*array,int length,
   int output)
 {
   int sequences = array_integers_sequences(array,
-    length); return (sequences == output);
+    length);
+  return compare_integer_variables(sequences, output);
 }

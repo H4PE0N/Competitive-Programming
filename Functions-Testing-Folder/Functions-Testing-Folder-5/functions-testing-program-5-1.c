@@ -23,20 +23,22 @@ int binary_integer_enough_test(char* binary,int length,
   int integer, int output)
 {
   int boolean = binary_integer_enough(binary, length,
-    integer); return (boolean == output);
+    integer);
+  return compare_integer_variables(boolean, output);
 }
 
 int calculate_bit_integer_test(int integer, int output)
 {
   int product = calculate_bit_integer(integer);
-  return (product == output);
+  return compare_integer_variables(product, output);
 }
 
 int reduce_binary_integer_test(char* binary,int length,
   int integer, int output)
 {
   integer = reduce_binary_integer(binary, length,
-    integer); return (integer == output);
+    integer);
+  return compare_integer_variables(integer, output);
 }
 
 int convert_binary_integer_test(char* binary,
@@ -49,7 +51,8 @@ int increase_binary_integer_test(char*binary,int index,
   int integer, int output)
 {
   integer = increase_binary_integer(binary, index,
-    integer); return (integer == output);
+    integer);
+  return compare_integer_variables(integer, output);
 }
 
 int allocate_binary_bit_test(char* binary, int length,

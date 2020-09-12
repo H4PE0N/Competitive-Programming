@@ -27,7 +27,7 @@ int lower_alphabet_character_test(int index,
   char output)
 {
   char character = lower_alphabet_character(index);
-  return compare_integer_variables(character, output);
+  return (character == output);
 }
 
 int delete_string_character_test(char* string,
@@ -50,7 +50,7 @@ int higher_alphabet_character_test(int index,
   char output)
 {
   char character = higher_alphabet_character(index);
-  return compare_integer_variables(character, output);
+  return (character == output);
 }
 
 int compare_strings_character_test(char* first,

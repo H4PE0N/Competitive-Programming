@@ -8,17 +8,17 @@ Library-Functions-Folder-8/\
 library-functions-program-8.h"
 
 int compare_character_strings_test(char* first,
-  char* second, int length, int boolean)
+  char* second, int length, int output)
 {
-  int output = compare_character_strings(first, second,
+  int boolean = compare_character_strings(first,second,
     length);
   return compare_integer_variables(boolean, output);
 }
 
 int character_range_between_test(char character,
-  int minimum, int maximum, int boolean)
+  int minimum, int maximum, int output)
 {
-  int output = character_range_between(character,
+  int boolean = character_range_between(character,
     minimum, maximum);
   return compare_integer_variables(boolean, output);
 }
@@ -79,5 +79,5 @@ int string_index_character_test(char* string,int index,
   char output)
 {
   char character=string_index_character(string, index);
-  return compare_integer_variables(character, output);
+  return (character == output);
 }

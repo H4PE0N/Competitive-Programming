@@ -37,7 +37,8 @@ int binary_range_between_test(char* binary,int minimum,
   int maximum, int output)
 {
   int boolean = binary_range_between(binary, minimum,
-    maximum); return (boolean == output);
+    maximum);
+  return compare_integer_variables(boolean, output);
 }
 
 int convert_binary_string_test(char**binary,int length,
