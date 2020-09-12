@@ -71,7 +71,7 @@ int actual_binary_length(int integer)
   int length = 0;
   while(integer > calculate_bit_integer(length))
   {
-    length = increase_integer_variable(length);
+    length = increase_integer_variable(length, 1);
   }
   return length;
 }
@@ -87,7 +87,7 @@ int nearest_binary_length(int integer)
   int length=actual_binary_length(integer), index = 2;
   while(length > calculate_bit_integer(index))
   {
-    index = increase_integer_variable(index);
+    index = increase_integer_variable(index, 1);
   }
   return calculate_bit_integer(index);
 }

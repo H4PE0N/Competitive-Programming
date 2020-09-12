@@ -14,7 +14,8 @@ int integer_range_between_test(int,int, int,
 int integer_variable_greater_test(int, int,
   int);
 
-int increase_integer_variable_test(int,int);
+int increase_integer_variable_test(int, int,
+  int);
 
 int convert_fraction_percent_test(int*,
   double);

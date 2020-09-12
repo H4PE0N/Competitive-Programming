@@ -45,7 +45,7 @@ int array_integer_amount(int* array, int length,
   for(int index = 0; index < length; index = index + 1)
   {
     if(array_index_integer(array, index) == integer)
-      amount = increase_integer_variable(amount);
+      amount = increase_integer_variable(amount, 1);
   }
   return amount;
 }

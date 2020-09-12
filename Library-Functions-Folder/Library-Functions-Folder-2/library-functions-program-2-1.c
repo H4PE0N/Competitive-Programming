@@ -47,7 +47,7 @@ int integer_matrix_height(int** matrix, int width)
   int height = 0;
   while(matrix_array_length(matrix, height) >= width)
   {
-    height = increase_integer_variable(height);
+    height = increase_integer_variable(height, 1);
   }
   return height;
 }

@@ -53,10 +53,11 @@ int integer_between_integers_test(int first,int second,
   return compare_decimal_variables(integer, output);
 }
 
-int increase_integer_variable_test(int integer,
-  int output)
+int increase_integer_variable_test(int variable,
+  int integer, int output)
 {
-  return(increase_integer_variable(integer) == output);
+  variable=increase_integer_variable(variable,integer);
+  return compare_integer_variables(variable, output);
 }
 
 int integer_variable_greater_test(int first,int second,

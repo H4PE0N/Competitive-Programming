@@ -34,7 +34,7 @@ int integer_hashmap_length(int** hashmap)
   int length = 0;
   while(check_hashmap_array(hashmap, length) != 0)
   {
-    length = increase_integer_variable(length);
+    length = increase_integer_variable(length, 1);
   }
   return length;
 }

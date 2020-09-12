@@ -21,7 +21,7 @@ int character_string_length(char* string)
   int length = 0;
   while(string_index_character(string, length) != '\0')
   {
-    length = increase_integer_variable(length);
+    length = increase_integer_variable(length, 1);
   }
   return length;
 }

@@ -93,7 +93,7 @@ int string_sentence_height(char** sentence, int width)
   while(sentence_string_length(sentence, height) >=
     width)
   {
-    height = increase_integer_variable(height);
+    height = increase_integer_variable(height, 1);
   }
   return height;
 }

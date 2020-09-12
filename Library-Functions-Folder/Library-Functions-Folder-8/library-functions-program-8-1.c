@@ -44,9 +44,9 @@ int calculate_common_denominator(int*first, int*second)
   return (first_d * second_d);
 }
 
-int increase_integer_variable(int variable)
+int increase_integer_variable(int variable,int integer)
 {
-  variable = (variable + 1); return variable;
+  variable = (variable + integer); return variable;
 }
 
 int* smallest_fraction_form(int* fraction)

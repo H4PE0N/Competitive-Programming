@@ -6,7 +6,7 @@ int integer_range_between(int,int,int);
 
 int generate_random_integer(int, int);
 
-int increase_integer_variable(int);
+int increase_integer_variable(int,int);
 
 int fraction_variable_smaller(int*,
   int*);
