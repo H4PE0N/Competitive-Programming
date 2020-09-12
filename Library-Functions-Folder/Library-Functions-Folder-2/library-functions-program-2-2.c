@@ -79,7 +79,7 @@ int** duplicate_integer_matrix(int** matrix,int height,
   for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
-    *(doublet + index) =duplicate_integer_array(array,
+    *(doublet + index) = duplicate_integer_array(array,
       width);
   }
   return doublet;

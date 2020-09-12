@@ -43,8 +43,8 @@ int* allocate_value_keyword(int* keywords, int index,
   int** hashmap)
 {
   int length = integer_array_length(keywords);
-  keywords = add_array_integer(keywords, length,
-    hashmap_index_keyword(hashmap, index));
+  int keyword = hashmap_index_keyword(hashmap, index);
+  keywords =add_array_integer(keywords,length,keyword);
   return keywords;
 }
 
