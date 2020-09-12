@@ -62,12 +62,12 @@ int* smallest_fraction_form(int* fraction)
   return shorten_fraction_variable(fraction, table);
 }
 
-int integer_power_operation(int integer, int power)
+int integer_power_operation(int base, int exponent)
 {
   int product = 1;
-  for(int index = 0; index < power; index = index + 1)
+  for(int index = 0; index < exponent; index=index + 1)
   {
-    product = (product * integer);
+    product = (product * base);
   }
   return product;
 }

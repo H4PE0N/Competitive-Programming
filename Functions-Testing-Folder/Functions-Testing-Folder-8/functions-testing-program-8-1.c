@@ -25,10 +25,10 @@ int convert_decimal_percent_test(double decimal,
   return (convert_decimal_percent(decimal) == output);
 }
 
-int integer_power_operation_test(int integer,int power,
+int integer_power_operation_test(int base,int exponent,
   int output)
 {
-  int product = integer_power_operation(integer,power);
+  int product = integer_power_operation(base,exponent);
   return compare_integer_variables(product, output);
 }
 

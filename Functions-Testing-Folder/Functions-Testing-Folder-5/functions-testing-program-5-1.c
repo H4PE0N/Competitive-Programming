@@ -27,10 +27,11 @@ int binary_integer_enough_test(char* binary,int length,
   return compare_integer_variables(boolean, output);
 }
 
-int calculate_bit_integer_test(int integer, int output)
+int calculate_bit_integer_test(int binary_index,
+  int output)
 {
-  int product = calculate_bit_integer(integer);
-  return compare_integer_variables(product, output);
+  int integer = calculate_bit_integer(binary_index);
+  return compare_integer_variables(integer, output);
 }
 
 int reduce_binary_integer_test(char* binary,int length,

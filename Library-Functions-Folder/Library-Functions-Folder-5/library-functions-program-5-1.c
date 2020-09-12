@@ -32,9 +32,9 @@ int binary_integer_enough(char* binary, int length,
   return !integer_variable_smaller(difference, 0);
 }
 
-int calculate_bit_integer(int power_integer)
+int calculate_bit_integer(int binary_index)
 {
-  return integer_power_operation(2, power_integer);
+  return integer_power_operation(2, binary_index);
 }
 
 int reduce_binary_integer(char* binary, int length,
