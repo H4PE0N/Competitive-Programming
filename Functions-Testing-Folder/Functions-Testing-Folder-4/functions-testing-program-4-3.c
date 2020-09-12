@@ -27,7 +27,7 @@ int lower_alphabet_character_test(int index,
   char output)
 {
   char character = lower_alphabet_character(index);
-  return (character == output);
+  return compare_integer_variables(character, output);
 }
 
 int delete_string_character_test(char* string,
@@ -42,35 +42,39 @@ int compare_string_characters_test(char* string,
   int first, int second, int output)
 {
   int boolean = compare_string_characters(string,first,
-    second); return (boolean == output);
+    second);
+  return compare_integer_variables(boolean, output);
 }
 
 int higher_alphabet_character_test(int index,
   char output)
 {
   char character = higher_alphabet_character(index);
-  return (character == output);
+  return compare_integer_variables(character, output);
 }
 
 int compare_strings_character_test(char* first,
   char* second, int index, int output)
 {
   int boolean = compare_strings_character(first,second,
-    index); return (boolean == output);
+    index);
+  return compare_integer_variables(boolean, output);
 }
 
 int string_character_greater_test(char* string,
   int first, int second, int output)
 {
   int boolean = string_character_greater(string, first,
-    second); return (boolean == output);
+    second);
+  return compare_integer_variables(boolean, output);
 }
 
 int string_character_smaller_test(char* string,
   int first, int second, int output)
 {
   int boolean = string_character_smaller(string, first,
-    second); return (boolean == output);
+    second);
+  return compare_integer_variables(boolean, output);
 }
 
 int reverse_character_string_test(char* string,
@@ -85,12 +89,14 @@ int string_character_index_test(char*string,int length,
   char character, int output)
 {
   int index = string_character_index(string, length,
-    character); return (index == output);
+    character);
+  return compare_integer_variables(index, output);
 }
 
 int characters_inside_string_test(char* string,
   int length, char* characters, int output)
 {
   int boolean = characters_inside_string(string,length,
-    characters); return (boolean == output);
+    characters);
+  return compare_integer_variables(boolean, output);
 }

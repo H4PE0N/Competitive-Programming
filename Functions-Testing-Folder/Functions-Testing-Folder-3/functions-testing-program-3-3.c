@@ -36,7 +36,8 @@ int compare_hashmap_content_test(int** first,
   int** second, int length, int output)
 {
   int boolean = compare_hashmap_content(first, second,
-    length); return (boolean == output);
+    length);
+  return compare_integer_variables(boolean, output);
 }
 
 int duplicate_integer_hashmap_test(int** hashmap,

@@ -19,7 +19,7 @@ int hashmap_keyword_index_test(int** hashmap,
   int keyword, int output)
 {
   int index = hashmap_keyword_index(hashmap, keyword);
-  return (index == output);
+  return compare_integer_variables(index, output);
 }
 
 int increase_keyword_value_test(int** hashmap,
@@ -44,7 +44,7 @@ int hashmap_keyword_exists_test(int** hashmap,
   int keyword, int output)
 {
   int boolean=hashmap_keyword_exists(hashmap, keyword);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int generate_hashmap_keyword_test(int** hashmap,
@@ -77,7 +77,7 @@ int integer_hashmap_length_test(int** hashmap,
   int output)
 {
   int length = integer_hashmap_length(hashmap);
-  return (length == output);
+  return compare_integer_variables(length, output);
 }
 
 int convert_array_hashmap_test(int* array, int length,

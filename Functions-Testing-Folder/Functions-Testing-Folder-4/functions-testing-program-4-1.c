@@ -42,7 +42,8 @@ int string_contains_character_test(char* string,
   int length, char character, int output)
 {
   int boolean=string_contains_character(string, length,
-    character); return (boolean == output);
+    character);
+  return compare_integer_variables(boolean, output);
 }
 
 int switch_string_characters_test(char* string,

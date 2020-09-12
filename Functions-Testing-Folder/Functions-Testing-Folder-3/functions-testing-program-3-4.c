@@ -19,21 +19,23 @@ int check_hashmap_array_test(int** hashmap, int index,
   int output)
 {
   int boolean = check_hashmap_array(hashmap, index);
-  return (boolean == output);
+  return compare_integer_variables(boolean, output);
 }
 
 int hashmap_keyword_smaller_test(int** hashmap,
   int first, int second, int output)
 {
   int boolean = hashmap_keyword_smaller(hashmap, first,
-    second); return (boolean == output);
+    second);
+  return compare_integer_variables(boolean, output);
 }
 
 int hashmap_keyword_greater_test(int** hashmap,
   int first, int second, int output)
 {
   int boolean = hashmap_keyword_greater(hashmap, first,
-    second); return (boolean == output);
+    second);
+  return compare_integer_variables(boolean, output);
 }
 
 int convert_hashmap_array_test(int**hashmap,int length,
@@ -48,5 +50,5 @@ int integer_hashmap_total_test(int**hashmap,int length,
   int output)
 {
   int total = integer_hashmap_total(hashmap, length);
-  return (total == output);
+  return compare_integer_variables(total, output);
 }
