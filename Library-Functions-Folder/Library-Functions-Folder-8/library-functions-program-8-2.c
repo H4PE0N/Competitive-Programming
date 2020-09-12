@@ -17,7 +17,7 @@ library-functions-program-8.h"
 
 double integer_between_integers(int first, int second)
 {
-  int* vector = generate_integer_vector(first,second);
+  int* vector = generate_integer_vector(first, second);
   return integer_array_average(vector, 2);
 }
 
