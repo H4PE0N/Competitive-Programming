@@ -43,7 +43,7 @@ int matrix_array_total_test(int** matrix, int index,
   int output)
 {
   int total = matrix_array_total(matrix, index);
-  return (total == output);
+  return compare_integer_variables(total, output);
 }
 
 int sort_integer_matrix_test(int** matrix, int height,
@@ -58,14 +58,16 @@ int matrix_array_greater_test(int** matrix, int height,
   int first, int second, int output)
 {
   int boolean = matrix_array_greater(matrix, height,
-    first, second); return (boolean == output);
+    first, second);
+  return compare_integer_variables(boolean, output);
 }
 
 int matrix_array_integer_test(int** matrix, int height,
   int width, int output)
 {
   int integer = matrix_array_integer(matrix, height,
-    width); return (integer == output);
+    width);
+  return compare_integer_variables(integer, output);
 }
 
 int sort_matrix_iteration_test(int** matrix,int height,
@@ -81,12 +83,14 @@ int matrix_integer_greater_test(int** matrix, int first,
   int second, int index, int output)
 {
   int boolean = matrix_integer_greater(matrix, first,
-    second, index); return (boolean == output);
+    second, index);
+  return compare_integer_variables(boolean, output);
 }
 
 int matrix_integer_smaller_test(int** matrix, int first,
   int second, int index, int output)
 {
   int boolean = matrix_integer_smaller(matrix, first,
-    second, index); return (boolean == output);
+    second, index);
+  return compare_integer_variables(boolean, output);
 }

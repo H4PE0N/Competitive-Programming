@@ -43,7 +43,8 @@ int array_contains_integer_test(int* array, int length,
   int integer, int output)
 {
   int boolean = array_contains_integer(array, length,
-    integer); return (boolean == output);
+    integer);
+  return compare_integer_variables(boolean, output);
 }
 
 int switch_adjacent_integers_test(int* array,int index,

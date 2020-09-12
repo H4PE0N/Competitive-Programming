@@ -33,7 +33,8 @@ int compare_integer_matrix_test(int** first,int**second,
   int height, int width, int output)
 {
   int boolean = compare_integer_matrix(first, second,
-    height, width); return (boolean == output);
+    height, width);
+  return compare_integer_variables(boolean, output);
 }
 
 int shuffle_matrix_arrays_test(int** matrix,int height,
@@ -68,7 +69,8 @@ int compare_matrix_content_test(int** first,
   int** second, int height, int width, int output)
 {
   int boolean = compare_matrix_content(first, second,
-    height, width); return (boolean == output);
+    height, width);
+  return compare_integer_variables(boolean, output);
 }
 
 int matrix_index_array_test(int** matrix, int index,
@@ -83,12 +85,13 @@ int matrix_array_length_test(int** matrix, int index,
   int output)
 {
   int length = matrix_array_length(matrix, index);
-  return (length == output);
+  return compare_integer_variables(length, output);
 }
 
 int matrix_array_contains_test(int** matrix, int index,
   int integer, int output)
 {
   int boolean = matrix_array_contains(matrix, index,
-    integer); return (boolean == output);
+    integer);
+  return compare_integer_variables(boolean, output);
 }

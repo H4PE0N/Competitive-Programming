@@ -40,14 +40,15 @@ int integer_matrix_height_test(int** matrix, int width,
   int output)
 {
   int height = integer_matrix_height(matrix, width);
-  return (height == output);
+  return compare_integer_variables(height, output);
 }
 
 int matrix_contains_integer_test(int** matrix,
   int height, int width, int integer, int output)
 {
-  return matrix_contains_integer(matrix, height, width,
-    integer) == output;
+  int boolean = matrix_contains_integer(matrix, height,
+    width, integer);
+  return compare_integer_variables(boolean, output);
 }
 
 int remove_matrix_integer_test(int** matrix,int height,

@@ -15,7 +15,8 @@ int matrix_array_smaller_test(int** matrix, int height,
   int first, int second, int output)
 {
   int boolean = matrix_array_smaller(matrix, height,
-    first, second); return (boolean == output);
+    first, second);
+  return compare_integer_variables(boolean, output);
 }
 
 int reverse_integer_matrix_test(int**matrix,int height,
@@ -38,7 +39,7 @@ int matrix_array_index_test(int** matrix, int height,
   int* array, int output)
 {
   int index = matrix_array_index(matrix, height,array);
-  return (index == output);
+  return compare_integer_variables(index, output);
 }
 
 int add_matrix_array_test(int** matrix, int height,

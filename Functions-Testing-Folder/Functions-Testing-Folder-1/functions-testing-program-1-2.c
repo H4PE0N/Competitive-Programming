@@ -34,14 +34,16 @@ int array_integer_amount_test(int* array, int length,
   int integer, int output)
 {
   int amount = array_integer_amount(array, length,
-    integer); return (amount == output);
+    integer);
+  return compare_integer_variables(amount, output);
 }
 
 int integers_range_between_test(int* array,int minimum,
   int maximum, int output)
 {
   int boolean = integers_range_between(array, minimum,
-    maximum); return (boolean == output);
+    maximum);
+  return compare_integer_variables(boolean, output);
 }
 
 int switch_array_integers_test(int* array, int first,
@@ -56,7 +58,8 @@ int compare_integer_arrays_test(int* first,int* second,
   int length, int output)
 {
   int boolean = compare_integer_arrays(first, second,
-    length); return (boolean == output);
+    length);
+  return compare_integer_variables(boolean, output);
 }
 
 int shuffle_integer_array_test(int* array, int length,
