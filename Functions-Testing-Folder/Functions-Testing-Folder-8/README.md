@@ -36,7 +36,7 @@ convert_fraction_decimal_test       extend_fraction_variable_test
 
 shorten_fraction_variable_test      compare_decimal_variables_test
 
-compare_percent_variables_test      duplicate_fraction_variable_test
+duplicate_fraction_variable_test    decimal_variable_greater_test
 
 greatest_common_table_test          smallest_fraction_form_test
 
@@ -44,9 +44,7 @@ calculate_common_denominator_test   fraction_variable_greater_test
 
 fraction_variable_smaller_test      compare_fraction_variables_test
 
-decimal_variable_smaller_test       decimal_variable_greater_test
-
-percent_variable_smaller_test       percent_variable_greater_test
+decimal_variable_smaller_test
 
 Made by Roy Hampus Fridholm
 </pre>

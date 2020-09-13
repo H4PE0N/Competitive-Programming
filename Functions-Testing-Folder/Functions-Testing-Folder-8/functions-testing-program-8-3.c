@@ -67,17 +67,3 @@ int decimal_variable_greater_test(double first,
   int boolean = decimal_variable_greater(first,second);
   return compare_integer_variables(boolean, output);
 }
-
-int percent_variable_smaller_test(double first,
-  double second, int output)
-{
-  int boolean = percent_variable_smaller(first,second);
-  return compare_integer_variables(boolean, output);
-}
-
-int percent_variable_greater_test(double first,
-  double second, int output)
-{
-  int boolean = percent_variable_greater(first,second);
-  return compare_integer_variables(boolean, output);
-}

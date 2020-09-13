@@ -14,16 +14,3 @@ library-functions-program-6.h"
 #include "../../Library-Functions-Folder/\
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
-
-int percent_variable_greater(double first,
-  double second)
-{
-  int boolean = (first > second); return boolean;
-}
-
-double generate_random_percent(double minimum,
-  double maximum)
-{
-  double decimals=((double)rand()/(double)(RAND_MAX));
-  return (decimals * (maximum - minimum)) + minimum;
-}

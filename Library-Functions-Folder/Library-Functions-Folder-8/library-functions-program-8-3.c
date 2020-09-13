@@ -89,9 +89,3 @@ double generate_random_decimal(double minimum,
   double decimals=((double)rand()/(double)(RAND_MAX));
   return (decimals * (maximum - minimum)) + minimum;
 }
-
-int percent_variable_smaller(double first,
-  double second)
-{
-  int boolean = (first < second); return boolean;
-}

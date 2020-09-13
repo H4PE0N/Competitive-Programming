@@ -11,16 +11,7 @@ int increase_integer_variable(int,int);
 int fraction_variable_smaller(int*,
   int*);
 
-int percent_variable_smaller(double,
-  double);
-
-int percent_variable_greater(double,
-  double);
-
 double generate_random_decimal(double,
-  double);
-
-double generate_random_percent(double,
   double);
 
 int decimal_variable_smaller(double,
@@ -83,9 +74,6 @@ int* shorten_fraction_variable(int*,
   int);
 
 int compare_decimal_variables(double,
-  double);
-
-int compare_percent_variables(double,
   double);
 
 int* smallest_fraction_form(int*);

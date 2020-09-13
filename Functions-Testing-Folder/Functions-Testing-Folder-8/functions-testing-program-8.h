@@ -72,9 +72,6 @@ int shorten_fraction_variable_test(int*,int,
 int compare_decimal_variables_test(double,
   double, int);
 
-int compare_percent_variables_test(double,
-  double, int);
-
 int duplicate_fraction_variable_test(int*,
   int*);
 
@@ -92,12 +89,6 @@ int decimal_variable_smaller_test(double,
   double, int);
 
 int decimal_variable_greater_test(double,
-  double, int);
-
-int percent_variable_smaller_test(double,
-  double, int);
-
-int percent_variable_greater_test(double,
   double, int);
 
 #endif

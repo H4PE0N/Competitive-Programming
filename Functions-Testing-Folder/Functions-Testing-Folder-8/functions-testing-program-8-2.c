@@ -75,13 +75,6 @@ int compare_decimal_variables_test(double first,
   return compare_integer_variables(boolean, output);
 }
 
-int compare_percent_variables_test(double first,
-  double second, int output)
-{
-  int boolean = compare_percent_variables(first, second);
-  return compare_integer_variables(boolean, output);
-}
-
 int duplicate_fraction_variable_test(int* fraction,
   int* output)
 {

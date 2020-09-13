@@ -34,7 +34,7 @@ convert_fraction_percent    convert_fraction_decimal
 
 extend_fraction_variable    shorten_fraction_variable
 
-compare_decimal_variables   compare_percent_variables
+compare_decimal_variables   generate_random_decimal
 
 smallest_fraction_form      greatest_common_table
 
@@ -44,11 +44,7 @@ compare_fraction_variables  calculate_common_denominator
 
 fraction_variable_smaller   decimal_variable_greater
 
-percent_variable_smaller    percent_variable_greater
-
-decimal_variable_smaller    generate_random_decimal
-
-generate_random_percent
+decimal_variable_smaller
 
 Made by Roy Hampus Fridholm
 </pre>

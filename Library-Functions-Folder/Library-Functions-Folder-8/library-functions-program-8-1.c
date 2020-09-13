@@ -84,12 +84,6 @@ int compare_integer_variables(int first, int second)
   int boolean = (first == second); return boolean;
 }
 
-int compare_percent_variables(double first,
-  double second)
-{
-  int boolean = (first == second); return boolean;
-}
-
 int* generate_random_fraction(double minimum,
   double maximum)
 {
