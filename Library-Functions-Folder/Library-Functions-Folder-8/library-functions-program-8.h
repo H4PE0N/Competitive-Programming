@@ -26,13 +26,9 @@ int integer_variable_greater(int, int);
 
 double convert_decimal_percent(double);
 
-int integer_variable_even(int);
-
 int fraction_variable_denominator(int*);
 
 int check_integer_divisible(int, int);
-
-int integer_variable_odd(int);
 
 double convert_percent_decimal(double);
 

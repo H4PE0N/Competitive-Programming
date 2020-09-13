@@ -20,9 +20,9 @@ integer_between_integers    increase_integer_variable
 
 integer_variable_greater    integer_variable_smaller
 
-integer_variable_even       fraction_variable_denominator
+decimal_variable_smaller    fraction_variable_denominator
 
-compare_integer_variables   integer_variable_odd
+compare_integer_variables   decimal_variable_greater
 
 generate_fraction_variable  fraction_variable_stdout
 
@@ -42,9 +42,7 @@ duplicate_fraction_variable fraction_variable_greater
 
 compare_fraction_variables  calculate_common_denominator
 
-fraction_variable_smaller   decimal_variable_greater
-
-decimal_variable_smaller
+fraction_variable_smaller
 
 Made by Roy Hampus Fridholm
 </pre>

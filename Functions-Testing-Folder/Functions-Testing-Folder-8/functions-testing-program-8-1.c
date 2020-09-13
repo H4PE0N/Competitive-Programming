@@ -74,18 +74,6 @@ int integer_variable_smaller_test(int first,int second,
   return compare_integer_variables(boolean, output);
 }
 
-int integer_variable_even_test(int integer, int output)
-{
-  int boolean = integer_variable_even(integer);
-  return compare_integer_variables(boolean, output);
-}
-
-int integer_variable_odd_test(int integer, int output)
-{
-  int boolean = integer_variable_odd(integer);
-  return compare_integer_variables(boolean, output);
-}
-
 int compare_integer_variables_test(int first,
   int second, int output)
 {

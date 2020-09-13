@@ -35,10 +35,6 @@ int convert_percent_fraction_test(double,
 int check_integer_divisible_test(int, int,
   int);
 
-int integer_variable_even_test(int, int);
-
-int integer_variable_odd_test(int, int);
-
 int compare_integer_variables_test(int, int,
   int);
 

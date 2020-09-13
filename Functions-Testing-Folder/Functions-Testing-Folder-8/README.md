@@ -22,13 +22,13 @@ integer_range_between_test          check_integer_divisible_test
 
 increase_integer_variable_test      integer_variable_greater_test
 
-integer_variable_smaller_test       integer_variable_even_test
+integer_variable_smaller_test       compare_fraction_variables_test
 
 fraction_variable_denominator_test  compare_integer_variable_test
 
 generate_fraction_variable_test     fraction_variable_numerator_test
 
-integer_variable_odd_test           convert_fraction_percent_test
+convert_fraction_percent_test       decimal_variable_smaller_test
 
 convert_percent_fraction_test       convert_decimal_fraction_test
 
@@ -42,9 +42,7 @@ greatest_common_table_test          smallest_fraction_form_test
 
 calculate_common_denominator_test   fraction_variable_greater_test
 
-fraction_variable_smaller_test      compare_fraction_variables_test
-
-decimal_variable_smaller_test
+fraction_variable_smaller_test
 
 Made by Roy Hampus Fridholm
 </pre>

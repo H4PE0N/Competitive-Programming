@@ -25,11 +25,6 @@ int* extend_fraction_variable(int* fraction,
     denominator * integer);
 }
 
-int integer_variable_odd(int integer)
-{
-  return !check_integer_divisible(integer, 2);
-}
-
 double convert_fraction_percent(int* fraction)
 {
   double decimal = convert_fraction_decimal(fraction);

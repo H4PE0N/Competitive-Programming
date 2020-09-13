@@ -63,11 +63,6 @@ double convert_fraction_decimal(int* fraction)
   return ((double) numerator / (double) denominator);
 }
 
-int integer_variable_even(int integer)
-{
-  return check_integer_divisible(integer, 2);
-}
-
 int check_integer_divisible(int first, int second)
 {
   int output = (first % second == 0); return output;
