@@ -33,6 +33,11 @@ char string_index_character(char* string, int index)
   char character = *(string + index); return character;
 }
 
+int character_variable_smaller(char first, char second)
+{
+  int boolean = (first < second); return boolean;
+}
+
 char* generate_higher_alphabet(int characters)
 {
   char* alphabet = generate_character_string(
@@ -43,11 +48,6 @@ char* generate_higher_alphabet(int characters)
       index - 1, higher_alphabet_character(index));
   }
   return alphabet;
-}
-
-char lower_alphabet_character(int index)
-{
-  return (index >= 1 && index <= 26 ? 96 + index:'\0');
 }
 
 char higher_alphabet_character(int index)
@@ -78,20 +78,14 @@ char* generate_lower_alphabet(int characters)
   return alphabet;
 }
 
+int compare_character_variables(char first,char second)
+{
+  int boolean = (first == second); return boolean;
+}
+
 char* delete_string_character(char* string, int length,
   int index)
 {
   string = move_string_characters(string,length,index);
   return allocate_string_character(string,length,'\0');
-}
-
-char* add_string_characters(char* string, int length,
-  char character, int amount)
-{
-  for(int index = 0; index < amount; index = index + 1)
-  {
-    string = add_string_character(string, length+index,
-      character);
-  }
-  return string;
 }

@@ -44,5 +44,9 @@ string_character_index        characters_inside_string
 
 character_string_section      add_string_characters
 
+character_variable_greater    character_variable_smaller
+
+compare_character_variables
+
 Made by Roy Hampus Fridholm
 </pre>

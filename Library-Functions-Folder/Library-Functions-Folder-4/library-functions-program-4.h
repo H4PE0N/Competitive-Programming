@@ -101,4 +101,13 @@ char* character_string_section(char*,
 char* add_string_characters(char*, int,
   char, int);
 
+int character_variable_greater(char,
+  char);
+
+int character_variable_smaller(char,
+  char);
+
+int compare_character_variables(char,
+  char);
+
 #endif
