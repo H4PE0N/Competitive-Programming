@@ -81,3 +81,11 @@ int string_index_character_test(char* string,int index,
   char character=string_index_character(string, index);
   return (character == output);
 }
+
+int character_variable_smaller_test(char first,
+  char second, int output)
+{
+  int boolean = character_variable_smaller(first,
+    second);
+  return compare_integer_variables(boolean, output);
+}

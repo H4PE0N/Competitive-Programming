@@ -46,7 +46,9 @@ reverse_character_string_test     string_character_index_test
 
 characters_inside_string_test     character_string_section_test
 
-add_string_characters_test
+add_string_characters_test        character_variable_greater_test
+
+compare_character_variables_test  character_variable_smaller_test
 
 Made by Roy Hampus Fridholm
 </pre>

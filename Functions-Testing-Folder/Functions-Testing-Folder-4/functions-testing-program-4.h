@@ -42,7 +42,8 @@ int shuffle_character_string_test(char*, int,
 int duplicate_character_string_test(char*, int,
   char*);
 
-int switch_adjacent_characters_test();
+int switch_adjacent_characters_test(char*, int,
+  char*);
 
 int sort_character_string_test(char*,int,char*);
 
@@ -90,5 +91,14 @@ int character_string_section_test(char*,int,int,
 
 int add_string_characters_test(char*, int, char,
   int, char*);
+
+int character_variable_greater_test(char, char,
+  int);
+
+int compare_character_variables_test(char, char,
+  int);
+
+int character_variable_smaller_test(char, char,
+  int);
 
 #endif
