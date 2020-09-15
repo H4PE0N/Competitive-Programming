@@ -44,5 +44,9 @@ compare_fraction_variables  calculate_common_denominator
 
 fraction_variable_smaller   inverted_fraction_variable
 
+inverted_fraction_variable  generate_integer_products
+
+smallest_common_product
+
 Made by Roy Hampus Fridholm
 </pre>

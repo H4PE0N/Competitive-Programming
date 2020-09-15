@@ -90,4 +90,13 @@ int decimal_variable_greater_test(double,
 int inverted_fraction_variable_test(int*,
   int*);
 
+int smallest_common_product_test(int, int,
+  int);
+
+int generate_integer_products_test(int, int,
+  int*);
+
+int least_common_denominator_test(int*,int*,
+  int);
+
 #endif

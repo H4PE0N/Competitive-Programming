@@ -83,4 +83,10 @@ int calculate_common_denominator(int*,
 
 int* inverted_fraction_variable(int*);
 
+int* generate_integer_products(int,int);
+
+int smallest_common_product(int, int);
+
+int least_common_denominator(int*,int*);
+
 #endif

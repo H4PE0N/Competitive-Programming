@@ -61,6 +61,14 @@ int decimal_variable_smaller_test(double first,
   return compare_integer_variables(boolean, output);
 }
 
+int smallest_common_product_test(int smallest,
+  int greatest, int output)
+{
+  int product = smallest_common_product(smallest,
+    greatest);
+  return compare_integer_variables(product, output);
+}
+
 int decimal_variable_greater_test(double first,
   double second, int output)
 {
@@ -68,9 +76,26 @@ int decimal_variable_greater_test(double first,
   return compare_integer_variables(boolean, output);
 }
 
+int generate_integer_products_test(int integer,
+  int amount, int* output)
+{
+  int* products = generate_integer_products(integer,
+    amount);
+  return compare_integer_arrays(products, output,
+    integer_array_length(products));
+}
+
 int inverted_fraction_variable_test(int* fraction,
   int* output)
 {
   int* inverted = inverted_fraction_variable(fraction);
   return compare_fraction_variables(inverted, output);
+}
+
+int least_common_denominator_test(int* first,
+  int* second, int output)
+{
+  int denominator = least_common_denominator(first,
+    second);
+  return compare_integer_variables(denominator,output);
 }
