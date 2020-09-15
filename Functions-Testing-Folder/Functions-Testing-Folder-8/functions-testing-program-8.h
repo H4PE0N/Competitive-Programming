@@ -87,4 +87,7 @@ int decimal_variable_smaller_test(double,
 int decimal_variable_greater_test(double,
   double, int);
 
+int inverted_fraction_variable_test(int*,
+  int*);
+
 #endif

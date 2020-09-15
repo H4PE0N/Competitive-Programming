@@ -67,3 +67,10 @@ int decimal_variable_greater_test(double first,
   int boolean = decimal_variable_greater(first,second);
   return compare_integer_variables(boolean, output);
 }
+
+int inverted_fraction_variable_test(int* fraction,
+  int* output)
+{
+  int* inverted = inverted_fraction_variable(fraction);
+  return compare_fraction_variables(inverted, output);
+}

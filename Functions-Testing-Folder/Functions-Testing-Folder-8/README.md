@@ -42,7 +42,7 @@ greatest_common_table_test          smallest_fraction_form_test
 
 calculate_common_denominator_test   fraction_variable_greater_test
 
-fraction_variable_smaller_test
+fraction_variable_smaller_test      inverted_fraction_variable_test
 
 Made by Roy Hampus Fridholm
 </pre>

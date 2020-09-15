@@ -81,4 +81,6 @@ int* duplicate_fraction_variable(int*);
 int calculate_common_denominator(int*,
   int*);
 
+int* inverted_fraction_variable(int*);
+
 #endif

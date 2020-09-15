@@ -14,3 +14,12 @@ library-functions-program-6.h"
 #include "../../Library-Functions-Folder/\
 Library-Functions-Folder-8/\
 library-functions-program-8.h"
+
+int* inverted_fraction_variable(int* fraction)
+{
+  int numerator =fraction_variable_numerator(fraction);
+  int denominator = fraction_variable_denominator(
+    fraction);
+  return generate_fraction_variable(denominator,
+    numerator);
+}
