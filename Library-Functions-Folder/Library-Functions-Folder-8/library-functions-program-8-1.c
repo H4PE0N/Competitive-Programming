@@ -37,13 +37,6 @@ double convert_decimal_percent(double decimal)
   double percent = (decimal * 100); return percent;
 }
 
-int calculate_common_denominator(int*first, int*second)
-{
-  int first_d = fraction_variable_denominator(first);
-  int second_d = fraction_variable_denominator(second);
-  return (first_d * second_d);
-}
-
 int increase_integer_variable(int variable,int integer)
 {
   variable = (variable + integer); return variable;

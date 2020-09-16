@@ -40,13 +40,11 @@ duplicate_fraction_variable_test    decimal_variable_greater_test
 
 greatest_common_table_test          smallest_fraction_form_test
 
-calculate_common_denominator_test   fraction_variable_greater_test
+least_common_denominator_test       fraction_variable_greater_test
 
 fraction_variable_smaller_test      inverted_fraction_variable_test
 
 smallest_common_product_test        generate_integer_products_test
-
-least_common_denominator_test
 
 Made by Roy Hampus Fridholm
 </pre>

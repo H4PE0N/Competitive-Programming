@@ -40,13 +40,13 @@ smallest_fraction_form      greatest_common_table
 
 duplicate_fraction_variable fraction_variable_greater
 
-compare_fraction_variables  calculate_common_denominator
+compare_fraction_variables  least_common_denominator
 
 fraction_variable_smaller   inverted_fraction_variable
 
 inverted_fraction_variable  generate_integer_products
 
-smallest_common_product
+smallest_common_product     
 
 Made by Roy Hampus Fridholm
 </pre>

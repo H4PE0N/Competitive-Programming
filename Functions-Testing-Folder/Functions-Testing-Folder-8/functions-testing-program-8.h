@@ -73,9 +73,6 @@ int duplicate_fraction_variable_test(int*,
 
 int greatest_common_table_test(int,int,int);
 
-int calculate_common_denominator_test(int*,
-  int*, int);
-
 int compare_fraction_variables_test(int*,
   int*, int);
 

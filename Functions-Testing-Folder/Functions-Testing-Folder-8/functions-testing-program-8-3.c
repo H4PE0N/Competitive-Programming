@@ -25,14 +25,6 @@ int smallest_fraction_form_test(int* fraction,
   return compare_integer_arrays(fraction, output, 2);
 }
 
-int calculate_common_denominator_test(int* first,
-  int* second, int output)
-{
-  int denominator = calculate_common_denominator(first,
-    second);
-  return compare_integer_variables(denominator,output);
-}
-
 int fraction_variable_greater_test(int* first,
   int* second, int output)
 {

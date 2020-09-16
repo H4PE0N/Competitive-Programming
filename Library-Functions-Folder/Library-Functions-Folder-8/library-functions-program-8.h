@@ -78,9 +78,6 @@ int greatest_common_table(int, int);
 
 int* duplicate_fraction_variable(int*);
 
-int calculate_common_denominator(int*,
-  int*);
-
 int* inverted_fraction_variable(int*);
 
 int* generate_integer_products(int,int);
