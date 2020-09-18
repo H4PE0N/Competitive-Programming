@@ -4,7 +4,7 @@ LIBRARY_SOURCES_FOLDER := ../Library-Sources-Folder
 
 LIBRARY_OBJECTS_FOLDER := ../Library-Objects-Folder
 
-LIBRARY_BOOTUPS_FOLDER := ../Library-Bootups-Folder
+LIBRARY_BINARIES_FOLDER := ../Library-Binaries-Folder
 ################################################################################
 
 ################################################################################
@@ -66,9 +66,8 @@ functions-bootup-program-%: $(OBJECTS_FUNCTIONS_PROGRAMS) \
 ################################################################################
 
 ################################################################################
-$(OBJECTS_BOOTUP_FOLDER)/%.o: $(SOURCES_BOOTUP_FOLDER)/%.c \
-	$(OBJECTS_FUNCTIONS_PROGRAMS) $(OBJECTS_TESTING_PROGRAMS)
-	$(COMPILOR) $(COMPILING_FLAGS) $< -c -o $@
+$(OBJECTS_BOOTUP_FOLDER)/%.o: $(SOURCES_BOOTUP_FOLDER)/%.c
+	$(COMPILOR) $(COMPILING_FLAGS) $^ -c -o $@
 
 $(OBJECTS_COMPILE_PROGRAM): $(SOURCES_COMPILE_PROGRAM)
 	$(COMPILOR) $(COMPILING_FLAGS) $^ -c -o $@
@@ -84,6 +83,6 @@ $(OBJECTS_TESTING_FOLDER)/%.o: $(SOURCES_TESTING_FOLDER)/%.c
 remove-object-programs:
 	rm -f $(LIBRARY_OBJECTS_FOLDER)/*/*/*.o $(LIBRARY_OBJECTS_FOLDER)/*/*.o
 
-remove-bootup-programs:
+remove-binary-programs:
 	rm -f library-compile-program functions-bootup-program-*
 ################################################################################
