@@ -81,3 +81,19 @@ int allocate_binary_bits_test(char* binary, int length,
   return compare_character_strings(binary, output,
     length);
 }
+
+int convert_binary_string_test(char**binary,int length,
+  char* output)
+{
+  char* string = convert_binary_string(binary, length);
+  return compare_character_strings(string, output,
+    length);
+}
+
+int convert_array_binary_test(int* array, int length,
+  char** output)
+{
+  char** binary = convert_array_binary(array, length);
+  return compare_string_sentence(binary,output,length,
+    8);
+}

@@ -76,3 +76,19 @@ int switch_adjacent_arrays_test(int** matrix,int index,
   return compare_integer_matrix(matrix, output, height,
     width);
 }
+
+int add_matrix_array_test(int** matrix, int height,
+  int* array, int** output)
+{
+  matrix = add_matrix_array(matrix, height, array);
+  return compare_integer_matrix(matrix,output,height+1,
+    matrix_array_length(matrix, 0));
+}
+
+int remove_matrix_array_test(int** matrix, int height,
+  int* array, int** output)
+{
+  matrix = remove_matrix_array(matrix, height, array);
+  return compare_integer_matrix(matrix, output, height,
+    matrix_array_length(matrix, 0));
+}

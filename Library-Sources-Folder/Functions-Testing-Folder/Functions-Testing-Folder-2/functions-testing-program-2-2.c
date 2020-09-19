@@ -86,3 +86,18 @@ int matrix_array_contains_test(int** matrix, int index,
     integer);
   return compare_integer_variables(boolean, output);
 }
+
+int reverse_matrix_arrays_test(int** matrix,int height,
+  int** output)
+{
+  matrix = reverse_matrix_arrays(matrix, height);
+  return compare_integer_matrix(matrix, output, height,
+    matrix_array_length(matrix, 0));
+}
+
+int matrix_array_index_test(int** matrix, int height,
+  int* array, int output)
+{
+  int index = matrix_array_index(matrix, height,array);
+  return compare_integer_variables(index, output);
+}

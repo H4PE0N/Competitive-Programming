@@ -87,3 +87,13 @@ int string_character_index_test(char*string,int length,
     character);
   return compare_integer_variables(index, output);
 }
+
+int character_string_section_test(char* string,
+  int first, int second, char* output)
+{
+  char* section=character_string_section(string, first,
+    second);
+  int length = character_string_length(section);
+  return compare_character_strings(section, output,
+    length);
+}

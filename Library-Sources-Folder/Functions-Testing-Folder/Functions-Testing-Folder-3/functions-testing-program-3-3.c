@@ -81,3 +81,10 @@ int increase_index_value_test(int** hashmap, int index,
   return compare_integer_hashmaps(hashmap, output,
     length);
 }
+
+int check_hashmap_array_test(int** hashmap, int index,
+  int output)
+{
+  int boolean = check_hashmap_array(hashmap, index);
+  return compare_integer_variables(boolean, output);
+}

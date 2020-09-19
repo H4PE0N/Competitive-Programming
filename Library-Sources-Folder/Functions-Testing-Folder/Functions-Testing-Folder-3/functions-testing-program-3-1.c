@@ -84,3 +84,18 @@ int hashmap_value_keywords_test(int** hashmap,
   return compare_integer_arrays(keywords, output,
     integer_array_length(keywords));
 }
+
+int convert_hashmap_array_test(int**hashmap,int length,
+  int* output)
+{
+  int* array = convert_hashmap_array(hashmap, length);
+  int a_length = integer_array_length(array);
+  return compare_integer_arrays(array,output,a_length);
+}
+
+int integer_hashmap_total_test(int**hashmap,int length,
+  int output)
+{
+  int total = integer_hashmap_total(hashmap, length);
+  return compare_integer_variables(total, output);
+}

@@ -84,3 +84,20 @@ int character_variable_smaller_test(char first,
     second);
   return compare_integer_variables(boolean, output);
 }
+
+int character_variable_greater_test(char first,
+  char second, int output)
+{
+  int boolean = character_variable_greater(first,
+    second);
+  return compare_integer_variables(boolean, output);
+}
+
+int add_string_characters_test(char* string,int length,
+  char character, int amount, char* output)
+{
+  string=add_string_characters(string,length,character,
+    amount);
+  return compare_character_strings(string, output,
+    character_string_length(string));
+}

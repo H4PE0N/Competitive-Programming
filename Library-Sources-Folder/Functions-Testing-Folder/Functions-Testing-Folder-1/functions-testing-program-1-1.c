@@ -71,3 +71,27 @@ int add_array_integer_test(int* array, int length,
   array = add_array_integer(array, length, integer);
   return compare_integer_arrays(array,output,length+1);
 }
+
+int integers_inside_array_test(int* array, int length,
+  int* integers, int output)
+{
+  int boolean = integers_inside_array(array, length,
+    integers);
+  return compare_integer_variables(boolean, output);
+}
+
+int integer_array_section_test(int* array, int first,
+  int second, int* output)
+{
+  int* section = integer_array_section(array, first,
+    second);
+  int length = integer_array_length(section);
+  return compare_integer_arrays(section,output,length);
+}
+
+int array_integer_index_test(int* array, int length,
+  int integer, int output)
+{
+  int index =array_integer_index(array,length,integer);
+  return compare_integer_variables(index, output);
+}

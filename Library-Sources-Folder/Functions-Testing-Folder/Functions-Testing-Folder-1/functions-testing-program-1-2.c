@@ -73,3 +73,28 @@ int duplicate_integer_array_test(int* array,int length,
   array = duplicate_integer_array(array, length);
   return compare_integer_arrays(array, output, length);
 }
+
+int add_array_integers_test(int* array, int length,
+  int integer, int amount, int* output)
+{
+  array = add_array_integers(array, length, integer,
+    amount);
+  length = integer_array_length(array);
+  return compare_integer_arrays(array, output, length);
+}
+
+int array_integer_smaller_test(int* array, int first,
+  int second, int output)
+{
+  int boolean = array_integer_smaller(array, first,
+    second);
+  return compare_integer_variables(boolean, output);
+}
+
+int array_integer_greater_test(int* array, int first,
+  int second, int output)
+{
+  int boolean = array_integer_greater(array, first,
+    second);
+  return compare_integer_variables(boolean, output);
+}

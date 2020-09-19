@@ -47,49 +47,9 @@ int compare_array_content_test(int* first, int* second,
   return compare_integer_variables(boolean, output);
 }
 
-int array_integer_smaller_test(int* array, int first,
-  int second, int output)
-{
-  int boolean = array_integer_smaller(array, first,
-    second);
-  return compare_integer_variables(boolean, output);
-}
-
-int array_integer_greater_test(int* array, int first,
-  int second, int output)
-{
-  int boolean = array_integer_greater(array, first,
-    second);
-  return compare_integer_variables(boolean, output);
-}
-
 int reverse_integer_array_test(int* array, int length,
   int* output)
 {
   int* reverse = reverse_integer_array(array, length);
   return compare_integer_arrays(reverse,output,length);
-}
-
-int array_integer_index_test(int* array, int length,
-  int integer, int output)
-{
-  int index =array_integer_index(array,length,integer);
-  return compare_integer_variables(index, output);
-}
-
-int integers_inside_array_test(int* array, int length,
-  int* integers, int output)
-{
-  int boolean = integers_inside_array(array, length,
-    integers);
-  return compare_integer_variables(boolean, output);
-}
-
-int integer_array_section_test(int* array, int first,
-  int second, int* output)
-{
-  int* section = integer_array_section(array, first,
-    second);
-  int length = integer_array_length(section);
-  return compare_integer_arrays(section,output,length);
 }

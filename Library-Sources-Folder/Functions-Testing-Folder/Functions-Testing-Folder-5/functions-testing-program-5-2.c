@@ -24,22 +24,6 @@ int binary_range_between_test(char* binary,int minimum,
   return compare_integer_variables(boolean, output);
 }
 
-int convert_binary_string_test(char**binary,int length,
-  char* output)
-{
-  char* string = convert_binary_string(binary, length);
-  return compare_character_strings(string, output,
-    length);
-}
-
-int convert_array_binary_test(int* array, int length,
-  char** output)
-{
-  char** binary = convert_array_binary(array, length);
-  return compare_string_sentence(binary,output,length,
-    8);
-}
-
 int convert_binary_array_test(char** binary,int length,
   int* output)
 {

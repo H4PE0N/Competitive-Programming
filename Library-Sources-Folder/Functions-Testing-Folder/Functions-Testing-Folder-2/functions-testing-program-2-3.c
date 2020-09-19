@@ -85,3 +85,19 @@ int matrix_integer_smaller_test(int** matrix, int first,
     second, index);
   return compare_integer_variables(boolean, output);
 }
+
+int matrix_array_smaller_test(int** matrix, int height,
+  int first, int second, int output)
+{
+  int boolean = matrix_array_smaller(matrix, height,
+    first, second);
+  return compare_integer_variables(boolean, output);
+}
+
+int reverse_integer_matrix_test(int**matrix,int height,
+  int width, int** output)
+{
+  matrix = reverse_integer_matrix(matrix,height,width);
+  return compare_integer_matrix(matrix, output, height,
+    width);
+}
