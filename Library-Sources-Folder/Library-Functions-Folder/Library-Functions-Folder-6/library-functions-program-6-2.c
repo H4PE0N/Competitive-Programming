@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <math.h>
-
 #include "../library-functions-headers.h"
 
 int array_integers_sequences(int* array, int length)

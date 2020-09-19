@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 int hashmap_keyword_exists(int** hashmap, int keyword)

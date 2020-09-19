@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 int* remove_array_integer(int* array, int length,

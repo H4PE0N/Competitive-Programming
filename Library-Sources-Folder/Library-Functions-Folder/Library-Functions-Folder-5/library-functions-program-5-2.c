@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <math.h>
-
 #include "../library-functions-headers.h"
 
 int binary_range_between(char* binary, int minimum,

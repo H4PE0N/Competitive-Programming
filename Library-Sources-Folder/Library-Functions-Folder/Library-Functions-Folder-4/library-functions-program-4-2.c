@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-#include <stdio.h>
-
 #include "../library-functions-headers.h"
 
 char generate_random_character(int minimum,int maximum)

@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <math.h>
-
 #include "../library-functions-headers.h"
 
 double integer_array_average(int* array, int length)

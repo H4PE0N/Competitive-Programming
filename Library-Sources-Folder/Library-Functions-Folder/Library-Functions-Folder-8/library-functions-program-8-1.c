@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 int greatest_common_table(int greater, int smaller)

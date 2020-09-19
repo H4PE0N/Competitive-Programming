@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-#include <stdio.h>
-
 #include "../library-functions-headers.h"
 
 int* hashmap_value_keywords(int** hashmap, int length,

@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <string.h>
-
 #include "../library-functions-headers.h"
 
 char* binary_and_operation(char* first, char* second,

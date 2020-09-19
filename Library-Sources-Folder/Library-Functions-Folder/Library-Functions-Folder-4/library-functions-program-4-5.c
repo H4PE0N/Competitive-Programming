@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 char lower_alphabet_character(int index)

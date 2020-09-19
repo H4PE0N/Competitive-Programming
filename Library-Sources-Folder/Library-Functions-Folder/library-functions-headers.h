@@ -2,6 +2,13 @@
 #ifndef LIBRARY_FUNCTIONS_HEADERS_H
 #define LIBRARY_FUNCTIONS_HEADERS_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <time.h>
+#include <string.h>
+#include <math.h>
+
 #include "Library-Functions-Folder-1/\
 library-functions-program-1.h"
 

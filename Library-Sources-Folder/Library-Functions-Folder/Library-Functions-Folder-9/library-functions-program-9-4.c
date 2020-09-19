@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 int sentence_character_smaller(char** sentence,

@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 char** generate_string_sentence(int height, int width)

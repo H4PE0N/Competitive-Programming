@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 char* generate_character_string(int length)

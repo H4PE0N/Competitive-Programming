@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-#include <stdio.h>
-
 #include "../library-functions-headers.h"
 
 char* sort_character_string(char* string, int length)

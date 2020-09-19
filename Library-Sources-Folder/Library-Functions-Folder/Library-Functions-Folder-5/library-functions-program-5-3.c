@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <math.h>
-
 #include "../library-functions-headers.h"
 
 char* convert_binary_string(char** binary, int length)

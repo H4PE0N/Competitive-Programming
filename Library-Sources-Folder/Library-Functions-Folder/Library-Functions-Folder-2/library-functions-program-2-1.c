@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 int** generate_integer_matrix(int height, int width)

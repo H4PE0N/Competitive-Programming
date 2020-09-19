@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-
 #include "../library-functions-headers.h"
 
 double integer_between_integers(int first, int second)

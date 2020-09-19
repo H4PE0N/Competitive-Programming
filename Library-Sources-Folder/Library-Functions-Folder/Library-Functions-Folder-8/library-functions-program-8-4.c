@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
-
 #include "../library-functions-headers.h"
 
 int* inverted_fraction_variable(int* fraction)

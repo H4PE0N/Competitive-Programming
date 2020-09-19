@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <stdbool.h>
-#include <stdio.h>
-
 #include "../library-functions-headers.h"
 
 int** switch_adjacent_arrays(int** matrix, int index)

@@ -1,8 +1,4 @@
 
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-
 #include "../library-functions-headers.h"
 
 long start_stopwatch_operation() { return time(NULL); }
