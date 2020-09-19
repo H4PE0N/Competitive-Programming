@@ -6,6 +6,20 @@ think of will probably be in one of these  folders.  If
 you think one of the functions  functions  incorrectly,
 you can test it in the Functions-Testing-Folder.
 
+To make all the programs have the access they  need  to
+the functions they use, a header  file  is  located  in
+this folder. All the programs in this  folder,  in  the
+Functions-Testing-Folder       and        in        the
+Create-Programs-Folder is using the header  file.  That
+makes it really easy to include all  the  functions  in
+this library.
+
+In the header file in  this  folder  there  is  include
+statements for all the standard C  libraries  that  the
+functions in this library is  using.  So  by  including
+this header  file,  the  programs  is  including  those
+libraries as well.
+
 This is somewhat what these folders contains, what kind
 of functions there is in them:
 
@@ -55,6 +69,6 @@ Library-Functions-Folder-10 - This   folder    contains
 functions that are made around time operations. If  you
 want a delay or a timer in your program, here  can  you
 find the functions you need. The only thing that  isn't
-so great, is that they only count  in  seconds,  so  no 
+so great, is that they only count  in  seconds,  so  no
 milliseconds.
 </pre>

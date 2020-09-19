@@ -6,6 +6,12 @@ functions that isn't in here  are  the  functions  that
 generates a random value. Or the functions  that  makes
 an output on your screen.
 
+In this folder there is a header file, just like in the
+Library-Functions-Folder, but that includes the  header
+files from this folder. That make it  easy  to  include
+the    functions    from    this    folder    to    the
+functions-bootup-programs.
+
 So all of the folders that is in this  folder  contains
 the    same    kind    of    functions     that     the
 Library-Functions-Folder. So it would be  dumb  to  say
