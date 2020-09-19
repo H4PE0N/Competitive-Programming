@@ -3,13 +3,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-4/\
-library-functions-program-4.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-8/\
-library-functions-program-8.h"
+#include "../library-functions-headers.h"
 
 char* sort_character_string(char* string, int length)
 {

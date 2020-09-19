@@ -3,9 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-10/\
-library-functions-program-10.h"
+#include "../library-functions-headers.h"
 
 long start_stopwatch_operation() { return time(NULL); }
 
