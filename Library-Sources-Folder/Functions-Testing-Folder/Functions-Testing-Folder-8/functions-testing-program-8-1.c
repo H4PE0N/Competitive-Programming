@@ -1,15 +1,6 @@
 
 #include "../../Library-Functions-Folder/\
-Library-Functions-Folder-1/\
-library-functions-program-1.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-6/\
-library-functions-program-6.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-8/\
-library-functions-program-8.h"
+library-functions-headers.h"
 
 int integer_range_between_test(int integer,int minimum,
   int maximum, int output)

@@ -1,15 +1,6 @@
 
 #include "../../Library-Functions-Folder/\
-Library-Functions-Folder-1/\
-library-functions-program-1.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-2/\
-library-functions-program-2.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-8/\
-library-functions-program-8.h"
+library-functions-headers.h"
 
 int delete_matrix_array_test(int** matrix, int height,
   int index, int** output)

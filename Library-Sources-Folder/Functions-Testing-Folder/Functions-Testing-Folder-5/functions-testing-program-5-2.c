@@ -1,23 +1,6 @@
 
 #include "../../Library-Functions-Folder/\
-Library-Functions-Folder-1/\
-library-functions-program-1.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-4/\
-library-functions-program-4.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-5/\
-library-functions-program-5.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-8/\
-library-functions-program-8.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-9/\
-library-functions-program-9.h"
+library-functions-headers.h"
 
 int convert_string_binary_test(char* string,int length,
   char** output)

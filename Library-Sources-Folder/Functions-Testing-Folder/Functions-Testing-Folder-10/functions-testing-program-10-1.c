@@ -1,11 +1,6 @@
 
 #include "../../Library-Functions-Folder/\
-Library-Functions-Folder-8/\
-library-functions-program-8.h"
-
-#include "../../Library-Functions-Folder/\
-Library-Functions-Folder-10/\
-library-functions-program-10.h"
+library-functions-headers.h"
 
 int start_stopwatch_operation_test(long output)
 {
