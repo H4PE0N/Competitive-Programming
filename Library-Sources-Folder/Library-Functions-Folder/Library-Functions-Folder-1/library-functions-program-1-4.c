@@ -13,13 +13,6 @@ int array_integer_index(int* array, int length,
   return integer_index;
 }
 
-int array_integer_smaller(int* array, int first,
-  int second)
-{
-  int integer = array_index_integer(array, first);
-  return integer < array_index_integer(array, second);
-}
-
 int integers_inside_array(int* array, int length,
   int* integers)
 {
@@ -34,28 +27,4 @@ int integers_inside_array(int* array, int length,
       int_len)) return true;
   }
   return false;
-}
-
-int* integer_array_section(int* array, int first,
-  int second)
-{
-  int* section=generate_integer_array(second-first +1);
-  for(int index = first; index <= second; index += 1)
-  {
-    int length = integer_array_length(section);
-    int integer = array_index_integer(array, index);
-    section=add_array_integer(section,length, integer);
-  }
-  return section;
-}
-
-int* add_array_integers(int* array, int length,
-  int integer, int amount)
-{
-  for(int index = 0; index < amount; index = index + 1)
-  {
-    int current = (length + index);
-    array = add_array_integer(array, current, integer);
-  }
-  return array;
 }

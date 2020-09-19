@@ -79,3 +79,20 @@ int hashmap_index_keyword(int** hashmap, int index)
   int keyword = matrix_array_integer(hashmap,index, 0);
   return keyword;
 }
+
+int hashmap_keyword_greater(int** hashmap, int first,
+  int second)
+{
+  return matrix_integer_greater(hashmap, first,second,
+    0);
+}
+
+int integer_hashmap_total(int** hashmap, int length)
+{
+  int total = 0;
+  for(int index = 0; index < length; index = index + 1)
+  {
+    total = total + hashmap_index_value(hashmap,index);
+  }
+  return total;
+}

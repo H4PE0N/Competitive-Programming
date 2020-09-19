@@ -83,3 +83,17 @@ int** remove_matrix_integers(int** matrix, int height,
   }
   return matrix;
 }
+
+int matrix_array_index(int** matrix, int height,
+  int* array)
+{
+  int array_index = height;
+  for(int index = (height - 1); index >= 0; index -= 1)
+  {
+    int* index_array=matrix_index_array(matrix, index);
+    int length = matrix_array_length(matrix, index);
+    if(compare_integer_arrays(array, index_array,
+      length)) { array_index = index; break; }
+  }
+  return array_index;
+}

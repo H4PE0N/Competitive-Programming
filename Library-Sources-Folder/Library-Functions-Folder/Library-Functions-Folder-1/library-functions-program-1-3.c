@@ -81,3 +81,16 @@ int array_integer_greater(int* array, int first,
   int integer = array_index_integer(array, first);
   return integer > array_index_integer(array, second);
 }
+
+int* integer_array_section(int* array, int first,
+  int second)
+{
+  int* section=generate_integer_array(second-first +1);
+  for(int index = first; index <= second; index += 1)
+  {
+    int length = integer_array_length(section);
+    int integer = array_index_integer(array, index);
+    section=add_array_integer(section,length, integer);
+  }
+  return section;
+}

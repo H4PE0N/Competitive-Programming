@@ -81,3 +81,17 @@ int** add_matrix_integer(int** matrix, int height,
   *(matrix + height) = add_array_integer(array, length,
     integer); return matrix;
 }
+
+int** remove_matrix_array(int** matrix, int height,
+  int* array)
+{
+  int index = matrix_array_index(matrix, height,array);
+  return delete_matrix_array(matrix, height, index);
+}
+
+int** add_matrix_array(int** matrix, int height,
+  int* array)
+{
+  matrix = allocate_matrix_array(matrix, height,array);
+  return matrix;
+}

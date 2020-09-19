@@ -91,3 +91,10 @@ int* sort_integer_array(int* array, int length)
   }
   return array;
 }
+
+int array_integer_smaller(int* array, int first,
+  int second)
+{
+  int integer = array_index_integer(array, first);
+  return integer < array_index_integer(array, second);
+}

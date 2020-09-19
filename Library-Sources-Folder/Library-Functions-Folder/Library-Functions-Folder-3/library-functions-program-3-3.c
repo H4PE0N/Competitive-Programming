@@ -79,3 +79,23 @@ int** remove_hashmap_keyword(int** hashmap, int length,
   int index = hashmap_keyword_index(hashmap, keyword);
   return delete_hashmap_keyword(hashmap, length,index);
 }
+
+int check_hashmap_array(int** hashmap, int index)
+{
+  return (hashmap_index_keyword(hashmap, index) != '\0'
+    && hashmap_index_value(hashmap, index) != 0);
+}
+
+int** allocate_hashmap_value(int** hashmap, int index,
+  int value)
+{
+  return allocate_matrix_integer(hashmap, index, 1,
+    value);
+}
+
+int hashmap_keyword_smaller(int** hashmap, int first,
+  int second)
+{
+  return matrix_integer_smaller(hashmap, first,second,
+    0);
+}

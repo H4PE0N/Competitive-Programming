@@ -79,3 +79,24 @@ char* delete_string_character(char* string, int length,
   string = move_string_characters(string,length,index);
   return allocate_string_character(string,length,'\0');
 }
+
+int string_character_greater(char* string, int first,
+  int second)
+{
+  char character=string_index_character(string, first);
+  return character > string_index_character(string,
+    second);
+}
+
+char* reverse_character_string(char* string,int length)
+{
+  char* reverse = generate_character_string(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    char character = string_index_character(string,
+      length - (index + 1));
+    reverse = add_string_character(reverse, index,
+      character);
+  }
+  return reverse;
+}

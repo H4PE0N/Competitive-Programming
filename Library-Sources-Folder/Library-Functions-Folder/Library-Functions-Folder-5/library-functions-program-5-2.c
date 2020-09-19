@@ -70,3 +70,15 @@ char** convert_string_binary(char* string, int length)
   }
   return binary;
 }
+
+char* convert_binary_string(char** binary, int length)
+{
+  char* string = generate_character_string(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    char* current=sentence_index_string(binary, index);
+    string = add_string_character(string, index,
+      convert_binary_character(current));
+  }
+  return string;
+}

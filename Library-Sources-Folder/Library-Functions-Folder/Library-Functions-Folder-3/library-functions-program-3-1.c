@@ -75,3 +75,25 @@ int** convert_array_hashmap(int* array, int length)
   }
   return hashmap;
 }
+
+int* convert_hashmap_array(int** hashmap, int length)
+{
+  int total = integer_hashmap_total(hashmap, length);
+  int* array = generate_integer_array(total);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    int integer = hashmap_index_keyword(hashmap,index);
+    int amount = hashmap_index_value(hashmap, index);
+    int a_length = integer_array_length(array);
+    array = add_array_integers(array, a_length,integer,
+      amount);
+  }
+  return array;
+}
+
+int** allocate_hashmap_keyword(int**hashmap,int index,
+  int keyword)
+{
+  return allocate_matrix_integer(hashmap, index, 0,
+    keyword);
+}

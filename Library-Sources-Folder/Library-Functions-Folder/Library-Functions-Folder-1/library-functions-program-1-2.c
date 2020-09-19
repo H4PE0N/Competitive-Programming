@@ -86,3 +86,14 @@ int* reverse_integer_array(int* array, int length)
   }
   return reverse;
 }
+
+int* add_array_integers(int* array, int length,
+  int integer, int amount)
+{
+  for(int index = 0; index < amount; index = index + 1)
+  {
+    int current = (length + index);
+    array = add_array_integer(array, current, integer);
+  }
+  return array;
+}

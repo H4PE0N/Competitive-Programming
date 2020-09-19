@@ -75,3 +75,27 @@ int** shuffle_integer_matrix(int** matrix, int height)
   }
   return matrix;
 }
+
+int** reverse_integer_matrix(int** matrix, int height,
+  int width)
+{
+  int** reverse=generate_integer_matrix(height, width);
+  for(int index = 0; index < height; index = index + 1)
+  {
+    int* array = matrix_index_array(matrix, height -
+      (index + 1));
+    reverse = add_matrix_array(reverse, index, array);
+  }
+  return reverse;
+}
+
+int** reverse_matrix_arrays(int** matrix, int height)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    int* array = matrix_index_array(matrix, index);
+    *(matrix + index) = reverse_integer_array(array,
+      matrix_array_length(matrix, index));
+  }
+  return matrix;
+}
