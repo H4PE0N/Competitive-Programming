@@ -79,3 +79,18 @@ int generate_fraction_variable_test(int numerator,
     denominator);
   return compare_integer_arrays(fraction, output, 2);
 }
+
+int inverted_fraction_variable_test(int* fraction,
+  int* output)
+{
+  int* inverted = inverted_fraction_variable(fraction);
+  return compare_fraction_variables(inverted, output);
+}
+
+int least_common_denominator_test(int* first,
+  int* second, int output)
+{
+  int denominator = least_common_denominator(first,
+    second);
+  return compare_integer_variables(denominator,output);
+}

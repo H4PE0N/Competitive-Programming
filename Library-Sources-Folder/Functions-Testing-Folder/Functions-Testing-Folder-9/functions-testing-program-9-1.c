@@ -83,3 +83,20 @@ int sentence_string_length_test(char** sentence,
   int width = sentence_string_length(sentence, index);
   return compare_integer_variables(width, output);
 }
+
+int add_sentence_string_test(char**sentence,int height,
+  char* string, char** output)
+{
+  sentence=add_sentence_string(sentence,height,string);
+  return compare_string_sentence(sentence, output,
+    height + 1, sentence_string_length(sentence, 0));
+}
+
+int remove_sentence_string_test(char** sentence,
+  int height, char* string, char** output)
+{
+  sentence = remove_sentence_string(sentence, height,
+    string);
+  return compare_string_sentence(sentence, output,
+    height, sentence_string_length(sentence, 0));
+}

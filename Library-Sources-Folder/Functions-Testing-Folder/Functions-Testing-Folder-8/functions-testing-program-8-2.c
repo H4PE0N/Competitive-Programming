@@ -72,3 +72,27 @@ int duplicate_fraction_variable_test(int* fraction,
   int* doublet = duplicate_fraction_variable(fraction);
   return compare_integer_arrays(doublet, output, 2);
 }
+
+int smallest_common_product_test(int smallest,
+  int greatest, int output)
+{
+  int product = smallest_common_product(smallest,
+    greatest);
+  return compare_integer_variables(product, output);
+}
+
+int decimal_variable_greater_test(double first,
+  double second, int output)
+{
+  int boolean = decimal_variable_greater(first,second);
+  return compare_integer_variables(boolean, output);
+}
+
+int generate_integer_products_test(int integer,
+  int amount, int* output)
+{
+  int* products = generate_integer_products(integer,
+    amount);
+  return compare_integer_arrays(products, output,
+    integer_array_length(products));
+}

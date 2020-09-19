@@ -70,17 +70,6 @@ int compare_sentence_content_test(char** first,
   return compare_integer_variables(boolean, output);
 }
 
-int shuffle_string_sentence_test(char** sentence,
-  int height, char** output)
-{
-  int width = sentence_string_length(sentence, 0);
-  sentence = shuffle_string_sentence(sentence, height);
-  int boolean = !compare_string_sentence(sentence,
-    output, height, width);
-  return boolean && compare_sentence_content(sentence,
-    output, height, width);
-}
-
 int reverse_string_sentence_test(char** sentence,
   int height, int width, char** output)
 {
@@ -88,4 +77,20 @@ int reverse_string_sentence_test(char** sentence,
     width);
   return compare_string_sentence(sentence, output,
     height, width);
+}
+
+int reverse_sentence_strings_test(char** sentence,
+  int height, char** output)
+{
+  sentence = reverse_sentence_strings(sentence,height);
+  return compare_string_sentence(sentence, output,
+    height, sentence_string_length(sentence, 0));
+}
+
+int sentence_string_index_test(char** sentence,
+  int height, char* string, int output)
+{
+  int index = sentence_string_index(sentence, height,
+    string);
+  return compare_integer_variables(index, output);
 }
