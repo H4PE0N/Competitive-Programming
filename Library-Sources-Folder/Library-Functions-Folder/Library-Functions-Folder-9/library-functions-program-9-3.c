@@ -84,3 +84,15 @@ char** sort_sentence_iteration(char** sentence,
   }
   return sentence;
 }
+
+char** shuffle_string_sentence(char** sentence,
+  int height)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    int random = generate_random_integer(0,height - 1);
+    sentence = switch_sentence_strings(sentence, index,
+      random);
+  }
+  return sentence;
+}

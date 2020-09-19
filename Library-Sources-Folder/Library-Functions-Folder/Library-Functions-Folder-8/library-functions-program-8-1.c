@@ -74,3 +74,26 @@ int integer_variable_smaller(int first, int second)
 {
   int boolean = (first < second); return boolean;
 }
+
+int smallest_common_product(int smallest, int greatest)
+{
+  int product = (smallest * greatest);
+  int* s_products = generate_integer_products(smallest,
+    product / smallest);
+  int* g_products = generate_integer_products(greatest,
+    product / greatest);
+  for(int index = 0; index < product/greatest; index++)
+  {
+    int integer=array_index_integer(g_products,index);
+    if(array_contains_integer(s_products, product /
+      smallest, integer)) return integer;
+  }
+  return product;
+}
+
+int least_common_denominator(int* first, int* second)
+{
+  int first_d = fraction_variable_denominator(first);
+  int second_d = fraction_variable_denominator(second);
+  return smallest_common_product(first_d, second_d);
+}

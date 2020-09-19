@@ -79,3 +79,23 @@ int fraction_variable_denominator(int* fraction)
   int denominator = array_index_integer(fraction, 1);
   return denominator;
 }
+
+int* inverted_fraction_variable(int* fraction)
+{
+  int numerator =fraction_variable_numerator(fraction);
+  int denominator = fraction_variable_denominator(
+    fraction);
+  return generate_fraction_variable(denominator,
+    numerator);
+}
+
+int* generate_integer_products(int integer, int amount)
+{
+  int* products = generate_integer_array(amount);
+  for(int index = 0; index < amount; index = index + 1)
+  {
+    int product = (integer * (index + 1));
+    products=add_array_integer(products,index,product);
+  }
+  return products;
+}

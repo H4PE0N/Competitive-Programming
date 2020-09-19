@@ -49,18 +49,6 @@ int sentence_string_greater(char** sentence,int height,
   return false;
 }
 
-char** shuffle_string_sentence(char** sentence,
-  int height)
-{
-  for(int index = 0; index < height; index = index + 1)
-  {
-    int random = generate_random_integer(0,height - 1);
-    sentence = switch_sentence_strings(sentence, index,
-      random);
-  }
-  return sentence;
-}
-
 char** reverse_string_sentence(char** sentence,
   int height, int width)
 {
@@ -73,4 +61,19 @@ char** reverse_string_sentence(char** sentence,
     reverse=add_sentence_string(reverse, index,string);
   }
   return reverse;
+}
+
+int sentence_string_index(char** sentence, int height,
+  char* string)
+{
+  int string_index = height;
+  for(int index = (height - 1); index >= 0; index -= 1)
+  {
+    char* index_string=sentence_index_string(sentence,
+      index);
+    int length=sentence_string_length(sentence, index);
+    if(compare_character_strings(string, index_string,
+      length)) { string_index = index; break; }
+  }
+  return string_index;
 }

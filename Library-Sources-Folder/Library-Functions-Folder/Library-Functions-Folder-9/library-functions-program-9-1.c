@@ -83,3 +83,15 @@ int string_sentence_height(char** sentence, int width)
   }
   return height;
 }
+
+char** reverse_sentence_strings(char** sentence,
+  int height)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    char* string=sentence_index_string(sentence,index);
+    *(sentence +index)=reverse_character_string(string,
+      sentence_string_length(sentence, index));
+  }
+  return sentence;
+}
