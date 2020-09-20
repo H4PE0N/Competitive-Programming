@@ -3,8 +3,6 @@
 LIBRARY_SOURCES_FOLDER := ../Library-Sources-Folder
 
 LIBRARY_OBJECTS_FOLDER := ../Library-Objects-Folder
-
-LIBRARY_BINARIES_FOLDER := ../Library-Binaries-Folder
 ################################################################################
 
 ################################################################################
@@ -51,8 +49,19 @@ $(LIBRARY_OBJECTS_FOLDER)/%.o, $(SOURCES_BOOTUP_PROGRAMS))
 ################################################################################
 
 ################################################################################
+OBJECTS_FUNCTIONS_FOLDERS := $(dir $(OBJECTS_FUNCTIONS_PROGRAMS))
+
+OBJECTS_TESTING_FOLDERS := $(dir $(OBJECTS_TESTING_PROGRAMS))
+################################################################################
+
+################################################################################
 COMPILOR := gcc
-COMPILING_FLAGS := -lm -Wall
+COMPILING_FLAGS := -lm -Wall -Werror -std=c11
+################################################################################
+
+################################################################################
+generate-objects-folders: $(OBJECTS_FUNCTIONS_FOLDERS) \
+	$(OBJECTS_TESTING_FOLDERS) $(OBJECTS_BOOTUP_FOLDER)
 ################################################################################
 
 ################################################################################
@@ -63,6 +72,14 @@ functions-bootup-program-%: $(OBJECTS_FUNCTIONS_PROGRAMS) \
 	$(OBJECTS_TESTING_PROGRAMS) \
 	$(OBJECTS_BOOTUP_FOLDER)/functions-bootup-program-%.o
 	$(COMPILOR) $(COMPILING_FLAGS) $^ -o $@
+################################################################################
+
+################################################################################
+$(OBJECTS_FUNCTIONS_FOLDER)/%/:; @mkdir -p $@
+
+$(OBJECTS_TESTING_FOLDER)/%/:; @mkdir -p $@
+
+$(OBJECTS_BOOTUP_FOLDER):; @mkdir -p $(OBJECTS_BOOTUP_FOLDER)
 ################################################################################
 
 ################################################################################
