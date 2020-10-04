@@ -56,7 +56,7 @@ OBJECTS_TESTING_FOLDERS := $(dir $(OBJECTS_TESTING_PROGRAMS))
 
 ################################################################################
 COMPILOR := gcc
-COMPILING_FLAGS := -lm -Wall -Werror -std=c11
+COMPILING_FLAGS := -Wall -Werror -std=c11
 ################################################################################
 
 ################################################################################
@@ -98,8 +98,8 @@ $(OBJECTS_TESTING_FOLDER)/%.o: $(SOURCES_TESTING_FOLDER)/%.c
 
 ################################################################################
 remove-object-programs:
-	rm -f $(LIBRARY_OBJECTS_FOLDER)/*/*/*.o $(LIBRARY_OBJECTS_FOLDER)/*/*.o
+	rm -rf $(LIBRARY_OBJECTS_FOLDER)/*/*/*.o $(LIBRARY_OBJECTS_FOLDER)/*/*.o
 
 remove-binary-programs:
-	rm -f library-compile-program functions-bootup-program-*
+	rm -rf library-compile-program functions-bootup-program-*
 ################################################################################
