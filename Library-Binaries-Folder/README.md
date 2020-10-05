@@ -18,11 +18,23 @@ the project there.
 To be able to compile the programs you want,  you  will
 have to generate the folders that is needed, this  will
 only have to happen once. To generate the  folders  you
-will type: "make generate-objects-folders".
+will type: `make generate-objects-folders`.
 
 An example  of  compiling  the  library-compile-program
-would be to write:  "make library-compile-program".  An
+would be to write:  `make library-compile-program`.  An
 example     of      compiling      one      of      the
-functions-bootup-program   is    like    this:    "make
-functions-bootup-program-1".
+functions-bootup-program   is    like    this:    `make
+functions-bootup-program-1`.
+
+If your program get's an  error  you  could  debug  the
+program using gdb, by  typing  `gdb <binary-filename>`.
+There is so meny things you can do with  the  debugger,
+so to list all of the commands would be a wast of time.
+To exit out of the gdb debugger you can type `quit`.
+
+When you compile a program  using  make,  the  Makefile
+wants to print  out  what  commands  it  is  using.  To
+prevent this, you could use the `-s` option  to  silent
+the Makefile. Then  there  will  be  no  more  commands
+printing out in the console.
 </pre>
