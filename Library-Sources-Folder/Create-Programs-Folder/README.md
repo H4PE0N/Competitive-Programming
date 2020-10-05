@@ -17,4 +17,12 @@ with a specific area has a  different  bootup  program.
 That is because you could  write  your  tests  for  the
 functions in one area,  and  then  tests  for  another,
 without having to run both at once.
+
+If you want to make your own project with help  of  the
+library, but don't want to just use this  one  file  to
+write your code. Then you can include the  header  file
+that is stored in  the  Library-Functions-Folder.  Then
+you will have the same access as the master program but
+could use more files to write your code in  a  separate
+project.
 </pre>
