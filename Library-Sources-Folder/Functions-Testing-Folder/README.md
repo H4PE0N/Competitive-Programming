@@ -68,5 +68,4 @@ want a delay or a timer in your program, here  can  you
 find the functions you need. The only thing that  isn't
 so great, is that they only count  in  seconds,  so  no
 milliseconds.
-
 </pre>

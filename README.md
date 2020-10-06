@@ -18,7 +18,7 @@ you have bought the project.
 The third  folder  contains  object  files,  those  are
 created from the source files that are located  in  the
 other folder. The object files are the reason  why  the
-compile time  is  so  fast.  Thanks  to  them  and  the
+compile-time  is  so  fast.  Thanks  to  them  and  the
 makefile, you can compile your program in milliseconds.
 
 The fourth and last folder contains source  files  that

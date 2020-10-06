@@ -24,7 +24,7 @@ functions.
 
 Functions-Testing-Folder - Here is the  test  functions
 for the third folders functions located. Every function
-exept  for  the  random  and  output  functions  has  a
+except for  the  random  and  output  functions  has  a
 test-function in this folder.
 
 Library-Functions-Folder - Here is the  functions  that

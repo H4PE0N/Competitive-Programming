@@ -32,9 +32,9 @@ There is so many things you can do with  the  debugger,
 so to list all of the commands would be a wast of time.
 To exit out of the gdb debugger you can type `quit`.
 
-When you compile a program  using  make,  the  Makefile
+When you compile a program  using  make,  the  makefile
 wants to print  out  what  commands  it  is  using.  To
 prevent this, you could use the `-s` option  to  silent
-the Makefile. Then  there  will  be  no  more  commands
+the makefile. Then  there  will  be  no  more  commands
 printing out in the console.
 </pre>
