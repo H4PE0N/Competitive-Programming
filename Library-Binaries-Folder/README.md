@@ -28,7 +28,7 @@ functions-bootup-program-1`.
 
 If your program get's an  error  you  could  debug  the
 program using gdb, by  typing  `gdb <binary-filename>`.
-There is so meny things you can do with  the  debugger,
+There is so many things you can do with  the  debugger,
 so to list all of the commands would be a wast of time.
 To exit out of the gdb debugger you can type `quit`.
 

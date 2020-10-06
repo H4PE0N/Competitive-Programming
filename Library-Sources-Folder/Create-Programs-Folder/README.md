@@ -25,4 +25,12 @@ that is stored in  the  Library-Functions-Folder.  Then
 you will have the same access as the master program but
 could use more files to write your code in  a  separate
 project.
+
+To  then  compile  that  program  you  can  modify  the
+makefile that is stored in the Library-Binaries-Folder.
+Then you move the makefile in the folder you want  your
+own program to be stored, then  you  can  compile.  The
+object files for the library should be  stored  in  the
+library, and your executable file should be created  in
+the folder your makefile is stored.
 </pre>
