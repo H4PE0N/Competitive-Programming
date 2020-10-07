@@ -1,57 +1,103 @@
 
-################################################################################
+#######################################################
 import json; import sys as console
-################################################################################
+#######################################################
 
-################################################################################
-def collect_functions_information(filename: str) -> dict:
+#######################################################
+def console_action_hadler(action,functions, arguments):
+    if(action == "search"):
+        keywords = arguments[1:]
+        show_search_function_names(functions, keywords)
+    elif(action == "show"):
+        function = arguments[1]
+        show_function_information(functions, function)
+#######################################################
+
+#######################################################
+def show_search_function_names(functions, keywords):
+    matched = search_functinos_keywords(functions,
+        keywords)
+    for index, function in enumerate(matched, 1):
+        print("Function[%d]\t:\t%s"%(index,function))
+
+def show_function_information(functions, function):
+    show_function_description(functions, function)
+    show_function_parameters(functions, function)
+    show_function_returning(functions, function)
+#######################################################
+
+#######################################################
+def update_matched_functions(functions, function,
+    keywords):
+    word_array = bread_down_function_name(function,
+        "_")
+    for keyword in keywords:
+        if(keyword not in word_array and keyword):
+            return functions
+    functions.append(function); return functions
+
+def search_functinos_keywords(functions, keywords):
+    matched = []
+    for function in functions.keys():
+        matched = update_matched_functions(matched,
+            function, keywords)
+    return matched
+#######################################################
+
+#######################################################
+def show_function_description(functions, function):
+    description = functions[function]["description"]
+    print("%s\n" % (description))
+
+def show_function_parameters(functions, function):
+    parameters = functions[function]["parameters"]
+    for index, parameter in enumerate(parameters, 1):
+        print("Parameter[%d]\t:\t%s"%(index,parameter))
+    print("")
+
+def show_function_returning(functions, function):
+    returning = functions[function]["returning"]
+    print("Returning\t:\t%s" % (returning))
+#######################################################
+
+#######################################################
+def collect_function_section(word_array, function,
+    breakpoint):
+    for index, letter in enumerate(function):
+        if(letter == breakpoint):
+            word_array.append(function[:index])
+            return word_array
+    word_array.append(function); return word_array
+
+def remove_function_section(function, breakpoint):
+    for index, letter in enumerate(function):
+        if(letter == breakpoint):
+            function = function[(index + 1):]
+            return function
+    return None
+
+def bread_down_function_name(function, breakpoint):
+    word_array = []
+    while(function != None):
+        word_array=collect_function_section(word_array,
+            function, breakpoint)
+        function = remove_function_section(function,
+            breakpoint)
+    return word_array
+#######################################################
+
+#######################################################
+def collect_functions_information(filename):
     with open(filename) as file_object:
         information = json.load(file_object)
     return information
-################################################################################
+#######################################################
 
-################################################################################
-def update_mateched_functinos(functions: list, func_name: str,
-    keywords: list) -> list:
-    for index, keyword in enumerate(keywords):
-        if(keyword not in func_name.split("_")):
-            return functions
-    functions.append(func_name); return functions
+#######################################################
+arguments = console.argv[1:]; arguments.append(None)
+filename = "../Library-Sources-Folder/\
+functions-information-file.json"
 
-def search_functinos_keywords(functions: dict, keywords: list) -> list:
-    matched_functions = []
-    for func_name, information in functions.items():
-        matched_functions = update_mateched_functinos(matched_functions,
-            func_name, keywords)
-    return matched_functions
-################################################################################
-
-################################################################################
-def show_search_function_names(functions: dict, keywords: list) -> None:
-    matched_functions = search_functinos_keywords(functions, keywords)
-    for index, func_name in enumerate(matched_functions, 1):
-        print("{}. {}".format(index, func_name))
-
-def show_function_information(functions: dict, func_name: str) -> None:
-    print("Description: {}\n".format(functions[func_name]["description"]))
-    print("Parameters: {}\n".format(functions[func_name]["parameters"]))
-    print("Returning: {}".format(functions[func_name]["returning"]))
-################################################################################
-
-################################################################################
-arguments = arguments = console.argv[1:]
-filename = "../Library-Sources-Folder/functions-information-file.json"
 functions = collect_functions_information(filename)
-################################################################################
-
-################################################################################
-try:
-    if(arguments[0] == "search"):
-        keywords = arguments[1:]
-        show_search_function_names(functions, keywords)
-    elif(arguments[0] == "show"):
-        func_name = arguments[1]
-        show_function_information(functions, func_name)
-except Exception as message:
-    pass
-################################################################################
+console_action_hadler(arguments[0],functions,arguments)
+#######################################################
