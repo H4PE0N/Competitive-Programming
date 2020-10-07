@@ -51,7 +51,7 @@ double convert_fraction_decimal(int* fraction)
 
 int check_integer_divisible(int first, int second)
 {
-  int output = (first % second == 0); return output;
+  int boolean = (first % second == 0); return boolean;
 }
 
 int* convert_percent_fraction(double percent)

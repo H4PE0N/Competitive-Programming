@@ -755,10 +755,400 @@
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "double percent"
   },
+  "binary_and_operation":
+  {
+    "description": "",
+    "parameters": ["char* first", "char* second", "int length"],
+    "returning": "char* binary"
+  },
+  "binary_left_shifting":
+  {
+    "description": "",
+    "parameters": ["char* binary", "int length"],
+    "returning": "char* shifted"
+  },
+  "binary_or_operation":
+  {
+    "description": "",
+    "parameters": ["char* first", "char* second", "int length"],
+    "returning": "char* binary"
+  },
+  "binary_right_shifting":
+  {
+    "description": "",
+    "parameters": ["char* binary", "int length"],
+    "returning": "char* shifted"
+  },
+  "binary_xor_operation":
+  {
+    "description": "",
+    "parameters": ["char* first", "char* second", "int length"],
+    "returning": "char* binary"
+  },
+  "binary_not_operation":
+  {
+    "description": "",
+    "parameters": ["char* binary", "int length"],
+    "returning": "char* opposite"
+  },
+  "greatest_common_table":
+  {
+    "description": "",
+    "parameters": ["int greater", "int smaller"],
+    "returning": "int table"
+  },
+  "integer_range_between":
+  {
+    "description": "",
+    "parameters": ["int integer", "int minimum", "maximum"],
+    "returning": "int boolean"
+  },
+  "convert_decimal_percent":
+  {
+    "description": "",
+    "parameters": ["double decimal"],
+    "returning": "double percent"
+  },
+  "increase_integer_variable":
+  {
+    "description": "",
+    "parameters": ["int variable", "int integer"],
+    "returning": "int variable"
+  },
+  "smallest_fraction_form":
+  {
+    "description": "",
+    "parameters": ["int* fraction"],
+    "returning": "int* fraction"
+  },
+  "integer_power_operation":
+  {
+    "description": "",
+    "parameters": ["int base", "int exponent"],
+    "returning": "int product"
+  },
+  "fraction_variable_smaller":
+  {
+    "description": "",
+    "parameters": ["int* first", "int* second"],
+    "returning": "int boolean"
+  },
+  "compare_integer_variables":
+  {
+    "description": "",
+    "parameters": ["int first", "int second"],
+    "returning": "int boolean"
+  },
+  "generate_random_fraction":
+  {
+    "description": "",
+    "parameters": ["double minimum", "double maximum"],
+    "returning": "int* fraction"
+  },
+  "integer_variable_smaller":
+  {
+    "description": "",
+    "parameters": ["int first", "int second"],
+    "returning": "int boolean"
+  },
+  "least_common_denominator":
+  {
+    "description": "",
+    "parameters": ["int* first", "int* second"],
+    "returning": "int denominator"
+  },
+  "integer_between_integers":
+  {
+    "description": "",
+    "parameters": ["int first", "int second"],
+    "returning": "double integer"
+  },
+  "convert_percent_decimal":
+  {
+    "description": "",
+    "parameters": ["double percent"],
+    "returning": "double decimal"
+  },
+  "integer_variable_greater":
+  {
+    "description": "",
+    "parameters": ["int first", "int second"],
+    "returning": "int boolean"
+  },
+  "fraction_variable_stdout":
+  {
+    "description": "",
+    "parameters": ["int* fraction"],
+    "returning": "void"
+  },
+  "convert_decimal_fraction":
+  {
+    "description": "",
+    "parameters": ["double decimal"],
+    "returning": "int* fraction"
+  },
+  "generate_fraction_variable":
+  {
+    "description": "",
+    "parameters": ["int numerator", "int denominator"],
+    "returning": "int* fraction"
+  },
+  "convert_fraction_decimal":
+  {
+    "description": "",
+    "parameters": ["int* fraction"],
+    "returning": "double decimal"
+  },
+  "check_integer_divisible":
+  {
+    "description": "",
+    "parameters": ["int first", "int second"],
+    "returning": "int boolean"
+  },
+  "convert_percent_fraction":
+  {
+    "description": "",
+    "parameters": ["double percent"],
+    "returning": "int* fraction"
+  },
+  "decimal_variable_smaller":
+  {
+    "description": "",
+    "parameters": ["double first", "double second"],
+    "returning": "int boolean"
+  },
+  "compare_fraction_variables":
+  {
+    "description": "",
+    "parameters": ["int* first", "int* second"],
+    "returning": "int boolean"
+  },
+  "fraction_variable_denominator":
+  {
+    "description": "",
+    "parameters": ["int* fraction"],
+    "returning": "int denominator"
+  },
+  "inverted_fraction_variable":
+  {
+    "description": "",
+    "parameters": ["int* fraction"],
+    "returning": "int* inverted"
+  },
+  "generate_integer_products":
+  {
+    "description": "",
+    "parameters": ["int integer", "int amount"],
+    "returning": "int* products"
+  },
+  "extend_fraction_variable":
+  {
+    "description": "",
+    "parameters": ["int* fraction", "int integer"],
+    "returning": "int* fraction"
+  },
+  "convert_fraction_percent":
+  {
+    "description": "",
+    "parameters": ["int* fraction"],
+    "returning": "double percent"
+  },
+  "fraction_variable_numerator":
+  {
+    "description": "",
+    "parameters": ["int* fraction"],
+    "returning": "int numerator"
+  },
+  "generate_random_integer":
+  {
+    "description": "",
+    "parameters": ["int minimum", "int maximum"],
+    "returning": "int integer"
+  },
+  "shorten_fraction_variable":
+  {
+    "description": "",
+    "parameters": ["int* fraction", "int integer"],
+    "returning": "int* fraction"
+  },
+  "compare_decimal_variables":
+  {
+    "description": "",
+    "parameters": ["double first", "double second"],
+    "returning": "int boolean"
+  },
+  "decimal_variable_greater":
+  {
+    "description": "",
+    "parameters": ["double first", "double second"],
+    "returning": "int boolean"
+  },
+  "fraction_variable_greater":
+  {
+    "description": "",
+    "parameters": ["int* first", "int* second"],
+    "returning": "int boolean"
+  },
+  "duplicate_fraction_variable":
+  {
+    "description": "",
+    "parameters": ["int* fraction"],
+    "returning": "int* doublet"
+  },
+  "generate_random_decimal":
+  {
+    "description": "",
+    "parameters": ["double minimum", "double maximum"],
+    "returning": "double decimal"
+  },
+  "start_stopwatch_operation":
+  {
+    "description": "",
+    "parameters": [],
+    "returning": "long time"
+  },
+  "stop_stopwatch_operation":
+  {
+    "description": "",
+    "parameters": ["long start_time"],
+    "returning": "int difference"
+  },
+  "seconds_delay_operation":
+  {
+    "description": "",
+    "parameters": ["int seconds"],
+    "returning": "void"
+  },
+  "calculate_current_time":
+  {
+    "description": "",
+    "parameters": [],
+    "returning": "long time"
+  },
   "":
   {
     "description": "",
     "parameters": [""],
     "returning": ""
   },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  }
 }
