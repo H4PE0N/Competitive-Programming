@@ -1,1 +1,554 @@
-{}
+{
+  "allocate_array_integer":
+  {
+    "description": "",
+    "parameters": ["int* integer", "int index", "int integer"],
+    "returning": "int* array"
+  },
+  "generate_integer_array":
+  {
+    "description": "",
+    "parameters": ["int length"],
+    "returning": "int* array"
+  },
+  "integer_array_length":
+  {
+    "description": "",
+    "parameters": ["int* array"],
+    "returning": "int length"
+  },
+  "array_contains_integer":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer"],
+    "returning": "int false / int true"
+  },
+  "delete_array_integer":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int index"],
+    "returning": "int* array"
+  },
+  "add_array_integer":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer"],
+    "returning": "int* array"
+  },
+  "sort_integer_array":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "int* array"
+  },
+  "remove_array_integer":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer"],
+    "returning": "int* array"
+  },
+  "compare_integer_arrays":
+  {
+    "description": "",
+    "parameters": ["int* first", "int* second", "int length"],
+    "returning": "int false / int true"
+  },
+  "remove_array_integers":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer"],
+    "returning": "int* array"
+  },
+  "array_integer_amount":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer"],
+    "returning": "int amount"
+  },
+  "integers_range_between":
+  {
+    "description": "",
+    "parameters": ["int* array", "int minimum", "int maximum"],
+    "returning": "int false / int true"
+  },
+  "generate_random_array":
+  {
+    "description": "",
+    "parameters": ["int length", "int minimum", "int maximum"],
+    "returning": "int* array"
+  },
+  "reverse_integer_array":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "int* reverse"
+  },
+  "add_array_integers":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer", "int amount"],
+    "returning": "int* array"
+  },
+  "integer_array_stdout":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "void"
+  },
+  "compare_array_content":
+  {
+    "description": "",
+    "parameters": ["int* first", "int* second", "int length"],
+    "returning": "int false / int true"
+  },
+  "duplicate_integer_array":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "int* doublet"
+  },
+  "array_index_integer":
+  {
+    "description": "",
+    "parameters": ["int* array", "int index"],
+    "returning": "int integer"
+  },
+  "shuffle_integer_array":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "int* array"
+  },
+  "generate_integer_vector":
+  {
+    "description": "",
+    "parameters": ["int first", "int second"],
+    "returning": "int* vector"
+  },
+  "integer_array_total":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "int total"
+  },
+  "integer_array_section":
+  {
+    "description": "",
+    "parameters": ["int* array", "int first", "int second"],
+    "returning": "int* section"
+  },
+  "array_integer_index":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer"],
+    "returning": "int index"
+  },
+  "integers_inside_array":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int* integers"],
+    "returning": "int false / int true"
+  },
+  "generate_integer_matrix":
+  {
+    "description": "",
+    "parameters": ["int height", "int width"],
+    "returning": "int** matrix"
+  },
+  "allocate_matrix_integer":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int width", "int integer"],
+    "returning": "int** matrix"
+  },
+  "delete_matrix_integer":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int width"],
+    "returning": "int** matrix"
+  },
+  "integer_matrix_height":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int width"],
+    "returning": "int height"
+  },
+  "matrix_contains_integer":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int width", "int integer"],
+    "returning": "int false / int true"
+  },
+  "matrix_array_contains":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int index", "int integer"],
+    "returning": "int false / int true"
+  },
+  "remove_matrix_integer":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int integer"],
+    "returning": "int** matrix"
+  },
+  "add_matrix_integer":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int integer"],
+    "returning": "int** matrix"
+  },
+  "remove_matrix_array":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int* array"],
+    "returning": "int** matrix"
+  },
+  "add_matrix_array":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int* array"],
+    "returning": "int** matrix"
+  },
+  "generate_random_matrix":
+  {
+    "description": "",
+    "parameters": ["int height", "int width", "int minimum", "int maximum"],
+    "returning": "int** matrix"
+  },
+  "integer_matrix_stdout":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "width"],
+    "returning": "void"
+  },
+  "shuffle_matrix_arrays":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height"],
+    "returning": "int** matrix"
+  },
+  "duplicate_integer_matrix":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int widdth"],
+    "returning": "int** doublet"
+  },
+  "remove_matrix_integers":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int integer"],
+    "returning": "int** matrix"
+  },
+  "matrix_array_index":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int* array"],
+    "returning": "int index"
+  },
+  "sort_matrix_arrays":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height"],
+    "returning": "int** matrix"
+  },
+  "matrix_index_array":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int index"],
+    "returning": "int* array"
+  },
+  "compare_matrix_content":
+  {
+    "description": "",
+    "parameters": ["int** first", "int** second", "int height", "int width"],
+    "returning": "int false / int true"
+  },
+  "matrix_array_length":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int index"],
+    "returning": "int length"
+  },
+  "compare_integer_matrix":
+  {
+    "description": "",
+    "parameters": ["int** first", "int** second", "int height", "int width"],
+    "returning": "int false / int true"
+  },
+  "allocate_matrix_array":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int index", "int* array"],
+    "returning": "int** matrix"
+  },
+  "delete_matrix_array":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int index"],
+    "returning": "int** matrix"
+  },
+  "matrix_array_total":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int index"],
+    "returning": "int total"
+  },
+  "shuffle_integer_matrix":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height"],
+    "returning": "int** matrix"
+  },
+  "reverse_integer_matrix":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int width"],
+    "returning": "int** reverse"
+  },
+  "reverse_matrix_arrays":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height"],
+    "returning": "int** matrix"
+  },
+  "sort_integer_matrix":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height"],
+    "returning": "int** matrix"
+  },
+  "matrix_array_integer":
+  {
+    "description": "",
+    "parameters": ["int** matrix", "int height", "int width"],
+    "returning": "int integer"
+  },
+  "hashmap_keyword_exists":
+  {
+    "description": "",
+    "parameters": ["int** hashmpa", "int keyword"],
+    "returning": "int false / int true"
+  },
+  "integer_hashmap_length":
+  {
+    "description": "",
+    "parameters": ["int** hashmap"],
+    "returning": "int length"
+  },
+  "hashmap_keyword_index":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int keyword"],
+    "returning": "int index"
+  },
+  "increase_hashmap_value":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int keyword"],
+    "returning": "int** hashmap"
+  },
+  "allocate_keyword_value":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int keyword", "int value"],
+    "returning": "int** hashmap"
+  },
+  "convert_array_hashmap":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "int** hashmap"
+  },
+  "convert_hashmap_array":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length"],
+    "returning": "int* array"
+  },
+  "allocate_hashmap_keyword":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int index", "int keyword"],
+    "returning": "int** hashmap"
+  },
+  "integer_hashmap_keywords":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int value"],
+    "returning": "int* keywords"
+  },
+  "delete_hashmap_keyword":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length", "int index"],
+    "returning": "int** hashmap"
+  },
+  "integer_hashmap_stdout":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length"],
+    "returning": "void"
+  },
+  "generate_random_hashmap":
+  {
+    "description": "",
+    "parameters": ["int length", "int minimum", "int maximum"],
+    "returning": "int** hashmap"
+  },
+  "hashmap_index_value":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int index"],
+    "returning": "int value"
+  },
+  "hashmap_index_keyword":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int index"],
+    "returning": "int keyword"
+  },
+  "integer_hashmap_total":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length"],
+    "returning": "int total"
+  },
+  "hashmap_keyword_array":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length"],
+    "returning": "int* array"
+  },
+  "allocate_index_value":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int index", "int value"],
+    "returning": "int** hashmap"
+  },
+  "compare_integer_hashmaps":
+  {
+    "description": "",
+    "parameters": ["int** first", "int** second", "int length"],
+    "returning": "int false / int true"
+  },
+  "sort_integer_hashmap":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length"],
+    "returning": "int** hashmap"
+  },
+  "compare_hashmap_content":
+  {
+    "description": "",
+    "parameters": ["int** first", "int** second", "int length"],
+    "returning": "int false / int true"
+  },
+  "generate_integer_hashmap":
+  {
+    "description": "",
+    "parameters": ["int length"],
+    "returning": "int** hashmap"
+  },
+  "hashmap_keyword_value":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int keyword"],
+    "returning": "int value"
+  },
+  "duplicate_integer_hashmap":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length"],
+    "returning": "int** doublet"
+  },
+  "remove_hashmap_keyword":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length", "int keyword"],
+    "returning": "int** hashmap"
+  },
+  "allocate_hashmap_value":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int index", "int value"],
+    "returning": "int** hashmap"
+  },
+  "increase_index_value":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int index"],
+    "returning": "int** hashmap"
+  },
+  "reduce_index_value":
+  {
+    "description": "",
+    "parameters": ["int** hashmap", "int length", "int index"],
+    "returning": "int** hashmap"
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+  "":
+  {
+    "description": "",
+    "parameters": [""],
+    "returning": ""
+  },
+}

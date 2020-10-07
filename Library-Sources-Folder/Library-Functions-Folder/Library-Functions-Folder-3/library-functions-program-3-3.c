@@ -83,7 +83,7 @@ int** remove_hashmap_keyword(int** hashmap, int length,
 int check_hashmap_array(int** hashmap, int index)
 {
   return (hashmap_index_keyword(hashmap, index) != '\0'
-    && hashmap_index_value(hashmap, index) != 0);
+    && hashmap_index_value(hashmap, index) != '\0');
 }
 
 int** allocate_hashmap_value(int** hashmap, int index,

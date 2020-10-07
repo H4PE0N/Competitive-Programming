@@ -49,7 +49,7 @@ try:
     if(arguments[0] == "search"):
         keywords = arguments[1:]
         show_search_function_names(functions, keywords)
-    elif(arguments[0] == "information"):
+    elif(arguments[0] == "show"):
         func_name = arguments[1]
         show_function_information(functions, func_name)
 except Exception as message:
