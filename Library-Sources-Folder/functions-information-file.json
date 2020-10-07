@@ -21,7 +21,7 @@
   {
     "description": "",
     "parameters": ["int* array", "int length", "int integer"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "delete_array_integer":
   {
@@ -51,7 +51,7 @@
   {
     "description": "",
     "parameters": ["int* first", "int* second", "int length"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "remove_array_integers":
   {
@@ -69,7 +69,7 @@
   {
     "description": "",
     "parameters": ["int* array", "int minimum", "int maximum"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "generate_random_array":
   {
@@ -99,7 +99,7 @@
   {
     "description": "",
     "parameters": ["int* first", "int* second", "int length"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "duplicate_integer_array":
   {
@@ -147,7 +147,7 @@
   {
     "description": "",
     "parameters": ["int* array", "int length", "int* integers"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "generate_integer_matrix":
   {
@@ -177,13 +177,13 @@
   {
     "description": "",
     "parameters": ["int** matrix", "int height", "int width", "int integer"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "matrix_array_contains":
   {
     "description": "",
     "parameters": ["int** matrix", "int index", "int integer"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "remove_matrix_integer":
   {
@@ -261,7 +261,7 @@
   {
     "description": "",
     "parameters": ["int** first", "int** second", "int height", "int width"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "matrix_array_length":
   {
@@ -273,7 +273,7 @@
   {
     "description": "",
     "parameters": ["int** first", "int** second", "int height", "int width"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "allocate_matrix_array":
   {
@@ -309,7 +309,7 @@
   {
     "description": "",
     "parameters": ["int** matrix", "int height"],
-    "returning": "int** matrix"
+    "returning": "int** reverse"
   },
   "sort_integer_matrix":
   {
@@ -327,7 +327,7 @@
   {
     "description": "",
     "parameters": ["int** hashmpa", "int keyword"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "integer_hashmap_length":
   {
@@ -429,7 +429,7 @@
   {
     "description": "",
     "parameters": ["int** first", "int** second", "int length"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "sort_integer_hashmap":
   {
@@ -441,7 +441,7 @@
   {
     "description": "",
     "parameters": ["int** first", "int** second", "int length"],
-    "returning": "int false / int true"
+    "returning": "int boolean"
   },
   "generate_integer_hashmap":
   {
@@ -485,65 +485,275 @@
     "parameters": ["int** hashmap", "int length", "int index"],
     "returning": "int** hashmap"
   },
-  "":
+  "generate_character_string":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["int length"],
+    "returning": "char* string"
   },
-  "":
+  "character_string_length":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char* string"],
+    "returning": "int length"
   },
-  "":
+  "string_contains_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char* string", "int length", "char character"],
+    "returning": "int boolean"
   },
-  "":
+  "allocate_string_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char* string", "int index", "char character"],
+    "returning": "char* string"
   },
-  "":
+  "remove_string_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char* string", "int length", "char character"],
+    "returning": "char* string"
   },
-  "":
+  "add_string_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char* string", "int length", "char character"],
+    "returning": "char* string"
   },
-  "":
+  "lower_alphabet_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["int index"],
+    "returning": "char character"
   },
-  "":
+  "add_string_characters":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char* string", "int length", "char character", "int amount"],
+    "returning": "char* string"
   },
-  "":
+  "character_variable_greater":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char first", "char second"],
+    "returning": "int boolean"
   },
-  "":
+  "generate_random_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["int minimum", "int maximum"],
+    "returning": "char character"
+  },
+  "character_range_between":
+  {
+    "description": "",
+    "parameters": ["char character", "int minimum", "int maximum"],
+    "returning": "int boolean"
+  },
+  "remove_string_characters":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length", "char character"],
+    "returning": "char* string"
+  },
+  "generate_random_string":
+  {
+    "description": "",
+    "parameters": ["int length", "int minimum", "int maximum"],
+    "returning": "char* string"
+  },
+  "character_string_stdout":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length"],
+    "returning": "void"
+  },
+  "shuffle_character_string":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length"],
+    "returning": "char* string"
+  },
+  "duplicate_character_string":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length"],
+    "returning": "char* doublet"
+  },
+  "character_string_section":
+  {
+    "description": "",
+    "parameters": ["char* string", "int first", "int second"],
+    "returning": "char* section"
+  },
+  "sort_character_string":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length"],
+    "returning": "char* string"
+  },
+  "compare_string_content":
+  {
+    "description": "",
+    "parameters": ["char* first", "char* second", "int length"],
+    "returning": "int boolean"
+  },
+  "string_index_character":
+  {
+    "description": "",
+    "parameters": ["char* string", "int index"],
+    "returning": "char character"
+  },
+  "character_variable_smaller":
+  {
+    "description": "",
+    "parameters": ["char first", "char second"],
+    "returning": "int boolean"
+  },
+  "generate_higher_alphabet":
+  {
+    "description": "",
+    "parameters": ["int characters"],
+    "returning": "char* alphabet"
+  },
+  "higher_alphabet_character":
+  {
+    "description": "",
+    "parameters": ["int index"],
+    "returning": "char character"
+  },
+  "compare_character_strings":
+  {
+    "description": "",
+    "parameters": ["char* first", "char* second", "int length"],
+    "returning": "int boolean"
+  },
+  "generate_lower_alphabet":
+  {
+    "description": "",
+    "parameters": ["int characters"],
+    "returning": "char* alphabet"
+  },
+  "compare_character_variables":
+  {
+    "description": "",
+    "parameters": ["char first", "char second"],
+    "returning": "int boolean"
+  },
+  "delete_string_character":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length", "int index"],
+    "returning": "char* string"
+  },
+  "reverse_character_string":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length"],
+    "returning": "char* reverse"
+  },
+  "string_character_index":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length", "char character"],
+    "returning": "int index"
+  },
+  "characters_inside_string":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length", "char* characters"],
+    "returning": "int boolean"
+  },
+  "convert_integer_binary":
+  {
+    "description": "",
+    "parameters": ["int integer"],
+    "returning": "char* binary"
+  },
+  "convert_character_binary":
+  {
+    "description": "",
+    "parameters": ["char character"],
+    "returning": "char* binary"
+  },
+  "convert_array_binary":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "char** binary"
+  },
+  "convert_binary_array":
+  {
+    "description": "",
+    "parameters": ["char** binary", "int length"],
+    "returning": "int* array"
+  },
+  "convert_binary_integer":
+  {
+    "description": "",
+    "parameters": ["char* binary"],
+    "returning": "int integer"
+  },
+  "convert_binary_character":
+  {
+    "description": "",
+    "parameters": ["char* binary"],
+    "returning": "char character"
+  },
+  "generate_random_binary":
+  {
+    "description": "",
+    "parameters": ["int minimum", "int maximum"],
+    "returning": "char* binary"
+  },
+  "convert_string_binary":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length"],
+    "returning": "char** binary"
+  },
+  "convert_binary_string":
+  {
+    "description": "",
+    "parameters": ["char** binary", "int length"],
+    "returning": "char* string"
+  },
+  "integer_array_average":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "double average"
+  },
+  "array_integer_frequency":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer"],
+    "returning": "double frequency"
+  },
+  "integer_array_median":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "double median"
+  },
+  "integer_array_typical":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "int typical"
+  },
+  "array_integers_sequences":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "int sequences"
+  },
+  "array_integer_percent":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length", "int integer"],
+    "returning": "double percent"
   },
   "":
   {
