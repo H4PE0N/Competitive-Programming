@@ -1025,130 +1025,166 @@
     "parameters": [],
     "returning": "long time"
   },
-  "":
+  "generate_string_sentence":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["int height", "int width"],
+    "returning": "char** sentence"
   },
-  "":
+  "sentence_index_string":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "index"],
+    "returning": "char* string"
   },
-  "":
+  "compare_string_sentence":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** first", "char** second", "int height", "int width"],
+    "returning": "int boolean"
   },
-  "":
+  "allocate_sentence_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "int width", "char character"],
+    "returning": "char** sentence"
   },
-  "":
+  "allocate_sentence_string":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int index", "char* string"],
+    "returning": "char** sentence"
   },
-  "":
+  "string_sentence_height":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int width"],
+    "returning": "int height"
   },
-  "":
+  "reverse_sentence_strings":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height"],
+    "returning": "char** sentence"
   },
-  "":
+  "delete_sentence_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "int width"],
+    "returning": "char** sentence"
   },
-  "":
+  "delete_sentence_string":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "int index"],
+    "returning": "char** sentence"
   },
-  "":
+  "string_sentence_stdout":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "int width"],
+    "returning": "void"
   },
-  "":
+  "generate_random_sentence":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["int height", "int width", "int minimum", "int maximum"],
+    "returning": "char** sentence"
   },
-  "":
+  "duplicate_string_sentence":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "int width"],
+    "returning": "char** doublet"
   },
-  "":
+  "remove_sentence_characters":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "char character"],
+    "returning": "char** sentence"
   },
-  "":
+  "add_sentence_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "char character"],
+    "returning": "char** sentence"
   },
-  "":
+  "remove_sentence_string":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "char* string"],
+    "returning": "char** sentence"
   },
-  "":
+  "sentence_string_length":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int index"],
+    "returning": "int length"
   },
-  "":
+  "add_sentence_string":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "char* string"],
+    "returning": "char** sentence"
   },
-  "":
+  "sentence_string_contains":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int index", "char character"],
+    "returning": "int boolean"
   },
-  "":
+  "remove_sentence_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "char character"],
+    "returning": "char** sentence"
   },
-  "":
+  "string_sentence_character":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height", "int width"],
+    "returning": "char character"
   },
-  "":
+  "sort_sentence_strings":
   {
     "description": "",
-    "parameters": [""],
-    "returning": ""
+    "parameters": ["char** sentence", "int height"],
+    "returning": "char** sentence"
+  },
+  "shuffle_sentence_strings":
+  {
+    "description": "",
+    "parameters": ["char** sentence", "int height"],
+    "returning": "char** sentence"
+  },
+  "compare_sentence_content":
+  {
+    "description": "",
+    "parameters": ["char** first", "char** second", "int height", "int width"],
+    "returning": "int boolean"
+  },
+  "sort_string_sentence":
+  {
+    "description": "",
+    "parameters": ["char** sentence", "int height"],
+    "returning": "char** sentence"
+  },
+  "shuffle_string_sentence":
+  {
+    "description": "",
+    "parameters": ["char** sentence", "int height"],
+    "returning": "char** sentence"
+  },
+  "reverse_string_sentence":
+  {
+    "description": "",
+    "parameters": ["char** sentence", "int height", "int width"],
+    "returning": "char** reverse"
+  },
+  "sentence_string_index":
+  {
+    "description": "",
+    "parameters": ["char** sentence", "int height", "char* string"],
+    "returning": "int index"
   }
 }
