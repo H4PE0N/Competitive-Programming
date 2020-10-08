@@ -29,7 +29,7 @@ def show_function_information(functions, function):
 #######################################################
 def update_matched_functions(functions, function,
     keywords):
-    word_array = bread_down_function_name(function,
+    word_array = break_down_function_name(function,
         "_")
     for keyword in keywords:
         if(keyword not in word_array and keyword):
@@ -76,7 +76,7 @@ def remove_function_section(function, breakpoint):
             return function
     return None
 
-def bread_down_function_name(function, breakpoint):
+def break_down_function_name(function, breakpoint):
     word_array = []
     while(function != None):
         word_array=collect_function_section(word_array,

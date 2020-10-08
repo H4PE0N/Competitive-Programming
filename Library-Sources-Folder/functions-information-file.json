@@ -1,193 +1,193 @@
 {
   "allocate_array_integer":
   {
-    "description": "",
+    "description": "This function allocates a integer to the inputed array.\nThe new integer will be stored in the index slot in the\ninputed integer array.",
     "parameters": ["int* integer", "int index", "int integer"],
     "returning": "int* array"
   },
   "generate_integer_array":
   {
-    "description": "",
+    "description": "This function generates an integer  array  out  of  the\ninputed length. It cleans every slot in the array to be\nthe \\0 character.",
     "parameters": ["int length"],
     "returning": "int* array"
   },
   "integer_array_length":
   {
-    "description": "",
+    "description": "This function  calculates  the  length  of  an  integer\narray. It does that with help of the \\0 characters. The\nfirst \\0 character decides the length.",
     "parameters": ["int* array"],
     "returning": "int length"
   },
   "array_contains_integer":
   {
-    "description": "",
+    "description": "This function checks if the array contains one or  more\nof the integer. The function looks over the  array  and\nreturns positive if the integer was found.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int boolean"
   },
   "delete_array_integer":
   {
-    "description": "",
+    "description": "The function deletes a integer at slot index  from  the\ninputed array, by moving the chosen integer to the  end\nand then replace it with a \\0 character.",
     "parameters": ["int* array", "int length", "int index"],
     "returning": "int* array"
   },
   "add_array_integer":
   {
-    "description": "",
+    "description": "The function  allocates  the  integer  to  the  inputed\narray, by calling the  allocate_array_integer  function\nwith the length as the index.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int* array"
   },
   "sort_integer_array":
   {
-    "description": "",
+    "description": "To sort the inputed array,  the  function  uses  bubble\nsort. With  help  of  the  length  of  the  array,  the\nfunction can sort relatively fast.",
     "parameters": ["int* array", "int length"],
     "returning": "int* array"
   },
   "remove_array_integer":
   {
-    "description": "",
+    "description": "This function removes  the  inputed  integer  from  the\narray. The function calls  the  delete  function  after\ncalculating the index of the integer.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int* array"
   },
   "compare_integer_arrays":
   {
-    "description": "",
+    "description": "This function compares the two arrays that comes in  as\nparameters. It compares every integer after each other.\nThe arrays must be same length.",
     "parameters": ["int* first", "int* second", "int length"],
     "returning": "int boolean"
   },
   "remove_array_integers":
   {
-    "description": "",
+    "description": "This function removes  every  integer  in  the  inputed\narray, bu using the  remove  function  it  removes  the\ninteger until there is no more in the array.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int* array"
   },
   "array_integer_amount":
   {
-    "description": "",
+    "description": "The function returns the  amount  of  inputed  integers\nthere are in the array. This function can  be  used  to\nfind the frequency of the integer.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int amount"
   },
   "integers_range_between":
   {
-    "description": "",
+    "description": "This function uses the  integer_range_between  function\nto check if all the integers range between the  minimum\nand the maximum integers.",
     "parameters": ["int* array", "int minimum", "int maximum"],
     "returning": "int boolean"
   },
   "generate_random_array":
   {
-    "description": "",
+    "description": "To generate a random array, you will use this function.\nWith the help of a minimum and a  maximum  integer,  it\ngenerates a array with length random integers.",
     "parameters": ["int length", "int minimum", "int maximum"],
     "returning": "int* array"
   },
   "reverse_integer_array":
   {
-    "description": "",
+    "description": "This function reverses the order of the integers inside\nthe array. It creates a new array and fill it with  the\nintegers backwards.",
     "parameters": ["int* array", "int length"],
     "returning": "int* reverse"
   },
   "add_array_integers":
   {
-    "description": "",
+    "description": "This function uses the  add_array_integer  function  to\nadd amount integers  to  the  inputed  array.  This  is\nuseful when you need to add multiple integers.",
     "parameters": ["int* array", "int length", "int integer", "int amount"],
     "returning": "int* array"
   },
   "integer_array_stdout":
   {
-    "description": "",
+    "description": "This function prints out an array to the  console  with\nstandard output. This  is  helpful  when  you  want  to\ndebug, not for actual programs.",
     "parameters": ["int* array", "int length"],
     "returning": "void"
   },
   "compare_array_content":
   {
-    "description": "",
+    "description": "To compare two arrays without caring about the order of\nthe integers, you can use this function. It  sorts  the\narrays and then compare them.",
     "parameters": ["int* first", "int* second", "int length"],
     "returning": "int boolean"
   },
   "duplicate_integer_array":
   {
-    "description": "",
+    "description": "If you want to  have  two  copies  of  the  same  array\nwithout messing with the  memory  allocation,  you  can\nduplicate your array with this.",
     "parameters": ["int* array", "int length"],
     "returning": "int* doublet"
   },
   "array_index_integer":
   {
-    "description": "",
+    "description": "To get the integer that is in the  index  slot  of  the\narray, you can use this function to don't  confuse  any\nprogrammer that don't program in C.",
     "parameters": ["int* array", "int index"],
     "returning": "int integer"
   },
   "shuffle_integer_array":
   {
-    "description": "",
+    "description": "This function shuffles the integer array  pretty  well.\nIf you aren't happy of the results I recommend  calling\nthe function again.",
     "parameters": ["int* array", "int length"],
     "returning": "int* array"
   },
   "generate_integer_vector":
   {
-    "description": "",
+    "description": "This function generates a integer array with two slots,\nboth of the integers comes from the parameters.  Choose\nwhich integers you want.",
     "parameters": ["int first", "int second"],
     "returning": "int* vector"
   },
   "integer_array_total":
   {
-    "description": "",
+    "description": "This function calculates the total  value  of  all  the\nintegers in the array added to each other. So  you  get\nthe sum of the arrays integers.",
     "parameters": ["int* array", "int length"],
     "returning": "int total"
   },
   "integer_array_section":
   {
-    "description": "",
+    "description": "To get a section from the array, like cutting  a  cake.\nYou can use this function. The array  section  will  be\nbetween the indexes you put in.",
     "parameters": ["int* array", "int first", "int second"],
     "returning": "int* section"
   },
   "array_integer_index":
   {
-    "description": "",
+    "description": "This function calculates the index of the first integer\nthat matches the integer you had as  argument  for  the\nfunction in the array.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int index"
   },
   "integers_inside_array":
   {
-    "description": "",
+    "description": "This function checks if the inputed integers is part of\nthe inputed array. The order of the  integers  matters,\nso it has to fit in the array.",
     "parameters": ["int* array", "int length", "int* integers"],
     "returning": "int boolean"
   },
   "generate_integer_matrix":
   {
-    "description": "",
+    "description": "The function generates an empty matrix with the  height\nand width that you put as arguments. Every slot will be\nthe \\0 character.",
     "parameters": ["int height", "int width"],
     "returning": "int** matrix"
   },
   "allocate_matrix_integer":
   {
-    "description": "",
+    "description": "To allocate a integer inside the  matrix  you  can  use\nthis  function.  It  is  like  a  backwards  coordinate\nsystem, but with height and width. ",
     "parameters": ["int** matrix", "int height", "int width", "int integer"],
     "returning": "int** matrix"
   },
   "delete_matrix_integer":
   {
-    "description": "",
+    "description": "This  function  functions  the  same  as  the  allocate\nfunction, but it deletes a integer from the coordinate,\nunlike the other function.",
     "parameters": ["int** matrix", "int height", "int width"],
     "returning": "int** matrix"
   },
   "integer_matrix_height":
   {
-    "description": "",
+    "description": "To calculate the height of the  inputed  matrix  array,\nyou will have to use the total width of the  matrix  to\ncheck if the arrays are full or not.",
     "parameters": ["int** matrix", "int width"],
     "returning": "int height"
   },
   "matrix_contains_integer":
   {
-    "description": "",
+    "description": "This  function  checks  if  the  inputed   integer   is\nsomewhere in the inputed matrix. It checks all  of  the\narrays for the integer.",
     "parameters": ["int** matrix", "int height", "int width", "int integer"],
     "returning": "int boolean"
   },
   "matrix_array_contains":
   {
-    "description": "",
+    "description": "To check if a specific  array  of  the  inputed  matrix\ncontains the integer, you can  use  this  function.  It\nchecks only one array for a integer.",
     "parameters": ["int** matrix", "int index", "int integer"],
     "returning": "int boolean"
   },
   "remove_matrix_integer":
   {
-    "description": "",
+    "description": "This function removes the last of the  inputed  integer\nthat was added to the matrix. So you don't have to  say\non which height and width.",
     "parameters": ["int** matrix", "int height", "int integer"],
     "returning": "int** matrix"
   },
