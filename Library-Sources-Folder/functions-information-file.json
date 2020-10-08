@@ -193,73 +193,73 @@
   },
   "add_matrix_integer":
   {
-    "description": "",
+    "description": "When you allocate a integer to a  matrix  you  have  to\ngive the function height and width,  here  the  function\nadds the integer to the end of the matrix.",
     "parameters": ["int** matrix", "int height", "int integer"],
     "returning": "int** matrix"
   },
   "remove_matrix_array":
   {
-    "description": "",
+    "description": "This function removes the last of the integer array  in\nthe matrix. Unlike the delete function, you don't need\nto give the function a height and a width.",
     "parameters": ["int** matrix", "int height", "int* array"],
     "returning": "int** matrix"
   },
   "add_matrix_array":
   {
-    "description": "",
+    "description": "This function lets you add  an  integer  array  to  the\nmatrix, without having to give it a height or a  width.\nThe array will be stored at the end of the matrix.",
     "parameters": ["int** matrix", "int height", "int* array"],
     "returning": "int** matrix"
   },
   "generate_random_matrix":
   {
-    "description": "",
+    "description": "To generate a  matrix  with  random  generated  integer\narrays, you can use this function. The integers will be\nbetween minimum and maximum.",
     "parameters": ["int height", "int width", "int minimum", "int maximum"],
     "returning": "int** matrix"
   },
   "integer_matrix_stdout":
   {
-    "description": "",
+    "description": "This function prints out the inputted matrix  array  in\nthe console. Just like the other stdout  functions,  it\nis not meant to look beautiful.",
     "parameters": ["int** matrix", "int height", "width"],
     "returning": "void"
   },
   "shuffle_matrix_arrays":
   {
-    "description": "",
+    "description": "In this function, every array in  the  inputted  matrix\nwill be shuffled using the array shuffle function,  you\ncan always shuffle again if you want it better.",
     "parameters": ["int** matrix", "int height"],
     "returning": "int** matrix"
   },
   "duplicate_integer_matrix":
   {
-    "description": "",
+    "description": "If you want to of the same  matrix  without  having  to\ndeal with  memory  problems,  you  can  duplicate  your\nmatrix with this function.",
     "parameters": ["int** matrix", "int height", "int widdth"],
     "returning": "int** doublet"
   },
   "remove_matrix_integers":
   {
-    "description": "",
+    "description": "This function uses the  remove_array_integers  function\nto remove  every  integer  that  matches  the  inputted\ninteger in the matrix array.",
     "parameters": ["int** matrix", "int height", "int integer"],
     "returning": "int** matrix"
   },
   "matrix_array_index":
   {
-    "description": "",
+    "description": "If you want the  index  of  a  integer  array  in  your\nmatrix, you can use this function.  It  calculates  the\nindex of an array in a inputted matrix.",
     "parameters": ["int** matrix", "int height", "int* array"],
     "returning": "int index"
   },
   "sort_matrix_arrays":
   {
-    "description": "",
+    "description": "When you put in a matrix  in  this  function,  it  will\nreturn  with  all  of  it's  arrays  sorted  using  the\nsort_integer_array function on every array.",
     "parameters": ["int** matrix", "int height"],
     "returning": "int** matrix"
   },
   "matrix_index_array":
   {
-    "description": "",
+    "description": "This function returns the array that  is  in  the  slot\nindex inside the inputted matrix  array.  You  get  the\ncorresponding array for the specific index.",
     "parameters": ["int** matrix", "int index"],
     "returning": "int* array"
   },
   "compare_matrix_content":
   {
-    "description": "",
+    "description": "If you want to  compare  two  matrices  without  caring\nabout the order of them, you can use this function.  It\ncompares matrices after sorting them.",
     "parameters": ["int** first", "int** second", "int height", "int width"],
     "returning": "int boolean"
   },
