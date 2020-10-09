@@ -289,7 +289,7 @@
   },
   "matrix_array_total":
   {
-    "description": "The function let's you calculate the total value of all\nof the integers in one of the matrix arrays,  using  an\nindex to determine the array.",
+    "description": "The function lets you calculate the total value of  all\nof the integers in one of the matrix arrays,  using  an\nindex to determine the array.",
     "parameters": ["int** matrix", "int index"],
     "returning": "int total"
   },
@@ -325,61 +325,61 @@
   },
   "hashmap_keyword_exists":
   {
-    "description": "",
+    "description": "This function loops through the  hashmap  and  compares\nthe current keyword to the inputted keyword, it  checks\nif the keyword exists in the hashmap.",
     "parameters": ["int** hashmpa", "int keyword"],
     "returning": "int boolean"
   },
   "integer_hashmap_length":
   {
-    "description": "",
+    "description": "To calculate the length of your hashmap,  you  can  use\nthis function. It checks if the current slot is  empty,\nboth the keyword and value are null.",
     "parameters": ["int** hashmap"],
     "returning": "int length"
   },
   "hashmap_keyword_index":
   {
-    "description": "",
+    "description": "This function returns the index of a keyword. It  loops\nthrough the inputted hashmap and compares the keywords,\nreturns the index if it matches.",
     "parameters": ["int** hashmap", "int keyword"],
     "returning": "int index"
   },
   "increase_hashmap_value":
   {
-    "description": "",
+    "description": "If you want to increase the value of a keyword  in  the\nhashmap, you could use this function.  If  the  keyword\ndoes not exists, it will create it.",
     "parameters": ["int** hashmap", "int keyword"],
     "returning": "int** hashmap"
   },
   "allocate_keyword_value":
   {
-    "description": "",
+    "description": "This function let you allocate a value to a keyword  in\nthe  inputted  hashmap.  By  converting  the   inputted\nkeyword to an index, it allocates the value.",
     "parameters": ["int** hashmap", "int keyword", "int value"],
     "returning": "int** hashmap"
   },
   "convert_array_hashmap":
   {
-    "description": "",
+    "description": "When you have an array of integers and want to  convert\nit to a hashmap, to see the amount of all the integers,\nyou can use this function.",
     "parameters": ["int* array", "int length"],
     "returning": "int** hashmap"
   },
   "convert_hashmap_array":
   {
-    "description": "",
+    "description": "This function generates an array with the length of the\nhashmap total value. Then it fills the array  with  the\nintegers from the inputted hashmap.",
     "parameters": ["int** hashmap", "int length"],
     "returning": "int* array"
   },
   "allocate_hashmap_keyword":
   {
-    "description": "",
+    "description": "This function  lets  you  allocate  a  keyword  to  the\ninputted matrix by using an index. You say which  index\nyou want to store the keyword, and it does that.",
     "parameters": ["int** hashmap", "int index", "int keyword"],
     "returning": "int** hashmap"
   },
   "integer_hashmap_keywords":
   {
-    "description": "",
+    "description": "Sometimes it can be useful to  have the  keywords  with\nthe same value. This function returns an array with all\nthe keywords that have a specific value.",
     "parameters": ["int** hashmap", "int value"],
     "returning": "int* keywords"
   },
   "delete_hashmap_keyword":
   {
-    "description": "",
+    "description": "When you want to get rid of a slot in your hashmap, you\ncan call this function. It removes both the keyword and\nvalue from the hashmap with an index.",
     "parameters": ["int** hashmap", "int length", "int index"],
     "returning": "int** hashmap"
   },
