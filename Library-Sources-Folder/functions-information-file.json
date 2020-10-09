@@ -265,61 +265,61 @@
   },
   "matrix_array_length":
   {
-    "description": "",
+    "description": "If you want to calculate  the  length  of  one  of  the\narrays in a matrix, you  can  call  this  function.  It\nreturns the length of a index specific array.",
     "parameters": ["int** matrix", "int index"],
     "returning": "int length"
   },
   "compare_integer_matrix":
   {
-    "description": "",
+    "description": "This function compares two matrices  using  the  height\nand width of the inputed matrices.  They  must  be  the\n same height and width.",
     "parameters": ["int** first", "int** second", "int height", "int width"],
     "returning": "int boolean"
   },
   "allocate_matrix_array":
   {
-    "description": "",
+    "description": "When you want to allocate  a  matrix  array  with  this\nfunction, it works the same way as allocate  a  integer\nin an array. With help of an index.",
     "parameters": ["int** matrix", "int index", "int* array"],
     "returning": "int** matrix"
   },
   "delete_matrix_array":
   {
-    "description": "",
+    "description": "This function deletes an array from the inputted matrix\nusing an index. It moves the array to the end and erase\nit from memory, by making it empty",
     "parameters": ["int** matrix", "int height", "int index"],
     "returning": "int** matrix"
   },
   "matrix_array_total":
   {
-    "description": "",
+    "description": "The function let's you calculate the total value of all\nof the integers in one of the matrix arrays,  using  an\nindex to determine the array.",
     "parameters": ["int** matrix", "int index"],
     "returning": "int total"
   },
   "shuffle_integer_matrix":
   {
-    "description": "",
+    "description": "If you want to shuffle around the arrays in  a  matrix,\nyou can call this function. It moves around the  arrays\n from the inputted matrix randomly.",
     "parameters": ["int** matrix", "int height"],
     "returning": "int** matrix"
   },
   "reverse_integer_matrix":
   {
-    "description": "",
+    "description": "This function generates  a  new  matrix  and  adds  the\narrays from the inputted matrix in backwards order. The\nreversed matrix becomes mirrored.",
     "parameters": ["int** matrix", "int height", "int width"],
     "returning": "int** reverse"
   },
   "reverse_matrix_arrays":
   {
-    "description": "",
+    "description": "The function loops through the inputted matrix and uses\nthe reverse_integer_array function to mirror the  order\nof the integers in every array.",
     "parameters": ["int** matrix", "int height"],
     "returning": "int** reverse"
   },
   "sort_integer_matrix":
   {
-    "description": "",
+    "description": "This function sorts the inputted  matrix  by  comparing\nthe arrays integers. The function does not compare  the\narrays by the total integer values.",
     "parameters": ["int** matrix", "int height"],
     "returning": "int** matrix"
   },
   "matrix_array_integer":
   {
-    "description": "",
+    "description": "This  function  returns  the  integer  of  a   specific\ncoordinate. By inputting the height and width that  you\nwant to access, you get the integer.",
     "parameters": ["int** matrix", "int height", "int width"],
     "returning": "int integer"
   },
