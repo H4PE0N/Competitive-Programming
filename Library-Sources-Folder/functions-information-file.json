@@ -1,13 +1,13 @@
 {
   "allocate_array_integer":
   {
-    "description": "This function allocates a integer to the inputed array.\nThe new integer will be stored in the index slot in the\ninputed integer array.",
+    "description": "This function  allocates  an  integer  to  the  inputed\narray. The new integer will be stored in the index slot in the\ninputed integer array.",
     "parameters": ["int* integer", "int index", "int integer"],
     "returning": "int* array"
   },
   "generate_integer_array":
   {
-    "description": "This function generates an integer  array  out  of  the\ninputed length. It cleans every slot in the array to be\nthe \\0 character.",
+    "description": "When you want to have an integer array, you  will  have\nto think of want length it should be. Then you put it in\nthis function, and it returns the array.",
     "parameters": ["int length"],
     "returning": "int* array"
   },
@@ -25,7 +25,7 @@
   },
   "delete_array_integer":
   {
-    "description": "The function deletes a integer at slot index  from  the\ninputed array, by moving the chosen integer to the  end\nand then replace it with a \\0 character.",
+    "description": "The function deletes an integer at slot index from  the\ninputed array, by moving the chosen integer to the  end\nand then replace it with a \\0 character.",
     "parameters": ["int* array", "int length", "int index"],
     "returning": "int* array"
   },
@@ -67,7 +67,7 @@
   },
   "integers_range_between":
   {
-    "description": "This function uses the  integer_range_between  function\nto check if all the integers range between the  minimum\nand the maximum integers.",
+    "description": "This function uses the  integer_range_between  function\nto check if all the integers range between the  minimum\nand the maximum parameters of the function.",
     "parameters": ["int* array", "int minimum", "int maximum"],
     "returning": "int boolean"
   },
@@ -115,13 +115,13 @@
   },
   "shuffle_integer_array":
   {
-    "description": "This function shuffles the integer array  pretty  well.\nIf you aren't happy of the results I recommend  calling\nthe function again.",
+    "description": "This function shuffles the integer array  pretty  well.\nIf you aren't happy of the results I recommend  calling\nthe function again, until it is random.",
     "parameters": ["int* array", "int length"],
     "returning": "int* array"
   },
   "generate_integer_vector":
   {
-    "description": "This function generates a integer array with two slots,\nboth of the integers comes from the parameters.  Choose\nwhich integers you want.",
+    "description": "This function  generates  an  integer  array  with  two\nslots, both of the integers comes from the  parameters.\nChoose which integers you want.",
     "parameters": ["int first", "int second"],
     "returning": "int* vector"
   },
@@ -151,19 +151,19 @@
   },
   "generate_integer_matrix":
   {
-    "description": "The function generates an empty matrix with the  height\nand width that you put as arguments. Every slot will be\nthe \\0 character.",
+    "description": "The function generates an empty matrix with the  height\nand width that you put in as arguments. Every slot will\nbe allocated the \\0 character.",
     "parameters": ["int height", "int width"],
     "returning": "int** matrix"
   },
   "allocate_matrix_integer":
   {
-    "description": "To allocate a integer inside the  matrix  you  can  use\nthis  function.  It  is  like  a  backwards  coordinate\nsystem, but with height and width. ",
+    "description": "To allocate an integer inside the matrix  you  can  use\nthis  function.  It  is  like  a  backwards  coordinate\nsystem, but with height and width. ",
     "parameters": ["int** matrix", "int height", "int width", "int integer"],
     "returning": "int** matrix"
   },
   "delete_matrix_integer":
   {
-    "description": "This  function  functions  the  same  as  the  allocate\nfunction, but it deletes a integer from the coordinate,\nunlike the other function.",
+    "description": "This  function  functions  the  same  as  the  allocate\nfunction,  but  it  deletes   an   integer   from   the\ncoordinate, unlike the other function.",
     "parameters": ["int** matrix", "int height", "int width"],
     "returning": "int** matrix"
   },
@@ -175,13 +175,13 @@
   },
   "matrix_contains_integer":
   {
-    "description": "This  function  checks  if  the  inputed   integer   is\nsomewhere in the inputed matrix. It checks all  of  the\narrays for the integer.",
+    "description": "You can use this to check  if  a  specific  integer  is\nsomewhere in your integer matrix. The function  returns\ntrue if the inputted matrix contains the integer.",
     "parameters": ["int** matrix", "int height", "int width", "int integer"],
     "returning": "int boolean"
   },
   "matrix_array_contains":
   {
-    "description": "To check if a specific  array  of  the  inputed  matrix\ncontains the integer, you can  use  this  function.  It\nchecks only one array for a integer.",
+    "description": "To check if a specific  array  of  the  inputed  matrix\ncontains the integer, you can  use  this  function.  It\nchecks only one array for an integer.",
     "parameters": ["int** matrix", "int index", "int integer"],
     "returning": "int boolean"
   },
@@ -193,7 +193,7 @@
   },
   "add_matrix_integer":
   {
-    "description": "When you allocate a integer to a  matrix  you  have  to\ngive the function height and width,  here  the  function\nadds the integer to the end of the matrix.",
+    "description": "When you allocate an integer to a matrix  you  have  to\ngive the function height and width, here  the  function\nadds the integer to the end of the matrix.",
     "parameters": ["int** matrix", "int height", "int integer"],
     "returning": "int** matrix"
   },
@@ -218,7 +218,7 @@
   "integer_matrix_stdout":
   {
     "description": "This function prints out the inputted matrix  array  in\nthe console. Just like the other stdout  functions,  it\nis not meant to look beautiful.",
-    "parameters": ["int** matrix", "int height", "width"],
+    "parameters": ["int** matrix", "int height", "int width"],
     "returning": "void"
   },
   "shuffle_matrix_arrays":
@@ -385,409 +385,403 @@
   },
   "integer_hashmap_stdout":
   {
-    "description": "",
+    "description": "When you want to take a look at your  integer  hashmap,\nyou can use this function. It loops through the hashmap\nand prints out the keyword before the value.",
     "parameters": ["int** hashmap", "int length"],
     "returning": "void"
   },
   "generate_random_hashmap":
   {
-    "description": "",
+    "description": "This function generates an array of integers  with  the\ninputted length, that it then converts  to  a  hashmap.\nThe integers are between minimum and maximum.",
     "parameters": ["int length", "int minimum", "int maximum"],
     "returning": "int** hashmap"
   },
   "hashmap_index_value":
   {
-    "description": "",
+    "description": "If you want the value in a hashmap by using  an  index,\nyou can call this function with your  hashmap  and  the\nindex you want the value from.",
     "parameters": ["int** hashmap", "int index"],
     "returning": "int value"
   },
   "hashmap_index_keyword":
   {
-    "description": "",
+    "description": "If you want the keyword in a hashmap by using an index,\nyou can call this function with your  hashmap  and  the\nindex you want the keyword from.",
     "parameters": ["int** hashmap", "int index"],
     "returning": "int keyword"
   },
   "integer_hashmap_total":
   {
-    "description": "",
+    "description": "This function calculates the total value of  a  hashmap\nby adding up the values from  the  hashmap.  The  total\nvalue of the hashmap, says how many items there are.",
     "parameters": ["int** hashmap", "int length"],
     "returning": "int total"
   },
   "hashmap_keyword_array":
   {
-    "description": "",
+    "description": "You can  use  this  function  to  collect  all  of  the\nkeywords in a hashmap. It loops through the  collection\nand adds the keyword to an array, by using the index.",
     "parameters": ["int** hashmap", "int length"],
     "returning": "int* array"
   },
-  "allocate_index_value":
-  {
-    "description": "",
-    "parameters": ["int** hashmap", "int index", "int value"],
-    "returning": "int** hashmap"
-  },
   "compare_integer_hashmaps":
   {
-    "description": "",
+    "description": "This function is currently not available...",
     "parameters": ["int** first", "int** second", "int length"],
     "returning": "int boolean"
   },
   "sort_integer_hashmap":
   {
-    "description": "",
+    "description": "This function sorts the inputted hashmap  by  comparing\nthe keywords. The smallest keyword will be at the start\nand the greatest at the end of the hashmap.",
     "parameters": ["int** hashmap", "int length"],
     "returning": "int** hashmap"
   },
   "compare_hashmap_content":
   {
-    "description": "",
+    "description": "When you want to compare two  hashmaps,  and  does  not\ncare about if the order of one  hashmap  is  incorrect.\nYou can use this function to compare two hashmaps.",
     "parameters": ["int** first", "int** second", "int length"],
     "returning": "int boolean"
   },
   "generate_integer_hashmap":
   {
-    "description": "",
+    "description": "A hashmap is generated by  creating  a  matrix  with  a\nspecific length as the height  and  two  slots  as  the\nwidth. You can do that with this function. ",
     "parameters": ["int length"],
     "returning": "int** hashmap"
   },
   "hashmap_keyword_value":
   {
-    "description": "",
+    "description": "When you want to know the value of a  specific  keyword\nin your hashmap, you can get the value by inputting the\nkeyword and your hashmap in this function.",
     "parameters": ["int** hashmap", "int keyword"],
     "returning": "int value"
   },
   "duplicate_integer_hashmap":
   {
-    "description": "",
+    "description": "If you want to have two hashmaps with the same content,\nyou can duplicate one here.  By  duplicating  you  wont\nhave a problem about where in memory it is stored.",
     "parameters": ["int** hashmap", "int length"],
     "returning": "int** doublet"
   },
   "remove_hashmap_keyword":
   {
-    "description": "",
+    "description": "To remove a hashmap keyword you will have to input  the\nkeyword  you  want  to  remove.   Then   the   function\ncalculates the index, and deletes the index slot.",
     "parameters": ["int** hashmap", "int length", "int keyword"],
     "returning": "int** hashmap"
   },
   "allocate_hashmap_value":
   {
-    "description": "",
+    "description": "When you want to allocate a value to a specific slot in\nyour hashmap, you can do that with this  function.  You\nchoose which index you want the value to be in.",
     "parameters": ["int** hashmap", "int index", "int value"],
     "returning": "int** hashmap"
   },
   "increase_index_value":
   {
-    "description": "",
+    "description": "This function lets you increase a value in you  hashmap\nby one. Choose which value in the hashmap you  want  to\nincrease by inputting the corresponding index.",
     "parameters": ["int** hashmap", "int index"],
     "returning": "int** hashmap"
   },
   "reduce_index_value":
   {
-    "description": "",
+    "description": "This function reduces the value in a hashmap  given  an\nindex. If the  value  is  one  or  less,  the  function\nremoves the slot completely from the inputted hashmap.",
     "parameters": ["int** hashmap", "int length", "int index"],
     "returning": "int** hashmap"
   },
   "generate_character_string":
   {
-    "description": "",
+    "description": "With the help of this function,  you  can  generate  an\nempty string. By inputting the length as an argument to\nthe function, the string will have that length.",
     "parameters": ["int length"],
     "returning": "char* string"
   },
   "character_string_length":
   {
-    "description": "",
+    "description": "To calculate the length of your character  string,  you\ncan use this function. It loops through until it  finds\nthe \\0 character. Then it stops and returns the index.",
     "parameters": ["char* string"],
     "returning": "int length"
   },
   "string_contains_character":
   {
-    "description": "",
+    "description": "This function lets you check if your  character  string\ncontains a specific  character.  The  function  returns\ntrue if the character exists and false if it don't.",
     "parameters": ["char* string", "int length", "char character"],
     "returning": "int boolean"
   },
   "allocate_string_character":
   {
-    "description": "",
+    "description": "With the help of an index, you can allocate a character\nin your string using this function. The character  will\nbe stored in the string under the inputted index.",
     "parameters": ["char* string", "int index", "char character"],
     "returning": "char* string"
   },
   "remove_string_character":
   {
-    "description": "",
+    "description": "When you don't want a character in your string  anymore\nyou can remove it with this function. It calculates the\nindex of the character, then deletes it.",
     "parameters": ["char* string", "int length", "char character"],
     "returning": "char* string"
   },
   "add_string_character":
   {
-    "description": "",
+    "description": "To add a character to your string,  you  can  use  this\nfunction. By inputting the length of  the  string,  the\nfunction allocates the character to the end.",
     "parameters": ["char* string", "int length", "char character"],
     "returning": "char* string"
   },
   "lower_alphabet_character":
   {
-    "description": "",
+    "description": "The alphabet has 26 letters.  By  inputting  a  integer\nbetween 1 and 26, the function uses the integer  as  an\nindex to the lower alphabet and returns the character.",
     "parameters": ["int index"],
     "returning": "char character"
   },
   "add_string_characters":
   {
-    "description": "",
+    "description": "This function adds multiple of the same  character.  By\ninputting the  integer  you  want  and  the  amount  of\nintegers, this function adds them to your string.",
     "parameters": ["char* string", "int length", "char character", "int amount"],
     "returning": "char* string"
   },
   "character_variable_greater":
   {
-    "description": "",
+    "description": "To know if one character is greater than  another,  you\ncan use this function to determine. The first parameter\nis the one that is going to be tested at the other.",
     "parameters": ["char first", "char second"],
     "returning": "int boolean"
   },
   "generate_random_character":
   {
-    "description": "",
+    "description": "This  function  generates   a   random   character   by\nconverting the random generated integer  to  an  index.\nThe index is then translated to the ascii table.",
     "parameters": ["int minimum", "int maximum"],
     "returning": "char character"
   },
   "character_range_between":
   {
-    "description": "",
+    "description": "Same as with the integer, this function checks  if  the\nascii index of the character is between a minimum and a\nmaximum integer. If it is, the function returns true.",
     "parameters": ["char character", "int minimum", "int maximum"],
     "returning": "int boolean"
   },
   "remove_string_characters":
   {
-    "description": "",
+    "description": "When you call this function  with  your  string  and  a\ninteger. The string will  not  have  any  integer  that\nmatches the integer you first put in.",
     "parameters": ["char* string", "int length", "char character"],
     "returning": "char* string"
   },
   "generate_random_string":
   {
-    "description": "",
+    "description": "With the help of a function  that  generates  a  random\ncharacter, this function can  generate  a  string  with\nthose characters in it. The string length is chosen.",
     "parameters": ["int length", "int minimum", "int maximum"],
     "returning": "char* string"
   },
   "character_string_stdout":
   {
-    "description": "",
+    "description": "To print out a string in the console you can use a  for\nloop with a print statement in it. That  is  what  this\nfunction is made of. A loop that prints the characters.",
     "parameters": ["char* string", "int length"],
     "returning": "void"
   },
   "shuffle_character_string":
   {
-    "description": "",
+    "description": "To shuffle a string, you can switch two of the  indexes\nrandomly, and continue on the  whole  string.  That  is\nwhat this function does, shuffles a inputted string.",
     "parameters": ["char* string", "int length"],
     "returning": "char* string"
   },
   "duplicate_character_string":
   {
-    "description": "",
+    "description": "When you want to have two of the same string,  you  can\ncall this function with the string and its length.  The\ndoublet will be returned same as the first string.",
     "parameters": ["char* string", "int length"],
     "returning": "char* doublet"
   },
   "character_string_section":
   {
-    "description": "",
+    "description": "If you want a piece of  a  string,  you  will  have  to\nfigure out which indexes the section will  be  between.\nThen you can call this function to get the section.",
     "parameters": ["char* string", "int first", "int second"],
     "returning": "char* section"
   },
   "sort_character_string":
   {
-    "description": "",
+    "description": "By comparing two characters that is adjacent  over  and\nover again, you can sort a  string  with  bubble  sort.\nThis function sorts a inputted string with the length.",
     "parameters": ["char* string", "int length"],
     "returning": "char* string"
   },
   "compare_string_content":
   {
-    "description": "",
+    "description": "When you want  to  compare  two  strings  against  each\nother, but don't care about the order of them. You  can\nuse this function to compare the strings content.",
     "parameters": ["char* first", "char* second", "int length"],
     "returning": "int boolean"
   },
   "string_index_character":
   {
-    "description": "",
+    "description": "You can get the character in a string by using an index\nin this function. When you put in your character string\nand an index, the function will return a character.",
     "parameters": ["char* string", "int index"],
     "returning": "char character"
   },
   "character_variable_smaller":
   {
-    "description": "",
+    "description": "To check if one character is smaller than another,  you\ncan use this  function.  The  first  character  in  the\nparameters is the one that is going to be checked.",
     "parameters": ["char first", "char second"],
     "returning": "int boolean"
   },
   "generate_higher_alphabet":
   {
-    "description": "",
+    "description": "This function will  generate  the  alphabet  in  higher\ncharacters. You get to choose how many of the  alphabet\ncharacters there will be generated in the string.",
     "parameters": ["int characters"],
     "returning": "char* alphabet"
   },
   "higher_alphabet_character":
   {
-    "description": "",
+    "description": "The higher alphabet has only characters in upper  case.\nBy calling this function with an index from  1  to  26,\nyou get the alphabet character with that index.",
     "parameters": ["int index"],
     "returning": "char character"
   },
   "compare_character_strings":
   {
-    "description": "",
+    "description": "To compare two strings with each  other  you  will  use\nthis function, it checks if all the characters are  the\nsame and in the right order in the character strings.",
     "parameters": ["char* first", "char* second", "int length"],
     "returning": "int boolean"
   },
   "generate_lower_alphabet":
   {
-    "description": "",
+    "description": "This  function  generates  a  string   with   all   the\ncharacters from the lower alphabet. You  can  determine\nhow many of the lower case characters there will be.",
     "parameters": ["int characters"],
     "returning": "char* alphabet"
   },
   "compare_character_variables":
   {
-    "description": "",
+    "description": "To compare character variables, you can  just  use  the\nnormal double-equal character, but the  function  needs\nto have character datatypes.",
     "parameters": ["char first", "char second"],
     "returning": "int boolean"
   },
   "delete_string_character":
   {
-    "description": "",
+    "description": "If you want to delete a character in your  string,  you\ncan use an index with this function. By inputting which\nindex you want to delete, the slot will be deleted.",
     "parameters": ["char* string", "int length", "int index"],
     "returning": "char* string"
   },
   "reverse_character_string":
   {
-    "description": "",
+    "description": "The returning string  of  this  function  will  be  the\nmirrored version of the inputted string.  The  function\nreverses the order of the strings characters.",
     "parameters": ["char* string", "int length"],
     "returning": "char* reverse"
   },
   "string_character_index":
   {
-    "description": "",
+    "description": "You can get  the  index  of  the  last  character  that\nmatches the inputted character with this  function.  It\nreturns the index of the character inside the string.",
     "parameters": ["char* string", "int length", "char character"],
     "returning": "int index"
   },
   "characters_inside_string":
   {
-    "description": "",
+    "description": "This function will check if a series of characters  are\na part  of  the  inputted  string.  It  checks  if  the\n inputted characters are inside the string and in order.",
     "parameters": ["char* string", "int length", "char* characters"],
     "returning": "int boolean"
   },
   "convert_integer_binary":
   {
-    "description": "",
+    "description": "If you want to see what an integer would look  like  if\nit was written in binary code, you can convert it using\nthis function. A binary string will be returned.",
     "parameters": ["int integer"],
     "returning": "char* binary"
   },
   "convert_character_binary":
   {
-    "description": "",
+    "description": "You can convert an integer to a binary string, you  can\nequally  easy  convert  a  character  to  binary.  This\nfunction gives you a binary value from a character.",
     "parameters": ["char character"],
     "returning": "char* binary"
   },
   "convert_array_binary":
   {
-    "description": "",
+    "description": "With the help of a function that  convert  integers  to\nbinary, you can convert a array with integers to binary\nstring. It loops through and converts the integers.",
     "parameters": ["int* array", "int length"],
     "returning": "char** binary"
   },
   "convert_binary_array":
   {
-    "description": "",
+    "description": "If you have some binary strings  in  a  list,  you  can\nconvert them to an integer array with this function. It\nconverts the binary strings and adds them to an array.",
     "parameters": ["char** binary", "int length"],
     "returning": "int* array"
   },
   "convert_binary_integer":
   {
-    "description": "",
+    "description": "This function converts a binary string to  an  integer.\nThis can be useful in many cases, like in  cryptography\nand other things related to binary values.",
     "parameters": ["char* binary"],
     "returning": "int integer"
   },
   "convert_binary_character":
   {
-    "description": "",
+    "description": "When you have a binary string and  want  to  see  which\ncharacter it corresponds to in the ascii table, you can\nuse this function to do the conversion for you.",
     "parameters": ["char* binary"],
     "returning": "char character"
   },
   "generate_random_binary":
   {
-    "description": "",
+    "description": "Just like generating a normal integer or  a  character,\nthis function generates  a  random  binary  string.  It\ngenerates an integer, then converts it to binary.",
     "parameters": ["int minimum", "int maximum"],
     "returning": "char* binary"
   },
   "convert_string_binary":
   {
-    "description": "",
+    "description": "This function  will  convert  every  character  in  the\ninputted string to binary strings, then store them in a\nlist. That means it will return a sentence of binary.",
     "parameters": ["char* string", "int length"],
     "returning": "char** binary"
   },
   "convert_binary_string":
   {
-    "description": "",
+    "description": "If you have a list of binary string, and  you  want  to\nconvert them to a character string.  You  can  do  that\nwith help of this function, it returns a normal string.",
     "parameters": ["char** binary", "int length"],
     "returning": "char* string"
   },
   "integer_array_average":
   {
-    "description": "",
+    "description": "To calculate the average value of an integer array, you\ncan add up the integers and divide by the length.  That\nis what this function does for you.",
     "parameters": ["int* array", "int length"],
     "returning": "double average"
   },
   "array_integer_frequency":
   {
-    "description": "",
+    "description": "If you want to know the frequency  of  any  integer  in\nyour array, you can get the  decimal  value  from  this\nfunction. By dividing the amount with the length.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "double frequency"
   },
   "integer_array_median":
   {
-    "description": "",
+    "description": "The median is the integer in the middle or the  average\nof the two integers in the middle  of  an  array.  This\nfunction calculates that for your integer array.",
     "parameters": ["int* array", "int length"],
     "returning": "double median"
   },
   "integer_array_typical":
   {
-    "description": "",
+    "description": "The typical value is what integer is most frequent in a\nset of integers, in this case an  array.  Put  in  your\narray and an integer, and it will give you the typical.",
     "parameters": ["int* array", "int length"],
     "returning": "int typical"
   },
   "array_integers_sequences":
   {
-    "description": "",
+    "description": "This function calculates the product  of  all  integers\ninside an array. This is helpful when you want to  know\nhow many combinations there are from some integers.",
     "parameters": ["int* array", "int length"],
     "returning": "int sequences"
   },
   "array_integer_percent":
   {
-    "description": "",
+    "description": "To calculate the percent an integer is taking up in  an\narray, you calculate the frequency and converts that to\npercent. It is what this function does anyways.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "double percent"
   },
   "binary_and_operation":
   {
-    "description": "",
+    "description": "There are many  operations  with  binary  values,  this\nfunction  performs  an  and-operation  on  two   binary\nstrings. The operation is one sort logic gate.",
     "parameters": ["char* first", "char* second", "int length"],
     "returning": "char* binary"
   },
   "binary_left_shifting":
   {
-    "description": "",
+    "description": "The left-shifting binary operation shifts the  bits  to\nthe left. The one bit that was furthest to the left  is\ngoing to appear in the most right position.",
     "parameters": ["char* binary", "int length"],
     "returning": "char* shifted"
   },
   "binary_or_operation":
   {
-    "description": "",
+    "description": "This binary operation checks the  bits  of  two  binary\nstrings, and activate the bit on the new binary  string\nif one or both bits are positive.",
     "parameters": ["char* first", "char* second", "int length"],
     "returning": "char* binary"
   },
   "binary_right_shifting":
   {
-    "description": "",
+    "description": "When you right-shift a binary string, all the bits  are\ngoing to be shifted by one index to the  right.  Except\nfor the most right bit, it will be to the left.",
     "parameters": ["char* binary", "int length"],
     "returning": "char* shifted"
   },
   "binary_xor_operation":
   {
-    "description": "",
+    "description": "Xor is a binary operation that works the  same  way  as\nthe or-operation, but it activates the bit in  the  new\nbinary, if the bits in the binary strings are the same.",
     "parameters": ["char* first", "char* second", "int length"],
     "returning": "char* binary"
   },
   "binary_not_operation":
   {
-    "description": "",
+    "description": "This binary operation is going to  invert  all  of  the\nbits in a binary string. If the bit is positive the new\nbinary bit will be negative, and wise versa.",
     "parameters": ["char* binary", "int length"],
     "returning": "char* opposite"
   },
@@ -1003,26 +997,26 @@
   },
   "start_stopwatch_operation":
   {
-    "description": "",
+    "description": "This function is used to  start  a  stopwatch  in  your\nprogram. It is used to measure time differences of  any\noperation or some other action.",
     "parameters": [],
     "returning": "long time"
   },
   "stop_stopwatch_operation":
   {
-    "description": "",
+    "description": "To stop a stopwatch after you have started it with  the\nother stopwatch function, you will call this  function.\nIt will return the time between starting and stopping.",
     "parameters": ["long start_time"],
     "returning": "int difference"
   },
   "seconds_delay_operation":
   {
-    "description": "",
+    "description": "To have your program wait for a couple of second can be\nuseful in many cases, like in animation. This  function\nlets you stop your program for a specific time.",
     "parameters": ["int seconds"],
     "returning": "void"
   },
   "calculate_current_time":
   {
-    "description": "",
-    "parameters": [],
+    "description": "The computer is always counting, this number  increases\nthe whole time the computer is on. This can be used  as\ntime. You can get the current time from this function.",
+    "parameters": ["void"],
     "returning": "long time"
   },
   "generate_string_sentence":
