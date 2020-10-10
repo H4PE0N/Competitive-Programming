@@ -1,7 +1,7 @@
 {
   "allocate_array_integer":
   {
-    "description": "This function  allocates  an  integer  to  the  inputed\narray. The new integer will be stored in the index slot in the\ninputed integer array.",
+    "description": "This function allocates  an  integer  to  the  inputted\narray. The new integer will be stored at the index slot in the\ninputted integer array.",
     "parameters": ["int* integer", "int index", "int integer"],
     "returning": "int* array"
   },
@@ -25,25 +25,25 @@
   },
   "delete_array_integer":
   {
-    "description": "The function deletes an integer at slot index from  the\ninputed array, by moving the chosen integer to the  end\nand then replace it with a \\0 character.",
+    "description": "The function deletes an integer at slot index from  the\ninputted array, by moving the chosen integer to the end\nand then replace it with a \\0 character.",
     "parameters": ["int* array", "int length", "int index"],
     "returning": "int* array"
   },
   "add_array_integer":
   {
-    "description": "The function  allocates  the  integer  to  the  inputed\narray, by calling the  allocate_array_integer  function\nwith the length as the index.",
+    "description": "When you want to add an integer to your array, you  can\ndo that without having to know an index. This  function\nadds the inputted integer to the end of the array.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int* array"
   },
   "sort_integer_array":
   {
-    "description": "To sort the inputed array,  the  function  uses  bubble\nsort. With  help  of  the  length  of  the  array,  the\nfunction can sort relatively fast.",
+    "description": "To sort the inputted array, the  function  uses  bubble\nsort. With  help  of  the  length  of  the  array,  the\nfunction can sort relatively fast.",
     "parameters": ["int* array", "int length"],
     "returning": "int* array"
   },
   "remove_array_integer":
   {
-    "description": "This function removes  the  inputed  integer  from  the\narray. The function calls  the  delete  function  after\ncalculating the index of the integer.",
+    "description": "This function removes the  inputted  integer  from  the\narray. The function calls  the  delete  function  after\ncalculating the index of the integer.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int* array"
   },
@@ -55,13 +55,13 @@
   },
   "remove_array_integers":
   {
-    "description": "This function removes  every  integer  in  the  inputed\narray, bu using the  remove  function  it  removes  the\ninteger until there is no more in the array.",
+    "description": "This function removes every  integer  in  the  inputted\narray, bu using the  remove  function  it  removes  the\ninteger until there is no more in the array.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int* array"
   },
   "array_integer_amount":
   {
-    "description": "The function returns the  amount  of  inputed  integers\nthere are in the array. This function can  be  used  to\nfind the frequency of the integer.",
+    "description": "When you want to count the amount of an integer  inside\nan array, you can use this function. The amount can  be\nuseful to know when you want to know the frequency.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int amount"
   },
@@ -85,7 +85,7 @@
   },
   "add_array_integers":
   {
-    "description": "This function uses the  add_array_integer  function  to\nadd amount integers  to  the  inputed  array.  This  is\nuseful when you need to add multiple integers.",
+    "description": "If you want to add more than one of the same integer to\nan array, a loop would be the way to go. This  function\nadds the integer to the array amount times.",
     "parameters": ["int* array", "int length", "int integer", "int amount"],
     "returning": "int* array"
   },
@@ -139,13 +139,13 @@
   },
   "array_integer_index":
   {
-    "description": "This function calculates the index of the first integer\nthat matches the integer you had as  argument  for  the\nfunction in the array.",
+    "description": "You put in an array and an integer,  and  the  function\nwill return the greatest index of the integer if  there\nare more than one. If not, it returns the only index.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int index"
   },
   "integers_inside_array":
   {
-    "description": "This function checks if the inputed integers is part of\nthe inputed array. The order of the  integers  matters,\nso it has to fit in the array.",
+    "description": "If you have a set of integers, and you want to know  if\nthey are part of an array. You can call this  function.\nIt checks if the integers fit inside the array.",
     "parameters": ["int* array", "int length", "int* integers"],
     "returning": "int boolean"
   },
@@ -169,7 +169,7 @@
   },
   "integer_matrix_height":
   {
-    "description": "To calculate the height of the  inputed  matrix  array,\nyou will have to use the total width of the  matrix  to\ncheck if the arrays are full or not.",
+    "description": "To calculate the height of the inputted  matrix  array,\nyou will have to use the total width of the  matrix  to\ncheck if the arrays are full or not.",
     "parameters": ["int** matrix", "int width"],
     "returning": "int height"
   },
@@ -181,13 +181,13 @@
   },
   "matrix_array_contains":
   {
-    "description": "To check if a specific  array  of  the  inputed  matrix\ncontains the integer, you can  use  this  function.  It\nchecks only one array for an integer.",
+    "description": "To check if a specific array  of  the  inputted  matrix\ncontains the integer, you can  use  this  function.  It\nchecks only one array for an integer.",
     "parameters": ["int** matrix", "int index", "int integer"],
     "returning": "int boolean"
   },
   "remove_matrix_integer":
   {
-    "description": "This function removes the last of the  inputed  integer\nthat was added to the matrix. So you don't have to  say\non which height and width.",
+    "description": "This function removes the last of the inputted  integer\nthat was added to the matrix. So you don't have to  say\nwhich height and width the integer is at.",
     "parameters": ["int** matrix", "int height", "int integer"],
     "returning": "int** matrix"
   },
@@ -271,7 +271,7 @@
   },
   "compare_integer_matrix":
   {
-    "description": "This function compares two matrices  using  the  height\nand width of the inputed matrices.  They  must  be  the\n same height and width.",
+    "description": "This function compares two matrices  using  the  height\nand width of the inputted matrices.  They  must  be  the\n same dimensions to not mess up the program",
     "parameters": ["int** first", "int** second", "int height", "int width"],
     "returning": "int boolean"
   },
@@ -998,7 +998,7 @@
   "start_stopwatch_operation":
   {
     "description": "This function is used to  start  a  stopwatch  in  your\nprogram. It is used to measure time differences of  any\noperation or some other action.",
-    "parameters": [],
+    "parameters": ["void"],
     "returning": "long time"
   },
   "stop_stopwatch_operation":
