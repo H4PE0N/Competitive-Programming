@@ -1,13 +1,13 @@
 {
   "allocate_array_integer":
   {
-    "description": "This function allocates  an  integer  to  the  inputted\narray. The new integer will be stored at the index slot in the\ninputted integer array.",
+    "description": "If you want to allocate an integer to your  array,  you\ncan use an index with this function. The  integer  will\nbe stored at the index slot in the integer array.",
     "parameters": ["int* integer", "int index", "int integer"],
     "returning": "int* array"
   },
   "generate_integer_array":
   {
-    "description": "When you want to have an integer array, you  will  have\nto think of want length it should be. Then you put it in\nthis function, and it returns the array.",
+    "description": "When you want to have an integer array, you  will  have\nto think of want length it should be. Then you put it in\nthis function, and you get the array in return.",
     "parameters": ["int length"],
     "returning": "int* array"
   },
@@ -19,13 +19,13 @@
   },
   "array_contains_integer":
   {
-    "description": "This function checks if the array contains one or  more\nof the integer. The function looks over the  array  and\nreturns positive if the integer was found.",
+    "description": "If you want to check if your array contains a  specific\ninteger, you can use this function. The function  loops\nthrough the array and checks for the integer.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int boolean"
   },
   "delete_array_integer":
   {
-    "description": "The function deletes an integer at slot index from  the\ninputted array, by moving the chosen integer to the end\nand then replace it with a \\0 character.",
+    "description": "To delete an  integer  from  an  array,  you  move  the\ninteger to the end and then replace its place with  the\nintegers to the right. At last you delete the integer.",
     "parameters": ["int* array", "int length", "int index"],
     "returning": "int* array"
   },
@@ -49,13 +49,13 @@
   },
   "compare_integer_arrays":
   {
-    "description": "This function compares the two arrays that comes in  as\nparameters. It compares every integer after each other.\nThe arrays must be same length.",
+    "description": "To compare the inputted arrays  with  the  same  length\nthat  comes  in  as  parameters,  this  function  loops\nthrough and compares every integer after each other.",
     "parameters": ["int* first", "int* second", "int length"],
     "returning": "int boolean"
   },
   "remove_array_integers":
   {
-    "description": "This function removes every  integer  in  the  inputted\narray, bu using the  remove  function  it  removes  the\ninteger until there is no more in the array.",
+    "description": "When you want to delete every  integer  of  a  specific\nvalue, you can use  this  function.  It  loops  through\nuntil the integer value is no longer in the array.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int* array"
   },
@@ -67,19 +67,19 @@
   },
   "integers_range_between":
   {
-    "description": "This function uses the  integer_range_between  function\nto check if all the integers range between the  minimum\nand the maximum parameters of the function.",
+    "description": "If you're going to check if an array range between some\nintegers, you  will  loop  through  and  check  if  the\nintegers range between the minimum and maximum values.",
     "parameters": ["int* array", "int minimum", "int maximum"],
     "returning": "int boolean"
   },
   "generate_random_array":
   {
-    "description": "To generate a random array, you will use this function.\nWith the help of a minimum and a  maximum  integer,  it\ngenerates a array with length random integers.",
+    "description": "To generate a random array, you will use this function.\nWith the help of a minimum and a  maximum  integer,  it\ngenerates an array with length random integers.",
     "parameters": ["int length", "int minimum", "int maximum"],
     "returning": "int* array"
   },
   "reverse_integer_array":
   {
-    "description": "This function reverses the order of the integers inside\nthe array. It creates a new array and fill it with  the\nintegers backwards.",
+    "description": "To reverse the order of an  integer  array,  you  could\ngenerate a new array and allocate the integers from the\ninputted array in the backwards order.",
     "parameters": ["int* array", "int length"],
     "returning": "int* reverse"
   },
@@ -91,13 +91,13 @@
   },
   "integer_array_stdout":
   {
-    "description": "This function prints out an array to the  console  with\nstandard output. This  is  helpful  when  you  want  to\ndebug, not for actual programs.",
+    "description": "This function prints out an array to the  console  with\nstandard output. This  function  is  used  to  see  the\ncontent of the inputted array, not to be pretty.",
     "parameters": ["int* array", "int length"],
     "returning": "void"
   },
   "compare_array_content":
   {
-    "description": "To compare two arrays without caring about the order of\nthe integers, you can use this function. It  sorts  the\narrays and then compare them.",
+    "description": "To compare two integer arrays without caring about  the\norder of the integers, you can use  this  function.  It\nsorts the arrays and then compare them.",
     "parameters": ["int* first", "int* second", "int length"],
     "returning": "int boolean"
   },
@@ -121,7 +121,7 @@
   },
   "generate_integer_vector":
   {
-    "description": "This function  generates  an  integer  array  with  two\nslots, both of the integers comes from the  parameters.\nChoose which integers you want.",
+    "description": "A vector is an array of  two  integers.  This  function\ngenerates an vector, the two integers  comes  from  the\nparameters. Vectors is used in fractions.",
     "parameters": ["int first", "int second"],
     "returning": "int* vector"
   },
@@ -133,7 +133,7 @@
   },
   "integer_array_section":
   {
-    "description": "To get a section from the array, like cutting  a  cake.\nYou can use this function. The array  section  will  be\nbetween the indexes you put in.",
+    "description": "To get a section from an integer array, you  will  have\nto use two indexes. It is like  cutting  a  cake.  This\nfunction will return a section from an array.",
     "parameters": ["int* array", "int first", "int second"],
     "returning": "int* section"
   },
@@ -151,7 +151,7 @@
   },
   "generate_integer_matrix":
   {
-    "description": "The function generates an empty matrix with the  height\nand width that you put in as arguments. Every slot will\nbe allocated the \\0 character.",
+    "description": "The function generates an empty matrix with the  height\nand width that you put in as arguments. Every  slot  in\nthe matrix will be allocated with the \\0 character.",
     "parameters": ["int height", "int width"],
     "returning": "int** matrix"
   },
@@ -163,7 +163,7 @@
   },
   "delete_matrix_integer":
   {
-    "description": "This  function  functions  the  same  as  the  allocate\nfunction,  but  it  deletes   an   integer   from   the\ncoordinate, unlike the other function.",
+    "description": "When you want to delete an integer from a  matrix,  you\ncan use a height and a width to  inform  which  integer\nyou want to delete. It is like backward coordinates.",
     "parameters": ["int** matrix", "int height", "int width"],
     "returning": "int** matrix"
   },
@@ -241,7 +241,7 @@
   },
   "matrix_array_index":
   {
-    "description": "If you want the  index  of  a  integer  array  in  your\nmatrix, you can use this function.  It  calculates  the\nindex of an array in a inputted matrix.",
+    "description": "If you want the  index  of  a  integer  array  in  your\nmatrix, you can use this function.  It  calculates  the\nindex of an array in an inputted matrix.",
     "parameters": ["int** matrix", "int height", "int* array"],
     "returning": "int index"
   },
@@ -565,7 +565,7 @@
   },
   "shuffle_character_string":
   {
-    "description": "To shuffle a string, you can switch two of the  indexes\nrandomly, and continue on the  whole  string.  That  is\nwhat this function does, shuffles a inputted string.",
+    "description": "To shuffle a string, you can switch two of the  indexes\nrandomly, and continue on the  whole  string.  That  is\nwhat this function does, shuffles an inputted string.",
     "parameters": ["char* string", "int length"],
     "returning": "char* string"
   },
@@ -583,7 +583,7 @@
   },
   "sort_character_string":
   {
-    "description": "By comparing two characters that is adjacent  over  and\nover again, you can sort a  string  with  bubble  sort.\nThis function sorts a inputted string with the length.",
+    "description": "By comparing two characters that is adjacent  over  and\nover again, you can sort a  string  with  bubble  sort.\nThis function sorts an inputted string with the length.",
     "parameters": ["char* string", "int length"],
     "returning": "char* string"
   },
@@ -673,7 +673,7 @@
   },
   "convert_array_binary":
   {
-    "description": "With the help of a function that  convert  integers  to\nbinary, you can convert a array with integers to binary\nstring. It loops through and converts the integers.",
+    "description": "With the help of a function that converts  integers  to\nbinary, you can convert  an  integer  array  to  binary\nstrings. It loops through and converts the integers.",
     "parameters": ["int* array", "int length"],
     "returning": "char** binary"
   },
@@ -1147,7 +1147,7 @@
   },
   "shuffle_sentence_strings":
   {
-    "description": "This function shuffles all of the strings in a inputted\nsentence. If you  aren't  happy  of  how  shuffled  the\nstrings are, I recommend calling the function again.",
+    "description": "This  function  shuffles  all  of  the  strings  in  an\ninputted sentence. If you aren't happy of how  shuffled\nthe strings are, you can call the function again.",
     "parameters": ["char** sentence", "int height"],
     "returning": "char** sentence"
   },
