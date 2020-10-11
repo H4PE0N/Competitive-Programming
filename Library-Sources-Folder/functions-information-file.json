@@ -787,211 +787,211 @@
   },
   "greatest_common_table":
   {
-    "description": "",
+    "description": "If you have two integers, a greater and a smaller  one.\nAnd you want to know the highest integer that  both  of\nyour integer is dividable by, you can use this.",
     "parameters": ["int greater", "int smaller"],
     "returning": "int table"
   },
   "integer_range_between":
   {
-    "description": "",
+    "description": "You can use this if you have an integer, and  you  want\nto know if the integer is in between two integers. That\nthe integer range between two integers.",
     "parameters": ["int integer", "int minimum", "maximum"],
     "returning": "int boolean"
   },
   "convert_decimal_percent":
   {
-    "description": "",
+    "description": "Decimal values are great, but lets say you want to have\nit in  percent.  With  this  function  you  can  easily\nconvert your decimal value to percent.",
     "parameters": ["double decimal"],
     "returning": "double percent"
   },
   "increase_integer_variable":
   {
-    "description": "",
+    "description": "This function is used only to make your  programs  look\nnicer and become  easier  to  read.  You  put  in  your\ninteger and the amount, and it returns the sum.",
     "parameters": ["int variable", "int integer"],
     "returning": "int variable"
   },
   "smallest_fraction_form":
   {
-    "description": "",
+    "description": "If you want to have your fraction in the smallest  form\npossible, that the denominator is as low as it can  be.\nYou can convert the fraction in this function.",
     "parameters": ["int* fraction"],
     "returning": "int* fraction"
   },
   "integer_power_operation":
   {
-    "description": "",
+    "description": "This function converts a potency to a  normal  integer.\nThat means you put in a base and an exponent,  and  the\nprogram will return the product.",
     "parameters": ["int base", "int exponent"],
     "returning": "int product"
   },
   "fraction_variable_smaller":
   {
-    "description": "",
+    "description": "Lets say you have two fraction variables, and you  want\nto know if one is smaller than the other. This function\nis great for determine that for you.",
     "parameters": ["int* first", "int* second"],
     "returning": "int boolean"
   },
   "compare_integer_variables":
   {
-    "description": "",
+    "description": "This function  is  only  used  to  make  programs  look\nbetter. The function takes in two integers  and  checks\nif the are the same, it compares them.",
     "parameters": ["int first", "int second"],
     "returning": "int boolean"
   },
   "generate_random_fraction":
   {
-    "description": "",
+    "description": "A fraction  is  a  datatype  with  a  numerator  and  a\ndenominator. This function generates a  random  decimal\nvalue and then converts it to a fraction.",
     "parameters": ["double minimum", "double maximum"],
     "returning": "int* fraction"
   },
   "integer_variable_smaller":
   {
-    "description": "",
+    "description": "If you want to know if one integer variable of yours is\nsmaller than another. You can put in the  variable  you\nwant to check first and then the other.",
     "parameters": ["int first", "int second"],
     "returning": "int boolean"
   },
   "least_common_denominator":
   {
-    "description": "",
+    "description": "When you want to use fraction variables  for  math  and\ndifferent mathematical operations, you want to have the\nleast common denominator, here you go.",
     "parameters": ["int* first", "int* second"],
     "returning": "int denominator"
   },
   "integer_between_integers":
   {
-    "description": "",
+    "description": "This function will calculate which integer  is  between\ntwo  integers  that  you  put  in.  It  does  that   by\ncalculating the average of the two integers.",
     "parameters": ["int first", "int second"],
     "returning": "double integer"
   },
   "convert_percent_decimal":
   {
-    "description": "",
+    "description": "If you have a percent value and you want to have it  in\ndecimal. You can put in  your  percent  value  in  this\nfunction and it will convert it for you.",
     "parameters": ["double percent"],
     "returning": "double decimal"
   },
   "integer_variable_greater":
   {
-    "description": "",
+    "description": "The function will take in two integers, the  first  one\nwill be the one that is going to be checked against the\nother. It checks if it is greater or not.",
     "parameters": ["int first", "int second"],
     "returning": "int boolean"
   },
   "fraction_variable_stdout":
   {
-    "description": "",
+    "description": "To debug or just to be informed, this  function  prints\nout a fraction in the console. The  numerator  and  the\ndenominator will be separated by a slash.",
     "parameters": ["int* fraction"],
     "returning": "void"
   },
   "convert_decimal_fraction":
   {
-    "description": "",
+    "description": "If you have a decimal value and want  to  see  what  it\nwould look like in fraction form. You can put  in  your\ndecimal and a fraction will be returned.",
     "parameters": ["double decimal"],
     "returning": "int* fraction"
   },
   "generate_fraction_variable":
   {
-    "description": "",
+    "description": "To generate  a  fraction  variable,  you  must  have  a\nnumerator and a denominator. If you  put  in  those  in\nthis function, a two-slot array will come out.",
     "parameters": ["int numerator", "int denominator"],
     "returning": "int* fraction"
   },
   "convert_fraction_decimal":
   {
-    "description": "",
+    "description": "To convert a fraction variable to a decimal  value,  is\nsuper easy. The only thing you have to do, is to divide\nthe numerator with the denominator.",
     "parameters": ["int* fraction"],
     "returning": "double decimal"
   },
   "check_integer_divisible":
   {
-    "description": "",
+    "description": "Sometimes it is good to know if an integer is divisible\nby some other integer. Like when you want to see if the\ninputted integer is even or not.",
     "parameters": ["int first", "int second"],
     "returning": "int boolean"
   },
   "convert_percent_fraction":
   {
-    "description": "",
+    "description": "When you want to convert a percent value to a fraction,\nyou can convert the percent to a decimal value and then\nconvert the decimal value to a fraction.",
     "parameters": ["double percent"],
     "returning": "int* fraction"
   },
   "decimal_variable_smaller":
   {
-    "description": "",
+    "description": "Like with the integers, this  function  checks  if  the\nfirst decimal in the parameters  is  smaller  then  the\nother decimal value in the parameters.",
     "parameters": ["double first", "double second"],
     "returning": "int boolean"
   },
   "compare_fraction_variables":
   {
-    "description": "",
+    "description": "To check if two fraction variables is the same, you can\ncompare them in this function.  The  function  converts\nthe two fractions to decimal and then compares them.",
     "parameters": ["int* first", "int* second"],
     "returning": "int boolean"
   },
   "fraction_variable_denominator":
   {
-    "description": "",
+    "description": "To access the denominator in a  fraction  variable  you\ntake the second integer inside the array.  Or  you  can\njust pass the fraction as an argument to this function.",
     "parameters": ["int* fraction"],
     "returning": "int denominator"
   },
   "inverted_fraction_variable":
   {
-    "description": "",
+    "description": "An inverted version of a fraction can be used  in  many\ncases. Like when you want to get a one  by  multiplying\nthe fraction with its inverted value.",
     "parameters": ["int* fraction"],
     "returning": "int* inverted"
   },
   "generate_integer_products":
   {
-    "description": "",
+    "description": "Every integer has a multiplication table, it  is  every\nproduct with the integer as one o f the  factors.  This\nfunction returns amount of products of the integer.",
     "parameters": ["int integer", "int amount"],
     "returning": "int* products"
   },
   "extend_fraction_variable":
   {
-    "description": "",
+    "description": "This  function  makes  the  nominator  and  denominator\ngreater, but does not change the value. If you  convert\nthe fractions to decimal, they will be the same.",
     "parameters": ["int* fraction", "int integer"],
     "returning": "int* fraction"
   },
   "convert_fraction_percent":
   {
-    "description": "",
+    "description": "To convert a fraction variable to decimal,  you  divide\nthe  nominator  with  the  denominator.  Then  you  can\nmultiple it by a hundred to get a percent value.",
     "parameters": ["int* fraction"],
     "returning": "double percent"
   },
   "fraction_variable_numerator":
   {
-    "description": "",
+    "description": "To get the numerator from the fraction variable you can\naccess the first integer in the  array.  You  can  also\njust call this function to do it for you.",
     "parameters": ["int* fraction"],
     "returning": "int numerator"
   },
   "generate_random_integer":
   {
-    "description": "",
+    "description": "Sometimes you want an integer,  but  can't  figure  out\nwhich one, so you generate a  random  integer.  Give  a\nminimum and maximum value, and it will give an integer.",
     "parameters": ["int minimum", "int maximum"],
     "returning": "int integer"
   },
   "shorten_fraction_variable":
   {
-    "description": "",
+    "description": "You can extend and  shorten  fraction  variables.  With\nthis function you can  shorten  one  by  inputting  the\nfraction and the integer you want to shorten it by.",
     "parameters": ["int* fraction", "int integer"],
     "returning": "int* fraction"
   },
   "compare_decimal_variables":
   {
-    "description": "",
+    "description": "This function takes in two decimal variables and checks\nif they are the same, it compares them. If they are the\nsame, the function will return positive.",
     "parameters": ["double first", "double second"],
     "returning": "int boolean"
   },
   "decimal_variable_greater":
   {
-    "description": "",
+    "description": "If you want to check if a decimal variable  is  greater\nthen another, you can pass the  variable  you  want  to\ncheck first and then the variable to check against.",
     "parameters": ["double first", "double second"],
     "returning": "int boolean"
   },
   "fraction_variable_greater":
   {
-    "description": "",
+    "description": "This function checks if the first parameter is  greater\nthen the other. If you want to check if  your  fraction\nis greater than another, use this function.",
     "parameters": ["int* first", "int* second"],
     "returning": "int boolean"
   },
   "duplicate_fraction_variable":
   {
-    "description": "",
+    "description": "If you want to  have  multiple  of  the  same  fraction\nvariable,  you  should  duplicate  it.  If  you   don't\nduplicate it, both variables will be as one.",
     "parameters": ["int* fraction"],
     "returning": "int* doublet"
   },
   "generate_random_decimal":
   {
-    "description": "",
+    "description": "You can  generate  a  lot  of  random  variables,  this\nfunction generates a random decimal value. The  decimal\nvalue will be between the minimum and maximum value.",
     "parameters": ["double minimum", "double maximum"],
     "returning": "double decimal"
   },
@@ -1021,163 +1021,163 @@
   },
   "generate_string_sentence":
   {
-    "description": "",
+    "description": "A sentence is a list of strings. The amount of  strings\nis the height of the sentence, and the  length  of  the\nstrings are the width of the sentence.",
     "parameters": ["int height", "int width"],
     "returning": "char** sentence"
   },
   "sentence_index_string":
   {
-    "description": "",
+    "description": "You can get the string at a slot  in  the  sentence  by\nusing an index. By putting  in  your  sentence  and  an\nindex, the function will return the character string.",
     "parameters": ["char** sentence", "index"],
     "returning": "char* string"
   },
   "compare_string_sentence":
   {
-    "description": "",
+    "description": "When this function compares two sentences, it  compares\nevery string in both sentences, and  returns  false  if\ntwo of the strings doesn't match each other.",
     "parameters": ["char** first", "char** second", "int height", "int width"],
     "returning": "int boolean"
   },
   "allocate_sentence_character":
   {
-    "description": "",
+    "description": "To allocate a character  to  a  sentence,  you  need  a\nheight and a width. With those  you  can  allocate  the\ncharacter like in a backwards coordinate system.",
     "parameters": ["char** sentence", "int height", "int width", "char character"],
     "returning": "char** sentence"
   },
   "allocate_sentence_string":
   {
-    "description": "",
+    "description": "Allocating  a  string  to  a  sentence  is  just   like\nallocating an integer to an array.  With an  index  you\ncan determine where the string will be.",
     "parameters": ["char** sentence", "int index", "char* string"],
     "returning": "char** sentence"
   },
   "string_sentence_height":
   {
-    "description": "",
+    "description": "The height of a sentence is determined by the amount of\nfull strings in the beginning. Therefore  you  have  to\ninput the total width to get the height.",
     "parameters": ["char** sentence", "int width"],
     "returning": "int height"
   },
   "reverse_sentence_strings":
   {
-    "description": "",
+    "description": "With the help of a function that reverses the order  of\nthe characters inside a  string.  This  function  loops\nthrough all the strings and mirror them.",
     "parameters": ["char** sentence", "int height"],
     "returning": "char** sentence"
   },
   "delete_sentence_character":
   {
-    "description": "",
+    "description": "Just like allocating a character  to  a  sentence,  you\nneed a height and width to delete a  character  in  the\nsentence. The characters after will take its place.",
     "parameters": ["char** sentence", "int height", "int width"],
     "returning": "char** sentence"
   },
   "delete_sentence_string":
   {
-    "description": "",
+    "description": "By inputting the  index  of  the  string  you  want  to\ndelete, this function will delete the string  and  fill\nits place with the strings that came after it.",
     "parameters": ["char** sentence", "int height", "int index"],
     "returning": "char** sentence"
   },
   "string_sentence_stdout":
   {
-    "description": "",
+    "description": "This function prints out a sentence  in  your  console.\nThe characters in the sentence will be  separated  like\nthey wore coordinates in a coordinate system.",
     "parameters": ["char** sentence", "int height", "int width"],
     "returning": "void"
   },
   "generate_random_sentence":
   {
-    "description": "",
+    "description": "A random string can be generating by generating  length\namount of random characters. A random sentence  can  be\nmake by generating height amount of those strings.",
     "parameters": ["int height", "int width", "int minimum", "int maximum"],
     "returning": "char** sentence"
   },
   "duplicate_string_sentence":
   {
-    "description": "",
+    "description": "If you want more than one of the same sentence, you can\nuse this function to duplicate it. By  duplicating  it,\nthe two sentences will be different stored.",
     "parameters": ["char** sentence", "int height", "int width"],
     "returning": "char** doublet"
   },
   "remove_sentence_characters":
   {
-    "description": "",
+    "description": "This function removes every character that matches  the\ninputted  character  from  the  string  sentence.   The\ncharacter you put in will disappear from the sentence.",
     "parameters": ["char** sentence", "int height", "char character"],
     "returning": "char** sentence"
   },
   "add_sentence_character":
   {
-    "description": "",
+    "description": "When you add a character to  a  sentence,  it  will  be\nstored at the end of the 'filled' sentence.  You  don't\nhave to know which height and width it will be at.",
     "parameters": ["char** sentence", "int height", "char character"],
     "returning": "char** sentence"
   },
   "remove_sentence_string":
   {
-    "description": "",
+    "description": "A sentence is made by multiple strings in a  list.  You\ncan remove one of the strings using this  function.  It\nwill remove the last of the inputted string.",
     "parameters": ["char** sentence", "int height", "char* string"],
     "returning": "char** sentence"
   },
   "sentence_string_length":
   {
-    "description": "",
+    "description": "If you want to know the length of one of the strings in\na sentence, you can use this function. It is useful  to\nknow when you want the width of a sentence.",
     "parameters": ["char** sentence", "int index"],
     "returning": "int length"
   },
   "add_sentence_string":
   {
-    "description": "",
+    "description": "This function adds a string to the  inputted  sentence.\nJust like adding an integer to an array. This  function\nplaces the string at the end of the sentence.",
     "parameters": ["char** sentence", "int height", "char* string"],
     "returning": "char** sentence"
   },
   "sentence_string_contains":
   {
-    "description": "",
+    "description": "When you want to check if one of the  strings  in  your\nsentence contains a specific  character,  you  can  use\nthis function. It returns true if it is in the string.",
     "parameters": ["char** sentence", "int index", "char character"],
     "returning": "int boolean"
   },
   "remove_sentence_character":
   {
-    "description": "",
+    "description": "When you delete a character from a sentence, you need a\nheight  and  a  width.  Not  when  you   are   removing\nsomething, then it removes the last from the sentence.",
     "parameters": ["char** sentence", "int height", "char character"],
     "returning": "char** sentence"
   },
   "string_sentence_character":
   {
-    "description": "",
+    "description": "By  inputting  a  height  and  a  width,  you  get  the\ncharacter at that position. It works like  a  backwards\ncoordinate system, first the height and then the width.",
     "parameters": ["char** sentence", "int height", "int width"],
     "returning": "char character"
   },
   "sort_sentence_strings":
   {
-    "description": "",
+    "description": "With the help of a  function  that  sorts  a  character\nstring, this function sorts all strings in a  sentence.\nThe sort algorithm is called bubble sort.",
     "parameters": ["char** sentence", "int height"],
     "returning": "char** sentence"
   },
   "shuffle_sentence_strings":
   {
-    "description": "",
+    "description": "This function shuffles all of the strings in a inputted\nsentence. If you  aren't  happy  of  how  shuffled  the\nstrings are, I recommend calling the function again.",
     "parameters": ["char** sentence", "int height"],
     "returning": "char** sentence"
   },
   "compare_sentence_content":
   {
-    "description": "",
+    "description": "When you want to compare two sentences,  but  does  not\ncare about if the order of the strings in the sentences\nare different. You can use this function.",
     "parameters": ["char** first", "char** second", "int height", "int width"],
     "returning": "int boolean"
   },
   "sort_string_sentence":
   {
-    "description": "",
+    "description": "This function sorts a string sentence by comparing  the\ncharacters in adjacent strings. This is used to compare\ntwo sentences, when only caring about the content.",
     "parameters": ["char** sentence", "int height"],
     "returning": "char** sentence"
   },
   "shuffle_string_sentence":
   {
-    "description": "",
+    "description": "When you shuffle a string sentence, you randomly switch\nstrings here and there. So the order of the strings  in\nthe sentence becomes random.",
     "parameters": ["char** sentence", "int height"],
     "returning": "char** sentence"
   },
   "reverse_string_sentence":
   {
-    "description": "",
+    "description": "This function reverses the order of the strings  inside\nthe sentence. It creates a new sentence  and  adds  the\nstrings from the inputted sentence backwards.",
     "parameters": ["char** sentence", "int height", "int width"],
     "returning": "char** reverse"
   },
   "sentence_string_index":
   {
-    "description": "",
+    "description": "If you have a string from a sentence, and you  want  to\nknow which index the string  has.  You  can  call  this\nfunction and it will return the index of the string.",
     "parameters": ["char** sentence", "int height", "char* string"],
     "returning": "int index"
   }

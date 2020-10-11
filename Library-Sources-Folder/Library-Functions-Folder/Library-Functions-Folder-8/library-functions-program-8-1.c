@@ -3,10 +3,10 @@
 
 int greatest_common_table(int greater, int smaller)
 {
-  for(int index = smaller; index > 0; index =index - 1)
+  for(int table = smaller; table > 0; table =table - 1)
   {
-    if(greater % index == 0 && smaller % index == 0)
-      return index;
+    if(greater % table == 0 && smaller % table == 0)
+      return table;
   }
   return false;
 }
