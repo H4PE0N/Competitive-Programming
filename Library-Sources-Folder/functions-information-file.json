@@ -7,7 +7,7 @@
   },
   "generate_integer_array":
   {
-    "description": "When you want to have an integer array, you  will  have\nto think of want length it should be. Then you put it in\nthis function, and you get the array in return.",
+    "description": "When you want to have an integer array, you  will  have\nto think of want length it should be. Then you  put  it\nin this function, and you get the array in return.",
     "parameters": ["int length"],
     "returning": "int* array"
   },
@@ -199,7 +199,7 @@
   },
   "remove_matrix_array":
   {
-    "description": "This function removes the last of the integer array  in\nthe matrix. Unlike the delete function, you don't need\nto give the function a height and a width.",
+    "description": "This function removes the last of the integer array  in\nthe matrix. Unlike the delete function, you don't  need\nto give the function a height and a width.",
     "parameters": ["int** matrix", "int height", "int* array"],
     "returning": "int** matrix"
   },
@@ -271,7 +271,7 @@
   },
   "compare_integer_matrix":
   {
-    "description": "This function compares two matrices  using  the  height\nand width of the inputted matrices.  They  must  be  the\n same dimensions to not mess up the program",
+    "description": "This function compares two matrices  using  the  height\nand width of the inputted matrices. They  must  be  the\n same dimensions to not mess up the program",
     "parameters": ["int** first", "int** second", "int height", "int width"],
     "returning": "int boolean"
   },
@@ -794,7 +794,7 @@
   "integer_range_between":
   {
     "description": "You can use this if you have an integer, and  you  want\nto know if the integer is in between two integers. That\nthe integer range between two integers.",
-    "parameters": ["int integer", "int minimum", "maximum"],
+    "parameters": ["int integer", "int minimum", "int maximum"],
     "returning": "int boolean"
   },
   "convert_decimal_percent":
