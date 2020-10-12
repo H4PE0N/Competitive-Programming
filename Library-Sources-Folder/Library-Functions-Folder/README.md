@@ -3,7 +3,7 @@
 In this folder you will find the programs and functions
 that builds up this library. All the functions you  can
 think of will probably be in one of these  folders.  If
-you think one of the functions  functions  incorrectly,
+you think one of the  functions  function  incorrectly,
 you can test it in the Functions-Testing-Folder.
 
 To make all the programs have the access they  need  to

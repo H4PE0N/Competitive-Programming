@@ -15,28 +15,28 @@ def console_action_hadler(action,functions, arguments):
 
 #######################################################
 def show_search_function_names(functions, keywords):
-    matched = search_functinos_keywords(functions,
+    matched = search_functions_keywords(functions,
         keywords)
     for index, function in enumerate(matched, 1):
-        print("Function[%d]\t:\t%s"%(index,function))
+        print("Function[%d]\t:\t%s" % (index,function))
 
 def show_function_information(functions, function):
-    show_function_description(functions, function)
-    show_function_parameters(functions, function)
-    show_function_returning(functions, function)
+    if(function in functions.keys()):
+        show_function_description(functions, function)
+        show_function_parameters(functions, function)
+        show_function_returning(functions, function)
 #######################################################
 
 #######################################################
 def update_matched_functions(functions, function,
     keywords):
-    word_array = break_down_function_name(function,
-        "_")
+    word_array = break_down_function_name(function,"_")
     for keyword in keywords:
         if(keyword not in word_array and keyword):
             return functions
     functions.append(function); return functions
 
-def search_functinos_keywords(functions, keywords):
+def search_functions_keywords(functions, keywords):
     matched = []
     for function in functions.keys():
         matched = update_matched_functions(matched,
