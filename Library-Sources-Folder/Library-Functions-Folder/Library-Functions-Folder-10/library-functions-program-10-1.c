@@ -23,3 +23,7 @@ long calculate_ending_time(long start_time,int seconds)
 }
 
 long calculate_current_time() { return time(NULL); }
+
+double convert_minutes_to_hours(double minutes){ return minutes / 60; }
+
+double convert_hours_to_minutes(double hours){ return hours * 60; }
