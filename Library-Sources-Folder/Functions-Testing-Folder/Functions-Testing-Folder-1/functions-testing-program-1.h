@@ -57,7 +57,7 @@ int duplicate_integer_array_test(int*,int);
 
 int array_index_integer_test(int*,int,int);
 
-int generate_integer_vector_test(int, int,
+int generate_integer_pair_test(int, int,
   int*);
 
 int integer_array_total_test(int*,int,int);

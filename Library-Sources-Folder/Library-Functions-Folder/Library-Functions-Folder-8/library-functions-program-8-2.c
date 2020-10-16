@@ -3,8 +3,17 @@
 
 double integer_between_integers(int first, int second)
 {
-  int* vector = generate_integer_vector(first, second);
-  return integer_array_average(vector, 2);
+  int* pair = generate_integer_pair(first, second);
+  return integer_array_average(pair, 2);
+}
+
+int* inverted_fraction_variable(int* fraction)
+{
+  int numerator =fraction_variable_numerator(fraction);
+  int denominator = fraction_variable_denominator(
+    fraction);
+  return generate_fraction_variable(denominator,
+    numerator);
 }
 
 double convert_percent_decimal(double percent)
@@ -37,7 +46,7 @@ int* convert_decimal_fraction(double decimal)
 int* generate_fraction_variable(int numerator,
   int denominator)
 {
-  int* fraction = generate_integer_vector(numerator,
+  int* fraction = generate_integer_pair(numerator,
     denominator); return fraction;
 }
 
@@ -78,15 +87,6 @@ int fraction_variable_denominator(int* fraction)
 {
   int denominator = array_index_integer(fraction, 1);
   return denominator;
-}
-
-int* inverted_fraction_variable(int* fraction)
-{
-  int numerator =fraction_variable_numerator(fraction);
-  int denominator = fraction_variable_denominator(
-    fraction);
-  return generate_fraction_variable(denominator,
-    numerator);
 }
 
 int* generate_integer_products(int integer, int amount)

@@ -119,11 +119,11 @@
     "parameters": ["int* array", "int length"],
     "returning": "int* array"
   },
-  "generate_integer_vector":
+  "generate_integer_pair":
   {
-    "description": "A vector is an array of  two  integers.  This  function\ngenerates an vector, the two integers  comes  from  the\nparameters. Vectors is used in fractions.",
+    "description": "The datatype pair is an  integer  array  with  only  two\nintegers, therefor the name pair. This can  be  used  to\nstore two integers that works together.",
     "parameters": ["int first", "int second"],
-    "returning": "int* vector"
+    "returning": "int* pair"
   },
   "integer_array_total":
   {

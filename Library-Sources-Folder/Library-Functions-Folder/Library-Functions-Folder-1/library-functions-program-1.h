@@ -59,7 +59,7 @@ int* duplicate_integer_array(int*,int);
 
 int array_index_integer(int*, int);
 
-int* generate_integer_vector(int, int);
+int* generate_integer_pair(int, int);
 
 int integer_array_total(int*, int);
 

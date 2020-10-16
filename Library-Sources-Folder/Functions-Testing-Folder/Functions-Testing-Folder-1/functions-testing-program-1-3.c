@@ -2,6 +2,13 @@
 #include "../../Library-Functions-Folder/\
 library-functions-headers.h"
 
+int reverse_integer_array_test(int* array, int length,
+  int* output)
+{
+  int* reverse = reverse_integer_array(array, length);
+  return compare_integer_arrays(reverse,output,length);
+}
+
 int array_index_integer_test(int* array, int index,
   int output)
 {
@@ -9,11 +16,11 @@ int array_index_integer_test(int* array, int index,
   return compare_integer_variables(integer, output);
 }
 
-int generate_integer_vector_test(int first, int second,
+int generate_integer_pair_test(int first, int second,
   int* output)
 {
-  int* vector = generate_integer_vector(first, second);
-  return compare_integer_arrays(vector, output, 2);
+  int* pair = generate_integer_pair(first, second);
+  return compare_integer_arrays(pair, output, 2);
 }
 
 int integer_array_total_test(int* array, int length,
@@ -45,11 +52,4 @@ int compare_array_content_test(int* first, int* second,
   int boolean = compare_array_content(first, second,
     length);
   return compare_integer_variables(boolean, output);
-}
-
-int reverse_integer_array_test(int* array, int length,
-  int* output)
-{
-  int* reverse = reverse_integer_array(array, length);
-  return compare_integer_arrays(reverse,output,length);
 }
