@@ -44,11 +44,11 @@ int* shuffle_integer_array(int* array, int length)
   return array;
 }
 
-int* generate_integer_vector(int first, int second)
+int* generate_integer_pair(int first, int second)
 {
-  int* vector = generate_integer_array(2);
-  vector = allocate_array_integer(vector, 0, first);
-  return allocate_array_integer(vector, 1, second);
+  int* pair = generate_integer_array(2);
+  pair = allocate_array_integer(pair, 0, first);
+  return allocate_array_integer(pair, 1, second);
 }
 
 int integer_array_total(int* array, int length)
