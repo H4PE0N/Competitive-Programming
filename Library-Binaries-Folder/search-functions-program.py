@@ -4,11 +4,12 @@ import json; import sys as console
 #######################################################
 
 #######################################################
-def console_action_hadler(action,functions, arguments):
-    if(action == "search"):
+def console_command_handler(command, functions,
+    arguments):
+    if(command == "search"):
         keywords = arguments[1:]
         show_search_function_names(functions, keywords)
-    elif(action == "show"):
+    elif(command == "show"):
         function = arguments[1]
         show_function_information(functions, function)
 #######################################################
@@ -95,9 +96,10 @@ def collect_functions_information(filename):
 
 #######################################################
 arguments = console.argv[1:]; arguments.append(None)
+command = arguments[0]
 filename = "../Library-Sources-Folder/\
 functions-information-file.json"
 
 functions = collect_functions_information(filename)
-console_action_hadler(arguments[0],functions,arguments)
+console_command_handler(command, functions, arguments)
 #######################################################
