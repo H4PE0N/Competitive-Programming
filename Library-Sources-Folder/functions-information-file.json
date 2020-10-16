@@ -421,7 +421,7 @@
   },
   "compare_integer_hashmaps":
   {
-    "description": "This function is currently not available...",
+    "description": "If you want to compare two integer hash-maps with  each\nother,  you  can  use  this  function.  It  works  like\ncomparing two matrices, comparing all the inner arrays.",
     "parameters": ["int** first", "int** second", "int length"],
     "returning": "int boolean"
   },
