@@ -26,7 +26,7 @@ example     of      compiling      one      of      the
 functions-bootup-program   is    like    this:    `make
 functions-bootup-program-1`.
 
-If your program get's an  error  you  could  debug  the
+If your program gets  an  error  you  could  debug  the
 program using gdb, by  typing  `gdb <binary-filename>`.
 There is so many things you can do with  the  debugger,
 so to list all of the commands  would  be  a  waste  of
@@ -44,7 +44,7 @@ could search for functions in the library  and  see  if
 you can find some that you  want.  How  to  search  for
 functions in the library, is very easy. In the  compile
 folder, there is a python script that you want to  use.
-By   typing   in   `python search-functions-program.py
+By   typing   in    `python search-functions-program.py
 search`, you're now searching for every function in the
 library.
 
