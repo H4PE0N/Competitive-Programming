@@ -1,24 +1,20 @@
-
 <pre>
-In this folder you will find the programs and functions
-that builds up this library. All the functions you  can
-think of will probably be in one of these  folders.  If
-you think one of the  functions  function  incorrectly,
-you can test it in the Functions-Testing-Folder.
+This folder contains the test  functions  and  programs
+for the Library-Functions-Folder  functions.  The  only
+functions that isn't in here  are  the  functions  that
+generates a random value. Or the functions  that  makes
+an output on your screen.
 
-To make all the programs have the access they  need  to
-the functions they use, a header  file  is  located  in
-this folder. All the programs in this  folder,  in  the
-Functions-Testing-Folder       and        in        the
-Create-Programs-Folder is using the header  file.  That
-makes it really easy to include all  the  functions  in
-this library.
+In this folder there is a header file, just like in the
+Library-Functions-Folder, but that includes the  header
+files from this folder. That make it  easy  to  include
+the    functions    from    this    folder    to    the
+functions-bootup-programs.
 
-In the header file in  this  folder  there  is  include
-statements for all the standard C  libraries  that  the
-functions in this library is  using.  So  by  including
-this header  file,  the  programs  is  including  those
-libraries as well.
+So all of the folders that is in this  folder  contains
+the    same    kind    of    functions     that     the
+Library-Functions-Folder. So it would be  dumb  to  say
+what the folders contains again.
 
 This is somewhat what these folders contains, what kind
 of functions there is in them:

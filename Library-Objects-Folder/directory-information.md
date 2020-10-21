@@ -1,4 +1,3 @@
-
 <pre>
 This folder contains all the object  files  to  compile
 the executable files. Thanks to the  makefile  in  this
