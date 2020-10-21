@@ -1,30 +1,35 @@
 
 <pre>
-This project contains four different folders, they  all
-have a role in the Programming-Functions-Library.  This
-project is made for GNU makefiles. That means there  is
-somewhere a lot  of  source  files,  object  files  and
+In the programming language C, there is not  a  lot  of
+pre-made functions. Therefor have I created  a  library
+of programming functions.  This  is  super  useful  for
+people who does not program in C. They can program in a
+low-level programming language,  but  still  enjoy  the
+normal  functions  that  the   high-level   programming
+languages has.
+
+This project is made  for  GNU  makefiles.  That  means
+there is  somewhere  source  files,  object  files  and
 binary files. Where should they all be stored?
 
-The first folder contains  all  the  executable  files,
-that means those file that could run. The are stored in
-the Library-Binaries-Folder. There is the makefile also
-stored.
+Library-Binaries-Folder - This folder contains contains
+all the executable files, the  python  script  and  the
+makefile. When you are going to compile, here is  where
+you want to be located.
 
-The second folder contains images, logotypes  that  you
-as a user of the library would have  to  identify  that
-you have bought the project.
+Library-Sources-Folder - This  folder  contains  source
+files that builds up the library. It is  here  all  the
+code is written and your program is stored. If you want
+to use the functions in another program or just want to
+see how they are made, you will look in this folder.
 
-The third  folder  contains  object  files,  those  are
-created from the source files that are located  in  the
-other folder. The object files are the reason  why  the
-compile-time  is  so  fast.  Thanks  to  them  and  the
-makefile, you can compile your program in milliseconds.
+Library-Objects-Folder - This  folder  contains  object
+files, those  are created from the  source  files.  The
+object files are the reason why  the compile-time is so
+fast. Thanks to them and the makefile, you can  compile
+your program in milliseconds.
 
-The fourth and last folder contains source  files  that
-builds up the library. It is  there  all  the  code  is
-written and your program  is  stored.  It  is  in  this
-folder that the functions is written, so if you want to
-use them in another program or just  want  to  see  how
-they are made, you will look there.
+Library-Images-Folder - This   folder   contains   some
+images/logotypes for  the  project.  It  is  a  way  of
+telling people that you use this library.
 </pre>
