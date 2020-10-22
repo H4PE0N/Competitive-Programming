@@ -17,14 +17,18 @@ it. To compile the program, you will use the  makefile,
 it is a file  that  lets  you  compile  with  just  one
 command. To compile the default program you will  type:
 </pre>
-```make library-compile-program```
+```
+$ make library-compile-program
+```
 <pre>
 When you compile a program, the makefile wants to print
 out the commands it is using to compile the program. To
 turn this off, to hide the commands from the user,  you
 can use the -s flag, it makes the compile silent.
 </pre>
-```make -s library-compile-program```
+```
+$ make -s library-compile-program
+```
 <pre>
 When you download the library, you wont know  what  any
 of the functions is called  at  first.  To  know  which
@@ -36,6 +40,7 @@ integer...
 </pre>
 ```
 $ python search-functions-program.py search <keywords>
+
 Function[1]     :     allocate_array_integer
 Function[2]     :     generate_integer_array
 Function[3]     :     integer_array_length
@@ -69,17 +74,23 @@ you have to have some folders, to get these folders you
 can use a command. To generate the folders you need you
 can type:
 </pre>
-```make generate-object-folders```
+```
+$ make generate-object-folders
+```
 <pre>
 If the program you wrote does not work,  if  it  has  a
 problem. You  can  debug  the  program  using  the  gdb
 debugger. To start the debugger on the default  program
 you can type:
 </pre>
-```gdb ./library-compile-program```
+```
+$ gdb ./library-compile-program
+```
 <pre>
 There is so many things you can do with  the  debugger,
 so to list all of the commands  would  be  a  waste  of
 time. To exit out of the gdb debugger you can type:
 </pre>
-```quit```
+```
+$ quit
+```
