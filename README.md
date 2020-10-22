@@ -15,10 +15,7 @@ can write some code, like what datatypes  that  exists,
 and so on. Here is an example of how you can write your
 code:
 </pre>
-```
-#include "../Library-Functions-Folder/\
-library-functions-headers.h"
-
+```C
 int main(int argc, char** argv)
 {
   srand(time(NULL));
@@ -37,12 +34,21 @@ int main(int argc, char** argv)
 }
 ```
 <pre>
+When you have compiled the  default  program,  and  you
+want to run the executable file that was created in the
+folder. You will run the file by typing  the  following
+in the terminal:
+</pre>
+```bash
+$ ./library-compile-program
+```
+<pre>
 The functions that are stored  in  this  library  could
 look different, but some things stay the same. This  is
 an example of how a normal  function  in  this  library
 could look:
 </pre>
-```
+```C
 char* reverse_character_string(char* string,int length)
 {
   char* reverse = generate_character_string(length);
@@ -63,7 +69,7 @@ function stored in this library. That makes it easy  to
 test if a function is working as it should. This is how
 a test function could look like in the library:
 </pre>
-```
+```C
 int reverse_character_string_test(char* string,
   int length, char* output)
 {
@@ -71,4 +77,26 @@ int reverse_character_string_test(char* string,
   return compare_character_strings(reverse, output,
     length);
 }
+```
+<pre>
+When you are located in a folder with multiple  folders
+inside,  you  maybe  want  to  see  what  the   folders
+contains. Or you maybe just want to see what the folder
+you are in does. Then you can look in the file that  is
+in  the  folder,  that  will  tell  you  the  directory
+information. To see the information you  can type:
+</pre>
+```bash
+$ cat directory-information.md
+```
+<pre>
+This project has a license to protect  the  information
+inside it. The license comes from the MIT  license  and
+has been reformed to fit the style of this library.  To
+see further information about the license, you can open
+the license file. To open the markdown  file  with  the
+license you can type:
+</pre>
+```bash
+$ cat LICENSE.md
 ```

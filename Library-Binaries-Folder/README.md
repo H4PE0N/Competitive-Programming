@@ -17,7 +17,7 @@ it. To compile the program, you will use the  makefile,
 it is a file  that  lets  you  compile  with  just  one
 command. To compile the default program you will  type:
 </pre>
-```
+```bash
 $ make library-compile-program
 ```
 <pre>
@@ -26,7 +26,7 @@ out the commands it is using to compile the program. To
 turn this off, to hide the commands from the user,  you
 can use the -s flag, it makes the compile silent.
 </pre>
-```
+```bash
 $ make -s library-compile-program
 ```
 <pre>
@@ -38,14 +38,8 @@ function you will use some keywords, it is  words  that
 are common in the programming  world,  like  array  and
 integer...
 </pre>
-```
+```bash
 $ python search-functions-program.py search <keywords>
-
-Function[1]     :     allocate_array_integer
-Function[2]     :     generate_integer_array
-Function[3]     :     integer_array_length
-Function[4]     :     array_contains_integer
-Function[n]     :     ...
 ```
 <pre>
 When you have searched up a function and  want  to  see
@@ -54,18 +48,8 @@ The show  command  will  print  a  description  of  the
 function, then the parameters of the function,  and  at
 last what the function returns.
 </pre>
-```
+```bash
 $ python search-functions-program.py show <function>
-
-A sentence is made by multiple strings in a  list.  You
-can remove one of the strings using this  function.  It
-will remove the last of the inputted string.
-
-Parameter[1]    :     char** sentence
-Parameter[2]    :     int height
-Parameter[3]    :     char* string
-
-Returning       :     char** sentence
 ```
 <pre>
 The first time you try to compile a program  using  the
@@ -74,7 +58,7 @@ you have to have some folders, to get these folders you
 can use a command. To generate the folders you need you
 can type:
 </pre>
-```
+```bash
 $ make generate-object-folders
 ```
 <pre>
@@ -83,14 +67,6 @@ problem. You  can  debug  the  program  using  the  gdb
 debugger. To start the debugger on the default  program
 you can type:
 </pre>
-```
+```bash
 $ gdb ./library-compile-program
-```
-<pre>
-There is so many things you can do with  the  debugger,
-so to list all of the commands  would  be  a  waste  of
-time. To exit out of the gdb debugger you can type:
-</pre>
-```
-$ quit
 ```

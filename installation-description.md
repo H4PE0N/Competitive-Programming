@@ -20,8 +20,8 @@ guaranteed to work for this  library  is  the  GNU  GCC
 compiler.
 
 If your computer has Mac OS ad  its  operating  system,
-you  can  download  the  compiler  from  the   homebrew
-program. To download the homebrew program you can visit
+you  can  download  the  compiler  from  the   Homebrew
+program. To download the Homebrew program you can visit
 the first website. To then download  the  compiler  you
 can follow the video from the second link, to  see  how
 you can download it.
@@ -60,8 +60,7 @@ download Ubuntu, you could go to the  Microsoft  Store,
 there you download Ubuntu. You may have to download the
 programs again, then Ubuntu will prompt  you  with  the
 installation commands.
-</pre>
-<pre>
+
 If you are using Git with this library, I recommend you
 download the text-editor Atom. It is a text-editor made
 for GitHub, so it is easy to do the Git  commands  from
