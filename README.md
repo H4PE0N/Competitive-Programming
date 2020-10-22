@@ -34,15 +34,6 @@ int main(int argc, char** argv)
 }
 ```
 <pre>
-When you have compiled the  default  program,  and  you
-want to run the executable file that was created in the
-folder. You will run the file by typing  the  following
-in the terminal:
-</pre>
-```bash
-$ ./library-compile-program
-```
-<pre>
 The functions that are stored  in  this  library  could
 look different, but some things stay the same. This  is
 an example of how a normal  function  in  this  library

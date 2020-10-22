@@ -30,6 +30,15 @@ can use the -s flag, it makes the compile silent.
 $ make -s library-compile-program
 ```
 <pre>
+When you have compiled the  default  program,  and  you
+want to run the executable file that was created in the
+folder. You will run the file by typing  the  following
+in the terminal:
+</pre>
+```bash
+$ ./library-compile-program
+```
+<pre>
 When you download the library, you wont know  what  any
 of the functions is called  at  first.  To  know  which
 function you should use you can search it up and see if
