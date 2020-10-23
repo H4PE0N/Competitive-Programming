@@ -70,6 +70,26 @@ int reverse_character_string_test(char* string,
 }
 ```
 <pre>
+If you want to contribute by creating a  function,  you
+will first make the test-function  for  that  function,
+then creating the actual function. After that you  will
+test the function you have made,  by  using  the  test-
+function. And the last thing you will do, is to  create
+an information block about  your  function.  That  will
+only be performed if the function you did is made to be
+used by the  users.  Here  is  an  example  of  how  an
+information block could look like:
+</pre>
+```json
+"reverse_character_string":
+{
+  "description": "The returning string  of  this  function  will  be  the\nmirrored version of the inputted string.  The  function\nreverses the order of the strings characters.",
+  "parameters": ["char* string", "int length"],
+  "returning": "char* reverse"
+},
+```
+
+<pre>
 When you are located in a folder with multiple  folders
 inside,  you  maybe  want  to  see  what  the   folders
 contains. Or you maybe just want to see what the folder

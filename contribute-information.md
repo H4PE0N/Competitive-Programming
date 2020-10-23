@@ -6,7 +6,8 @@ on your computer. Then you can type  the  following  to
 get a copy of the project:
 </pre>
 ```bash
-$ git clone
+$ git clone git@github.com:H4PE0N/\
+            Programming-Functions-Library.git
 ```
 <pre>
 When you have cloned the project to your computer,  and
@@ -88,7 +89,7 @@ GitHub. To publish your changes to GitHub, so the other
 programmers can se what you have done,  you  will  type
 the first command. If  the  first  command  returns  an
 error, it is because you have not yet created a  remote
-branch. To create a remove branch and push the changes,
+branch. To create a remote branch and push the changes,
 you will use the second command.
 </pre>
 ```bash
@@ -97,7 +98,13 @@ $ git push
 $ git push --set-upstream origin <branch-name>
 ```
 <pre>
-pull request
+To propose the  new  changes  to  be  in  the  original
+repository, you will use a pull request. When you  have
+published your changes to GitHub,  you  can  choose  to
+create a pull request with a  branch  in  the  original
+repository. To  then  accept  the  changes  in  to  the
+project, you need your proposed changes to  be  granted
+by a high-rated developer at the project.
 
 When  you  want  to  continue  making  changes  to  the
 project, you will have to be in sync  with  the  public
