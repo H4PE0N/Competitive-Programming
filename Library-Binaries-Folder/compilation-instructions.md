@@ -33,7 +33,7 @@ $ make -s library-compile-program
 When you have compiled the  default  program,  and  you
 want to run the executable file that was created in the
 folder. You will run the file by typing  the  following
-in the terminal:
+command inside the terminal:
 </pre>
 ```bash
 $ ./library-compile-program
@@ -45,7 +45,7 @@ function you should use you can search it up and see if
 it does what you  want  it  to  do.  To  search  for  a
 function you will use some keywords, it is  words  that
 are common in the programming  world,  like  array  and
-integer...
+integer.
 </pre>
 ```bash
 $ python search-functions-program.py search <keywords>
@@ -74,7 +74,10 @@ $ make generate-object-folders
 If the program you wrote does not work,  if  it  has  a
 problem. You  can  debug  the  program  using  the  gdb
 debugger. To start the debugger on the default  program
-you can type:
+you can type  the  following  command.  There  is  many
+commands you can use inside the debugger,  so  to  list
+them all would be a wast  of  time.  But  to  exit  the
+debugger, you will type `quit`.
 </pre>
 ```bash
 $ gdb ./library-compile-program

@@ -35,9 +35,11 @@ int main(int argc, char** argv)
 ```
 <pre>
 The functions that are stored  in  this  library  could
-look different, but some things stay the same. This  is
-an example of how a normal  function  in  this  library
-could look:
+look different, but some things stay the same. All  the
+functions are created by some rules.  The  rules  tells
+the programmer what the function should and should  not
+have. This is an example of how a  normal  function  in
+this library could look like:
 </pre>
 ```C
 char* reverse_character_string(char* string,int length)
@@ -88,7 +90,19 @@ information block could look like:
   "returning": "char* reverse"
 },
 ```
-
+<pre>
+When you want to compile your program, or you  want  to
+search or  show  functions,  you  will  be  using  some
+commands in the Library-Binaries-Folder. To know  which
+command you should use, you can look in the compilation
+file.  In  this  file,  every  step  of  compiling  and
+searching or showing a function is well documented.  To
+show the instructions when you are in the console,  you
+can execute this command:
+</pre>
+```bash
+$ cat compilation-instructions.md
+```
 <pre>
 When you are located in a folder with multiple  folders
 inside,  you  maybe  want  to  see  what  the   folders
@@ -110,4 +124,40 @@ license you can type:
 </pre>
 ```bash
 $ cat LICENSE.md
+```
+<pre>
+This library uses many different tools to make it work.
+To  compile  and  run  everything,  you  need  multiple
+different compilers. For the best user experience,  you
+need to download some other programs. But which program
+should you download. To setup the library the best way,
+you should look up this file using the command:
+</pre>
+```bash
+$ cat installation-description.md
+```
+<pre>
+If you want to contribute to the Programming-Functions-
+Library, you  could  look  through  this  documentation
+about how to contribute by using Git. When you want  to
+make changes to the project, you could do that  in  the
+way you feel best. But if you just have started working
+with open source, Git is a useful thing to use. To  see
+the options you could use when  contributing  with  the
+help of Git, you could check out this file  using  this
+command:
+</pre>
+```bash
+$ cat contribute-information.md
+```
+<pre>
+When you want to create a function in this library, you
+have to follow some rules. Those instructions are  well
+documented in the following file. To see all the  rules
+you have to have in mind when you are contributing code
+to this library, you  can  type  this  command  in  the
+console:
+</pre>
+```bash
+$ cat contribute-instructions.md
 ```
