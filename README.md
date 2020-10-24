@@ -101,7 +101,7 @@ show the instructions when you are in the console,  you
 can execute this command:
 </pre>
 ```bash
-$ cat compilation-instructions.md
+$ vim compilation-instructions.md
 ```
 <pre>
 When you are located in a folder with multiple  folders
@@ -112,7 +112,7 @@ in  the  folder,  that  will  tell  you  the  directory
 information. To see the information you  can type:
 </pre>
 ```bash
-$ cat directory-information.md
+$ vim directory-information.md
 ```
 <pre>
 This project has a license to protect  the  information
@@ -123,7 +123,7 @@ the license file. To open the markdown  file  with  the
 license you can type:
 </pre>
 ```bash
-$ cat LICENSE.md
+$ vim LICENSE.md
 ```
 <pre>
 This library uses many different tools to make it work.
@@ -134,7 +134,7 @@ should you download. To setup the library the best way,
 you should look up this file using the command:
 </pre>
 ```bash
-$ cat installation-description.md
+$ vim installation-description.md
 ```
 <pre>
 If you want to contribute to the Programming-Functions-
@@ -148,7 +148,7 @@ help of Git, you could check out this file  using  this
 command:
 </pre>
 ```bash
-$ cat contribute-information.md
+$ vim contribute-information.md
 ```
 <pre>
 When you want to create a function in this library, you
@@ -159,5 +159,14 @@ to this library, you  can  type  this  command  in  the
 console:
 </pre>
 ```bash
-$ cat contribute-instructions.md
+$ vim contribute-instructions.md
 ```
+<pre>
+When you have opened a file using vim in  the  terminal
+and you want to get out of the editor, you can type the
+following command. It will get you out of  the  editor,
+and leave it as it was when you opened it.  That  means
+that you wont accidentally change any  of  the  content
+inside the file. To exit vim in the terminal, you will
+first press the escape key, then type `:q!`
+</pre>
