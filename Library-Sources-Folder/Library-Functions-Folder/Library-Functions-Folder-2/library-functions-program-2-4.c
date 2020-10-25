@@ -79,13 +79,12 @@ int matrix_array_smaller(int** matrix, int height,
 int** insert_matrix_integers(int** matrix, int* first,
   int* second, int integer)
 {
-  for(int height=first[1];height <= second[1];height++)
+  for(int index = first[1]; index <= second[1];index++)
   {
-    for(int width=first[0]; width <= second[0];width++)
-    {
-      matrix = allocate_matrix_integer(matrix, height,
-        width, integer);
-    }
+    int* array = matrix_index_array(matrix, index);
+    array = insert_array_integers(array, first[0],
+      second[0], integer);
+    matrix = allocate_matrix_array(matrix,index,array);
   }
   return matrix;
 }

@@ -1252,5 +1252,29 @@
     "description": "This function prints out the inputted coordinate in the\nconsole. The first integer the function prints  out  is\nthe width, then comes the height.",
     "parameters": ["int* coordinate"],
     "returning": "void"
+  },
+  "insert_array_integers":
+  {
+    "description": "This function takes in  an  array,  and  allocates  an\ninteger within two indexes. This is  useful  when  you\nwant to fill the array with some integers.",
+    "parameters": ["int* array", "int first", "int second", "int integer"],
+    "returning": "int* array"
+  },
+  "insert_string_characters":
+  {
+    "description": "If you want to allocate a character to a string  within\nsome indexes, this function is for you. You  input  two\nindexes, and the character will be within them.",
+    "parameters": ["char* string", "int first", "int second", "char character"],
+    "returning": "char* string"
+  },
+  "insert_matrix_integers":
+  {
+    "description": "If you want to insert an integer in a  rectangle  shape\ninside a matrix, you can use this function. It takes in\ncoordinates, and return the filled matrix.",
+    "parameters": ["int** matrix", "int* first", "int* second", "int integer"],
+    "returning": "int** matrix"
+  },
+  "insert_sentence_characters":
+  {
+    "description": "This function inserts  a  character  to  the  slots  in\nbetween two inputted coordinates. It forms a  rectangle\nin the sentence, it could be used as graphics.",
+    "parameters": ["char** sentence", "int* first", "int* second", "char character"],
+    "returning": "char** sentence"
   }
 }

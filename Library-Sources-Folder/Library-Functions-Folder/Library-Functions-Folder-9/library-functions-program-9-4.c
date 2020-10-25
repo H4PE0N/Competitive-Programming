@@ -81,13 +81,13 @@ int sentence_string_index(char** sentence, int height,
 char** insert_sentence_characters(char** sentence,
   int* first, int* second, char character)
 {
-  for(int height=first[1];height <= second[1];height++)
+  for(int index = first[1]; index <= second[1];index++)
   {
-    for(int width=first[0]; width <= second[0];width++)
-    {
-      sentence = allocate_sentence_character(sentence,
-        height, width, character);
-    }
+    char* string=sentence_index_string(sentence,index);
+    string = insert_string_characters(string, first[0],
+      second[0], character);
+    sentence = allocate_sentence_string(sentence,index,
+      string);
   }
   return sentence;
 }
