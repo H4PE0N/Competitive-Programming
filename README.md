@@ -91,6 +91,17 @@ information block could look like:
 },
 ```
 <pre>
+Before you define the variable you want to create,  you
+should declare it in its header file.  By  doing  that,
+the compiler wont give any errors because the  function
+does not exist. The declaration of the function  should
+match the length of the other declarations of the other
+functions.
+</pre>
+```C
+char* reverse_character_string(char*, int);
+```
+<pre>
 When you want to compile your program, or you  want  to
 search or  show  functions,  you  will  be  using  some
 commands in the Library-Binaries-Folder. To know  which
@@ -168,5 +179,5 @@ following command. It will get you out of  the  editor,
 and leave it as it was when you opened it.  That  means
 that you wont accidentally change any  of  the  content
 inside the file. To exit vim in the terminal, you will
-first press the escape key, then type `:q!`
+first press the escape key, then type :q!
 </pre>
