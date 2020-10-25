@@ -14,9 +14,16 @@ int* generate_integer_array(int);
 int* increase_array_memory(int*, int,
   int);
 
+int coordinate_variable_height(int*);
+
 int integer_array_length(int*);
 
 int array_contains_integer(int*, int,
+  int);
+
+int* combine_integer_arrays(int*,int*);
+
+int* generate_coordinate_variable(int,
   int);
 
 int* switch_adjacent_integers(int*,
@@ -75,6 +82,8 @@ int compare_arrays_integer(int*, int*,
 int array_integer_greater(int*, int,
   int);
 
+int coordinate_variable_width(int*);
+
 int array_integer_smaller(int*, int,
   int);
 
@@ -91,6 +100,9 @@ int* integer_array_section(int*, int,
 int* add_array_integers(int*, int, int,
   int);
 
-int* combine_integer_arrays(int*,int*);
+int compare_pair_variables(int*, int*);
+
+int compare_coordinate_variables(int*,
+  int*);
 
 #endif

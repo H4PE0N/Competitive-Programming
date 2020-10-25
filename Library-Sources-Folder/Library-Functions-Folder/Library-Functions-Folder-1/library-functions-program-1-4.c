@@ -1,18 +1,6 @@
 
 #include "../library-functions-headers.h"
 
-int array_integer_index(int* array, int length,
-  int integer)
-{
-  int integer_index = length;
-  for(int index = (length - 1); index >= 0; index -= 1)
-  {
-    if(array_index_integer(array, index) == integer)
-      { integer_index = index; break; }
-  }
-  return integer_index;
-}
-
 int integers_inside_array(int* array, int length,
   int* integers)
 {
@@ -29,6 +17,11 @@ int integers_inside_array(int* array, int length,
   return false;
 }
 
+int compare_pair_variables(int* first, int* second)
+{
+  return comapre_integer_arrays(first, second, 2);
+}
+
 int* increase_array_memory(int* array, int length,
   int increase)
 {
@@ -41,6 +34,12 @@ int* increase_array_memory(int* array, int length,
       integer);
   }
   return increased;
+}
+
+int coordinate_variable_height(int* coordinate)
+{
+  int height = array_index_integer(coordinate, 1);
+  return height;
 }
 
 int* combine_integer_arrays(int* first, int* second)
@@ -57,4 +56,33 @@ int* combine_integer_arrays(int* first, int* second)
       integer);
   }
   return combined;
+}
+
+int coordinate_variable_width(int* coordinate)
+{
+  int width = array_index_integer(coordinate, 0);
+  return width;
+}
+
+int* generate_coordinate_variable(int width,int height)
+{
+  int* coordinate=generate_pair_variable(width, height);
+  return coordinate;
+}
+
+int array_integer_index(int* array, int length,
+  int integer)
+{
+  int integer_index = length;
+  for(int index = (length - 1); index >= 0; index -= 1)
+  {
+    if(array_index_integer(array, index) == integer)
+      { integer_index = index; break; }
+  }
+  return integer_index;
+}
+
+int compare_coordinate_variables(int*first, int*second)
+{
+  return comapre_integer_arrays(first, second, 2);
 }

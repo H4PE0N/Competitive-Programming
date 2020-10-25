@@ -71,3 +71,26 @@ int increase_array_memory_test(int* array, int length,
   return compare_integer_arrays(increased, output,
     length + increase);
 }
+
+int coordinate_variable_width_test(int* coordinate,
+  int output)
+{
+  int width = coordinate_variable_width(coordinate);
+  return compare_integer_variables(width, output);
+}
+
+int coordinate_variable_height_test(int* coordinate,
+  int output)
+{
+  int height = coordinate_variable_height(coordinate);
+  return compare_integer_variables(height, output);
+}
+
+int generate_coordinate_variable_test(int width,
+  int height, int* output)
+{
+  int* coordinate = generate_coordinate_variable(width,
+    height);
+  return compare_coordinate_variables(coordinate,
+    output);
+}

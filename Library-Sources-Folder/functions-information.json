@@ -1204,5 +1204,35 @@
     "description": "This function increases the size of a string, that  can\nbe used when you want to add more characters  than  you\nfirst thought. You will input the increase.",
     "parameters": ["char* string", "int length", "int increase"],
     "returning": "char* increased"
+  },
+  "compare_pair_variables":
+  {
+    "description": "If you want to compare two pair variables against  each\nother,  this  function  might  help.  It  compares  the\nintegers from both pairs against each other.",
+    "parameters": ["int* first", "int* second"],
+    "returning": "int boolean"
+  },
+  "comapre_coordinate_variables":
+  {
+    "description": "A coordinate has a width and a  height,  that  together\nmarks a position in a field. If you want to compare two\ncoordinates, you can use this function.",
+    "parameters": ["int* first", "int* second"],
+    "returning": "int boolean"
+  },
+  "coordinate_variable_height":
+  {
+    "description": "If  you  want  to  know  what  height  your  coordinate\nvariable has, you can use this  function.  It  returns\nthe height property of an inputted coordinate.",
+    "parameters": ["int* coordinate"],
+    "returning": "int height"
+  },
+  "coordinate_variable_width":
+  {
+    "description": "To get the width property  of  a  coordinate,  you  can\naccess the first integer in the  array.  You  can  also\nuse this function, it returns the coordinate-width.",
+    "parameters": ["int* coordinate"],
+    "returning": "int width"
+  },
+  "generate_coordinate_variable":
+  {
+    "description": "If you want to generate a coordinate variable, you  can\nuse this function. It generates an integer array of two\nintegers, first a width and then a height.",
+    "parameters": ["int width", "int height"],
+    "returning": "int* coordinate"
   }
 }
