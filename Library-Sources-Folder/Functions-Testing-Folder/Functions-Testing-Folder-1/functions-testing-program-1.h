@@ -92,4 +92,10 @@ int integer_array_section_test(int*, int,
 int add_array_integers_test(int*, int, int,
   int, int*);
 
+int combine_integer_arrays_test(int*, int*,
+  int*);
+
+int increase_array_memory_test(int*, int,
+  int);
+
 #endif

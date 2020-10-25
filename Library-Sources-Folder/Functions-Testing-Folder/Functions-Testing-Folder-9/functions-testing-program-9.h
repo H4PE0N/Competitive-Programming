@@ -92,7 +92,7 @@ int sentence_string_index_test(char**, int, char*,
 int add_sentence_string_test(char**, int, char*,
   char**);
 
-int remove_sentence_string_test(char**, int, char*,
+int remove_sentence_string_test(char**, int,char*,
   char**);
 
 #endif

@@ -28,3 +28,33 @@ int integers_inside_array(int* array, int length,
   }
   return false;
 }
+
+int* increase_array_memory(int* array, int length,
+  int increase)
+{
+  int* increased = generate_integer_array(length +
+    increase);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    int integer = array_index_integer(array, index);
+    increased = add_array_integer(increased, index,
+      integer);
+  }
+  return increased;
+}
+
+int* combine_integer_arrays(int* first, int* second)
+{
+  int f_length = integer_array_length(first);
+  int s_length = integer_array_length(second);
+  int* combined = increase_array_memory(first,f_length,
+    s_length);
+  for(int index = 0; index < s_length; index = index+1)
+  {
+    int integer = array_index_integer(second, index);
+    int current = (index + f_length);
+    combined = add_array_integer(combined, current,
+      integer);
+  }
+  return combined;
+}

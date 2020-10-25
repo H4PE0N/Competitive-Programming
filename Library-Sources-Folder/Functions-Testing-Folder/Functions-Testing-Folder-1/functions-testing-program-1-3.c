@@ -53,3 +53,21 @@ int compare_array_content_test(int* first, int* second,
     length);
   return compare_integer_variables(boolean, output);
 }
+
+int combine_integer_arrays_test(int* first,int* second,
+  int* output)
+{
+  int* combined = combine_integer_arrays(first,second);
+  int length = integer_array_length(combined);
+  return compare_integer_arrays(combined, output,
+    length);
+}
+
+int increase_array_memory_test(int* array, int length,
+  int increase, int* output)
+{
+  int* increased = increase_array_memory(array, length,
+    increase);
+  return compare_integer_arrays(increased, output,
+    length + increase);
+}

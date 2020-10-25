@@ -74,6 +74,9 @@ int compare_strings_character_test(char*, char*,
 int string_character_greater_test(char*, int,
   int, int);
 
+int increase_string_memory_test(char*, int, int,
+  char*);
+
 int string_character_smaller_test(char*, int,
   int, int);
 
@@ -100,5 +103,8 @@ int compare_character_variables_test(char, char,
 
 int character_variable_smaller_test(char, char,
   int);
+
+int combine_character_strings_test(char*, char*,
+  char*);
 
 #endif

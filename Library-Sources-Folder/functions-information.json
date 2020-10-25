@@ -1180,5 +1180,29 @@
     "description": "If you have a string from a sentence, and you  want  to\nknow which index the string  has.  You  can  call  this\nfunction and it will return the index of the string.",
     "parameters": ["char** sentence", "int height", "char* string"],
     "returning": "int index"
+  },
+  "combine_integer_arrays":
+  {
+    "description": "If you have two integer arrays, and you want to  create\nan array with all the integers together,  you  can  use\nthis function. It combines two integer arrays.",
+    "parameters": ["int* first", "int* second"],
+    "returning": "int* combined"
+  },
+  "combine_character_strings":
+  {
+    "description": "This function returns a string with characters from two\ninputted strings. If you want to combine two  character\nstrings, this function will be a great option.",
+    "parameters": ["char* first", "char* second"],
+    "returning": "char* combined"
+  },
+  "increase_array_memory":
+  {
+    "description": "If you have an integer array, and you want to  increase\nits memory, you  can  use  this  function.  It  can  be\nhelpful if you want to add more integers.",
+    "parameters": ["int* array", "int length", "int increase"],
+    "returning": "int* increased"
+  },
+  "increase_string_memory":
+  {
+    "description": "This function increases the size of a string, that  can\nbe used when you want to add more characters  than  you\nfirst thought. You will input the increase.",
+    "parameters": ["char* string", "int length", "int increase"],
+    "returning": "char* increased"
   }
 }

@@ -98,7 +98,7 @@ def collect_functions_information(filename):
 arguments = console.argv[1:]; arguments.append(None)
 command = arguments[0]
 filename = "../Library-Sources-Folder/\
-functions-information-file.json"
+functions-information.json"
 
 functions = collect_functions_information(filename)
 console_command_handler(command, functions, arguments)

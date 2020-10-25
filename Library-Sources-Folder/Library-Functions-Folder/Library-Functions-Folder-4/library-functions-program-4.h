@@ -12,6 +12,9 @@ char* generate_character_string(int);
 
 int character_string_length(char*);
 
+char* increase_string_memory(char*,int,
+  int);
+
 int string_contains_character(char*,
   int, char);
 
@@ -109,5 +112,8 @@ int character_variable_smaller(char,
 
 int compare_character_variables(char,
   char);
+
+char* combine_character_strings(char*,
+  char*);
 
 #endif

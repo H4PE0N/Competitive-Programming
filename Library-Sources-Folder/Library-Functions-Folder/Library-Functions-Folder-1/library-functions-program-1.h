@@ -11,6 +11,9 @@ int* allocate_array_integers(int*,int);
 
 int* generate_integer_array(int);
 
+int* increase_array_memory(int*, int,
+  int);
+
 int integer_array_length(int*);
 
 int array_contains_integer(int*, int,
@@ -87,5 +90,7 @@ int* integer_array_section(int*, int,
 
 int* add_array_integers(int*, int, int,
   int);
+
+int* combine_integer_arrays(int*,int*);
 
 #endif
