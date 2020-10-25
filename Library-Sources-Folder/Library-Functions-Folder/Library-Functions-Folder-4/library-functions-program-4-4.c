@@ -73,7 +73,7 @@ char* combine_character_strings(char*first,char*second)
 {
   int f_length = character_string_length(first);
   int s_length = character_string_length(second);
-  char* combined = increase_string_memory(first,f_length,
+  char* combined=increase_string_memory(first,f_length,
     s_length);
   for(int index = 0; index < s_length; index = index+1)
   {
@@ -83,4 +83,15 @@ char* combine_character_strings(char*first,char*second)
       character);
   }
   return combined;
+}
+
+char* insert_string_characters(char* string, int first,
+  int second, char character)
+{
+  for(int index=first; index <= second;index=index + 1)
+  {
+    string = allocate_string_character(string, index,
+      character);
+  }
+  return string;
 }

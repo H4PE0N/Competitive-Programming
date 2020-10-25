@@ -15,6 +15,9 @@ int allocate_sentence_character_test(char**, int,
 int delete_sentence_character_test(char**, int,
   int, char**);
 
+int insert_sentence_characters_test(char**, int*,
+  int*, char, char**);
+
 int allocate_sentence_string_test(char**, int,
   char*, char**);
 

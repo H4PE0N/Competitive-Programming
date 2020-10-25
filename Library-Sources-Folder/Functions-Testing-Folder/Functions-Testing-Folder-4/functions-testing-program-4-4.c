@@ -20,3 +20,12 @@ int increase_string_memory_test(char*string,int length,
   return compare_character_strings(increased, output,
     length + increase);
 }
+
+int insert_string_characters_test(char* string,
+  int first, int second, char character, char* output)
+{
+  string=insert_string_characters(string,first, second,
+    character);
+  return compare_character_strings(string, output,
+    second);
+}

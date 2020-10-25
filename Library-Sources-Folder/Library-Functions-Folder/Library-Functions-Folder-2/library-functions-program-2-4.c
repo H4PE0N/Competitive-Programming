@@ -75,3 +75,17 @@ int matrix_array_smaller(int** matrix, int height,
   }
   return false;
 }
+
+int** insert_matrix_integers(int** matrix, int* first,
+  int* second, int integer)
+{
+  for(int height=first[1];height <= second[1];height++)
+  {
+    for(int width=first[0]; width <= second[0];width++)
+    {
+      matrix = allocate_matrix_integer(matrix, height,
+        width, integer);
+    }
+  }
+  return matrix;
+}

@@ -96,6 +96,9 @@ int array_integer_smaller(int*, int,
 
 int* reverse_integer_array(int*, int);
 
+int* insert_array_integers(int*, int,
+  int, int);
+
 int array_integer_index(int*, int,int);
 
 int integers_inside_array(int*, int,

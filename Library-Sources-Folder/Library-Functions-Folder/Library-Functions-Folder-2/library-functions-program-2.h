@@ -10,10 +10,13 @@ int** allocate_matrix_integer(int**,int,
 int** delete_matrix_integer(int**, int,
   int);
 
-int integer_matrix_height(int**,int);
+int integer_matrix_height(int**, int);
 
 int matrix_contains_integer(int**, int,
   int, int);
+
+int** insert_matrix_integers(int**,int*,
+  int*, int);
 
 int** remove_matrix_integer(int**, int,
   int);

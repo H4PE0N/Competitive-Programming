@@ -14,3 +14,13 @@ int* generate_random_pair(int minimum, int maximum)
   int* pair = generate_random_array(2,minimum,maximum);
   return pair;
 }
+
+int* insert_array_integers(int* array, int first,
+  int second, int integer)
+{
+  for(int index=first; index <= second;index=index + 1)
+  {
+    array=allocate_array_integer(array, index,integer);
+  }
+  return array;
+}

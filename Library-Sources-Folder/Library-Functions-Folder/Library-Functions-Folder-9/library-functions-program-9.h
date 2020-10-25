@@ -68,6 +68,9 @@ int sentence_character_greater(char**, int,
 int sentence_character_smaller(char**, int,
   int, int);
 
+char** insert_sentence_characters(char**,
+  int*, int*, char);
+
 int sentence_string_smaller(char**,int,int,
   int);
 

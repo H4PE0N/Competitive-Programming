@@ -80,6 +80,9 @@ int increase_string_memory_test(char*, int, int,
 int string_character_smaller_test(char*, int,
   int, int);
 
+int insert_string_characters_test(char*,int,int,
+  char, char*);
+
 int reverse_character_string_test(char*, int,
   char*);
 

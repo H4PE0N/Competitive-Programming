@@ -59,6 +59,9 @@ char* switch_adjacent_characters(char*,
 
 char* sort_string_iteration(char*,int);
 
+char* insert_string_characters(char*,
+  int, int, char);
+
 char* sort_character_string(char*,int);
 
 int compare_string_content(char*,char*,

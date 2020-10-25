@@ -77,3 +77,17 @@ int sentence_string_index(char** sentence, int height,
   }
   return string_index;
 }
+
+char** insert_sentence_characters(char** sentence,
+  int* first, int* second, char character)
+{
+  for(int height=first[1];height <= second[1];height++)
+  {
+    for(int width=first[0]; width <= second[0];width++)
+    {
+      sentence = allocate_sentence_character(sentence,
+        height, width, character);
+    }
+  }
+  return sentence;
+}
