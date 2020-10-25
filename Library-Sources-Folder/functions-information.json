@@ -1234,5 +1234,23 @@
     "description": "If you want to generate a coordinate variable, you  can\nuse this function. It generates an integer array of two\nintegers, first a width and then a height.",
     "parameters": ["int width", "int height"],
     "returning": "int* coordinate"
+  },
+  "generate_random_pair":
+  {
+    "description": "When you generate a random  pair,  you  are  generating\ntwo integers between a minimum  and  a  maximum  value.\nThis function generates a random pair using that.",
+    "parameters": ["int minimum", "int maximum"],
+    "returning": "int* pair"
+  },
+  "generate_random_coordinate":
+  {
+    "description": "To generate a random coordinate, you need  the  maximum\nwidth and height the coordinate could be. Then you  use\nthe width and the height to generate the coordinate.",
+    "parameters": ["int width", "int height"],
+    "returning": "int* coordinate"
+  },
+  "coordinate_variable_stdout":
+  {
+    "description": "This function prints out the inputted coordinate in the\nconsole. The first integer the function prints  out  is\nthe width, then comes the height.",
+    "parameters": ["int* coordinate"],
+    "returning": "void"
   }
 }

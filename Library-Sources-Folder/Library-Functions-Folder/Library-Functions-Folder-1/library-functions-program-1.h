@@ -11,10 +11,17 @@ int* allocate_array_integers(int*,int);
 
 int* generate_integer_array(int);
 
+int* generate_random_coordinate(int,
+  int);
+
+int* generate_random_pair(int, int);
+
 int* increase_array_memory(int*, int,
   int);
 
 int coordinate_variable_height(int*);
+
+void coordinate_variable_stdout(int*);
 
 int integer_array_length(int*);
 

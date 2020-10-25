@@ -104,9 +104,11 @@ int compare_pair_variables_test(int*, int*,
 int compare_coordinate_variables_test(int*,
   int*, int);
 
-int coordinate_variable_height_test(int*);
+int coordinate_variable_height_test(int*,
+  int);
 
-int coordinate_variable_width_test(int*);
+int coordinate_variable_width_test(int*,
+  int);
 
 int generate_coordinate_variable_test(int,
   int);

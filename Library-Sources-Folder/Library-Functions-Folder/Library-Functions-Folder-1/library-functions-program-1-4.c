@@ -19,7 +19,7 @@ int integers_inside_array(int* array, int length,
 
 int compare_pair_variables(int* first, int* second)
 {
-  return comapre_integer_arrays(first, second, 2);
+  return compare_integer_arrays(first, second, 2);
 }
 
 int* increase_array_memory(int* array, int length,
@@ -66,7 +66,7 @@ int coordinate_variable_width(int* coordinate)
 
 int* generate_coordinate_variable(int width,int height)
 {
-  int* coordinate=generate_pair_variable(width, height);
+  int* coordinate=generate_integer_pair(width, height);
   return coordinate;
 }
 
@@ -84,5 +84,12 @@ int array_integer_index(int* array, int length,
 
 int compare_coordinate_variables(int*first, int*second)
 {
-  return comapre_integer_arrays(first, second, 2);
+  return compare_integer_arrays(first, second, 2);
+}
+
+void coordinate_variable_stdout(int* coordinate)
+{
+  int width = coordinate_variable_width(coordinate);
+  int height = coordinate_variable_height(coordinate);
+  printf("(%d, %d)\n", width, height);
 }
