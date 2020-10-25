@@ -64,9 +64,9 @@ char** remove_sentence_characters(char** sentence,
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
-    int width = sentence_string_length(sentence,index);
-    *(sentence + index) = remove_string_characters(
-      string, width, character);
+    int length=sentence_string_length(sentence, index);
+    sentence = allocate_sentence_string(sentence,index,
+    remove_string_characters(string,length,character));
   }
   return sentence;
 }

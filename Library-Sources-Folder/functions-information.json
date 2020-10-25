@@ -1276,5 +1276,11 @@
     "description": "This function inserts  a  character  to  the  slots  in\nbetween two inputted coordinates. It forms a  rectangle\nin the sentence, it could be used as graphics.",
     "parameters": ["char** sentence", "int* first", "int* second", "char character"],
     "returning": "char** sentence"
+  },
+  "sentence_contains_character":
+  {
+    "description": "If you want know if your  string  sentence  contains  a\ncharacter, this function is a great choice. It  returns\ntrue if the sentence contains the character.",
+    "parameters": ["char** sentence", "int height", "int width", "char character"],
+    "returning": "int boolean"
   }
 }

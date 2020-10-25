@@ -12,3 +12,11 @@ int insert_sentence_characters_test(char** sentence,
   return compare_string_sentence(sentence, output,
     height, width);
 }
+
+int sentence_contains_character_test(char** sentence,
+  int height, int width, char character, int output)
+{
+  int boolean = sentence_contains_character(sentence,
+    height, width, character);
+  return compare_integer_variables(boolean, output);
+}

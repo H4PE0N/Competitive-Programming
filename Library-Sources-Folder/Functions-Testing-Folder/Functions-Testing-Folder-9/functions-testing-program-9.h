@@ -18,6 +18,9 @@ int delete_sentence_character_test(char**, int,
 int insert_sentence_characters_test(char**, int*,
   int*, char, char**);
 
+int sentence_contains_character_test(char**, int,
+  int, char, int);
+
 int allocate_sentence_string_test(char**, int,
   char*, char**);
 

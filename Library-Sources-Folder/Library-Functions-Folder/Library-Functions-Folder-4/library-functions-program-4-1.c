@@ -68,8 +68,8 @@ char* allocate_string_characters(char* string,
 char* remove_string_character(char* string, int length,
   char character)
 {
-  int index = string_character_index(string, character,
-    length);
+  int index = string_character_index(string, length,
+    character);
   return delete_string_character(string, length,index);
 }
 

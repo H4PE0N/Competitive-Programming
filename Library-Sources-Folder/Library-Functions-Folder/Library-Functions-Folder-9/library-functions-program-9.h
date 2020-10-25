@@ -12,6 +12,9 @@ char* sentence_index_string(char**, int);
 char** generate_random_sentence(int, int,
   int, int);
 
+int sentence_contains_character(char**,int,
+  int, char);
+
 void string_sentence_stdout(char**, int,
   int);
 
