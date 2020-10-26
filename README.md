@@ -34,6 +34,18 @@ int main(int argc, char** argv)
 }
 ```
 <pre>
+This program generates a random array, with help the of
+some functions. The first thing that the programs does,
+is to declare some variables, a length  and  a  minimum
+and maximum value. Then it  creates  the  random  array
+using those variables. And at last, the program  prints
+out the array in the console using a function from  the
+library. The output from this program could be:
+</pre>
+```bash
+>>> 4 10 5 1 0 8 2 3 7 0
+```
+<pre>
 The functions that are stored  in  this  library  could
 look different, but some things stay the same. All  the
 functions are created by some rules.  The  rules  tells
