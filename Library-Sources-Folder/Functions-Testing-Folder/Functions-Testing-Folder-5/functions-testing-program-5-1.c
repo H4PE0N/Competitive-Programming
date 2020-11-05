@@ -28,7 +28,8 @@ int reduce_binary_integer_test(char* binary,int length,
 int convert_binary_integer_test(char* binary,
   int output)
 {
-  return (convert_binary_integer(binary) == output);
+  int integer = convert_binary_integer(binary);
+  return compare_integer_variables(integer, output);
 }
 
 int increase_binary_integer_test(char*binary,int index,
@@ -49,20 +50,23 @@ int allocate_binary_bit_test(char* binary, int length,
 
 int nearest_binary_length_test(int integer,int output)
 {
-  return (nearest_binary_length(integer) == output);
+  int length = nearest_binary_length(integer);
+  return compare_integer_variables(length, output);
 }
 
 int convert_integer_binary_test(int integer,
   char* output)
 {
   char* binary = convert_integer_binary(integer);
+  int length = character_string_length(binary)
   return compare_character_strings(binary, output,
-    character_string_length(binary));
+    length);
 }
 
 int actual_binary_length_test(int integer, int output)
 {
-  return (actual_binary_length(integer) == output);
+  int length = actual_binary_length(integer);
+  return compare_integer_variables(length, output);
 }
 
 int convert_character_binary_test(char character,
@@ -94,6 +98,7 @@ int convert_array_binary_test(int* array, int length,
   char** output)
 {
   char** binary = convert_array_binary(array, length);
-  return compare_string_sentence(binary,output,length,
-    8);
+  int width = sentence_string_length(binary);
+  return compare_string_sentence(binary, output,length,
+    width);
 }

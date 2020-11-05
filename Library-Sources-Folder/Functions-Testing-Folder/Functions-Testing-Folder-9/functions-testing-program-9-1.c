@@ -23,8 +23,9 @@ int sentence_index_string_test(char** sentence,
   int index, char* output)
 {
   char* string = sentence_index_string(sentence,index);
+  int length = character_string_length(string);
   return compare_character_strings(string, output,
-    character_string_length(string));
+    length);
 }
 
 int allocate_sentence_character_test(char** sentence,
@@ -88,8 +89,9 @@ int add_sentence_string_test(char**sentence,int height,
   char* string, char** output)
 {
   sentence=add_sentence_string(sentence,height,string);
+  int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,
-    height + 1, sentence_string_length(sentence, 0));
+    height + 1, width);
 }
 
 int remove_sentence_string_test(char** sentence,
@@ -97,6 +99,7 @@ int remove_sentence_string_test(char** sentence,
 {
   sentence = remove_sentence_string(sentence, height,
     string);
+  int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,
-    height, sentence_string_length(sentence, 0));
+    height, width);
 }

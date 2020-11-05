@@ -7,10 +7,10 @@ int shuffle_sentence_strings_test(char** sentence,
 {
   sentence = shuffle_sentence_strings(sentence,height);
   int width = sentence_string_length(sentence, 0);
-  int boolean = !compare_string_sentence(sentence,
-    output, height, width);
-  return boolean && compare_sentence_content(sentence,
-    output, height, width);
+  int same = compare_string_sentence(sentence, output,
+    height, width);
+  int content=compare_sentence_content(sentence,output,
+    height, width); return (!same && content);
 }
 
 int sentence_character_greater_test(char** sentence,
@@ -49,8 +49,9 @@ int sort_string_sentence_test(char** sentence,
   int height, char** output)
 {
   sentence = sort_string_sentence(sentence, height);
+  int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,
-    height, sentence_string_length(sentence, 0));
+    height, width);
 }
 
 int sort_sentence_iteration_test(char** sentence,
@@ -58,8 +59,9 @@ int sort_sentence_iteration_test(char** sentence,
 {
   sentence = sort_sentence_iteration(sentence, height,
     iteration);
+  int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,
-    height, sentence_string_length(sentence, 0));
+    height, width);
 }
 
 int compare_sentence_content_test(char** first,
@@ -83,8 +85,9 @@ int reverse_sentence_strings_test(char** sentence,
   int height, char** output)
 {
   sentence = reverse_sentence_strings(sentence,height);
+  int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,
-    height, sentence_string_length(sentence, 0));
+    height, width);
 }
 
 int sentence_string_index_test(char** sentence,

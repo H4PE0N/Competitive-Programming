@@ -16,8 +16,9 @@ int move_matrix_arrays_test(int** matrix, int height,
   int start, int** output)
 {
   matrix = move_matrix_arrays(matrix, height, start);
+  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix, output, height,
-    matrix_array_length(matrix, 0));
+    width);
 }
 
 int compare_integer_matrix_test(int** first,int**second,
@@ -33,10 +34,10 @@ int shuffle_matrix_arrays_test(int** matrix,int height,
 {
   int width = matrix_array_length(matrix, 0);
   matrix = shuffle_matrix_arrays(matrix, height);
-  int boolean = !compare_integer_matrix(matrix, output,
-    height, width);
-  return boolean && compare_matrix_content(matrix,
-    output, height, width);
+  int same=compare_integer_matrix(matrix,output,height,
+    width);
+  int content = compare_matrix_content(matrix, output,
+    height, width); return (!same && content);
 }
 
 int duplicate_integer_matrix_test(int** matrix,
@@ -52,8 +53,9 @@ int sort_matrix_arrays_test(int** matrix, int height,
   int** output)
 {
   matrix = sort_matrix_arrays(matrix, height);
+  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix, output, height,
-     matrix_array_length(matrix, 0));
+    width);
 }
 
 int compare_matrix_content_test(int** first,
@@ -91,8 +93,9 @@ int reverse_matrix_arrays_test(int** matrix,int height,
   int** output)
 {
   matrix = reverse_matrix_arrays(matrix, height);
+  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix, output, height,
-    matrix_array_length(matrix, 0));
+    width);
 }
 
 int matrix_array_index_test(int** matrix, int height,

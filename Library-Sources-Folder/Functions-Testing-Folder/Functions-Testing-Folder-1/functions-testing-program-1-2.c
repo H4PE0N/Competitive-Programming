@@ -61,10 +61,9 @@ int shuffle_integer_array_test(int* array, int length,
   int* output)
 {
   array = shuffle_integer_array(array, length);
-  int boolean = !compare_integer_arrays(array, output,
-    length);
-  return boolean && compare_array_content(array,output,
-    length);
+  int same=compare_integer_arrays(array,output,length);
+  int content = compare_array_content(array, output,
+    length); return (!same && content);
 }
 
 int duplicate_integer_array_test(int* array,int length,

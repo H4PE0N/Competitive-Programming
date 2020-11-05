@@ -7,8 +7,9 @@ int allocate_string_character_test(char* string,
 {
   string = allocate_string_character(string, index,
     character);
+  int length = character_string_length(string);
   return compare_character_strings(string, output,
-    character_string_length(string));
+    length);
 }
 
 int allocate_string_characters_test(char* string,
@@ -30,7 +31,8 @@ int generate_character_string_test(int length,
 int character_string_length_test(char* string,
   int output)
 {
-  return (character_string_length(string) == output);
+  int length = character_string_length(string);
+  return compare_integer_variables(length, output);
 }
 
 int string_contains_character_test(char* string,
@@ -46,8 +48,9 @@ int switch_string_characters_test(char* string,
 {
   string = switch_string_characters(string, first,
     second);
+  int length = character_string_length(string);
   return compare_character_strings(string, output,
-    character_string_length(string));
+    length);
 }
 
 int move_string_characters_test(char* string,
@@ -64,7 +67,7 @@ int remove_string_character_test(char* string,
   string = remove_string_character(string, length,
     character);
   return compare_character_strings(string, output,
-    character_string_length(string));
+    length);
 }
 
 int add_string_character_test(char* string, int length,
@@ -81,8 +84,9 @@ int remove_string_characters_test(char* string,
 {
   string = remove_string_characters(string, length,
     character);
+  length = character_string_length(string);
   return compare_character_strings(string, output,
-    character_string_length(string));
+    length);
 }
 
 int compare_character_variables_test(char first,

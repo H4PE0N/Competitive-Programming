@@ -94,5 +94,5 @@ int generate_integer_products_test(int integer,
   int* products = generate_integer_products(integer,
     amount);
   return compare_integer_arrays(products, output,
-    integer_array_length(products));
+    amount);
 }

@@ -31,7 +31,8 @@ int generate_integer_array_test(int length,int* output)
 
 int integer_array_length_test(int* array, int output)
 {
-  return (integer_array_length(array) == output);
+  int length = integer_array_length(array);
+  return compare_integer_variables(length, output);
 }
 
 int array_contains_integer_test(int* array, int length,

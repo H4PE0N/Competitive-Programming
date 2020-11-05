@@ -6,8 +6,9 @@ int delete_matrix_array_test(int** matrix, int height,
   int index, int** output)
 {
   matrix = delete_matrix_array(matrix, height, index);
+  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix, output, height,
-    matrix_array_length(matrix, 0));
+    width);
 }
 
 int allocate_matrix_array_test(int** matrix, int index,
@@ -15,8 +16,9 @@ int allocate_matrix_array_test(int** matrix, int index,
 {
   matrix = allocate_matrix_array(matrix, index, array);
   int width = matrix_array_length(matrix, 0);
+  int height = integer_matrix_height(matrix, width);
   return compare_integer_matrix(matrix, output,
-    integer_matrix_height(matrix, width), width);
+    height, width);
 }
 
 int shuffle_integer_matrix_test(int**matrix,int height,
@@ -24,10 +26,10 @@ int shuffle_integer_matrix_test(int**matrix,int height,
 {
   int width = matrix_array_length(matrix, 0);
   matrix = shuffle_integer_matrix(matrix, height);
-  int boolean = !compare_integer_matrix(matrix, output,
-    height, width);
-  return boolean && compare_matrix_content(matrix,
-    output, height, width);
+  int same=compare_integer_matrix(matrix,output,height,
+    width);
+  int content = compare_matrix_content(matrix, output,
+    height, width); return (!same && content);
 }
 
 int matrix_array_total_test(int** matrix, int index,
@@ -41,8 +43,9 @@ int sort_integer_matrix_test(int** matrix, int height,
   int** output)
 {
   matrix = sort_integer_matrix(matrix, height);
+  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix, output, height,
-    matrix_array_length(matrix, 0));
+    width);
 }
 
 int matrix_array_greater_test(int** matrix, int height,
@@ -66,8 +69,9 @@ int sort_matrix_iteration_test(int** matrix,int height,
 {
   matrix = sort_matrix_iteration(matrix, height,
     iteration);
+  int width = matrix_array_length(matrix, 0);
   return compare_integer_matrix(matrix, output, height,
-    matrix_array_length(matrix, 0));
+    width);
 }
 
 int matrix_integer_greater_test(int** matrix, int first,

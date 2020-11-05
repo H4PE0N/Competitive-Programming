@@ -6,14 +6,16 @@ int convert_string_binary_test(char* string,int length,
   char** output)
 {
   char** binary = convert_string_binary(string,length);
-  return compare_string_sentence(binary, output, length,
-    8);
+  int width = sentence_string_length(binary);
+  return compare_string_sentence(binary, output,length,
+    width);
 }
 
 int convert_binary_character_test(char* binary,
   char output)
 {
-  return (convert_binary_character(binary) == output);
+  char character = convert_binary_character(binary);
+  return compare_character_variables(character,output);
 }
 
 int binary_range_between_test(char* binary,int minimum,

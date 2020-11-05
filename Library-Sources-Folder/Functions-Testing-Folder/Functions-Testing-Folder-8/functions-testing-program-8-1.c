@@ -13,7 +13,8 @@ int integer_range_between_test(int integer,int minimum,
 int convert_decimal_percent_test(double decimal,
   double output)
 {
-  return (convert_decimal_percent(decimal) == output);
+  double percent = convert_decimal_percent(decimal);
+  return compare_decimal_variables(percent, output);
 }
 
 int integer_power_operation_test(int base,int exponent,
@@ -26,7 +27,8 @@ int integer_power_operation_test(int base,int exponent,
 int convert_percent_decimal_test(double percent,
   double output)
 {
-  return (convert_percent_decimal(percent) == output);
+  double decimal = convert_percent_decimal(percent);
+  return compare_decimal_variables(decimal, output);
 }
 
 int check_integer_divisible_test(int first, int second,

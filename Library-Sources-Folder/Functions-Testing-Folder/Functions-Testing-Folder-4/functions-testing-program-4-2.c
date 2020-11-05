@@ -22,10 +22,10 @@ int shuffle_character_string_test(char* string,
   int length, char* output)
 {
   string = shuffle_character_string(string, length);
-  int boolean=!compare_character_strings(string,output,
+  int same = compare_character_strings(string, output,
     length);
-  return boolean && compare_string_content(string,
-    output, length);
+  int content = compare_string_content(string, output,
+    length); return (!same && content);
 }
 
 int duplicate_character_string_test(char* string,
@@ -74,7 +74,7 @@ int string_index_character_test(char* string,int index,
   char output)
 {
   char character=string_index_character(string, index);
-  return (character == output);
+  return compare_character_variables(character,output);
 }
 
 int character_variable_smaller_test(char first,
@@ -99,5 +99,5 @@ int add_string_characters_test(char* string,int length,
   string=add_string_characters(string,length,character,
     amount);
   return compare_character_strings(string, output,
-    character_string_length(string));
+    length + amount);
 }
