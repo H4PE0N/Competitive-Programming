@@ -31,7 +31,8 @@ int increase_binary_integer(char* binary, int index,
   int integer)
 {
   int length = character_string_length(binary);
-  if(string_index_character(binary, index) == '0')
+  char bit = string_index_character(binary, index);
+  if(compare_character_variables(bit, '0'))
     return integer;
   int binary_index = (length - index - 1);
   return integer + calculate_bit_integer(binary_index);
@@ -82,4 +83,18 @@ char* convert_binary_string(char** binary, int length)
       character);
   }
   return string;
+}
+
+char* binary_and_operation(char* first, char* second,
+  int length)
+{
+  char* binary = generate_character_string(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    if(*(first + index)=='1' && *(second + index)=='1')
+      binary = add_string_character(binary, index,'1');
+    else
+      binary = add_string_character(binary, index,'0');
+  }
+  return binary;
 }
