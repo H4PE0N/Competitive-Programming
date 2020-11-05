@@ -43,10 +43,11 @@ int hashmap_index_value_test(int** hashmap, int index,
   return compare_integer_variables(value, output);
 }
 
-int hashmap_keyword_value_test(int** hashmap,
+int hashmap_keyword_value_test(int**hashmap,int length,
   int keyword, int output)
 {
-  int value = hashmap_keyword_value(hashmap, keyword);
+  int value = hashmap_keyword_value(hashmap, length,
+    keyword);
   return compare_integer_variables(value, output);
 }
 
@@ -60,19 +61,18 @@ int allocate_value_keyword_test(int*keywords,int index,
 }
 
 int allocate_keyword_value_test(int** hashmap,
-  int keyword, int value, int** output)
+  int length, int keyword, int value, int** output)
 {
-  hashmap = allocate_keyword_value(hashmap, keyword,
-    value);
-  int length = integer_hashmap_length(hashmap);
+  hashmap = allocate_keyword_value(hashmap, length,
+    keyword, value);
   return compare_integer_hashmaps(hashmap, output,
     length);
 }
 
-int allocate_index_value_test(int** hashmap, int index,
+int allocate_hashmap_value_test(int**hashmap,int index,
   int value, int** output)
 {
-  hashmap = allocate_index_value(hashmap, index,value);
+  hashmap=allocate_hashmap_value(hashmap, index,value);
   int length = integer_hashmap_length(hashmap);
   return compare_integer_hashmaps(hashmap, output,
     length);

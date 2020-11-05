@@ -6,8 +6,9 @@ char** delete_sentence_character(char** sentence,
 {
   char* string=sentence_index_string(sentence, height);
   int length = sentence_string_length(sentence, height);
-  *(sentence + height) =delete_string_character(string,
-    length, width); return sentence;
+  string = delete_string_character(string,length, width);
+  return allocate_sentence_string(sentence, height,
+    string);
 }
 
 char** delete_sentence_string(char** sentence,
@@ -18,7 +19,6 @@ char** delete_sentence_string(char** sentence,
   int length = sentence_string_length(sentence, 0);
   return allocate_sentence_string(sentence, height,
     generate_character_string(length));
-
 }
 
 void string_sentence_stdout(char** sentence, int height,
@@ -38,8 +38,10 @@ char** generate_random_sentence(int height, int width,
     width);
   for(int index = 0; index < height; index = index + 1)
   {
-    *(sentence + index) = generate_random_string(width,
-      minimum, maximum);
+    char* string=generate_random_string(width, minimum,
+      maximum);
+    sentence = allocate_sentence_string(sentence,index,
+      string);
   }
   return sentence;
 }
@@ -52,8 +54,10 @@ char** duplicate_string_sentence(char** sentence,
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
-    *(doublet + index) = duplicate_character_string(
-      string, width);
+    char* current = duplicate_character_string(string,
+      width);
+    doublet = allocate_sentence_string(doublet, index,
+      current);
   }
   return doublet;
 }
@@ -76,8 +80,10 @@ char** add_sentence_character(char** sentence,
 {
   char* string=sentence_index_string(sentence, height);
   int length = sentence_string_length(sentence,height);
-  *(sentence + height) = add_string_character(string,
-    length, character); return sentence;
+  string = add_string_character(string, length,
+    character);
+  return allocate_sentence_string(sentence, height,
+    string);
 }
 
 char** remove_sentence_string(char** sentence,

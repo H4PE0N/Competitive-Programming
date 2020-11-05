@@ -4,13 +4,13 @@
 int string_character_index(char* string, int length,
   char character)
 {
-  int character_index = length;
   for(int index = (length - 1); index >= 0; index -= 1)
   {
-    if(string_index_character(string,index)==character)
-      { character_index = index; break; }
+    char current=string_index_character(string, index);
+    if(compare_character_variables(character, current))
+      return index;
   }
-  return character_index;
+  return length;
 }
 
 int characters_inside_string(char* string, int length,
@@ -33,9 +33,10 @@ int characters_inside_string(char* string, int length,
 int compare_string_characters(char* string, int first,
   int second)
 {
-  char character=string_index_character(string, first);
-  return (character == string_index_character(string,
-    second));
+  char f_character=string_index_character(string, first);
+  char s_character=string_index_character(string,second);
+  return compare_character_variables(f_character,
+    s_character);
 }
 
 char* increase_string_memory(char* string, int length,
@@ -56,17 +57,22 @@ char* increase_string_memory(char* string, int length,
 int compare_strings_character(char* first,char* second,
   int index)
 {
-  char character = string_index_character(first,index);
-  return (character == string_index_character(second,
-    index));
+  char f_character=string_index_character(first,index);
+  char s_character = string_index_character(second,
+    index);
+  return compare_character_variables(f_character,
+    s_character);
 }
 
 int string_character_smaller(char* string, int first,
   int second)
 {
-  char character=string_index_character(string, first);
-  return character < string_index_character(string,
+  char f_character = string_index_character(string,
+    first);
+  char s_character = string_index_character(string,
     second);
+  return character_variable_smaller(f_character,
+    s_character);
 }
 
 char* combine_character_strings(char*first,char*second)

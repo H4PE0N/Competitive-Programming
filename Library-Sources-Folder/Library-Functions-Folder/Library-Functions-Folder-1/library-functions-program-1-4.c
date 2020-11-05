@@ -19,7 +19,8 @@ int integers_inside_array(int* array, int length,
 
 int compare_pair_variables(int* first, int* second)
 {
-  return compare_integer_arrays(first, second, 2);
+  int boolean = compare_integer_arrays(first,second,2);
+  return boolean;
 }
 
 int* increase_array_memory(int* array, int length,
@@ -73,18 +74,19 @@ int* generate_coordinate_variable(int width,int height)
 int array_integer_index(int* array, int length,
   int integer)
 {
-  int integer_index = length;
   for(int index = (length - 1); index >= 0; index -= 1)
   {
-    if(array_index_integer(array, index) == integer)
-      { integer_index = index; break; }
+    int current = array_index_integer(array, index);
+    if(compare_integer_variables(integer, current))
+      return index;
   }
-  return integer_index;
+  return length;
 }
 
 int compare_coordinate_variables(int*first, int*second)
 {
-  return compare_integer_arrays(first, second, 2);
+  int boolean = compare_integer_arrays(first,second,2);
+  return boolean;
 }
 
 void coordinate_variable_stdout(int* coordinate)

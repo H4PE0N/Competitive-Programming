@@ -1,12 +1,13 @@
 
 #include "../library-functions-headers.h"
 
-int hashmap_keyword_exists(int** hashmap, int keyword)
+int hashmap_keyword_exists(int** hashmap, int length,
+  int keyword)
 {
-  int length = integer_hashmap_length(hashmap);
   for(int index = 0; index < length; index = index + 1)
   {
-    if(hashmap_index_keyword(hashmap,index) == keyword)
+    int current = hashmap_index_keyword(hashmap,index);
+    if(compare_integer_variables(keyword, current))
       return true;
   }
   return false;
@@ -22,22 +23,29 @@ int integer_hashmap_length(int** hashmap)
   return length;
 }
 
-int hashmap_keyword_index(int** hashmap, int keyword)
+int hashmap_keyword_index(int** hashmap, int length,
+  int keyword)
 {
-  int length = integer_hashmap_length(hashmap);
-  for(int index = 0; index < length; index = index + 1)
+  for(int index = (length - 1); index >= 0; index -= 1)
   {
-    if(hashmap_index_keyword(hashmap,index) == keyword)
+    int current = hashmap_index_keyword(hashmap,index);
+    if(compare_integer_variables(keyword, current))
       return index;
   }
   return length;
 }
 
-int** increase_keyword_value(int** hashmap,int keyword)
+int** increase_keyword_value(int** hashmap, int length,
+  int keyword)
 {
-  int value = hashmap_keyword_value(hashmap, keyword);
-  hashmap = allocate_keyword_value(hashmap, keyword,
-    value + 1); return hashmap;
+  if(!hashmap_keyword_exists(hashmap, length, keyword))
+  {
+    return generate_hashmap_keyword(hashmap, keyword);
+  }
+  int value = hashmap_keyword_value(hashmap, length,
+    keyword);
+  return allocate_keyword_value(hashmap,length,keyword,
+    value + 1);
 }
 
 int** generate_hashmap_keyword(int** hashmap,
@@ -49,20 +57,25 @@ int** generate_hashmap_keyword(int** hashmap,
   return allocate_hashmap_value(hashmap, length, 1);
 }
 
-int** increase_hashmap_value(int** hashmap,int keyword)
+int** increase_hashmap_value(int** hashmap, int length,
+  int index)
 {
-  if(!hashmap_keyword_exists(hashmap, keyword))
+  int keyword = hashmap_index_keyword(hashmap, index);
+  if(!hashmap_keyword_exists(hashmap, length, keyword))
   {
     return generate_hashmap_keyword(hashmap, keyword);
   }
-  return increase_keyword_value(hashmap, keyword);
+  int value = hashmap_index_value(hashmap, index);
+  hashmap = allocate_hashmap_value(hashmap, index,
+    value + 1); return hashmap;
 }
 
-int** allocate_keyword_value(int** hashmap,int keyword,
-  int value)
+int** allocate_keyword_value(int** hashmap, int length,
+  int keyword, int value)
 {
-  int index = hashmap_keyword_index(hashmap, keyword);
-  return allocate_index_value(hashmap, index, value);
+  int index = hashmap_keyword_index(hashmap, length,
+    keyword);
+  return allocate_hashmap_value(hashmap, index, value);
 }
 
 int** convert_array_hashmap(int* array, int length)
@@ -71,7 +84,8 @@ int** convert_array_hashmap(int* array, int length)
   for(int index = 0; index < length; index = index + 1)
   {
     int integer = array_index_integer(array, index);
-    hashmap = increase_hashmap_value(hashmap, integer);
+    hashmap = increase_hashmap_value(hashmap, length,
+      integer);
   }
   return hashmap;
 }
@@ -91,9 +105,9 @@ int* convert_hashmap_array(int** hashmap, int length)
   return array;
 }
 
-int** allocate_hashmap_keyword(int**hashmap,int index,
+int** allocate_hashmap_keyword(int** hashmap,int index,
   int keyword)
 {
-  return allocate_matrix_integer(hashmap, index, 0,
-    keyword);
+  hashmap = allocate_matrix_integer(hashmap, index, 0,
+    keyword); return hashmap;
 }

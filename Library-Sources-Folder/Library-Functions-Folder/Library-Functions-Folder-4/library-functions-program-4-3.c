@@ -14,8 +14,9 @@ int compare_string_content(char* first, char* second,
   int length)
 {
   first = sort_character_string(first, length);
-  return compare_character_strings(first,
-    sort_character_string(second, length), length);
+  second = sort_character_string(second, length);
+  return compare_character_strings(first, second,
+    length);
 }
 
 char string_index_character(char* string, int index)
@@ -83,9 +84,12 @@ char* delete_string_character(char* string, int length,
 int string_character_greater(char* string, int first,
   int second)
 {
-  char character=string_index_character(string, first);
-  return character > string_index_character(string,
+  char f_character = string_index_character(string,
+    first);
+  char s_character = string_index_character(string,
     second);
+  return character_variable_greater(f_character,
+    s_character);
 }
 
 char* reverse_character_string(char* string,int length)

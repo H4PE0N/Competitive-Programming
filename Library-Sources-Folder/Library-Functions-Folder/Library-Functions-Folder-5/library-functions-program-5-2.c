@@ -66,7 +66,7 @@ char** convert_string_binary(char* string, int length)
     char character = string_index_character(string,
       index);
     char* current =convert_character_binary(character);
-    binary=add_sentence_string(binary, index, current);
+    binary = add_sentence_string(binary,index,current);
   }
   return binary;
 }
@@ -77,8 +77,9 @@ char* convert_binary_string(char** binary, int length)
   for(int index = 0; index < length; index = index + 1)
   {
     char* current=sentence_index_string(binary, index);
+    char character = convert_binary_character(current);
     string = add_string_character(string, index,
-      convert_binary_character(current));
+      character);
   }
   return string;
 }

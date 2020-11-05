@@ -37,7 +37,8 @@ int array_contains_integer(int* array, int length,
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    if(array_index_integer(array, index) == integer)
+    int current = array_index_integer(array, index);
+    if(compare_integer_variables(integer, current))
       return true;
   }
   return false;
@@ -95,6 +96,7 @@ int* sort_integer_array(int* array, int length)
 int array_integer_smaller(int* array, int first,
   int second)
 {
-  int integer = array_index_integer(array, first);
-  return integer < array_index_integer(array, second);
+  int f_integer = array_index_integer(array, first);
+  int s_integer = array_index_integer(array, second);
+  return integer_variable_smaller(f_integer,s_integer);
 }

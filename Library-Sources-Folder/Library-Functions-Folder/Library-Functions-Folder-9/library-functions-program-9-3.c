@@ -37,8 +37,10 @@ char** sort_sentence_strings(char**sentence,int height)
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
-    *(sentence + index) = sort_character_string(string,
-      sentence_string_length(sentence, index));
+    int length = character_string_length(string);
+    string = sort_character_string(string, length);
+    sentence = allocate_sentence_string(sentence, index,
+      string);
   }
   return sentence;
 }
@@ -49,8 +51,10 @@ char** shuffle_sentence_strings(char** sentence,
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
-    *(sentence + index) = shuffle_character_string(
-      string, sentence_string_length(sentence, index));
+    int length = character_string_length(string);
+    string = shuffle_character_string(string, length);
+    sentence = allocate_sentence_string(sentence, index,
+      string);
   }
   return sentence;
 }
@@ -59,8 +63,9 @@ int compare_sentence_content(char**first, char**second,
   int height, int width)
 {
   first = sort_string_sentence(first, height);
-  return compare_string_sentence(first,
-    sort_string_sentence(second, height),height,width);
+  second = sort_string_sentence(second, height);
+  return compare_string_sentence(first, second, height,
+    width);
 }
 
 char** sort_string_sentence(char** sentence,int height)

@@ -25,17 +25,21 @@ int** sort_integer_matrix(int** matrix, int height)
 int matrix_integer_greater(int** matrix, int first,
   int second, int index)
 {
-  int integer=matrix_array_integer(matrix,first,index);
-  return integer > matrix_array_integer(matrix, second,
+  int f_integer = matrix_array_integer(matrix, first,
     index);
+  int s_integer = matrix_array_integer(matrix, second,
+    index);
+  return integer_variable_greater(f_integer,s_integer);
 }
 
 int matrix_integer_smaller(int** matrix, int first,
   int second, int index)
 {
-  int integer=matrix_array_integer(matrix,first,index);
-  return integer < matrix_array_integer(matrix, second,
+  int f_integer = matrix_array_integer(matrix, first,
     index);
+  int s_integer = matrix_array_integer(matrix, second,
+    index);
+  return integer_variable_smaller(f_integer,s_integer);
 }
 
 int matrix_array_integer(int** matrix, int height,

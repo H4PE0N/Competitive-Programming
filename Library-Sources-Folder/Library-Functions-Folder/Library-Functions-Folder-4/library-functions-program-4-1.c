@@ -22,7 +22,8 @@ int string_contains_character(char* string, int length,
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    if(string_index_character(string,index)==character)
+    char current=string_index_character(string, index);
+    if(compare_character_variables(character, current))
       return true;
   }
   return false;

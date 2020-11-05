@@ -326,7 +326,7 @@
   "hashmap_keyword_exists":
   {
     "description": "This function loops through the  hashmap  and  compares\nthe current keyword to the inputted keyword, it  checks\nif the keyword exists in the hashmap.",
-    "parameters": ["int** hashmpa", "int keyword"],
+    "parameters": ["int** hashmpa", "int length", "int keyword"],
     "returning": "int boolean"
   },
   "integer_hashmap_length":
@@ -338,19 +338,19 @@
   "hashmap_keyword_index":
   {
     "description": "This function returns the index of a keyword. It  loops\nthrough the inputted hashmap and compares the keywords,\nreturns the index if it matches.",
-    "parameters": ["int** hashmap", "int keyword"],
+    "parameters": ["int** hashmap", "int length", "int keyword"],
     "returning": "int index"
   },
   "increase_hashmap_value":
   {
     "description": "If you want to increase the value of a keyword  in  the\nhashmap, you could use this function.  If  the  keyword\ndoes not exists, it will create it.",
-    "parameters": ["int** hashmap", "int keyword"],
+    "parameters": ["int** hashmap", "int length", "int keyword"],
     "returning": "int** hashmap"
   },
   "allocate_keyword_value":
   {
     "description": "This function let you allocate a value to a keyword  in\nthe  inputted  hashmap.  By  converting  the   inputted\nkeyword to an index, it allocates the value.",
-    "parameters": ["int** hashmap", "int keyword", "int value"],
+    "parameters": ["int** hashmap", "int length", "int keyword", "int value"],
     "returning": "int** hashmap"
   },
   "convert_array_hashmap":
@@ -446,7 +446,7 @@
   "hashmap_keyword_value":
   {
     "description": "When you want to know the value of a  specific  keyword\nin your hashmap, you can get the value by inputting the\nkeyword and your hashmap in this function.",
-    "parameters": ["int** hashmap", "int keyword"],
+    "parameters": ["int** hashmap", "int length", "int keyword"],
     "returning": "int value"
   },
   "duplicate_integer_hashmap":
@@ -467,13 +467,7 @@
     "parameters": ["int** hashmap", "int index", "int value"],
     "returning": "int** hashmap"
   },
-  "increase_index_value":
-  {
-    "description": "This function lets you increase a value in you  hashmap\nby one. Choose which value in the hashmap you  want  to\nincrease by inputting the corresponding index.",
-    "parameters": ["int** hashmap", "int index"],
-    "returning": "int** hashmap"
-  },
-  "reduce_index_value":
+  "reduce_hashmap_value":
   {
     "description": "This function reduces the value in a hashmap  given  an\nindex. If the  value  is  one  or  less,  the  function\nremoves the slot completely from the inputted hashmap.",
     "parameters": ["int** hashmap", "int length", "int index"],
@@ -1282,5 +1276,11 @@
     "description": "If you want know if your  string  sentence  contains  a\ncharacter, this function is a great choice. It  returns\ntrue if the sentence contains the character.",
     "parameters": ["char** sentence", "int height", "int width", "char character"],
     "returning": "int boolean"
+  },
+  "increase_keyword_value":
+  {
+    "description": "This function lets you increase the value of a keyword,\nor create a new keyword in the inputted  hash-map.  The\nkeyword is specified with a inputted keyword.",
+    "parameters": ["int** hashmap", "int length", "int keyword"],
+    "returning": "int** hashmap"
   }
 }

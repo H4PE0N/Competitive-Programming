@@ -35,8 +35,10 @@ char** allocate_sentence_character(char** sentence,
   int height, int width, char character)
 {
   char* string=sentence_index_string(sentence, height);
-  *(sentence + height) = allocate_string_character(
-    string, width, character); return sentence;
+  string = allocate_string_character(string, width,
+    character);
+  return allocate_sentence_string(sentence, height,
+    string);
 }
 
 char** switch_sentence_strings(char** sentence,
@@ -69,8 +71,8 @@ char** move_sentence_strings(char**sentence,int height,
 char** switch_adjacent_strings(char** sentence,
   int index)
 {
-  return switch_sentence_strings(sentence, index,
-    index + 1);
+  sentence = switch_sentence_strings(sentence, index,
+    index + 1); return sentence;
 }
 
 int string_sentence_height(char** sentence, int width)
@@ -90,8 +92,11 @@ char** reverse_sentence_strings(char** sentence,
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
-    *(sentence +index)=reverse_character_string(string,
-      sentence_string_length(sentence, index));
+    int length = character_string_length(string);
+    char* current = reverse_character_string(string,
+      length);
+    sentence = allocate_sentence_string(sentence,index,
+      current);
   }
   return sentence;
 }

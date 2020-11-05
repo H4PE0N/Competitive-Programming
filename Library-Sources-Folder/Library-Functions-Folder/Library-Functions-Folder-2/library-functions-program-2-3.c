@@ -7,7 +7,8 @@ int** sort_matrix_arrays(int** matrix, int height)
   {
     int* array = matrix_index_array(matrix, index);
     int length = integer_array_length(array);
-    *(matrix + index)=sort_integer_array(array,length);
+    array = sort_integer_array(array, length);
+    matrix = allocate_matrix_array(matrix,index,array);
   }
   return matrix;
 }
@@ -21,8 +22,9 @@ int compare_matrix_content(int** first, int** second,
   int height, int width)
 {
   first = sort_integer_matrix(first, height);
-  return compare_integer_matrix(first,
-    sort_integer_matrix(second, height), height,width);
+  second = sort_integer_matrix(second, height);
+  return compare_integer_matrix(first, second, height,
+    width);
 }
 
 int matrix_array_length(int** matrix, int index)
@@ -94,8 +96,9 @@ int** reverse_matrix_arrays(int** matrix, int height)
   for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
-    *(matrix + index) = reverse_integer_array(array,
-      matrix_array_length(matrix, index));
+    int length = integer_array_length(array);
+    int* reverse = reverse_integer_array(array,length);
+    matrix=allocate_matrix_array(matrix,index,reverse);
   }
   return matrix;
 }

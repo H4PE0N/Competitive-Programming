@@ -63,16 +63,18 @@ char* duplicate_character_string(char* string,
   char* doublet = generate_character_string(length);
   for(int index = 0; index < length; index = index + 1)
   {
+    char character = string_index_character(string,
+      index);
     doublet = allocate_string_character(doublet, index,
-      string_index_character(string, index));
+      character);
   }
   return doublet;
 }
 
 char* switch_adjacent_characters(char*string,int index)
 {
-  return switch_string_characters(string, index,
-    index + 1);
+  string = switch_string_characters(string, index,
+    index + 1); return string;
 }
 
 char* sort_string_iteration(char* string,int iteration)

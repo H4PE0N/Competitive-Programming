@@ -36,20 +36,10 @@ int duplicate_integer_hashmap_test(int** hashmap,
     length);
 }
 
-int allocate_hashmap_value_test(int** hashmap,
-  int index, int value, int** output)
-{
-  hashmap = allocate_hashmap_value(hashmap, index,
-    value);
-  int length = integer_hashmap_length(hashmap);
-  return compare_integer_hashmaps(hashmap, output,
-    length);
-}
-
-int reduce_index_value_test(int** hashmap, int length,
+int reduce_hashmap_value_test(int** hashmap,int length,
   int index, int** output)
 {
-  hashmap = reduce_index_value(hashmap, length, index);
+  hashmap = reduce_hashmap_value(hashmap,length,index);
   return compare_integer_hashmaps(hashmap, output,
     length);
 }
@@ -73,11 +63,11 @@ int allocate_hashmap_keyword_test(int** hashmap,
     length);
 }
 
-int increase_index_value_test(int** hashmap, int index,
-  int** output)
+int increase_hashmap_value_test(int** hashmap,
+  int length, int index, int** output)
 {
-  hashmap = increase_index_value(hashmap, index);
-  int length = integer_hashmap_length(hashmap);
+  hashmap = increase_hashmap_value(hashmap, length,
+    index);
   return compare_integer_hashmaps(hashmap, output,
     length);
 }

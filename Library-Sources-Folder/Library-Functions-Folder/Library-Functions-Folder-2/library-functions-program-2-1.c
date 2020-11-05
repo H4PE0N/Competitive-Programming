@@ -16,8 +16,8 @@ int** allocate_matrix_integer(int** matrix, int height,
   int width, int integer)
 {
   int* array = matrix_index_array(matrix, height);
-  *(matrix + height) = allocate_array_integer(array,
-    width, integer); return matrix;
+  array = allocate_array_integer(array,width, integer);
+  return allocate_matrix_array(matrix, height, array);
 }
 
 int** delete_matrix_integer(int** matrix, int height,
@@ -25,8 +25,8 @@ int** delete_matrix_integer(int** matrix, int height,
 {
   int* array = matrix_index_array(matrix, height);
   int length = matrix_array_length(matrix, height);
-  *(matrix + height) = delete_array_integer(array,
-    length, width); return matrix;
+  array = delete_array_integer(array, length, width);
+  return allocate_matrix_array(matrix, height, array);
 }
 
 int integer_matrix_height(int** matrix, int width)
@@ -78,8 +78,8 @@ int** add_matrix_integer(int** matrix, int height,
 {
   int* array = matrix_index_array(matrix, height);
   int length = matrix_array_length(matrix, height);
-  *(matrix + height) = add_array_integer(array, length,
-    integer); return matrix;
+  array = add_array_integer(array, length, integer);
+  return allocate_matrix_array(matrix, height, array);
 }
 
 int** remove_matrix_array(int** matrix, int height,

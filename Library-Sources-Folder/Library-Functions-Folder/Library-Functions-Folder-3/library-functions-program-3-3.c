@@ -12,17 +12,11 @@ int* hashmap_keyword_array(int** hashmap, int length)
   return array;
 }
 
-int** allocate_index_value(int** hashmap, int index,
-  int value)
-{
-  hashmap = allocate_matrix_integer(hashmap, index, 1,
-    value); return hashmap;
-}
-
 int compare_integer_hashmaps(int** first, int** second,
   int length)
 {
-  return compare_integer_matrix(first,second,length,2);
+  int boolean = compare_integer_matrix(first, second,
+    length, 2); return boolean;
 }
 
 int** sort_hashmap_iteration(int** hashmap, int length,
@@ -61,22 +55,25 @@ int** generate_integer_hashmap(int length)
   return matrix;
 }
 
-int hashmap_keyword_value(int** hashmap, int keyword)
+int hashmap_keyword_value(int** hashmap, int length,
+  int keyword)
 {
-  int index = hashmap_keyword_index(hashmap, keyword);
+  int index = hashmap_keyword_index(hashmap, length,
+    keyword);
   return hashmap_index_value(hashmap, index);
 }
 
-int** duplicate_integer_hashmap(int** hashmap,
-  int length)
+int**duplicate_integer_hashmap(int**hashmap,int length)
 {
-  return duplicate_integer_matrix(hashmap, length, 2);
+  int** doublet = duplicate_integer_matrix(hashmap,
+    length, 2); return doublet;
 }
 
 int** remove_hashmap_keyword(int** hashmap, int length,
   int keyword)
 {
-  int index = hashmap_keyword_index(hashmap, keyword);
+  int index = hashmap_keyword_index(hashmap, length,
+    keyword);
   return delete_hashmap_keyword(hashmap, length,index);
 }
 
@@ -89,13 +86,13 @@ int check_hashmap_array(int** hashmap, int index)
 int** allocate_hashmap_value(int** hashmap, int index,
   int value)
 {
-  return allocate_matrix_integer(hashmap, index, 1,
-    value);
+  hashmap = allocate_matrix_integer(hashmap, index, 1,
+    value); return hashmap;
 }
 
 int hashmap_keyword_smaller(int** hashmap, int first,
   int second)
 {
-  return matrix_integer_smaller(hashmap, first,second,
-    0);
+  int boolean = matrix_integer_smaller(hashmap, first,
+    second, 0); return boolean;
 }

@@ -4,19 +4,23 @@
 int sentence_character_smaller(char** sentence,
   int first, int second, int index)
 {
-  char character = string_sentence_character(sentence,
+  char f_character =string_sentence_character(sentence,
     first, index);
-  return character <string_sentence_character(sentence,
+  char s_character =string_sentence_character(sentence,
     second, index);
+  return character_variable_smaller(f_character,
+    s_character);
 }
 
 int sentence_character_greater(char** sentence,
   int first, int second, int index)
 {
-  char character = string_sentence_character(sentence,
+  char f_character =string_sentence_character(sentence,
     first, index);
-  return character >string_sentence_character(sentence,
+  char s_character =string_sentence_character(sentence,
     second, index);
+  return character_variable_greater(f_character,
+    s_character);
 }
 
 int sentence_string_smaller(char** sentence,int height,
@@ -66,16 +70,14 @@ char** reverse_string_sentence(char** sentence,
 int sentence_string_index(char** sentence, int height,
   char* string)
 {
-  int string_index = height;
   for(int index = (height - 1); index >= 0; index -= 1)
   {
-    char* index_string=sentence_index_string(sentence,
-      index);
+    char*current=sentence_index_string(sentence,index);
     int length=sentence_string_length(sentence, index);
-    if(compare_character_strings(string, index_string,
-      length)) { string_index = index; break; }
+    if(compare_character_strings(string, current,
+      length)) return index;
   }
-  return string_index;
+  return height;
 }
 
 char** insert_sentence_characters(char** sentence,
