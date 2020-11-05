@@ -39,17 +39,15 @@ are made by characters.
 
 Library-Functions-Folder-5 - This    folder    contains
 functions that are made around binary data-types.  Here
-you can find conversions from and to binary.
+you can find conversions from and to binary,  and  some
+low-level binary operations.
 
 Library-Functions-Folder-6 - This    folder    contains
 functions  that  are   made   around   statistics   and
 probability. Here you can find the odds  and  risks  to
 something and useful data from arrays and  other  sets.
 
-Library-Functions-Folder-7 - This    folder    contains
-functions that are made around binary operations. These
-are low level operations with binary  data-types.  Here
-you can find functions like or, and, xor and not.
+Library-Functions-Folder-7 -
 
 Library-Functions-Folder-8 - This    folder    contains
 functions that are made around integers. So  everything
