@@ -93,10 +93,10 @@ char** reverse_sentence_strings(char** sentence,
   {
     char* string=sentence_index_string(sentence,index);
     int length = character_string_length(string);
-    char* current = reverse_character_string(string,
+    char* reverse = reverse_character_string(string,
       length);
     sentence = allocate_sentence_string(sentence,index,
-      current);
+      reverse);
   }
   return sentence;
 }

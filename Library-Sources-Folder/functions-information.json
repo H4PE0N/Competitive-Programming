@@ -1243,7 +1243,7 @@
   },
   "coordinate_variable_stdout":
   {
-    "description": "This function prints out the inputted coordinate in the\nconsole. The first integer the function prints  out  is\nthe width, then comes the height.",
+    "description": "This function prints out the inputted coordinate in the\nconsole. The first integer the function prints  out  is\nthe width, then comes the height inside parentheses.",
     "parameters": ["int* coordinate"],
     "returning": "void"
   },
@@ -1282,5 +1282,11 @@
     "description": "This function lets you increase the value of a keyword,\nor create a new keyword in the inputted  hash-map.  The\nkeyword is specified with a inputted keyword.",
     "parameters": ["int** hashmap", "int length", "int keyword"],
     "returning": "int** hashmap"
+  },
+  "check_hashmap_array":
+  {
+    "description": "To check if a slot in your hash-map is taken by  either\na keyword or a value, you can  use  this  function.  It\nreturns true if a keyword or a value exists there.",
+    "parameters": ["int** hashmap", "int index"],
+    "returning": "int boolean"
   }
 }

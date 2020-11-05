@@ -16,7 +16,7 @@ int hashmap_keyword_exists(int** hashmap, int length,
 int integer_hashmap_length(int** hashmap)
 {
   int length = 0;
-  while(check_hashmap_array(hashmap, length) != 0)
+  while(check_hashmap_array(hashmap, length) != false)
   {
     length = increase_integer_variable(length, 1);
   }

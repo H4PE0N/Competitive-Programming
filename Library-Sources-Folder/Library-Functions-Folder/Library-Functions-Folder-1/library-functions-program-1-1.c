@@ -27,7 +27,7 @@ int integer_array_length(int* array)
   int length = 0;
   while(array_index_integer(array, length) != '\0')
   {
-    length  = increase_integer_variable(length, 1);
+    length = increase_integer_variable(length, 1);
   }
   return length;
 }
