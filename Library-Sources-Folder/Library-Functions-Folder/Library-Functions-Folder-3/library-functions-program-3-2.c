@@ -1,6 +1,12 @@
 
 #include "../library-functions-headers.h"
 
+int* integer_hashmap_keywords(int** hashmap, int value)
+{
+  int length = integer_hashmap_length(hashmap);
+  return hashmap_value_keywords(hashmap, length,value);
+}
+
 int* hashmap_value_keywords(int** hashmap, int length,
   int value)
 {
@@ -13,12 +19,6 @@ int* hashmap_value_keywords(int** hashmap, int length,
       hashmap);
   }
   return keywords;
-}
-
-int* integer_hashmap_keywords(int** hashmap, int value)
-{
-  int length = integer_hashmap_length(hashmap);
-  return hashmap_value_keywords(hashmap, length,value);
 }
 
 int* allocate_value_keyword(int* keywords, int index,

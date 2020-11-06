@@ -14,6 +14,21 @@ int character_range_between(char character,int minimum,
     maximum); return boolean;
 }
 
+char* character_string_section(char* string, int first,
+  int second)
+{
+  char* section = generate_character_string(second -
+    first + 1);
+  for(int index = first; index <= second; index += 1)
+  {
+    int length = character_string_length(section);
+    int character=string_index_character(string,index);
+    section = add_string_character(section, length,
+      character);
+  }
+  return section;
+}
+
 char* remove_string_characters(char* string,int length,
   char character)
 {
@@ -86,19 +101,4 @@ char* sort_string_iteration(char* string,int iteration)
     string = switch_adjacent_characters(string, index);
   }
   return string;
-}
-
-char* character_string_section(char* string, int first,
-  int second)
-{
-  char* section = generate_character_string(second -
-    first + 1);
-  for(int index = first; index <= second; index += 1)
-  {
-    int length = character_string_length(section);
-    int character=string_index_character(string,index);
-    section = add_string_character(section, length,
-      character);
-  }
-  return section;
 }

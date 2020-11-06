@@ -1,11 +1,6 @@
 
 #include "../library-functions-headers.h"
 
-int character_variable_greater(char first, char second)
-{
-  int boolean = (first > second); return boolean;
-}
-
 char* reverse_character_string(char* string,int length)
 {
   char* reverse = generate_character_string(length);
@@ -17,4 +12,9 @@ char* reverse_character_string(char* string,int length)
       character);
   }
   return reverse;
+}
+
+int character_variable_greater(char first, char second)
+{
+  int boolean = (first > second); return boolean;
 }

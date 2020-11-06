@@ -13,6 +13,24 @@ int** sort_matrix_arrays(int** matrix, int height)
   return matrix;
 }
 
+int** allocate_matrix_array(int** matrix, int index,
+  int* array)
+{
+  *(matrix + index) = array; return matrix;
+}
+
+int** reverse_matrix_arrays(int** matrix, int height)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    int* array = matrix_index_array(matrix, index);
+    int length = integer_array_length(array);
+    int* reverse = reverse_integer_array(array,length);
+    matrix=allocate_matrix_array(matrix,index,reverse);
+  }
+  return matrix;
+}
+
 int* matrix_index_array(int** matrix, int index)
 {
   int* array = *(matrix + index); return array;
@@ -25,6 +43,16 @@ int compare_matrix_content(int** first, int** second,
   second = sort_integer_matrix(second, height);
   return compare_integer_matrix(first, second, height,
     width);
+}
+
+int** shuffle_integer_matrix(int** matrix, int height)
+{
+  for(int index = 0; index < height; index = index + 1)
+  {
+    int random = generate_random_integer(0,height - 1);
+    matrix = switch_matrix_arrays(matrix,index,random);
+  }
+  return matrix;
 }
 
 int matrix_array_length(int** matrix, int index)
@@ -46,12 +74,6 @@ int compare_integer_matrix(int** first, int** second,
   return true;
 }
 
-int** allocate_matrix_array(int** matrix, int index,
-  int* array)
-{
-  *(matrix + index) = array; return matrix;
-}
-
 int** delete_matrix_array(int** matrix, int height,
   int index)
 {
@@ -68,16 +90,6 @@ int matrix_array_total(int** matrix, int index)
   return integer_array_total(array, length);
 }
 
-int** shuffle_integer_matrix(int** matrix, int height)
-{
-  for(int index = 0; index < height; index = index + 1)
-  {
-    int random = generate_random_integer(0,height - 1);
-    matrix = switch_matrix_arrays(matrix,index,random);
-  }
-  return matrix;
-}
-
 int** reverse_integer_matrix(int** matrix, int height,
   int width)
 {
@@ -89,16 +101,4 @@ int** reverse_integer_matrix(int** matrix, int height,
     reverse = add_matrix_array(reverse, index, array);
   }
   return reverse;
-}
-
-int** reverse_matrix_arrays(int** matrix, int height)
-{
-  for(int index = 0; index < height; index = index + 1)
-  {
-    int* array = matrix_index_array(matrix, index);
-    int length = integer_array_length(array);
-    int* reverse = reverse_integer_array(array,length);
-    matrix=allocate_matrix_array(matrix,index,reverse);
-  }
-  return matrix;
 }

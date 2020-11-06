@@ -16,6 +16,17 @@ int* allocate_array_integer(int* array, int index,
   *(array + index) = integer; return array;
 }
 
+int* sort_integer_iteration(int* array, int iteration)
+{
+  for(int index = 0; index < (iteration - 1); index++)
+  {
+    if(array_integer_smaller(array, index, index + 1))
+      continue;
+    array = switch_adjacent_integers(array, index);
+  }
+  return array;
+}
+
 int* generate_integer_array(int length)
 {
   int* array = malloc(sizeof(array) * (length + 1));
@@ -30,6 +41,18 @@ int integer_array_length(int* array)
     length = increase_integer_variable(length, 1);
   }
   return length;
+}
+
+int* switch_adjacent_integers(int* array, int index)
+{
+  return switch_array_integers(array,index, index + 1);
+}
+
+int* add_array_integer(int* array, int length,
+  int integer)
+{
+  array = allocate_array_integer(array,length,integer);
+  return array;
 }
 
 int array_contains_integer(int* array, int length,
@@ -59,29 +82,6 @@ int* delete_array_integer(int* array, int length,
 {
   array = move_array_integers(array, length, index);
   return allocate_array_integer(array, length, '\0');
-}
-
-int* switch_adjacent_integers(int* array, int index)
-{
-  return switch_array_integers(array,index, index + 1);
-}
-
-int* add_array_integer(int* array, int length,
-  int integer)
-{
-  array = allocate_array_integer(array,length,integer);
-  return array;
-}
-
-int* sort_integer_iteration(int* array,int iteration)
-{
-  for(int index = 0; index < (iteration - 1); index++)
-  {
-    if(array_integer_smaller(array, index,index + 1))
-      continue;
-    array = switch_adjacent_integers(array, index);
-  }
-  return array;
 }
 
 int* sort_integer_array(int* array, int length)

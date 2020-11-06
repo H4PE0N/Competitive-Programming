@@ -16,6 +16,20 @@ int** switch_matrix_arrays(int** matrix, int first,
     switch_array); return matrix;
 }
 
+int** duplicate_integer_matrix(int** matrix,int height,
+  int width)
+{
+  int** doublet=generate_integer_matrix(height, width);
+  for(int index = 0; index < height; index = index + 1)
+  {
+    int* array = matrix_index_array(matrix, index);
+    int* current=duplicate_integer_array(array, width);
+    doublet = allocate_matrix_array(doublet, index,
+      current);
+  }
+  return doublet;
+}
+
 int** move_matrix_arrays(int** matrix, int height,
   int start)
 {
@@ -59,20 +73,6 @@ int** shuffle_matrix_arrays(int** matrix, int height)
     matrix = allocate_matrix_array(matrix,index,array);
   }
   return matrix;
-}
-
-int** duplicate_integer_matrix(int** matrix,int height,
-  int width)
-{
-  int** doublet=generate_integer_matrix(height, width);
-  for(int index = 0; index < height; index = index + 1)
-  {
-    int* array = matrix_index_array(matrix, index);
-    int* current=duplicate_integer_array(array, width);
-    doublet = allocate_matrix_array(doublet, index,
-      current);
-  }
-  return doublet;
 }
 
 int** remove_matrix_integers(int** matrix, int height,

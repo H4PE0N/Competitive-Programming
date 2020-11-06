@@ -19,6 +19,17 @@ int compare_integer_arrays(int* first, int* second,
   return true;
 }
 
+int* add_array_integers(int* array, int length,
+  int integer, int amount)
+{
+  for(int index = 0; index < amount; index = index + 1)
+  {
+    int current = (length + index);
+    array = add_array_integer(array, current, integer);
+  }
+  return array;
+}
+
 int* remove_array_integers(int* array, int length,
   int integer)
 {
@@ -55,6 +66,18 @@ int integers_range_between(int* array, int minimum,
   return true;
 }
 
+int* reverse_integer_array(int* array, int length)
+{
+  int* reverse = generate_integer_array(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    int integer = array_index_integer(array, length -
+      (index + 1));
+    reverse = add_array_integer(reverse,index,integer);
+  }
+  return reverse;
+}
+
 int* generate_random_array(int length, int minimum,
   int maximum)
 {
@@ -74,27 +97,4 @@ int* switch_array_integers(int* array, int first,
     first);
   *(array + first) = array_index_integer(array,second);
   *(array + second) = switch_integer; return array;
-}
-
-int* reverse_integer_array(int* array, int length)
-{
-  int* reverse = generate_integer_array(length);
-  for(int index = 0; index < length; index = index + 1)
-  {
-    int integer = array_index_integer(array, length -
-      (index + 1));
-    reverse = add_array_integer(reverse,index,integer);
-  }
-  return reverse;
-}
-
-int* add_array_integers(int* array, int length,
-  int integer, int amount)
-{
-  for(int index = 0; index < amount; index = index + 1)
-  {
-    int current = (length + index);
-    array = add_array_integer(array, current, integer);
-  }
-  return array;
 }

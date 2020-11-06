@@ -61,6 +61,18 @@ char* convert_character_binary(char character)
   return binary;
 }
 
+int* convert_binary_array(char** binary, int length)
+{
+  int* array = generate_integer_array(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    char* current=sentence_index_string(binary, index);
+    int integer = convert_binary_integer(current);
+    array = add_array_integer(array, index, integer);
+  }
+  return array;
+}
+
 int nearest_binary_length(int integer)
 {
   int length=actual_binary_length(integer), index = 2;
@@ -81,16 +93,4 @@ char** convert_array_binary(int* array, int length)
     binary = add_sentence_string(binary,index,current);
   }
   return binary;
-}
-
-int* convert_binary_array(char** binary, int length)
-{
-  int* array = generate_integer_array(length);
-  for(int index = 0; index < length; index = index + 1)
-  {
-    char* current=sentence_index_string(binary, index);
-    int integer = convert_binary_integer(current);
-    array = add_array_integer(array, index, integer);
-  }
-  return array;
 }

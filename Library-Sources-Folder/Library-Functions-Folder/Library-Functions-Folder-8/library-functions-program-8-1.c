@@ -1,6 +1,13 @@
 
 #include "../library-functions-headers.h"
 
+int least_common_denominator(int* first, int* second)
+{
+  int first_d = fraction_variable_denominator(first);
+  int second_d = fraction_variable_denominator(second);
+  return smallest_common_product(first_d, second_d);
+}
+
 int greatest_common_table(int greater, int smaller)
 {
   for(int table = smaller; table > 0; table =table - 1)
@@ -89,11 +96,4 @@ int smallest_common_product(int smallest, int greatest)
       smallest, integer)) return integer;
   }
   return product;
-}
-
-int least_common_denominator(int* first, int* second)
-{
-  int first_d = fraction_variable_denominator(first);
-  int second_d = fraction_variable_denominator(second);
-  return smallest_common_product(first_d, second_d);
 }

@@ -9,6 +9,14 @@ int* generate_random_coordinate(int width, int height)
     r_height);
 }
 
+int array_integer_smaller(int* array, int first,
+  int second)
+{
+  int f_integer = array_index_integer(array, first);
+  int s_integer = array_index_integer(array, second);
+  return integer_variable_smaller(f_integer,s_integer);
+}
+
 int* generate_random_pair(int minimum, int maximum)
 {
   int* pair = generate_random_array(2,minimum,maximum);
@@ -23,12 +31,4 @@ int* insert_array_integers(int* array, int first,
     array=allocate_array_integer(array, index,integer);
   }
   return array;
-}
-
-int array_integer_smaller(int* array, int first,
-  int second)
-{
-  int f_integer = array_index_integer(array, first);
-  int s_integer = array_index_integer(array, second);
-  return integer_variable_smaller(f_integer,s_integer);
 }

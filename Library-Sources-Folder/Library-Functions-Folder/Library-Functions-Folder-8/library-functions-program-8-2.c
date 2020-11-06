@@ -69,6 +69,17 @@ int* convert_percent_fraction(double percent)
   return convert_decimal_fraction(decimal);
 }
 
+int* generate_integer_products(int integer, int amount)
+{
+  int* products = generate_integer_array(amount);
+  for(int index = 0; index < amount; index = index + 1)
+  {
+    int product = (integer * (index + 1));
+    products=add_array_integer(products,index,product);
+  }
+  return products;
+}
+
 int decimal_variable_smaller(double first,
   double second)
 {
@@ -87,15 +98,4 @@ int fraction_variable_denominator(int* fraction)
 {
   int denominator = array_index_integer(fraction, 1);
   return denominator;
-}
-
-int* generate_integer_products(int integer, int amount)
-{
-  int* products = generate_integer_array(amount);
-  for(int index = 0; index < amount; index = index + 1)
-  {
-    int product = (integer * (index + 1));
-    products=add_array_integer(products,index,product);
-  }
-  return products;
 }
