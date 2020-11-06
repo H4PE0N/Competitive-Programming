@@ -92,14 +92,3 @@ int sort_sentence_strings_test(char** sentence,
   return compare_string_sentence(sentence, output,
     height, width);
 }
-
-int shuffle_string_sentence_test(char** sentence,
-  int height, char** output)
-{
-  int width = sentence_string_length(sentence, 0);
-  sentence = shuffle_string_sentence(sentence, height);
-  int same = compare_string_sentence(sentence, output,
-    height, width);
-  int content=compare_sentence_content(sentence,output,
-    height, width); return (!same && content);
-}

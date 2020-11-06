@@ -97,11 +97,3 @@ int matrix_array_smaller_test(int** matrix, int height,
     first, second);
   return compare_integer_variables(boolean, output);
 }
-
-int reverse_integer_matrix_test(int**matrix,int height,
-  int width, int** output)
-{
-  matrix = reverse_integer_matrix(matrix,height,width);
-  return compare_integer_matrix(matrix, output, height,
-    width);
-}

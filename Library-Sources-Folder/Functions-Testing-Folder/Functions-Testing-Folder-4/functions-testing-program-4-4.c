@@ -29,3 +29,20 @@ int insert_string_characters_test(char* string,
   return compare_character_strings(string, output,
     second);
 }
+
+int characters_inside_string_test(char* string,
+  int length, char* characters, int output)
+{
+  int boolean = characters_inside_string(string,length,
+    characters);
+  return compare_integer_variables(boolean, output);
+}
+
+int add_string_characters_test(char* string,int length,
+  char character, int amount, char* output)
+{
+  string=add_string_characters(string,length,character,
+    amount);
+  return compare_character_strings(string, output,
+    length + amount);
+}

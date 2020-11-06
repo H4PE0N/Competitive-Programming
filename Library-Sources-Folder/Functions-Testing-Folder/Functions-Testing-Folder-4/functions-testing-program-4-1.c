@@ -96,11 +96,3 @@ int compare_character_variables_test(char first,
     second);
   return compare_integer_variables(boolean, output);
 }
-
-int characters_inside_string_test(char* string,
-  int length, char* characters, int output)
-{
-  int boolean = characters_inside_string(string,length,
-    characters);
-  return compare_integer_variables(boolean, output);
-}

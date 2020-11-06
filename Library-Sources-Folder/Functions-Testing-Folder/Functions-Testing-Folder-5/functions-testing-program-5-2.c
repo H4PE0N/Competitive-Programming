@@ -83,3 +83,12 @@ int binary_not_operation_test(char* binary, int length,
   return compare_character_strings(binary, output,
     length);
 }
+
+int convert_array_binary_test(int* array, int length,
+  char** output)
+{
+  char** binary = convert_array_binary(array, length);
+  int width = sentence_string_length(binary);
+  return compare_string_sentence(binary, output,length,
+    width);
+}

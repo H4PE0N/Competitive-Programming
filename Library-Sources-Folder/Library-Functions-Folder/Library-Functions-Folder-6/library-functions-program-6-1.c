@@ -54,7 +54,7 @@ double integer_array_median(int* array, int length)
 
 int integer_array_typical(int* array, int length)
 {
-  int* variables = generate_integer_array(2);
+  int* variables = generate_integer_pair(0, 0);
   for(int index = 0; index < length; index = index + 1)
   {
     int integer = array_index_integer(array, index);

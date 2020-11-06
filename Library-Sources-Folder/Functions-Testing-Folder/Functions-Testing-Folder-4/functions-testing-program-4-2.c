@@ -92,12 +92,3 @@ int character_variable_greater_test(char first,
     second);
   return compare_integer_variables(boolean, output);
 }
-
-int add_string_characters_test(char* string,int length,
-  char character, int amount, char* output)
-{
-  string=add_string_characters(string,length,character,
-    amount);
-  return compare_character_strings(string, output,
-    length + amount);
-}

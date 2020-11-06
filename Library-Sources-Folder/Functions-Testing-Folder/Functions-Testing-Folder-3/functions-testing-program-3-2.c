@@ -95,11 +95,3 @@ int hashmap_keyword_smaller_test(int** hashmap,
     second);
   return compare_integer_variables(boolean, output);
 }
-
-int hashmap_keyword_greater_test(int** hashmap,
-  int first, int second, int output)
-{
-  int boolean = hashmap_keyword_greater(hashmap, first,
-    second);
-  return compare_integer_variables(boolean, output);
-}
