@@ -99,10 +99,3 @@ int sentence_string_length(char** sentence, int index)
   char* string = sentence_index_string(sentence,index);
   return character_string_length(string);
 }
-
-char** add_sentence_string(char** sentence, int height,
-  char* string)
-{
-  sentence = allocate_sentence_string(sentence, height,
-    string); return sentence;
-}

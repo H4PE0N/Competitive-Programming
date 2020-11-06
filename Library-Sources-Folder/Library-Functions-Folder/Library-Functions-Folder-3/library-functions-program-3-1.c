@@ -104,10 +104,3 @@ int* convert_hashmap_array(int** hashmap, int length)
   }
   return array;
 }
-
-int** allocate_hashmap_keyword(int** hashmap,int index,
-  int keyword)
-{
-  hashmap = allocate_matrix_integer(hashmap, index, 0,
-    keyword); return hashmap;
-}

@@ -96,8 +96,3 @@ char* add_string_characters(char* string, int length,
   }
   return string;
 }
-
-int character_variable_greater(char first, char second)
-{
-  int boolean = (first > second); return boolean;
-}

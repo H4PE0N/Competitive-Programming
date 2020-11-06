@@ -12,3 +12,10 @@ int sentence_contains_character(char** sentence,
   }
   return false;
 }
+
+char** add_sentence_string(char** sentence, int height,
+  char* string)
+{
+  sentence = allocate_sentence_string(sentence, height,
+    string); return sentence;
+}
