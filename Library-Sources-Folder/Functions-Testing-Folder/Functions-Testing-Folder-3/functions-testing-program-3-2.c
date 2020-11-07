@@ -32,7 +32,7 @@ int integer_hashmap_keywords_test(int** hashmap,
 {
   int* keywords = integer_hashmap_keywords(hashmap,
     value);
-  int length = integer_array_length(keywords)
+  int length = integer_array_length(keywords);
   return compare_integer_arrays(keywords, output,
     length);
 }
@@ -57,7 +57,7 @@ int allocate_value_keyword_test(int*keywords,int index,
 {
   keywords = allocate_value_keyword(keywords, index,
     hashmap);
-  int length = integer_array_length(keywords)
+  int length = integer_array_length(keywords);
   return compare_integer_arrays(keywords, output,
     length);
 }

@@ -6,7 +6,7 @@ int convert_string_binary_test(char* string,int length,
   char** output)
 {
   char** binary = convert_string_binary(string,length);
-  int width = sentence_string_length(binary);
+  int width = sentence_string_length(binary, 0);
   return compare_string_sentence(binary, output,length,
     width);
 }
@@ -88,7 +88,7 @@ int convert_array_binary_test(int* array, int length,
   char** output)
 {
   char** binary = convert_array_binary(array, length);
-  int width = sentence_string_length(binary);
+  int width = sentence_string_length(binary, 0);
   return compare_string_sentence(binary, output,length,
     width);
 }

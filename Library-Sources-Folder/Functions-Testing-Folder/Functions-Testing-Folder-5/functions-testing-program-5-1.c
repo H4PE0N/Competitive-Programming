@@ -58,7 +58,7 @@ int convert_integer_binary_test(int integer,
   char* output)
 {
   char* binary = convert_integer_binary(integer);
-  int length = character_string_length(binary)
+  int length = character_string_length(binary);
   return compare_character_strings(binary, output,
     length);
 }

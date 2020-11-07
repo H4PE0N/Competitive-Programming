@@ -61,7 +61,7 @@ char* binary_not_operation(char* binary, int length)
   char* opposite = generate_character_string(length);
   for(int index = 0; index < length; index = index + 1)
   {
-    char bit = string_index_character(binary, index)
+    char bit = string_index_character(binary, index);
     if(compare_character_variables(bit, '1'))
      opposite=add_string_character(opposite,index,'0');
     else
