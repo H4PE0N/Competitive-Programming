@@ -107,7 +107,7 @@ int compare_character_variables_test(char, char,
 int character_variable_smaller_test(char, char,
   int);
 
-int combine_character_strings_test(char*, char*,
-  char*);
+int combine_character_strings_test(char*, int,
+  char*, int, char*);
 
 #endif

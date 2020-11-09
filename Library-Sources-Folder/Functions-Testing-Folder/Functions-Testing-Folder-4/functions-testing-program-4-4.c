@@ -3,10 +3,10 @@
 library-functions-headers.h"
 
 int combine_character_strings_test(char* first,
-  char* second, char* output)
+  int f_length, char* second,int s_length,char* output)
 {
   char* combined = combine_character_strings(first,
-    second);
+    f_length, second, s_length);
   int length = character_string_length(combined);
   return compare_character_strings(combined, output,
     length);

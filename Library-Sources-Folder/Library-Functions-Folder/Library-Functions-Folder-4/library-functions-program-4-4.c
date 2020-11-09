@@ -23,7 +23,6 @@ int characters_inside_string(char* string, int length,
   {
     char*section=character_string_section(string,index,
       length);
-    character_string_stdout(section, length);
     if(compare_character_strings(section, characters,
       char_len)) return true;
   }
@@ -75,10 +74,9 @@ int string_character_smaller(char* string, int first,
     s_character);
 }
 
-char* combine_character_strings(char*first,char*second)
+char*combine_character_strings(char*first,int f_length,
+  char* second, int s_length)
 {
-  int f_length = character_string_length(first);
-  int s_length = character_string_length(second);
   char* combined=increase_string_memory(first,f_length,
     s_length);
   for(int index = 0; index < s_length; index = index+1)

@@ -1,13 +1,17 @@
 
 #include "../library-functions-headers.h"
 
-void integer_array_stdout(int* array, int length)
+void integer_array_stdout(int* array, int length,
+  int new_line)
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    printf("%d ", array_index_integer(array, index));
+    int integer = array_index_integer(array, index);
+    if(!compare_integer_variables(integer, INT_MIN))
+      printf("%d ", integer); else printf(". ");
   }
-  printf("\n");
+  if(compare_integer_variables(new_line, true))
+    printf("\n");
 }
 
 int compare_array_content(int* first, int* second,
@@ -64,7 +68,10 @@ int integer_array_total(int* array, int length)
   int total = 0;
   for(int index = 0; index < length; index = index + 1)
   {
-    total = (total + array_index_integer(array,index));
+    int integer = array_index_integer(array, index);
+    if(compare_integer_variables(integer, INT_MIN))
+      continue;
+    total = increase_integer_variable(total, integer);
   }
   return total;
 }
@@ -87,15 +94,6 @@ int compare_array_integers(int* array, int first,
 {
   int f_integer = array_index_integer(array, first);
   int s_integer = array_index_integer(array, second);
-  return compare_integer_variables(f_integer,
-    s_integer);
-}
-
-int compare_arrays_integer(int* first, int* second,
-  int index)
-{
-  int f_integer = array_index_integer(first, index);
-  int s_integer = array_index_integer(second, index);
   return compare_integer_variables(f_integer,
     s_integer);
 }

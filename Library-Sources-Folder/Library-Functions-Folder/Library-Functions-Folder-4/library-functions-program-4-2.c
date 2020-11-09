@@ -53,13 +53,19 @@ char* generate_random_string(int length, int minimum,
   return string;
 }
 
-void character_string_stdout(char* string, int length)
+void character_string_stdout(char* string, int length,
+  int new_line)
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    printf("%c ",string_index_character(string,index));
+    char character = string_index_character(string,
+      index);
+    if(!compare_character_variables(character,
+      CHAR_MIN)) printf("%c ", character);
+    else printf(". ");
   }
-  printf("\n");
+  if(compare_integer_variables(new_line, true))
+    printf("\n");
 }
 
 char* shuffle_character_string(char* string,int length)

@@ -43,7 +43,9 @@ char* generate_higher_alphabet(int characters)
 
 char higher_alphabet_character(int index)
 {
-  return (index >= 1 && index <= 26 ? 64 + index:'\0');
+  if(integer_variable_smaller(index, 1) ||
+    integer_variable_greater(index,26))return CHAR_MIN;
+  return (64 + index);
 }
 
 int compare_character_strings(char* first,char* second,
@@ -78,7 +80,8 @@ char* delete_string_character(char* string, int length,
   int index)
 {
   string = move_string_characters(string,length,index);
-  return allocate_string_character(string,length,'\0');
+  return allocate_string_character(string, length,
+    CHAR_MIN);
 }
 
 int string_character_greater(char* string, int first,

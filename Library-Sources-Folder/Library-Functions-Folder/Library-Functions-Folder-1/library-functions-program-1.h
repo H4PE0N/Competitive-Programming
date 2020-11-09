@@ -28,7 +28,8 @@ int integer_array_length(int*);
 int array_contains_integer(int*, int,
   int);
 
-int* combine_integer_arrays(int*,int*);
+int* combine_integer_arrays(int*, int,
+  int*, int);
 
 int* generate_coordinate_variable(int,
   int);
@@ -67,7 +68,8 @@ int* switch_array_integers(int*, int,
 
 int* shuffle_integer_array(int*, int);
 
-void integer_array_stdout(int*, int);
+void integer_array_stdout(int*, int,
+  int);
 
 int compare_array_content(int*, int*,
   int);

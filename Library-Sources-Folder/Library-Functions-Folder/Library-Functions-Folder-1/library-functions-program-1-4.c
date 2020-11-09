@@ -43,10 +43,9 @@ int coordinate_variable_height(int* coordinate)
   return height;
 }
 
-int* combine_integer_arrays(int* first, int* second)
+int* combine_integer_arrays(int* first, int f_length,
+  int* second, int s_length)
 {
-  int f_length = integer_array_length(first);
-  int s_length = integer_array_length(second);
   int* combined = increase_array_memory(first,f_length,
     s_length);
   for(int index = 0; index < s_length; index = index+1)

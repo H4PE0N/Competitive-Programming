@@ -27,7 +27,7 @@ void string_sentence_stdout(char** sentence, int height,
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
-    character_string_stdout(string, width);
+    character_string_stdout(string, width, true);
   }
 }
 

@@ -54,10 +54,11 @@ int compare_array_content_test(int* first, int* second,
   return compare_integer_variables(boolean, output);
 }
 
-int combine_integer_arrays_test(int* first,int* second,
-  int* output)
+int combine_integer_arrays_test(int*first,int f_length,
+  int* second, int s_length, int* output)
 {
-  int* combined = combine_integer_arrays(first,second);
+  int* combined=combine_integer_arrays(first, f_length,
+    second, s_length);
   int length = integer_array_length(combined);
   return compare_integer_arrays(combined, output,
     length);

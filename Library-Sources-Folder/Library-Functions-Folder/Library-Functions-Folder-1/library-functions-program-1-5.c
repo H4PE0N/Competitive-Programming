@@ -32,3 +32,12 @@ int* insert_array_integers(int* array, int first,
   }
   return array;
 }
+
+int compare_arrays_integer(int* first, int* second,
+  int index)
+{
+  int f_integer = array_index_integer(first, index);
+  int s_integer = array_index_integer(second, index);
+  return compare_integer_variables(f_integer,
+    s_integer);
+}

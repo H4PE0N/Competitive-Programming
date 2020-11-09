@@ -5,7 +5,7 @@ int* allocate_array_integers(int* array, int length)
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    array = allocate_array_integer(array, index, '\0');
+    array=allocate_array_integer(array,index, INT_MIN);
   }
   return array;
 }
@@ -36,7 +36,7 @@ int* generate_integer_array(int length)
 int integer_array_length(int* array)
 {
   int length = 0;
-  while(array_index_integer(array, length) != '\0')
+  while(array_index_integer(array, length) != INT_MIN)
   {
     length = increase_integer_variable(length, 1);
   }
@@ -81,7 +81,7 @@ int* delete_array_integer(int* array, int length,
   int index)
 {
   array = move_array_integers(array, length, index);
-  return allocate_array_integer(array, length, '\0');
+  return allocate_array_integer(array,length, INT_MIN);
 }
 
 int* sort_integer_array(int* array, int length)

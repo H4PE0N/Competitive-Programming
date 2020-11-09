@@ -8,6 +8,7 @@
 #include <time.h>
 #include <string.h>
 #include <math.h>
+#include <limits.h>
 
 #include "Library-Functions-Folder-1/\
 library-functions-program-1.h"

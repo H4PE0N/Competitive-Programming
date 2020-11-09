@@ -59,7 +59,7 @@ void integer_matrix_stdout(int** matrix, int height,
   for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
-    integer_array_stdout(array, width);
+    integer_array_stdout(array, width, true);
   }
 }
 

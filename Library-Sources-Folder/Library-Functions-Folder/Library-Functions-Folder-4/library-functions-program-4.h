@@ -46,7 +46,7 @@ char* generate_random_string(int, int,
   int);
 
 void character_string_stdout(char*,
-  int);
+  int, int);
 
 char* shuffle_character_string(char*,
   int);
@@ -117,6 +117,6 @@ int compare_character_variables(char,
   char);
 
 char* combine_character_strings(char*,
-  char*);
+  int, char*, int);
 
 #endif

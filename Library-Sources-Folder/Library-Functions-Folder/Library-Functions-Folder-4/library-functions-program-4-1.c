@@ -10,7 +10,8 @@ char* generate_character_string(int length)
 int character_string_length(char* string)
 {
   int length = 0;
-  while(string_index_character(string, length) != '\0')
+  while(string_index_character(string, length) !=
+    CHAR_MIN)
   {
     length = increase_integer_variable(length, 1);
   }
@@ -61,7 +62,7 @@ char* allocate_string_characters(char* string,
   for(int index = 0; index < length; index = index + 1)
   {
     string = allocate_string_character(string, index,
-      '\0');
+      CHAR_MIN);
   }
   return string;
 }
@@ -83,7 +84,9 @@ char* add_string_character(char* string, int length,
 
 char lower_alphabet_character(int index)
 {
-  return (index >= 1 && index <= 26 ? 96 + index:'\0');
+  if(integer_variable_smaller(index, 1) ||
+    integer_variable_greater(index,26))return CHAR_MIN;
+  return (96 + index);
 }
 
 char* add_string_characters(char* string, int length,

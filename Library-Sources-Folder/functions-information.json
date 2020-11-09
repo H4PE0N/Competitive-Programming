@@ -91,8 +91,8 @@
   },
   "integer_array_stdout":
   {
-    "description": "This function prints out an array to the  console  with\nstandard output. This  function  is  used  to  see  the\ncontent of the inputted array, not to be pretty.",
-    "parameters": ["int* array", "int length"],
+    "description": "When you want to print out  an  integer  array  in  the\nconsole, you can use this function. By letting new_line\nbe true, the function prints a new line at the end.",
+    "parameters": ["int* array", "int length", "int new_line"],
     "returning": "void"
   },
   "compare_array_content":
@@ -553,8 +553,8 @@
   },
   "character_string_stdout":
   {
-    "description": "To print out a string in the console you can use a  for\nloop with a print statement in it. That  is  what  this\nfunction is made of. A loop that prints the characters.",
-    "parameters": ["char* string", "int length"],
+    "description": "To print out a character string in the console, you can\nuse this function.  By  inputting  a  true  value,  the\nfunction prints out a new line at the end.",
+    "parameters": ["char* string", "int length", "int new_line"],
     "returning": "void"
   },
   "shuffle_character_string":
@@ -1178,13 +1178,13 @@
   "combine_integer_arrays":
   {
     "description": "If you have two integer arrays, and you want to  create\nan array with all the integers together,  you  can  use\nthis function. It combines two integer arrays.",
-    "parameters": ["int* first", "int* second"],
+    "parameters": ["int* first", "int f_length", "int* second", "int s_length"],
     "returning": "int* combined"
   },
   "combine_character_strings":
   {
     "description": "This function returns a string with characters from two\ninputted strings. If you want to combine two  character\nstrings, this function will be a great option.",
-    "parameters": ["char* first", "char* second"],
+    "parameters": ["char* first", "int f_length", "char* second", "s_length"],
     "returning": "char* combined"
   },
   "increase_array_memory":
