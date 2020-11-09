@@ -48,8 +48,8 @@ char** duplicate_string_sentence(char**,
 char** remove_sentence_character(char**,
   int, char);
 
-char** add_sentence_character(char**, int,
-  char);
+char** append_sentence_character(char**,
+  int, char);
 
 char** remove_sentence_characters(char**,
   int, char);
@@ -93,7 +93,7 @@ int sentence_string_index(char**, int,
 
 char** shuffle_string_sentence(char**,int);
 
-char** add_sentence_string(char**, int,
+char** append_sentence_string(char**, int,
   char*);
 
 char** reverse_string_sentence(char**, int,

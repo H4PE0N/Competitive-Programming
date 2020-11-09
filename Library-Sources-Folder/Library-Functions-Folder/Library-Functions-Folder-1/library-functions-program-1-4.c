@@ -31,7 +31,7 @@ int* increase_array_memory(int* array, int length,
   for(int index = 0; index < length; index = index + 1)
   {
     int integer = array_index_integer(array, index);
-    increased = add_array_integer(increased, index,
+    increased = append_array_integer(increased, index,
       integer);
   }
   return increased;
@@ -52,7 +52,7 @@ int* combine_integer_arrays(int* first, int f_length,
   {
     int integer = array_index_integer(second, index);
     int current = (index + f_length);
-    combined = add_array_integer(combined, current,
+    combined = append_array_integer(combined, current,
       integer);
   }
   return combined;

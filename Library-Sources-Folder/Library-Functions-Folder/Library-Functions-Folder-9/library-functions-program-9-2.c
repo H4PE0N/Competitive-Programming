@@ -75,12 +75,12 @@ char** remove_sentence_characters(char** sentence,
   return sentence;
 }
 
-char** add_sentence_character(char** sentence,
+char** append_sentence_character(char** sentence,
   int height, char character)
 {
   char* string=sentence_index_string(sentence, height);
   int length = sentence_string_length(sentence,height);
-  string = add_string_character(string, length,
+  string = append_string_character(string, length,
     character);
   return allocate_sentence_string(sentence, height,
     string);

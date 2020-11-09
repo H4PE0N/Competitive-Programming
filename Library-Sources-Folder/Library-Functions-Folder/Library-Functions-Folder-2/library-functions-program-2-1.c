@@ -7,7 +7,7 @@ int** generate_integer_matrix(int height, int width)
   for(int index = 0; index <= height; index =index + 1)
   {
     int* array = generate_integer_array(width);
-    matrix = add_matrix_array(matrix, index, array);
+    matrix = append_matrix_array(matrix, index, array);
   }
   return matrix;
 }
@@ -73,12 +73,12 @@ int** remove_matrix_integer(int** matrix, int height,
   return matrix;
 }
 
-int** add_matrix_integer(int** matrix, int height,
+int** append_matrix_integer(int** matrix, int height,
   int integer)
 {
   int* array = matrix_index_array(matrix, height);
   int length = matrix_array_length(matrix, height);
-  array = add_array_integer(array, length, integer);
+  array = append_array_integer(array, length, integer);
   return allocate_matrix_array(matrix, height, array);
 }
 
@@ -89,7 +89,7 @@ int** remove_matrix_array(int** matrix, int height,
   return delete_matrix_array(matrix, height, index);
 }
 
-int** add_matrix_array(int** matrix, int height,
+int** append_matrix_array(int** matrix, int height,
   int* array)
 {
   matrix = allocate_matrix_array(matrix, height,array);

@@ -23,7 +23,7 @@ char* character_string_section(char* string, int first,
   {
     int length = character_string_length(section);
     int character=string_index_character(string,index);
-    section = add_string_character(section, length,
+    section = append_string_character(section, length,
       character);
   }
   return section;

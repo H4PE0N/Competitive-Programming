@@ -47,7 +47,7 @@ char* increase_string_memory(char* string, int length,
   {
     char character = string_index_character(string,
       index);
-    increased = add_string_character(increased, index,
+    increased=append_string_character(increased, index,
       character);
   }
   return increased;
@@ -83,7 +83,7 @@ char*combine_character_strings(char*first,int f_length,
   {
     char character = string_index_character(second,
       index); int current = (index + f_length);
-    combined = add_string_character(combined, current,
+    combined=append_string_character(combined, current,
       character);
   }
   return combined;

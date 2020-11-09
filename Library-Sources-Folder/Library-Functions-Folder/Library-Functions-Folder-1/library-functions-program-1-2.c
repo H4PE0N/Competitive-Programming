@@ -19,13 +19,13 @@ int compare_integer_arrays(int* first, int* second,
   return true;
 }
 
-int* add_array_integers(int* array, int length,
+int* append_array_integers(int* array, int length,
   int integer, int amount)
 {
   for(int index = 0; index < amount; index = index + 1)
   {
     int current = (length + index);
-    array = add_array_integer(array, current, integer);
+    array=append_array_integer(array,current, integer);
   }
   return array;
 }
@@ -73,7 +73,8 @@ int* reverse_integer_array(int* array, int length)
   {
     int integer = array_index_integer(array, length -
       (index + 1));
-    reverse = add_array_integer(reverse,index,integer);
+    reverse = append_array_integer(reverse, index,
+      integer);
   }
   return reverse;
 }

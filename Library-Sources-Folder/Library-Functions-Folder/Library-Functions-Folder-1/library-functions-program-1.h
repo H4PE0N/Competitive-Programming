@@ -41,7 +41,8 @@ int* sort_integer_iteration(int*,int);
 
 int* sort_integer_array(int*, int);
 
-int* add_array_integer(int*,int, int);
+int* append_array_integer(int*, int,
+  int);
 
 int* move_array_integers(int*,int,int);
 
@@ -109,8 +110,8 @@ int integers_inside_array(int*, int,
 int* integer_array_section(int*, int,
   int);
 
-int* add_array_integers(int*, int, int,
-  int);
+int* append_array_integers(int*, int,
+  int, int);
 
 int compare_pair_variables(int*, int*);
 

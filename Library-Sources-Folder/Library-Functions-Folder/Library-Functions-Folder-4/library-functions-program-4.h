@@ -27,8 +27,8 @@ char* move_string_characters(char*,int,
 char* remove_string_character(char*,
   int,char);
 
-char* add_string_character(char*, int,
-  char);
+char* append_string_character(char*,
+  int, char);
 
 int compare_character_strings(char*,
   char*, int);
@@ -104,8 +104,8 @@ int characters_inside_string(char*,int,
 char* character_string_section(char*,
   int, int);
 
-char* add_string_characters(char*, int,
-  char, int);
+char* append_string_characters(char*,
+  int, char, int);
 
 int character_variable_greater(char,
   char);

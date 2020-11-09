@@ -8,7 +8,7 @@ char* reverse_character_string(char* string,int length)
   {
     char character = string_index_character(string,
       length - (index + 1));
-    reverse = add_string_character(reverse, index,
+    reverse = append_string_character(reverse, index,
       character);
   }
   return reverse;

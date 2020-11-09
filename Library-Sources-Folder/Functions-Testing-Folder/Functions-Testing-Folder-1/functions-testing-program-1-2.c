@@ -73,10 +73,10 @@ int duplicate_integer_array_test(int* array,int length,
   return compare_integer_arrays(array, output, length);
 }
 
-int add_array_integers_test(int* array, int length,
+int append_array_integers_test(int* array, int length,
   int integer, int amount, int* output)
 {
-  array = add_array_integers(array, length, integer,
+  array = append_array_integers(array, length, integer,
     amount);
   length = integer_array_length(array);
   return compare_integer_arrays(array, output, length);

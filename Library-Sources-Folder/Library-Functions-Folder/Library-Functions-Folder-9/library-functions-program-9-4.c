@@ -62,7 +62,8 @@ char** reverse_string_sentence(char** sentence,
   {
     char* string = sentence_index_string(sentence,
       height - (index + 1));
-    reverse=add_sentence_string(reverse, index,string);
+    reverse = append_sentence_string(reverse, index,
+      string);
   }
   return reverse;
 }

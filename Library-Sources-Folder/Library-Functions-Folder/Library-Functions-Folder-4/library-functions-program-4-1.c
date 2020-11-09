@@ -75,7 +75,7 @@ char* remove_string_character(char* string, int length,
   return delete_string_character(string, length,index);
 }
 
-char* add_string_character(char* string, int length,
+char* append_string_character(char* string, int length,
   char character)
 {
   string = allocate_string_character(string, length,
@@ -89,12 +89,12 @@ char lower_alphabet_character(int index)
   return (96 + index);
 }
 
-char* add_string_characters(char* string, int length,
+char* append_string_characters(char* string,int length,
   char character, int amount)
 {
   for(int index = 0; index < amount; index = index + 1)
   {
-    string = add_string_character(string, length+index,
+    string=append_string_character(string,length+index,
       character);
   }
   return string;

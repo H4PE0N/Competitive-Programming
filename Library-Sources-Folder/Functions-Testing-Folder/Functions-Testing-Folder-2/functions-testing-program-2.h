@@ -21,8 +21,8 @@ int matrix_contains_integer_test(int**,int,int,
 int remove_matrix_integer_test(int**, int, int,
   int**);
 
-int add_matrix_integer_test(int**,int,int,int,
-  int**);
+int append_matrix_integer_test(int**, int, int,
+  int, int**);
 
 int remove_matrix_integers_test(int**,int,int,
   int**);
@@ -95,6 +95,7 @@ int matrix_array_index_test(int**,int,int*,int);
 int remove_matrix_array_test(int**, int, int*,
   int**);
 
-int add_matrix_array_test(int**,int,int*,int**);
+int append_matrix_array_test(int**, int, int*,
+  int**);
 
 #endif

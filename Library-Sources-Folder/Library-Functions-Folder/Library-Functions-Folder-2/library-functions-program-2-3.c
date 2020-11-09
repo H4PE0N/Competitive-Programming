@@ -98,7 +98,7 @@ int** reverse_integer_matrix(int** matrix, int height,
   {
     int* array = matrix_index_array(matrix, height -
       (index + 1));
-    reverse = add_matrix_array(reverse, index, array);
+    reverse = append_matrix_array(reverse,index,array);
   }
   return reverse;
 }

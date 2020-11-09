@@ -66,10 +66,10 @@ int sort_integer_array_test(int* array, int length,
   return compare_integer_arrays(array, output, length);
 }
 
-int add_array_integer_test(int* array, int length,
+int append_array_integer_test(int* array, int length,
   int integer, int* output)
 {
-  array = add_array_integer(array, length, integer);
+  array = append_array_integer(array, length, integer);
   return compare_integer_arrays(array,output,length+1);
 }
 

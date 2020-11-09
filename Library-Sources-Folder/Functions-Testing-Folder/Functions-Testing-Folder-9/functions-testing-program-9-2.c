@@ -48,10 +48,10 @@ int remove_sentence_character_test(char** sentence,
     height, width);
 }
 
-int add_sentence_character_test(char** sentence,
+int append_sentence_character_test(char** sentence,
   int height, char character, char** output)
 {
-  sentence = add_sentence_character(sentence, height,
+  sentence = append_sentence_character(sentence,height,
     character);
   int width = sentence_string_length(sentence, 0);
   return compare_string_sentence(sentence, output,

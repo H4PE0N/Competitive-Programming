@@ -38,11 +38,11 @@ int characters_inside_string_test(char* string,
   return compare_integer_variables(boolean, output);
 }
 
-int add_string_characters_test(char* string,int length,
-  char character, int amount, char* output)
+int append_string_characters_test(char* string,
+  int length, char character, int amount, char* output)
 {
-  string=add_string_characters(string,length,character,
-    amount);
+  string = append_string_characters(string, length,
+    character, amount);
   return compare_character_strings(string, output,
     length + amount);
 }

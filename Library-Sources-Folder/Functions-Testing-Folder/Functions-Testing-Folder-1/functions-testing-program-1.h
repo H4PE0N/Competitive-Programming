@@ -29,7 +29,7 @@ int sort_integer_iteration_test(int*, int,
 
 int sort_integer_array_test(int*,int,int*);
 
-int add_array_integer_test(int*, int, int,
+int append_array_integer_test(int*,int,int,
   int*);
 
 int move_array_integers_test(int*,int,int,
@@ -92,8 +92,8 @@ int integers_inside_array_test(int*, int,
 int integer_array_section_test(int*, int,
   int, int*);
 
-int add_array_integers_test(int*, int, int,
-  int, int*);
+int append_array_integers_test(int*, int,
+  int, int, int*);
 
 int combine_integer_arrays_test(int*, int,
   int*, int, int*);

@@ -49,8 +49,8 @@ int remove_sentence_character_test(char**, int,
 int remove_sentence_characters_test(char**, int,
   char, char**);
 
-int add_sentence_character_test(char**, int, char,
-  char**);
+int append_sentence_character_test(char**, int,
+  char, char**);
 
 int sentence_string_contains_test(char**, int,
   char, int);
@@ -95,7 +95,7 @@ int reverse_sentence_strings_test(char**, int,
 int sentence_string_index_test(char**, int, char*,
   int);
 
-int add_sentence_string_test(char**, int, char*,
+int append_sentence_string_test(char**, int,char*,
   char**);
 
 int remove_sentence_string_test(char**, int,char*,

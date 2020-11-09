@@ -84,7 +84,8 @@ int* integer_array_section(int* array, int first,
   {
     int length = integer_array_length(section);
     int integer = array_index_integer(array, index);
-    section=add_array_integer(section,length, integer);
+    section = append_array_integer(section, length,
+      integer);
   }
   return section;
 }

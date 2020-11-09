@@ -24,7 +24,7 @@ int move_string_characters_test(char*, int, int,
 int remove_string_character_test(char*,int,char,
   char*);
 
-int add_string_character_test(char*, int, char,
+int append_string_character_test(char*,int,char,
   char*);
 
 int remove_string_characters_test(char*,int,
@@ -95,8 +95,8 @@ int characters_inside_string_test(char*, int,
 int character_string_section_test(char*,int,int,
   char*);
 
-int add_string_characters_test(char*, int, char,
-  int, char*);
+int append_string_characters_test(char*, int,
+  char, int, char*);
 
 int character_variable_greater_test(char, char,
   int);

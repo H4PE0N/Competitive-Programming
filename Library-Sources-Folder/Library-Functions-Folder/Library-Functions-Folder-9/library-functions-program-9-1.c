@@ -7,7 +7,7 @@ char** generate_string_sentence(int height, int width)
     (height + 1));
   for(int index = 0; index <= height; index =index + 1)
   {
-    sentence = add_sentence_string(sentence, index,
+    sentence = append_sentence_string(sentence, index,
       generate_character_string(width));
   }
   return sentence;

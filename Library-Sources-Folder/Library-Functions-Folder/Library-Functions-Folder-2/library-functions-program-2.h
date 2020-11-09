@@ -21,7 +21,7 @@ int** insert_matrix_integers(int**,int*,
 int** remove_matrix_integer(int**, int,
   int);
 
-int** add_matrix_integer(int**, int,
+int** append_matrix_integer(int**, int,
   int);
 
 int compare_integer_matrix(int**,int**,
@@ -101,6 +101,7 @@ int matrix_array_index(int**, int,int*);
 int** remove_matrix_array(int**, int,
   int*);
 
-int** add_matrix_array(int**, int,int*);
+int** append_matrix_array(int**, int,
+  int*);
 
 #endif

@@ -67,7 +67,8 @@ char** convert_string_binary(char* string, int length)
     char character = string_index_character(string,
       index);
     char* current =convert_character_binary(character);
-    binary = add_sentence_string(binary,index,current);
+    binary = append_sentence_string(binary, index,
+      current);
   }
   return binary;
 }
@@ -79,7 +80,7 @@ char* convert_binary_string(char** binary, int length)
   {
     char* current=sentence_index_string(binary, index);
     char character = convert_binary_character(current);
-    string = add_string_character(string, index,
+    string = append_string_character(string, index,
       character);
   }
   return string;
@@ -92,9 +93,9 @@ char* binary_and_operation(char* first, char* second,
   for(int index = 0; index < length; index = index + 1)
   {
     if(*(first + index)=='1' && *(second + index)=='1')
-      binary = add_string_character(binary, index,'1');
+      binary=append_string_character(binary,index,'1');
     else
-      binary = add_string_character(binary, index,'0');
+      binary=append_string_character(binary,index,'0');
   }
   return binary;
 }

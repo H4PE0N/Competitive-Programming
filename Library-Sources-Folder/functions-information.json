@@ -29,9 +29,9 @@
     "parameters": ["int* array", "int length", "int index"],
     "returning": "int* array"
   },
-  "add_array_integer":
+  "append_array_integer":
   {
-    "description": "When you want to add an integer to your array, you  can\ndo that without having to know an index. This  function\nadds the inputted integer to the end of the array.",
+    "description": "When you want to append an integer to your  array,  you\ncan do it with just the  array  length.  This  function\nappends the inputted integer to the end of the array.",
     "parameters": ["int* array", "int length", "int integer"],
     "returning": "int* array"
   },
@@ -83,9 +83,9 @@
     "parameters": ["int* array", "int length"],
     "returning": "int* reverse"
   },
-  "add_array_integers":
+  "append_array_integers":
   {
-    "description": "If you want to add more than one of the same integer to\nan array, a loop would be the way to go. This  function\nadds the integer to the array amount times.",
+    "description": "If you want to append more than one of the same integer\nto an array, a loop  would  be  the  way  to  go.  This\nfunction appends the integer to the array amount times.",
     "parameters": ["int* array", "int length", "int integer", "int amount"],
     "returning": "int* array"
   },
@@ -121,13 +121,13 @@
   },
   "generate_integer_pair":
   {
-    "description": "The datatype pair is an  integer  array  with  only  two\nintegers, therefor the name pair. This can  be  used  to\nstore two integers that works together.",
+    "description": "The datatype pair is an integer  array  with  only  two\nintegers, therefor the name pair. This can be  used  to\nstore two integers that works together.",
     "parameters": ["int first", "int second"],
     "returning": "int* pair"
   },
   "integer_array_total":
   {
-    "description": "This function calculates the total  value  of  all  the\nintegers in the array added to each other. So  you  get\nthe sum of the arrays integers.",
+    "description": "This function calculates the total  value  of  all  the\nintegers in the array, by looping through  the  integer\narray and adding the integers to each other.",
     "parameters": ["int* array", "int length"],
     "returning": "int total"
   },
@@ -191,9 +191,9 @@
     "parameters": ["int** matrix", "int height", "int integer"],
     "returning": "int** matrix"
   },
-  "add_matrix_integer":
+  "append_matrix_integer":
   {
-    "description": "When you allocate an integer to a matrix  you  have  to\ngive the function height and width, here  the  function\nadds the integer to the end of the matrix.",
+    "description": "When you allocate an integer to a matrix  you  have  to\ngive the function height and width, here  the  function\nappends the integer to the end of the matrix.",
     "parameters": ["int** matrix", "int height", "int integer"],
     "returning": "int** matrix"
   },
@@ -203,9 +203,9 @@
     "parameters": ["int** matrix", "int height", "int* array"],
     "returning": "int** matrix"
   },
-  "add_matrix_array":
+  "append_matrix_array":
   {
-    "description": "This function lets you add  an  integer  array  to  the\nmatrix, without having to give it a height or a  width.\nThe array will be stored at the end of the matrix.",
+    "description": "This function lets you append an integer array  to  the\nmatrix, without having to give it a height or a  width.\nThe array will be stored at the end of the matrix.",
     "parameters": ["int** matrix", "int height", "int* array"],
     "returning": "int** matrix"
   },
@@ -301,7 +301,7 @@
   },
   "reverse_integer_matrix":
   {
-    "description": "This function generates  a  new  matrix  and  adds  the\narrays from the inputted matrix in backwards order. The\nreversed matrix becomes mirrored.",
+    "description": "This function generates a new matrix  and  appends  the\narrays from the inputted matrix in backwards order. The\nreversed matrix becomes mirrored.",
     "parameters": ["int** matrix", "int height", "int width"],
     "returning": "int** reverse"
   },
@@ -503,9 +503,9 @@
     "parameters": ["char* string", "int length", "char character"],
     "returning": "char* string"
   },
-  "add_string_character":
+  "append_string_character":
   {
-    "description": "To add a character to your string,  you  can  use  this\nfunction. By inputting the length of  the  string,  the\nfunction allocates the character to the end.",
+    "description": "To append a character to your string, you can use  this\nfunction. By inputting the length of  the  string,  the\nfunction allocates the character to the end.",
     "parameters": ["char* string", "int length", "char character"],
     "returning": "char* string"
   },
@@ -515,9 +515,9 @@
     "parameters": ["int index"],
     "returning": "char character"
   },
-  "add_string_characters":
+  "append_string_characters":
   {
-    "description": "This function adds multiple of the same  character.  By\ninputting the  integer  you  want  and  the  amount  of\nintegers, this function adds them to your string.",
+    "description": "This function appends multiple of the  same  character.\nBy inputting the integer you want  and  the  amount  of\nintegers, this function appends them to your string.",
     "parameters": ["char* string", "int length", "char character", "int amount"],
     "returning": "char* string"
   },
@@ -673,7 +673,7 @@
   },
   "convert_binary_array":
   {
-    "description": "If you have some binary strings  in  a  list,  you  can\nconvert them to an integer array with this function. It\nconverts the binary strings and adds them to an array.",
+    "description": "If you have multiple binary strings in  an  array,  and\nwant to convert them to integers, you can  do  it  with\nthis function. It returns the converted binary strings.",
     "parameters": ["char** binary", "int length"],
     "returning": "int* array"
   },
@@ -709,7 +709,7 @@
   },
   "integer_array_average":
   {
-    "description": "To calculate the average value of an integer array, you\ncan add up the integers and divide by the length.  That\nis what this function does for you.",
+    "description": "To calculate the average value of an integer array, you\ncan add up the integers and divide by the length.  This\nfunction will return the average value of the array.",
     "parameters": ["int* array", "int length"],
     "returning": "double average"
   },
@@ -1091,9 +1091,9 @@
     "parameters": ["char** sentence", "int height", "char character"],
     "returning": "char** sentence"
   },
-  "add_sentence_character":
+  "append_sentence_character":
   {
-    "description": "When you add a character to  a  sentence,  it  will  be\nstored at the end of the 'filled' sentence.  You  don't\nhave to know which height and width it will be at.",
+    "description": "When you append a character to a sentence, it  will  be\nstored at the end of the 'filled' sentence.  You  don't\nhave to know which height and width it will be at.",
     "parameters": ["char** sentence", "int height", "char character"],
     "returning": "char** sentence"
   },
@@ -1109,9 +1109,9 @@
     "parameters": ["char** sentence", "int index"],
     "returning": "int length"
   },
-  "add_sentence_string":
+  "append_sentence_string":
   {
-    "description": "This function adds a string to the  inputted  sentence.\nJust like adding an integer to an array. This  function\nplaces the string at the end of the sentence.",
+    "description": "This function appends a string to  the  sentence.  Just\nlike appending an integer to an  array,  this  function\nplaces the string at the end of the sentence.",
     "parameters": ["char** sentence", "int height", "char* string"],
     "returning": "char** sentence"
   },
@@ -1165,7 +1165,7 @@
   },
   "reverse_string_sentence":
   {
-    "description": "This function reverses the order of the strings  inside\nthe sentence. It creates a new sentence  and  adds  the\nstrings from the inputted sentence backwards.",
+    "description": "This function reverses the order of the strings  inside\nthe sentence. It creates a new sentence and appends the\nstrings from the inputted sentence backwards.",
     "parameters": ["char** sentence", "int height", "int width"],
     "returning": "char** reverse"
   },
@@ -1189,13 +1189,13 @@
   },
   "increase_array_memory":
   {
-    "description": "If you have an integer array, and you want to  increase\nits memory, you  can  use  this  function.  It  can  be\nhelpful if you want to add more integers.",
+    "description": "If you have an integer array, and you want to  increase\nits memory, you  can  use  this  function.  It  can  be\nhelpful if you want to append more integers.",
     "parameters": ["int* array", "int length", "int increase"],
     "returning": "int* increased"
   },
   "increase_string_memory":
   {
-    "description": "This function increases the size of a string, that  can\nbe used when you want to add more characters  than  you\nfirst thought. You will input the increase.",
+    "description": "This function increases the size of a string, that  can\nbe used when you want to append  more  characters  than\nyou first thought. You will input the increase.",
     "parameters": ["char* string", "int length", "int increase"],
     "returning": "char* increased"
   },

@@ -22,7 +22,7 @@ int* convert_hashmap_array(int** hashmap, int length)
     int integer = hashmap_index_keyword(hashmap,index);
     int amount = hashmap_index_value(hashmap, index);
     int a_length = integer_array_length(array);
-    array = add_array_integers(array, a_length,integer,
+    array=append_array_integers(array,a_length,integer,
       amount);
   }
   return array;

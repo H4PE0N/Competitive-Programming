@@ -33,9 +33,9 @@ char* allocate_binary_bit(char* binary, int length,
   int index = character_string_length(binary);
   if(binary_integer_enough(binary, length, integer))
   {
-    return add_string_character(binary, index, '1');
+    return append_string_character(binary,index,'1');
   }
-  return add_string_character(binary, index, '0');
+  return append_string_character(binary, index, '0');
 }
 
 char* convert_integer_binary(int integer)
@@ -68,7 +68,7 @@ int* convert_binary_array(char** binary, int length)
   {
     char* current=sentence_index_string(binary, index);
     int integer = convert_binary_integer(current);
-    array = add_array_integer(array, index, integer);
+    array = append_array_integer(array, index,integer);
   }
   return array;
 }
@@ -90,7 +90,8 @@ char** convert_array_binary(int* array, int length)
   {
     int integer = array_index_integer(array, index);
     char* current = convert_integer_binary(integer);
-    binary = add_sentence_string(binary,index,current);
+    binary = append_sentence_string(binary, index,
+      current);
   }
   return binary;
 }

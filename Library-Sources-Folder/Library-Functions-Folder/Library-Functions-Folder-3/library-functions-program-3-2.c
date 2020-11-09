@@ -26,7 +26,7 @@ int* allocate_value_keyword(int* keywords, int index,
 {
   int length = integer_array_length(keywords);
   int keyword = hashmap_index_keyword(hashmap, index);
-  return add_array_integer(keywords, length, keyword);
+  return append_array_integer(keywords,length,keyword);
 }
 
 int** delete_hashmap_keyword(int** hashmap, int length,

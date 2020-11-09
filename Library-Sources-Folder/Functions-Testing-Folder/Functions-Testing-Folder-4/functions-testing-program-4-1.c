@@ -70,10 +70,10 @@ int remove_string_character_test(char* string,
     length);
 }
 
-int add_string_character_test(char* string, int length,
-  char character, char* output)
+int append_string_character_test(char* string,
+  int length, char character, char* output)
 {
-  string = add_string_character(string, length,
+  string = append_string_character(string, length,
     character);
   return compare_character_strings(string, output,
     length + 1);

@@ -75,7 +75,8 @@ int* generate_integer_products(int integer, int amount)
   for(int index = 0; index < amount; index = index + 1)
   {
     int product = (integer * (index + 1));
-    products=add_array_integer(products,index,product);
+    products = append_array_integer(products, index,
+      product);
   }
   return products;
 }
