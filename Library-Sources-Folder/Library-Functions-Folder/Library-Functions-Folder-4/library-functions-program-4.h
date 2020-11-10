@@ -30,6 +30,9 @@ char* remove_string_character(char*,
 char* append_string_character(char*,
   int, char);
 
+int string_character_amount(char*, int,
+  char);
+
 int compare_character_strings(char*,
   char*, int);
 
@@ -46,6 +49,9 @@ char* generate_random_string(int, int,
   int);
 
 void character_string_stdout(char*,
+  int, int, int);
+
+void string_character_stdout(char*,
   int, int);
 
 char* shuffle_character_string(char*,

@@ -8,6 +8,9 @@ int allocate_string_character_test(char*, int,
 int allocate_string_characters_test(char*, int,
   char*);
 
+int string_character_amount_test(char*,int,char,
+  int);
+
 int generate_character_string_test(int, char*);
 
 int character_string_length_test(char*, int);

@@ -22,12 +22,12 @@ char** delete_sentence_string(char** sentence,
 }
 
 void string_sentence_stdout(char** sentence, int height,
-  int width)
+  int width, int spaces)
 {
   for(int index = 0; index < height; index = index + 1)
   {
     char* string=sentence_index_string(sentence,index);
-    character_string_stdout(string, width, true);
+    character_string_stdout(string, width,true,spaces);
   }
 }
 

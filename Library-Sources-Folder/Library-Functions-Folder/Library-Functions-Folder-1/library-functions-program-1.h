@@ -14,6 +14,9 @@ int* generate_integer_array(int);
 int* generate_random_coordinate(int,
   int);
 
+void array_integer_stdout(int*, int,
+  int);
+
 int* generate_random_pair(int, int);
 
 int* increase_array_memory(int*, int,
@@ -70,7 +73,7 @@ int* switch_array_integers(int*, int,
 int* shuffle_integer_array(int*, int);
 
 void integer_array_stdout(int*, int,
-  int);
+  int, int);
 
 int compare_array_content(int*, int*,
   int);

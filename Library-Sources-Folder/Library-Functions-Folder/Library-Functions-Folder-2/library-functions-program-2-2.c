@@ -54,12 +54,12 @@ int** generate_random_matrix(int height, int width,
 }
 
 void integer_matrix_stdout(int** matrix, int height,
-  int width)
+  int width, int spaces)
 {
   for(int index = 0; index < height; index = index + 1)
   {
     int* array = matrix_index_array(matrix, index);
-    integer_array_stdout(array, width, true);
+    integer_array_stdout(array, width, true, spaces);
   }
 }
 

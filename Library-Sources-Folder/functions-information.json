@@ -92,7 +92,7 @@
   "integer_array_stdout":
   {
     "description": "When you want to print out  an  integer  array  in  the\nconsole, you can use this function. By letting new_line\nbe true, the function prints a new line at the end.",
-    "parameters": ["int* array", "int length", "int new_line"],
+    "parameters": ["int* array", "int length", "int new_line", "int spaces"],
     "returning": "void"
   },
   "compare_array_content":
@@ -218,7 +218,7 @@
   "integer_matrix_stdout":
   {
     "description": "This function prints out the inputted matrix  array  in\nthe console. Just like the other stdout  functions,  it\nis not meant to look beautiful.",
-    "parameters": ["int** matrix", "int height", "int width"],
+    "parameters": ["int** matrix", "int height", "int width", "int spaces"],
     "returning": "void"
   },
   "shuffle_matrix_arrays":
@@ -554,7 +554,7 @@
   "character_string_stdout":
   {
     "description": "To print out a character string in the console, you can\nuse this function.  By  inputting  a  true  value,  the\nfunction prints out a new line at the end.",
-    "parameters": ["char* string", "int length", "int new_line"],
+    "parameters": ["char* string", "int length", "int new_line", "int spaces"],
     "returning": "void"
   },
   "shuffle_character_string":
@@ -1070,7 +1070,7 @@
   "string_sentence_stdout":
   {
     "description": "This function prints out a sentence  in  your  console.\nThe characters in the sentence will be  separated  like\nthey wore coordinates in a coordinate system.",
-    "parameters": ["char** sentence", "int height", "int width"],
+    "parameters": ["char** sentence", "int height", "int width", "int spaces"],
     "returning": "void"
   },
   "generate_random_sentence":
@@ -1184,7 +1184,7 @@
   "combine_character_strings":
   {
     "description": "This function returns a string with characters from two\ninputted strings. If you want to combine two  character\nstrings, this function will be a great option.",
-    "parameters": ["char* first", "int f_length", "char* second", "s_length"],
+    "parameters": ["char* first", "int f_length", "char* second", "int s_length"],
     "returning": "char* combined"
   },
   "increase_array_memory":
@@ -1288,5 +1288,11 @@
     "description": "To check if a slot in your hash-map is taken by  either\na keyword or a value, you can  use  this  function.  It\nreturns true if a keyword or a value exists there.",
     "parameters": ["int** hashmap", "int index"],
     "returning": "int boolean"
+  },
+  "string_character_amount":
+  {
+    "description": "If you want to know how many of a character there is in\na string, you  can  use  this  function.  The  function\nreturns the amount of a character in a string. ",
+    "parameters": ["char* string", "int length", "char character"],
+    "returning": "int amount"
   }
 }

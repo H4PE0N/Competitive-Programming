@@ -53,16 +53,22 @@ char* generate_random_string(int length, int minimum,
   return string;
 }
 
+void string_character_stdout(char* string, int index,
+  int spaces)
+{
+  char character=string_index_character(string, index);
+  if(!compare_character_variables(character, CHAR_MIN))
+    printf("%c", character); else printf("+");
+  if(compare_integer_variables(spaces, true))
+    printf(" ");
+}
+
 void character_string_stdout(char* string, int length,
-  int new_line)
+  int new_line, int spaces)
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    char character = string_index_character(string,
-      index);
-    if(!compare_character_variables(character,
-      CHAR_MIN)) printf("%c ", character);
-    else printf(". ");
+    string_character_stdout(string, index, spaces);
   }
   if(compare_integer_variables(new_line, true))
     printf("\n");
@@ -90,21 +96,4 @@ char* duplicate_character_string(char* string,
       character);
   }
   return doublet;
-}
-
-char* switch_adjacent_characters(char*string,int index)
-{
-  string = switch_string_characters(string, index,
-    index + 1); return string;
-}
-
-char* sort_string_iteration(char* string,int iteration)
-{
-  for(int index = 0; index < (iteration - 1); index++)
-  {
-    if(string_character_smaller(string,index, index+1))
-      continue;
-    string = switch_adjacent_characters(string, index);
-  }
-  return string;
 }

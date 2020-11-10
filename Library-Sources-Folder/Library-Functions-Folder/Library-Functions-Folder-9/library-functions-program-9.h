@@ -16,7 +16,7 @@ int sentence_contains_character(char**,int,
   int, char);
 
 void string_sentence_stdout(char**, int,
-  int);
+  int, int);
 
 char** allocate_sentence_character(char**,
   int, int, char);

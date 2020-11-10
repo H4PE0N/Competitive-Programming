@@ -41,7 +41,7 @@ int** generate_random_matrix(int, int,
   int, int);
 
 void integer_matrix_stdout(int**, int,
-  int);
+  int, int);
 
 int** shuffle_matrix_arrays(int**,int);
 

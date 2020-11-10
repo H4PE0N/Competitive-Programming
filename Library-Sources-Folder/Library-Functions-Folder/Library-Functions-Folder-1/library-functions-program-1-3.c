@@ -1,25 +1,23 @@
 
 #include "../library-functions-headers.h"
 
-void integer_array_stdout(int* array, int length,
-  int new_line)
-{
-  for(int index = 0; index < length; index = index + 1)
-  {
-    int integer = array_index_integer(array, index);
-    if(!compare_integer_variables(integer, INT_MIN))
-      printf("%d ", integer); else printf(". ");
-  }
-  if(compare_integer_variables(new_line, true))
-    printf("\n");
-}
-
 int compare_array_content(int* first, int* second,
   int length)
 {
   first = sort_integer_array(first, length);
   second = sort_integer_array(second, length);
   return compare_integer_arrays(first, second, length);
+}
+
+void integer_array_stdout(int* array, int length,
+  int new_line, int spaces)
+{
+  for(int index = 0; index < length; index = index + 1)
+  {
+    array_integer_stdout(array, index, spaces);
+  }
+  if(compare_integer_variables(new_line, true))
+    printf("\n");
 }
 
 int* duplicate_integer_array(int* array, int length)
