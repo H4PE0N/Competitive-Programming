@@ -265,7 +265,7 @@
   },
   "matrix_array_length":
   {
-    "description": "If you want to calculate  the  length  of  one  of  the\narrays in a matrix, you  can  call  this  function.  It\nreturns the length of a index specific array.",
+    "description": "If you want to calculate  the  length  of  one  of  the\narrays in a matrix, you  can  call  this  function.  It\nreturns the length of an index specific array.",
     "parameters": ["int** matrix", "int index"],
     "returning": "int length"
   },
@@ -343,8 +343,8 @@
   },
   "increase_hashmap_value":
   {
-    "description": "If you want to increase the value of a keyword  in  the\nhashmap, you could use this function.  If  the  keyword\ndoes not exists, it will create it.",
-    "parameters": ["int** hashmap", "int length", "int keyword"],
+    "description": "This function will increase the value of a  keyword  in\nthe inputted hash-map using  an  index.  If  the  index\narray does not exist, it will be created.",
+    "parameters": ["int** hashmap", "int length", "int index"],
     "returning": "int** hashmap"
   },
   "allocate_keyword_value":
@@ -649,7 +649,7 @@
   },
   "characters_inside_string":
   {
-    "description": "This function will check if a series of characters  are\na part  of  the  inputted  string.  It  checks  if  the\n inputted characters are inside the string and in order.",
+    "description": "This function will check if a series of characters  are\na part  of  the  inputted  string.  It  checks  if  the\ninputted characters are inside the string and in order.",
     "parameters": ["char* string", "int length", "char* characters"],
     "returning": "int boolean"
   },
@@ -1279,7 +1279,7 @@
   },
   "increase_keyword_value":
   {
-    "description": "This function lets you increase the value of a keyword,\nor create a new keyword in the inputted  hash-map.  The\nkeyword is specified with a inputted keyword.",
+    "description": "This function lets you increase the value of a keyword,\nor create a new keyword in the inputted  hash-map.  The\nkeyword is specified with an inputted keyword.",
     "parameters": ["int** hashmap", "int length", "int keyword"],
     "returning": "int** hashmap"
   },

@@ -40,13 +40,13 @@ int** delete_hashmap_keyword(int** hashmap, int length,
 int** reduce_keyword_value(int** hashmap, int length,
   int keyword)
 {
-  if(hashmap_keyword_value(hashmap,length, keyword)<=1)
+  int value = hashmap_keyword_value(hashmap, length,
+    keyword);
+  if(!integer_variable_greater(value, 1))
   {
     return remove_hashmap_keyword(hashmap, length,
       keyword);
   }
-  int value = hashmap_keyword_value(hashmap, length,
-    keyword);
   return allocate_keyword_value(hashmap,length,keyword,
     value - 1);
 }
@@ -55,8 +55,10 @@ void integer_hashmap_stdout(int** hashmap, int length)
 {
   for(int index = 0; index < length; index = index + 1)
   {
-    printf("%d -> %d\n", hashmap_index_keyword(hashmap,
-      index), hashmap_index_value(hashmap, index));
+    int keyword = hashmap_index_keyword(hashmap,index);
+    int value = hashmap_index_value(hashmap, index);
+    if( (keyword != INT_MIN) && (value != INT_MIN) )
+      printf("%d\t->\t%d\n", keyword, value);
   }
 }
 
@@ -92,7 +94,9 @@ int integer_hashmap_total(int** hashmap, int length)
   int total = 0;
   for(int index = 0; index < length; index = index + 1)
   {
-    total = total + hashmap_index_value(hashmap,index);
+    int value = hashmap_index_value(hashmap, index);
+    if(!compare_integer_variables(value, INT_MIN))
+      total = increase_integer_variable(total, value);
   }
   return total;
 }

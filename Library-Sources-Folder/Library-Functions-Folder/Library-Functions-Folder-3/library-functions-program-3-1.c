@@ -21,6 +21,7 @@ int* convert_hashmap_array(int** hashmap, int length)
   {
     int integer = hashmap_index_keyword(hashmap,index);
     int amount = hashmap_index_value(hashmap, index);
+    if(integer == INT_MIN||amount == INT_MIN) continue;
     int a_length = integer_array_length(array);
     array=append_array_integers(array,a_length,integer,
       amount);
@@ -99,7 +100,9 @@ int** convert_array_hashmap(int* array, int length)
   for(int index = 0; index < length; index = index + 1)
   {
     int integer = array_index_integer(array, index);
-    hashmap = increase_hashmap_value(hashmap, length,
+    if(compare_integer_variables(integer, INT_MIN))
+      continue;
+    hashmap = increase_keyword_value(hashmap, length,
       integer);
   }
   return hashmap;

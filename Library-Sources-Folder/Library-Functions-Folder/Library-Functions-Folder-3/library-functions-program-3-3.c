@@ -51,8 +51,8 @@ int compare_hashmap_content(int** first, int** second,
 
 int** generate_integer_hashmap(int length)
 {
-  int** matrix = generate_integer_matrix(length, 2);
-  return matrix;
+  int** hashmap = generate_integer_matrix(length, 2);
+  return hashmap;
 }
 
 int hashmap_keyword_value(int** hashmap, int length,
@@ -79,8 +79,9 @@ int** remove_hashmap_keyword(int** hashmap, int length,
 
 int check_hashmap_array(int** hashmap, int index)
 {
-  return (hashmap_index_keyword(hashmap, index) != '\0'
-    && hashmap_index_value(hashmap, index) != '\0');
+  int keyword = hashmap_index_keyword(hashmap, index);
+  int value = hashmap_index_value(hashmap, index);
+  return ( (keyword != INT_MIN) && (value != INT_MIN));
 }
 
 int** allocate_hashmap_value(int** hashmap, int index,

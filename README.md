@@ -28,7 +28,7 @@ int main(int argc, char** argv)
     maximum);
 
   // This function prints out the array to the console
-  integer_array_stdout(array, length);
+  integer_array_stdout(array, length, true, true);
 
   return 0;
 }
@@ -54,17 +54,18 @@ have. This is an example of how a  normal  function  in
 this library could look like:
 </pre>
 ```C
-char* reverse_character_string(char* string,int length)
+int* increase_array_memory(int* array, int length,
+  int increase)
 {
-  char* reverse = generate_character_string(length);
+  int* increased = generate_integer_array(length +
+    increase);
   for(int index = 0; index < length; index = index + 1)
   {
-    char character = string_index_character(string,
-      length - (index + 1));
-    reverse = add_string_character(reverse, index,
-      character);
+    int integer = array_index_integer(array, index);
+    increased = append_array_integer(increased, index,
+      integer);
   }
-  return reverse;
+  return increased;
 }
 ```
 <pre>
@@ -95,12 +96,12 @@ used by the  users.  Here  is  an  example  of  how  an
 information block could look like:
 </pre>
 ```json
-"reverse_character_string":
+"array_contains_integer":
 {
-  "description": "The returning string  of  this  function  will  be  the\nmirrored version of the inputted string.  The  function\nreverses the order of the strings characters.",
-  "parameters": ["char* string", "int length"],
-  "returning": "char* reverse"
-},
+  "description": "If you want to check if your array contains a  specific\ninteger, you can use this function. The function  loops\nthrough the array and checks for the integer.",
+  "parameters": ["int* array", "int length", "int integer"],
+  "returning": "int boolean"
+}
 ```
 <pre>
 Before you define the variable you want to create,  you
@@ -111,7 +112,7 @@ match the length of the other declarations of the other
 functions.
 </pre>
 ```C
-char* reverse_character_string(char*, int);
+double generate_random_decimal(double, double);
 ```
 <pre>
 When you want to compile your program, or you  want  to
