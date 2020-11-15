@@ -1297,37 +1297,37 @@
   },
   "convert_array_string":
   {
-    "description": "",
+    "description": "To convert an array to a string, you  will  go  through\nall the integers and convert them to  characters.  Then\nyou will collect all characters into a string.",
     "parameters": ["int* array", "int length"],
     "returning": "char* string"
   },
   "convert_string_array":
   {
-    "description": "",
+    "description": "If you want to convert a string to an  array,  you  can\ncall this function with your string.  The  integers  in\nthe array will be the ASCII value of the characters.",
     "parameters": ["char* string", "int length"],
     "returning": "int* array"
   },
   "convert_character_integer":
   {
-    "description": "",
+    "description": "If you want to convert a character to an  integer,  the\ncharacter must be between the integer value range.  But\nall characters in the ASCII table are in that range.",
     "parameters": ["char character"],
     "returning": "int integer"
   },
   "convert_integer_character":
   {
-    "description": "",
+    "description": "When you want to convert an integer to a character, the\ninteger must be in the character range. If the  integer\nis outside the character range, bad stuff happens. ",
     "parameters": ["int integer"],
     "returning": "char character"
   },
   "convert_matrix_sentence":
   {
-    "description": "",
+    "description": "A matrix contains of integers, if you convert  all  the\nintegers into  characters  you  get  a  sentence.  This\nfunction converts an inputted matrix into a sentence.",
     "parameters": ["int** matrix"],
     "returning": "char** sentence"
   },
   "convert_sentence_matrix":
   {
-    "description": "",
+    "description": "This function converts a sentence  into  a  matrix.  By\nconverting  all  the  characters  in  a  sentence  into\nintegers, the sentence becomes an integer matrix.",
     "parameters": ["char** sentence"],
     "returning": "int** matrix"
   }

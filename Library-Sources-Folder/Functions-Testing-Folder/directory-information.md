@@ -50,9 +50,10 @@ something and useful data from arrays and  other  sets.
 Library-Functions-Folder-7 -
 
 Library-Functions-Folder-8 - This    folder    contains
-functions that are made around integers. So  everything
-from math to random generations and things  like  that.
-This is the most fundamental data-type in this library.
+functions that are made around fundamental  data-types.
+All of the data-types in this library is build upon the
+fundamental data-types. There is integers,  characters,
+doubles, and so on.
 
 Library-Functions-Folder-9 - This    folder    contains
 functions that are made around string  sentences.  They
