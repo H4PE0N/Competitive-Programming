@@ -1,19 +1,6 @@
 
 #include "../library-functions-headers.h"
 
-char generate_random_character(int minimum,int maximum)
-{
-  char character = generate_random_integer(minimum,
-    maximum); return character;
-}
-
-int character_range_between(char character,int minimum,
-  int maximum)
-{
-  int boolean=integer_range_between(character, minimum,
-    maximum); return boolean;
-}
-
 char* character_string_section(char* string, int first,
   int second)
 {
@@ -96,4 +83,17 @@ char* duplicate_character_string(char* string,
       character);
   }
   return doublet;
+}
+
+int* convert_string_array(char* string, int length)
+{
+  int* array = generate_integer_array(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    char character = string_index_character(string,
+      index);
+    int integer = convert_character_integer(character);
+    array = append_array_integer(array, index,integer);
+  }
+  return array;
 }

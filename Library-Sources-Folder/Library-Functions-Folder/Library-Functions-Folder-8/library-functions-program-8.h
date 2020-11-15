@@ -11,8 +11,14 @@ int increase_integer_variable(int,int);
 int fraction_variable_smaller(int*,
   int*);
 
+char generate_random_character(int,
+  int);
+
 double generate_random_decimal(double,
   double);
+
+int character_range_between(char, int,
+  int);
 
 int decimal_variable_smaller(double,
   double);
@@ -25,6 +31,15 @@ int integer_power_operation(int, int);
 int integer_variable_greater(int, int);
 
 double convert_decimal_percent(double);
+
+int character_variable_greater(char,
+  char);
+
+int character_variable_smaller(char,
+  char);
+
+int compare_character_variables(char,
+  char);
 
 int fraction_variable_denominator(int*);
 
@@ -73,7 +88,7 @@ int* shorten_fraction_variable(int*,
 
 int compare_decimal_variables(double,
   double);
-  
+
 int least_common_denominator(int*,int*);
 
 int* smallest_fraction_form(int*);
@@ -89,6 +104,5 @@ char convert_integer_character(int);
 int convert_character_integer(char);
 
 int* inverted_fraction_variable(int*);
-
 
 #endif

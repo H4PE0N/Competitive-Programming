@@ -24,11 +24,6 @@ char string_index_character(char* string, int index)
   char character = *(string + index); return character;
 }
 
-int character_variable_smaller(char first, char second)
-{
-  int boolean = (first < second); return boolean;
-}
-
 char* generate_higher_alphabet(int characters)
 {
   char* alphabet = generate_character_string(
@@ -71,11 +66,6 @@ char* generate_lower_alphabet(int characters)
   return alphabet;
 }
 
-int compare_character_variables(char first,char second)
-{
-  int boolean = (first == second); return boolean;
-}
-
 char* delete_string_character(char* string, int length,
   int index)
 {
@@ -93,4 +83,15 @@ int string_character_greater(char* string, int first,
     second);
   return character_variable_greater(f_character,
     s_character);
+}
+
+char* sort_string_iteration(char* string,int iteration)
+{
+  for(int index = 0; index < (iteration - 1); index++)
+  {
+    if(string_character_smaller(string,index, index+1))
+      continue;
+    string = switch_adjacent_characters(string, index);
+  }
+  return string;
 }

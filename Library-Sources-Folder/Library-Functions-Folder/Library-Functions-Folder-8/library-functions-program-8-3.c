@@ -19,11 +19,8 @@ double convert_fraction_percent(int* fraction)
 
 int convert_character_integer(char character)
 {
-  int smaller = !integer_variable_smaller(character,
-    INT_MIN);
-  int greater = !integer_variable_greater(character,
-    INT_MAX);
-  if(greater&&smaller)return character; return INT_MIN;
+  if(character_range_between(character, INT_MIN,
+    INT_MAX)) return character; else return INT_MIN;
 }
 
 int fraction_variable_numerator(int* fraction)
@@ -57,11 +54,8 @@ int compare_decimal_variables(double first,
 
 char convert_integer_character(int integer)
 {
-  int smaller = !integer_variable_smaller(integer,
-    CHAR_MIN);
-  int greater = !integer_variable_greater(integer,
-    CHAR_MAX);
-  if(smaller&&greater) return integer; return CHAR_MIN;
+  if(integer_range_between(integer, CHAR_MIN,CHAR_MAX))
+    return integer; else return CHAR_MIN;
 }
 
 int decimal_variable_greater(double first,
@@ -87,4 +81,14 @@ double generate_random_decimal(double minimum,
 {
   double decimals=((double)rand()/(double)(RAND_MAX));
   return (decimals * (maximum - minimum)) + minimum;
+}
+
+int character_variable_smaller(char first, char second)
+{
+  int boolean = (first < second); return boolean;
+}
+
+int compare_character_variables(char first,char second)
+{
+  int boolean = (first == second); return boolean;
 }

@@ -41,12 +41,6 @@ int compare_character_strings(char*,
 char* remove_string_characters(char*,
   int, char);
 
-char generate_random_character(int,
-  int);
-
-int character_range_between(char, int,
-  int);
-
 char* generate_random_string(int, int,
   int);
 
@@ -114,15 +108,6 @@ char* character_string_section(char*,
 
 char* append_string_characters(char*,
   int, char, int);
-
-int character_variable_greater(char,
-  char);
-
-int character_variable_smaller(char,
-  char);
-
-int compare_character_variables(char,
-  char);
 
 char* combine_character_strings(char*,
   int, char*, int);
