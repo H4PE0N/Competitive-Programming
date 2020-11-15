@@ -11,6 +11,8 @@ int* allocate_array_integers(int*,int);
 
 int* generate_integer_array(int);
 
+char* convert_array_string(int*, int);
+
 int* generate_random_coordinate(int,
   int);
 

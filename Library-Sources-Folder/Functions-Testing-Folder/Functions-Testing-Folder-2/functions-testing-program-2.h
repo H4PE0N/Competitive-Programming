@@ -13,6 +13,9 @@ int delete_matrix_integer_test(int**, int, int,
 int insert_matrix_integers_test(int**, int*,int*,
   int, int**);
 
+int convert_matrix_sentence_test(int**, int, int,
+  char**);
+
 int integer_matrix_height_test(int**,int,int);
 
 int matrix_contains_integer_test(int**,int,int,

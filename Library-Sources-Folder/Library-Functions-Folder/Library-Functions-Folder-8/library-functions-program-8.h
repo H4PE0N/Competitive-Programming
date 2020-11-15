@@ -54,6 +54,8 @@ int* convert_decimal_fraction(double);
 int fraction_variable_greater(int*,
   int*);
 
+int* generate_integer_products(int,int);
+
 int compare_fraction_variables(int*,
   int*);
 
@@ -71,6 +73,8 @@ int* shorten_fraction_variable(int*,
 
 int compare_decimal_variables(double,
   double);
+  
+int least_common_denominator(int*,int*);
 
 int* smallest_fraction_form(int*);
 
@@ -78,12 +82,13 @@ int greatest_common_table(int, int);
 
 int* duplicate_fraction_variable(int*);
 
-int* inverted_fraction_variable(int*);
-
-int* generate_integer_products(int,int);
-
 int smallest_common_product(int, int);
 
-int least_common_denominator(int*,int*);
+char convert_integer_character(int);
+
+int convert_character_integer(char);
+
+int* inverted_fraction_variable(int*);
+
 
 #endif

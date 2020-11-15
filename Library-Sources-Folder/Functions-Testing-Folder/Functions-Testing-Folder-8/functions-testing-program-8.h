@@ -53,6 +53,9 @@ int convert_fraction_decimal_test(int*,
 int generate_fraction_variable_test(int,int,
   int*);
 
+int convert_character_integer_test(char,
+  int);
+
 int extend_fraction_variable_test(int*, int,
   int*);
 
@@ -75,6 +78,9 @@ int greatest_common_table_test(int,int,int);
 
 int compare_fraction_variables_test(int*,
   int*, int);
+
+int convert_integer_character_test(int,
+  char);
 
 int smallest_fraction_form_test(int*, int*);
 

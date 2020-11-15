@@ -21,6 +21,15 @@ int sentence_contains_character_test(char** sentence,
   return compare_integer_variables(boolean, output);
 }
 
+int convert_sentence_matrix_test(char** sentence,
+  int height, int width, int** output)
+{
+  int** matrix=convert_sentence_matrix(sentence,height,
+    width);
+  return compare_integer_matrix(matrix, output, height,
+    width);
+}
+
 int remove_sentence_string_test(char** sentence,
   int height, char* string, char** output)
 {

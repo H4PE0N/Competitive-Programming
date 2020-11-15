@@ -2,6 +2,8 @@
 #ifndef FUNCTIONS_TESTING_PROGRAM_4_H
 #define FUNCTIONS_TESTING_PROGRAM_4_H
 
+int convert_string_array_test(char*, int, int*);
+
 int allocate_string_character_test(char*, int,
   char, char*);
 

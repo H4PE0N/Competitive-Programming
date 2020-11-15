@@ -27,3 +27,12 @@ int reverse_integer_matrix_test(int**matrix,int height,
   return compare_integer_matrix(matrix, output, height,
     width);
 }
+
+int convert_matrix_sentence_test(int** matrix,
+  int height, int width, char** output)
+{
+  char**sentence=convert_matrix_sentence(matrix,height,
+    width);
+  return compare_string_sentence(sentence, output,
+    height, width);
+}

@@ -48,3 +48,16 @@ char* sort_string_iteration(char* string,int iteration)
   }
   return string;
 }
+
+int* convert_string_array(char* string, int length)
+{
+  int* array = generate_integer_array(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    char character = string_index_character(string,
+      index);
+    int integer = convert_character_integer(character);
+    array = append_array_integer(array, index,integer);
+  }
+  return array;
+}

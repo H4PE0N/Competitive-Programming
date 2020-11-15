@@ -9,6 +9,13 @@ int greatest_common_table_test(int greater,int smaller,
   return compare_integer_variables(table, output);
 }
 
+int convert_character_integer_test(char character,
+  int output)
+{
+  int integer = convert_character_integer(character);
+  return compare_integer_variables(integer, output);
+}
+
 int smallest_fraction_form_test(int* fraction,
   int* output)
 {
@@ -21,6 +28,13 @@ int fraction_variable_greater_test(int* first,
 {
   int boolean=fraction_variable_greater(first, second);
   return compare_integer_variables(boolean, output);
+}
+
+int convert_integer_character_test(int integer,
+  char output)
+{
+  char character = convert_integer_character(integer);
+  return compare_character_variables(character,output);
 }
 
 int fraction_variable_smaller_test(int* first,

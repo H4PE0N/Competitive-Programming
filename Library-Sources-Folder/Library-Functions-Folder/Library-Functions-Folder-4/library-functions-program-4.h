@@ -8,6 +8,8 @@ char* allocate_string_character(char*,
 char* allocate_string_characters(char*,
   int);
 
+int* convert_string_array(char*, int);
+
 char* generate_character_string(int);
 
 int character_string_length(char*);

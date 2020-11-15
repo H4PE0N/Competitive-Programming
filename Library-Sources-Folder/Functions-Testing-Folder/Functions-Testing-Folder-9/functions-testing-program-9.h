@@ -12,6 +12,9 @@ int generate_string_sentence_test(int,int,char**);
 int allocate_sentence_character_test(char**, int,
   int, char, char**);
 
+int convert_sentence_matrix_test(char**, int, int,
+  int**);
+
 int delete_sentence_character_test(char**, int,
   int, char**);
 

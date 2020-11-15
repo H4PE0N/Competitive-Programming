@@ -54,3 +54,10 @@ int string_character_amount_test(char* string,
     character);
   return compare_integer_variables(amount, output);
 }
+
+int convert_string_array_test(char* string, int length,
+  int* output)
+{
+  int* array = convert_string_array(string, length);
+  return compare_integer_arrays(array, output, length);
+}

@@ -17,6 +17,15 @@ double convert_fraction_percent(int* fraction)
   return convert_decimal_percent(decimal);
 }
 
+int convert_character_integer(char character)
+{
+  int smaller = !integer_variable_smaller(character,
+    INT_MIN);
+  int greater = !integer_variable_greater(character,
+    INT_MAX);
+  if(greater&&smaller)return character; return INT_MIN;
+}
+
 int fraction_variable_numerator(int* fraction)
 {
   int numerator = array_index_integer(fraction, 0);
@@ -44,6 +53,15 @@ int compare_decimal_variables(double first,
   double second)
 {
   int boolean = (first == second); return boolean;
+}
+
+char convert_integer_character(int integer)
+{
+  int smaller = !integer_variable_smaller(integer,
+    CHAR_MIN);
+  int greater = !integer_variable_greater(integer,
+    CHAR_MAX);
+  if(smaller&&greater) return integer; return CHAR_MIN;
 }
 
 int decimal_variable_greater(double first,

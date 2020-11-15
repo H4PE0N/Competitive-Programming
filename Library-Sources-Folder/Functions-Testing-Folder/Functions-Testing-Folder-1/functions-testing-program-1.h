@@ -8,6 +8,9 @@ int allocate_array_integer_test(int*, int,
 int array_integer_amount_test(int*,int,int,
   int);
 
+int convert_array_string_test(int*, int,
+  char*);
+
 int delete_array_integer_test(int*,int,int,
   int*);
 

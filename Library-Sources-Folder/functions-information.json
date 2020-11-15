@@ -1294,5 +1294,41 @@
     "description": "If you want to know how many of a character there is in\na string, you  can  use  this  function.  The  function\nreturns the amount of a character in a string. ",
     "parameters": ["char* string", "int length", "char character"],
     "returning": "int amount"
+  },
+  "convert_array_string":
+  {
+    "description": "",
+    "parameters": ["int* array", "int length"],
+    "returning": "char* string"
+  },
+  "convert_string_array":
+  {
+    "description": "",
+    "parameters": ["char* string", "int length"],
+    "returning": "int* array"
+  },
+  "convert_character_integer":
+  {
+    "description": "",
+    "parameters": ["char character"],
+    "returning": "int integer"
+  },
+  "convert_integer_character":
+  {
+    "description": "",
+    "parameters": ["int integer"],
+    "returning": "char character"
+  },
+  "convert_matrix_sentence":
+  {
+    "description": "",
+    "parameters": ["int** matrix"],
+    "returning": "char** sentence"
+  },
+  "convert_sentence_matrix":
+  {
+    "description": "",
+    "parameters": ["char** sentence"],
+    "returning": "int** matrix"
   }
 }

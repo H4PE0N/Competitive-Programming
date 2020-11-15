@@ -7,6 +7,9 @@ int** generate_integer_matrix(int, int);
 int** allocate_matrix_integer(int**,int,
   int, int);
 
+char**convert_matrix_sentence(int**,int,
+  int);
+
 int** delete_matrix_integer(int**, int,
   int);
 
