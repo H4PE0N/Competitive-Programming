@@ -9,20 +9,6 @@ int* generate_random_coordinate(int width, int height)
     r_height);
 }
 
-int array_integer_smaller(int* array, int first,
-  int second)
-{
-  int f_integer = array_index_integer(array, first);
-  int s_integer = array_index_integer(array, second);
-  return integer_variable_smaller(f_integer,s_integer);
-}
-
-int* generate_random_pair(int minimum, int maximum)
-{
-  int* pair = generate_random_array(2,minimum,maximum);
-  return pair;
-}
-
 int* insert_array_integers(int* array, int first,
   int second, int integer)
 {
@@ -31,6 +17,24 @@ int* insert_array_integers(int* array, int first,
     array=allocate_array_integer(array, index,integer);
   }
   return array;
+}
+
+void array_integer_stdout(int* array, int index,
+  int spaces)
+{
+  int integer = array_index_integer(array, index);
+  if(!compare_integer_variables(integer, INT_MIN))
+    printf("%d", integer); else printf("+");
+  if(compare_integer_variables(spaces, true))
+    printf(" ");
+}
+
+int array_integer_smaller(int* array, int first,
+  int second)
+{
+  int f_integer = array_index_integer(array, first);
+  int s_integer = array_index_integer(array, second);
+  return integer_variable_smaller(f_integer,s_integer);
 }
 
 int compare_arrays_integer(int* first, int* second,
@@ -42,12 +46,8 @@ int compare_arrays_integer(int* first, int* second,
     s_integer);
 }
 
-void array_integer_stdout(int* array, int index,
-  int spaces)
+int* generate_random_pair(int minimum, int maximum)
 {
-  int integer = array_index_integer(array, index);
-  if(!compare_integer_variables(integer, INT_MIN))
-    printf("%d", integer); else printf("+");
-  if(compare_integer_variables(spaces, true))
-    printf(" ");
+  int* pair = generate_random_array(2,minimum,maximum);
+  return pair;
 }
