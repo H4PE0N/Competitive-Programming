@@ -36,3 +36,11 @@ int convert_matrix_sentence_test(int** matrix,
   return compare_string_sentence(sentence, output,
     height, width);
 }
+
+int matrix_integer_amount_test(int** matrix,int height,
+  int width, int integer, int output)
+{
+  int amount=matrix_integer_amount(matrix,height,width,
+    integer);
+  return compare_integer_variables(amount, output);
+}

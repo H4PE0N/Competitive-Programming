@@ -24,6 +24,9 @@ int insert_sentence_characters_test(char**, int*,
 int sentence_contains_character_test(char**, int,
   int, char, int);
 
+int sentence_character_amount_test(char**,int,int,
+  char, int);
+
 int allocate_sentence_string_test(char**, int,
   char*, char**);
 

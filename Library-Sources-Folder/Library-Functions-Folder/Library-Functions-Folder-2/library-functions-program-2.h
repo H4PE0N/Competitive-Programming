@@ -13,6 +13,9 @@ char**convert_matrix_sentence(int**,int,
 int** delete_matrix_integer(int**, int,
   int);
 
+int matrix_integer_amount(int**,int,int,
+  int);
+
 int integer_matrix_height(int**, int);
 
 int matrix_contains_integer(int**, int,

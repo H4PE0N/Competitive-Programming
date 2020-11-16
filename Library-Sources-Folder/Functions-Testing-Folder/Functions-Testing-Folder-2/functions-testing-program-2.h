@@ -66,6 +66,9 @@ int allocate_matrix_array_test(int**, int, int*,
 int shuffle_integer_matrix_test(int**, int,
   int**);
 
+int matrix_integer_amount_test(int**, int, int,
+  int, int);
+
 int sort_matrix_arrays_test(int**, int, int**);
 
 int matrix_array_total_test(int**, int, int);

@@ -50,3 +50,11 @@ int shuffle_string_sentence_test(char** sentence,
   int content=compare_sentence_content(sentence,output,
     height, width); return (!same && content);
 }
+
+int sentence_character_amount_test(char** sentence,
+  int height, int width, char character, int output)
+{
+  int amount = sentence_character_amount(sentence,
+    height, width, character);
+  return compare_integer_variables(amount, output);
+}

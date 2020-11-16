@@ -15,3 +15,17 @@ char** convert_matrix_sentence(int** matrix,int height,
   }
   return sentence;
 }
+
+int matrix_integer_amount(int** matrix, int height,
+  int width, int integer)
+{
+  int amount = 0;
+  for(int index = 0; index < height; index = index + 1)
+  {
+    int* array = matrix_index_array(matrix, index);
+    int current = array_integer_amount(array, width,
+      integer);
+    amount = increase_integer_variable(amount,current);
+  }
+  return amount;
+}

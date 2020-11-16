@@ -1342,5 +1342,17 @@
     "description": "This function creates  a  string  with  the  characters\nbetween some integers. If you want to have the alphabet\nin a string, you can use this function.",
     "parameters": ["int first", "int second"],
     "returning": "char* string"
+  },
+  "matrix_integer_amount":
+  {
+    "description": "To calculate the amount of an integer inside a  matrix,\nyou can use this function. It returns  the  amount  the\ninteger is occuring within the inputted matrix.",
+    "parameters": ["int** matrix", "int height", "int width", "int integer"],
+    "returning": "int amount"
+  },
+  "sentence_character_amount":
+  {
+    "description": "With this function, you can calculate the amount  of  a\ncharacter that is in a sentence. It  returns  how  many\ntimes the character shows up inside the sentence.",
+    "parameters": ["char** sentence", "int height", "int width", "char character"],
+    "returning": "int amount"
   }
 }

@@ -32,3 +32,17 @@ int**convert_sentence_matrix(char**sentence,int height,
   }
   return matrix;
 }
+
+int sentence_character_amount(char** sentence,
+  int height,  int width, char character)
+{
+  int amount = 0;
+  for(int index = 0; index < height; index = index + 1)
+  {
+    char* string=sentence_index_string(sentence,index);
+    int current = string_character_amount(string,width,
+      character);
+    amount = increase_integer_variable(amount,current);
+  }
+  return amount;
+}

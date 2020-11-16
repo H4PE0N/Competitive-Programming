@@ -4,7 +4,10 @@
 
 char** generate_string_sentence(int, int);
 
-int compare_string_sentence(char**,char**,
+int sentence_character_amount(char**, int,
+  int, char);
+
+int compare_string_sentence(char**, char**,
   int, int);
 
 char* sentence_index_string(char**, int);
