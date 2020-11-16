@@ -19,6 +19,9 @@ int allocate_array_integers_test(int*, int,
 
 int generate_integer_array_test(int, int*);
 
+int array_between_integers_test(int, int,
+  int*);
+
 int integer_array_length_test(int*, int);
 
 int array_contains_integer_test(int*, int,

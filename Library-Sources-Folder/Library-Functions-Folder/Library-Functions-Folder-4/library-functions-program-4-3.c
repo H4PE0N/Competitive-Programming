@@ -24,25 +24,6 @@ char string_index_character(char* string, int index)
   char character = *(string + index); return character;
 }
 
-char* generate_higher_alphabet(int characters)
-{
-  char* alphabet = generate_character_string(
-    characters);
-  for(int index = 1; index <= characters; index += 1)
-  {
-    alphabet = allocate_string_character(alphabet,
-      index - 1, higher_alphabet_character(index));
-  }
-  return alphabet;
-}
-
-char higher_alphabet_character(int index)
-{
-  if(integer_variable_smaller(index, 1) ||
-    integer_variable_greater(index,26))return CHAR_MIN;
-  return (64 + index);
-}
-
 int compare_character_strings(char* first,char* second,
   int length)
 {
@@ -52,18 +33,6 @@ int compare_character_strings(char* first,char* second,
       return false;
   }
   return true;
-}
-
-char* generate_lower_alphabet(int characters)
-{
-  char* alphabet = generate_character_string(
-    characters);
-  for(int index = 1; index <= characters; index += 1)
-  {
-    alphabet = allocate_string_character(alphabet,
-      index - 1, lower_alphabet_character(index));
-  }
-  return alphabet;
 }
 
 char* delete_string_character(char* string, int length,
@@ -92,6 +61,39 @@ char* sort_string_iteration(char* string,int iteration)
     if(string_character_smaller(string,index, index+1))
       continue;
     string = switch_adjacent_characters(string, index);
+  }
+  return string;
+}
+
+int string_character_amount(char* string, int length,
+  char character)
+{
+  int amount = 0;
+  for(int index = 0; index < length; index = index + 1)
+  {
+    char current=string_index_character(string, index);
+    if(compare_character_variables(character, current))
+      amount = increase_integer_variable(amount, 1);
+  }
+  return amount;
+}
+
+char* switch_adjacent_characters(char*string,int index)
+{
+  string = switch_string_characters(string, index,
+    index + 1); return string;
+}
+
+char* string_between_integers(int first, int second)
+{
+  int length = (second - first) + 1;
+  char* string = generate_character_string(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    int integer = (first + index);
+    char character =convert_integer_character(integer);
+    string = append_string_character(string, index,
+      character);
   }
   return string;
 }

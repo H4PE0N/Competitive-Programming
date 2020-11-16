@@ -2,29 +2,6 @@
 #include "../../Library-Functions-Folder/\
 library-functions-headers.h"
 
-int generate_lower_alphabet_test(int characters,
-  char* output)
-{
-  char* alphabet = generate_lower_alphabet(characters);
-  return compare_character_strings(alphabet, output,
-    characters);
-}
-
-int generate_higher_alphabet_test(int characters,
-  char* output)
-{
-  char* alphabet =generate_higher_alphabet(characters);
-  return compare_character_strings(alphabet, output,
-    characters);
-}
-
-int lower_alphabet_character_test(int index,
-  char output)
-{
-  char character = lower_alphabet_character(index);
-  return compare_character_variables(character,output);
-}
-
 int delete_string_character_test(char* string,
   int length, int index, char* output)
 {
@@ -39,13 +16,6 @@ int compare_string_characters_test(char* string,
   int boolean = compare_string_characters(string,first,
     second);
   return compare_integer_variables(boolean, output);
-}
-
-int higher_alphabet_character_test(int index,
-  char output)
-{
-  char character = higher_alphabet_character(index);
-  return compare_character_variables(character,output);
 }
 
 int compare_strings_character_test(char* first,
@@ -96,4 +66,28 @@ int character_string_section_test(char* string,
   int length = character_string_length(section);
   return compare_character_strings(section, output,
     length);
+}
+
+int string_between_integers_test(int first, int second,
+  char* output)
+{
+  char* string = string_between_integers(first,second);
+  int length = character_string_length(string);
+  return compare_character_strings(string, output,
+    length);
+}
+
+int string_character_amount_test(char* string,
+  int length, char character, int output)
+{
+  int amount = string_character_amount(string, length,
+    character);
+  return compare_integer_variables(amount, output);
+}
+
+int convert_string_array_test(char* string, int length,
+  int* output)
+{
+  int* array = convert_string_array(string, length);
+  return compare_integer_arrays(array, output, length);
 }

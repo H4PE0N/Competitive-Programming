@@ -82,13 +82,6 @@ char* append_string_character(char* string, int length,
     character); return string;
 }
 
-char lower_alphabet_character(int index)
-{
-  if(integer_variable_smaller(index, 1) ||
-    integer_variable_greater(index,26))return CHAR_MIN;
-  return (96 + index);
-}
-
 char* append_string_characters(char* string,int length,
   char character, int amount)
 {

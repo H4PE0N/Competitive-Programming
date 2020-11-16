@@ -1330,5 +1330,17 @@
     "description": "This function converts a sentence  into  a  matrix.  By\nconverting  all  the  characters  in  a  sentence  into\nintegers, the sentence becomes an integer matrix.",
     "parameters": ["char** sentence"],
     "returning": "int** matrix"
+  },
+  "array_between_integers":
+  {
+    "description": "If you want an array with  the  integers  between  some\nintegers, you can create the array with this  function.\nThe integers will be from first to second in order.",
+    "parameters": ["int first", "int second"],
+    "returning": "int* array"
+  },
+  "string_between_integers":
+  {
+    "description": "This function creates  a  string  with  the  characters\nbetween some integers. If you want to have the alphabet\nin a string, you can use this function.",
+    "parameters": ["int first", "int second"],
+    "returning": "char* string"
   }
 }

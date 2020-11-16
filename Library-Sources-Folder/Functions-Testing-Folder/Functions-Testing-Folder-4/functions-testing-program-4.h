@@ -10,6 +10,8 @@ int allocate_string_character_test(char*, int,
 int allocate_string_characters_test(char*, int,
   char*);
 
+int string_between_integers_test(int,int,char*);
+
 int string_character_amount_test(char*,int,char,
   int);
 
@@ -58,14 +60,6 @@ int compare_string_content_test(char*,char*,int,
   int);
 
 int string_index_character_test(char*,int,char);
-
-int generate_lower_alphabet_test(int, char*);
-
-int generate_higher_alphabet_test(int, char*);
-
-int lower_alphabet_character_test(int, char);
-
-int higher_alphabet_character_test(int, char);
 
 int delete_string_character_test(char*, int,int,
   char*);

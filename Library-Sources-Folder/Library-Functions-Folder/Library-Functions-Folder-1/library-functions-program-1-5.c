@@ -64,3 +64,15 @@ char* convert_array_string(int* array, int length)
   }
   return string;
 }
+
+int* array_between_integers(int first, int second)
+{
+  int length = (second - first) + 1;
+  int* array = generate_integer_array(length);
+  for(int index = 0; index < length; index = index + 1)
+  {
+    int integer = (first + index);
+    array = append_array_integer(array, index,integer);
+  }
+  return array;
+}

@@ -12,6 +12,8 @@ int* convert_string_array(char*, int);
 
 char* generate_character_string(int);
 
+char* string_between_integers(int,int);
+
 int character_string_length(char*);
 
 char* increase_string_memory(char*,int,
@@ -70,14 +72,6 @@ int compare_string_content(char*,char*,
   int);
 
 char string_index_character(char*,int);
-
-char* generate_lower_alphabet(int);
-
-char* generate_higher_alphabet(int);
-
-char lower_alphabet_character(int);
-
-char higher_alphabet_character(int);
 
 char* delete_string_character(char*,
   int, int);

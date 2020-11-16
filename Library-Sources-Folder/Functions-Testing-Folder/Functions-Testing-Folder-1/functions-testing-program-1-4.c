@@ -18,6 +18,14 @@ int comapre_coordinate_variables_test(int* first,
   return compare_integer_variables(boolean, output);
 }
 
+int array_between_integers_test(int first, int second,
+  int* output)
+{
+  int* array = array_between_integers(first, second);
+  int length = integer_array_length(array);
+  return compare_integer_arrays(array, output, length);
+}
+
 int convert_array_string_test(int* array, int length,
   char* output)
 {
