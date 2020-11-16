@@ -18,13 +18,6 @@ int greatest_common_table(int greater, int smaller)
   return false;
 }
 
-int integer_range_between(int integer, int minimum,
-  int maximum)
-{
-  return (!integer_variable_greater(integer, maximum)
-    && !integer_variable_smaller(integer, minimum));
-}
-
 double convert_decimal_percent(double decimal)
 {
   double percent = (decimal * 100); return percent;
@@ -33,6 +26,15 @@ double convert_decimal_percent(double decimal)
 int increase_integer_variable(int variable,int integer)
 {
   variable = (variable + integer); return variable;
+}
+
+int integer_range_between(int integer, int minimum,
+  int maximum)
+{
+  int smaller = !integer_variable_smaller(integer,
+    minimum);
+  int greater = !integer_variable_greater(integer,
+    maximum); return (smaller && greater);
 }
 
 int* smallest_fraction_form(int* fraction)
