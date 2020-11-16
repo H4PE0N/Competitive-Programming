@@ -26,7 +26,7 @@ int* generate_random_pair(int minimum, int maximum)
 void array_integer_stdout(int* array, int index,
   int spaces)
 {
-  char integer = array_index_integer(array, index);
+  int integer = array_index_integer(array, index);
   if(!compare_integer_variables(integer, INT_MIN))
     printf("%d", integer); else printf("+");
   if(compare_integer_variables(spaces, true))
