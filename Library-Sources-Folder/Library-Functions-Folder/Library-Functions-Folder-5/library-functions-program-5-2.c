@@ -21,12 +21,6 @@ int convert_binary_integer(char* binary)
   return integer;
 }
 
-char convert_binary_character(char* binary)
-{
-  char character = convert_binary_integer(binary);
-  return character;
-}
-
 int increase_binary_integer(char* binary, int index,
   int integer)
 {
@@ -34,8 +28,8 @@ int increase_binary_integer(char* binary, int index,
   char bit = string_index_character(binary, index);
   if(compare_character_variables(bit, '0'))
     return integer;
-  int binary_index = (length - index - 1);
-  return integer + calculate_bit_integer(binary_index);
+  int value=integer_power_operation(2, length-index-1);
+  return (integer + value);
 }
 
 char* generate_random_binary(int minimum, int maximum)
@@ -71,6 +65,12 @@ char** convert_string_binary(char* string, int length)
       current);
   }
   return binary;
+}
+
+char convert_binary_character(char* binary)
+{
+  char character = convert_binary_integer(binary);
+  return character;
 }
 
 char* convert_binary_string(char** binary, int length)

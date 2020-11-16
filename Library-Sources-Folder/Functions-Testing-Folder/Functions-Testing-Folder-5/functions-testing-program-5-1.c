@@ -10,13 +10,6 @@ int binary_integer_enough_test(char* binary,int length,
   return compare_integer_variables(boolean, output);
 }
 
-int calculate_bit_integer_test(int binary_index,
-  int output)
-{
-  int integer = calculate_bit_integer(binary_index);
-  return compare_integer_variables(integer, output);
-}
-
 int reduce_binary_integer_test(char* binary,int length,
   int integer, int output)
 {
@@ -92,4 +85,13 @@ int convert_binary_string_test(char**binary,int length,
   char* string = convert_binary_string(binary, length);
   return compare_character_strings(string, output,
     length);
+}
+
+int convert_array_binary_test(int* array, int length,
+  char** output)
+{
+  char** binary = convert_array_binary(array, length);
+  int width = sentence_string_length(binary, 0);
+  return compare_string_sentence(binary, output,length,
+    width);
 }

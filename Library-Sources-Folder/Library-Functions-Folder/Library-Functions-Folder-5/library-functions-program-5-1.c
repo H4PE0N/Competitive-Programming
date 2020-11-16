@@ -5,15 +5,9 @@ int binary_integer_enough(char* binary, int length,
   int integer)
 {
   int index = character_string_length(binary);
-  int binary_index = (length - index - 1);
-  int difference = (integer - calculate_bit_integer(
-    binary_index));
+  int value=integer_power_operation(2, length-index-1);
+  int difference = (integer - value);
   return !integer_variable_smaller(difference, 0);
-}
-
-int calculate_bit_integer(int binary_index)
-{
-  return integer_power_operation(2, binary_index);
 }
 
 int reduce_binary_integer(char* binary, int length,
@@ -22,7 +16,7 @@ int reduce_binary_integer(char* binary, int length,
   int index = length - character_string_length(binary);
   if(binary_integer_enough(binary, length + 1,integer))
   {
-    return integer - calculate_bit_integer(index);
+    return integer - integer_power_operation(2, index);
   }
   return integer;
 }
@@ -48,7 +42,7 @@ char* convert_integer_binary(int integer)
 int actual_binary_length(int integer)
 {
   int length = 0;
-  while(integer > calculate_bit_integer(length))
+  while(integer > integer_power_operation(2, length))
   {
     length = increase_integer_variable(length, 1);
   }
@@ -75,12 +69,12 @@ int* convert_binary_array(char** binary, int length)
 
 int nearest_binary_length(int integer)
 {
-  int length=actual_binary_length(integer), index = 2;
-  while(length > calculate_bit_integer(index))
+  int length =actual_binary_length(integer), index = 2;
+  while(length > integer_power_operation(2, index))
   {
     index = increase_integer_variable(index, 1);
   }
-  return calculate_bit_integer(index);
+  return integer_power_operation(2, index);
 }
 
 char** convert_array_binary(int* array, int length)
