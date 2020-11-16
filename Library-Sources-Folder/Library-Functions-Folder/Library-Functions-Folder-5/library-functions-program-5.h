@@ -4,17 +4,13 @@
 
 char** convert_string_binary(char*,int);
 
-char* binary_left_shifting(char*, int);
-
-int calculate_bit_integer(int);
-
-char* binary_right_shifting(char*, int);
-
 char* binary_and_operation(char*, char*,
   int);
 
 int binary_integer_enough(char*, int,
   int);
+
+char* binary_left_shifting(char*, int);
 
 int convert_binary_integer(char*);
 
@@ -26,6 +22,8 @@ char* binary_xor_operation(char*, char*,
 
 int reduce_binary_integer(char*, int,
   int);
+
+char* binary_right_shifting(char*, int);
 
 int nearest_binary_length(int);
 

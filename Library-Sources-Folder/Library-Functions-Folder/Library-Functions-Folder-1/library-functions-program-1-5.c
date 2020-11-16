@@ -9,18 +9,14 @@ int* generate_random_coordinate(int width, int height)
     r_height);
 }
 
-int array_integer_smaller(int* array, int first,
-  int second)
+int* insert_array_integers(int* array, int first,
+  int second, int integer)
 {
-  int f_integer = array_index_integer(array, first);
-  int s_integer = array_index_integer(array, second);
-  return integer_variable_smaller(f_integer,s_integer);
-}
-
-int* generate_random_pair(int minimum, int maximum)
-{
-  int* pair = generate_random_array(2,minimum,maximum);
-  return pair;
+  for(int index=first; index <= second;index=index + 1)
+  {
+    array=allocate_array_integer(array, index,integer);
+  }
+  return array;
 }
 
 void array_integer_stdout(int* array, int index,
@@ -33,14 +29,12 @@ void array_integer_stdout(int* array, int index,
     printf(" ");
 }
 
-int* insert_array_integers(int* array, int first,
-  int second, int integer)
+int array_integer_smaller(int* array, int first,
+  int second)
 {
-  for(int index=first; index <= second;index=index + 1)
-  {
-    array=allocate_array_integer(array, index,integer);
-  }
-  return array;
+  int f_integer = array_index_integer(array, first);
+  int s_integer = array_index_integer(array, second);
+  return integer_variable_smaller(f_integer,s_integer);
 }
 
 int compare_arrays_integer(int* first, int* second,
@@ -75,4 +69,9 @@ int* array_between_integers(int first, int second)
     array = append_array_integer(array, index,integer);
   }
   return array;
+
+int* generate_random_pair(int minimum, int maximum)
+{
+  int* pair = generate_random_array(2,minimum,maximum);
+  return pair;
 }

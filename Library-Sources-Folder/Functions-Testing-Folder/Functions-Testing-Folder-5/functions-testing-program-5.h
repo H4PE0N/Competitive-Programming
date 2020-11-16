@@ -14,8 +14,6 @@ int binary_xor_operation_test(char*, char*,
 int binary_not_operation_test(char*, int,
   char*);
 
-int calculate_bit_integer_test(int, int);
-
 int actual_binary_length_test(int, int);
 
 int convert_integer_binary_test(int,char*);
