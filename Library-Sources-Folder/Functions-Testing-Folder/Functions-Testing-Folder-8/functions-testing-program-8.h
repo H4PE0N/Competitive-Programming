@@ -20,9 +20,6 @@ int increase_integer_variable_test(int, int,
 int convert_fraction_percent_test(int*,
   double);
 
-int integer_power_operation_test(int, int,
-  int);
-
 int convert_decimal_percent_test(double,
   double);
 
@@ -74,8 +71,6 @@ int compare_decimal_variables_test(double,
 int duplicate_fraction_variable_test(int*,
   int*);
 
-int greatest_common_table_test(int,int,int);
-
 int compare_fraction_variables_test(int*,
   int*, int);
 
@@ -92,9 +87,6 @@ int decimal_variable_greater_test(double,
 
 int inverted_fraction_variable_test(int*,
   int*);
-
-int smallest_common_product_test(int, int,
-  int);
 
 int generate_integer_products_test(int, int,
   int*);

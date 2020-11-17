@@ -9,13 +9,19 @@ int integer_even_median_test(int*, int, double);
 int update_typical_variables_test(int*,int, int,
   int*);
 
+int integer_power_operation_test(int, int, int);
+
 int integer_array_typical_test(int*, int, int);
+
+int greatest_common_multiple_test(int, int,int);
 
 int array_integer_frequency_test(int*, int, int,
   double);
 
 int array_integer_percent_test(int*, int, int,
   double);
+
+int smallest_common_multiple_test(int, int,int);
 
 int integer_array_median_test(int*,int, double);
 

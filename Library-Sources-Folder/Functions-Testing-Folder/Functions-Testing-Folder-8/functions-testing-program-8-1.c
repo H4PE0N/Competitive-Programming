@@ -17,13 +17,6 @@ int convert_decimal_percent_test(double decimal,
   return compare_decimal_variables(percent, output);
 }
 
-int integer_power_operation_test(int base,int exponent,
-  int output)
-{
-  int product = integer_power_operation(base,exponent);
-  return compare_integer_variables(product, output);
-}
-
 int convert_percent_decimal_test(double percent,
   double output)
 {
@@ -95,4 +88,11 @@ int least_common_denominator_test(int* first,
   int denominator = least_common_denominator(first,
     second);
   return compare_integer_variables(denominator,output);
+}
+
+int decimal_variable_smaller_test(double first,
+  double second, int output)
+{
+  int boolean = decimal_variable_smaller(first,second);
+  return compare_integer_variables(boolean, output);
 }

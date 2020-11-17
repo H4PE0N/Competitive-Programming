@@ -779,11 +779,11 @@
     "parameters": ["char* binary", "int length"],
     "returning": "char* opposite"
   },
-  "greatest_common_table":
+  "greatest_common_multiple":
   {
     "description": "If you have two integers, a greater and a smaller  one.\nAnd you want to know the highest integer that  both  of\nyour integer is dividable by, you can use this.",
     "parameters": ["int greater", "int smaller"],
-    "returning": "int table"
+    "returning": "int multiple"
   },
   "integer_range_between":
   {
@@ -1354,5 +1354,11 @@
     "description": "With this function, you can calculate the amount  of  a\ncharacter that is in a sentence. It  returns  how  many\ntimes the character shows up inside the sentence.",
     "parameters": ["char** sentence", "int height", "int width", "char character"],
     "returning": "int amount"
+  },
+  "smallest_common_multiple":
+  {
+    "description": "If you have two integers, and one is greater  than  the\nother. You can use this function to calculate the first\ninteger that connect the two integers multiples.",
+    "parameters": ["int greater", "int smaller"],
+    "returning": "int multiple"
   }
 }

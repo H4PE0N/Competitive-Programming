@@ -11,6 +11,12 @@ int* extend_fraction_variable(int* fraction,
     denominator * integer);
 }
 
+int compare_decimal_variables(double first,
+  double second)
+{
+  int boolean = (first == second); return boolean;
+}
+
 double convert_fraction_percent(int* fraction)
 {
   double decimal = convert_fraction_decimal(fraction);
@@ -46,22 +52,16 @@ int* shorten_fraction_variable(int* fraction,
       denominator / integer);
 }
 
-int compare_decimal_variables(double first,
-  double second)
-{
-  int boolean = (first == second); return boolean;
-}
-
 char convert_integer_character(int integer)
 {
   if(integer_range_between(integer, CHAR_MIN,CHAR_MAX))
     return integer; else return CHAR_MIN;
 }
 
-int decimal_variable_greater(double first,
-  double second)
+int fraction_variable_denominator(int* fraction)
 {
-  int boolean = (first > second); return boolean;
+  int denominator = array_index_integer(fraction, 1);
+  return denominator;
 }
 
 int fraction_variable_greater(int* first, int* second)
@@ -69,11 +69,6 @@ int fraction_variable_greater(int* first, int* second)
   double f_decimal = convert_fraction_decimal(first);
   double s_decimal = convert_fraction_decimal(second);
   return decimal_variable_greater(f_decimal,s_decimal);
-}
-
-int* duplicate_fraction_variable(int* fraction)
-{
-  return duplicate_integer_array(fraction, 2);
 }
 
 double generate_random_decimal(double minimum,
@@ -86,6 +81,12 @@ double generate_random_decimal(double minimum,
 int character_variable_smaller(char first, char second)
 {
   int boolean = (first < second); return boolean;
+}
+
+int decimal_variable_greater(double first,
+  double second)
+{
+  int boolean = (first > second); return boolean;
 }
 
 int compare_character_variables(char first,char second)

@@ -73,14 +73,6 @@ int duplicate_fraction_variable_test(int* fraction,
   return compare_integer_arrays(doublet, output, 2);
 }
 
-int smallest_common_product_test(int smallest,
-  int greatest, int output)
-{
-  int product = smallest_common_product(smallest,
-    greatest);
-  return compare_integer_variables(product, output);
-}
-
 int decimal_variable_greater_test(double first,
   double second, int output)
 {

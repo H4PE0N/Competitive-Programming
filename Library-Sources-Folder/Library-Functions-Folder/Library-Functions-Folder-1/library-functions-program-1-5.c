@@ -69,6 +69,7 @@ int* array_between_integers(int first, int second)
     array = append_array_integer(array, index,integer);
   }
   return array;
+}
 
 int* generate_random_pair(int minimum, int maximum)
 {

@@ -5,17 +5,7 @@ int least_common_denominator(int* first, int* second)
 {
   int first_d = fraction_variable_denominator(first);
   int second_d = fraction_variable_denominator(second);
-  return smallest_common_product(first_d, second_d);
-}
-
-int greatest_common_table(int greater, int smaller)
-{
-  for(int table = smaller; table > 0; table =table - 1)
-  {
-    if(greater % table == 0 && smaller % table == 0)
-      return table;
-  }
-  return false;
+  return smallest_common_multiple(first_d, second_d);
 }
 
 double convert_decimal_percent(double decimal)
@@ -41,23 +31,14 @@ int* smallest_fraction_form(int* fraction)
 {
   if(integer_variable_greater(fraction[0],fraction[1]))
   {
-    int table = greatest_common_table(fraction[0],
+    int multiple =greatest_common_multiple(fraction[0],
       fraction[1]);
-    return shorten_fraction_variable(fraction, table);
+    return shorten_fraction_variable(fraction,
+      multiple);
   }
-  int table = greatest_common_table(fraction[1],
+  int multiple = greatest_common_multiple(fraction[1],
     fraction[0]);
-  return shorten_fraction_variable(fraction, table);
-}
-
-int integer_power_operation(int base, int exponent)
-{
-  int product = 1;
-  for(int index = 0; index < exponent; index=index + 1)
-  {
-    product = (product * base);
-  }
-  return product;
+  return shorten_fraction_variable(fraction, multiple);
 }
 
 int fraction_variable_smaller(int* first, int* second)
@@ -84,18 +65,27 @@ int integer_variable_smaller(int first, int second)
   int boolean = (first < second); return boolean;
 }
 
-int smallest_common_product(int smallest, int greatest)
+char generate_random_character(int minimum,int maximum)
 {
-  int product = (smallest * greatest);
-  int* s_products = generate_integer_products(smallest,
-    product / smallest);
-  int* g_products = generate_integer_products(greatest,
-    product / greatest);
-  for(int index = 0; index < product/greatest; index++)
-  {
-    int integer=array_index_integer(g_products,index);
-    if(array_contains_integer(s_products, product /
-      smallest, integer)) return integer;
-  }
-  return product;
+  char character = generate_random_integer(minimum,
+    maximum); return character;
+}
+
+int character_variable_greater(char first, char second)
+{
+  int boolean = (first > second); return boolean;
+}
+
+int* duplicate_fraction_variable(int* fraction)
+{
+  return duplicate_integer_array(fraction, 2);
+}
+
+int character_range_between(char character,int minimum,
+  int maximum)
+{
+  int smaller = !character_variable_smaller(character,
+    minimum);
+  int greater = !character_variable_greater(character,
+    maximum); return (smaller && greater);
 }

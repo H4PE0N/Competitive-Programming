@@ -61,10 +61,33 @@ int integer_even_median_test(int* array, int length,
   return compare_decimal_variables(median, output);
 }
 
+int smallest_common_multiple_test(int greater,
+  int smaller, int output)
+{
+  int multiple = smallest_common_multiple(greater,
+    smaller);
+  return compare_integer_variables(multiple, output);
+}
+
 int array_integers_sequences_test(int*array,int length,
   int output)
 {
   int sequences = array_integers_sequences(array,
     length);
   return compare_integer_variables(sequences, output);
+}
+
+int greatest_common_multiple_test(int greater,
+  int smaller, int output)
+{
+  int multiple = greatest_common_multiple(greater,
+    smaller);
+  return compare_integer_variables(multiple, output);
+}
+
+int integer_power_operation_test(int base,int exponent,
+  int output)
+{
+  int product = integer_power_operation(base,exponent);
+  return compare_integer_variables(product, output);
 }

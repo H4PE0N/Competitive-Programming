@@ -85,3 +85,10 @@ double array_integer_percent(int* array, int length,
   double percent = convert_decimal_percent(amount);
   return percent;
 }
+
+int integer_power_operation(int base, int exponent)
+{
+  int product = 1;
+  for(int index = 0; index < exponent; index=index + 1)
+  { product = (product * base); } return product;
+}

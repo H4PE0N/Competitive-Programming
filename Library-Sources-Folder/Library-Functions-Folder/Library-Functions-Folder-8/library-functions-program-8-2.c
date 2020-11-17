@@ -94,9 +94,3 @@ int compare_fraction_variables(int* first, int* second)
   return compare_decimal_variables(f_decimal,
     s_decimal);
 }
-
-int fraction_variable_denominator(int* fraction)
-{
-  int denominator = array_index_integer(fraction, 1);
-  return denominator;
-}

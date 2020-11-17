@@ -26,8 +26,6 @@ int decimal_variable_smaller(double,
 int decimal_variable_greater(double,
   double);
 
-int integer_power_operation(int, int);
-
 int integer_variable_greater(int, int);
 
 double convert_decimal_percent(double);
@@ -93,11 +91,7 @@ int least_common_denominator(int*,int*);
 
 int* smallest_fraction_form(int*);
 
-int greatest_common_table(int, int);
-
 int* duplicate_fraction_variable(int*);
-
-int smallest_common_product(int, int);
 
 char convert_integer_character(int);
 

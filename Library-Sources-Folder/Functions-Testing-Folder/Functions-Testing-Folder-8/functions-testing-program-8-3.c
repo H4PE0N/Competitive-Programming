@@ -2,13 +2,6 @@
 #include "../../Library-Functions-Folder/\
 library-functions-headers.h"
 
-int greatest_common_table_test(int greater,int smaller,
-  int output)
-{
-  int table = greatest_common_table(greater, smaller);
-  return compare_integer_variables(table, output);
-}
-
 int convert_character_integer_test(char character,
   int output)
 {
@@ -48,12 +41,5 @@ int compare_fraction_variables_test(int* first,
   int* second, int output)
 {
   int boolean=compare_fraction_variables(first,second);
-  return compare_integer_variables(boolean, output);
-}
-
-int decimal_variable_smaller_test(double first,
-  double second, int output)
-{
-  int boolean = decimal_variable_smaller(first,second);
   return compare_integer_variables(boolean, output);
 }
