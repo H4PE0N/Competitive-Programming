@@ -29,6 +29,12 @@ void array_integer_stdout(int* array, int index,
     printf(" ");
 }
 
+int* generate_random_pair(int minimum, int maximum)
+{
+  int* pair = generate_random_array(2,minimum,maximum);
+  return pair;
+}
+
 int array_integer_smaller(int* array, int first,
   int second)
 {
@@ -44,6 +50,12 @@ int compare_arrays_integer(int* first, int* second,
   int s_integer = array_index_integer(second, index);
   return compare_integer_variables(f_integer,
     s_integer);
+}
+
+int random_index_integer(int* array, int length)
+{
+  int index = generate_random_integer(0, length - 1);
+  return array_index_integer(array, index);
 }
 
 char* convert_array_string(int* array, int length)
@@ -69,10 +81,4 @@ int* array_between_integers(int first, int second)
     array = append_array_integer(array, index,integer);
   }
   return array;
-}
-
-int* generate_random_pair(int minimum, int maximum)
-{
-  int* pair = generate_random_array(2,minimum,maximum);
-  return pair;
 }

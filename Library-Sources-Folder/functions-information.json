@@ -1360,5 +1360,29 @@
     "description": "If you have two integers, and one is greater  than  the\nother. You can use this function to calculate the first\ninteger that connect the two integers multiples.",
     "parameters": ["int greater", "int smaller"],
     "returning": "int multiple"
+  },
+  "random_index_integer":
+  {
+    "description": "This function returns a random integer from  the  array\nusing the length that came from  the  parameters.  This\ncan be useful when randomly picking from a collection.",
+    "parameters": ["int* array", "int height"],
+    "returning": "int integer"
+  },
+  "random_index_character":
+  {
+    "description": "To get a random character from a string,  you  can  use\nthis function. The function returns a random  character\nfrom the inputted string using the length-parameter.",
+    "parameters": ["char* string", "int length"],
+    "returning": "char character"
+  },
+  "random_index_array":
+  {
+    "description": "If you want a random array from a matrix, you  can  get\nit from this function. The function  returns  a  random\narray between index 0 and the inputted height.",
+    "parameters": ["int** matrix", "int height"],
+    "returning": "int* array"
+  },
+  "random_index_string":
+  {
+    "description": "This function returns a random selected string  from  a\nsentence. By inputting the height of the sentence,  the\nfunction returns a string between index 0 and height.",
+    "parameters": ["char** sentence", "int height"],
+    "returning": "char* string"
   }
 }

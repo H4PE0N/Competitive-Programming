@@ -13,3 +13,9 @@ char* reverse_character_string(char* string,int length)
   }
   return reverse;
 }
+
+char random_index_character(char* string, int length)
+{
+  int index = generate_random_integer(0, length - 1);
+  return string_index_character(string, index);
+}

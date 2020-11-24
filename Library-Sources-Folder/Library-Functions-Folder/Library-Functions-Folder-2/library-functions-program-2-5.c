@@ -16,6 +16,12 @@ char** convert_matrix_sentence(int** matrix,int height,
   return sentence;
 }
 
+int* random_index_array(int** matrix, int height)
+{
+  int index = generate_random_integer(0, height - 1);
+  return matrix_index_array(matrix, index);
+}
+
 int matrix_integer_amount(int** matrix, int height,
   int width, int integer)
 {

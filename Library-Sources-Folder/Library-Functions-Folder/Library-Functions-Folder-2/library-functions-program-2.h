@@ -4,6 +4,8 @@
 
 int** generate_integer_matrix(int, int);
 
+int* random_index_array(int**, int);
+
 int** allocate_matrix_integer(int**,int,
   int, int);
 

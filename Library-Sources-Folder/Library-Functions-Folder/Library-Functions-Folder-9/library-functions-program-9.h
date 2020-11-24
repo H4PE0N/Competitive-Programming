@@ -33,6 +33,8 @@ char** delete_sentence_character(char**,
 char** allocate_sentence_string(char**,int,
   char*);
 
+char* random_index_string(char**, int);
+
 char** delete_sentence_string(char**, int,
   int);
 

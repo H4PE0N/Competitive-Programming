@@ -31,6 +31,8 @@ char* move_string_characters(char*,int,
 char* remove_string_character(char*,
   int,char);
 
+char random_index_character(char*,int);
+
 char* append_string_character(char*,
   int, char);
 

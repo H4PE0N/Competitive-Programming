@@ -20,6 +20,12 @@ char**append_sentence_string(char**sentence,int height,
     string); return sentence;
 }
 
+char* random_index_string(char** sentence, int height)
+{
+  int index = generate_random_index(0, height - 1);
+  return sentence_index_string(sentence, index);
+}
+
 int**convert_sentence_matrix(char**sentence,int height,
   int width)
 {
