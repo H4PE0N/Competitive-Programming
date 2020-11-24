@@ -22,7 +22,7 @@ char**append_sentence_string(char**sentence,int height,
 
 char* random_index_string(char** sentence, int height)
 {
-  int index = generate_random_index(0, height - 1);
+  int index = generate_random_integer(0, height - 1);
   return sentence_index_string(sentence, index);
 }
 

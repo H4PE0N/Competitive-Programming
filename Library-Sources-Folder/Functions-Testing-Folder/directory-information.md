@@ -59,11 +59,4 @@ Library-Functions-Folder-9 - This    folder    contains
 functions that are made around string  sentences.  They
 are made from two dimensional character arrays. So it's
 like a matrix but with characters instead of integers.
-
-Library-Functions-Folder-10 - This   folder    contains
-functions that are made around time operations. If  you
-want a delay or a timer in your program, here  can  you
-find the functions you need. The only thing that  isn't
-so great, is that they only count  in  seconds,  so  no
-milliseconds.
 </pre>

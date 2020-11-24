@@ -989,30 +989,6 @@
     "parameters": ["double minimum", "double maximum"],
     "returning": "double decimal"
   },
-  "start_stopwatch_operation":
-  {
-    "description": "This function is used to  start  a  stopwatch  in  your\nprogram. It is used to measure time differences of  any\noperation or some other action.",
-    "parameters": ["void"],
-    "returning": "long time"
-  },
-  "stop_stopwatch_operation":
-  {
-    "description": "To stop a stopwatch after you have started it with  the\nother stopwatch function, you will call this  function.\nIt will return the time between starting and stopping.",
-    "parameters": ["long start_time"],
-    "returning": "int difference"
-  },
-  "seconds_delay_operation":
-  {
-    "description": "To have your program wait for a couple of second can be\nuseful in many cases, like in animation. This  function\nlets you stop your program for a specific time.",
-    "parameters": ["int seconds"],
-    "returning": "void"
-  },
-  "calculate_current_time":
-  {
-    "description": "The computer is always counting, this number  increases\nthe whole time the computer is on. This can be used  as\ntime. You can get the current time from this function.",
-    "parameters": ["void"],
-    "returning": "long time"
-  },
   "generate_string_sentence":
   {
     "description": "A sentence is a list of strings. The amount of  strings\nis the height of the sentence, and the  length  of  the\nstrings are the width of the sentence.",
