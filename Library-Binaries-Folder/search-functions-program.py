@@ -19,7 +19,7 @@ def show_search_function_names(functions, keywords):
     matched = search_functions_keywords(functions,
         keywords)
     for index, function in enumerate(matched, 1):
-        print("Function[%d]\t:\t%s" % (index,function))
+        print("FUNCTION [%d]\t:\t%s"%(index, function))
 
 def show_function_information(functions, function):
     if(function in functions.keys()):
@@ -48,17 +48,20 @@ def search_functions_keywords(functions, keywords):
 #######################################################
 def show_function_description(functions, function):
     description = functions[function]["description"]
-    print("%s\n" % (description))
+    for index, string in enumerate(description):
+        print("%s" % string)
+    print("")
 
 def show_function_parameters(functions, function):
     parameters = functions[function]["parameters"]
     for index, parameter in enumerate(parameters, 1):
-        print("Parameter[%d]\t:\t%s"%(index,parameter))
+        print("PARAMETER [%d]\t:\t%s" % (index,
+            parameter))
     print("")
 
 def show_function_returning(functions, function):
     returning = functions[function]["returning"]
-    print("Returning\t:\t%s" % (returning))
+    print("RETURNING\t:\t%s" % (returning))
 #######################################################
 
 #######################################################
@@ -89,7 +92,7 @@ def break_down_function_name(function, breakpoint):
 
 #######################################################
 def collect_functions_information(filename):
-    with open(filename) as file_object:
+    with open(filename, "r") as file_object:
         information = json.load(file_object)
     return information
 #######################################################
