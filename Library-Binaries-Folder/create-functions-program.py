@@ -52,13 +52,10 @@ filename = "../Library-Sources-Folder/\
 functions-information.json"
 functions = collect_functions_information(filename)
 
-# if(len(console.argv) >= 3):
-#     command = console.argv[1]; function=console.argv[2]
-#     functions = console_command_handler(command,
-#         functions, function)
-
-for function, value in functions.items():
-    value["description"] = value["description"].split("\n")
+if(len(console.argv) >= 3):
+    command = console.argv[1]; function=console.argv[2]
+    functions = console_command_handler(command,
+        functions, function)
 
 update_functions_information(filename, functions)
 #######################################################
