@@ -85,25 +85,6 @@ int reverse_character_string_test(char* string,
 }
 ```
 <pre>
-If you want to contribute by creating a  function,  you
-will first make the test-function  for  that  function,
-then creating the actual function. After that you  will
-test the function you have made,  by  using  the  test-
-function. And the last thing you will do, is to  create
-an information block about  your  function.  That  will
-only be performed if the function you did is made to be
-used by the  users.  Here  is  an  example  of  how  an
-information block could look like:
-</pre>
-```json
-"array_contains_integer":
-{
-  "description": "If you want to check if your array contains a  specific\ninteger, you can use this function. The function  loops\nthrough the array and checks for the integer.",
-  "parameters": ["int* array", "int length", "int integer"],
-  "returning": "int boolean"
-}
-```
-<pre>
 Before you define the variable you want to create,  you
 should declare it in its header file.  By  doing  that,
 the compiler wont give any errors because the  function

@@ -82,3 +82,23 @@ debugger, you will type `quit`.
 ```bash
 $ gdb ./library-compile-program
 ```
+<pre>
+When you have made a function that will be used by  the
+users,  you  will  have   to   create   the   function-
+information. To create information to a  function,  you
+will run the following command. Then you will input the
+information you want the user to se about the function.
+</pre>
+```bash
+$ python create-functions-program.py create <function>
+```
+<pre>
+When you have  deleted  a  function  that  was  in  the
+function information database, you also have to  delete
+the information. To delete information about a specific
+function, you can run the following  command  with  the
+function name that you want to delete.
+</pre>
+```bash
+$ python create-functions-program.py delete <function>
+```
