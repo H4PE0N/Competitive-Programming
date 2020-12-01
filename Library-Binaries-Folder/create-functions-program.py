@@ -4,8 +4,8 @@ import json; import sys as console
 #######################################################
 
 #######################################################
-def console_command_handler(command, functions,
-    function):
+def console_command_handler(command:str,functions:dict,
+    function: str) -> dict:
     if(command == "create"):
         functions=create_function_information(function,
             functions)
@@ -16,44 +16,54 @@ def console_command_handler(command, functions,
 #######################################################
 
 #######################################################
-def delete_function_information(function, functions):
+def delete_function_information(function:str,functions:
+    dict) -> dict:
     del functions[function]; return functions
 
-def create_function_information(function, functions):
-    information = input_function_information(function)
-    functions[function] = information; return functions
+def create_function_information(function:str,functions:
+    dict) -> dict:
+    functions[function] = {
+        "description": input_function_description(),
+        "parameters" : input_function_parameters(),
+        "returning"  : input_function_returning()
+    }; return functions
 #######################################################
 
 #######################################################
-def input_function_information(function):
-    description = []; MAX_LINES = 3
-    for index in range(MAX_LINES):
-        description.append(input("").strip())
+def input_function_returning() -> str:
+    returning: str = input("\nRETURNING\t:\t").strip()
+    return returning
 
-    parameters = input("\nPARAMETERS\t:\t").split(", ")
-    returning = input("\nRETURNING\t:\t")
-    return {"description": description, "parameters":
-        parameters, "returning": returning}
+def input_function_description() -> list:
+    description: list = [input("").strip() for index in
+        range(3)]
+    return description
+
+def input_function_parameters() -> list:
+    parameters:str = input("\nPARAMETERS\t:\t").strip()
+    return parameters.split(", ")
 #######################################################
 
 #######################################################
-def collect_functions_information(filename):
+def collect_functions_information(filename: str)->dict:
     with open(filename, "r") as file_object:
-        information = json.load(file_object)
+        information: dict = json.load(file_object)
     return information
 
-def update_functions_information(filename, functions):
+def update_functions_information(filename: str,
+    functions: dict) -> None:
     with open(filename, "w") as file_object:
         json.dump(functions, file_object, indent = 2)
 #######################################################
 
 #######################################################
-filename = "../Library-Sources-Folder/\
+filename: str = "../Library-Sources-Folder/\
 functions-information.json"
-functions = collect_functions_information(filename)
+functions: dict=collect_functions_information(filename)
 
 if(len(console.argv) >= 3):
-    command = console.argv[1]; function=console.argv[2]
+    command: str = console.argv[1]; function: str = \
+        console.argv[2]
     functions = console_command_handler(command,
         functions, function)
 
